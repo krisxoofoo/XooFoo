@@ -1,0 +1,69 @@
+<div id="logoHead">
+    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td>
+                <a id="main_logo" class="tooltip" href="http://www.xoops.org" rel="external" title="Powered by XOOPS"></a>
+            </td>
+            <td id="headnav" class="other">
+                <a class="tooltip" href="<{$xoops_url}>" title="<{$smarty.const._YOURHOME}>"><img src="<{$xoops_url}>/modules/system/class/gui/oxygen/images/home.png" alt="<{$smarty.const._YOURHOME}>" /></a>
+                <a class="tooltip" href="<{$xoops_url}>/user.php?op=logout" title="<{$smarty.const._LOGOUT}>"><img src="<{$xoops_url}>/modules/system/class/gui/oxygen/images/logout.png" alt="<{$smarty.const._LOGOUT}>" /></a>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="navbarCP">
+    <!-- start menu -->
+    <ul class="menu" id="menu">
+        <{foreach item=item from=$navitems}>
+        <li>
+            <a href="<{$item.link}>" class="menulink"><{$item.text}></a>
+            <ul>
+                <{foreach item=sub from=$item.menu}>
+                <li>
+                    <{if $sub.options != 0}>
+                    <a class="sub" href="<{$sub.link}>" title="<{$sub.title}>"><{$sub.title}></a>
+                    <ul>
+                        <{foreach item=option from=$sub.options}>
+                        <li><a href="<{$sub.url}><{$option.link}>"><{$option.title}></a></li>
+                        <{/foreach}>
+                    </ul>
+                    <{else}>
+                    <a href="<{$sub.link}>" title="<{$sub.title}>"><{$sub.title}></a>
+                    <{/if}>
+                </li>
+                <{/foreach}>
+            </ul>
+        </li>
+        <{/foreach}>
+    </ul>
+    <!-- start style choose -->
+    <div id="choosestyle">
+        <a href="<{$xoops_url}>/modules/system/class/gui/oxygen/css/index.html?style=dark"  rel="dark"  class="styleswitch"><{$lang_dark}></a>
+        <a href="<{$xoops_url}>/modules/system/class/gui/oxygen/css/index.html?style=silver" rel="silver" class="styleswitch"><{$lang_silver}></a>
+        <a href="<{$xoops_url}>/modules/system/class/gui/oxygen/css/index.html?style=orange" rel="orange" class="styleswitch"><{$lang_orange}></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var menu=new menu.dd("menu");
+    menu.init("menu","menuhover");
+</script>
+
+<!-- get the toolbar icons -->
+
+<div id="navOptionsCP">
+    <div class="modname">
+        <{$modname}>
+    </div>
+    <{foreach item=op from=$mod_options}>
+    <a class="tooltip" href="<{$op.link}>" title="<{$op.title}>">
+        <img src='<{$op.icon|default:"$xoops_url/modules/system/class/gui/oxygen/images/icon_options.png"}>' alt="<{$op.title}>" />
+    </a>
+    <{/foreach}>
+
+    <{if $moddir!='system' && $mod_options}>
+    <a class="tooltip" href="<{$xoops_url}>/modules/system/admin.php?fct=preferences&amp;op=showmod&amp;mod=<{$modid}>" title="<{$lang_preferences}>">
+        <img src="<{$xoops_url}>/modules/system/class/gui/oxygen/images/navIcons/prefs.png" alt="<{$lang_preferences}>" />
+    </a>
+    <{/if}>
+</div>

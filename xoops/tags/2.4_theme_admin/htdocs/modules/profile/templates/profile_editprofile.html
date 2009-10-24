@@ -1,0 +1,9 @@
+<{includeq file="db:profile_breadcrumbs.html"}>
+
+
+<{if $stop}>
+    <div class='errorMsg' style="text-align: left;"><{$stop}></div>
+    <br style='clear: both;' />
+<{/if}>
+
+<{includeq file="db:profile_form.html" xoForm=$userinfo}>

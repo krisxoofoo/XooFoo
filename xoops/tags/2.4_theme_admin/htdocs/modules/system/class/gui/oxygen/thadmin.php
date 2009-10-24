@@ -53,18 +53,7 @@ class XoopsGuiOxygen extends  XoopsSystemGui
         global $xoopsConfig, $xoopsUser, $xoopsModule, $xoTheme, $xoopsTpl;
         $tpl =& $this->template;
 
-        $xoTheme->addStylesheet('xoops.css');
-        $xoTheme->addStylesheet('modules/system/class/gui/oxygen/css/style.css');
-        $xoTheme->addStylesheet('modules/system/class/gui/oxygen/css/dark.css', array('title' => 'dark'));
-        $xoTheme->addStylesheet('modules/system/class/gui/oxygen/css/silver.css', array('title' => 'silver'));
-        $xoTheme->addStylesheet('modules/system/class/gui/oxygen/css/orange.css', array('title' => 'orange'));
-
         $xoTheme->addScript('browse.php?Frameworks/jquery/jquery.js');
-        $xoTheme->addScript('modules/system/class/gui/oxygen/js/styleswitch.js');
-        $xoTheme->addScript('modules/system/class/gui/oxygen/js/accordion.js');
-        $xoTheme->addScript('modules/system/class/gui/oxygen/js/formenu.js');
-        $xoTheme->addScript('modules/system/class/gui/oxygen/js/menu.js');
-        $xoTheme->addScript('modules/system/class/gui/oxygen/js/tooltip.js');
 
         $tpl->assign('lang_cp', _CPHOME);
 
@@ -166,11 +155,11 @@ class XoopsGuiOxygen extends  XoopsSystemGui
         $menu[1]['link'] = XOOPS_URL . '/admin.php?xoopsorgnews=1';
         $menu[1]['title'] = _XOOPS_NEWS;
         $menu[1]['absolute'] = 1;
-        $menu[1]['icon'] = XOOPS_URL . '/modules/system/class/gui/oxygen/images/xoops.png';
+        $menu[1]['icon'] = XOOPS_ADMINTHEME_URL . '/oxygen/images/xoops.png';
         $menu[2]['link'] = XOOPS_URL . '/user.php?op=logout';
         $menu[2]['title'] = _LOGOUT;
         $menu[2]['absolute'] = 1;
-        $menu[2]['icon'] = XOOPS_URL . '/modules/system/class/gui/oxygen/images/logout.png';
+        $menu[2]['icon'] = XOOPS_ADMINTHEME_URL . '/oxygen/images/logout.png';
         $tpl->append('navitems', array('link' => XOOPS_URL . '/admin.php', 'text' => _CPHOME, 'menu' => $menu));
 
         //add SYSTEM  Menu items
@@ -184,7 +173,7 @@ class XoopsGuiOxygen extends  XoopsSystemGui
             $mod_options = $adminmenu;
             foreach (array_keys($mod_options) as $item) {
                 $mod_options[$item]['link'] = empty($mod_options[$item]['absolute']) ? XOOPS_URL . '/modules/'.$moddir.'/' . $mod_options[$item]['link'] : $mod_options[$item]['link'];
-                $mod_options[$item]['icon'] = empty($mod_options[$item]['icon']) ? '' : XOOPS_URL . '/modules/system/class/gui/oxygen/' . $mod_options[$item]['icon'];
+                $mod_options[$item]['icon'] = empty($mod_options[$item]['icon']) ? '' : XOOPS_ADMINTHEME_URL . '/oxygen/' . $mod_options[$item]['icon'];
                 unset($mod_options[$item]['icon_small']);
             }
         } else {
@@ -248,37 +237,37 @@ class XoopsGuiOxygen extends  XoopsSystemGui
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=1',
             'title'     => _MD_OXYGEN_GENERAL,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         $menu[] = array(
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=2',
             'title'     => _MD_OXYGEN_USERSETTINGS,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         $menu[] = array(
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=3',
             'title'     => _MD_OXYGEN_METAFOOTER,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         $menu[] = array(
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=4',
             'title'     => _MD_OXYGEN_CENSOR,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         $menu[] = array(
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=5',
             'title'     => _MD_OXYGEN_SEARCH,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         $menu[] = array(
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=6',
             'title'     => _MD_OXYGEN_MAILER,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         $menu[] = array(
             'link'      => XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=show&amp;confcat_id=7',
             'title'     => _MD_OXYGEN_AUTHENTICATION,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/icons/prefs_small.png');
         foreach ($mods as $mod) {
             $rtn = array();
             $sadmin = $moduleperm_handler->checkRight('module_admin', $mod->getVar('mid'), $xoopsUser->getGroups());
@@ -286,7 +275,7 @@ class XoopsGuiOxygen extends  XoopsSystemGui
                 $rtn['link'] = XOOPS_URL . '/modules/system/admin.php?fct=preferences&amp;op=showmod&amp;mod=' . $mod->getVar('mid');
                 $rtn['title'] = $mod->name();
                 $rtn['absolute'] = 1;
-                $rtn['icon'] = XOOPS_URL . '/modules/system/class/gui/oxygen/images/navIcons/prefs_small.png';
+                $rtn['icon'] = XOOPS_ADMINTHEME_URL . '/gui/oxygen/icons/prefs_small.png';
                 $menu[] = $rtn;
             }
         }
@@ -298,17 +287,17 @@ class XoopsGuiOxygen extends  XoopsSystemGui
             'link'      => 'http://www.xoops.org',
             'title'     => _XOOPS_WEBSITE,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/xoops.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/images/xoops.png');
         $menu[] = array(
             'link'      => 'http://www.xoops.org/modules/extgallery/',
             'title'     => _AD_XOOPSTHEMES,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/tweb.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/images/tweb.png');
         $menu[] = array(
             'link'      => 'http://www.xoops.org/modules/repository/',
             'title'     => _AD_XOOPSMODULES,
             'absolute'  => 1,
-            'icon'     => XOOPS_URL . '/modules/system/class/gui/oxygen/images/xoops.png');
+            'icon'     => XOOPS_ADMINTHEME_URL . '/oxygen/images/xoops.png');
         $menu[] = array(
             'link'      => 'http://sourceforge.net/projects/xoops/',
             'title'     => _SOURCEFORGE,
@@ -317,8 +306,8 @@ class XoopsGuiOxygen extends  XoopsSystemGui
         $tpl->append('navitems', array('link' => XOOPS_URL . '/admin.php','text' => _AD_INTERESTSITES, 'menu' => $menu));
 
         //add OPTIONS/links for local support
-        if (file_exists($file = XOOPS_ROOT_PATH . '/modules/system/class/gui/oxygen/language/' . $xoopsConfig['language'] . '/localsupport.php' )) {
-            $links = include XOOPS_ROOT_PATH . '/modules/system/class/gui/oxygen/language/' . $xoopsConfig['language'] . '/localsupport.php';
+        if (file_exists($file = XOOPS_ADMINTHEME_PATH . '/oxygen/language/' . $xoopsConfig['language'] . '/localsupport.php' )) {
+            $links = include XOOPS_ADMINTHEME_PATH . '/oxygen/language/' . $xoopsConfig['language'] . '/localsupport.php';
             if ( count($links) > 0 ) {
                 $tpl->append('navitems', array('link' => XOOPS_URL . '/admin.php','text' => _AD_LOCALSUPPORT, 'menu' => $links));
             }

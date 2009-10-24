@@ -42,9 +42,11 @@ define('XOOPS_MATCH_END', 1);
 define('XOOPS_MATCH_EQUAL', 2);
 define('XOOPS_MATCH_CONTAIN', 3);
 define('XOOPS_THEME_PATH', XOOPS_ROOT_PATH . '/themes');
+define('XOOPS_ADMINTHEME_PATH', XOOPS_ROOT_PATH . '/modules/system/class/gui'); // add by kris
 define('XOOPS_UPLOAD_PATH', XOOPS_ROOT_PATH . '/uploads');
 define('XOOPS_LIBRARY_PATH', XOOPS_ROOT_PATH . '/libraries');
 define('XOOPS_THEME_URL', XOOPS_URL . '/themes');
+define('XOOPS_ADMINTHEME_URL', XOOPS_URL . '/modules/system/class/gui'); //add by kris
 define('XOOPS_UPLOAD_URL', XOOPS_URL . '/uploads');
 define('XOOPS_LIBRARY_URL', XOOPS_URL . '/libraries');
 

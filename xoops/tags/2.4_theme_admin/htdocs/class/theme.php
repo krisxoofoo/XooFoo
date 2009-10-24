@@ -119,6 +119,7 @@ class xos_opal_AdminThemeFactory extends xos_opal_ThemeFactory
             'theme_icons' => $inst->url.'/icons',
             'theme_css'   => $inst->url.'/css',
             'theme_js'    => $inst->url.'/js',
+            'theme_lang'  => $inst->url.'/language',
             ));
 
         return $inst;
@@ -208,9 +209,9 @@ class xos_opal_Theme
      * @var array
      */
     var $metas = array(
-        'http' => array(
-            'Content-Script-Type' => 'text/javascript' ,
-            'Content-Style-Type' => 'text/css') ,
+        //'http' => array(
+        //    'Content-Script-Type' => 'text/javascript' ,
+        //    'Content-Style-Type' => 'text/css') ,
         'meta' => array() ,
         'link' => array() ,
         'script' => array());

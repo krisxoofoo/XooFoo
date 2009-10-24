@@ -73,7 +73,7 @@ class XoopsSystemCpanel
         if (!empty($gui)) {
             $class = 'XoopsGui' . ucfirst($gui);
             if (!class_exists($class)) {
-                include_once dirname(__FILE__) . '/gui/' . $gui . '/' . $gui . '.php';
+                include_once dirname(__FILE__) . '/gui/' . $gui . '/thadmin.php';
             }
             if (class_exists($class)) {
                 if (call_user_func(array($class , 'validate'))) {
@@ -102,7 +102,7 @@ class XoopsSystemCpanel
         xoops_load('XoopsLists');
         $lists = XoopsLists::getDirListAsArray(dirname(__FILE__) . '/gui/');
         foreach(array_keys($lists) as $gui) {
-            if (file_exists($file = dirname(__FILE__) . '/gui/' . $gui . '/' . $gui . '.php')) {
+            if (file_exists($file = dirname(__FILE__) . '/gui/' . $gui . '/thadmin.php')) {
                 include_once $file;
                 if (class_exists($class = 'XoopsGui' . ucfirst($gui))) {
                     if (call_user_func(array($class , 'validate'))) {
@@ -122,7 +122,7 @@ class XoopsSystemCpanel
     {
         $guis = XoopsSystemCpanel::getGuis();
         foreach($guis as $gui) {
-            if ($file = dirname(__FILE__) . '/gui/' . $gui . '/' . $gui . '.php') {
+            if ($file = dirname(__FILE__) . '/gui/' . $gui . '/thadmin.php') {
                 include_once $file;
                 if (class_exists($class = 'XoopsGui' . ucfirst($gui))) {
                     call_user_func(array($class , 'flush'));

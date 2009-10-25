@@ -1,4 +1,8 @@
 /* $Id$ */
+
+	/* ==================== Import others style cheats ==================== */
+@import url(buttonbar.css);
+
 	/* ==================== General definitions ==================== */
 html {
 	
@@ -32,32 +36,22 @@ ul {
 li {
 	margin-left: 2px;
 	list-style: square inside;
-	color: #000000;
+	color: #000;
 }
 
-h1 {
-	font-size: 20px;
-}
+h1 {	font-size: 20px;}
 
-h2 {
-	font-size: 18px;
-}
+h2 {	font-size: 18px;}
 
-h3 {
-	font-size: 16px;
-}
+h3 {	font-size: 16px;}
 
-h4 {
-	font-size: 14px;
-}
+h4 {	font-size: 14px;}
 
-table {
-	width: 100%;
-}
+table {	width: 100%;}
 
 th {
 	background-color: #2e323b;
-	color: #FFFFFF;
+	color: #fff;
 	padding: 4px;
 	vertical-align: middle;
 }
@@ -93,7 +87,7 @@ a:hover {
 
 .xoopsQuote {
 	font-size: 11px;
-	color: #444444;
+	color: #444;
 	line-height: 125%;
 	text-align: justify;
 	background-color: #FAFAFA;
@@ -102,7 +96,7 @@ a:hover {
 
 /* ==================== Links for Quotes ==================== */
 .xoopsQuote a:link,.xoopsQuote a:visited {
-	color: #444444;
+	color: #444;
 	font-weight: bold;
 	background-color: transparent;
 }
@@ -138,9 +132,7 @@ a:hover {
 }
 
 /* ==================== For redirect pages ====================*/
-.message,.notreload {
-	text-align: center;
-}
+.message,.notreload {	text-align: center;}
 
 /* ==================== General small ==================== */
 .fontSmall {
@@ -148,9 +140,7 @@ a:hover {
 	background-color: transparent;
 }
 
-a.fontSmall {
-	color: #006699;
-}
+a.fontSmall {	color: #006699;}
 
 a.fontSmall:hover {
 	color: #C23030;
@@ -159,19 +149,17 @@ a.fontSmall:hover {
 
 /*==================== forms elements ==================== */
 input,textarea,select {
-	border: 1px solid #CCCCCC;
+	border: 1px solid #ccc;
 	font-size: 11px;
 	font-family: tahoma, Helvetica, sans-serif;
-	background-color: #FFFFFF;
+	background-color: #fff;
 }
 
-input:focus,textarea:focus,select:focus {
-	border: 1px solid #999999;
-}
+input:focus,textarea:focus,select:focus {	border: 1px solid #999999;}
 
 .outer {
 	width: 100%;
-	border: 2px solid #CCCCCC;
+	border: 2px solid #ccc;
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-khtml-border-radius: 3px;
@@ -187,13 +175,13 @@ input:focus,textarea:focus,select:focus {
 .even {
 	background-color: #EFEFEF;
 	padding: 5px;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #ccc;
 }
 
 .odd {
 	background-color: #DFDFDF;
 	padding: 5px;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #ccc;
 }
 
 .foot {
@@ -209,15 +197,15 @@ tr.head td {
 }
 
 tr.even td {
-	background-color: #FFFFFF;
+	background-color: #fff;
 	padding: 5px;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #ccc;
 }
 
 tr.odd td {
 	background-color: #EFEFEF;
 	padding: 5px;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #ccc;
 }
 
 tr.foot td {
@@ -352,7 +340,7 @@ tr.foot td {
 #choosestyle a {
 	font-family: tahoma, Helvetica, sans-serif;
 	font-size: 10px;
-	border: 1px solid #CCCCCC;
+	border: 1px solid #ccc;
 	margin: 2px 4px 2px 4px;
 	float: right;
 	background-color: #f9f9f9;
@@ -442,10 +430,10 @@ tr.foot td {
 	padding-left: 18px;
 }
 
-.CPfoot {
+#xo-footer {
 	padding: 4px;
 	background-color: #333;
-	border-bottom: 1px solid #CCCCCC;
+	border-bottom: 1px solid #ccc;
 	border-top: 1px solid #666;
 	text-align: center;
 	font-size: 10px;
@@ -457,12 +445,14 @@ tr.foot td {
 .CPbigTitle {
 	font-size: 12px;
 	color: #606060;
-	background: no-repeat left top;
+	background-position: left top;
+	background-repeat: no-repeat;
 	font-weight: bold;
 	height: 30px;
 	vertical-align: middle;
-	padding: 10px 0 0 40px;
+	padding: 10px 40px 0 40px;
 	border-bottom: 3px solid #393e41;
+	font-weight: bold
 }
 
 .CPindexOptions {
@@ -470,15 +460,22 @@ tr.foot td {
 	vertical-align: top;
 }
 
+#xo-index {
+	width: 100%;
+	border: 0;
+}
+
+#xo-modules {	width: 69%;}
+
+#xo-accordion {	width: 29%;}
+
 .CPmediumTitle {
 	font-weight: bold;
 	font-size: 14px;
 	color: #FF4500;
 }
 
-.systemicons {
-	height: 120px;
-}
+.systemicons {	height: 120px;}
 
 .cpiconmodules,.cpicon {
 	margin: 3px;
@@ -535,6 +532,11 @@ tr.foot td {
 	border-right: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	background: #f9f9f9;
+	filter: alpha(opacity =             80);
+	-moz-opacity: 0.8;
+	-webkit-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
 }
 
 .cpicon img,.cpiconmodules  img {
@@ -563,9 +565,7 @@ tr.foot td {
 }
 
 /* ==================== For accordion menu ====================*/
-.menu_list {
-	width: 100%;
-}
+.menu_list {	width: 100%;}
 
 .menu_head {
 	padding: 5px 10px;
@@ -573,7 +573,7 @@ tr.foot td {
 	position: relative;
 	margin: 1px;
 	background: url(../img/accordion.png) repeat-x !important;
-	color: #FFFFFF;
+	color: #fff;
 	border: 1px solid #FFF;
 	cursor: pointer;
 	font-weight: bold;
@@ -593,14 +593,12 @@ tr.foot td {
 }
 
 .menu_body a:hover {
-	color: #000000;
+	color: #000;
 	text-decoration: none;
 }
 
 /* ==================== for xoops gift shop ====================*/
-.xgiftshop {
-	text-align: center !important;
-}
+.xgiftshop {	text-align: center !important;}
 
 /* ==================== for main logo ====================*/
 #main_logo {
@@ -609,82 +607,6 @@ tr.foot td {
 		;
 	height: 72px !important;
 	width: 160px !important;
-}
-
-/*==================== for module buttonbar =========================*/
-#buttontop {
-	background: #e7e7e7 !important;
-	border-top: 1px solid #b7ae88 !important;
-	border-left: 1px solid #b7ae88 !important;
-	border-right: 1px solid #b7ae88 !important;
-	margin: 0 !important;
-	-moz-border-radius-topleft: 5px;
-	-moz-border-radius-topright: 5px;
-	-webkit-border-radius-topleft: 5px;
-	-webkit-border-radius-topright: 5px;
-	-khtml-border-radius-topleft: 5px;
-	-khtml-border-radius-topright: 5px;
-	border-radius-topleft: 5px;
-	border-radius-topright: 5px;
-}
-
-#buttonbar {
-	background: #e7e7e7 url(../img/bg.gif) repeat-x left bottom
-		!important;
-	border-left: 1px solid #b7ae88 !important;
-	border-right: 1px solid #b7ae88 !important;
-	margin-bottom: 12px !important;
-}
-
-#buttonbar ul {
-	margin: 0 !important;
-	margin-top: 15px !important;
-	padding: 10px 10px 0 !important;
-	list-style: none !important;
-}
-
-#buttonbar a {
-	background: url(../img/left_both.gif) no-repeat left top !important;
-	margin: 0;
-	padding: 0 0 0 9px !important;
-	border-bottom: 1px solid #b7ae88 !important;
-	text-decoration: none !important;
-}
-
-#buttonbar a span {
-	display: block !important;
-	background: url(../img/right_both.gif) no-repeat right top !important
-		;
-	padding: 5px 15px 4px 6px !important;
-	font-weight: bold !important;
-	color: #765 !important;
-}
-
-#buttonbar a span {
-	float: none !important;
-}
-
-#buttonbar a:hover span {
-	color: #272727 !important;
-}
-
-#buttonbar #current a {
-	background-position: 0 -150px !important;
-	border-width: 0 !important;
-}
-
-#buttonbar #current a span {
-	background-position: 100% -150px !important;
-	padding-bottom: 5px !important;
-	color: #272727 !important;
-}
-
-#buttonbar a:hover {
-	background-position: 0% -150px !important;
-}
-
-#buttonbar a:hover span {
-	background-position: 100% -150px !important;
 }
 
 /*==================== for tooltip =========================*/

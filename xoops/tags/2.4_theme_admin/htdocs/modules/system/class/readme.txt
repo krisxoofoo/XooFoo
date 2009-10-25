@@ -1,9 +1,9 @@
 How to add your own custom GUI for Cpanel
 
 1 Create the following file structure:
-  /modules/system/class/gui/mygui/mygui.php
+  /modules/system/class/gui/mygui/thadmin.php
 
-2 In the mygui.php:
+2 In the thadmin.php:
 
     xoops_load("gui", "system");
 

@@ -1,0 +1,235 @@
+/* $Id$ */
+@import url(paradigme.css);
+/*@font-face {
+    font-family: BakerSignet BT;
+    font-style:  normal;
+    font-weight: normal;
+    src: url(http://localhost/240/modules/system/class/gui/paradigme/img/BAKERSI3.eot);
+  }*/
+/* General definitions */
+
+/* reset css selectors */
+* { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none;font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal;}
+
+html { }
+
+body { background-color : #E9F0F7; font-size: 9pt; font-family: "BakerSignet BT", Verdana, Arial, Helvetica, sans-serif; margin: 0; padding: 0; line-height: 1.2em;
+          width:           100%;
+          /*min-width:       900px;*/}
+
+img {border: none;}
+
+hr { height: 3px; border: 3px #E18A00 solid; width: 95%;}
+
+ul { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; list-style: circle inside; color: #000; padding-bottom: 5px;}
+
+h1 { font-size: 1.8em; padding-bottom:.5em;}
+h2 { font-size: 1.4em;}
+h3 { font-size: 1.3em;}
+h4 { font-size: 1.2em; font-weight:bold; padding-bottom:.8em; padding-top:.6em;}
+
+th {background-color: #56BAFA; color: #fff; padding : 4px; vertical-align : middle;}
+
+a:link {text-decoration: none; color: #4177A6; font-weight: bold; background-color: transparent;}
+a:visited {text-decoration: none; color: #4177A6; font-weight: bold; background-color: transparent;}
+a:hover {/*text-decoration: underline;*/ color: #FF4500; font-weight: bold; background-color: transparent;}
+
+
+/* Code and Quote Definition */
+.xoopsCode { font-size: .9em; color: #006600; background-color: #FAFAFA; border: #c2cdd6 1px dashed;}
+.xoopsQuote { font-size: .9em; color: #444; line-height: 125%; text-align: justify; background-color: #FAFAFA; border: #c2cdd6 1px dashed;}
+
+/* Links for Quotes */
+.xoopsQuote a:link, .xoopsQuote a:visited { color: #444; font-weight: bold; background-color: transparent;}
+.xoopsQuote a:hover, .xoopsQuote a:active { color: #1778cb; background-color: transparent;}
+
+/* ===== Redirect messages ===== */
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;text-shadow: 2px 2px 3px #aaa; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
+.errorMsg      { background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg     { background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg    { background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a    { background-color: transparent; color: #D12F19; }
+.confirmMsg a   { background-color: transparent; color: #817134; }
+.successMsg a  { background-color: transparent; color: #529214; }
+
+/* General small */
+.fontSmall { font-size : .8em; background-color: transparent;}
+a.fontSmall { color: #006699;}
+a.fontSmall:hover { color: #C23030; text-decoration: underline;}
+
+/*forms elements*/
+input,textarea,select { 
+	border: 1px solid #ccc;
+	font-size: .9em;
+	background-color: #fff;
+}
+input:focus, textarea:focus, select:focus{	border: 1px solid #999;}
+textarea {width: 95%; overflow: auto;}
+
+.outer {border: 1px solid #ccc;}
+.outer th{font-size:1.1em; font-weight:bolder;}
+.head {background-color: #EBEBEB; padding: 5px; font-weight: bold;}
+.even {background-color: #fff; padding: 5px;  border-bottom: 1px solid #ccc; }
+.odd {background-color: #EFEFEF; padding: 5px; border-bottom: 1px solid #ccc; }
+.foot {background-color: #E1E7EF; padding: 5px; font-weight: bold;}
+tr.head td {background-color: #BDE3FB; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #fff; padding: 5px; border-bottom: 1px solid #ccc;}
+tr.odd td {background-color: #EFEFEF; padding: 5px; border-bottom: 1px solid #ccc; }
+tr.foot td {background-color: #E1E7EF; padding: 5px; font-weight: bold;}
+
+/**
+ * Declaraciones para nuevo formato
+ * @author BitC3R0
+ */
+
+#navbarCP{
+	background: #F1F1FC;
+	/*padding: 4px;*/
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	font-weight: normal;
+	height: 24px;
+	font-size:.9em;
+}
+#navbarCP ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 1em;
+}
+#navbarCP ul li{
+	list-style: none;
+	padding: 0;
+	float: left;
+	margin: 0;
+	margin-left: 3px;
+	position: relative;
+}
+#navbarCP ul li a{
+	padding: 4px;
+	display: block;
+	color: #000;
+	font-weight: normal;
+	border: 1px solid #F1F1FC;
+}
+#navbarCP ul li a:hover{	background-color: #E7F4F7;	border-color: #ADD8E6;}
+#navbarCP ul li ul{
+	display: none;
+	position: absolute; 
+	top: 1em;
+	left: 0;
+	background: #fff;
+	border: 1px solid #ccc;
+	padding: 0;
+	margin: 0;
+}
+#navbarCP ul li ul a{
+	color: #666;
+	font-weight: normal;
+	background: url(../img/item.png) no-repeat left;
+	padding-left: 20px;
+	border: 1px solid #fff;
+}
+#navbarCP ul li ul a:hover{
+	color: #000;
+	background-color: #E7F4F7;
+	border-color: #ADD8E6;
+}
+#navbarCP ul li ul li{	width: 150px;	margin: 0;}
+#navbarCP ul li > ul {	top: auto;	left: auto;}
+#navbarCP ul li:hover ul, d#navbarCP li.over ul{ display: block; }
+#navbarCP ul li ul li{	float: none;}
+
+#navOptionsCP{
+	padding: 0 5px 0 5px;
+	background: #F1F1FC;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #ccc;
+	height: 35px;
+}
+#navOptionsCP a{
+	border: 1px solid #DFE0FD;
+	height: 32px;
+	display: block;
+	width: 32px;
+	float: right;
+	margin: 0;
+	margin-right: 2px;
+}
+#navOptionsCP a:hover{	background-color: #E7F4F7;	border-color: #ADD8E6;}
+
+#navOptionsCP .modname{
+	float: left;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: Silver;
+	margin-top: 4px;
+	margin-left: 1em;
+}
+
+#navOptionsCP .module{
+	float: left;
+	font-weight: bold;
+	color: Silver;
+	margin-top: 4px;
+}
+.CPrssLinks{	padding: 4px;}
+.CPrssLinks a{
+	background: url(../img/item.png) no-repeat left;
+	padding: 2px;
+	display: block;
+	padding-left: 18px;
+}
+
+#xo-menusystem .CPbigTitle {	background: url(../img/modules.png) no-repeat left;}
+
+#xo-modules .CPbigTitle {	background: url(../img/cp.png) no-repeat left;}
+.CPbigTitle{
+	font-size: 1.5em;
+	color: #1E90FF;
+	background: no-repeat left top;
+	font-weight: bold;
+	height: 40px;
+	vertical-align: middle;
+	padding: 10px 0 0 50px;
+	border-bottom: 3px solid #1E90FF;
+	text-shadow: 2px 2px 3px #aaa; 
+}
+.CPindexOptions{ padding: 4px;	vertical-align: top;}
+.CPmediumTitle{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #FF4500;
+	text-shadow: 2px 2px 3px #aaa; 
+}
+.cpicon{
+	margin: 5px;
+	text-align: center;
+}
+.cpicon a { 
+	display: block; float: left;
+	height: 100px !important;
+	width: 110px !important; 
+	vertical-align: middle; 
+	text-decoration : none;
+	border: 1px solid #ccc;
+	padding: 2px 5px 1px 5px;
+	margin: 5px;
+	color: #666;
+	border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius: 10px;
+	/*opacity: 0.7;*/
+}
+
+.cpicon a:hover{
+	background-color: /*#FFF6C1*/#E9F0F7;
+	border: 1px solid /*#FF9900*/#1E90FF;
+	color: #1E90FF;
+	opacity: .5;
+}
+
+.cpicon img { margin-top: 8px; margin-bottom: 8px; }
+
+.cpicon span {	font-weight: bold;	display: block;}
+.cpicon span.uno{	text-decoration: underline;	color: Blue;}
+.cpicon span.unor{	text-decoration: underline;	color: #CC0000;}

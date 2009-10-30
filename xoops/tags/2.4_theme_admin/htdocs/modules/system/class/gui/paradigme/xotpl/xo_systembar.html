@@ -1,0 +1,17 @@
+<div id="navbarCP">
+    <ul id="nav" class="shadow">
+        <{foreach item=item from=$navitems}>
+            <li><a href="<{$item.link}>" title="<{$item.text}>"><{$item.text}></a>
+                <ul>
+                    <{foreach item=sub from=$item.menu}>
+                        <li>
+                            <a href="<{$sub.link}>" title="<{$sub.title}>" style='background-image: url(<{$sub.icon|default:"$theme_icons/item.png"}>);'>
+                            <{$sub.title}>
+                            </a>
+                        </li>
+                    <{/foreach}>
+                </ul>
+            </li>
+        <{/foreach}>
+    </ul>
+</div>

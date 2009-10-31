@@ -5,7 +5,12 @@ define('_AD_SYSOPTIONS','System Options');
 define('_AD_INSTALLEDMODULES','Installed Modules');
 
 define('_AD_XOOPSTHEMES','XOOPS Themes');
-define('_AD_INTERESTSITES','Links');
+define('_AD_XOOPSMODULES','Modules XOOPS');
+define('_AD_INTERESTSITES','Xoops Project');
+define('_AD_LOCALSUPPORT','Local Support');
+define('_XOOPS_WEBSITE','XOOPS.ORG');
+define('_SOURCEFORGE','Sourceforge');
+define('_AD_XDONATIONS','Donation');
 
 define("THEME_WELLCOME",				"Welcome");
 define("THEME_PROFILE",					"See profil");

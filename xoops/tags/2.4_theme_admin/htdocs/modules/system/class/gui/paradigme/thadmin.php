@@ -54,22 +54,40 @@ class XoopsGuiParadigme extends XoopsSystemGui
 
         $xoTheme->addScript('', '', '
         startList = function() {
-            if (document.all&&document.getElementById) {
-                navRoot = document.getElementById("nav");
-                for (i=0; i<navRoot.childNodes.length; i++) {
-                    node = navRoot.childNodes[i];
-                    if (node.nodeName=="li") {
-                        node.onmouseover=function() {
-                            this.className+=" over";
-                        }
-                        node.onmouseout=function() {
-                            this.className=this.className.replace(" over", "");
-                        }
-                    }
+/* currentStyle restricts the Javascript to IE only */
+	if (document.all &&
+ document.getElementById(nav).currentStyle) {  
+        var navroot = document.getElementById(nav);
+        
+        /* Get all the list items within the menu */
+
+        var lis=navroot.getElementsByTagName("li");  
+        for (i=0; i<lis.length; i++) {
+        
+           /* If the LI has another menu level */
+            if(lis[i].lastChild.tagName=="ul"){
+            
+                /* assign the function to the LI */
+             	lis[i].onmouseover=function() {	
+                
+                   /* display the inner menu */
+                   this.lastChild.style.display="block";
+                }
+                lis[i].onmouseout=function() {   
+                   this.lastChild.style.display="none";
                 }
             }
         }
-        xoopsOnloadEvent(startList);');
+    }
+}
+window.onload= function(){
+    /* pass the function the id of the top level UL */
+
+    /* remove one, when only using one menu */
+    activateMenu("nav"); 
+    /*activateMenu("vertnav"); */
+}
+	        xoopsOnloadEvent(startList);');
 
         $tpl->assign('lang_cp', _CPHOME);
         $tpl->assign('system_options', _AD_SYSOPTIONS);
@@ -167,6 +185,11 @@ class XoopsGuiParadigme extends XoopsSystemGui
                 }
                 $rtn['title'] = $mod->name();
                 $rtn['absolute'] = 1;
+				
+                $rtn['url'] = XOOPS_URL . '/modules/'. $mod->getVar('dirname', 'n') . '/'; //add for sub menus
+                $modOptions = $mod->getAdminMenu();                                        //add for sub menus
+                $rtn['options'] = $modOptions;                                             //add for sub menus
+				
                 if (isset($info['icon']) && $info['icon'] != '' ) {
                     $rtn['icon'] = XOOPS_URL . '/modules/' . $mod->getVar('dirname', 'n') . '/' . $info['icon'];
                 }
@@ -198,10 +221,21 @@ class XoopsGuiParadigme extends XoopsSystemGui
             'absolute'  => 1);
 
         $tpl->append('navitems', array('link' => XOOPS_URL . '/admin.php','text' => _AD_INTERESTSITES, 'menu' => $menu));
+        
+		//add OPTIONS/links for local support
+        if (file_exists($file = XOOPS_ADMINTHEME_PATH . '/paradigme/language/' . $xoopsConfig['language'] . '/localsupport.php' )) {
+            $links = include XOOPS_ADMINTHEME_PATH . '/paradigme/language/' . $xoopsConfig['language'] . '/localsupport.php';
+            if ( count($links) > 0 ) {
+                $tpl->append('navitems', array('link' => XOOPS_URL . '/admin.php','text' => _AD_LOCALSUPPORT, 'menu' => $links));
+            }
+        }
 
         if (is_object($xoopsModule) || !empty($_GET['xoopsorgnews'])) {
-            return;
+                return;
         }
+        /*if (is_object($xoopsModule) || !empty($_GET['xoopsorgnews'])) {
+            return;
+        }*/
 
         foreach ($mods as $mod) {
             $rtn = array();

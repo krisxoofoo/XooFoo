@@ -4,9 +4,13 @@
 define("_AD_SYSOPTIONS","Options du syst&#232;me");
 define("_AD_INSTALLEDMODULES","Modules install&#233;s");
 
-define("_AD_XOOPSTHEMES","Th&#232;mes XOOPS");
-define("_AD_INTERESTSITES","Liens");
-
+define('_AD_XOOPSTHEMES','Th&#232;mes Xoops');
+define('_AD_XOOPSMODULES','Modules Xoops');
+define('_AD_INTERESTSITES','Le projet Xoops');
+define('_AD_LOCALSUPPORT','Support Francophone');
+define('_XOOPS_WEBSITE','Xoops.org');
+define('_SOURCEFORGE','Sourceforge');
+define('_AD_XDONATIONS','Faire une donation');
 
 define("THEME_WELLCOME",				"Bienvenue");
 define("THEME_PROFILE",					"Voir son profil");

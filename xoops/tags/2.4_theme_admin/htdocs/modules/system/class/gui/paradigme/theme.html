@@ -17,11 +17,29 @@
 	<!-- zone CONTENT -->
 		<div  id="xo-canvas-content">
 			<{if $modules}>
+	<table width="300" border="0">
+  <tr>
+    <td rowspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>		
+			
+			
+			
+			
+			
 				<table id="xo-index">
 					<tr>
-						<td id="xo-menusystem" class="CPindexOptions"><{includeq file="$theme_tpl/xo_menusystem.html"}></td>
+						<td rowspan="2" id="xo-menusystem" class="CPindexOptions"><{includeq file="$theme_tpl/xo_menusystem.html"}></td>
 						<td id="xo-modules" class="CPindexOptions"><{includeq file="$theme_tpl/xo_modules.html"}></td>
 					</tr>
+					<tr>
+						<td id="xo-modules" class="CPindexOptions"><{includeq file="$theme_tpl/xo_accordion.html"}></td>
+					</tr>
+					<!--{includeq file="$theme_tpl/xo_block.html"}-->
 				</table>
 			<{/if}>
 			

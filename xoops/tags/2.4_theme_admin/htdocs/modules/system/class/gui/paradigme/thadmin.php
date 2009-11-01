@@ -12,13 +12,13 @@
 xoops_load('gui', 'system');
 
 /**
- * Xoops Cpanel EXM GUI class
+ * Xoops Cpanel Paradigme GUI class
  *
  * @copyright   The XOOPS project http://sf.net/projects/xoops/
  * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package     system
  * @usbpackage  GUI
- * @since       2.4.0
+ * @since       2.4.1
  * @author      Kris <kris@xoofoo.org>
  * @version     $Id
  */
@@ -64,10 +64,10 @@ class XoopsGuiParadigme extends XoopsSystemGui
         var lis=navroot.getElementsByTagName("li");  
         for (i=0; i<lis.length; i++) {
         
-           /* If the LI has another menu level */
+           /* If the li has another menu level */
             if(lis[i].lastChild.tagName=="ul"){
             
-                /* assign the function to the LI */
+                /* assign the function to the li */
              	lis[i].onmouseover=function() {	
                 
                    /* display the inner menu */
@@ -81,7 +81,7 @@ class XoopsGuiParadigme extends XoopsSystemGui
     }
 }
 window.onload= function(){
-    /* pass the function the id of the top level UL */
+    /* pass the function the id of the top level il */
 
     /* remove one, when only using one menu */
     activateMenu("nav"); 
@@ -108,6 +108,58 @@ window.onload= function(){
         $tpl->assign('lang_insmodules', _AD_INSTALLEDMODULES);
         $tpl->assign('xoops_sitename', $xoopsConfig['sitename']);
 
+		//for system overview
+        $tpl->assign('lang_overview', _MD_CPANEL_OVERVIEW);
+        $tpl->assign('lang_phpextensions', _MD_CPANEL_PHPEXTENSIONS);
+        $tpl->assign('lang_about_xoops', _MD_ABOUT);
+        $tpl->assign('lang_about_xoops_text', _MD_ABOUT_TEXT);
+        $tpl->assign('lang_version', _MD_VERSION);
+        $tpl->assign('lang_version_xoops', _MD_VERSION_XOOPS);
+        $tpl->assign('lang_version_php', _MD_VERSION_PHP);
+        $tpl->assign('lang_version_mysql', _MD_VERSION_MYSQL);
+        $tpl->assign('lang_server_api_name', _MD_Server_API);
+        $tpl->assign('lang_os', _MD_OS);
+        $tpl->assign('lang_xoops_links', _MD_XOOPS_LINKS);
+
+		//start system overview
+        $tpl->assign('lang_xoops_version', XOOPS_VERSION);
+        $tpl->assign('lang_php_vesion', PHP_VERSION);
+        $tpl->assign('lang_mysql_version', mysql_get_server_info());
+        $tpl->assign('lang_server_api', PHP_SAPI);
+        $tpl->assign('lang_os_name', PHP_OS);
+        $tpl->assign('safe_mode', ini_get( 'safe_mode' ) ? 'On' : 'Off');
+        $tpl->assign('register_globals', ini_get( 'register_globals' ) ? 'On' : 'Off');
+        $tpl->assign('magic_quotes_gpc', ini_get( 'magic_quotes_gpc' ) ? 'On' : 'Off');
+        $tpl->assign('allow_url_fopen', ini_get( 'allow_url_fopen' ) ? 'On' : 'Off');
+        $tpl->assign('fsockopen', function_exists( 'fsockopen' ) ? 'On' : 'Off');
+        $tpl->assign('allow_call_time_pass_reference', ini_get( 'allow_call_time_pass_reference' ) ? 'On' : 'Off');
+        $tpl->assign('post_max_size', ini_get( 'post_max_size' ));
+        $tpl->assign('max_input_time', ini_get( 'max_input_time' ));
+        $tpl->assign('output_buffering', ini_get( 'output_buffering' ));
+        $tpl->assign('max_execution_time', ini_get( 'max_execution_time' ));
+        $tpl->assign('memory_limit', ini_get( 'memory_limit' ));
+        $tpl->assign('file_uploads', ini_get( 'file_uploads' ) ? 'On' : 'Off');
+        $tpl->assign('upload_max_filesize', ini_get( 'upload_max_filesize' ));
+        $tpl->assign('xoops_sitename', $xoopsConfig['sitename']);
+		
+        //for xoops links
+        $tpl->assign('lang_xoops_xoopsproject', _MD_XOOPSPROJECT);
+        $tpl->assign('lang_xoops_localsupport', _MD_LOCALSUPPORT);
+        $tpl->assign('lang_xoops_xoopscore', _MD_XOOPSCORE);
+        $tpl->assign('lang_xoops_xoopsthems', _MD_XOOPSTHEME);
+        $tpl->assign('lang_xoops_xoopswiki', _MD_XOOPSWIKI);
+        $tpl->assign('lang_xoops_xoopsbooks', _MD_XOOPSBOOKS);
+        $tpl->assign('lang_xgiftshop', _MD_XGIFTSHOP);
+        $tpl->assign('lang_xdonations', _MD_XDONATIONS);
+        $tpl->assign('lang_xdonations_text', _MD_XDONATIONS_TEXT);
+        $tpl->assign('lang_xoops_newmodule', _MD_NEWMODULE);
+        $tpl->assign('lang_xoops_xoopsfaq', _MD_XOOPSFAQ);
+        $tpl->assign('lang_xoops_codesvn', _MD_CODESVN);
+        $tpl->assign('lang_xoops_reportbug', _MD_REPORTBUG);
+		
+		
+		
+		
         // ADD MENU *****************************************
         //Add  CONTROL PANEL  Menu  items
         $menu = array();

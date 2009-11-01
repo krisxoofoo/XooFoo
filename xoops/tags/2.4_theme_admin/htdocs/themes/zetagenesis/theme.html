@@ -68,9 +68,12 @@
         <!-- include footer -->
         <{includeq file="$theme_name/xofooter.html"}>
     </div>
-
+	        
     <!--{xo-logger-output}-->
 
     </div>
+	<{if $xoops_isadmin}>
+	<{includeq file="$theme_name/xo_footerstatic.html"}>
+	<{/if}>
 </body>
 </html>

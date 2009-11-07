@@ -41,8 +41,8 @@ $US = array(
 	'nav-start' => 'Contr&#244;le Serveur',
 	// Server Control - Service
 	'nav-uservers' => 'D&#233;sinstaller les services',
-	'nav-rapaches' => 'Relancer le service Apache',
-	'nav-rmysqls' => 'Relancer le service MySQL',
+	'nav-rapaches' => 'Relancer le service &#34;Apache&#34;',
+	'nav-rmysqls' => 'Relancer le service &#34;MySQL&#34;',
 	// Server Control - Standard Program
 	'nav-sserver' => 'Stopper le serveur',
 	'nav-rmysql' => 'D&#233;marrer &#34;MySQL&#34;',
@@ -63,7 +63,7 @@ $US = array(
 	'nav-u2w' => 'Convertisseur Win - Unix',
 	'nav-smig' => 'Migration de serveur',
 	'nav-key' => 'Serveur Key & Cert Gen',
-	'nav-mysqlrestore' => 'Restaurer le mot de passe MySQL',
+	'nav-mysqlrestore' => 'Restaurer le mot de passe &#34;MySQL&#34;',
 	// Plugins Navigation
 	'nav-plugins' => 'Gestionnaire de Plugins',
 	'nav-pear' => 'Installation de &#34;Pear&#34;',
@@ -89,13 +89,13 @@ $US = array(
 	
 	'main-head' => 'Panneau d&#39;Administration '. $us_apanel_version .'',
 	'main-text' => '
-	Bienvenue dans Uniform Server '. $us_version .' ! Ceci est la section de gestion du serveur, vous pouvez le contr&#244;ler et/ou le param&#233;trer à partir cette interface d&#39;administration.<br />Actuellement ce gestionnaire est en version ALPHA, toutefois il est complet et fonctionnel. Nous l&#39;avons voulu facile d&#39;utilisation et convivial.<br />Vous pouvez &#233;galement traduire cette interface d&#39;administration dans votre langue. Si vous le r&#233;alisez, nous vous demandons de faire partager ce travail, en nous d&#233;posant une copie sur notre <a href="http://sourceforge.net/tracker/?atid=799696&group_id=53691&func=browse" target="_sf" title="SourceForge Translation Tracking">SourceForge Translation Tracking System</a> pour de prochains t&#233;l&#233;chargements.<br />Les traductions des pr&#233;c&#233;dentes versions ne sont plus fonctionnelles ! Cliquez sur le lien ci-dessus pour t&#233;l&#233;charger les mises à jour de celles-ci.<br />En outre, de nouvelles fonctions ont &#233;t&#233; ajout&#233;es et certaines am&#233;lior&#233;es. Certaines peuvent ne pas fonctionner sous certains environnements ou n&#233;cessiter l&#39;installation de plugins.<br />S&#39;il vous pla&icirc;t, reporter tout bug et erreur sur notre <a href="http://forum.uniformserver.com/" target="_forum" title="Forum Uniform Server">forum</a>.<br /><br />Merci d&#39;avance<br /><a href="http://www.uniformserver.com/" target="_home">L&#39;&#233;quipe de d&#233;veloppement d&#39;Uniform Server</a>',
+	Bienvenue dans Uniform Server '. $us_version .' ! Ceci est la section de gestion du serveur, vous pouvez le contr&#244;ler et/ou le param&#233;trer à partir cette interface d&#39;administration.<br />Actuellement ce gestionnaire est en version ALPHA, toutefois il est complet et fonctionnel. Nous l&#39;avons voulu facile d&#39;utilisation et convivial.<br />Vous pouvez &#233;galement traduire cette interface d&#39;administration dans votre langue. Si vous le r&#233;alisez, nous vous demandons de faire partager ce travail, en nous d&#233;posant une copie sur notre <a href="http://sourceforge.net/tracker/?atid=799696&group_id=53691&func=browse" target="_sf" title="SourceForge Translation Tracking">SourceForge Translation Tracking System</a> pour de prochains t&#233;l&#233;chargements.<br />Les traductions des pr&#233;c&#233;dentes versions ne sont plus fonctionnelles ! Cliquez sur le lien ci-dessus pour t&#233;l&#233;charger les mises à jour de celles-ci.<br />En outre, de nouvelles fonctions ont &#233;t&#233; ajout&#233;es et certaines am&#233;lior&#233;es. Certaines peuvent ne pas fonctionner sous certains environnements ou n&#233;cessiter l&#39;installation de plugins.<br />S&#39;il vous pla&#238;t, reporter tout bug et erreur sur notre <a href="http://forum.uniformserver.com/" target="_forum" title="Forum Uniform Server">forum</a>.<br /><br />Merci d&#39;avance<br /><a href="http://www.uniformserver.com/" target="_home">L&#39;&#233;quipe de d&#233;veloppement d&#39;Uniform Server</a>',
 	'main-secure' => 'Checklist &#34;S&#233;curit&#233;&#34;',
 	'main-text-0' => 'Changer le pseudo/mot de passe pour le panneau d&#39;administration <a href="apsetup.php" title="Modifier le pseudo et/ou mot de passe">ICI</a>',
 	'main-text-1' => 'Changer le pseudo/mot de passe pour le serveur <a href="psetup.php" title="Modifier le pseudo et/ou mot de passe">ICI</a>',
 	'main-text-2' => 'Changer le mot de passe &#34;root&#34; pour mysql en l&#39;&#233;ditant <a href="mqsetup.php" title="Modifier le mot de passe du root">ICI</a>',
 	'main-text-3' => 'D&#233;marrer la <a href="security.php" title="Ouvrir la console de s&#233;curit&#233;">Console de S&#233;curit&#233;</a> et v&#233;rifier si tout est OK.',
-	'main-text-4' => 'Changer le pseudo/mot de passe pour le serveur SSL <a href="sslpsetup.php">ICI</a>',
+	'main-text-4' => 'Changer le pseudo/mot de passe pour le serveur &#34;SSL&#34; <a href="sslpsetup.php">ICI</a>',
 		
 	//--------------------------------------------------------------------------------------------
 	// Update
@@ -127,41 +127,41 @@ $US = array(
 	
 	'server-stop-head1' => 'Arr&#234;tez les serveurs',
 	'server-stop-head2' => 'Arr&#234;t des serveurs',
-	'server-stop-txt1'  => 'Ce script va arr&#234;ter les serveurs Apache et MySQL',
+	'server-stop-txt1'  => 'Ce script va arr&#234;ter les serveurs &#34;Apache&#34; et &#34;MySQL&#34;',
 	'server-stop-txt2'  => 'Les serveurs sont arr&#234;t&#233;s, s&#39;il vous plaît attendez le bip de confirmation !',
-	'server-stop-txt3'  => 'Merci d&#39;utiliser <a href="http://www.uniformserver.com/">Uniform Server</a>.',
+	'server-stop-txt3'  => 'Merci d&#39;utiliser <a href="http://www.uniformserver.com/" rel="external">Uniform Server</a>.',
 	'server-confirm-button'  => 'Confirmez',
 
-	'start-mysql-head1'  => 'Lancer le serveur MySQL',
-	'start-mysql-head2'  => 'Le serveur MySQL est lanc&#233;.',
-	'start-mysql-txt1'   => 'Ce script va lancer le serveur MySQL.',
-	'start-mysql-txt2'   => 'Le serveur MySQL est maintenant op&#233;rationnel.',
-	'start-mysql-txt3'   => 'Le serveur MySQL a &#233;t&#233; d&#233;marr&#233;, vous pouvez maintenant l&#39;utiliser.',
-    'start-mysql-button' => 'Lancez MySQL',
+	'start-mysql-head1'  => 'Lancer le serveur &#34;MySQL&#34;',
+	'start-mysql-head2'  => 'Le serveur &#34;MySQL&#34; est lanc&#233;.',
+	'start-mysql-txt1'   => 'Ce script va lancer le serveur &#34;MySQL&#34;.',
+	'start-mysql-txt2'   => 'Le serveur &#34;MySQL&#34; est maintenant op&#233;rationnel.',
+	'start-mysql-txt3'   => 'Le serveur &#34;MySQL&#34; a &#233;t&#233; d&#233;marr&#233;, vous pouvez maintenant l&#39;utiliser.',
+    'start-mysql-button' => 'Lancez &#34;MySQL&#34;',
 
-	'stop-mysql-head1'  => 'Arr&#234;ter le serveur MySQL',
-	'stop-mysql-head2'  => 'Arr&#234;t du serveur MySQL.',
-	'stop-mysql-txt1'   => 'Ce script va arr&#234;ter le serveur MySQL.',
-	'stop-mysql-txt2'   => 'Le serveur MySQL est arr&#234;t&#233;.',
-	'stop-mysql-txt3'   => 'Le serveur MySQL n&#39;est pas op&#233;rationnel.',
-    'stop-mysql-button' => 'Stoppez MySQL',
+	'stop-mysql-head1'  => 'Arr&#234;ter le serveur &#34;MySQL&#34;',
+	'stop-mysql-head2'  => 'Arr&#234;t du serveur &#34;MySQL&#34;.',
+	'stop-mysql-txt1'   => 'Ce script va arr&#234;ter le serveur &#34;MySQL&#34;.',
+	'stop-mysql-txt2'   => 'Le serveur &#34;MySQL&#34; est arr&#234;t&#233;.',
+	'stop-mysql-txt3'   => 'Le serveur &#34;MySQL&#34; n&#39;est pas op&#233;rationnel.',
+    'stop-mysql-button' => 'Stoppez &#34;MySQL&#34;',
 
 	//--------------------------------------------------------------------------------------------
 	// Server Control - Services
 	//--------------------------------------------------------------------------------------------
 
-	'service-apache-head1' => 'Relancer le service Apache',
-	'service-apache-head2' => 'Red&#233;marrage du service Apache',
-	'service-apache-txt1'  => 'Ce script va relancer le service Apache.',
+	'service-apache-head1' => 'Relancer le service &#34;Apache&#34;',
+	'service-apache-head2' => 'Red&#233;marrage du service &#34;Apache&#34;',
+	'service-apache-txt1'  => 'Ce script va relancer le service &#34;Apache&#34;.',
 	'service-apache-txt2'  => 'Ceci peut prendre un peu de temps',
-	'service-apache-txt3'  => 'Le service Apache red&#233;marrage, attendez un peu <br /> Entre 2-10 secondes !' ,
+	'service-apache-txt3'  => 'Le service &#34;Apache&#34; red&#233;marrage, attendez un peu <br /> Entre 2-10 secondes !' ,
 	'service-apache-txt4'  => 'Apanel va &#234;tre recharg&#233;e pour prendre en compte la nouvelle configuration du serveur.',
 
-	'service-mysql-head1' => 'Relancer le service MySQL',
-	'service-mysql-head2' => 'Le service MySQL a &#233;t&#233; red&#233;marr&#233;.',
-	'service-mysql-txt1'  => 'Ce script va relancer le service MySQL.',
+	'service-mysql-head1' => 'Relancer le service &#34;MySQL&#34;',
+	'service-mysql-head2' => 'Le service &#34;MySQL&#34; a &#233;t&#233; red&#233;marr&#233;.',
+	'service-mysql-txt1'  => 'Ce script va relancer le service &#34;MySQL&#34;.',
 	'service-mysql-txt2'  => 'Celà peut prendre un peu de temps',
-	'service-mysql-txt3'  => 'Le service MySQL a &#233;t&#233; red&#233;marr&#233;, vous pouvez continuer à utiliser le serveur.',
+	'service-mysql-txt3'  => 'Le service &#34;MySQL&#34; a &#233;t&#233; red&#233;marr&#233;, vous pouvez continuer à utiliser le serveur.',
 
     'service-confirm-button'  => 'Confirmez',
 	
@@ -169,8 +169,8 @@ $US = array(
 	// Apache Configuration
 	//--------------------------------------------------------------------------------------------
 	
-	'aconfig-head' => 'Configuration Apache',
-	'aconfig-conf' => 'Param&#233;tres Apache',
+	'aconfig-head' => 'Configuration &#34;Apache&#34;',
+	'aconfig-conf' => 'Param&#233;tres &#34;Apache&#34;',
 	'aconfig-sname' => 'Nom du serveur',
 	'aconfig-wemail' => 'Courriel de l&#39;Administrateur',
 	'aconfig-difiles' => 'R&#233;pertoire des fichiers index',
@@ -276,9 +276,9 @@ $US = array(
 	// MySQL restore password
 	//--------------------------------------------------------------------------------------------
 	
-	'mysql-head1' => 'Restauration du mot de passe MySQL',
+	'mysql-head1' => 'Restauration du mot de passe &#34;MySQL&#34;',
 	'mysql-head2' => 'V&#233;rifier la restauration',
-	'mysql-head3' => 'Mot de passe MySQL restaur&#233;.',
+	'mysql-head3' => 'Mot de passe &#34;MySQL&#34; restaur&#233;.',
 
 	'mysql-txt1' => 'Cliquer sur &#34;Restaurez&#34; ! ceci prend quelques secondes.',
 	'mysql-txt2' => 'Le mot de passe a &#233;t&#233; restaur&#233;, vous pouvez continuer à utiliser le serveur..',
@@ -326,7 +326,7 @@ $US = array(
 
 	'sslpsetup-head' => 'Configuration Serveur Priv&#233; S&#233;curis&#233; (SSL)',
 	'sslpsetup-sub-0' => 'Gestion utilisateur',
-	'sslpsetup-text-0' => 'Installation de l&#39;identifiant et mot de passe pour votre serveur s&#233;curis&#233; priv&#233;. S&#39;il vous pla&icirc;t noter que vous devrez peut-&#234;tre activer cette fonction dans le fichier /wwws/.htaccess',
+	'sslpsetup-text-0' => 'Installation de l&#39;identifiant et mot de passe pour votre serveur s&#233;curis&#233; priv&#233;. S&#39;il vous pla&#238;t noter que vous devrez peut-&#234;tre activer cette fonction dans le fichier /wwws/.htaccess',
 	'sslpsetup-user' => 'Identifiant',
 	
 	'sslpsetup-pass' => 'Mot de passe',
@@ -350,7 +350,7 @@ $US = array(
 	//--------------------------------------------------------------------------------------------
 
 	'secure-head' => 'Centre de S&#233;curit&#233;',
-	'secure-sub-0' => 'Gestion S&#233;curit&#233; Utilisateur',
+	'secure-sub-0' => 'Gestion S&#233;curit&#233; &#34;Utilisateur&#34;',
 	'secure-sub-1' => 'S&#233;curit&#233; du serveur',
 	'secure-text-0' => 'Cette section du centre de s&#233;curit&#233; v&#233;rifiera tous les r&#233;glages de gestion des utilisateurs, pour s&#39;assurer que tout est r&#233;gl&#233;. Elle vous indiquera si quelque chose doit &#234;tre modifi&#233;e.',
 	
@@ -364,8 +364,8 @@ $US = array(
 	'secure-text-8' => 'Cette section du centre de s&#233;curit&#233; v&#233;rifiera si les pr&#233;f&#233;rences et param&#233;tres du serveur sont corrects et appropri&#233;s.',
 	'secure-text-9' => 'Safe Mode PHP',
 	'secure-text-10' => 'Cette v&#233;rification regarde si PHP d&#233;marre en &#34;SAFE MODE&#34;. Maintenant, PHP ne doit pas fonctionner en SAFE MODE, mais si vous voulez une s&#233;curit&#233; suppl&#233;mentaire, vous pouvez la r&#233;gler en cliquant sur le lien &#34;NON-SECURISE&#34;.',
-	'secure-text-p' => 'Serveur personnel',
-	'secure-text-s' => 'Serveur MySQL',
+	'secure-text-p' => 'Serveur &#34;personnel&#34;',
+	'secure-text-s' => 'Serveur &#34;MySQL&#34;',
 	'secure-text-11' => 'Acc&egrave;s au Panneau d&#39;administration',
 	'secure-text-12' => 'Acc&egrave;s au serveur',
 	'secure-text-12ssl' => 'Acc&#232;s Serveur (SSL)',

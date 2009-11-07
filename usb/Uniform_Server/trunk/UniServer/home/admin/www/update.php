@@ -67,7 +67,7 @@ else{
 ?>
 	<?php echo  $US['update-get']?>
 	<br />
-	<a href="http://www.uniformserver.com/" target="_blank"><h2><?php echo  $US['nav-web']?></h2></a>
+	<a href="http://www.uniformserver.com/" rel="external"><h2><?php echo  $US['nav-web']?></h2></a>
 <?php
 }
 ?>

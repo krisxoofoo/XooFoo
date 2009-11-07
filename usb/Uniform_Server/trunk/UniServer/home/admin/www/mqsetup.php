@@ -88,7 +88,7 @@ echo "MySQL DB failed to update";
 ?>
 
     <div id="main">
-    <h2>» <?php echo  $US['mqsetup-head']?></h2>
+    <h2>&#187; <?php echo  $US['mqsetup-head']?></h2>
     <h3><?php echo  $US['mqsetup-sub-0']?></h3>
     <p>
     <?php echo  $US['mqsetup-success']?>
@@ -107,7 +107,7 @@ else {
 ?>
 
     <div id="main">
-        <h2>» <?php echo  $US['mqsetup-head']?></h2>
+        <h2>&#187; <?php echo  $US['mqsetup-head']?></h2>
         <h3><?php echo  $US['mqsetup-sub-0']?></h3>
 
         <p><?php echo  $US['mqsetup-text-0']?></p>

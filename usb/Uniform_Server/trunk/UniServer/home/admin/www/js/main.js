@@ -17,3 +17,12 @@ function h(t)
 	t.blur();
 	last=t;
 }
+
+function externalRel() {
+    rels = document.getElementsByTagName("a");
+    for (i=0;i<rels.length;i++) {
+        if (rels[i].getAttribute("rel") == "external") {
+            rels[i].onclick = function() {window.open(this.href);}
+        }
+    }
+}

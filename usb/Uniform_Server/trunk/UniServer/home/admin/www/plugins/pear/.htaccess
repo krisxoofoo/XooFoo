@@ -1,0 +1,9 @@
+# A dirty hack for Pear:
+# Prevents errors being displayed and error logging.
+# Hopefully they will be resolved by Pear!!!
+
+php_value display_errors 0
+php_value display_startup_errors 0
+php_flag log_errors off
+
+

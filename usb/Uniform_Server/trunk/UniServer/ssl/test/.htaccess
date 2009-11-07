@@ -1,0 +1,18 @@
+# This file provides security to a folder
+# Limiting access to a single user Mr X 
+
+SSLOptions +StrictRequire                  
+SSLRequireSSL                              
+SSLRequire %{HTTP_HOST} eq "localhost"     
+ErrorDocument 403 https://localhost        
+
+SSLVerifyClient require                    
+SSLVerifyDepth  1                          
+SSLOptions +StdEnvVars                     
+SSLRequire %{SSL_CLIENT_S_DN_CN} eq "Mr X" 
+
+ 
+
+
+
+

@@ -1,0 +1,21 @@
+ #include <windows.h>
+#include "new_startres.h"
+/* --- The following code comes from e:\lcc\lib\wizard\default.rc. */
+IDMAINMENU MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "&New",IDM_NEW
+		MENUITEM "&Open",IDM_OPEN
+		MENUITEM "&E&xit",IDM_EXIT
+	END
+	POPUP "&Help"
+	BEGIN
+		MENUITEM "&About",IDM_ABOUT
+	END
+END
+IDACCEL ACCELERATORS
+BEGIN
+	"Q",	IDM_EXIT,VIRTKEY,CONTROL
+END
+uslogo ICON "uslogo.ico"

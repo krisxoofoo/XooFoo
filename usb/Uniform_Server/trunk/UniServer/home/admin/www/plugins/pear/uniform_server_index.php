@@ -1,0 +1,38 @@
+<?php
+# *****************************************************************
+# Uniform Server - 1-3-09
+# Gets and uses absoute path $path
+# *****************************************************************
+
+/**
+ * Put this file in a web-accessible directory as index.php (or similar)
+ * and point your webbrowser to it.
+ */
+
+$path = realpath('');    // current absolute path 
+
+// $pear_dir must point to a valid PEAR install (=contains PEAR.php)
+$pear_dir = $path.'\PEAR'; // default of install
+
+// OPTIONAL: If you have a config file at a non-standard location,
+// uncomment and supply it here:
+$pear_user_config = $path.'\pear.conf';
+
+// OPTIONAL: If you have protected this webfrontend with a password in a
+// custom way, then uncomment to disable the 'not protected' warning:
+$pear_frontweb_protected = true; // localhost or .htaccess protextion 
+
+/***********************************************************
+ * Following code tests $pear_dir and loads the webfrontend:
+ */
+if (!file_exists($pear_dir.'/PEAR.php')) {
+    trigger_error('No PEAR.php in supplied PEAR directory: '.$pear_dir,
+                    E_USER_ERROR);
+}
+ini_set('include_path', $pear_dir);
+require_once('PEAR.php');
+
+// Include WebInstaller
+putenv('PHP_PEAR_INSTALL_DIR='.$pear_dir); // needed if unexisting config
+require_once('pearfrontendweb.php');
+?>

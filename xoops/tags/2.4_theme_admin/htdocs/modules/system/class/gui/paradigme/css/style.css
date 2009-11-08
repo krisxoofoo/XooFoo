@@ -77,7 +77,7 @@ strong {font-weight:bold;}
 #xo-index {	width: 100%; height:auto; border: 0;}
 #xo-modules {width: 40% !important;}
 #xo-menusystem {	width: 60% !important;}
-
+#xo-logger-output {margin-bottom : 30px;}
 /*========== content ==============*/
 .bg_menu {}
 .bg_content {}
@@ -252,7 +252,6 @@ th {background-color: #56BAFA; padding : 4px; vertical-align : middle; color: #f
 .cpicon span { display: block; font-weight: bold;}
 .cpicon span.uno{ color: Blue; text-decoration: underline;}
 .cpicon span.unor{ color: #CC0000; text-decoration: underline;}
-
 
 /*========== xo_accordion.html ==========*/
 #xo-accordion { height: auto; line-height: 1.4em;}

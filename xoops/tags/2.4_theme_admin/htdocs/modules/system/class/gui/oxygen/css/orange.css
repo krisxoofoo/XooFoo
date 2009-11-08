@@ -696,3 +696,22 @@ tr.foot td {
 	color: #333;
 	display: none;
 }
+/*==================== for content =========================*/
+#xo-index {
+	width: 100%;
+	border: 0;
+}
+#xo-modules {	width: 69%}
+
+#xo-accordion {	width: 29%}
+/* ==================== for footer ====================*/
+#xo-footer {
+	padding: 4px;
+	background-color: #333;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #666;
+	text-align: center;
+	font-size: 10px;
+	font-weight: bold;
+	color: #f7f7f7;
+}

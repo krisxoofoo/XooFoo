@@ -11,25 +11,24 @@ include "$root\home\admin\www\includes\.version";
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 </head>
 <body>
-
 <div id="wrap">
-  <div id="header"><a href="http://www.uniformserver.com" target="_1"><img src="images/logo.jpg" align="left" alt="Uniform Server" /></a>
+  <div id="header"><a href="http://www.uniformserver.com"><img src="images/logo.jpg" align="left" alt="Uniform Server" /></a>
     <h3 style="line-height: 18px; margin-left: 5px;" align="left">
       Uniform Server <?php include "$root\home\admin\www\includes\.version"; ?> <br />
       Apache 2.2.14 <br />
       MySQL 5.1.40 <br />
-      PHP 5.3.1RC3 <br />
-      UniTray <br />
+      PHP 5.3.1RC3.0 <br />
+      SSL Enabled <br />
     </h3>
   </div>
 
 <?php
-// Get SSL port number
-$file = fopen("$root\usr\local\apache2\conf\ssl.conf", "r") or exit("Unable to open file!");
+// Get Apache port number
+$file = fopen("$root\usr\local\apache2\conf\httpd.conf", "r") or exit("Unable to open file!");
 
 while(!feof($file)){
  $line = fgets($file);                         // Get line
- if (stristr($line,"Listen")){                 // Search for string
+ if (preg_match('/^Listen/', $line)) {
    $tempArray = explode(" ",$line);            // Split at space 
    $tempArray[1]= ltrim( $tempArray[1], " " ); // clean left
    $tempArray[1]= rtrim( $tempArray[1], " " ); // clean right
@@ -41,24 +40,14 @@ fclose($file);
 ?>
 
   <div id="menu">
-  <a href="http://<?php echo  getenv("HTTP_HOST");?>/apanel/">Administration du serveur</a>
-<?php 
-   $filename = $root.'/usr/local/apache2/conf/ssl.crt/server.crt';
-   if (file_exists($filename)) { 
-     print " - <a href=\"https://localhost:".$tempArray[1]."\">View Secure Pages</a>"; 
-   }
-   else { 
-    print ""; 
-   } 
-   ?>
-</div>
-
+  <a href="http://localhost:<?php echo $tempArray[1];?>/apanel/">Administration du serveur</a> - 
+  <a href="http://localhost:<?php echo  $tempArray[1];?>/">	Revenir en mode non-s&#233;curis&#233;</a></div>
   <div id="content">
     <h2>Bienvenue sur Uniform Server</h2>
-    <p>Bienvenue sur la page de d&#233;marrage par d&#233;faut d&#39;Uniform Server.<br />Cette page et tout autre fichier se trouvent &#224; partir du dossier racine du serveur principal &#34;/www/&#34;. Une aide compl&#233;mentaire sur 5-Nano peut-&#234;tre trouv&#233;e sur le <a target="_1" href="http://wiki.uniformserver.com/index.php/Category:Uniform_Server_5.0-Nano">Wiki</a>.</p>
+    <p>Bienvenue sur la page de d&#233;marrage par d&#233;faut d&#39;Uniform Server.<br />Cette page et tout autre fichier se trouvent &#224; partir du dossier racine du serveur principal &#34;/ssl/&#34;.<br />Une aide compl&#233;mentaire sur 5-Nano peut-&#234;tre trouv&#233;e sur le <a target="_1" href="http://wiki.uniformserver.com/index.php/Category:Uniform_Server_5.0-Nano">Wiki</a>.</p>
     <p>&nbsp;</p>
     <h2>Sp&#233;cifications du serveur</h2>
-  <table>
+ <table>
    <tr valign="top">
    <td>
     <ul>

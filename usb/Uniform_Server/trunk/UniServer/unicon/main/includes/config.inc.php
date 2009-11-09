@@ -87,7 +87,10 @@ $usf_apache_cnf       = "$us_usr/local/apache2/conf/httpd.conf";
 $usf_apache_ssl_cnf   = "$us_usr/local/apache2/conf/ssl.conf";
 $usf_apache_pid       = "$us_usr/local/apache2/logs/httpd.pid";
 
-$usf_my_cnf           = "$us_usr/local/mysql/my.cnf";
+$usf_my_ini           = "$us_usr/local/mysql/my.ini";         // MySQL configuration file
+$usf_small_my_ini     = "$us_usr/local/mysql/small_my.ini";   // MySQL alternative configuration file
+$usf_medium_my_ini    = "$us_usr/local/mysql/medium_my.ini";  // MySQL alternative configuration file
+
 $usf_mysql_pid        = "$us_usr/local/mysql/data/mysql.pid";
 
 $usf_php_ini          = "$us_php/php.ini";
@@ -122,6 +125,6 @@ $apanel = "$server/apanel";
 
 /* Service names */
 
-$us_apache_service_name = "ApacheS2";     // Default ApacheS 1 digit incremented for multi-servers
-$us_mysql_service_name  = "MySQLS2";      // Default MySQLS 1  digit incremented for multi-servers
+$us_apache_service_name = "ApacheS1";     // Default ApacheS 1 digit incremented for multi-servers
+$us_mysql_service_name  = "MySQLS1";      // Default MySQLS 1  digit incremented for multi-servers
 ?>

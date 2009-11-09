@@ -345,7 +345,7 @@ if (! defined('PMA_MINIMUM_COMMON')) {
                         $debugstr = $GLOBALS['strSQPBugUnclosedQuote'] . ' @ ' . $startquotepos. "\n"
                                   . 'STR: ' . htmlspecialchars($quotetype);
                         PMA_SQP_throwError($debugstr, $sql);
-                        return $sql;
+                        return $sql_array;
                     }
 
                     // If the quote is the first character, it can't be
@@ -496,7 +496,7 @@ if (! defined('PMA_MINIMUM_COMMON')) {
                             $debugstr = $GLOBALS['strSQPBugInvalidIdentifer'] . ' @ ' . ($count1+1) . "\n"
                                       . 'STR: ' . htmlspecialchars(PMA_substr($sql, $count1, $count2 - $count1));
                             PMA_SQP_throwError($debugstr, $sql);
-                            return $sql;
+                            return $sql_array;
                         }
                     }
                     if ($is_digit && (!$is_hex_digit) && (($c2 == 'e') || ($c2 == 'E'))) {
@@ -585,7 +585,7 @@ if (! defined('PMA_MINIMUM_COMMON')) {
                             break;
                     }
                     PMA_SQP_arrayAdd($sql_array, 'punct' . $t_suffix, $punct_data, $arraysize);
-                } elseif (PMA_STR_binarySearchInArr($punct_data, $allpunct_list_pair, $allpunct_list_pair_size)) {
+                } elseif ($punct_data == $GLOBALS['sql_delimiter'] || PMA_STR_binarySearchInArr($punct_data, $allpunct_list_pair, $allpunct_list_pair_size)) {
                     // Ok, we have one of the valid combined punct expressions
                     PMA_SQP_arrayAdd($sql_array, 'punct', $punct_data, $arraysize);
                 } else {
@@ -613,7 +613,7 @@ if (! defined('PMA_MINIMUM_COMMON')) {
                         $debugstr =  $GLOBALS['strSQPBugUnknownPunctuation'] . ' @ ' . ($count1+1) . "\n"
                                   . 'STR: ' . htmlspecialchars($punct_data);
                         PMA_SQP_throwError($debugstr, $sql);
-                        return $sql;
+                        return $sql_array;
                     }
                     PMA_SQP_arrayAdd($sql_array, 'punct', $punct_data, $arraysize);
                     continue;
@@ -627,7 +627,7 @@ if (! defined('PMA_MINIMUM_COMMON')) {
             $debugstr = 'C1 C2 LEN: ' . $count1 . ' ' . $count2 . ' ' . $len .  "\n"
                       . 'STR: ' . $GLOBALS['PMA_substr']($sql, $count1, $count2 - $count1) . "\n";
             PMA_SQP_bug($debugstr, $sql);
-            return $sql;
+            return $sql_array;
 
         } // end while ($count2 < $len)
 

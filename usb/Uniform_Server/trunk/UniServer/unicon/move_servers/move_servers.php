@@ -308,7 +308,21 @@ if($Disable_eAccelerator == "Y"){
   $s_str = "port=".$MySQL_port_old;
   $s_str = preg_quote($s_str,'/');        // Convert to regex format
   $s_str = '/'.$s_str.'/';                // Create regex pattern
-  file_search_replace($usf_my_cnf,$s_str,$r_str);
+  file_search_replace($usf_my_ini,$s_str,$r_str);
+
+// Update MySQL small config with new port
+  $r_str = "port=".$MySQL_port;
+  $s_str = "port=".$MySQL_port_old;
+  $s_str = preg_quote($s_str,'/');        // Convert to regex format
+  $s_str = '/'.$s_str.'/';                // Create regex pattern
+  file_search_replace($usf_small_my_ini,$s_str,$r_str);
+
+// Update MySQL medium config with new port
+  $r_str = "port=".$MySQL_port;
+  $s_str = "port=".$MySQL_port_old;
+  $s_str = preg_quote($s_str,'/');        // Convert to regex format
+  $s_str = '/'.$s_str.'/';                // Create regex pattern
+  file_search_replace($usf_medium_my_ini,$s_str,$r_str);
 
 // Update Apanel redirect.html to new port 
   $r_str = ":".$Apache_port;

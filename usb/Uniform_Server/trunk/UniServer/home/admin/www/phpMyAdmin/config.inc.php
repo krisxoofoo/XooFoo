@@ -35,9 +35,9 @@ $cfg['blowfish_secret'] = '';
   $pathArray = explode("\\home",$path); 
   $drive="$pathArray[0]"; //drive letter and any sub-folders 
   $drive=str_replace("\\","/",$drive); //change backslash to forward slash
-  $my_cnf_file = "$drive/usr/local/mysql/my.cnf";                 // MySQL configuration file
+  $my_ini_file = "$drive/usr/local/mysql/my.ini";                 // MySQL configuration file
 
-  $file = fopen($my_cnf_file, "r") or exit("Unable to open file!");
+  $file = fopen($my_ini_file, "r") or exit("Unable to open file!");
 
   while(!feof($file)){
    $line = fgets($file);                         // Get line

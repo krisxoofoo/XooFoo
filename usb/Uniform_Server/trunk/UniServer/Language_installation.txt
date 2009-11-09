@@ -1,24 +1,36 @@
-Install languages:
- Double click on file language_pack.exe
- This creates the following four files in folder UniServer
-   English.exe – Reference template 
-   French.exe
-   German.exe
-   Russian.exe
+-----------------
+Extract languages
+-----------------
 
+ Double click on file language_pack.exe
+ This creates the following five files in folder UniServer
+   English.exe          – Reference template – Restores UniTray 
+   French.exe           – Translator Kris
+   German.exe           – Translator – No takers 
+   Russian.exe          – Translator  Andrey
+   PortugueseBR_1_0.exe – Translator Gopala
+
+------------------
 Install a language
+------------------
+
  Stop server if running
  Double click one of the above files.
  Allow overwriting
 
 The following areas are modified:
- English : UniTray                  
- French:   UniTray            Apanel  phpMyAdmin  Documents folder added language
- German:   UniTray            Apanel  phpMyAdmin  Documents folder added  language
- Russian:  UniTray-English    Apanel  phpMyAdmin  Documents folder added language
+ English:     UniTray                  
+ French:      UniTray            Apanel  phpMyAdmin  Documents folder added language
+ German:      UniTray            Apanel  phpMyAdmin  Documents folder added language
+ Russian:     UniTray-English    Apanel  phpMyAdmin  Documents folder added language
+ PortugueseBR UniTray            Apanel  phpMyAdmin  Documents folder added language
+
+-----
+Notes
+-----
 
 Note 1: Russian: UniTray is not UTF-8 Compliant hence UniTray is in English
-        We are looking for a viable solution to this issue.
+        A viable solution has been proposed.
 
 Note 2: UniTray does not have the capability to switch between languages this is not
         a problem; a user would select his or here prime language.
@@ -26,9 +38,14 @@ Note 2: UniTray does not have the capability to switch between languages this is
 Note 3: If you install all languages Apanel and phpMyAdmin allow switching
         between installed languages.
 
-Note to translators:
+-------------------
+Note to translators
+-------------------
   I have added all updates however the files require checking.
   Would you please PM any pages that require updating or replacing
   thank you for your time and effort.
+
+  Portuguese translation pack is almost complete a few documentation pages remain outstanding.
+  Many thanks Gopala most appreciated.
 
 

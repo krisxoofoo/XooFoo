@@ -6,7 +6,7 @@
 $root= substr($_SERVER["DOCUMENT_ROOT"],0,-4);
 include "$root\home\admin\www\includes\.version"; 
 ?></title>
-<meta name="Description" content="Uniform Server 4.0-Mona." />
+<meta name="Description" content="Uniform Server 5.4-Nano." />
 <meta name="Keywords" content="Uniform Server, MPG, Mike, Ric, UniServer, Olajide" />
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 </head>
@@ -18,7 +18,7 @@ include "$root\home\admin\www\includes\.version";
       Uniform Server <?php include "$root\home\admin\www\includes\.version"; ?> <br />
       Apache 2.2.14 <br />
       MySQL 5.1.40 <br />
-      PHP 5.3.1RC2 <br />
+      PHP 5.3.1RC3 <br />
       UniTray <br />
     </h3>
   </div>
@@ -64,8 +64,8 @@ fclose($file);
     <ul>
       <li> Apache 2.2.14</li>
       <li> MySQL 5.1.40-community</li>
-      <li> PHP 5.3.1RC2</li>
-      <li> phpMyAdmin  3.2.2.1</li>
+      <li> PHP 5.3.1RC3</li>
+      <li> phpMyAdmin  3.2.3</li>
       <li> ActivePerl 5.10.0.1005 - Plugin</li>
       <li> ActivePerl 5.10.0.1006 - Plugin</li>
       <li> UniTray</li>

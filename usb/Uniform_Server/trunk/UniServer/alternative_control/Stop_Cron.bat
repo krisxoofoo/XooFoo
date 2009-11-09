@@ -13,7 +13,7 @@ rem ##################################################
 rem ### working directory current folder 
 pushd %~dp0
 
-..\usr\local\php\php.exe  ..\unicon\main\stop_servers.php 16
+..\usr\local\php\php.exe -c ..\usr\local\php\php-cli.ini ..\unicon\main\stop_servers.php 16
 
 rem ..\unicon\program\unidelay.exe 3
 pause

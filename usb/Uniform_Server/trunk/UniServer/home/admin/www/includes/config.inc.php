@@ -62,7 +62,7 @@ $usf_apache_ssl_cnf   = "$us_usr/local/apache2/conf/ssl.conf";
 $usf_apache_pid       = "$us_usr/local/apache2/logs/httpd.pid";
 
 
-$usf_my_cnf           = "$us_usr/local/mysql/my.cnf";
+$usf_my_ini           = "$us_usr/local/mysql/my.ini";
 
 $usf_con_functions = "$base_f/unicon/main/includes/functions.php"; // Control functions 
 
@@ -76,9 +76,11 @@ $htpasswd    = "$base_f/htpasswd/";
 $aphtpasswd  = "$htpasswd/home/admin/www/.htpasswd";
 $whtpasswd   = "$htpasswd/www/.htpasswd";
 $whtpasswds  = "$htpasswd/ssl/.htpasswd";
-$usf_mysql_passwd     = "$us_home/admin/www/mysql_password";
-$ssl_file    = "$base_f/usr/local/apache2/conf/ssl.crt/server.crt"; // Created when newcert generated
-$my_cnf_file = "$base_f/usr/local/mysql/my.cnf";                    // MySQL configuration file
+$usf_mysql_passwd   = "$us_home/admin/www/mysql_password";
+$ssl_file           = "$base_f/usr/local/apache2/conf/ssl.crt/server.crt"; // Created when newcert generated
+$my_ini_file        = "$base_f/usr/local/mysql/my.ini";                    // MySQL configuration file
+$small_my_ini_file  = "$base_f/usr/local/mysql/small_my.ini";              // MySQL alternative configuration file
+$medium_my_ini_file = "$base_f/usr/local/mysql/medium_my.ini";             // MySQL alternative configuration file
 
 $usf_perl      = "$us_usr/bin/perl.exe";              // Check perl installed 
 
@@ -98,6 +100,6 @@ $apanel       = "$server/apanel";
 
 /* Service names */
 
-$us_apache_service_name = "ApacheS2";     // Default ApacheS 1 digit incremented for multi-servers
-$us_mysql_service_name  = "MySQLS2";      // Default MySQLS 1  digit incremented for multi-servers
+$us_apache_service_name = "ApacheS1";     // Default ApacheS 1 digit incremented for multi-servers
+$us_mysql_service_name  = "MySQLS1";      // Default MySQLS 1  digit incremented for multi-servers
 ?>

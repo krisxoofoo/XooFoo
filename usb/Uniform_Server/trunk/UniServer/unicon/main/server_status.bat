@@ -13,7 +13,7 @@ rem ##################################################
 rem ### working directory current folder 
 pushd %~dp0
 
-..\..\usr\local\php\php.exe server_status.php
+..\..\usr\local\php\php.exe -c ..\..\usr\local\php\php-cli.ini server_status.php
 
 pause
 

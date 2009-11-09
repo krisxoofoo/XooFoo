@@ -241,8 +241,8 @@ function ssl_enabled(){
 
 //=== Get MySQL port ==========================================================
 function get_mysql_port(){
- global $usf_my_cnf;
-  if ($filearray=file($usf_my_cnf)) {                      // read file into array
+ global $usf_my_ini;
+  if ($filearray=file($usf_my_ini)) {                // read file into array
     foreach ($filearray as $txt) {                   // scan array for port
      if(preg_match("/^port=(\d+)/", $txt,$matches)){ // check $text save $matches  
        $mysql_port =  $matches[1];                   // match found save port number                                   
@@ -298,13 +298,13 @@ function start_mysql(){
   // Global variables for paths and files
   global $usf_uniserv;
   global $us_mysql_bin;
-  global $usf_my_cnf;
+  global $usf_my_ini;
   $mysql_exe = get_mysql_exe();             // Get program name 
 
   // Build command line
   $cmd1 = "start ";
   $cmd2 = "$usf_uniserv \"";
-  $cmd3 = "$us_mysql_bin/$mysql_exe --defaults-file=$usf_my_cnf\"";
+  $cmd3 = "$us_mysql_bin/$mysql_exe --defaults-file=$usf_my_ini\"";
   $cmd=$cmd1.$cmd2.$cmd3;
   //print $cmd; // Test code
 
@@ -352,10 +352,10 @@ function kill_mysql(){
 function install_mysql_service(){
  global $us_mysql_bin;
  global $us_mysql_service_name;
- global $usf_my_cnf;
+ global $usf_my_ini;
 
  $MySQL_exe = get_mysql_exe();
-// $cmd = "$us_mysql_bin/$MySQL_exe --install $us_mysql_service_name --defaults-file=$usf_my_cnf";
+// $cmd = "$us_mysql_bin/$MySQL_exe --install $us_mysql_service_name --defaults-file=$usf_my_ini";
  $cmd = "$us_mysql_bin/$MySQL_exe --install $us_mysql_service_name ";
  exec($cmd,$dummy,$return);      // Install service 
  set_mysql_tracker('service');   // Set tracker to 'service' Prevents 
@@ -524,12 +524,11 @@ function get_cron_tracker(){
 // Determines if server has been moved.
 // If moved updates configuration files: 
 //   usr\local\apache2\conf\httpd.conf
-//   usr\local\mysql\my.cnf
+//   usr\local\mysql\my.ini
 //   usr\local\php\php.ini
 //   usr\local\php\php.ini-production_nano
 //   usr\local\php\php.ini-delvelopment-nano
 //   unicon\docs\redirect.html
-//   all .htaccess files 
 //   all files in cgi-bin (Perl shebang header)
  
 function run_location_tracker(){
@@ -537,7 +536,9 @@ function run_location_tracker(){
   global $base_f;                           // Current server base folder
   global $usf_apache_cnf;                   // Apache configuration file
   global $usf_apache_ssl_cnf;               // Apache SSL configuration file
-  global $usf_my_cnf;                       // MySQL  configuration file
+  global $usf_my_ini;                       // MySQL  configuration file
+  global $usf_small_my_ini;                 // MySQL  alternative configuration file
+  global $usf_medium_my_ini;                // MySQL  alternativeconfiguration file
   global $usf_php_ini;                      // PHP configuration file
   global $usf_php_ini_prod;                 // PHP production configuration file
   global $usf_php_ini_dev;                  // PHP pdelvelopment configuration file
@@ -551,7 +552,9 @@ function run_location_tracker(){
 
     file_search_replace($usf_apache_cnf,$s_str,$base_f);      // Update Apache cnf
     file_search_replace($usf_apache_ssl_cnf,$s_str,$base_f);  // Update Apache SSL cnf
-    file_search_replace($usf_my_cnf,$s_str,$base_f);          // Update MySQL cnf
+    file_search_replace($usf_my_ini,$s_str,$base_f);          // Update MySQL ini
+    file_search_replace($usf_small_my_ini,$s_str,$base_f);    // Update alternative MySQL ini
+    file_search_replace($usf_medium_my_ini,$s_str,$base_f);   // Update alternative MySQL ini
 
     file_search_replace($usf_php_ini,$s_str,$base_f);      // Update PHP ini
     file_search_replace($usf_php_ini_prod,$s_str,$base_f); // Update PHP production ini
@@ -573,14 +576,6 @@ function run_location_tracker(){
     $s_str = '/'.$s_str.'/';                                // Create regex pattern
 
     file_search_replace($file,$s_str,$new_str);             // Update redirection file
-
-    //=== Update all .htaccess files with new path ===========
-    $start_dir   = $base_f;                             // Folder UniServer
-    $file_type   = '/(\.htaccess)/' ;                   // List of file types
-    $search_str  = get_location_tracker();              // Old path
-    $search_str  = '/'.preg_quote($search_str,'/').'/'; // Convert to regex format   
-    $replace_str = $base_f;                             // New path
-    recursive_search_replace($start_dir,$file_type,$search_str,$replace_str);
 
     //=== Update shebang in all files in folder cgi-bin and sub-folders ===========
     if (perl_installed()){                    // Only update if Perl installed
@@ -826,7 +821,7 @@ function recursive_copy($src,$dst){
 // Inputs:  $start_dir   Absolute or relative path to starting folder. Do not
 //                       include_once a forward slash at the end. c:/test ./test 
 //          $file_type   A regex patern containg file types to be searched 
-//                       e.g.  $file_type = '/(\.txt|\.cnf|\.conf)/' 
+//                       e.g.  $file_type = '/(\.txt|\.ini|\.conf)/' 
 //          $search_str  A regex patern e.g $search_str  = '/\nListen\s\d+/'
 //          $replace_str A plain text string e.g. $replace_str = "\nListen 8080"
 //

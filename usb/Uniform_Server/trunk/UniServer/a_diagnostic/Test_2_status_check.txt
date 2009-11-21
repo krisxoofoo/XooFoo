@@ -1,0 +1,66 @@
+
+ This test runs a status check on the servers.
+ First operation is to rewrite all absolute paths in the configuration files.
+
+ 1) Run: Batch file server_status.bat
+ 2) Expected result: Similar to that shown below
+
+ ------------------- Expected result 3 --------------------------
+
+ Your Internet IP Address = xx.xxx.x.xxx
+ Accessible from Internet = NO
+ Cron run status          = Not running
+ PHP INI: php.ini file    = Production
+ APACHE SERVER:
+   Apache port            = 80  ------------- See Note 1
+   Apache SSL port        = 443 ------------- See Note 1
+   Apache executable name = Apache.exe
+   Apache service name    = ApacheS1
+   Apache SSL server      = Disabled
+   Apache run status      = Not running
+   Apache install status  = Free to install
+ MySQL SERVER:
+   MySQL port             = 3306 ------------- See Note 1
+   MySQL executable name  = mysqld-opt.exe
+   MySQL service name     = MySQLS1
+   MySQL run status       = Not running
+   MySQL install status   = Free to install
+ PORT STATUS:
+   Apache port     = 80 Is free to use --------- See Note 2
+   Apache SSL port = 443 Is free to use -------- See Note 2
+   MySQL port      = 3306 Is free to use. ------ See Note 2
+ Press any key to continue . . .
+ ----------------------------------------------------------------
+ Note 1: These values are read directly from configuration files and confirm
+         CLI is running and files are readable.
+
+ Note 2: If either of these display undefined it means Apache and or MySQL
+         unexpectedly terminated.
+
+ ---------
+ Important
+ ---------
+ Important confirm paths have been updated (files are writable).
+
+ Open file: UniServer\unicon\main\location_tracker.txt
+ The default is: C:/Nano_5_4/UniServer
+ The value should be the full path to folder UniServer
+ and match your installed location.
+
+ Now open file: UniServer\usr\local\apache2\conf\httpd.conf
+ Locate this line: DocumentRoot 
+ The default path is: DocumentRoot "C:/Nano_5_4/UniServer/www"
+ The value should be the full path to folder www and match
+ your installed location.
+  
+ With the above confirmed along with observation in Note 1 means files are
+ readable and writeable and the control architecture is working correctly.
+
+ Proceed to test 3
+
+                             --- End ---   
+
+  
+
+
+

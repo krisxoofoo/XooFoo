@@ -1,4 +1,4 @@
-#!C:\mpg_uniserver_test_well_26\usr\bin\perl
+#!C:\Nano_5_4\UniServer\usr\bin\perl
 
 sub urldecode{ 
 	local($val)=@_; 
@@ -15,7 +15,7 @@ print "
 <title>The Uniform Server</title>
 <meta name=\"author\" content=\"Olajide Olaolorun\" />
 <meta http-equiv=\"page-enter\" content=\"blendtrans(duration=0.1)\" />
-<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\" />
+
 <link rel=\"icon\" href=\"../images/favicon.ico\" />
 	  <link title=\"Homepage\" href=\"../index.php\" rel=\"top\" />
 	  <link title=\"Up\" href=\"../index.php\" rel=\"up\" />
@@ -43,7 +43,7 @@ print "</div>";
 
 print"
 <p class=\"copyright\">
-<span class=\"name\">Admin Panel 2.1</span> | © 2009 The Uniform Server Development Team
+<span class=\"name\">Admin Panel 3.0</span> |  2009 The Uniform Server Development Team
 </p>
 
 </body>

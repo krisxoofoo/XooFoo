@@ -1,0 +1,12 @@
+
+ You can grab command window screen text as follows:
+
+ 1) Right click anywhere on the title bar
+ 2) In the pop-up navigate to “Edit” click on “Select All”
+
+ 3) Again right click anywhere on the title bar
+ 4) In the pop-up navigate to “Edit” click on “Copy”
+
+ 5) Right click in a text editor and past.
+
+                 --- End ---

@@ -1,31 +1,27 @@
 ﻿################################################################################
 # File name: CHANGE LOG.txt
 # Created By: The Uniform Server Development Team
-# Updated 7-11-2009
+# Updated 13-11-2009
 ################################################################################
 
 -------------------------
 Uniform Server Change Log
 -------------------------
 
-5.4B2- MySQL updated to 5.1.40;
-     - PHP updated to 5.3.1RC3;
-     - Disabled eAccelerator - Until official release of PHP
-     - phpMyAdmin updated to 3.2.3; 
+5.4  - PHP updated to 5.3.1;
+     - MySQL updated to 5.1.41;
+     - phpMyAdmin updated to 3.2.3;
+     - eAccelerator - 0.9.6-rc1
+     - Updated Server to UTF-8 compatibility;
+     - Released language-pack plugins for 5.4
      - Fixed phpMyAdmin gz double compression
      - Fixed CLI ini load issue, added cmd switch to forces file load  
      - MySQL configuration file my.cnf renamed to my.ini
      - MySQL configuration file additional file added medium_my.ini
      - Updated all .htaccess files to use server root relative paths
      - Added support for Webalizer - plugin!
+     - Minor bug fixes;
      ...
-
-5.4B1- MySQL updated to 5.1.40;
-     - PHP updated to 5.3.1RC2;
-     - Disabled eAccelerator
-     - phpMyAdmin updated to 3.2.2-1; 
-     ...
-
 
 5.3  - Replaced PHP with 5.3.0;
      ...

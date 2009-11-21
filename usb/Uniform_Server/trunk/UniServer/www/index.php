@@ -17,8 +17,8 @@ include "$root\home\admin\www\includes\.version";
     <h3 style="line-height: 18px; margin-left: 5px;" align="left">
       Uniform Server <?php include "$root\home\admin\www\includes\.version"; ?> <br />
       Apache 2.2.14 <br />
-      MySQL 5.1.40 <br />
-      PHP 5.3.1RC3 <br />
+      MySQL 5.1.41 <br />
+      PHP 5.3.1 <br />
       UniTray <br />
     </h3>
   </div>
@@ -63,8 +63,8 @@ fclose($file);
    <td>
     <ul>
       <li> Apache 2.2.14</li>
-      <li> MySQL 5.1.40-community</li>
-      <li> PHP 5.3.1RC3</li>
+      <li> MySQL 5.1.41-community</li>
+      <li> PHP 5.3.1</li>
       <li> phpMyAdmin  3.2.3</li>
       <li> ActivePerl 5.10.0.1005 - Plugin</li>
       <li> ActivePerl 5.10.0.1006 - Plugin</li>

@@ -1901,9 +1901,9 @@ ldap.max_links = -1
 ; tab-width: 4
 ; End:
 
-;[eaccelerator]
-;extension=eaccelerator.dll
-;eaccelerator.allowed_admin_path=C:/Nano_5_4/UniServer/home/admin/www/plugins/eaccelerator/control.php
-;eaccelerator.debug = 0
+[eaccelerator]
+extension=eaccelerator.dll
+eaccelerator.allowed_admin_path=C:/Nano_5_4/UniServer/home/admin/www/plugins/eaccelerator/control.php
+eaccelerator.debug = 0
 
 

@@ -70,7 +70,7 @@ if ( !(file_exists($usf_mysql_passwd)) ) {
 </div>
 
 <div id="resolve">
-	<h3 class="sub"><?php echo  $US['main-secure']?></h3>
+	<h3><?php echo  $US['main-secure']?></h3>
 	<ul>
 	<?php if (($ucontents[0] == "root") || ($ucontents[1] == "root")) { echo "<li style=\"color:red;\">".$US['main-text-0']."</li>"; } ?>
 	<?php if (($pscontents[0] == "root") || ($pscontents[1] == "root")) { echo "<li style=\"color:red;\">".$US['main-text-1']."</li>"; } ?>	

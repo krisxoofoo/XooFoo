@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 #############################################################################
 # Name: The Uniform Server Admin Panel
@@ -173,6 +173,6 @@ echo"". $US['vhost-text-4'] ."";
 </p>
 </div>
 <p class="copyright"><span class="name"><?php echo  $US['apanel']?> <?php echo $us_apanel_version?></span> 
-| &#169; 2007 <?php echo  $US['dev-team']?> | <a href="http://www.eksperten.dk/artikler/218" rel="external"><?php echo  $US['vhost-credit']?></a> <?php include_once "includes/code.php"; ?></div>
+| &#169 2007 <?php echo  $US['dev-team']?> | <a href="http://www.eksperten.dk/artikler/218"><?php echo  $US['vhost-credit']?></a> <?php include_once "includes/code.php"; ?></div>
 </body>
 </html>

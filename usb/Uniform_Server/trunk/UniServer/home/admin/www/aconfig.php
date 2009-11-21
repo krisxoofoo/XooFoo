@@ -1,4 +1,4 @@
-<?php
+ï»¿<?php
 /*
 #############################################################################
 # Name: The Uniform Server Admin Panel
@@ -19,7 +19,7 @@ include_once "includes/secure.php";
 ?>
 
 <div id="main">
-<h2>» <?php echo  $US['aconfig-head']?></h2>
+<h2>&#187 <?php echo  $US['aconfig-head']?></h2>
 <h3><?php echo  $US['aconfig-conf']?></h3>
 <?php
 # -- Determines Apache version.

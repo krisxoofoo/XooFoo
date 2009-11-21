@@ -1,0 +1,86 @@
+
+ This test directly starts both Apache and MySQL as a service it bypasses
+ Uniform Server’s control architecture.
+
+ 1) Run: Batch file z_service_start.bat
+ 2) Expected result: Similar to that shown below
+
+ ------------------- Expected result 4 --------------------------
+ ======= MYSQL SERVICE ===============
+ Service successfully installed.
+ The MySQLS1 service is starting..
+ The MySQLS1 service was started successfully.
+
+ ======= APACHE SERVICE ==============
+ Installing the ApacheS1 service
+ The ApacheS1 service is successfully installed.
+ Testing httpd.conf....
+ Errors reported here must be corrected before the service can be started.
+ The ApacheS1 service is starting....
+ The ApacheS1 service was started successfully.
+
+ Press any key to continue . . .
+ ----------------------------------------------------------------
+ 
+ If you have another server running or conflicting ports you will
+ obtin results similar to this:
+ Note: Results for another server running on same ports
+
+ ------------------- Expected result 5 --------------------------
+ ======= MYSQL SERVICE ===============
+ Service successfully installed.
+ The MySQLS1 service is starting.
+ The MySQLS1 service could not be started.
+
+ A system error has occurred.
+ System error 1067 has occurred.
+ The process terminated unexpectedly.
+
+ ======= APACHE SERVICE ==============
+ Installing the ApacheS1 service
+ The ApacheS1 service is successfully installed.
+ Testing httpd.conf....
+ Errors reported here must be corrected before the service can be started.
+ (OS 10048)Only one usage of each socket address (protocol/network address/port)
+ is normally permitted.  : make_sock: cou
+ ld not bind to address 0.0.0.0:80
+ no listening sockets available, shutting down
+ Unable to open logs
+ The ApacheS1 service is starting.
+ The ApacheS1 service could not be started.
+
+ A service specific error occurred: 1.
+ More help is available by typing NET HELPMSG 3547.
+ Press any key to continue . . .
+ ----------------------------------------------------------------
+ 
+ ---------
+ Important
+ ---------
+
+ After running the above test always run  z_service_stop.bat
+
+------------------- Expected result 6 --------------------------
+ ======= MYSQL SERVICE ===============
+ The MySQLS1 service is not started.
+ More help is available by typing NET HELPMSG 3521.
+ Service successfully removed.
+
+ ======= APACHE SERVICE ==============
+ The ApacheS1 service is not started.
+ More help is available by typing NET HELPMSG 3521.
+ Removing the ApacheS1 service
+ The ApacheS1 service has been removed successfully.
+ Press any key to continue . . .
+ ----------------------------------------------------------------
+
+ Any issues found in Expected result 5 need to be resolved.
+
+ Proceed to test 4
+
+                             --- End ---   
+
+  
+
+
+

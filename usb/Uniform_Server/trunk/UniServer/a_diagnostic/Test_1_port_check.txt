@@ -1,0 +1,69 @@
+
+ This test directly checks for ports in use.
+
+ 1) Restart PC
+ 2) Run: Batch file z_port_check.bat
+ 3) Expected result: Similar to that shown below
+
+ ------------------- Expected result 1 --------------------------
+ Active Connections
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:1026         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12025        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12080        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12110        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12119        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12143        0.0.0.0:0              LISTENING
+ Press any key to continue . . .
+ ----------------------------------------------------------------
+
+ Scan down “Local Address” column make sure there are no entries ending
+ with the following:
+ 
+ :80
+ :443
+ :3306
+
+ For example if any ports are in use you will have a result similar to this:
+ 
+ ------------------- Expected result 2 --------------------------
+ Active Connections
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:21             0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:80             0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:135            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:445            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:990            0.0.0.0:0              LISTENING
+  TCP    0.0.0.0:3306           0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:80           127.0.0.1:1035         FIN_WAIT_2
+  TCP    127.0.0.1:1026         0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:1031         127.0.0.1:1032         ESTABLISHED
+  TCP    127.0.0.1:1032         127.0.0.1:1031         ESTABLISHED
+  TCP    127.0.0.1:1033         127.0.0.1:1034         ESTABLISHED
+  TCP    127.0.0.1:1034         127.0.0.1:1033         ESTABLISHED
+  TCP    127.0.0.1:1035         127.0.0.1:80           CLOSE_WAIT
+  TCP    127.0.0.1:12025        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12080        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12110        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12119        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:12143        0.0.0.0:0              LISTENING
+  TCP    127.0.0.1:14147        0.0.0.0:0              LISTENING
+ Press any key to continue . . .
+ ----------------------------------------------------------------
+ If you find any ports in use Uniform Server will fail to start.
+
+ Before continuing with tests you must resolve this issue.
+ Check the following Uniform Server Wiki page for some causes and solutions:
+
+ http://wiki.uniformserver.com/index.php/5.0-Nano:_Known_Issues
+
+ With the ports free to use (As expected result 1) proceed to test 2
+
+                             --- End ---   
+
+  
+
+
+

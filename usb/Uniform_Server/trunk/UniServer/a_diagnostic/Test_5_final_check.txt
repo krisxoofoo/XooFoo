@@ -1,0 +1,38 @@
+
+ This final test checks servers can be run as a standard program
+
+ 1) Run: Batch file Start_Server.bat
+ 2) Expected result: Similar to that shown below
+
+ ------------------- Expected result 10 --------------------------
+ MySQL port  = 3306 - OK to run MySQL server
+ Starting MySQL server ...
+
+ Apache port = 80   - OK to run Apache server
+ SSL port    = 443  - OK to run Secure Apache server
+ Apache Syntax check - Syntax OK
+ Starting Apache server ...
+
+ Cron not enabled in config.inc.php
+ Or disabled by a user parameter
+
+ Press any key to continue . . . 
+ ----------------------------------------------------------------
+ 
+ 3) Run: Batch file Stop_Server.bat
+ 4) Expected result: Similar to that shown below
+ 
+ ------------------- Expected result 11 --------------------------
+ MySQL Server stopped.
+ Apache Server stopped.
+ Cron not enabled in config.inc.php
+
+ Press any key to continue . . . 
+ ----------------------------------------------------------------
+
+                             --- End ---   
+
+  
+
+
+

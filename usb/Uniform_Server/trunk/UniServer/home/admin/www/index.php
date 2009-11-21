@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /*
 ####################################################
 # Name: The Uniform Server Admin Panel 2.0
@@ -26,7 +26,7 @@ if(file_get_contents("$us_apanel/includes/.lang") == "")
 <title><?php echo  $US['title']?> <?php include('includes/.version'); ?></title>
 <meta name="author" content="Olajide Olaolorun" />
 <meta http-equiv="page-enter" content="blendtrans(duration=0.1)" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="<?php echo  $apanel; ?>/js/main.js"></script>
 <link href="<?php echo  $apanel; ?>/css/main.css" rel="stylesheet" type="text/css" />
 <link rel="icon" href="<?php echo  $apanel; ?>/favicon.ico" />

@@ -1,5 +1,5 @@
 mode con:cols=61 lines=35
-TITLE UNIFORM SERVER - Server Status 5.3-Nano
+TITLE UNIFORM SERVER - Server Status 5.4-Nano
 COLOR B0
 @echo off
 cls
@@ -7,7 +7,7 @@ rem ###################################################
 rem # Name: server_status.bat
 rem # Created By: The Uniform Server Development Team
 rem # Edited Last By: Mike Gleaves (ric)
-rem # V 1.0 6-10-2009
+rem # V 1.0 13-11-2009
 rem ##################################################
 
 rem ### working directory current folder 

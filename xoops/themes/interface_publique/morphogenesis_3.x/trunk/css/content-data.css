@@ -40,7 +40,7 @@ a#xo-uname {	background-color: inherit; color: #F4A869; font-size: 1.1em; font-w
 /* ------------ xo_uptop.html ------------- */
 #xo-uptop {display: block; float: right; width: 8%; margin:.5em; text-align:right;}
 #xo-uptop a {}
-#xo-uptop a:hover {}xo_socialbookmark.html
+#xo-uptop a:hover {}
 /* ------------ Style for xo_socialbookmark.html ------------ */
 #xo-socialbookmark{display: block; float: left; width: 75%; margin-left:180px; text-align:center !important;}
 ul.xo-socials {}

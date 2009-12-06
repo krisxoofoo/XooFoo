@@ -9,40 +9,40 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 .floatleft {	float: left; margin-top: 1em; margin-right :1em; padding-left: 4px; border:	0;}
 .floatright { float: right; margin: 0 0 10px 10px; padding: 2px; border: 0;}
 /*========  others alignment class ======== */
-.left   { text-align: left; }
-.right  { text-align: right; }
-.center { text-align: center;	}
-.justify { text-align: justify; }
-.middle { vertical-align: middle;}
-.top { vertical-align: top;}
-.bottom { vertical-align: bottom;}
+.left   { text-align: 			left; }
+.right  { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align: 			justify; }
+.middle { vertical-align: 		middle;}
+.top { vertical-align: 			top;}
+.bottom { vertical-align: 		bottom;}
 /*========  others width class ======== */
-.width100 { width: 100%;}
-.width95 { width: 95%}
-.width75 { width: 75%;}
-.width50 { width: 50%;}
-.width33 { width: 33%;}
-.width25 { width: 25%;}
-.width20 { width: 20%;}
+.width100 { width: 				100%;}
+.width95 { width: 				95%}
+.width75 { width: 				75%;}
+.width50 { width: 				50%;}
+.width33 { width: 				33%;}
+.width25 { width: 				25%;}
+.width20 { width: 				20%;}
 /* ========= others font class ========== */
-.small {	font-size: .92em;}
-.normal { font-size: 1em;}
-.big { font-size: 1.17em;}
-.maxi { font-size: 1.5em;}
-.bold { font-weight: bold;}
-.italic {font-style: italic;}
+.small {	font-size: 				.92em;}
+.normal { font-size: 			1em;}
+.big { font-size: 				1.17em;}
+.maxi { font-size: 				1.5em;}
+.bold { font-weight:				bold;}
+.italic {font-style: 			italic;}
 /*========  others display class ======== */
-.clear { clear: both;}
-.block { display: block;}
-.hide  { display: none;}
-.shadow { text-shadow: 2px 2px 3px #aaa;}
+.clear { clear: 					both;}
+.block { display: 				block;}
+.hide  { display: 				none;}
+.shadow { text-shadow: 			2px 2px 3px #aaa;}
 /* ======== others hypertext links ================ */
 a.printable, a.pdf, a.friend {
-	width:					16px;
-	height:					16px;
-	background-repeat:		no-repeat;
-	background-position:	left top;
-	text-indent:			-1000em;
+	width:						16px;
+	height:						16px;
+	background-repeat:			no-repeat;
+	background-position:		left top;
+	text-indent:				-1000em;
 }
 a.printable { background-image: url(../icons/action/printer.png); }
 a.pdf { background-image: url(../icons/action/page_white_acrobat.png); }
@@ -52,12 +52,12 @@ a.friend { background-image: url(../icons/action/email_go.png); }
 /* ===== core messages ===== */
 .highlight {	background-color:#ff0; color:#ff0000; font-weight:bold; text-shadow: 1px 1px 2px #aaa;}
 .errorMsg,.confirmMsg, .resultMsg, .successMsg  { padding: .8em; text-align: center; margin-bottom: 1em;	/*border: 2px solid #ddd;*/
-	border-radius: 			10px;
-	-moz-border-radius: 	10px;
-	-webkit-border-radius: 	10px;
-	box-shadow: 			2px 2px 10px  rgba(102, 102, 102, .5);
-	-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
-	-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);}
+	border-radius: 				10px;
+	-moz-border-radius: 		10px;
+	-webkit-border-radius: 		10px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+	-moz-box-shadow: 			2px 2px 10px rgba(102, 102, 102, .5) ;
+	-webkit-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);}
 .errorMsg {	background-color: #FBE3E4; color: #D12F19;	border-color: #FBC2C4;}
 .confirmMsg { background-color: FFF6BF; color:#817134; border-color:	#FFD324;}
 .resultMsg {	background-color:#E6EFC2; color: #529214; border-color: #C6D880;}

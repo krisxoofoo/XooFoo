@@ -4,46 +4,58 @@
 
 /*========== Main menu block =============*/
 #mainmenu a {
-	display: 				block;
+	display: 					block;
 	margin: 					0;
-	background-color: 	transparent;
-	padding: 				1px;
-	color:					#974F12;
-	font-weight: 			bold;
-	text-shadow:			1px 1px 2px #aaa;
+	background-color: 			transparent;
+	padding: 					1px;
+	color:						#974F12;
+	font-weight: 				bold;
+	text-shadow:				1px 1px 2px #aaa;
 }
-#mainmenu a:hover {background-color:transparent; color: #4478b0; text-decoration:	none !important;}
+#mainmenu a:hover {
+	background-color:			transparent;
+	color: 						#4478b0;
+	text-decoration:			none !important;
+}
 #mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: .5em;}
 #mainmenu a.menuSub {
-	background-color:		inherit;
-	padding-left: 			20px;
-	color:					#4478b0;
-	font-size:				.9em;
-	font-style: 			italic;
-	font-weight: 			normal;
+	background-color:			transparent;
+	padding-left: 				20px;
+	color:						#4478b0;
+	font-size:					.9em;
+	font-style: 				italic;
+	font-weight: 				normal;
 }
-#mainmenu a.menuSub:hover { background-color: inherit; color: #974F12; text-decoration: underline !important;}
+#mainmenu a.menuSub:hover {
+	background-color: 			transparent;
+	color: 						#974F12;
+	text-decoration: 			underline !important;
+}
 
 /*============ Usermenu block ============*/
 #usermenu a {
-	display: 				block;
-	background-color: 	transparent;
-	padding: 				2px;
-	color: 					#4478b0;
-	font-size: 				0.9em;
-	font-weight: 			normal;
-	text-shadow:			1px 1px 2px #aaa;
-	line-height: 			1em;
+	display: 					block;
+	background-color: 			transparent;
+	padding: 					2px;
+	color: 						#4478b0;
+	font-size: 					0.9em;
+	font-weight: 				normal;
+	text-shadow:				1px 1px 2px #aaa;
+	line-height: 				1em;
 }
 #usermenu a:hover {
-	background-color: 	transparent;
-	padding-left: 			1em;
-	color:					#974F12;
-	font-style: 			italic;
-	text-decoration:		underline !important;
+	background-color: 			transparent;
+	padding-left: 				1em;
+	color:						#974F12;
+	font-style: 				italic;
+	text-decoration:			underline !important;
 }
 #usermenu a.menuTop {}
-#usermenu a.highlight {background-color: transparent; color: #ff0000; font-size: 1em;}
+#usermenu a.highlight {
+	background-color: 			transparent;
+	color: 						#ff0000;
+	font-size: 					1em;
+}
 
 /*=========== for old templates system ============*/
 #usermenu a, #mainmenu a {	display: block;}
@@ -51,93 +63,93 @@
 
 /*===== left column =======*/
 #xo-canvas-leftcolumn .xo-block {
-	margin-right:			11px;
-	margin-bottom:			10px;
-	padding-top:			4px;
+	margin-right:				11px;
+	margin-bottom:				10px;
+	padding-top:				4px;
 }
 #xo-canvas-leftcolumn .xo-blocktitle {
-	background-color: 	inherit;
-	color:					#4478b0;
-	padding-left:			6px;
-	padding-bottom:		5px;
-	font-size:				1.2em;
-	font-weight:			bold;
-	text-align:				center;
-	text-shadow:			1px 1px 2px #aaa;
+	background-color: 			transparent;
+	padding-left:				6px;
+	padding-bottom:				5px;
+	color:						#4478b0;
+	font-size:					1.2em;
+	font-weight:				bold;
+	text-align:					center;
+	text-shadow:				1px 1px 2px #aaa;
 }
 
-#xo-canvas-leftcolumn .xo-blockcontent { padding: 2px 8px 0;}
+#xo-canvas-leftcolumn .xo-blockcontent { padding: 2px 8px 0; /*text-align: justify;*/}
 * html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
 #xo-canvas-leftcolumn .xo-blockcontent a {}
 #xo-canvas-leftcolumn .xo-blockcontent a:hover { text-decoration: underline;}
 #xo-canvas-leftcolumn img {
 	margin: 					3px 3px 0 7px;
-	padding: 				3px;
+	padding: 					3px;
 	border: 					1px solid #ddd;
 }
 #xo-canvas-leftcolumn img:hover {border: 1px solid #aaa;}
 
 /*======== right column ========*/
 #xo-canvas-rightcolumn {
-	background-color:		#f6f6f6;
-	color:					inherit;
-	border-width:			1px 1px 1px 0;
-	border-style:			solid;
-	border-color:			#ddd;
+	background-color:			#f6f6f6;
+	color:						inherit;
+	border-width:				1px 1px 1px 0;
+	border-style:				solid;
+	border-color:				#ddd;
 }
 #xo-canvas-rightcolumn .xo-block {margin-bottom: 1em;}
 #xo-canvas-rightcolumn a {	text-decoration: none;}
 #xo-canvas-rightcolumn a:hover { text-decoration: underline;}
 #xo-canvas-rightcolumn .xo-blocktitle {
-	background-color: 	inherit;
-	color:					#4478b0;
-	font-size:				1.2em;
-	font-weight:			bold;
-	text-align:				center;
-	text-shadow:			1px 1px 2px #aaa;
+	background-color: 			transparent;
+	color:						#4478b0;
+	font-size:					1.2em;
+	font-weight:				bold;
+	text-align:					center;
+	text-shadow:				1px 1px 2px #aaa;
 }	
-#xo-canvas-rightcolumn .xo-blockcontent {padding: .5em;}
+#xo-canvas-rightcolumn .xo-blockcontent {padding: .5em; text-align: justify;}
 #xo-canvas-rightcolumn img {
 	margin: 					3px 3px 0 7px;
-	padding: 				3px;
+	padding: 					3px;
 	border: 					1px solid #ddd;
 }
 #xo-canvas-rightcolumn img:hover {border: 1px solid #aaa;}
 
 /* ======= Content center ===========*/
 #xo-page .xo-blockszone > .xo-block {
-	border:					1px solid #ddd;
-	border-radius: 		10px;
-	-moz-border-radius: 	10px;
-	-webkit-border-radius: 	10px;
-	box-shadow: 			2px 2px 10px  rgba(102, 102, 102, .5);
-	-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
-	-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
+	border:						1px solid #ddd;
+	border-radius: 				10px;
+		-moz-border-radius: 	10px;
+		-webkit-border-radius: 	10px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
 }
 .xo-block ul {
-	margin:					0;
+	margin:						0;
 	padding:					0;
-	list-style-type:		none;
+	list-style-type:			none;
 }
 #xo-page .xo-blockszone .xo-blocktitle {
-	margin:					0 .5em;
-	background-color: 	inherit;
-	color:					#4478b0;
-	padding: .5em .25em .25em .5em;
-	font-size:				1.2em;
-	font-weight:			bold;
-	border-bottom:			1px solid #ddd;
-	text-shadow:			1px 1px 2px #aaa;
+	margin:						0 .5em;
+	background-color: 			transparent;
+	padding: 					.5em .25em .25em .5em;
+	color:						#4478b0;
+	font-size:					1.2em;
+	font-weight:				bold;
+	text-shadow:				1px 1px 2px #aaa;
+	border-bottom:				1px solid #ddd;
 }
 #xo-page .xo-blockszone .xo-blockcontent { padding: .5em; text-align: justify;}
 #xo-page .xo-blockszone .xo-blockcontent img {
 	margin: 					3px 3px 0 7px;
-	padding: 				3px;
+	padding: 					3px;
 	border: 					1px solid #ddd !important;
 }
 #xo-page .xo-blockszone .xo-blockcontent img:hover {
-	background-color: 	#f6f6f6 !important;
-	color:					inherit;
+	background-color: 			#f6f6f6 !important;
+	color:						inherit;
 	border: 					1px solid #aaa !important;
 }
 #xo-page .xo-blockszone .xo-blockcontent a { text-decoration: none;}
@@ -163,38 +175,44 @@ img.xo-blockquickedit {border: 0 !important; vertical-align:middle;}
 
 /*========== xo_block.html in footer ==========*/
 #xo-blockfooter {
-	height:					auto;
-	width:					100%;
-	background-color: 	transparent;
-	color: 					inherit;
-	margin-left:			1em;
+	height:						auto;
+	width:						100%;
+	margin-left:				1em;
+	background-color: 			transparent;
+	color: 						inherit;
 }
 #xo-blockfooter #xo-block {
-	display: 				block;
-	float: 					left;
-	width: 					23%;
+	display: 					block;
+	float: 						left;
+	width: 						23%;
 	margin: 					.8em .5em .5em 1em;
-	min-height:				210px;
+	min-height:					210px;
 	/*max-height: 210px; overflow:auto;*/
 	border: 					1px solid #777;
-	border-radius:			10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius: 10px;
+	border-radius:				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
 	/*box-shadow: 			2px 2px 10px  rgba(102, 102, 102, .5);
 	-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
 	-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);*/
 }
 #xo-blockfooter .xo-blocktitle { /*background: url(../img/tab_bg.png) repeat left;*/
-	background-color: 	#777;
-	padding: 				5px;
-	font-size:				1.1em;
-	font-weight:			bolder;
-	text-align:				center;
-	text-shadow: 			1px 1px 2px #aaa;
-	color:					#f6f6f6;
-	box-shadow: 0px 20px 10px -10px rgba(255,255,255,0.3) inset;
-	-moz-box-shadow: 0px 20px 10px -10px rgba(255,255,255,0.3) inset;
-	-webkit-box-shadow: 0px 20px 10px -10px rgba(255,255,255,0.3) inset;
+	background-color: 			#777;
+	padding: 					5px;
+	font-size:					1.1em;
+	font-weight:				bolder;
+	text-align:					center;
+	text-shadow: 				1px 1px 2px #aaa;
+	color:						#f6f6f6;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 }
-#xo-blockfooter .xo-blockcontent { margin : 1em; padding :.5em; line-height: 1.4em; }
+#xo-blockfooter .xo-blockcontent {
+	margin : 					1em;
+	padding :					.5em;
+	line-height: 				1.4em;
+}
 #xo-blockfooter .outer {}
 #xo-blockfooter .head {}
 #xo-blockfooter .even {}

@@ -3,17 +3,48 @@
 /* @version         $Id */
 
 /*============== Styles for system_siteclosed.html =================*/
-#xo-siteclose { display:block; width: 450px; margin:	130px auto 250px; padding: 30px; line-height:2em; font-size: 1.6em; text-align: center; text-shadow: 1px 1px 2px #aaa;}
+#xo-siteclose {
+	display:				block;
+	width: 					450px;
+	margin:					130px auto 250px;
+	padding: 				30px;
+	line-height:			2em;
+	font-size: 				1.6em;
+	text-align: 			center;
+	text-shadow: 			1px 1px 2px #aaa;
+}
 /*============== Styles for xo_userbar_siteclosed.html =================*/
-#xo-userbar_siteclosed {display: block; float: right; margin-top: 5px; margin-right:1em;	background-color: inherit; color: #E9CB38; text-shadow: 2px 2px 3px #aaa;}
+#xo-userbar_siteclosed {
+	display: 				block;
+	float: 					right;
+	margin-top: 			5px;
+	margin-right:			1em;
+	background-color: 		transparent;
+	color: 					#E9CB38;
+	text-shadow: 			2px 2px 3px #aaa;
+}
 #xo-userbar_siteclosed form {	display: inline;}
-#xo-userbar_siteclosed button {background-color: transparent; color: inherit; border: none; padding-left:.5em;}
+#xo-userbar_siteclosed button {
+	background-color: 		transparent;
+	color: 					inherit;
+	border: 				none;
+	padding-left:			.5em;
+}
 #xo-userbar_siteclosed button img {}
  #xo-userbar_siteclosed button:hover { border: 0 !important; opacity:.5;}
-#xo-userbar_siteclosed input {width: 80px; background: transparent; padding-left: 5px; color: #fff;
-	border: 1px solid #32529C; border-radius:10px;-moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius: 10px;
+#xo-userbar_siteclosed input {
+	width: 					80px;
+	background: 			transparent;
+	padding-left: 			5px;
+	color: 					#fff;
+	border: 				1px solid #32529C;
+	border-radius:10px;-moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius: 10px;
 }
-#xo-userbar_siteclosed input:hover { background: #8198CE; color: #fff; outline: 1px solid #E9CB38;}
+#xo-userbar_siteclosed input:hover {
+	background: 			#8198CE;
+	color: 					#fff;
+	outline: 				1px solid #E9CB38;
+}
 body.site_closed form { padding: 1em 35%;}
 /*============== Styles for system_redirect.html =================*/
 #xo-redirect {
@@ -42,3 +73,6 @@ body.site_closed form { padding: 1em 35%;}
 /*============== Styles for profile_userform.html =================*/
 #xo-profile-userform  input[type=submit]{margin-left: 200px;}
 #xo-profile-userform p {margin-bottom: 1em; margin-left:180px;}
+
+/* ============ Style for notification form ============ */
+span.notification_title { font-size: .9em; font-weight: bold;}

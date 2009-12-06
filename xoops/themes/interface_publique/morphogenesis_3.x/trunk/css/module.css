@@ -3,8 +3,12 @@
 /* @version         $Id */
 
 /* ========== styles used in the articleù of contents (exemple : news) ============*/
-.item { margin-bottom: 1.5em;}
-.itemHead {	background-color: transparent; padding: 3px; color: #32529C;}
+.item { margin-bottom: 		1.5em;}
+.itemHead {
+	background-color: 		transparent;
+	padding: 				3px;
+	color: 					#32529C;
+}
 .itemInfo, .itemPoster, .itemPostDate, .itemStats, .itemFoot {
 	background-color: 		transparent;
 	padding: 				3px;
@@ -14,7 +18,7 @@
 	text-align: 			right;
 }
 .itemTitle { font-size: 1.4em; text-shadow:	2px 2px 3px #aaa;}
-.itemTitle a {	font-weight: bold; text-decoration: none;}
+.itemTitle a { font-weight: bold; text-decoration: none;}
 .itemAdminLink, .itemAdminLink a { background-color: transparent; color: #ff0000;}
 .itemInfo a:hover, .itemTitle a:hover, .itemPoster a:hover, .itemAdminLink a:hover { text-decoration: underline;}
 .itemBody {}
@@ -27,7 +31,7 @@
 .itemFoot {}
 .itemPermaLink {}
 
-/*=========== Styles utilisÈs pour les commentaires (et newbb/cbb Ègalement) ===========*/
+/*=========== Styles used in the comments (and CBB/NewBB also) ===========*/
 .comTitle {
 	margin-bottom: 			2px;
 	/*background-color: 	inherit;
@@ -74,10 +78,12 @@
 	font-weight: 			bold;
 	font-style: 			normal;
 }
-/* dropdown in cbb-newbb */
-div.dropdown .menu, div.dropdown .userbar {color: #333; background-color: #f6f6f6; font-size: .9em; border: 2px inset #f1f3f8 !important;}
-/* -- signature in CBB/NewBB -- */
-.signature {
-	font-style: italic;
-	font-size: .9em;
+/* dropdown in CBB/NewBB */
+div.dropdown .menu, div.dropdown .userbar {
+	background-color: 		#f6f6f6;
+	color: 					#333;
+	font-size: 				.9em;
+	border: 				2px inset #f1f3f8 !important;
 }
+/* -- signature in CBB/NewBB -- */
+.signature { font-style: italic; font-size: .9em;}

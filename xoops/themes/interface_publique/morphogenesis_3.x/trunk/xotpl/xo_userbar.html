@@ -26,24 +26,24 @@
 		<a href="<{xoAppUrl viewpmsg.php}>">
 		<{if $pmcount}>
 			<!-- if I have messages -->
-			<img src="<{xoImgUrl icons/users/email_open.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
+			<img class="xo-icons" src="<{xoImgUrl icons/users/email_open.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
 		<{else}>
 			<!-- if I do not have a message -->
-			<img src="<{xoImgUrl icons/users/email.png}>" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+			<img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" alt="<{$smarty.const.THEME_MESSAGE}>"/>
 		<{/if}>
 		</a>
 		<!-- end my message box-->
 
-		<a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img src="<{xoImgUrl icons/users/note_edit.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
-		<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img src="<{xoImgUrl icons/users/vcard_edit.png}>" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a>
-		<a href="<{xoAppUrl /search.php}>" title="<{$smarty.const.THEME_DESC_SEARCH}>"><img src="<{xoImgUrl icons/users/find.png}>" alt="<{$smarty.const.THEME_DESC_SEARCH}>" /></a>
+		<a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img class="xo-icons" src="<{xoImgUrl icons/users/note_edit.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
+		<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img class="xo-icons" src="<{xoImgUrl icons/users/vcard_edit.png}>" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a>
+		<a href="<{xoAppUrl /search.php}>" title="<{$smarty.const.THEME_DESC_SEARCH}>"><img class="xo-icons" src="<{xoImgUrl icons/users/find.png}>" alt="<{$smarty.const.THEME_DESC_SEARCH}>" /></a>
 
 		<!-- additional link if I have rights of administration of module -->
 		<{if $xoops_isadmin}>
-			<a href="<{xoAppUrl /admin.php}>" title="<{$smarty.const._CPHOME}>"><img src="<{xoImgUrl icons/users/cog_go.png}>" alt="<{$smarty.const._CPHOME}>" /></a>
+			<a href="<{xoAppUrl /admin.php}>" title="<{$smarty.const._CPHOME}>"><img class="xo-icons" src="<{xoImgUrl icons/users/cog_go.png}>" alt="<{$smarty.const._CPHOME}>" /></a>
 		<{/if}>
 		<!-- end additional link-->
 
-		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img src="<{xoImgUrl icons/users/cancel.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
+		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img class="xo-icons" src="<{xoImgUrl icons/users/cancel.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
 	<{/if}>
 </div>

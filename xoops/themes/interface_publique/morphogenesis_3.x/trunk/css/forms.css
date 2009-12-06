@@ -59,7 +59,6 @@ textarea:focus { background-color: #F4FAFF; color: inherit; outline: 1px solid #
 	content: 					'*';
 	text-shadow: 				2px 2px 3px #aaa;
 }
-label[name=xolb_agree_disc] {display:block; max-width: 400px !important;} /* specifix fix for profile module */
 input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {
     margin: 					2px 5px 2px 5px;
     background-color:          	#D3D2D6;

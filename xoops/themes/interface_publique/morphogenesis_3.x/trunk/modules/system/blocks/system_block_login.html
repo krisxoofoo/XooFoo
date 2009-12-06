@@ -1,5 +1,5 @@
 <div id="xo-system-block-login" class="center">
-	<form action="<{$xoops_url}>/user.php" method="post">
+	<form action="<{xoAppUrl user.php op=login}>" method="post">
 		<label><{$block.lang_username}></label>
 		<br />
 		<input type="text" name="uname" size="12" value="<{$block.unamevalue}>" maxlength="25" /><br />
@@ -17,7 +17,7 @@
 		<br />
 		<{$block.sslloginlink}>
 	</form>
-	<a href="<{$xoops_url}>/user.php#lost"><{$block.lang_lostpass}></a>
+	<a href="<{xoAppUrl user.php#lost}>"><{$block.lang_lostpass}></a>
 	<br />
-	<a href="<{$xoops_url}>/register.php"><{$block.lang_registernow}></a>
+	<a href="<{xoAppUrl register.php}>"><{$block.lang_registernow}></a>
 </div>

@@ -40,7 +40,7 @@ h1 a:hover, h2 a:hover, h1 a:focus, h2 a:focus, h1 a:active, h2 a:active {
 h2 { background-color: transparent; color: #4478b0;}
 h3 { background-color: transparent; color :#E98838;}
 
-/*=============== Style dor links ===============*/
+/*=============== Style for links ===============*/
 a[rel~=alternate] { float: right;}
 a {
 	background-color: 		transparent;
@@ -53,9 +53,14 @@ a:hover, a:focus, a:active {
 	outline: 				none;
 }
 #xo-page a:hover { text-decoration: underline;}
-img { border: none;}
+
+/* Style for images (general) */
+img { border: 0 !important; margin-right:.5em;}
+img.xo-icons {margin-bottom:-3px;}
+p img { margin-left: .5em; margin-right:.5em;}
 a img:hover, a img:focus {opacity:.5; filter: alpha(opacity=50);}
 a img { border: none;}
+.imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
 
 /*=============== Style for general content ===============*/
 /*br { clear: both;}*/
@@ -66,10 +71,10 @@ p {
 }
 hr{}
 em { font-style: italic;}
-strong { font-weight: bold;}
+strong, b { font-weight: bold;}
 del { text-decoration: line-through;}
 address	{ font-style: normal; letter-spacing: .1em;}
-
+small {font-size: .8em;}
 /*=============== Style for acronyms and abbreviation ===============*/
 acronym, abbr, abbr[title] { border-bottom: 1px dashed; cursor: help;}
 abbr[title] { border-bottom: 1px dotted; cursor: help;} 

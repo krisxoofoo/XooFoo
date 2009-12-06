@@ -17,14 +17,14 @@
 <{/if}>
 
 <{if $stop}>
-    <div class='errorMsg' style="text-align: left;"><{$stop}></div>
-    <br style='clear: both;' />
+    <div class='errorMsg'><{$stop}></div>
+    <br class='clear' />
 <{/if}>
 
 <{if $confirm}>
     <{foreach item=msg from=$confirm}>
-        <div class='confirmMsg' style="text-align: left;"><{$msg}></div>
-        <br style='clear: both;' />
+        <div class='confirmMsg'><{$msg}></div>
+        <br class='clear' />
     <{/foreach}>
 <{/if}>
 

@@ -3,19 +3,19 @@
 /* @version         $Id */
 
 /* ========== styles used in the articleù of contents (exemple : news) ============*/
-.item { margin-bottom: 		1.5em;}
+.item { margin-bottom: 			1.5em;}
 .itemHead {
-	background-color: 		transparent;
-	padding: 				3px;
-	color: 					#32529C;
+	background-color: 			transparent;
+	padding: 					3px;
+	color: 						#32529C;
 }
 .itemInfo, .itemPoster, .itemPostDate, .itemStats, .itemFoot {
-	background-color: 		transparent;
-	padding: 				3px;
-	color: 					#E98838;
-	font-size: 				.9em;
-	font-style: 			italic;
-	text-align: 			right;
+	background-color: 			transparent;
+	padding: 					3px;
+	color: 						#E98838;
+	font-size: 					.9em;
+	font-style: 				italic;
+	text-align: 				right;
 }
 .itemTitle { font-size: 1.4em; text-shadow:	2px 2px 3px #aaa;}
 .itemTitle a { font-weight: bold; text-decoration: none;}
@@ -33,57 +33,63 @@
 
 /*=========== Styles used in the comments (and CBB/NewBB also) ===========*/
 .comTitle {
-	margin-bottom: 			2px;
-	/*background-color: 	inherit;
-	color:					#fff;*/
-	font-weight: 			bold;
+	margin-bottom: 				2px;
+	font-weight: 				bold;
 }
 .comText {
-	/*background-color: 	inherit;*/
-	padding: 				2px;
-	/*color:				#666;*/
+	background-color: 			transparent;
+	padding: 					2px;
+	color:						inherit;
 }
 .comUserStat {
-	margin: 				2px;
-	/*background-color: 	#fff;*/
-	padding: 				2px;
-	/*color: 				#32529C;*/
-	font-weight:			bold;
-	font-size: 				.8em;
-	border: 				1px solid #aaa;
+	margin: 					5px;
+	background-color: 			transparent;
+	padding: 					2px;
+	color: 						inherit;
+	font-weight:				bold;
+	font-size: 					.9em;
+	border: 					1px solid #ddd;
 }
 .comUserStatCaption {font-weight: normal;}
 .comUserStatus {
-	margin-left: 			2px;
-	margin-top: 			10px;
-	/*background-color: 	inherit;
-	color: 					#32529C;*/
-	font-weight:			bold;
-	font-size: 				.8em;
+	margin-left: 				2px;
+	margin-top: 				10px;
+	font-weight:				bold;
+	font-size: 					.9em;
+	text-align:					center;
 }
-.comUserRank {margin: 2px;}
+.comUserRank {margin: 			2px;}
 .comUserRankText {
-	font-size: 				.8em;
-	font-weight:			bold;
+	margin-left: 				5px;
+	font-size: 					.9em;
+	font-weight:				bold;
 }
-.comUserRankImg {border: 0;}
+.comUserRankImg {border: 		0;}
 .comUserName {}
-.comUserImg {margin: 2px;}
+.comUserImg {
+	margin:						5px 0 10px 5px;
+	padding:					3px;
+	border: 					1px solid #ddd !important;
+	box-shadow: 				2px 3px 4px rgba(0,0,0,0.5);
+		-moz-box-shadow: 		2px 3px 4px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 	2px 3px 4px rgba(0,0,0,0.5);
+}
+.comUserImg:hover {opacity:.5; filter: alpha(opacity=50);}
 .comDate {
-	font-weight: 			normal;
-	font-style: 			italic;
-	font-size: 				.8em;
+	font-weight: 				normal;
+	font-style: 				italic;
+	font-size: 					.8em;
 }
 .comDateCaption {
-	font-weight: 			bold;
-	font-style: 			normal;
+	font-weight: 				bold;
+	font-style: 				normal;
 }
 /* dropdown in CBB/NewBB */
 div.dropdown .menu, div.dropdown .userbar {
-	background-color: 		#f6f6f6;
-	color: 					#333;
-	font-size: 				.9em;
-	border: 				2px inset #f1f3f8 !important;
+	background-color: 			#f6f6f6;
+	color: 						#333;
+	font-size: 					.9em;
+	border: 					2px inset #f1f3f8 !important;
 }
 /* -- signature in CBB/NewBB -- */
 .signature { font-style: italic; font-size: .9em;}

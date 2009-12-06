@@ -4,10 +4,10 @@
 
 /*======== for html 5 ======== */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
-
+img.xo-icons {margin-bottom:-3px;}
 /*======== others float class ======== */
-.floatleft {	float: left; margin-top: 1em; margin-right :1em; padding-left: 4px; border:	0;}
-.floatright { float: right; margin: 0 0 10px 10px; padding: 2px; border: 0;}
+.floatleft {	float: left; margin: .75em; padding-left: 4px; border:	0;}
+.floatright { float: right; margin: .75em; padding: 2px; border: 0;}
 /*========  others alignment class ======== */
 .left   { text-align: 			left; }
 .right  { text-align: 			right; }
@@ -17,9 +17,11 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 .top { vertical-align: 			top;}
 .bottom { vertical-align: 		bottom;}
 /*========  others width class ======== */
+.widthauto { width:				auto;}
 .width100 { width: 				100%;}
 .width95 { width: 				95%}
 .width75 { width: 				75%;}
+.width70 { width:				70%}
 .width50 { width: 				50%;}
 .width33 { width: 				33%;}
 .width25 { width: 				25%;}
@@ -34,6 +36,7 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 /*========  others display class ======== */
 .clear { clear: 					both;}
 .block { display: 				block;}
+.blockinline { display: 			block-inline;}
 .hide  { display: 				none;}
 .shadow { text-shadow: 			2px 2px 3px #aaa;}
 /* ======== others hypertext links ================ */

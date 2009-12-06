@@ -1,0 +1,16 @@
+
+<ul class="xo-navbar">
+	<li class="home"><a href="<{xoAppUrl www/}>"><{$block.lang_home}></a></li>
+	<{foreach from=$block.modules item=module}>
+	<li class="<{$module.dirname}>">
+		<a href="<{$xoops_url}>/modules/<{$module.directory}>/"><{$module.name}></a>
+		<{if $module.sublinks}>
+		<ul class="xo-navbar module-links">
+		<{foreach from=$module.sublinks item=sublink}>
+			<li><a href="<{$sublink.url}>"><{$sublink.name}></a></li>
+		<{/foreach}>
+		</ul>
+		<{/if}>
+	</li>
+	<{/foreach}>
+</ul>

@@ -1,0 +1,116 @@
+
+<{$xoTheme->addStylesheet('modules/news/style.css')}>
+
+<div class="xo-breadcrumbs x2-navigation">
+	<{$story.topic_title}>
+</div>
+
+<a rel="alternate nofollow" class="printable" title="<{$lang_printerpage}>"
+	href="<{xoAppUrl modules/news/print.php storyid=$story.id}>">
+	<{$lang_printerpage}></a>
+<a rel="alternate nofollow" class="pdf" title="<{$lang_pdfstory}>" target="_blank"
+	href="<{xoAppUrl modules/news/makepdf.php storyid=$story.id}>">
+	<{$lang_pdfstory}></a>
+
+
+<{if $pagenav}>
+	<div class="pages-nav x2-navigation">
+		Page <{$pagenav}>
+	</div>
+<{/if}>
+
+<h1><{$story.title}></h1>
+<div class="x2-contentinfo">
+	<{if $rates}>
+	<span class="agoraInfo">
+		<span class="xo-label"><{$lang_ratingc}></span><span class="agora-rating"><{$story.rating}></span>
+		<span class="agora-votesCount">(<{$story.votes}>)</span>
+	</span>
+	<{/if}>
+
+	<{if $story.files_attached}><{$story.attached_link}><{/if}>
+	<{if $story.poster != ''}><span class="itemPoster"><{$lang_postedby}> <{$story.poster}></span><{/if}>
+	<span class="datePosted"><{$lang_on}> <{$story.posttime}></span>
+	(<span class="itemStats"><{$story.hits}> <{$lang_reads}></span>)
+	<{$news_by_the_same_author_link}>
+</div>
+<div class="xodata-body">
+	<{$story.imglink}>
+	<{$story.text}>
+</div>
+
+<div class="xodata-actions">
+<{if $xoops_isadmin}>
+	<a class="edit" href="<{xoAppUrl modules/news/submit.php?op=edit&storyid=}><{$story.id}>"><{$smarty.const._EDIT}></a>
+	<a class="delete" href="<{xoAppUrl modules/news/index.php?op=delete&storyid=}><{$story.id}>"><{$smarty.const._DELETE}></a>
+<{/if}>
+	<a class="tell" title="<{$lang_sendstory}>" href="<{$mail_link}>" rel="nofollow">
+		<{$lang_sendstory}>
+	</a>
+<{if $rates}>
+	<a class="rate" href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>" rel="nofollow">
+		<{$lang_ratethisnews}>
+	</a>
+<{/if}>
+</div>
+
+<{if $pagenav}><div class="x2-navigation xo-pagenav">Page <{$pagenav}></div><{/if}>
+
+<{if $attached_files_count>0}>
+<div class="x2-note xodata-attachments" id="news-attachedfiles">
+	<{$lang_attached_files}>
+	<ul>
+	<{foreach item=onefile from=$attached_files}>
+		<li><a href="<{$onefile.visitlink}>" target="_blank"><{$onefile.file_realname}></a></li>
+	<{/foreach}>
+	</ul>
+</div>
+<{/if}>
+
+<{if $showsummary and $summary_count}>
+<div class="x2-seealso" id="news-otherarticles">
+	<{$lang_other_story}>
+	<ul>
+	<{foreach item=onesummary from=$summary}>
+	<li>
+	<a href="<{$xoops_url}>/modules/news/article.php?storyid=<{$onesummary.story_id}>" <{$onesummary.htmltitle}>>
+		<{$onesummary.story_title}>
+	</a>
+	<span class="datePosted"><{$onesummary.story_published}></span>
+	</li>
+	<{/foreach}>
+	</ul>
+</div>
+<{/if}>
+
+<{if $nav_links}>
+	<div class="x2-navigation xo-sectionnav">
+	<{if $previous_story_id != -1}>
+		<a rel="prev" href="<{xoAppUrl modules/news/article.php storyid=$previous_story_id}>" title="<{$previous_story_title}>">
+			<{$previous_story_title}>
+		</a>
+	<{/if}>	
+	<{if $next_story_id!= -1}>
+		<a rel="next" href="<{xoAppUrl modules/news/article.php storyid=$next_story_id}>" title="<{$next_story_title}>">
+			<{$next_story_title}>
+		</a>
+	<{/if}>
+	</div>
+<{/if}>
+
+
+<div style="text-align: center; padding: 3px; margin:3px;">
+	<{$commentsnav}>
+	<{$lang_notice}>
+</div>
+
+<div style="margin:3px; padding: 3px;">
+<{if $comment_mode == "flat"}>
+	<{include file="db:system_comments_flat.html"}>
+<{elseif $comment_mode == "thread"}>
+	<{include file="db:system_comments_thread.html"}>
+<{elseif $comment_mode == "nest"}>
+	<{include file="db:system_comments_nest.html"}>
+<{/if}>
+</div>
+<{include file='db:system_notification_select.html'}>

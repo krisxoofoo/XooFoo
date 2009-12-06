@@ -1,0 +1,16 @@
+
+<{if $blocks}>
+	<{if $theme_left_toggle and !$isMsie and $zoneId eq 'xo-canvas-leftcolumn'}>
+	<div class="xo-blockszone zeta_Collapsible x2-secondary<{if $zoneClass}> <{$zoneClass}><{/if}>"<{if $zoneId}> id="<{$zoneId}>"<{/if}>>
+		<div id="leftcol-switch" onclick="zeta_switchLeftCol()">Show/hide column</div>
+	<{else}>
+	<div class="xo-blockszone x2-secondary<{if $zoneClass}> <{$zoneClass}><{/if}>"<{if $zoneId}> id="<{$zoneId}>"<{/if}>>
+	<{/if}>
+	<{foreach from=$blocks item=block}>
+	<div class="xo-block <{$block.module}>">
+		<{if $block.title}><div class="xo-blocktitle"><{$block.title}></div><{/if}>
+		<div class="xo-blockcontent"><{$block.content}></div>
+	</div>
+	<{/foreach}>
+	</div>
+<{/if}>

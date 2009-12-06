@@ -1,0 +1,110 @@
+
+/* ------------------------ Blocks ------------------------ */
+/* search */
+.xo-block .system-search input[name=query] {
+	width:	120px;
+}
+.xo-block .system-search .formButtons {
+	padding: 	4px 0px 0px;
+}
+.xo-block .system-search input {
+	margin:	0px;
+}
+.xo-block .system-search button {
+	margin:			0px;
+	padding:		0px;
+	border:			0px none transparent;
+}
+/* new_users and site_info */
+.xo-block .system-new_users ul,  .xo-block .system-site_info ul {
+	list-style-type:	none;
+	padding:			.25em;
+	margin:				0px;
+}
+.xo-block .system-new_users li, .xo-block .system-site_info li.user {
+	padding-left:		54px;
+	padding-bottom:		.25em;
+}
+.xo-block .system-new_users li, .xo-block .system-site_info li {
+	clear:				both;
+}
+.xo-block .system-new_users .avatar, .xo-block .system-site_info .avatar {
+	width:				48px;
+	float:				left;
+	margin-left:		-54px;
+	margin-bottom:		4px;
+}
+.xo-block .system-site_info .recommend_us {
+	text-align:			center;
+	clear:				both;
+	padding-top:		.5em;
+}
+
+
+
+/* ------------------------ Pages ------------------------ */
+/* user_profile */
+.system-user_profile h2 {
+	clear:		both;
+}
+
+
+.system-user_profile th {
+	text-align:		left;
+	padding:		0px 1em;
+}
+
+.system-user_profile #userImage {
+	float:			left;
+	margin:			1em;
+	border:			1px solid #ccc;
+	padding:		2em;
+	text-align:		center;
+	background:		#f8f8f8;
+}
+.system-user_profile a#userImage:hover {
+	border-color:	#139EE8;
+}
+.system-user_profile #userFields {
+	margin-top:		1em;
+}
+
+/* select_notifications */
+#system-select_notifications {
+	border:			1px solid #f0f0f0;
+	background:		#F4FAFF;
+	text-align:		center;
+	padding:		.25em;
+	margin-bottom:	.5em;
+}
+#system-select_notifications table {
+	text-align:		left;
+	width:			100%;
+}
+
+/*
+
+
+
+.xo-block .system-recent_comments .datePosted {
+	width:		25%;
+}
+.xo-block .system-recent_comments .icon {
+	width:		16px;
+	font-size:	90%;
+}
+
+.system-usyer_profile h1:before {
+	content:	url(../../icons/64x64/user.png);
+	display:	block;
+	margin-left:	-70px;
+	margin-bottom:	-45px;
+}
+.system-user_profile h1 {
+	padding-left:	70px;
+}
+
+
+
+
+*/

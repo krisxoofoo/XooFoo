@@ -1,0 +1,197 @@
+
+/* --------- Data: Entities list --------- */
+
+ul.xodata-list {
+	list-style-type:	none;
+	margin:				0px;
+	padding:			0px;
+}
+table.outer, table.xodata-list, table.xo-formfields {
+	width:			100%;
+	border-spacing:	1px;
+	color:			#444444;
+}
+table.xodata-list {
+	border-spacing:		0px;
+	border-collapse:	collapse;
+}
+
+.xodata-list .xodata-entity {
+	position:			relative;
+	margin-top:			1.7em;
+	margin-bottom:		1.7em;
+}
+table.outer th,
+#xo-page table.outer th.head,
+#xo-page table.xodata-list thead th,
+#xo-page table.xo-formfields thead th {
+	background:			#4AA3F6 url(img/table-caption3.png) repeat-x left top;
+	color:				#ffffff;
+	border:				1px solid #65ACEE;
+	padding:			2px .25em;
+}
+table.outer th a,
+#xo-page table.xodata-list thead th a,
+#xo-page table.xo-formfields thead th a {
+	color:				#eee;
+}
+
+
+table.outer td,
+#xo-page table.xodata-list tbody td,
+#xo-page table.xo-formfields tbody td {
+	padding:			2px .25em;
+	background:			#fcfcfc;
+}
+table.outer td,
+#xo-page table.xodata-list tbody td,
+#xo-page table.xo-formfields tbody td {
+	border:				1px solid #efefef;
+}
+
+table.outer .head,
+table.outer .head td,
+table.outer td.odd,
+#xo-page  table.xodata-list tbody th,
+#xo-page  table.xodata-list tbody td.odd,
+#xo-page  table.xo-formfields tbody th
+{
+	background:			#f4f4f6;
+}
+#xo-page table.xodata-list tfoot td, #xo-page table.xodata-list tfoot th {
+	border:				1px solid #efefef;
+	padding:			4px .25em;
+	background:			#fcfcfc;
+	text-align:			center;
+}
+
+#xo-page  table.xo-formfields tbody th {
+	padding:			2px .5em;
+	vertical-align:		top;
+}
+#xo-page  table.xodata-list tbody th[scope=col] {
+	background:			#c5c5c5 url(img/table-caption_grey.png) repeat-x left top;
+}	
+#xo-page  table.xodata-list {
+	border:				1px solid #ccc;
+}
+
+.xodata-list .xodata-title, table.item td.itemHead {
+	background:			#f4f4f4;
+	color:				#666666;
+	padding:			.25em .5em;
+	font-size:			110%;
+}
+body.newbb .xodata-list .xodata-title {
+	margin:				0px;
+	font-size:			100%;
+	font-weight:		bold;
+	background:			#4AA3F6 url(img/table-caption3.png) repeat-x left top;
+	color:				#ffffff;
+	border:				1px solid #65ACEE;
+	padding:			2px .25em;
+}
+
+
+
+
+.xodata-list .xodata-title a, table.item td.itemHead a {
+	font-weight:		bold;
+	color:				#333333;
+}
+
+.xodata-list .xodata-entity .xodata-header, .xodata-list .xodata-entity .xodata-body {
+	border-left:			1px solid #f0f0f0;
+	border-right:			1px solid #f0f0f0;
+}
+
+.xodata-list .xodata-body {
+	padding-bottom:		0px;
+}
+
+
+.itemBody {
+	clear:			both;
+	padding-top:	1em;
+	padding-bottom:	1em;
+}
+
+.xodata-list .itemBody {
+	padding:		0px;
+}
+
+
+table.item {
+	border:				1px solid #f0f0f0;
+	margin-bottom:		1.5em;
+}
+table.item table {
+	width:				100%!important;
+}
+table.item table td {
+	padding:			.25em .5em;
+}
+table.item .itemText {
+	margin:				.25em 0px;
+}
+table.item .itemFoot {
+	font-size:		90%;
+}
+
+
+table.item td.itemInfo, table.item td.itemBody {
+	border-left:		1px solid #f8f8f8;
+	border-right:		1px solid #f8f8f8;
+}
+
+
+.xodata-list .xodata-entity .xodata-actions {
+	display:		none;
+	position:		absolute;
+	z-index:		2;
+	right:			2px;
+	top:			2px;
+	background:		#f8f8f8 url(img/formbutton.png) repeat-x left bottom;
+	border:			1px solid #e1e5e9;
+/*	border-bottom:	0px none transparent; */
+	color:			#666;
+	font-weight:	bold;
+	padding:		.1em 0px;
+}
+.xodata-list .xodata-entity:hover .xodata-actions {
+	display:		block;
+}
+* html .xodata-list .xodata-entity .xodata-actions {
+	right:			20px;
+}
+
+body.newbb .xodata-list .xodata-entity .xodata-actions {
+	top:			25px;
+}
+body.newbb .xodata-list .xodata-entity {
+	margin-top:		0px;
+	margin-bottom:	0px;
+}
+
+
+.xodata-list .xodata-entity .xodata-actions a {
+}
+
+
+.xodata-list .xodata-entity .xodata-actions a:hover {
+	color:			#0049AC;
+}
+
+.xodata-list .xodata-entity .rounded-bottom {
+	background:		url(img/bg-entity-bl.png) no-repeat left top;
+	height:			10px;
+	margin-right:	0px;
+	font-size:		0.1;
+}
+
+.xodata-list .xodata-entity .rounded-bottom div {
+	background:		url(img/bg-entity-br.png) no-repeat right top;
+	margin-right:	0px;
+	height:			10px;
+	font-size:		0.1;
+}

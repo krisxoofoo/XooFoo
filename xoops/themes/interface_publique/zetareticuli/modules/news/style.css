@@ -1,0 +1,43 @@
+
+body.news #xo-content > .xo-navbar {
+	text-align:		center;
+}
+
+
+body.news #xo-content .x2-navigation {
+	clear:			both;
+}
+
+#news-otherarticles {
+	float:				left;
+}
+
+#news-attachedfiles {
+	float:			right;
+}
+
+body.news #xo-content .xo-breadcrumbs {
+	float:			left;
+}
+
+body.news #xo-content .xo-sectionnav {
+	text-align:		center;
+}
+body.news #xo-content .xo-sectionnav a + a{
+	padding-left:	1em;
+}
+
+body.news #xo-content .xodata-actions {
+	margin-top:		1em;
+	margin-bottom:	1em;
+}
+body.news #xo-content .xodata-list .xodata-actions {
+	margin-top:		0px;
+	margin-bottom:	0px;
+}
+
+
+#news-attachedfiles ul {
+	margin-left:		1em;
+	list-style-image:	url(../../icons/16x16/mimetypes/default.png);
+}

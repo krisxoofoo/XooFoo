@@ -1,0 +1,79 @@
+
+<{$xoTheme->addStylesheet('modules/newbb/style.css')}>
+
+<div class="newbb-recent_topics">
+
+<table class="xodata-list">
+<{if $block.disp_mode == 0}>
+<colgroup><col class="forum" /><col class="topic" /></colgroup>
+<colgroup class="stats" align="center"><col class="repliesCount" /><col class="viewsCount" /></colgroup>
+<colgroup><col class="author" /></colgroup>
+<thead>
+<tr>
+	<th scope="col"><{$smarty.const._MB_NEWBB_FORUM}></th>
+	<th scope="col"><{$smarty.const._MB_NEWBB_TITLE}></th>
+	<th scope="col"><{$smarty.const._MB_NEWBB_RPLS}></th>
+	<th scope="col"><{$smarty.const._MB_NEWBB_VIEWS}></th>
+	<th scope="col"><{$smarty.const._MB_NEWBB_AUTHOR}></th>
+</tr>
+</thead>
+<tbody>
+<{foreach item=topic from=$block.topics}>
+<tr class="<{cycle values="even,odd"}>">
+	<td><a href="<{$xoops_url}>/modules/newbb/viewforum.php?forum=<{$topic.forum_id}>"><{$topic.forum_name}></a></td>
+	<td>
+		<a href="<{$xoops_url}>/modules/newbb/viewtopic.php?topic_id=<{$topic.id}>&amp;forum=<{$topic.forum_id}>">
+			<{if $topic.topic_subject}><{$topic.topic_subject}><{/if}> <{$topic.title}>
+		</a>
+	</td>
+	<td><{$topic.replies}></td>
+	<td><{$topic.views}></td>
+	<td class="author"><{$topic.time}><br /><{$topic.topic_poster}></td>
+</tr>
+<{/foreach}>
+</tbody>
+<{elseif $block.disp_mode == 1}>
+<col class="topic" /><col class="author" />
+<thead>
+<tr>
+	<th scope="col"><{$smarty.const._MB_NEWBB_TOPIC}></th>
+	<th scope="col"><{$smarty.const._MB_NEWBB_AUTHOR}></th>
+</tr>
+</thead>
+<tbody>
+<{foreach item=topic from=$block.topics}>
+<tr class="<{cycle values="even,odd"}>">
+	<td>
+		<a href="<{$xoops_url}>/modules/newbb/viewtopic.php?topic_id=<{$topic.id}>&amp;forum=<{$topic.forum_id}>">
+			<{if $topic.topic_subject}><{$topic.topic_subject}><{/if}> <{$topic.title}></a> <{$topic.topic_page_jump}>
+	</td>
+	<td align="right">
+		<span class="postingDate"><{$topic.time}></span>
+		<span class="posterName"><{$topic.topic_poster}></span>
+	</td>
+</tr>
+<{/foreach}>
+</tbody>
+<{elseif $block.disp_mode == 2}>
+<col class="topic" />
+<tbody>
+<{foreach item=topic from=$block.topics}>
+<tr class="<{cycle values="even,odd"}>">
+	<td>
+		<a href="<{$xoops_url}>/modules/newbb/viewtopic.php?topic_id=<{$topic.id}>&amp;forum=<{$topic.forum_id}>">
+			<{if $topic.topic_subject}><{$topic.topic_subject}><{/if}> <{$topic.title}></a>
+	</td>
+</tr>
+<{/foreach}>
+</tbody>
+<{/if}>
+</table>
+
+<{if $block.indexNav}>
+<div class="xo-navbar">
+	<a href="<{$xoops_url}>/modules/newbb/viewall.php"><{$smarty.const._MB_NEWBB_ALLTOPICS}></a> |
+	<a href="<{$xoops_url}>/modules/newbb/"><{$smarty.const._MB_NEWBB_VSTFRMS}></a>
+</div>
+<{/if}>
+
+</div>

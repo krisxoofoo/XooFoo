@@ -1,0 +1,104 @@
+
+<div class="<{$menuclass}> newbb-menu">
+<{foreach from=','|explode:$menus item=curmenu}>
+	<{include file="$xoops_theme/modules/newbb/menu.html"}>
+<{/foreach}>
+</div>
+
+<{foreach from=','|explode:$toolbars item=toolbar}>
+<{if $toolbar eq 'standard'}>
+	<ul class="xo-toolbar">
+	<{if $nav}>
+		<{if $topic_id}>
+		<li>
+			<a rel="prev" href="viewtopic.php?viewmode=flat&amp;order=<{$order_current}>&amp;topic_id=<{$topic_id}>&amp;forum=<{$forum_id}>&amp;move=prev"><{$smarty.const._MD_PREVTOPIC}></a>
+		</li>
+		<li>
+			<a rel="next" href="viewtopic.php?viewmode=flat&amp;order=<{$order_current}>&amp;topic_id=<{$topic_id}>&amp;forum=<{$forum_id}>&amp;move=next"><{$smarty.const._MD_NEXTTOPIC}></a>
+		</li>
+		<{/if}>
+		<{if $nav eq 'top'}>
+		<li class="top"><a href="#threadtop"><{$smarty.const._MD_TOP}></a></li>
+		<{else}>
+		<li class="bottom"><a href="#threadbottom"><{$smarty.const._MD_BOTTOM}></a></li>
+		<{/if}>
+	<{/if}>
+	<{foreach from=','|explode:$buttons item=button}>
+	<{if $button eq 'add_poll'}>
+		<{if $forum_addpoll}>
+			<li class="add">
+				<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/newtopic.php?op=add&amp;forum=<{$forum_id}>">New poll</a>
+			</li>
+		<{/if}>
+	<{elseif $button eq 'new_topic'}>
+		<{if $xoops_isuser}>
+			<li class="add">
+				<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/newtopic.php?forum=<{$forum_id}>">New topic</a>
+			</li>
+		<{else}>
+			<li class="login">
+				<a href="<{$xoops_url}>/user.php?xoops_redirect=<{$xoops_url}>/modules/<{$xoops_dirname}>/newtopic.php?forum=<{$forum_id}>">Register to post</a>
+			</li>
+		<{/if}>
+	<{elseif $button eq 'reply' and $xoops_isuser}>
+		<li class="reply">
+			<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/reply.php?forum=<{$forum_id}>&amp;topic_id=<{$topic_id}>">Reply</a>
+		</li>
+	<{elseif $button eq 'admin' and $viewer_level gt 1}>
+		<li>
+			<{if $mode gt 0}>
+			<a href="<{xoAppUrl . mode=0 type=''}>" title="<{$smarty.const._MD_TYPE_VIEW}>">
+				<{$smarty.const._MD_TYPE_ADMIN}>:
+				<img src="<{xoImgUrl /icons/16x16/button_ok.png}>" alt="<{$smarty.const._YES}>" />
+			</a> 
+			<{else}>
+			<a href="<{xoAppUrl . mode=1}>" title="<{$smarty.const._MD_TYPE_ADMIN}>">
+				<{$smarty.const._MD_TYPE_ADMIN}>:
+				<img src="<{xoImgUrl /icons/16x16/button_cancel.png}>" alt="<{$smarty.const._NO}>" />
+			</a>
+			<{/if}>
+		</li>
+	<{/if}>
+	<{/foreach}>
+	</ul>
+<{elseif $toolbar eq 'admin' and $viewer_level gt 1 and $mode}>
+	<ul class="xo-toolbar">
+		<li>
+			<{$smarty.const._MD_TYPE_VIEW}>: <a href="<{xoAppUrl . type=active}>" title="<{$smarty.const._MD_TYPE_ADMIN}>"><{$smarty.const._MD_ALLPOSTS}></a>
+		</li>
+		<li>
+			<a href="<{xoAppUrl . type=pending}>" title="<{$smarty.const._MD_TYPE_PENDING}>"><{$smarty.const._MD_TYPE_PENDING}></a>
+		</li>
+		<li>
+			<a href="<{xoAppUrl . type=deleted}>" title="<{$smarty.const._MD_TYPE_DELETED}>"><{$smarty.const._MD_TYPE_DELETED}></a>
+		</li>
+		<{if not $topic_id}>
+		<li>
+			<a class="moderate" href="<{$dirname}>/moderate.php?forum=<{$forum_id}>" title="<{$smarty.const._MD_TYPE_SUSPEND}>"><{$smarty.const._MD_TYPE_SUSPEND}></a>
+		</li>
+		<{/if}>
+	<{if $mode gt 0}>
+		<li>
+		<{$smarty.const._ALL}>: <input type="checkbox" id="post_check" value="1" onclick="xoopsCheckAll(this.form, this);" />
+		<select name="op">
+			<option value="0"><{$smarty.const._SELECT}></option>
+			<{if $type eq "pending"}>
+				<option value="approve"><{$smarty.const._MD_APPROVE}></option>
+			<{else}>
+				<option value="move"><{$smarty.const._MD_MOVE}></option>
+			<{/if}>
+			<{if $type eq "deleted"}>
+				<option value="restore"><{$smarty.const._MD_RESTORE}></option>
+			<{else}>
+				<option value="delete"><{$smarty.const._DELETE}></option>
+			<{/if}>
+		</select>
+		<{if $topic_id}><input type="hidden" name="topic_id" value="<{$topic_id}>" />
+		<{else}><input type="hidden" name="forum_id" value="<{$forum_id}>" />
+		<{/if}>
+		<button type="submit"><{$smarty.const._SUBMIT}></button>
+		</li>
+	<{/if}>
+	</ul>
+<{/if}>
+<{/foreach}>

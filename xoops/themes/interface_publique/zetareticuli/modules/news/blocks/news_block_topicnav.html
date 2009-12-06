@@ -1,0 +1,8 @@
+
+<ul class="xo-navbar news-topics">
+<{foreach from=$block.topics item=topic}>
+	<li class="news-topic">
+		<a href="<{xoAppUrl modules/news/index.php?storytopic=}><{$topic.id}>"><{$topic.title}> <{$topic.news_count}></a>
+	</li>
+<{/foreach}>
+</ul>

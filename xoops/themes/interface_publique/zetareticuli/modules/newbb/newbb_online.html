@@ -1,0 +1,20 @@
+
+<div class="x2-secondary" id="newbb-whosonline">
+	<div class="title">
+		<{$online.image}> <{$smarty.const._MD_USERS_ONLINE}>
+	</div>
+	<{$online.num_total}>  <{$smarty.const._MD_BROWSING_FORUM}>
+	<div class="guest"><{$online.num_anonymous}> <{$smarty.const._MD_ANONYMOUS_USERS}></div>
+	<{if $online.num_user}>
+	<div class="registered">
+		<{$online.num_user}> <{$smarty.const._MD_REGISTERED_USERS}>
+		<{foreach from=$online.users item=user}>
+			<{if $user.level eq 2}><a href="<{$user.link}>" class="administrator">
+			<{elseif $user.level eq 1}><a href="<{$user.link}>" class="moderator">
+			<{else}><a href="<{$user.link}>">
+			<{/if}>
+			<{$user.uname}></a>
+		<{/foreach}>
+	</div>
+	<{/if}>
+</div>

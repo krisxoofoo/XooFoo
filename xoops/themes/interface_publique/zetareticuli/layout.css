@@ -1,0 +1,206 @@
+
+#xo-canvas {
+	margin:			0px 0px 0px;
+	background:		#C6C7C9;
+	color:			#000;
+}
+body.theme-dialog #xo-canvas {
+	margin:			0px 6px;
+}
+
+
+
+/* ----------Canvas rules ---------- */
+#xo-canvas-content {
+	background:		#c6c7c9;
+}
+#xo-canvas-columns {
+	margin:			0px 10px;
+	padding-right:	4px;
+	background:		url(img/bg-pageright_white.png) repeat-y right top;
+	margin-top:		12px;
+}
+#pagebg {
+	background:		#fff url(img/bg-pageleft.png) repeat-y left top;
+}
+
+
+
+#xo-canvas-leftcolumn {
+	float:			left;
+	width:			170px;
+	margin-left:	-170px;
+}
+* html #xo-canvas-leftcolumn {
+	margin-left:	-85px;
+}
+#xo-canvas-rightcolumn {
+	float:			right;
+	width:			170px;
+	padding-left:	5px;
+	margin-right:	-180px;
+}
+* html #xo-canvas-rightcolumn {
+	margin-left:	-90px;
+	margin-right:	-90px;
+}
+
+#corners-pagetop {
+	background:		url(img/bg-page-tl.png) no-repeat left top;
+	height:			12px;
+	font-size:		0.1;
+	margin-top:		-12px;
+}
+#corners-pagetop div {
+	background:		url(img/bg-page-tr_white.png) no-repeat right top;
+	margin-right:	-4px;
+	height:			12px;
+	font-size:	0.1;
+}
+#corners-pagebottom {
+	clear:			both;
+	background:		url(img/bg-page-bl.png) no-repeat left top;
+	height:			8px;
+	font-size:	0.1;
+}
+#corners-pagebottom div {
+	background:		url(img/bg-page-br_white.png) no-repeat right top;
+	margin-right:	-4px;
+	height:			8px;
+	font-size:		0.1;
+}
+
+/* ----------Canvas rules (when columns are visible) ---------- */
+#xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {
+	padding-left:	170px;
+}
+#xo-canvas.rightcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {
+	padding-right:		190px;
+	background-image:	url(img/bg-pageright_grey.png);
+}
+#xo-canvas-bottom, #xo-canvas-footer {
+	clear:			both;
+}
+#xo-canvas.rightcolumn-layout #corners-pagetop,
+#xo-canvas.threecolumns-layout #corners-pagetop,
+#xo-canvas.rightcolumn-layout #corners-pagebottom,
+#xo-canvas.threecolumns-layout #corners-pagebottom 
+{
+	margin-right:	-186px;
+}
+#xo-canvas.rightcolumn-layout #corners-pagetop div,
+#xo-canvas.threecolumns-layout #corners-pagetop div
+{
+	background-image:	url(img/bg-page-tr_grey.png);
+}
+#xo-canvas.rightcolumn-layout #corners-pagebottom div,
+#xo-canvas.threecolumns-layout #corners-pagebottom div
+{
+	background-image:	url(img/bg-page-br_grey.png);
+}
+
+/* ----------Page [center column] rules ---------- */
+#xo-page {
+	float:			left;
+	width:			100%;
+	min-height:		400px;
+}
+* html #xo-page {	height: 400px; }
+
+#xo-page .xo-blockszone .roundedbottom {
+	margin-bottom:		10px;
+}
+
+/* ------- Top and bottom zones (2 columns) ------- */
+#xo-page-topleftblocks, #xo-page-bottomleftblocks {
+	float:			left;
+	width:			48%;
+	margin-left:	1%;
+	margin-right:	1%;
+	padding:		0px;
+}
+#xo-page-toprightblocks, #xo-page-bottomrightblocks {
+	float:			right;
+	width:			48%;
+	margin-left:	1%;
+	margin-right:	1%;
+}
+* html #xo-page-topleftblocks, * html #xo-page-bottomleftblocks,
+* html #xo-page-toprightblocks, * html #xo-page-bottomrightblocks
+{
+	width:			47%;
+}
+
+
+#xo-page-topcenterblocks, #xo-page-bottomcenterblocks {
+	clear:			both;
+	margin-left:	1%;
+	margin-right:	1%;
+}
+/* ------- Top and bottom zones (3 columns) ------- */
+#xo-page-topblocks.xo-lcrpageblocks .xo-blockszone, #xo-page-bottomblocks.xo-lcrpageblocks .xo-blockszone {
+	float:			left;
+	clear:			none;
+	width:			31.2%;
+}
+* html #xo-page-topblocks.xo-lcrpageblocks .xo-blockszone,
+* html #xo-page-bottomblocks.xo-lcrpageblocks .xo-blockszone {
+	width:			30.6%;
+}
+
+
+#xo-page-topblocks.xo-lcrpageblocks #xo-page-topleftblocks {
+}
+
+/* Give a min-height to centerleft/centerright blocks, and lcr center blocks */
+#xo-page-topleftblocks .xo-block, #xo-page-bottomleftblocks .xo-block,
+#xo-page-toprightblocks .xo-block, #xo-page-bottomrightblocks .xo-block,
+.xo-lcrpageblocks #xo-page-topcenterblocks .xo-block, 
+.xo-lcrpageblocks #xo-page-bottomcenterblocks  .xo-block {
+	min-height:		130px;
+}
+
+
+/* Center blocks: rounded corners */
+#xo-page .xo-blockszone .roundedtop {
+	background:		url(img/bg-centerblock-tl.png) no-repeat left top;
+	height:			15px;
+	margin-right:	0px;
+	font-size:		0.1;
+}
+#xo-page .xo-blockszone .roundedtop div {
+	background:		url(img/bg-centerblock-tr.png) no-repeat right top;
+	margin-right:	0px;
+	height:			15px;
+	font-size:	0.1;
+}
+#xo-page .xo-blockszone .roundedbottom {
+	background:		url(img/bg-centerblock-bl.png) no-repeat left top;
+	height:			6px;
+	margin-right:	0px;
+	font-size:		0.1;
+	margin-left:	3px;
+}
+
+#xo-page .xo-blockszone .roundedbottom div {
+	background:		url(img/bg-centerblock-br.png) no-repeat right top;
+	margin-right:	0px;
+	height:			6px;
+	font-size:		0.1;
+}
+/* Center blocks: inner background */
+#xo-page .xo-blockszone .blockbg {
+	background:		url(img/bg-centerblock-left.png) repeat-y left top;
+	margin:			0px;
+	padding-left:	6px;
+}
+#xo-page .xo-blockszone .xo-block {
+	border-left:	1px solid #c6c1c1;
+	border-right:	1px solid #c6c1c1;
+	background:		url(img/bg-centerblock.png) repeat-x right top;
+}
+
+
+#xo-content {
+	clear:			both;
+}

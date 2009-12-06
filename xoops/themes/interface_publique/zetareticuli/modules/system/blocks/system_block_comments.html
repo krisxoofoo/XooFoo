@@ -1,0 +1,22 @@
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div class="system-recent_comments">
+
+<table class="xodata-list">
+<col class="icon" /><col class="title" /><col class="module" />
+<col class="poster" /><col class="datePosted" />
+<tbody>
+<{foreach item=comment from=$block.comments}>
+	<tr class="<{cycle values="even,odd"}>">
+		<td><img src="<{$xoops_url}>/images/subject/<{$comment.icon}>" alt="" /></td>
+		<td><{$comment.title}></td>
+		<td><{$comment.module}></td>
+		<td><{$comment.poster}></td>
+		<td><{$comment.time}></td>
+	</tr>
+<{/foreach}>
+</tbody>
+</table>
+
+</div>

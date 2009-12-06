@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+
+<title><{$xoops_sitename}></title>
+
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_imageurl}>style.css" />
+
+</head>
+<body class="site_closed">
+<div id="xo-canvas">
+	<div id="xo-canvas-header">
+		<div id="xo-main-logo">
+			<a href="<{xoAppUrl /}>"><img src="<{$xoops_imageurl}>img/header-logo.png" alt="<{$xoops_sitename}>" /></a>
+		</div>
+		<div id="xo-banner">
+			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+			<div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+			<{/if}>
+		</div>
+	</div>
+	<div id="xo-canvas-globalnav">&#160;</div>
+
+	<div id="xo-canvas-main">
+		<div id="xo-canvas-columns">
+		<div id="pagebg">
+			<div id="corners-pagetop"><div>&#160;</div></div>
+			<div id="xo-page">		
+				<div id="xo-content">
+					<p class="note"><{$lang_siteclosemsg}></p>				
+					<form action="<{xoAppUrl /user.php op=login}>" method="post">
+					<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+		        	<input type="hidden" name="xoops_login" value="1" />
+						<div class="xo-formfield required">
+							<label><{$lang_username}></label>
+							<input type="text" name="uname" size="26" maxlength="25" value="<{$usercookie}>" />
+						</div>
+						<div class="xo-formfield required">
+							<label><{$lang_password}></label>
+							<input type="password" name="pass" size="26" maxlength="32" />
+						</div>
+						<div class="xo-formbuttons">
+							<button type="submit"><{$lang_login}></button>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="corners-pagebottom"><div>&#160;</div></div>
+		</div>
+		</div>
+	</div>
+	<!--{xo-logger-output}-->
+	<div id="xo-canvas-footer"><{$xoops_footer}></div>
+
+</div>
+</body>
+</html>

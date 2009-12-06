@@ -1,0 +1,165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+><html
+	xmlns="http://www.w3.org/1999/xhtml"
+	lang="<{$xoops_langcode}>" xml:lang="<{$xoops_langcode}>"
+><head>
+	<{* Center blocks display order
+		valid values are:  lrc (left right / center) lcr (left center right) clr (center / left right)
+	*}>
+	<{assign var=theme_top_order value=lrc}>
+	<{assign var=theme_bottom_order value=lcr}>
+	<{* Setting this to 0 will remove the leftcolumn display toggle button on all browsers *}>
+	<{assign var=theme_left_toggle value=1}>
+	
+	<{assign var=theme_name value=$xoTheme->folderName}>
+
+	<title><{$xoops_pagetitle}> : <{$xoops_sitename}></title>
+
+	<{if $smarty.server.HTTP_USER_AGENT|strpos:'MSIE' and !$smarty.server.HTTP_USER_AGENT|strpos:'Opera'}>
+		<{assign var=isMsie value=1}>
+	<{/if}>
+	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+
+
+<{if $isMsie}>
+	<!-- Forces MSIE with no Javascript support to use another theme. Not compliant but working -->
+	<noscript>
+	<meta http-equiv="refresh" content="0; url=<{xoAppUrl . xoops_theme_select=default}>" />
+	</noscript>
+<{/if}>
+
+	<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+
+	<link rel="stylesheet" type="text/css" media="screen" title="Grey" href="<{xoImgUrl /style.css}>" />
+
+	<{$xoops_module_header}>
+
+	<script type="text/javascript" src="<{xoImgUrl /xoops.js}>"></script>
+	<script type="text/javascript" src="<{xoImgUrl /prototype.js}>"></script>
+	<script type="text/javascript" src="<{xoImgUrl /reticulian.js}>"></script>
+	
+<!--[if lt IE 7]>
+	<script type="text/javascript">
+		var IE7_PNG_SUFFIX=".*\/icons\/.*.png";
+		var IE7_BOX_MODEL = true;
+	</script>
+	<script src="<{$xoops_imageurl}>ie7/ie7-standard-p.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="<{xoImgUrl /ie-only.css}>" />
+<![endif]-->
+
+<!--[if IE]><![if !IE]><![endif]-->
+	<link rel="stylesheet" type="text/css" href="<{xoImgUrl /ie-never.css}>" />
+<!--[if IE]><![endif]><![endif]-->
+
+</head>
+<body class="<{$xoops_dirname}> theme-page">
+<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}>
+<{assign var=columns_layout value='threecolumns-layout'}>
+<{elseif $xoBlocks.canvas_left}>
+<{assign var=columns_layout value='leftcolumn-layout'}>
+<{elseif $xoBlocks.canvas_right}>
+<{assign var=columns_layout value='rightcolumn-layout'}>
+<{/if}>
+<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+	<div id="xo-banner">
+		<a id="xo-main-logo" href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/header-logo.png}>" alt="<{$xoops_sitename}>" /></a>
+		<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+		<div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+		<{/if}>
+		<div id="xo-userbar">
+		<{if !$xoops_isuser}>
+			<form method="post" action="<{xoAppUrl /user.php op=login}>">
+				<{$smarty.const._LOGIN}>
+				<input name="uname" type="text" /><input name="pass" type="password" />
+				<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+				<button type="submit"><img src="<{xoImgUrl /icons/22x22/login.png}>" alt="<{$smarty.const._LOGIN}>" /></button>
+			</form>
+			<a href="<{xoAppUrl /register.php}>" class="register">Register</a>
+		<{else}>
+			<{xoInboxCount assign=pmcount}>
+			<a href="<{xoAppUrl www/viewpmsg.php}>">
+			<{if $pmcount}>
+				<img src="<{xoImgUrl icons/32x32/inbox-full.png}>" alt="Inbox (<{$pmcount}>)" title="You have <{$pmcount}> unread messages" />
+			<{else}>
+				<img src="<{xoImgUrl icons/32x32/inbox.png}>" alt="Inbox" title="Show your inbox content" />
+			<{/if}>
+			</a>				
+			<a href="<{xoAppUrl /user.php}>"><img src="<{xoImgUrl icons/32x32/profile.png}>" alt="My profile" title="View your profile" /></a>
+			<{if $xoops_isadmin}>
+			<a href="<{xoAppUrl /admin.php}>"><img src="<{xoImgUrl icons/32x32/configuration.png}>" alt="Admin" title="Display site administration" /></a>
+			<{/if}>
+			<a href="<{xoAppUrl /user.php op=logout}>"><img src="<{xoImgUrl icons/32x32/logout.png}>" alt="Logout" title="Click to logout" /></a>
+		<{/if}>
+		</div>
+	</div>
+	<ul id="xo-globalnav" class="x2-nl x2-navigation">
+		<li class="x2-label">Main navigation</li>
+		<li><a href="<{xoAppUrl /}>">Home</a></li>
+		<li><a href="<{xoAppUrl modules/news/}>">News</a></li>
+		<li><a href="<{xoAppUrl modules/filereleases/}>">Downloads</a></li>
+		<li><a href="<{xoAppUrl modules/newbb/}>">About us</a></li>
+	</ul>
+	<div id="xo-canvas-content">
+		<{if $xoBlocks.canvas_top}>
+		<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
+			zoneClass='' zoneId='xo-canvas-header'
+		}>
+		<{/if}>
+		<div id="xo-canvas-columns">
+			<div id="pagebg">
+			<div id="corners-pagetop"><div>&#160;</div></div>
+			<{if $xoBlocks.canvas_left}>
+			<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_left
+				zoneClass='xo-canvas-column' zoneId='xo-canvas-leftcolumn'
+			}>
+			<{/if}>
+			<div id="xo-page">
+				<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+				<div class="xo-blockszone xo-<{$theme_top_order}>pageblocks" id="xo-page-topblocks">
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}>
+				</div>
+				<{/if}>
+		
+				<div id="xo-content"><{$xoops_contents}></div>
+		
+				<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomcenter or $xoBlocks.page_bottomright}>
+				<div class="xo-blockszone xo-<{$theme_bottom_order}>pageblocks" id="xo-page-bottomblocks">
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
+					<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}>
+				</div>
+				<{/if}>
+			</div>
+			<{if $xoBlocks.canvas_right}>
+			<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_right
+				zoneClass='xo-canvas-column' zoneId='xo-canvas-rightcolumn'
+			}>
+			<{/if}>
+			<div id="corners-pagebottom"><div>&#160;</div></div>
+			</div>
+		</div>
+		<{if $xoBlocks.canvas_bottom}>
+		<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_bottom
+			zoneClass='' zoneId='xo-canvas-footer'
+		}>
+		<{/if}>
+	</div>
+	<!--{xo-logger-output}-->
+	<div id="xo-footer">
+		<{$xoops_footer}>	
+	</div>
+</div>
+</body>
+</html>

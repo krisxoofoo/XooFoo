@@ -1,0 +1,16 @@
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div class="system-new_users">
+
+<ul class="new_users">
+	<{foreach item=user from=$block.users}>
+	<li class="user">
+		<{if $user.avatar}><img src="<{$user.avatar}>" alt="Avatar" class="avatar" /><{/if}>
+		<a href="<{$xoops_url}>/userinfo.php?uid=<{$user.id}>"><{$user.name}></a>
+		<span class="dateRegistered"><{$user.joindate}></span>
+	</li>
+	<{/foreach}>
+</ul>
+
+</div>

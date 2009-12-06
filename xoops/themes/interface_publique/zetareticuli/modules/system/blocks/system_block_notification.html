@@ -1,0 +1,42 @@
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div id="system-select_notifications">
+	<form id="system-notifications_form" method="post" action="<{$block.target_page}>">
+	<input type="hidden" name="not_redirect" value="<{$block.redirect_script}>" />
+	<input type="hidden" value="<{$block.notification_token}>" name="XOOPS_TOKEN_REQUEST" />
+	<table class="xo-formfields">
+	<thead>
+	<tr>
+		<th scope="col"><{$smarty.const._NOT_CATEGORY}></th>
+		<th scope="col">
+			<input name="allbox" id="allbox" onclick="xoopsCheckAll('notification_select','allbox');" type="checkbox" value="<{$lang_checkall}>" />
+			<{$smarty.const._NOT_EVENTS}>
+		</th>		
+	</tr>	
+	</thead>
+	<{foreach from=$block.categories item=category}>
+	<{assign var=count value=$category.events|@count}>
+	<{assign var=idx value=0}>
+	<tbody>
+	<{foreach from=$category.events item=event}>
+	<tr>
+		<{if not $idx}><th scope="rowgroup" rowspan="<{$count}>"><{$category.title}></th><{/if}>
+		<td>
+			<input type="hidden" name="not_list[<{$idx}>][params]" value="<{$category.name}>,<{$category.itemid}>,<{$event.name}>" />
+			<label>
+				<input type="checkbox" name="not_list[<{$idx}>][status]" value="1" <{if $event.subscribed}>checked="checked"<{/if}> />
+				<{$event.caption}>
+			</label>
+		</td>	
+	</tr>
+	<{assign var=idx value=$idx+1}>
+	<{/foreach}>
+	</tbody>
+	<{/foreach}>
+	</table>
+	<div class="xo-formbuttons">
+		<button type="submit"><{$smarty.const._NOT_UPDATENOW}></button>
+	</div>
+	</form>
+</div>

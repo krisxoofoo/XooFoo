@@ -1,0 +1,17 @@
+
+<ul class="xo-navbar">
+<{if $xoops_isadmin}>
+	<li><a class="admin" href="<{xoAppUrl /admin.php}>"><{$block.lang_adminmenu}></a></li>
+<{/if}>
+	<li><a class="profile" href="<{xoAppUrl /user.php}>"><{$block.lang_youraccount}></a></li>
+	<li><a class="profile" href="<{xoAppUrl /edituser.php}>"><{$block.lang_editaccount}></a></li>
+	<li><a class="notifications" href="<{xoAppUrl /notifications.php}>"><{$block.lang_notifications}></a></li>
+	<li><a class="inbox" href="<{xoAppUrl /viewpmsg.php}>">
+	<{if $block.new_messages}>
+		<strong><{$block.lang_inbox}> (<{$block.new_messages}>)</strong>
+	<{else}>
+		<{$block.lang_inbox}>
+	<{/if}>
+	</a></li>
+	<li><a class="logout" href="<{xoAppUrl /user.php?op=logout}>"><{$block.lang_logout}></a></li>
+</ul>

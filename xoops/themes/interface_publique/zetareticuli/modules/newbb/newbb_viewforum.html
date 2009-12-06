@@ -1,0 +1,195 @@
+
+<{$xoTheme->addStylesheet('modules/newbb/style.css')}>
+<{assign var=dirname value="$xoops_url/modules/$xoops_dirname"}>
+<{if $menumode eq 0}><{assign var=menuclass value='x2-navigation'}>
+<{elseif $menumode eq 1}><{assign var=menuclass value='x2-navigation clickmenu'}>
+<{else}><{assign var=menuclass value='x2-navigation hovermenu'}>
+<{/if}>
+
+<div class="xo-breadcrumbs threaded">
+	<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/index.php"><{$lang_forum_index|default:$forum_index_title}></a>
+<{if $category}>
+	<a class="category" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/index.php?cat=<{$category.id}>"><{$category.title}></a>
+<{/if}>
+<{if $parentforum}>
+	<a class="forum" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$parentforum.id}>"><{$parentforum.name}></a>
+<{/if}>
+</div>
+<{if $rss_button}>
+<a rel="alternate" class="rss" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/rss.php?f=<{$forum_id}>" target="_blank" title="RSS FEED">
+	<img src="<{xoImgUrl modules/newbb/images/rss-a.png}>" alt="RSS" />
+</a>
+<{/if}>
+<div class="newbb-jumpbox"><{$forum_jumpbox}></div>
+
+<h1><a href="<{$dirname}>/viewforum.php?forum=<{$forum_id}>"><{$forum_name}></a> <{$forum_topictype}></h1>
+
+
+<{include file="$xoops_theme/modules/newbb/newbb_toolbar.html"
+	toolbars='standard,admin'
+	buttons='add_poll,new_topic,admin'
+	menus='filter,forum_actions,options'
+	current_filter=''
+}>
+
+<{if $mode gt 0}>
+<form action="action.topic.php" method="post" onsubmit="javascript:return (this.op.value != 0)">
+<{/if}>
+
+<div class="x2-navigation newbb-pagenav"><{$forum_pagenav}></div>
+
+<div class="newbb-rounded-top"><div>&#160;</div></div>
+<div class="newbb-forum" id="forum_<{$forum_id}>">
+
+<{if $subforum}>
+<div class="subforums zeta_Collapsible" id="newbb-subforums">
+	<h2><{$smarty.const._MD_SUBFORUMS}></h2>
+	<table class="xodata-list newbb-forums">
+	<col style="width:32px" /><col /><col /><col /><col style="width:6em" />
+	<thead>
+	<tr>
+		<th scope="col">&#160;</th>
+		<th scope="col"><{$smarty.const._MD_FORUM}></th>
+		<th scope="col"><{$smarty.const._MD_TOPICS}></th>
+		<th scope="col"><{$smarty.const._MD_POSTS}></th>
+		<th scope="col"><{$smarty.const._MD_LASTPOST}></th>
+	</tr>
+	</thead>
+	<tbody>
+	<{foreach item=sforum from=$subforum}>
+	<tr>
+		<td class="icon"><{$sforum.forum_folder}></td>
+		<td onclick="window.location='<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$sforum.forum_id}>'">
+			<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$sforum.forum_id}>"><{$sforum.forum_name}></a><br />
+			<{$sforum.forum_desc}>
+			<{if $sforum.forum_moderators}><br/>
+		  	<strong><{$smarty.const._MD_MODERATOR}>:&nbsp;</strong><{$sforum.forum_moderators}>
+		  	<{/if}>
+		</td>
+		<td class="topicsCount"><{$sforum.forum_topics}></td>
+		<td class="postsCount"><{$sforum.forum_posts}></td>
+		<td class="dateLastPosted"><{$sforum.forum_lastpost_time}><br /><{$sforum.forum_lastpost_user}>	<{$sforum.forum_lastpost_icon}></td>
+	</tr>
+	<{/foreach}>
+	</tbody>
+	</table>
+</div>
+<{/if}>
+
+<h2><{$smarty.const._MD_NOTIMTOPICS}></h2>
+
+<table class="xodata-list">
+<colgroup class="icon"><col /><col /></colgroup>
+<col class="title" /><col class="datePosted" /><col class="replyCount" /><col class="viewCount" />
+<{if $rating_enable}><col class="rating" /><{/if}>
+<col class="dateLastPosted" />
+<thead>
+<tr>
+	<th scope="col" colspan="2">&#160;</th>
+	<th scope="col"><a href="<{$h_topic_link}>"><{$smarty.const._MD_TOPICS}></a></th>
+	<th scope="col"><a href="<{$h_publish_link}>"><{$smarty.const._MD_DATE}></a></th>
+	<th scope="col"><a href="<{$h_reply_link}>"><{$smarty.const._MD_REPLIES}></a></th>
+	<th scope="col"><a href="<{$h_views_link}>"><{$smarty.const._MD_VIEWS}></a></th>
+<{if $rating_enable}>
+	<th scope="col"><a href="<{$h_rating_link}>"><{$smarty.const._MD_RATINGS}></a></th>
+<{/if}>
+	<th scope="col"><a href="<{$h_date_link}>"><{$smarty.const._MD_LASTPOST}></a></th>
+</tr>
+</thead>
+<{if $sticky}>
+<tbody class="sticky zeta_Collapsible">
+<tr>
+	<th scope="col" colspan="<{if $rating_enable}>8<{else}>7<{/if}>">
+		<{$smarty.const._MD_IMTOPICS}>
+	</th>
+</tr>
+<{/if}>
+<{assign var=idx value=0}>
+<{foreach from=$topics item=topic}>
+<{if $topic.stick and $idx eq $sticky}>
+<{if $sticky}></tbody><{/if}>
+<tbody>
+<tr>
+	<th scope="col" colspan="<{if $rating_enable}>8<{else}>7<{/if}>">
+		<{$smarty.const._MD_NOTIMTOPICS}>
+	</th>
+</tr>
+<{/if}>
+<tr>
+	<td><{if $mode gt 0}><input type="checkbox" name="topic_id[]" value="<{$topic.topic_id}>" /><{else}><{$topic.topic_folder}><{/if}></td>
+	<td><{$topic.topic_icon}></td>
+	<td><a href="<{$topic.topic_link}>" title="<{$topic.topic_excerpt}>">
+		<{$topic.topic_title}></a><{$topic.attachment}> <{$topic.topic_page_jump}>
+	</td>
+	<td>
+		<{$topic.topic_poster}><br /><{$topic.topic_time}>
+	</td>
+	<td><{$topic.topic_replies}></td>
+	<td><{$topic.topic_views}></td>
+	<{if $rating_enable}>
+	<td><{$topic.rating_img}></td>
+	<{/if}>
+	<td><{$topic.topic_last_posttime}><br /><{$topic.topic_last_poster}> <{$topic.topic_page_jump_icon}></td>
+</tr>
+<{assign var=idx value=$idx+1}>
+<{/foreach}>
+</tbody>
+<tfoot>
+<tr>
+	<td colspan="<{if $rating_enable}>8<{else}>7<{/if}>">
+		<{$smarty.const._MD_SORTEDBY}>
+		<{'name='|str_replace:'id=':$forum_selection_sort}>
+		<{'name='|str_replace:'id=':$forum_selection_order}>
+		<{'name='|str_replace:'id=':$forum_selection_since}>
+		<button type="button" onclick="document.location.href='<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum='+<{$forum_id}>+'&amp;sortname='+$('sortname').value+'&amp;sortorder='+$('sortorder').value+'&amp;since='+$('since').value"><{$smarty.const._MD_GO}></button>
+	</td>
+</tr>
+</tfoot>
+</table>
+</div>
+<div class="newbb-rounded-bottom"><div>&#160;</div></div>
+
+<div class="x2-navigation newbb-pagenav"><{$forum_pagenav}></div>
+
+<{include file="$xoops_theme/modules/newbb/newbb_toolbar.html"
+	toolbars='standard,admin'
+	buttons='add_poll,new_topic,admin'
+	menus='filter,forum_actions'
+	current_filter=''
+}>
+<{if $mode gt 0}>
+</form>
+<{/if}>
+
+<div id="newbb-legend" class="x2-contentinfo">
+	<{$img_newposts}> = <{$smarty.const._MD_NEWPOSTS}><br />
+	<{$img_hotnewposts}> = <{$smarty.const._MD_MORETHAN}><br />
+	<{$img_folder}> = <{$smarty.const._MD_NONEWPOSTS}><br />
+	<{$img_hotfolder}> = <{$smarty.const._MD_MORETHAN2}><br />
+	<{$img_locked}> = <{$smarty.const._MD_TOPICLOCKED}><br />
+	<{$img_sticky}> = <{$smarty.const._MD_TOPICSTICKY}><br />
+	<{$img_digest}> = <{$smarty.const._MD_TOPICDIGEST}><br />
+	<{$img_poll}> = <{$smarty.const._MD_TOPICHASPOLL}>
+</div>
+<div id="newbb-permissions" class="x2-secondary">
+	<{foreach item=perm from=$permission_table}>
+	<div class="permission"><{$perm}></div>
+	<{/foreach}>
+</div>
+<div id="newbb-search" class="x2-search">
+	<form action="search.php" method="get">
+		<input name="term" id="term" type="text" size="15" />
+		<input type="hidden" name="forum" value="<{$forum_id}>" />
+		<input type="hidden" name="sortby" value="p.post_time desc" />
+		<input type="hidden" name="since" value="<{$forum_since}>" />
+		<input type="hidden" name="action" value="yes" />
+		<input type="hidden" name="searchin" value="both" />
+		<button type="submit"><{$smarty.const._MD_SEARCH}></button>
+	</form>
+	<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php"><{$smarty.const._MD_ADVSEARCH}></a>
+</div>
+<div class="newbb-jumpbox"><{$forum_jumpbox}></div>
+
+<{if $online}><{include file="db:newbb_online.html"}><{/if}>
+<{include file='db:system_notification_select.html'}>
+<!-- end module contents -->

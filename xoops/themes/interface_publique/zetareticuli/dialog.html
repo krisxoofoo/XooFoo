@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+><html
+	xmlns="http://www.w3.org/1999/xhtml"
+	lang="<{$xoops_langcode}>" xml:lang="<{$xoops_langcode}>"
+><head>
+	<title><{$xoops_pagetitle}> : <{$xoops_sitename}></title>
+
+	<{if $smarty.server.HTTP_USER_AGENT|strpos:'MSIE' and !$smarty.server.HTTP_USER_AGENT|strpos:'Opera'}>
+		<{assign var=isMsie value=1}>
+	<{/if}>
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+
+<{if $isMsie}>
+	<!-- Forces MSIE with no Javascript support to use another theme -->
+	<noscript>
+	<meta http-equiv="refresh" content="0; url=<{xoAppUrl . xoops_theme_select=default}>" />
+	</noscript>
+<{/if}>
+
+	<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+
+	<link rel="stylesheet" type="text/css" media="screen" title="Grey" href="<{xoImgUrl /style.css}>" />
+	
+	<{$xoops_module_header}>
+
+	<script type="text/javascript" src="<{xoImgUrl /xoops.js}>"></script>
+	<script type="text/javascript" src="<{xoImgUrl /prototype.js}>"></script>
+	<script type="text/javascript" src="<{xoImgUrl /reticulian.js}>"></script>
+	
+<!--[if lt IE 7]>
+	<script type="text/javascript">
+		var IE7_PNG_SUFFIX=".*\/icons\/.*.png";
+		var IE7_BOX_MODEL = true;
+	</script>
+	<script src="<{$xoops_imageurl}>ie7/ie7-standard-p.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if lt IE 8]>
+	<link rel="stylesheet" type="text/css" href="<{xoImgUrl /ie-only.css}>" />
+<![endif]-->
+
+<!--[if IE]><![if !IE]><![endif]-->
+	<link rel="stylesheet" type="text/css" href="<{xoImgUrl /ie-never.css}>" />
+<!--[if IE]><![endif]><![endif]-->
+
+</head>
+<body class="<{$xoops_dirname}> theme-dialog">
+<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+	<div id="xo-canvas-header">
+		<div id="xo-main-logo">
+			<a href="<{xoAppUrl /}>"><img src="<{xoImgUrl img/logo-small.png}>" alt="<{$xoops_sitename}>" /></a>
+		</div>
+	</div>
+	
+	<div id="xo-canvas-main">
+		<div id="xo-canvas-top"></div>
+		<div id="xo-canvas-columns">
+			<div id="pagebg">
+			<div id="corners-pagetop"><div>&#160;</div></div>
+			<div id="xo-page">
+
+				<div id="xo-content"><{$xoops_contents}></div>
+		
+			</div>
+			<div id="corners-pagebottom"><div>&#160;</div></div>
+			</div>
+		</div>
+		<div id="xo-canvas-bottom"></div>
+	</div>
+	<!--{xo-logger-output}-->
+	<div id="xo-canvas-footer">
+		<{$xoops_footer}>	
+	</div>
+</div>
+</body>
+</html>

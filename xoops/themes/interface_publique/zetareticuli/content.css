@@ -1,0 +1,94 @@
+
+@import url(content-data.css);
+@import url(content-datalists.css);
+@import url(forms.css);
+
+a {
+	color:				#7BADEA;
+	text-decoration:	none;
+}
+a:hover {
+	color:				#666666;
+}
+img {
+	border:				0px;
+}
+h1 {
+	clear:			both;
+	margin-top:		.25em;
+	margin-bottom:	.5em;
+	border-bottom:	1px solid #ccc;
+	padding-left:	.25em;
+	font-size:		200%;
+	font-weight:	bold;
+	color:			#666F7D;
+}
+h1 a, h2 a{
+	text-decoration:	none;
+	color:				#666F7D;
+}
+h1 a:hover, h2 a:hover {
+	text-decoration:	underline;
+}
+a[rel~=alternate] { float:	right;	}
+
+
+.x2-note {
+	margin:				1em .5em;
+	padding:			.5em;
+	background-color:	#F4FAFF;
+	border:				1px solid #E4EAEF;
+}
+#xo-content  .x2-contentinfo {
+	margin:				1em .5em;
+	border:				1px solid #e0e0e0;
+	padding:			.5em;
+	background-color:	#f8f8f8;
+}
+#xo-content .x2-secondary {
+	margin:				1em .5em;
+	padding:			.5em;
+}
+.x2-seealso {
+	margin:				1em .5em;
+	padding:			.5em 1em;
+	background-color:	#fffcf6;
+	border:				1px solid #efeae4;
+}
+.x2-seealso ul, .x2-note ul {
+	margin:				0px;
+	padding-left:		1em;
+}
+
+.x2-seealso a {
+	color:				#EAAD7B;
+}
+.x2-seealso a:hover {
+	color:				#888;
+}
+
+body.site_closed form {
+	padding:				1em 35%;
+}
+
+blockquote {
+	margin-left:		.5em;
+	border:				1px solid #8EC0F9;
+	border-left-width:	6px;
+	background:			#f4faff;
+	padding:			.5em;
+
+}
+.xoopsCode {
+	background:			#ffffff;
+	font-family:		monospace;
+	border:				1px solid #d0d0d0;
+	padding:			.5em;
+	width:				100%;
+	display:			block;
+}
+
+
+#system-select_notifications {
+	clear:				both;
+}

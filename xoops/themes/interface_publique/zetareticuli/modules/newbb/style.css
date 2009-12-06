@@ -1,0 +1,233 @@
+
+/* ---------------- Page elements / layout ---------------- */
+body.newbb #xo-content .xo-breadcrumbs {
+	float:		left;
+}
+body.newbb #xo-content a[rel~=alternate].rss {
+	margin-bottom:	10px;
+}
+
+body.newbb #xo-content a[rel~=alternate].rss + * {
+	clear:		right;
+}
+
+body.newbb #xo-content a[rel~=alternate].printable  {
+	margin-bottom:	-16px;
+}
+
+#newbb-search, #newbb-jumpbox, #newbb-credits {
+	float:				right;
+	clear:				right;
+	text-align:			right;
+	padding:			.5em;
+}
+#newbb-jumpbox + * {
+	clear:		both;
+}
+#newbb-search {
+	float:		right;
+}
+#newbb-whosonline {
+	clear:		both;
+}
+#newbb-quickreply {
+	clear:			both;
+	background:		#f0f0f0;
+	padding:		.1em .5em;
+}
+.newbb-statistics {
+	float:				right;
+}
+#newbb-legend, #newbb-permissions {
+	float:				left;
+}
+.newbb-menu {
+	clear:		both;
+}
+
+#newbb-whosonline {
+	clear:				both;
+	padding:			.5em;
+}
+.newbb-pagenav {
+	text-align:			center;
+	margin:				1em 4em;
+}
+
+body.newbb #xo-content h1 {
+	padding-top:		.5em;
+}
+
+body.newbb .xo-breadcrumbs > *:not(:first-child) {
+	background-repeat:		no-repeat;
+	background-position:	left center;
+	padding-left:			26px;
+	min-height:				22px;
+	background-image: url(../../icons/22x22/folder.png);
+}
+
+
+
+.xo-block.newbb .author {
+	font-size:		80%;
+	text-align:		right;
+}
+
+.xo-block.newbb .x2-navigation {
+	text-align:		right;
+}
+
+.newbb-category {
+	position:		relative;
+}
+
+
+.newbb-category, .newbb-forum {
+	margin:			0px;
+	background:		#f0f0f0;
+	padding:		0px .5em;
+}
+
+.newbb-rounded-top {
+	background:		url(../../img/round-tr-f0.png) no-repeat right top;
+	height:			8px;
+	margin-right:	0px;
+	font-size:		0.1;
+}
+.newbb-rounded-top div {
+	background:		url(../../img/round-tl-f0.png) no-repeat left top;
+	margin-right:	0px;
+	height:			8px;
+	font-size:	0.1;
+}
+.newbb-rounded-bottom {
+	background:		url(../../img/round-br-f0.png) no-repeat right top;
+	height:			8px;
+	margin-right:	0px;
+	font-size:		0.1;
+}
+.newbb-rounded-bottom div {
+	background:		url(../../img/round-bl-f0.png) no-repeat left top;
+	margin-right:	0px;
+	height:			8px;
+	font-size:	0.1;
+}
+
+.newbb-category .sponsor {
+	position:		absolute;
+	top:			.25em;
+	right:			.5em;
+	padding:		.25em;
+
+	background:	#e8e8e8;
+	border:		1px solid #e0e0e0;
+}
+
+.newbb-category > h2, .newbb-forum > h2 {
+	margin-top:		0px;
+	margin-bottom:	0px;
+}
+
+.newbb-index .introduction {
+	margin:		.5em;
+}
+
+.icon {
+	vertical-align:		middle;
+}
+
+.newbb-poster .userOnlineStatus {
+	display:			none;
+}
+
+.forum-icon {
+	float:	left;
+	vertical-align:	absmiddle;
+	margin-right:	4px;
+}
+
+
+ul.newbb-posts {
+	list-style-type:	none;
+	margin:				0px;
+	padding:			0px;
+	margin-top:			2em;
+}
+ul.newbb-posts li {
+	clear:				left;
+}
+
+
+.newbb-post {
+	background:			#fafafa;
+	border:				1px solid #efefef;
+	position:			relative;
+	z-index:			1;
+}
+.newbb-post .xodata-title {
+	margin:				0px;
+	font-size:			100%;
+	font-weight:		bold;
+	background:			#4AA3F6 url(../../img/table-caption3.png) repeat-x left top;
+	color:				#ffffff;
+	border:				1px solid #65ACEE;
+	padding:			2px .25em;
+}
+.newbb-post a[rel=start] {
+	float:				right;
+}
+#xo-content .newbb-post .xodata-body {
+	border:				0px none transparent;
+	clear:				right;
+}
+.newbb-post .newbb-poster {
+	float:			left;
+	padding:		5px;
+	background:		#efefef;
+	border:			1px solid #cccccc;
+	width:			180px;
+	text-align:		center;
+}
+.newbb-post .user-profile {
+	padding-top:	1em;
+	font-size:		80%;
+	font-weight:	bold;
+	color:			#666;
+}
+.newbb-post .xodata-body + * {
+	clear:			both;
+}
+.newbb-postText {
+	margin-left:		190px;
+	padding:			1em 1em 1em;
+	vertical-align:		top;
+	text-align:			left;
+}
+.newbb-post .datePosted, .newbb-post .revisionLog {
+	margin:				.5em 0px;
+	text-align:			right;
+	font-size:			90%;
+	color:				#444;
+}
+.newbb-post .context-links {
+	margin-top:			.5em;
+	text-align:			right;
+	padding:			.25em .5em;
+}
+.newbb-post .context-links a {
+	margin-left:		1em;
+}
+
+.newbb-category .rss {
+	background:			url(../../icons/16x16/rss.png) no-repeat left top;
+	width:				16px;
+	height:				16px;
+	text-indent:		-100em;
+}
+
+.subforums h2 {
+	margin-top:	0px;
+}
+
+
+

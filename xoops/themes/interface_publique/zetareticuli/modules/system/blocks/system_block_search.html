@@ -1,0 +1,14 @@
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div class="system-search">
+
+<form action="<{xoAppUrl /search.php action=results}>" method="get">
+	<input type="text" name="query" />
+    <span class="formButtons">
+    	<button type="submit"><img src="<{xoImgUrl /icons/16x16/find.png}>" alt="<{$block.lang_search}>" /></button>
+	</span>
+</form>
+<a href="<{xoAppUrl /search.php}>"><{$block.lang_advsearch}></a>
+
+</div>

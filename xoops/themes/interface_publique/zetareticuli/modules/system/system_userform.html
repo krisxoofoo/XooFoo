@@ -1,0 +1,32 @@
+
+<h1><{$lang_login}></h1>
+
+<form action="<{xoAppUrl /user.php op=login}>" method="post">
+<input type="hidden" name="xoops_redirect" value="<{$redirect_page}>" />
+		<div class="xo-formfield required">
+			<label><{$lang_username}></label>
+			<input type="text" name="uname" size="26" maxlength="25" value="<{$usercookie}>" />
+		</div>
+		<div class="xo-formfield required">
+			<label><{$lang_password}></label>
+			<input type="password" name="pass" size="21" maxlength="32" />
+		</div>
+		<div class="xo-formbuttons">
+			<button type="submit"><{$lang_login}></button>
+		</div>
+</form>
+
+<p><{$lang_notregister}></p>
+
+<h2 id="lost"><{$lang_lostpassword}></h2>
+<form action="<{xoAppUrl /lostpass.php op=mailpasswd}>" method="post">
+<input type="hidden" name="t" value="<{$mailpasswd_token}>" />
+	<p><{$lang_noproblem}></p>
+	<div class="xo-formfield required">
+		<label><{$lang_youremail}></label>
+		<input type="text" name="email" size="26" maxlength="60" />
+	</div>
+	<div class="xo-formbuttons">
+		<button type="submit"><{$lang_sendpassword}></button>
+	</div>
+</form>

@@ -1,0 +1,83 @@
+
+<{$xoTheme->addStylesheet('modules/newbb/style.css')}>
+
+<{assign var=dirname value="$xoops_url/modules/$xoops_dirname"}>
+<{if $menumode eq 0}><{assign var=menuclass value='x2-navigation'}>
+<{elseif $menumode eq 1}><{assign var=menuclass value='x2-navigation clickmenu'}>
+<{else}><{assign var=menuclass value='x2-navigation hovermenu'}>
+<{/if}>
+<div class="xo-breadcrumbs threaded">
+	<a href="<{$dirname}>/index.php"><{$lang_forum_index|default:$forum_index_title}></a>
+<{if $category}>
+	<a class="category" href="<{$dirname}>/index.php?cat=<{$category.id}>"><{$category.title}></a>
+<{/if}>
+<{if $parentforum}>
+	<a class="forum" href="<{$dirname}>/viewforum.php?forum=<{$parentforum.id}>"><{$parentforum.name}></a>
+<{elseif $forum_name}>
+	<a class="forum" href="<{$dirname}>/viewforum.php?forum=<{$forum_id}>"><{$forum_name}></a>
+<{/if}>
+</div>
+
+<h1><{$lang_title}></h1>
+
+<{if $mode gt 0}>
+<form name="form_posts_admin" action="<{$dirname}>/action.post.php" method="post" onsubmit="javascript:return (this.op.value != 0)">
+<{/if}>
+
+<{include file="$xoops_theme/modules/newbb/newbb_toolbar.html"
+	toolbars='standard,admin'
+	buttons='admin'
+	menus='filter,options'
+	nav='bottom'
+}>
+
+<{if $pagenav}>
+	<div class="x2-navigation newbb-pagenav"><{$pagenav}></div>
+<{/if}>
+<a name="threadtop"></a>
+<ul class="xodata-list newbb-posts">
+<{foreach item=post from=$posts}>
+	<li class="xodata-entity newbb-post" id="forumpost<{$post.post_id}>">
+	<{if $viewmode_compact}>
+		<{include file="db:newbb_item.html" topic_post=$post}>
+	<{else}>
+		<{include file="db:newbb_thread.html" topic_post=$post}>
+	<{/if}>
+	<div class="context-links">
+		<a class="topic" href="viewtopic.php?topic_id=<{$post.topic_id}>"><{$smarty.const._MD_VIEWTOPIC}></a>
+		<{if !$forum_name}>
+ 		<a class="forum" href="viewforum.php?forum=<{$post.forum_id}>"><{$smarty.const._MD_VIEWFORUM}></a>
+		<{/if}>
+	</div>
+	</li>
+<{/foreach}>
+</ul>
+<a name="threadbottom"></a>
+<{if $pagenav}>
+	<div class="x2-navigation newbb-pagenav"><{$pagenav}></div>
+<{/if}>
+
+
+<{include file="$xoops_theme/modules/newbb/newbb_toolbar.html"
+	toolbars='admin,standard'
+	buttons='admin'
+	menus='filter,options'
+	current_filter=''
+	nav='top'
+}>
+<{if $mode gt 0}></form><{/if}>
+
+<div id="newbb-search" class="x2-search">
+	<form action="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php" method="post">
+		<input name="term" id="term" type="text" size="20" />
+		<input type="hidden" name="forum" value="all" />
+		<input type="hidden" name="sortby" value="p.post_time desc" />
+		<input type="hidden" name="searchin" value="both" />
+		<button type="submit"><{$smarty.const._MD_SEARCH}></button>
+	</form>
+	<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php"><{$smarty.const._MD_ADVSEARCH}></a>
+</div>
+<div class="newbb-jumpbox"><{$forum_jumpbox}></div>
+
+<{if $online}><{include file="db:newbb_online.html"}><{/if}>
+<!-- end module contents -->

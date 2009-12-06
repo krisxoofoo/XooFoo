@@ -1,0 +1,110 @@
+<{*
+	Menus types:
+	- filter (view all, view new, view digest...)
+	- options (flat,compact,threaded, oldest/newst first)
+	- forum_actions (mark read, mark unread. replace by buttons ?)
+	- topic_actions (merge,move,delete)
+	- rate
+*}>	
+
+<{if $curmenu eq 'filter'}>
+	<{assign var=options value="$post_link|$newpost_link|$all_link|$digest_link|$unreplied_link|$unread_link"}>
+	<{assign var=labels value="`$smarty.const._MD_VIEW` `$smarty.const._MD_ALLPOSTS`|`$smarty.const._MD_VIEW` `$smarty.const._MD_NEWPOSTS`"}>
+	<{assign var=labels value="$labels|`$smarty.const._MD_VIEW` `$smarty.const._MD_ALL`|`$smarty.const._MD_VIEW` `$smarty.const._MD_DIGEST`"}>
+	<{assign var=labels value="$labels|`$smarty.const._MD_VIEW` `$smarty.const._MD_UNREPLIED`|`$smarty.const._MD_VIEW` `$smarty.const._MD_UNREAD`"}>
+
+	<{assign var=options value='|'|explode:$options}>
+	<{assign var=labels value='|'|explode:$labels}>
+	<{assign var=menuName value=$smarty.const._MD_TYPE_VIEW}>
+<{elseif $curmenu eq 'forum_actions'}>
+	<{assign var=options value="$mark_read|$mark_unread"}>
+	<{assign var=labels value="`$smarty.const._MD_MARK_ALL_FORUMS` `$smarty.const._MD_MARK_READ`|`$smarty.const._MD_MARK_ALL_FORUMS` `$smarty.const._MD_MARK_UNREAD`"}>
+	<{assign var=options value='|'|explode:$options}>
+	<{assign var=labels value='|'|explode:$labels}>
+	<{assign var=menuName value=$smarty.const._MD_FORUM}>
+<{elseif $curmenu eq 'rate'}>
+	<{assign var=labels value="`$smarty.const._MD_RATE5`|`$smarty.const._MD_RATE4`|`$smarty.const._MD_RATE3`|`$smarty.const._MD_RATE2`|`$smarty.const._MD_RATE1`"}>
+	<{assign var=options value=''}>
+	<{assign var=act value=','|explode:'5,4,3,2,1'}>
+	<{foreach from=$act key=k item=item}>
+		<{assign var=options value="$options|ratethread.php?topic_id=$topic_id&amp;forum=$forum_id&amp;rate=$item"}>
+	<{/foreach}>
+	<{assign var=options value=$options|substr:1}>
+	<{assign var=options value='|'|explode:$options}>
+	<{assign var=labels value='|'|explode:$labels}>
+	<{assign var=menuName value=$smarty.const._MD_RATE}>
+<{elseif $curmenu eq 'topic_actions'}>
+	<{assign var=options value=''}><{assign var=labels value=''}>
+	<{if $viewer_level gt 1}>
+		<{foreach item=act from=$admin_actions}>
+			<{assign var=options value="$options|`$act.link`"}>
+			<{assign var=labels value="$labels|`$act.name`"}>
+		<{/foreach}>
+	<{/if}>
+	<{if count($adminpoll_actions)}>
+		<{foreach item=act from=$adminpoll_actions}>
+			<{assign var=options value="$options|`$act.link`"}>
+			<{assign var=labels value="$labels|`$act.name`"}>
+		<{/foreach}>
+	<{/if}>
+	<{if $options}>
+		<{assign var=options value=$options|substr:1}>
+		<{assign var=labels value=$labels|substr:1}>
+		<{assign var=options value='|'|explode:$options}>
+		<{assign var=labels value='|'|explode:$labels}>
+		<{assign var=menuName value=$smarty.const._MD_TOPIC}>
+	<{/if}>
+<{elseif $curmenu eq 'options'}>
+	<{assign var=options value=''}><{assign var=labels value=''}>
+	<{if $viewmode_options}>
+		<{foreach item=act from=$viewmode_options}>
+			<{assign var=options value="$options|`$act.link`"}>
+			<{assign var=labels value="$labels|`$act.title`"}>
+		<{/foreach}>
+	<{/if}>
+	<{if $options}>
+		<{assign var=options value="$options|"}><{assign var=labels value="$labels|"}>
+	<{/if}>
+	<{if $menumode_other}>
+		<{foreach item=act from=$menumode_other}>
+			<{assign var=options value="$options|`$act.link`"}>
+			<{assign var=labels value="$labels|`$act.title`"}>
+		<{/foreach}>
+	<{/if}>
+	<{assign var=options value=$options|substr:1}>
+	<{assign var=labels value=$labels|substr:1}>
+	<{assign var=options value='|'|explode:$options}>
+	<{assign var=labels value='|'|explode:$labels}>
+	<{assign var=menuName value=':'|str_replace:'':$smarty.const._MD_OPTIONS}>
+<{/if}>
+
+<{if $options}>
+	<{if $menumode eq 0}>
+	<select class="menu"
+		onchange="if(this.options[this.selectedIndex].value.length >0 )	{ window.document.location=this.options[this.selectedIndex].value;}"
+	>
+		<option value=""><{$menuName}></option>
+		<{foreach from=$options key=idx item=option}>
+			<option value="<{$option}>"><{$labels.$idx}></option>
+		<{/foreach}>
+	</select>
+	<{else}>
+	<div class="x2-nl x2-navigation">
+		<div class="x2-label"><{$menuName}></div>
+		<ul>
+		<{foreach from=$options key=idx item=option}>
+		<{if $option}>
+			<li><a href="<{$option}>"><{$labels.$idx}></a></li>
+		<{else}>
+			<li class="separator">--------</li>
+		<{/if}>
+		<{/foreach}>
+		</ul>
+	</div>
+	<{/if}>
+<{/if}>
+
+<{*	
+	<script type="text/javascript">document.getElementById("forumoption").onmouseout = closeMenu;</script>
+	<div class="menubar"><a href="" onclick="openMenu(event, 'forumoption');return false;"><{$smarty.const._MD_FORUMOPTION}></a></div>
+*}>

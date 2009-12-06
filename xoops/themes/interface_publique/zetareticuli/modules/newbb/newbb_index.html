@@ -1,0 +1,147 @@
+
+<{$xoTheme->addStylesheet('modules/newbb/style.css')}>
+<{assign var=dirname value="$xoops_url/modules/$xoops_dirname"}>
+<{if $menumode eq 0}><{assign var=menuclass value='x2-navigation'}>
+<{elseif $menumode eq 1}><{assign var=menuclass value='x2-navigation clickmenu'}>
+<{else}><{assign var=menuclass value='x2-navigation hovermenu'}>
+<{/if}>
+
+<{if $rss_button}>
+	<a rel="alternate" class="rss" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/rss.php?c=<{$viewcat}>" target="_blank" title="RSS FEED"><{$rss_button}></a>
+<{/if}>
+
+<h1><{$lang_welcomemsg}></h1>
+<p class="introduction">
+	<{$smarty.const._MD_TOSTART}>
+</p>
+<div class="x2-note newbb-statistics">
+	<{$lang_currenttime}><br />
+	<{$lang_lastvisit}><br />
+	<span class="topicsCount">
+		<span class="caption"><{$smarty.const._MD_TOTALTOPICSC}></span><{$total_topics}>
+	</span>
+	<span class="postsCount">
+		<span class="caption"><{$smarty.const._MD_TOTALPOSTSC}></span><{$total_posts}>
+	</span>
+</div>
+
+<{include file="$xoops_theme/modules/newbb/newbb_toolbar.html"
+	toolbars='standard,admin'
+	buttons='admin'
+	menus='filter,forum_actions,options'
+	current_filter=''
+}>
+
+<{if $pagenav}>
+	<div class="x2-navigation newbb-pagenav"><{$pagenav}></div>
+<{/if}>
+
+
+<{foreach from=$categories item=category}>
+<div class="newbb-rounded-top"><div>&#160;</div></div>
+<div class="newbb-category zeta_Collapsible" id="cat_<{$category.cat_id}>">
+	<h2>
+		<{if $category.cat_image}><img src="<{$category.cat_image}>" alt="" /><{/if}>
+		<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/index.php?cat=<{$category.cat_id}>"><{$category.cat_title}></a>
+	</h2>
+	<{if $category.cat_sponsor}>
+		<a class="sponsor" href="<{$category.cat_sponsor.link}>" title="<{$category.cat_sponsor.title}>" target="_blank"><{$category.cat_sponsor.title}></a>
+	<{/if}>
+	<{if $category.cat_description}><p class="description"><{$category.cat_description}></p><{/if}>
+	<{if $category.forums}>
+	<table class="xodata-list newbb-forums">
+	<col class="name" /><col class="topicsCount" /><col class="postsCount" /><col class="dateLastPosted" />
+	<thead>
+	<tr>
+		<th scope="col"><{$smarty.const._MD_FORUM}></th>
+		<th scope="col"><{$smarty.const._MD_TOPICS}></th>
+		<th scope="col"><{$smarty.const._MD_POSTS}></th>
+		<th scope="col"><{$smarty.const._MD_LASTPOST}></th>
+	</tr>
+	</thead>
+	<tbody>
+	<{foreach from=$category.forums item=forum}>
+	<tr>
+		<td>
+			<{if $rss_enable}>
+			<a rel="alternate" class="rss" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/rss.php?f=<{$forum.forum_id}>" target="_blank" title="RSS feed">RSS</a>
+			<{/if}>
+			<span class="forum-icon"><{$forum.forum_folder}></span>
+			<a rel="section" class="name" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$forum.forum_id}>"><{$forum.forum_name}></a>
+			<p class="description"><{$forum.forum_desc}></p>
+			<{if $forum.forum_moderators}>
+			<div class="moderators"><{$smarty.const._MD_MODERATOR}>: <{$forum.forum_moderators}></div>
+			<{/if}>
+		</td>
+		<td><{$forum.forum_topics}></td>
+		<td><{$forum.forum_posts}></td>
+		<td><{$forum.forum_lastpost_time}><br /><{$forum.forum_lastpost_icon}> <br /><{$forum.forum_lastpost_user}></td>
+	</tr>
+	<{if $forum.subforum}>
+    <tr>
+    	<th scope="col" colspan="4">
+    		<img class="icon" src="<{xoImgUrl /icons/16x16/folder_txt.png}>" alt="" /> <{$smarty.const._MD_SUBFORUMS}>
+    	</th>
+    </tr>
+	    <{if $subforum_display == "expand"}>
+		<{foreach from=$forum.subforum item=subforum}>
+	    <tr>
+			<td>
+				<{if $rss_enable}>
+				<a rel="alternate" class="rss" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/rss.php?f=<{$subforum.forum_id}>" target="_blank" title="RSS feed">RSS</a>
+				<{/if}>
+				<span class="forum-icon"><{$subforum.forum_folder}></span>
+				<a rel="subsection" class="name" href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$subforum.forum_id}>"><{$subforum.forum_name}></a>
+				<p class="description"><{$subforum.forum_desc}></p>
+				<{if $subforum.forum_moderators}>
+				<div class="moderators"><{$smarty.const._MD_MODERATOR}>: <{$subforum.forum_moderators}></div>
+				<{/if}>
+			</td>
+			<td><{$subforum.forum_topics}> </td>
+			<td><{$subforum.forum_posts}> </td>
+			<td><{$subforum.forum_lastpost_time}><br /><{$subforum.forum_lastpost_icon}><br /><{$subforum.forum_lastpost_user}></td>
+		</tr>
+		<{/foreach}>
+		<{else}>
+		<{foreach from=$forum.subforum item=subforum}>
+		<tr>
+			<td colspan="4">
+				<span class="forum-icon"><{$img_subforum}></span>
+				<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/viewforum.php?forum=<{$subforum.forum_id}>"><{$subforum.forum_name}></a>
+			</td>
+		</tr>
+		<{/foreach}>
+		<{/if}>
+	<{/if}>
+	<{/foreach}>
+	</tbody>
+	</table>
+	<{/if}>
+</div>
+<div class="newbb-rounded-bottom"><div>&#160;</div></div>
+<{/foreach}>
+
+<div id="newbb-legend" class="x2-contentinfo">
+	<{$img_hotfolder}> = <{$smarty.const._MD_NEWPOSTS}><br />
+	<{$img_folder}> = <{$smarty.const._MD_NONEWPOSTS}><br />
+	<{$img_locked_newposts}> = <{$smarty.const._MD_INACTIVEFORUM_NEWPOSTS}><br />
+	<{$img_locked_nonewposts}> = <{$smarty.const._MD_INACTIVEFORUM_NONEWPOSTS}>
+</div>
+<div id="newbb-search" class="x2-search">
+	<form action="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php" method="post">
+		<input name="term" id="term" type="text" size="20" />
+		<input type="hidden" name="forum" value="all" />
+		<input type="hidden" name="sortby" value="p.post_time desc" />
+		<input type="hidden" name="searchin" value="both" />
+		<button type="submit"><{$smarty.const._MD_SEARCH}></button>
+	</form>
+	<a href="<{$xoops_url}>/modules/<{$xoops_dirname}>/search.php"><{$smarty.const._MD_ADVSEARCH}></a>
+</div>
+<a id="newbb-credits" class="x2-contentinfo" href="http://xoopsforge.com" target="_blank">
+	<img src="<{$xoops_url}>/modules/<{$xoops_dirname}>/images/cbb.png" alt="Powered by CBB v<{$version}>" title="Powered by CBB v<{$version}>" />
+</a>
+
+<{if $online}><{include file="db:newbb_online.html"}><{/if}>
+<{include file='db:system_notification_select.html'}>
+<!-- end module contents -->
+

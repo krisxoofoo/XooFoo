@@ -1,0 +1,26 @@
+<div id="xo-system-userform">
+	<form action="<{xoAppUrl /user.php op=login}>" method="post">
+	<div class="center"><{$smarty.const.THEME_BROWSERCHECK}></div>
+		<fieldset>
+			<legend><{$lang_login}></legend>
+			<label><{$lang_username}></label><input type="text" name="uname" size="26" maxlength="25" value="<{$usercookie}>" /><br />
+			<label><{$lang_password}></label><input type="password" name="pass" size="21" maxlength="32" />&nbsp;&nbsp;
+			<input type="hidden" name="op" value="login" />
+			<input type="hidden" name="xoops_redirect" value="<{$redirect_page}>" />
+			<input class="xo-formbuttons" type="submit" value="<{$lang_login}>" />
+			<a name="lost"></a>
+			<p><{$lang_notregister}></p>
+		</fieldset>
+	</form>
+
+	<form action="<{xoAppUrl /lostpass.php op=mailpasswd}>" method="post">
+		<fieldset>
+			<legend><{$lang_lostpassword}><br /><{$lang_noproblem}></legend>
+			<label><{$lang_youremail}></label>
+			<input type="text" name="email" size="26" maxlength="60" />&nbsp;&nbsp;
+			<input type="hidden" name="op" value="mailpasswd" />
+			<input type="hidden" name="t" value="<{$mailpasswd_token}>" />
+			<input class="xo-formbuttons" type="submit" value="<{$lang_sendpassword}>" />
+		</fieldset>
+	</form>
+</div>

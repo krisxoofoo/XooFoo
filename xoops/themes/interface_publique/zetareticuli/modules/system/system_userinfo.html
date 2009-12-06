@@ -1,0 +1,119 @@
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div class="system-user_profile">
+
+<h1><{$lang_allaboutuser}></h1>
+
+<{if $user_ownpage}>
+<div class="xodata-actions">
+	<a class="edit" href="<{xoAppUrl /edituser.php}>"><{$lang_editprofile}></a>
+	<{if $user_candelete}>
+	<a class="delete" href="<{xoAppUrl /user.php op=delete}>"><{$lang_deleteaccount}></a>
+	<{/if}>
+</div>
+<{elseif $xoops_isadmin}>
+<div class="xodata-actions">
+	<a class="edit" href="<{xoAppUrl modules/system/admin.php fct=users op=modifyUser uid=$user_uid}>"><{$lang_editprofile}></a>
+	<a class="delete" href="<{xoAppUrl modules/system/admin.php fct=users op=delUser uid=$user_uid}>"><{$lang_deleteaccount}></a>
+</div>
+<{/if}>
+
+<{if $user_ownpage}>
+<a id="userImage" href="<{xoAppUrl /edituser.php op=avatarform}>">
+	<img src="<{$user_avatarurl}>" alt="Avatar" />
+</a>
+<{else}>
+<div id="userImage">
+	<img src="<{$user_avatarurl}>" alt="Avatar" />
+</div>
+<{/if}>
+
+<table id="userFields">
+<tr class="fullName">
+	<th scope="row"><{$lang_realname}></th>
+	<td><{if $user_realname}><{$user_realname}><{else}>???<{/if}></td>
+</tr>
+<tr class="email">
+	<th scope="row"><{$lang_email}></th>
+	<td><{$user_email}></td>
+</tr>
+<tr class="dateRegistered">
+	<th scope="row"><{$lang_membersince}></th>
+	<td><{$user_joindate}></td>
+</tr>
+<tr class="rank">
+	<th scope="row"><{$lang_rank}></th>
+	<td><{$user_rankimage}><br /><{$user_ranktitle}></td>
+</tr>
+<tr class="postsCount">
+	<th scope="row"><{$lang_posts}></th>
+	<td><{$user_posts}></td>
+</tr>
+<tr class="dateLastVisited">
+	<th scope="row"><{$lang_lastlogin}></th>
+	<td><{$user_lastlogin}></td>
+</tr>
+</table>
+
+<h2><{$smarty.const._US_PROFILE}></h2>
+<table id="profileFields" style="clear:left">
+<tr class="signature">
+	<th scope="row"><{$lang_signature}></th>
+	<td><{$user_signature}></td>
+</tr>
+<tr class="websiteUrl">
+<th scope="row"><{$lang_website}></th>
+<td><{$user_websiteurl}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_privmsg}></th><td><{$user_pmlink}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_icq}></th><td><{$user_icq}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_aim}></th><td><{$user_aim}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_yim}></th><td><{$user_yim}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_msnm}></th><td><{$user_msnm}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_location}></th><td><{$user_location}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_occupation}></th><td><{$user_occupation}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_interest}></th><td><{$user_interest}></td>
+</tr>
+<tr>
+	<th scope="row"><{$lang_extrainfo}></th><td><{$user_extrainfo}></td>
+</tr>
+</table>
+
+<{if $modules}>
+
+<h2><{$smarty.const._US_POSTS}></h2>
+
+<{foreach from=$modules item=module}>
+<h3><{$module.name}></h3>
+
+<ul class="userPosts">
+<{foreach from=$module.results item=result}>
+	<li>
+		<a href="<{$result.link}>"><{$result.title}></a>
+		<span class="datePosted"><{$result.time}></span>
+	</li>
+<{/foreach}>
+</ul>
+
+<{$module.showall_link}>
+
+<{/foreach}>
+<{/if}>
+
+</div>

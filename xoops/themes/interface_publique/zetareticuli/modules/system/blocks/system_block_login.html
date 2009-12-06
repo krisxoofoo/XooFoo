@@ -1,0 +1,22 @@
+
+<form class="system-login" action="<{xoAppUrl /user.php}>" method="post">
+	<label>
+		<{$block.lang_username}>
+	    <input type="text" name="uname" size="12" value="<{$block.unamevalue}>" maxlength="25" />
+	</label>
+	<label>
+	    <{$block.lang_password}>
+	    <input type="password" name="pass" size="12" maxlength="32" />
+	</label>
+    <!-- <input type="checkbox" name="rememberme" value="On" class ="formButton" /><{$block.lang_rememberme}><br /> //-->
+    <input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+    <input type="hidden" name="op" value="login" />
+    <div class="formButtons">
+    <button type="submit">
+    	<{$block.lang_login}>
+    </button>
+    </div>
+	<{$block.sslloginlink}>
+</form>
+<a href="<{$xoops_url}>/user.php#lost"><{$block.lang_lostpass}></a><br />
+<a href="<{$xoops_url}>/register.php"><{$block.lang_registernow}></a>

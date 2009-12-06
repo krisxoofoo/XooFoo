@@ -1,0 +1,31 @@
+
+/*
+
+.xo-toolbar {
+	position:			relative;
+	z-index:			30;
+}
+.xo-toolbar + .xo-toolbar {
+	z-index:			20;
+	margin-top:			-1em;
+}
+.xo-toolbar + .xo-toolbar + .xo-toolbar {
+	z-index:			10;
+}
+.xo-toolbar > li {
+	float:			none;
+	display:		inline-block;
+}
+.xo-toolbar > li {
+	display:			inline;
+	vertical-align:		top;
+	height:				24px;
+}
+.xodata-list .xodata-entity {
+	height:		1px;
+}
+
+.newbb-postText {
+	height:			1px;
+}
+*/

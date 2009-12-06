@@ -1,0 +1,26 @@
+
+<{$xoTheme->addStylesheet('modules/newbb/style.css')}>
+
+<table class="xodata-list">
+<{if $block.disp_mode eq 0}>
+<thead>
+<tr>
+	<th scope="col"><{$smarty.const._MB_NEWBB_AUTHOR}></th>
+	<th scope="col"><{$smarty.const._MB_NEWBB_COUNT}></th>
+</tr>
+</thead>
+<{/if}>
+<tbody>
+<{foreach item=author key=uid from=$block.authors}>
+	<tr>
+		<td><a href="<{$xoops_url}>/userinfo.php?uid=<{$uid}>"><{$author.name}></a></td>
+		<td><{$author.count}></td>
+	</tr>
+<{/foreach}>
+</tbody>
+</table>
+<{if $block.indexNav}>
+<div class="x2-navigation">
+	<a href="<{xoAppUrl modules/newbb/}>"><{$smarty.const._MB_NEWBB_VSTFRMS}></a>
+</div>
+<{/if}>

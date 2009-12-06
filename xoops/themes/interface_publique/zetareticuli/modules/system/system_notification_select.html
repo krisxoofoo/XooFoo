@@ -1,0 +1,52 @@
+
+<{if $xoops_notification.show}>
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div id="system-select_notifications" class="zeta_Collapsible">
+	<div><{$lang_activenotifications}></div>
+	<form id="notification-select" method="post" action="<{$xoops_notification.target_page}>">
+	<input type="hidden" name="not_redirect" value="<{$xoops_notification.redirect_script}>" />
+	<input type="hidden" name="XOOPS_TOKEN_REQUEST" value="<{php}>echo $GLOBALS['xoopsSecurity']->createToken();<{/php}>" />
+
+	<table class="xo-formfields">
+	<thead>
+	<tr>
+		<th scope="col"><{$lang_category}></th>
+		<th scope="col">
+			<input name="allbox" id="allbox" onclick="xoopsCheckAll('notification-select','allbox');" type="checkbox" value="<{$lang_checkall}>" />
+			<{$lang_events}>
+		</th>		
+	</tr>	
+	</thead>
+	<{foreach from=$xoops_notification.categories item=category}>
+	<{assign var=count value=$category.events|@count}>
+	<{assign var=idx value=0}>
+	<tbody>
+	<{foreach from=$category.events item=event}>
+	<tr>
+		<{if not $idx}><th scope="rowgroup" rowspan="<{$count}>"><{$category.title}></th><{/if}>
+		<td>
+			<input type="hidden" name="not_list[<{$idx}>][params]" value="<{$category.name}>,<{$category.itemid}>,<{$event.name}>" />
+			<label>
+				<input type="checkbox" name="not_list[<{$idx}>][status]" value="1" <{if $event.subscribed}>checked="checked"<{/if}> />
+				<{$event.caption}>
+			</label>
+		</td>	
+	</tr>
+	<{assign var=idx value=$idx+1}>
+	<{/foreach}>
+	</tbody>
+	<{/foreach}>
+	</table>
+	<div class="xo-formbuttons">
+		<button type="submit"><{$lang_updatenow}></button>
+	</div>
+	</form>
+
+	<div class="system-notification_method">
+		<{$lang_notificationmethodis}>:
+		<a href="<{$editprofile_url}>"><{$user_method}></a>
+	</div>
+</div>
+<{/if}>

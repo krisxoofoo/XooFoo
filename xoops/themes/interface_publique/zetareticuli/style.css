@@ -1,0 +1,211 @@
+
+
+@import url(layout.css);
+@import url(blocks.css);
+@import url(content.css);
+@import url(widgets.css);
+@import url(icons.css);
+
+html, body {
+	margin:			0px;
+	padding:		0px 10px;
+	font-size:		10pt;
+	font-family:	Lucida Grande, Verdana, sans-serif;
+	background:		#000;
+	color:			#fff;
+}
+#xo-canvas {
+	background:		#C6C7C9;
+	color:			#000;
+}
+body.theme-dialog #xo-canvas {
+	margin:			0px 6px;
+}
+/* ---------- Header rules ---------- */
+#xo-banner {
+	clear:			both;
+	/* Use relative pos to ensure the banner ad img/flash is relative to the header */
+	position:		relative;
+	z-index:		100;
+	width:			100%;
+	height:			117px;
+	background:		#f1f1f1 url(img/header-bg.png) repeat-x left bottom;
+}
+body.theme-dialog #xo-banner {
+	padding-top:	6px;
+	padding-left:	10px;
+	height:			48px;
+	background:		#f1f1f1 url(img/header_small-bg.png) repeat-x left bottom;
+}
+
+/* Keep the ad img centered by using auto-margins and centeredcontainer/leftalignedchild on MSIE */
+#xo-banner-ad {
+	position:		absolute;
+	top:			10px;
+	right:			16px;
+}
+#xo-banner-ad object, #xo-banner-ad img {
+	display:		block;
+	text-align:		left;
+	margin:			0px auto;
+}
+#xo-globalnav {
+	margin:			0px;
+	background:		url(img/navbar-bg.png) repeat-x left bottom;
+	padding-top:	2px;
+	height:			28px;
+}
+#xo-userbar {
+	position:		absolute;
+	bottom:			3px;
+	right:			10px;
+}
+#xo-banner, #xo-banner a {
+	color:			#666;
+}
+#xo-banner form {
+	margin:			0px;
+	display:		inline;
+}
+#xo-banner input {
+	width:			6em;
+	background:		#ccc;
+	margin:			0px 0px 0px 2px;
+}
+#xo-banner button {
+	margin:			0px;
+	padding:		0px;
+	border:			0px none transparent;
+	background:		transparent none;
+	margin-bottom:	-5px;
+}
+
+#xo-globalnav {
+	font-size:			110%;
+	list-style-type:	none;
+	margin:				0px;
+	padding:			0px;
+}
+#xo-globalnav .x2-label {
+	display:			none;
+}
+#xo-globalnav li {
+	display:			inline;
+	margin:				0px;
+	padding-left:		.5em;
+	padding-right:		.5em;
+}
+#xo-globalnav a {
+	color:				#fff;
+	text-decoration:	none;
+}
+
+
+#xo-canvas-leftcolumn .xo-block {
+	background:		url(img/bg-left_block.png) no-repeat left top;
+	padding-top:	4px;
+	margin-right:	11px;
+	margin-bottom:	10px;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	background:		url(img/bg-left_blocktitle.png) no-repeat left bottom;
+	padding-left:	6px;
+	padding-bottom:	5px;
+	min-height:		22px;
+}
+#xo-canvas-leftcolumn .xo-blockcontent {
+	background:		url(img/bg-left_blockcontent.gif) no-repeat left top;
+	min-height:		110px;
+}
+
+#xo-canvas-rightcolumn {
+	color:				#a0a0a0;
+}
+#xo-canvas-rightcolumn a {
+	color:				#59709C;
+	text-decoration:	none;
+}
+#xo-canvas-rightcolumn a:hover {
+	color:				#333;
+	text-decoration:	underline;
+}
+
+
+#xo-canvas-rightcolumn .xo-blocktitle {
+	font-family:	Lucida Grande, Trebuchet MS, Verdana, sans-serif;
+	font-size:		120%;
+	font-weight:	bold;
+	color:			#666F7D;
+	border-bottom:	1px solid #cccccc;
+}	
+
+#xo-page .xo-blockszone .xo-blocktitle {
+	font-family:	Lucida Grande, Trebuchet MS, Verdana, sans-serif;
+	font-size:		120%;
+	font-weight:	bold;
+	color:			#2652BA;
+	margin:			0px .5em;
+	padding:		0px .25em;
+	border-bottom:	1px solid #cccccc;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent {
+	padding:		.5em;
+	color:			#6C6C6C;
+}
+#xo-page .xo-blockszone .xo-blockcontent a {
+	color:				#7BADEA;
+	text-decoration:	none;
+}
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+	color:			#54759E;
+}
+
+#xo-content {
+	position:		relative;
+	padding:		0px 14px;
+	color:			#333;
+}
+
+#xo-footer {
+	text-align:			center;
+	padding:			.5em;
+	font-size:			90%;
+	color:				#666;
+	margin:				0px;
+}
+body.theme-dialog #xo-footer {
+	padding:			.2em .5em;
+	font-size:			80%;
+}
+
+#xo-footer a {
+	color:				#333;
+}
+
+#xo-logger-output {
+	font-size:			80%;
+}
+
+
+#leftcol-switch {
+	position:			relative;
+	z-index:			10;
+	opacity:			.33;
+	margin-top:			-11px;
+	margin-right:		-18px;
+	float:				right;
+	background:			url(icons/16x16/back.png) no-repeat right center;
+	width:				16px;
+	height:				16px;
+	overflow:			hidden;
+	text-indent:		-1000em;
+	cursor:				pointer;
+}
+#leftcol-switch:hover {
+	opacity:			1;
+}
+
+.rightcolumn-layout #leftcol-switch {
+	background-image:	url(icons/16x16/forward.png);
+}

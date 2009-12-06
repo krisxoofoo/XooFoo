@@ -1,0 +1,74 @@
+
+<{$xoTheme->addStylesheet('modules/news/style.css')}>
+
+
+<{if $topic_rssfeed_link}>
+	<a rel="alternate" class="rss" href="<{xoAppUrl modules/news/backendt.php topicid=$topic.id}>" title="RSS">
+		<img src="<{xoImgUrl /img/rss.png}>" alt="RSS" />
+	</a>
+<{/if}>
+
+<h1><{$topic_title|default:$smarty.const._MI_NEWS_NAME}></h1>
+
+<{if $displaynav == true}>
+<div class="xo-navbar">
+	<form name="form1" action="<{$xoops_url}>/modules/news/index.php" method="get">
+	<{$topic_select}>
+	<select name="storynum"><{$storynum_options}></select>
+	<button type="submit" class="formButton"><{$lang_go}></button>
+	</form>
+</div>
+<{/if}>
+<{if $topic_description}>
+	<p><{$topic.description}></p>
+<{/if}>
+
+<div style="margin: 10px;"><{$pagenav}></div>
+
+<ul class="xodata-list">
+<{foreach from=$columns.0 item=story}>
+<li class="xodata-entity news-story">
+	<div class="xodata-title"><{$story.title}></div>
+	<div class="xodata-header">
+		<{if $rates}>
+		<span class="agora-attributes">
+			<span class="xo-label"><{$lang_ratingc}></span><span class="agora-rating"><{$story.rating}></span>
+			<span class="agora-votesCount">(<{$story.votes}>)</span>
+		</span>
+		<{/if}>
+		<{if $story.files_attached}>
+		<a href="<{xoAppUrl modules/news/article.php storyid=$story.id}>" title="<{$smarty.const._NW_ATTACHEDLIB}>">
+			<img src="<{xoImgUrl /icons/16x16/attachment.png}>" alt="Attachments" />
+		</a>
+		<{/if}>
+		<{if $story.poster != ''}><span class="itemPoster"><{$lang_postedby}> <{$story.poster}></span><{/if}>
+		<span class="datePosted"><{$lang_on}> <{$story.posttime}></span>
+		(<span class="itemStats"><{$story.hits}> <{$lang_reads}></span>)
+		<{$news_by_the_same_author_link}>
+	</div>	
+	<div class="xodata-body">
+		<{$story.imglink}>
+		<{$story.text}>
+		<div class="more"><{$story.morelink}></div>
+	</div>
+	<div class="xodata-actions">
+	<{if $xoops_isadmin}>
+		<a class="edit" title="<{$smarty.const._EDIT}>"
+			href="<{xoAppUrl modules/news/submit.php?op=edit&storyid=}><{$story.id}>"><{$smarty.const._EDIT}></a>
+		<a class="delete" title="<{$smarty.const._DELETE}>"
+			href="<{xoAppUrl modules/news/index.php?op=delete&storyid=}><{$story.id}>"><{$smarty.const._DELETE}></a>
+	<{/if}>
+	<{if $rates}>
+		<a class="rate" title="<{$lang_ratethisnews}>"
+			href="<{$xoops_url}>/modules/news/ratenews.php?storyid=<{$story.id}>" rel="nofollow">
+			<{$lang_ratethisnews}>
+		</a>
+	<{/if}>
+	</div>
+	<div class="rounded-bottom"><div>&#160;</div></div>
+</li>
+<{/foreach}>
+</ul>
+
+<div style="text-align: right; margin: 10px"><{$pagenav}></div>
+<{include file='db:system_notification_select.html'}>

@@ -1,0 +1,160 @@
+
+/* ------- Collapsible element ------- */
+
+.zeta_Collapsible .trigger, tbody.zeta_Collapsible tr.trigger :first-child {
+	cursor:		pointer;
+}
+
+div.zeta_Collapsible .trigger:before,
+tbody.zeta_Collapsible tr.trigger td:first-child:before,
+tbody.zeta_Collapsible tr.trigger th:first-child:before {
+	content:	url(img/minus.png);
+	margin-right:	4px;
+}
+
+div.zeta_Collapsible.collapsed .trigger:before,
+tbody.zeta_Collapsible.collapsed tr.trigger td:first-child:before,
+tbody.zeta_Collapsible.collapsed tr.trigger th:first-child:before
+{
+	content:	url(img/plus.png);
+}
+
+
+.zeta_Collapsible.collapsed > * {
+	display:	none;
+}
+tbody.zeta_Collapsible.collapsed > .trigger {
+	display:	table-row;
+}
+.zeta_Collapsible.collapsed > .trigger {
+	display:	block;
+}
+
+/* ------- Breadcrumbs ------- */
+
+.xo-breadcrumbs a {
+	padding:			0px .5em;
+}
+.xo-breadcrumbs.threaded a {
+	display:			block;
+}
+.xo-breadcrumbs.threaded a + a { margin-left:					1em; }
+.xo-breadcrumbs.threaded a + a + a { margin-left:				2em; }
+.xo-breadcrumbs.threaded a + a + a+ a { margin-left:			3em; }
+.xo-breadcrumbs.threaded a + a + a+ a + a { margin-left:		4em; }
+.xo-breadcrumbs.threaded a + a + a+ a + a + a { margin-left:	5em; }
+
+
+
+/* ------- Toolbar ------- */
+.xo-toolbar {
+	clear:				both;
+	cursor:				default;
+	list-style-type:	none;
+	margin:				1em 0px;
+	padding:			0px;
+	background:			#f8f8f8 url(img/form-button.png) repeat-x left top;
+}
+
+.xo-toolbar + .xo-toolbar {
+	margin-top:			-1em;
+}
+
+.xo-toolbar > li {
+	display:			inline;
+	padding-right:		.25em;
+}
+
+
+
+.xo-toolbar > li {
+	float:				left;
+	border:				1px solid #e0e0e0;
+	margin:				0px;
+	padding:			4px .25em 0px;
+	min-height:			24px;
+}
+
+.xo-toolbar ul {
+	display:			inline;
+	list-style-type:	none;
+	margin:				0px;
+	padding:			0px;
+}
+
+.xo-toolbar, .xo-toolbar a {
+	color:				#444;
+}
+.xo-toolbar a:hover {
+	color:				#2652BA;
+}
+.xo-toolbar li.checked {
+	border-color:		#ccc #f8f8f8 #f8f8f8 #ccc;
+	border-top-color:	#ccc;
+	border-left-color:	#ccc;
+}
+.xo-toolbar + * {
+	clear:				left;
+}
+
+
+/* ------- Menu ------- */
+
+.hovermenu {
+	clear:		both;
+	float:		left;
+	border:		1px solid #dddddd;
+	background:	#f0f0f0;
+	cursor:		default;
+	margin:		1em 0px .5em;
+}
+
+.hovermenu .x2-nl {
+	float:		left;
+	padding:	.1em .5em;
+}
+.hovermenu ul {
+	position:	absolute;
+	z-index:	100;
+	list-style:	none;
+	margin:		0px;
+	padding:	0px;
+	background:	#f0f0f0;
+	border:		1px solid #f8f8f8;
+}
+.hovermenu li {
+	position: relative;
+	white-space:	nowrap;
+}
+
+.hovermenu ul ul {
+	top:		0;
+	left:		100%;
+}
+
+.hovermenu ul
+{display: none;}
+
+.hovermenu .x2-nl:hover ul
+{display: block;}
+
+/*
+.hovermenu ul li:hover ul ul,
+.hovermenu ul ul li:hover ul ul
+
+.hovermenu ul ul li:hover ul,
+.hovermenu ul ul ul li:hover ul
+*/
+.hovermenu a {
+	display:	block;
+	text-decoration: none;
+	color:			#333;
+}
+
+.hovermenu li {
+	margin: 0;
+	padding: .1em .5em;
+}
+.hovermenu li:hover {
+	background:			#f4faff;
+}

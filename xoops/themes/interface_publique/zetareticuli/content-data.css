@@ -1,0 +1,73 @@
+
+.xodata-entity .xodata-header, .itemInfo {
+	text-align:			right;
+}
+.xodata-header, .xodata-footer {
+	padding:			.25em .5em;
+}
+.xodata-body {
+	padding:			.5em;
+}
+
+
+
+
+table .repliesCount {
+	text-align:			center;
+}
+
+#xo-content .xodata-alternateTypes {
+	position:			absolute;
+	top:				-2px;
+	right:				2px;
+}
+#xo-content .xodata-alternateTypes a {
+	float:				right;
+}
+a.printable,
+a.pdf,
+a.dummy
+{
+	width:					32px;
+	height:					32px;
+	background-repeat:		no-repeat;
+	background-position:	left top;
+	text-indent:			-1000em;
+}
+
+a.printable	{	background-image: url(icons/32x32/printable.png); }
+a.pdf		{	background-image: url(icons/32x32/pdf.png); }
+
+.agora-attributes {
+	float:			left;
+}
+
+.more {
+	clear:			both;
+	text-align:		right;
+	padding:		.5em;
+}
+
+
+.xodata-attachments {
+	border:			1px solid #666666;
+	padding:		.5em;
+	background:		#d1d5d9;
+	width:			30%;
+}
+.xodata-attachments ul {
+	margin:			0px;
+}
+
+.xodata-actions {
+	padding:		.25em;
+	text-align:		center;
+}
+
+
+.xodata-actions a {
+	color:			#333;
+	padding-left:	4px;
+	padding-right:	.5em;
+}
+

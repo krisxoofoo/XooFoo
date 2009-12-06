@@ -1,0 +1,31 @@
+
+<{$xoTheme->addStylesheet('modules/system/style.css')}>
+
+<div class="system-site_info">
+
+<{if $block.showgroups}>
+<ul class="site_admins">
+<{foreach item=group from=$block.groups}>
+<{if $group.users}>
+	<li class="group">
+		<{$group.name}>
+		<ul class="users">
+		<{foreach from=$group.users item=user}>
+			<li class="user">
+				<img class="avatar" src="<{$user.avatar}>" alt="Avatar" />
+				<a href="<{xoAppUrl /userinfo.php uid=$user.id}>"><{$user.name}></a>
+				<{$user.msglink}>
+			</li>
+		<{/foreach}>
+		</ul>
+	</li>
+<{/if}>
+<{/foreach}>
+</ul>
+<{/if}>
+<p class="recommend_us">
+	<img src="<{xoImgUrl /images/xoops_sticker.png}>" alt="XOOPS" /><br />
+	<{$block.recommendlink}>
+</p>
+
+</div>

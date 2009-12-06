@@ -1,0 +1,57 @@
+
+.login {
+	background:		url(icons/22x22/login.png) no-repeat left center;
+	padding-left:	24px!important;
+}
+
+
+
+a[rel~=prev] {
+	background:			url(icons/22x22/1leftarrow.png) no-repeat left -4px;
+	padding-left:		26px;
+}
+a[rel~=next] {
+	background:			url(icons/22x22/1rightarrow.png) no-repeat right -4px;
+	padding-right:		26px;
+}
+
+
+
+.add {
+	background:			url(icons/22x22/edit_add.png) no-repeat 2px center;
+	padding-left:		26px!important;
+}
+.ratee {
+	background:			url(icons/22x22/rate.png) no-repeat 2px center;
+	padding-left:		26px!important;
+}
+.reply {
+	background:			url(icons/22x22/post_reply.png) no-repeat 2px center;
+	padding-left:		26px!important;
+}
+
+.bottom {
+	background:			url(icons/22x22/2downarrow.png) no-repeat 2px center;
+	padding-left:		26px!important;
+}
+.top {
+	background:			url(icons/22x22/2uparrow.png) no-repeat 2px center;
+	padding-left:		26px!important;
+}
+
+.xodata-actions .edit,
+.xodata-actions .delete,
+.xodata-actions .rate,
+.xodata-actions .transfer,
+.xodata-actions .tell
+{
+	background-repeat:		no-repeat;
+	background-position:	left center;
+	padding-left:			26px;
+	min-height:				22px;
+}
+.xodata-actions .delete		{ background-image: url(icons/22x22/delete.png); }
+.xodata-actions .edit		{ background-image: url(icons/22x22/edit.png); }
+.xodata-actions .rate		{ background-image: url(icons/22x22/rate.png); }
+.xodata-actions .tell		{ background-image: url(icons/22x22/tell.png); }
+.xodata-actions .transfer	{ background-image: url(icons/22x22/transfer.png); }

@@ -13,7 +13,8 @@ Il existe un wiki concernant ce thème et ses fichiers à cette adresse http://l
 
 Installation :
 Décompressez l'archive et téléverser l'ensemble des dossiers et fichiers directement à la racine de votre site
-Faites une sauvegarde du fichier "common.php" dans le dossier "include" de votre site
+Pour profiter de la possibilité d'ajout de blocs dans le pied de page, vous devez mettre le fichier "function.block.php" dans votresite/class/smarty/xoops_plugins/
+
 
 /**** English version ****/
 Morphogenesis is a template to carry out your theme for XOOPS
@@ -23,7 +24,7 @@ There is a wiki concerning this theme and its files at this adresss http://labs.
 
 Installation:
 Decompress the file and upload the whole of the files and files directly to the root of your site
-Made a backup of the file “common.php” in the file “include” of your site
+
 
 /**** Versão de Portugues ****/
 
@@ -34,7 +35,7 @@ Há um wiki a respeito deste tema e de suas limas no este adresss http://labs.xo
 
 Instalação:
 Decompress a lima e upload o todo das limas e de limas diretamente à raiz de seu local
-Fêz um apoio un arquivo "common.php" no arquivo "incluir" de seu local
+
 
 
 /**** Versione Italiano ****/
@@ -45,7 +46,7 @@ Per il vostri feeback ed errori di programma potete andare sulle tribune di supp
 
 Impianto:
 Decomprimere l'archivio ed upload il tutto degli archivi e degli archivi direttamente alla radice del vostro luogo
-Ha fatto un recupero degli archivi "common.php" nell'archivio "includere" del vostro luogo
+
 
 
 /**** versión española ****/
@@ -56,7 +57,7 @@ Para su feeback y fallos de funcionamiento usted puede ir en los foros del apoyo
 
 Instalación:
 Descomprimir el fichero y cargar por teletratamiento el conjunto de los ficheros y de los ficheros directo a la raíz de su sitio
-Hizo que una reserva de el fichero y "common.php" en el fichero "incluye" de su sitio
+
 
 
 /**** Deutsche Fassung ****/
@@ -67,7 +68,7 @@ Ihr feeback und Marken können Sie auf die Foren des Trägers von Xoops Frankrei
 
 Einbau:
 Die Datei dekomprimieren und das Ganze der Dateien und der Dateien direkt zur Wurzel Ihrer Sites zurückladen
-Ließ eine Reserve von den Dateien "common.php" in der Datei von Ihrer Site "einschließen"
+
 
 
 /**** Nederlandse versie ****/
@@ -78,7 +79,7 @@ Voor uw feeback en insecten kunt u go on de forums van steun van Xoops Frankrijk
 
 Installatie:
 Decompresseer het dossier en upload the whole of de dossiers en dossiers rechtstreeks aan de wortel van uw plaats
-Maakte een backup van de dossiers "common.php" in het dossier van uw plaats "omvatten"
+
 
 
 /**** wersja wersja ****/
@@ -89,12 +90,9 @@ Dla twój feeback i pluskwa ty móc na the forum poparcie Xoops Francja (http://
 
 Instalacja:
 Decompress the kartoteka i upload the calosc the kartoteka i kartoteka bezposrednio the korzen twój miejsce
-Zrobic wsparcie the kartoteka "common.php" w the kartoteka "" twój miejsce
+
 
 /**** persian version ****//**** بخش فارسی ****/
 مورفوژنسيس (يا ساختار) يك تمپليت براي اجراي قالب شما براي آرشيتكتور زوپس است كه بتواند سير تكاملي آخرين ورژن و ورژن آينده‌ي سي ام اس را براي بازخورد و باگ‌هاي شما تابع گيري كند، و شما مي‌توانيد به انجمن‌هاي پشتيباني زوپس ايران (www.irxoops.org) يا پروژه ها (www.xoops.org) مراجعه كنيد.
 يك ويكي در آنجا وجود دارد كه به اين قالب و فايل‌هاي آن اختصاص يافته به آدرس زير:
 http://labs.xoofoo.org 
-
-طريقه نصب:
-يك بكاپ از فايل هاي common.php در شاخه include سايتتان بگيريد. فايل را دكمپرس (آنزيپ) كنيد و همه‌ي فايلها و فايل‌ها را مستقيماً در شاخه سايتتان آپلود كنيد. 

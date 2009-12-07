@@ -265,8 +265,9 @@ body {font-size:75%;}
 	text-align:					right;
 }
 #xo-rss a#feedrss {
+	margin-right: 				16px !important;
 	background: 				transparent	url(../icons/action/feed_add.png) no-repeat center right;
-	margin-right: 				16px;
+	padding-right:				20px;
 	color: 						inherit;
 	text-decoration: 			none;
 }

@@ -1,6 +1,16 @@
-/* Mor.pho.GEN.e.sis version 3.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
-/* License:	CREATIVE COMMONS Attribution-ShareAlike 3.0 */
-/* @version         $Id */
+/*
+ * Mor.pho.GEN.e.sis 3.0
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
 
 /*======== for html 5 ======== */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}

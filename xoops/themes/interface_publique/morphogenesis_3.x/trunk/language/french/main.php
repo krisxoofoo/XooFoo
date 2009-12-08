@@ -121,8 +121,9 @@ define("THEME_ADMIN_IMAGES",			"Images");
 define("THEME_ADMIN_IMAGES_DESC",		"Gestionnaire d&#39;Images");
 
 // accessibilitybar.html
-define("THEME_ACCESS_PLUS",				"Augmenter la taille de police");
-define("THEME_ACCESS_MINUS",			"Diminuer la taille de police");
+define("THEME_ACCESS_PLUS",				"Augmenter la taille de police de caract&#232;res");
+define("THEME_ACCESS_MINUS",			"Diminuer la taille de police de caract&#232;res");
+define("THEME_ACCESS_RESET",			"Taille initiale de la police de caract&#232;res");
 
 // notification.html
 define("THEME_NOTIFICATION_PLUS",		"Afficher les options de Notification");
@@ -136,20 +137,20 @@ define("THEME_WRITE_EMAIL", 			"Saisissez votre adresse de courriel");
 define("THEME_BROWSERCHECK",  			"V&#233;rifier la compatibilit&#233; de votre navigateur et parefeu <a href='http://tutos.xoofoo.org/browser_check/'><strong>ici</strong></a>");
 
 /* ------------------- xo_socialbookmark.html ------------------- */
-define("THEME_BK_SCRIPSTYLE",          "Submit this to Script & Style");
-define("THEME_BK_BLINKLIST",           "Share this on Blinklist");
-define("THEME_BK_DELICIOUS",           "Share this on del.icio.us");
-define("THEME_BK_DIGG",            	"Digg this!");
-define("THEME_BK_FURL",            	"Share this on Furl");
-define("THEME_BK_REDDIT",            	"Share this on Reddit");
-define("THEME_BK_YAHOO",            	"Save this to Yahoo MyWeb");
-define("THEME_BK_STUMBLE",            	"Stumble upon something good? Share it on StumbleUpon");
-define("THEME_BK_TWITTER",            	"Tweet This!");
-define("THEME_BK_TECHNORATI",          "Share this on Technorati");
-define("THEME_BK_MIXX",            	"Share this on Mixx");
-define("THEME_BK_MYSPACE",            	"Post this to MySpace");
-define("THEME_BK_DESIGNFLOAT",         "Submit this to DesignFloat");
-define("THEME_BK_FACEBOOK",            "Share this on Facebook");
+define("THEME_BK_SCRIPSTYLE",          	"Soumettre ceci sur Script & Style");
+define("THEME_BK_BLINKLIST",           	"Suivre ceci sur Blinklist");
+define("THEME_BK_DELICIOUS",           	"Suivre ceci sur del.icio.us");
+define("THEME_BK_DIGG",            		"Digg ceci !");
+define("THEME_BK_FURL",            		"Suivre ceci sur Furl");
+define("THEME_BK_REDDIT",            	"Suivre ceci sur Reddit");
+define("THEME_BK_YAHOO",            	"Sauvegarder sur Yahoo MyWeb");
+define("THEME_BK_STUMBLE",            	"Suivre ceci sur StumbleUpon");
+define("THEME_BK_TWITTER",            	"Tweet ceci !");
+define("THEME_BK_TECHNORATI",          	"Suivre ceci sur Technorati");
+define("THEME_BK_MIXX",            		"Suivre ceci sur Mixx");
+define("THEME_BK_MYSPACE",            	"Poster sur MySpace");
+define("THEME_BK_DESIGNFLOAT",         	"Soumettre ceci sur DesignFloat");
+define("THEME_BK_FACEBOOK",            	"Suivre ceci sur Facebook");
 
 /* ------------------- xo_footerstatic.html ------------------- */
 define("_THEME_INBOX",            		"Voir vos messages");

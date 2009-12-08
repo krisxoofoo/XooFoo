@@ -122,6 +122,7 @@ define("THEME_ADMIN_IMAGES_DESC",		"Go to Images Administration");
 // accessibilitybar.html
 define("THEME_ACCESS_PLUS",				"Font size Up !");
 define("THEME_ACCESS_MINUS",			"Font size Down !");
+define("THEME_ACCESS_RESET",			"Font size Reset !");
 
 // notification.html
 define("THEME_NOTIFICATION_PLUS",		"Afficher les options de Notification");

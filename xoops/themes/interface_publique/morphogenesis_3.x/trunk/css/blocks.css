@@ -191,7 +191,7 @@ img.xo-blockquickedit {border: 0 !important; vertical-align:middle;}
 	background-color: 			transparent;
 	color: 						inherit;
 }
-#xo-blockfooter #xo-block {
+#xo-blockfooter .xo-block {
 	display: 					block;
 	float: 						left;
 	width: 						23%;

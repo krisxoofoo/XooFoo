@@ -159,6 +159,39 @@ body {font-size:75%;}
 }
 * html #xo-globalnav { height: 23px; }
 #xo-globalnav .xo-label { display: none;}
+#xo-globalmenu {display: block; float:left; width:95%;}
+/**** columns collapse****/
+#xo-leftcolswitch {
+	position:			relative;
+	display: block;
+	z-index:			10;
+	opacity:			.25;
+	margin-top:			4px;
+	margin-left:		2px;
+	float:				left;
+	background:			transparent url(../icons/action/agt_back.png) no-repeat left center;
+	width:				2%;
+	overflow:			hidden;
+	text-indent:		-1000em;
+	cursor:				pointer;
+}
+#xo-leftcolswitch:hover { opacity: 1;}
+#xo-rightcolswitch {
+	display: block;
+	position:			relative;
+	z-index:			10;
+	opacity:			.25;
+	margin-top:			4px;
+	margin-right:		2px;
+	float:				right;
+	background:			transparent url(../icons/action/agt_forward.png) no-repeat right center;
+	width:				2%;
+	overflow:			hidden;
+	text-indent:		-1000em;
+	cursor:				pointer;
+}
+#xo-rightcolswitch:hover { opacity: 1;}
+
 #xo-globalnav ul { padding: 2px; list-style-type:	none;}
 #xo-globalnav li {
 	display: 					inline;
@@ -180,6 +213,7 @@ body {font-size:75%;}
 }
 /*============= Style for breadcrumb.html ================*/
 #xo-breadcrumb {
+	margin-left:				1em;
 	padding: 					0 0 15px 10px;
 	font-size: 					1em;
 	text-shadow: 				1px 1px 2px #aaa;

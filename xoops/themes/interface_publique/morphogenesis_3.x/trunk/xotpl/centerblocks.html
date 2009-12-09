@@ -8,41 +8,57 @@
 <{*
 <{if $xoBlocks[$zone]}>
 	<div class="xo-blockszone" id="xo-page-<{$topbottom}><{$lcr}>blocks">
-	<{foreach from=$xoBlocks[$zone] item=block}>
-	<div class="blockbg <{$block.module}>">
-	<div class="xo-block <{$block.module}>">
-<{if $block.title}>
-      <div class="xo-blocktitle">
-        <{$block.title}>
-        <{if $xoops_isadmin}><a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" ><img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /></a><{/if}>
-      </div>
-    <{else}>
-          <{if $xoops_isadmin}><div class="xo-blockquicklink"><a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" ><img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /><{$smarty.const.THEME_THISBLOCK_EDIT}></a></div><{/if}>   
-    <{/if}>
-		<div class="xo-blockcontent"><{$block.content}></div>
-	</div>
-	</div>
-	<{/foreach}>
+		<{foreach from=$xoBlocks[$zone] item=block}>
+			<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block <{$block.module}>">
+				<{if $block.title}>
+					<div class="xo-blocktitle">
+						<{$block.title}>
+							<{if $xoops_isadmin}>
+								<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+									<img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" />
+								</a>
+							<{/if}>
+					</div>
+				<{else}>
+					<{if $xoops_isadmin}>
+					<div class="xo-blockquicklink">
+						<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+							<img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /><{$smarty.const.THEME_THISBLOCK_EDIT}>
+						</a>
+					</div>
+					<{/if}>   
+				<{/if}>
+					<div class="xo-blockcontent"><{$block.content}></div>
+			</div>
+		<{/foreach}>
 	</div>
 <{/if}>
 *}>
 
 <{if $xoBlocks[$zone]}>
 	<div class="xo-blockszone" id="xo-page-<{$topbottom}><{$lcr}>blocks">
-	<{foreach from=$xoBlocks[$zone] item=block}>
-		<div class="xo-block <{$block.module}>">
-			
-    <{if $block.title}>
-        <div class="xo-blocktitle">
-          <{$block.title}>
-          <{if $xoops_isadmin}><a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" ><img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /></a><{/if}>          
-        </div>
-    <{else}>
-          <{if $xoops_isadmin}><div class="xo-blockquicklink"><a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" ><img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /><{$smarty.const.THEME_THISBLOCK_EDIT}></a></div><{/if}>         
-    <{/if}>
-    
-			<div class="xo-blockcontent"><{$block.content}></div>
-		</div>
-	<{/foreach}>
+		<{foreach from=$xoBlocks[$zone] item=block}>
+			<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block <{$block.module}>">		
+			<{if $block.title}>
+				<div class="xo-blocktitle">
+					<{$block.title}>
+					<{if $xoops_isadmin}>
+						<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+						<img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" />
+						</a>
+					<{/if}>          
+				</div>
+			<{else}>
+				<{if $xoops_isadmin}>
+					<div class="xo-blockquicklink">
+						<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+							<img class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>" /><{$smarty.const.THEME_THISBLOCK_EDIT}>
+						</a>
+					</div>
+				<{/if}>         
+			<{/if}>
+				<div class="xo-blockcontent"><{$block.content}></div>
+			</div>
+		<{/foreach}>
 	</div>
 <{/if}>

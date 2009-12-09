@@ -51,6 +51,8 @@ define("THEME_BREITZ",					"Breitz");
 define("THEME_BASQUE",					"Euskadi");
 
 // globalnav.html
+define("THEME_SHOWHIDE_COLUMN",			"Afficher/Cacher la colonne");
+
 define("THEME_CONTACT",					"Contact");
 define("THEME_CONTACT_DESC",			"Nous contacter ?");
 define("THEME_SITEMAP",					"Plan du site");

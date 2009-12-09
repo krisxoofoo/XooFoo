@@ -1,4 +1,6 @@
 <div id="xo-globalnav">
+	<div id="xo-leftcolswitch" onClick="javascript:showhide('xo-canvas-leftcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<div id="xo-globalmenu">
 	<ul class="xo-navigation">
 		<li class="xo-label"><{$smarty.const.THEME_NAVTITLE}></li>
 		<!-- menu in anonymous mode-->
@@ -23,4 +25,6 @@
 		<{/if}>
 		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><{$smarty.const.THEME_CONTACT}></a></li>
 	</ul>
+	</div>
+	<div id="xo-rightcolswitch"  onClick="javascript:showhide('xo-canvas-rightcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
 </div>

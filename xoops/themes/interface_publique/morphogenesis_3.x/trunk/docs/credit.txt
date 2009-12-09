@@ -1,13 +1,12 @@
 /**
- * @version         $Id$
+* @version         $Id$
 **/
 
 Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
-Thanks to Xoops Community for inspiration
+Thanks to Xoops Community for inspiration and features
 Thanks to Xoops Design Team
 and :
 - Dean Edwards for IE8.js 		--> http://code.google.com/p/ie7-js/
-- Taewook Kang for textsizer.js	--> http://txkang.com
 - Icons by Crystal Project		--> http://www.everaldo.com/crystal/
 - Josh Jones for SexyBookMarks	--> http://sexybookmarks.net/
 - Alexander Kaiser for iconize	--> http://pooliestudios.com/projects/iconize/

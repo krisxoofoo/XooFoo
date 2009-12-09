@@ -12,6 +12,10 @@
  * @version         $Id
 */
 
+/*========== for edit block by admin =============*/
+.xo-blockquicklink {}
+img.xo-blockquickedit {border: 0 !important; vertical-align:middle;}
+
 /*========== Main menu block =============*/
 #mainmenu a {
 	display: 					block;
@@ -166,7 +170,10 @@
 #xo-page .xo-blockszone .xo-blockcontent a:hover { text-decoration : underline;}
 
 /* ======= Center blocks ===========*/
-#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block,#xo-page-bottomleftblocks .xo-block, #xo-page-bottomrightblocks .xo-block {}
+#xo-page-topblocks {}
+#xo-page-bottomblocks {}
+#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block,#xo-page-bottomleftblocks .xo-block, #xo-page-bottomrightblocks .xo-block {
+	/*min-height:					180px;*/}
 #xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {}
 /* exemple :
 #xo-page-topleftblocks .xo-block .xo-blocktitle {
@@ -178,7 +185,3 @@
 	background-color: #000;
 } 
 etc ...*/
-
-/* for edit block */
-.xo-blockquicklink {}
-img.xo-blockquickedit {border: 0 !important; vertical-align:middle;}

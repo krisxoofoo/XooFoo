@@ -33,7 +33,7 @@
 * html #xo-globalnav { height: 23px; }
 #xo-globalnav .xo-label { display: none;}
 #xo-globalmenu {display: block; float:left; width:95%;}
-/**** columns collapse****/
+/**** columns collapse ****/
 #xo-leftcolswitch {
 	position:					relative;
 	display: 					block;
@@ -66,7 +66,7 @@
 	cursor:						pointer;
 }
 #xo-rightcolswitch:hover { opacity: 1;}
-
+/**** horizontal menu ****/
 #xo-globalnav ul { padding: 2px; list-style-type:	none;}
 #xo-globalnav li {
 	display: 					inline;
@@ -85,16 +85,4 @@
 	background-color: 			transparent;
 	color: 						#8198CE;
 	text-decoration: 			none;
-}
-/*============= Style for breadcrumb.html ================*/
-#xo-breadcrumb {
-	margin-left:				1em;
-	padding: 					0 0 15px 10px;
-	font-size: 					1em;
-	text-shadow: 				1px 1px 2px #aaa;
-}
-#xo-breadcrumb a:hover {
-	background-color:			transparent;
-	color: 						#8198CE;
-	text-decoration: 			underline;
 }

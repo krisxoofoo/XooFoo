@@ -103,3 +103,11 @@ div.dropdown .menu, div.dropdown .userbar {
 }
 /* -- signature in CBB/NewBB -- */
 .signature { font-style: italic; font-size: .9em;}
+
+/*======== body for tinyeditor/inbetwen module ======== */
+body.mceContentBody {
+	background-color: 			#fff;
+	background-image: 			none;
+	color: 						#333;
+}
+

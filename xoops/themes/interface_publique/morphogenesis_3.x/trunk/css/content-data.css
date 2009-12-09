@@ -103,6 +103,18 @@ a#xo-uname {
 #xo-accessibilitybar a {	text-decoration: none;	border: none;}
 #xo-accessibilitybar img:hover {opacity: .5; filter: alpha(opacity=50);}
 
+/*============= Style for breadcrumb.html ================*/
+#xo-breadcrumb {
+	margin-left:				1em;
+	padding: 					0 0 15px 10px;
+	font-size: 					1em;
+	text-shadow: 				1px 1px 2px #aaa;
+}
+#xo-breadcrumb a:hover {
+	background-color:			transparent;
+	color: 						#8198CE;
+	text-decoration: 			underline;
+}
 
 /* ============= Style for xo_bottompage.html ============= */
 #xo-bottompage {	width:100%; min-height: 40px; margin: 0; font-size: .9em;}

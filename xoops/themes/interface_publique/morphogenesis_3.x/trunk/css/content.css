@@ -228,7 +228,7 @@ code {
 	border-color:			#4478b0;
 	border-style: 			solid;
 }
-
+code, pre { white-space: -pre-wrap /* for opera */; white-space: pre-wrap;}
 
 
 

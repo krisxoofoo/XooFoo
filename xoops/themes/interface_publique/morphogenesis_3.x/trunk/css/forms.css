@@ -37,13 +37,8 @@ select[name=timezone_offset] { font-size: .9em;}
 textarea {
 	width: 						95%;
 	max-height: 				100px;
-	background-color: 			#fff;
-	color:						inherit;
 	overflow: 					auto;
 }
-textarea:hover { background-color: #E6EBFF; color: inherit;}
-textarea:focus { background-color: #F4FAFF; color: inherit; outline: 1px solid #139EE8;}
-
 #xo-page fieldset { border: 		1px solid #ccc;
 	border-radius:				5px;
 		-moz-border-radius:		5px;
@@ -112,67 +107,3 @@ input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, inpu
     outline:                	1px solid #139EE8;
 }
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
-/*======= Style for forms, buttons, textarea, ... ========*/
-/*
-input[type=submit], input[type=reset], input[type=button] {}
-input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover {}
-input[type=text], input[type=password], input[type=file], textarea {
-	margin: 						2px 0;
-	padding-left:				.2em;
-	border:						1px solid #999;
-}
-input[type=text], input[type=password] {}
-input[type=text]:hover, input[type=password]:hover {
-}
-input[type=text]:focus, input[type=password]:focus, input[type=checkbox]:focus, input[type=radio]:focus; textarea:focus {
-	border-color:				#666F7D;
-	outline:						1px solid #666F7D;
-}
-input[type=radio], input[type=checkbox] {
-    margin:                 0 5px 0 5px;
-	padding:				2px;
-	border:					1px solid #999;
-}
-.xo-block form {
-	margin:						0;
-	margin-bottom: 1em;
-	padding:					0;
-}
-#xo-content form {
-	margin:						0;
-	background-color:			transparent;
-	color: 						inherit;
-}
-.xo-block .formButtons {}
-.xo-formfield {
-	margin-bottom:				.2em;
-	background-color:			transparent;
-	color: 						inherit;
-}
-.xo-formbuttons, .formButton, button, input[type=submit], input[type=reset], input[type=button] {
-	 background-color: #6584CE; 
-	padding: 3px; 
-	color: #fff; 
-	text-decoration: none;
-	-moz-border-radius: 5px; 
-	-webkit-border-radius: 5px;
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-	border-bottom: 1px solid rgba(0,0,0,0.25);
-	cursor: pointer;
-}
-.xo-formbuttons:hover, .formButton:hover, button:hover {}
-
-#xo-page label {
-  float: left;
-  width: 100px;
-  text-align: right;
-  font-weight: bolder;
-}*/
-/*======== body for tinyeditor/inbetwen module ======== */
-body.mceContentBody {
-	background-color: 			#fff;
-	background-image: 			none;
-	color: 						#333;
-}

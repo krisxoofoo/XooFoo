@@ -13,10 +13,7 @@
 */
 
 /*========== xo_footerstatic.html ==========*/
-#xo-footerstatic * {
-	margin: 			0;
-	padding: 			0;
-}
+#xo-footerstatic * {	margin: 0; padding: 0;}
 #xo-footerstatic {
 	position: 			absolute;
 	left: 				0;

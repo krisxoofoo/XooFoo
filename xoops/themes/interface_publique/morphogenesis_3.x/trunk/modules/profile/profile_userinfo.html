@@ -3,10 +3,12 @@
 <div class="center">
     <{if $avatar}>
         <img class="comUserImg" src="<{$avatar}>" alt="<{$uname}>" />
+		<br />
     <{/if}>
         <strong><{$uname}></strong>
+		<br />
         <{if $email}>
-             <br /><img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" alt=""/><{$email}>
+             <img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" alt=""/><{$email}>
         <{/if}>
         <{if !$user_ownpage && $xoops_isuser == true}>
         <form name="usernav" action="user.php" method="post">

@@ -12,9 +12,6 @@
  * @version         $Id
 */
 
-/*======== for html 5 ======== */
-article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
-img.xo-icons {margin-bottom:-3px;}
 /*======== others float class ======== */
 .floatleft {	float: left; margin: .75em; padding-left: 4px; border:	0;}
 .floatright { float: right; margin: .75em; padding: 2px; border: 0;}
@@ -36,7 +33,9 @@ img.xo-icons {margin-bottom:-3px;}
 .width33 { width: 				33%;}
 .width25 { width: 				25%;}
 .width20 { width: 				20%;}
+.width10 { width: 				10%;}
 /* ========= others font class ========== */
+.smallsmall { font-size: 		.8em;}
 .small {	font-size: 				.92em;}
 .normal { font-size: 			1em;}
 .big { font-size: 				1.17em;}
@@ -61,20 +60,4 @@ a.printable { background-image: url(../icons/action/printer.png); }
 a.pdf { background-image: url(../icons/action/page_white_acrobat.png); }
 a.friend { background-image: url(../icons/action/email_go.png); }
 
-
-/* ===== core messages ===== */
-.highlight {	background-color:#ff0; color:#ff0000; font-weight:bold; text-shadow: 1px 1px 2px #aaa;}
-.errorMsg,.confirmMsg, .resultMsg, .successMsg  { padding: .8em; text-align: center; margin-bottom: 1em;	/*border: 2px solid #ddd;*/
-	border-radius: 				10px;
-	-moz-border-radius: 		10px;
-	-webkit-border-radius: 		10px;
-	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
-	-moz-box-shadow: 			2px 2px 10px rgba(102, 102, 102, .5) ;
-	-webkit-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);}
-.errorMsg {	background-color: #FBE3E4; color: #D12F19;	border-color: #FBC2C4;}
-.confirmMsg { background-color: FFF6BF; color:#817134; border-color:	#FFD324;}
-.resultMsg {	background-color:#E6EFC2; color: #529214; border-color: #C6D880;}
-.errorMsg a {background-color: transparent; color: #D12F19;}
-.confirmMsg a   {	background-color:transparent; color: #817134;}
-.successMsg a  {background-color: transparent; color: #529214;}
 

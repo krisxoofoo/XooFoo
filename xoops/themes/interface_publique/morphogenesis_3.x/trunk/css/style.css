@@ -17,21 +17,26 @@
 */
 
 /* include style sheets */
-@import url(baradmin.css);
-@import url(blocks.css);
-@import url(content.css);
-@import url(module.css);
-@import url(content-data.css);
-@import url(forms.css);
-@import url(extras.css);
-@import url(iconize.css);
-@import url(tplsystem.css);
+@import url(baradmin.css); /* administration access in footer */
+@import url(globalnav.css); /* horizontal menu in header */
+@import url(blocks.css); /* style for blocks */
+@import url(content.css); /* style for content */
+@import url(module.css); /* style for content menu */
+@import url(content-data.css); /* style for files include in header or bottom page content */
+@import url(socialbookmark.css); /* style for socialbookmark in end content zone */
+@import url(blockfooter.css); /* style for blocks in footer */
+@import url(forms.css); /* style for forms */
+@import url(extras.css); /* extras style for perzonalisation templates */
+@import url(iconize.css); /* style for icone in specific link */
+@import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 
 /* insert specific font */
 @font-face { font-family: BakerSignet BT; font-style:  normal; font-weight: normal; src: url(../fonts/BAKERSI3.eot);}
 
 /* reset css for web browsers*/
 * { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none;font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal;}
+/*  for html 5 in next time */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 
 /* beginning of the applicable styles */
 html, body {
@@ -80,15 +85,15 @@ body {font-size:75%;}
 	margin: 					0;
 	padding: 					.5em;
 }
+/* see also block.css for design blocks */
+/* see also forms.csss for design forms elements*/
+/* see also content.css for design content text */
+
 
 /* ============== header ================= */
 #xo-header {background: url(../img/background_repeat.jpg) repeat-x left bottom;}
 /* ---------- xo_topheader.html ---------- */
-#xo-topheader {
-	height: 					35px;
-	background-color: 			transparent;
-	color: 						#32529C;
-}
+#xo-topheader {/* see style sheet content-data.css */}
 /* ---------- xo_banner.html ---------- */
 #xo-banner {	width: 100%; height: 80px;}
 /* Logo and site name in the header */
@@ -143,86 +148,15 @@ body {font-size:75%;}
 	padding: 					6px;
 }
 #xo-banner-ad object, #xo-banner-ad img {display: block;}
-/*============= Style for globalnav.html ================*/
-#xo-globalnav {
-	clear: 						both;
-	min-height:					23px !important;
-	width:						100%;
-	margin:						0;
-	background : 				#fffff0 url(../img/navbar.gif) repeat-x left top;
-	color:						#32529C;
-	font-size:					1.2em;
-	font-weight: 				bold;
-	text-align: 				center;
-	vertical-align:				middle;
-	text-shadow:				2px 2px 3px #aaa;
-}
-* html #xo-globalnav { height: 23px; }
-#xo-globalnav .xo-label { display: none;}
-#xo-globalmenu {display: block; float:left; width:95%;}
-/**** columns collapse****/
-#xo-leftcolswitch {
-	position:			relative;
-	display: block;
-	z-index:			10;
-	opacity:			.25;
-	margin-top:			4px;
-	margin-left:		2px;
-	float:				left;
-	background:			transparent url(../icons/action/agt_back.png) no-repeat left center;
-	width:				2%;
-	overflow:			hidden;
-	text-indent:		-1000em;
-	cursor:				pointer;
-}
-#xo-leftcolswitch:hover { opacity: 1;}
-#xo-rightcolswitch {
-	display: block;
-	position:			relative;
-	z-index:			10;
-	opacity:			.25;
-	margin-top:			4px;
-	margin-right:		2px;
-	float:				right;
-	background:			transparent url(../icons/action/agt_forward.png) no-repeat right center;
-	width:				2%;
-	overflow:			hidden;
-	text-indent:		-1000em;
-	cursor:				pointer;
-}
-#xo-rightcolswitch:hover { opacity: 1;}
 
-#xo-globalnav ul { padding: 2px; list-style-type:	none;}
-#xo-globalnav li {
-	display: 					inline;
-	margin: 					0;
-	padding-left: 				.5em;
-	padding-right: 				.5em;
-	font-size: 					.9em;
-}
-#xo-globalnav a {
-	background-color: 			transparent;
-	color: 						#32529C;
-	font-weight: 				bold;
-	text-decoration: 			none;
-}
-#xo-globalnav a:hover {
-	background-color: 			transparent;
-	color: 						#8198CE;
-	text-decoration: 			none;
-}
-/*============= Style for breadcrumb.html ================*/
-#xo-breadcrumb {
-	margin-left:				1em;
-	padding: 					0 0 15px 10px;
-	font-size: 					1em;
-	text-shadow: 				1px 1px 2px #aaa;
-}
-#xo-breadcrumb a:hover {
-	background-color:			transparent;
-	color: 						#8198CE;
-	text-decoration: 			underline;
-}
+/*============= others files include ================*/
+#xo-language {/* see style sheet content-data.css */}
+#xo-searchbar {/* see style sheet content-data.css */}
+#xo-userbar {/* see style sheet content-data.css */}
+#xo-accessibilitybar {/* see style sheet content-data.css */}
+
+/*============= Style for globalnav.html ================*/
+#xo-globalnav{/* see specific style sheet : globalnav.css */}
 
 /*=============== Style for the Footer  ====================*/
 #xo-footer {
@@ -244,11 +178,8 @@ body {font-size:75%;}
 	text-decoration: 			underline;
 }
 
-#xo-blockfooter { /* see also in block.css */
-	display: 					block;
-	width: 						100%;
-	height:						150px;
-}
+#xo-blockfooter { /* see also in block.css */ }
+
 #xo-footerbottom {
 	clear:						both;
 	display: 					block;
@@ -316,8 +247,4 @@ body {font-size:75%;}
 }
 #xo-validw3c a#validxhtml:hover, #xo-validw3c a#licence:hover, #xo-validw3c a#validcss:hover, #xo-rss a#feedrss:hover {opacity: .5; filter: alpha(opacity=50);}
 
-/* ===== others ===== */
-#xo-logger-output {
-	margin-bottom : 			45px;
-	font-size: 					.8em;
-}
+/* for site closed, site redirection, debug mode, core messages : see style sheet tplsystem.css */

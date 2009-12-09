@@ -2,7 +2,7 @@
 	<div id="xo-leftcolswitch" onClick="javascript:showhide('xo-canvas-leftcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
 	<div id="xo-globalmenu">
 	<ul class="xo-navigation">
-		<li class="xo-label"><{$smarty.const.THEME_NAVTITLE}></li>
+		<li class="xo-label"><{$smarty.const.THEME_NAVTITLE}> : <{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}> - <{$xoops_meta_keywords}></li>
 		<!-- menu in anonymous mode-->
 		<li><a href="<{xoAppUrl}>" accesskey="a"  title="<{$smarty.const.THEME_HOME_DESC}>"><{$smarty.const.THEME_HOME}></a></li>
 		<{if !$xoops_isuser}>

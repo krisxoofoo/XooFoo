@@ -12,7 +12,13 @@
  * @version         $Id
 */
 
-/*=============  Style for xo_language.html ============= */
+/*=============   Style for xo_topheader.html ------------- */
+#xo-topheader {
+	height: 					35px;
+	background-color: 			transparent;
+	color: 						#32529C;
+}
+/*  ------------  Style for xo_language.html ------------- */
 #xo-language {
 	display: 					block;
 	float:						left;
@@ -20,7 +26,7 @@
 	padding-left: 				1em;
 }
 #xo-language img:hover{opacity:.5; filter: alpha(opacity=50);}
-/*========== Style for searchbar.html ==============*/
+/*  ------------ Style for searchbar.html ------------- */
 #xo-searchbar {
 	display: 					block;
 	float: 						left;
@@ -44,7 +50,7 @@
 }
 #xo-searchbar input[type=text]:hover { background: #8198CE; color: #fff;}
 #xo-searchbar input[type=text]:focus  { outline: 2px solid #139EE8;}
-/*============== Style for xo_userbar.html =================*/
+/*  ------------ Style for xo_userbar.html ------------- */
 #xo-userbar {
 	display: 					block;
 	float: 						right;
@@ -87,7 +93,7 @@ a#xo-uname {
 	font-size: 					1.1em;
 	font-weight: 				bold;
 }
-/*============= Style for xo_accessibilitybar.html ================*/
+/*  ------------ Style for xo_accessibilitybar.html ------------- */
 #xo-accessibilitybar {
 	display:					block;
 	float: 						right;
@@ -97,8 +103,11 @@ a#xo-uname {
 #xo-accessibilitybar a {	text-decoration: none;	border: none;}
 #xo-accessibilitybar img:hover {opacity: .5; filter: alpha(opacity=50);}
 
+
 /* ============= Style for xo_bottompage.html ============= */
 #xo-bottompage {	width:100%; min-height: 40px; margin: 0; font-size: .9em;}
+/*  ------------ xo_socialbookmark.html ------------- */
+#xo-socialbookmark { /* see style sheet socialbookmark.css */}
 /* ------------ xo_uptop.html ------------- */
 #xo-uptop {
 	display: 					block;
@@ -109,61 +118,7 @@ a#xo-uname {
 }
 #xo-uptop a {}
 #xo-uptop a:hover {}
-/* ------------ Style for xo_socialbookmark.html ------------ */
-#xo-socialbookmark{
-	display: 					block;
-	float: 						left;
-	width: 						75%;
-	margin-left:				180px;
-	text-align:					center !important;
-}
-ul.xo-socials {}
-ul.xo-socials li {
-	display:					inline-block;
-	height:						29px;
-	width:						50px;
-	margin:						0 2px 0 0;
-	list-style-type:			none;
-	cursor:						pointer;
-}
-ul.xo-socials a {
-	display:					block;
-	width:						50px;
-	height:						29px;
-	font-size:					0;
-	color:						transparent;
-}
-.furl, .furl:hover, .digg, .digg:hover, .reddit, .reddit:hover, .stumble, .stumble:hover, .delicious, .delicious:hover, .yahoo, .yahoo:hover, .blinklist, .blinklist:hover, .technorati, .technorati:hover, .facebook, .facebook:hover, .twitter, .twitter:hover, .myspace, .myspace:hover, .mixx, .mixx:hover, .script-style, .script-style:hover, .designfloat, .designfloat:hover, .rss, .rss:hover  {background:url("../img/socialbookmark.png") no-repeat;}
-.furl {	background-position:-300px top;}
-.furl:hover {background-position:-300px bottom;}
-.digg {	background-position:-500px top;}
-.digg:hover {background-position:-500px bottom;}
-.reddit {background-position:-100px top;}
-.reddit:hover {	background-position:-100px bottom;}
-.stumble {	background-position:-50px top;}
-.stumble:hover {	background-position:-50px bottom;}
-.delicious {	background-position:left top;}
-.delicious:hover {	background-position:left bottom;}
-.yahoo {	background-position:-650px top;}
-.yahoo:hover {	background-position:-650px bottom;}
-.blinklist {	background-position:-600px top;}
-.blinklist:hover {	background-position:-600px bottom;}
-.technorati {	background-position:-700px top;}
-.technorati:hover {	background-position:-700px bottom;}
-.myspace {	background-position:-200px top;}
-.myspace:hover {	background-position:-200px bottom;}
-.twitter {	background-position:-350px top;}
-.twitter:hover {	background-position:-350px bottom;}
-.facebook {	background-position:-450px top;}
-.facebook:hover {	background-position:-450px bottom;}
-.mixx {	background-position:-250px top;}
-.mixx:hover {	background-position:-250px bottom;}
-.rss {	background-position:-150px top;}
-.rss:hover {	background-position:-150px bottom;}
-.script-style {	background-position:-400px top;}
-.script-style:hover { background-position:-400px bottom;}
-.designfloat { background-position:-550px top;}
-.designfloat:hover {	background-position:-550px bottom;}
+
 /* ======== for accessibility ================ */
 /*a[hreflang]:after {
 	content: "\0000a0[alt+" attr(hreflang) "]";

@@ -71,6 +71,7 @@ p img { margin-left: .5em; margin-right:.5em;}
 a img:hover, a img:focus {opacity:.5; filter: alpha(opacity=50);}
 a img { border: none;}
 .imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
+img.xo-icons {margin-bottom:-3px;}
 
 /*=============== Style for general content ===============*/
 /*br { clear: both;}*/
@@ -88,7 +89,7 @@ small {font-size: .8em;}
 /*=============== Style for acronyms and abbreviation ===============*/
 acronym, abbr, abbr[title] { border-bottom: 1px dashed; cursor: help;}
 abbr[title] { border-bottom: 1px dotted; cursor: help;} 
-acronym:hover, abbr:hover, { border-bottom-color: #32529C;}
+acronym:hover, abbr:hover { border-bottom: #32529C 1px dashed;}
 
 /*=============== Style for lists ===============*/
 dl { margin: .75em 0;} 

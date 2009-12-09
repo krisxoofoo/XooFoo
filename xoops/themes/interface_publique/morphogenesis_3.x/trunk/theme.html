@@ -18,7 +18,7 @@
 <!-- Additionals Scripts -->
 	<{includeq file="$theme_name/xo_scripts.html"}>
 </head>
-<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>"  onload="init()">
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
 <{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>
 <{elseif $xoBlocks.canvas_left}><{assign var=columns_layout value='leftcolumn-layout'}>
 <{elseif $xoBlocks.canvas_right}><{assign var=columns_layout value='rightcolumn-layout'}>

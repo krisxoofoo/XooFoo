@@ -92,8 +92,6 @@ body.site_closed form { padding: 1em 35%;}
 	font-weight:				bold;
 	text-align:					center;
 	text-shadow: 				1px 1px 2px #aaa;}
-#notifbox a {font-size:.8em; font-style: italic;}
-#notifbox a:hover {}
 #notifform { display: none;}
 
 /* ============ Style for debug mode ============ */

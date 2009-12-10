@@ -128,10 +128,12 @@ define("THEME_ACCESS_MINUS",			"Diminuer la taille de police de caract&#232;res"
 define("THEME_ACCESS_RESET",			"Taille initiale de la police de caract&#232;res");
 
 // system_notification_select.html
-define("THEME_NOTIFICATION_PLUS",		"Afficher");
-define("THEME_NOTIFICATION_PLUS_DESC",	"Afficher les options de Notification");
-define("THEME_NOTIFICATION_MINUS",		"Cacher");
-define("THEME_NOTIFICATION_MINUS_DESC",	"Cacher les options de Notification");
+//define("THEME_NOTIFICATION_PLUS",		"Afficher");
+//define("THEME_NOTIFICATION_PLUS_DESC",	"Afficher les options de Notification");
+//define("THEME_NOTIFICATION_MINUS",		"Cacher");
+//define("THEME_NOTIFICATION_MINUS_DESC",	"Cacher les options de Notification");
+define("THEME_SHOWHIDE_NOTIFICATION",	"Afficher/Cacher");
+define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"Afficher ou cacher les options de Notification");
 
 // blockszone and centerblocks.html
 define("THEME_THISBLOCK_EDIT",			"Editer le bloc");

@@ -76,7 +76,7 @@
 /*========  others display class ======== */
 .clear { clear: 					both;}
 .block { display: 				block;}
-.blockinline { display: 			block-inline;}
+.blockinline { display: 		inline-block;}
 .hide  { display: 				none;}
 .shadow { text-shadow: 			2px 2px 3px #aaa;}
 .boxshadow {

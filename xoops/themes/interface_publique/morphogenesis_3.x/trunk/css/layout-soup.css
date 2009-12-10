@@ -22,9 +22,9 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /* Page [center column] rules */
 #xo-page { min-height: 400px; padding-top: 10px;}
-* html #xo-page {	height: 400px; }
+* html #xo-page {	height: 400px;}
 
-#xo-canvas-rightcolumn {width: 180px; padding: 1.2em .5em .5em .5em;}
+#xo-canvas-rightcolumn {width: 180px;}
 #xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top;}
 
 /*========== Canvas rules (when columns are visible) ===========*/

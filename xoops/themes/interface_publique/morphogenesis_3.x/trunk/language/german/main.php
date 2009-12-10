@@ -2,7 +2,7 @@
 // generality
 define("THEME_NAME",					"Mor·Pho·GEN·e·sis 3.0");
 define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design by : <a href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
+define("THEME_DESIGNER",				"Design by : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
 define("THEME_UPTOP",					"Zurück nach Oben");
 define("THEME_VALIDCSS",				"Diese Theme ist W3C Validated für CSS 1 und 2");
 define("THEME_VALIDXHTML",				"Diese Theme ist W3C Validated für XHTML 1.01");

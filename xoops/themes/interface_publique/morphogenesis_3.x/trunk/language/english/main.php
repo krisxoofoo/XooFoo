@@ -2,35 +2,36 @@
 // generality
 define("THEME_NAME",					"Mor·Pho·GEN·e·sis 3.0");
 define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design by : <a href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
+define("THEME_DESIGNER",				"Design by : <a rel='external' rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
 define("THEME_UPTOP",					"Back to Top");
 define("THEME_VALIDCSS",				"This theme template is W3C Validated for CSS 1 and 2");
 define("THEME_VALIDXHTML",				"This theme template is W3C Validated for XHTML 1.01");
 define("THEME_LICENSE",					"See Creative Commons Licence");
-define("THEME_W3C",						"Valid W3C - XHTML 1.01 and CSS 1/2/3");
 
-// userbar.html
-define("THEME_REGISTER",				"User Registration");
-define("THEME_REMEMBER",				" Remember me ?");
-define("THEME_PSEUDO",					" Login");
-define("THEME_DESC_PSEUDO",				" Write your login");
-define("THEME_PASSWORD",				" Password");
-define("THEME_DESC_PASSWORD",			" Write your password");
+// xo_userbar.html
+define("THEME_REGISTER",				"Cr&#233;er un compte ?");
+define("THEME_REMEMBER",				"Se rappeller de moi ?");
+define("THEME_PSEUDO",					"Pseudo");
+define("THEME_DESC_PSEUDO",				"Saisissez votre Pseudo");
+define("THEME_PASSWORD",				"Mot de passe");
+define("THEME_DESC_PASSWORD",			"Saisissez votre mot de passe");
+define("THEME_CONNECT",					"Connexion");
 
-define("THEME_WELLCOME",				"Welcome");
-define("THEME_PROFILE",					"View profile");
-define("THEME_NOTIFICATION",			"View notifications");
-define("THEME_MESSAGE",					"View messages");
-define("THEME_YOUHAVE",					"You have ");
-define("THEME_NOTREAD",					"message(s) unread");
-define("THEME_MYACCOUNT",				"My account");
+define("THEME_WELLCOME",				"Bienvenue");
+define("THEME_PROFILE",					"Voir son profil");
+define("THEME_NOTIFICATION",			"voir ses notifications");
+define("THEME_MESSAGE",					"Voir ses messages");
+define("THEME_YOUHAVE",					"Vous avez");
+define("THEME_NOTREAD",					"message(s) non lu(s)");
+define("THEME_MYACCOUNT",				"Mon compte");
+define("THEME_PRIVATE",					"Acc&#232;s Priv&#233;");
 
-// searchbar.html
+// xo_searchbar.html
 define("THEME_SEARCH",					"Search");
 define("THEME_DESC_SEARCH",				"Search this site");
 define("THEME_KEYWORDS",				"Put the keywords");
 
-// language.html
+// xo_language.html
 define("THEME_ENGLISH",					"English");
 define("THEME_FRENCH",					"Français");
 define("THEME_SPAIN",					"Español");
@@ -49,7 +50,7 @@ define("THEME_HEBRAIC",					"Hebrew");
 define("THEME_BREITZ",					"Breitz");
 define("THEME_BASQUE",					"Euskadi");
 
-// globalnav.html
+// xo_globalnav.html
 define("THEME_SHOWHIDE_COLUMN",			"Afficher/Cacher la colonne");
 
 define("THEME_CONTACT",					"Contact");
@@ -103,7 +104,7 @@ define("THEME_MODULE7_DESC",			"Use XoopsInfo Module");
 define("THEME_MODULE8",					"Protector");
 define("THEME_MODULE8_DESC",			"Use Protector Module");
 
-// noms des modules dans globalnav.html en mode anonyme
+// module name in globalnav.html  anomymous mode
 define("THEME_MODULE1a",				"Credits");
 define("THEME_MODULE1a_DESC",			"Website Credits");
 define("THEME_MODULE2a",				"Localization");
@@ -121,20 +122,22 @@ define("THEME_ADMIN_MODULES_DESC",		"Go to Modules Administration");
 define("THEME_ADMIN_IMAGES",			"Images");
 define("THEME_ADMIN_IMAGES_DESC",		"Go to Images Administration");
 
-// accessibilitybar.html
+// xo_accessibilitybar.html
 define("THEME_ACCESS_PLUS",				"Font size Up !");
 define("THEME_ACCESS_MINUS",			"Font size Down !");
 define("THEME_ACCESS_RESET",			"Font size Reset !");
 
-// notification.html
-define("THEME_NOTIFICATION_PLUS",		"Afficher les options de Notification");
-define("THEME_NOTIFICATION_MINUS",		"Cacher les options de Notification");
+// system_notification_select.html
+define("THEME_NOTIFICATION_PLUS",		"Show");
+define("THEME_NOTIFICATION_PLUS_DESC",	"Afficher les options de Notification");
+define("THEME_NOTIFICATION_MINUS",		"Cacher");
+define("THEME_NOTIFICATION_MINUS_DESC",	"Cacher les options de Notification");
 
 // blockszone and centerblocks.html
-define("THEME_THISBLOCK_EDIT",			"Editer le bloc");
+define("THEME_THISBLOCK_EDIT",			"Edit this block");
 
-// compléments xoops core (surcharge)
-define("THEME_WRITE_EMAIL", "Saisissez votre adresse de courriel");
+// complements for xoops core (override)
+define("THEME_WRITE_EMAIL", "Put your email");
 define("THEME_BROWSERCHECK",  " ");
 
 /* ------------------- xo_socialbookmark.html ------------------- */
@@ -178,4 +181,5 @@ define("THEME_MLUS",					"Envoyer un courriel");
 define("THEME_AVATARS",					"G&#233;rer les avatars");
 define("THEME_TPLS",					"G&#233;rer les templates");
 define("THEME_COMMENTS",				"G&#233;rer les commentaires");
+
 ?>

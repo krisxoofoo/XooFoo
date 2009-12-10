@@ -1,5 +1,5 @@
 /**
- * @version         $Id$
+ * @version         $Id
 **/
 
 /* Thanks to Snow77, Skalpa and Leostotch for the initial work, and Dugris for help  */

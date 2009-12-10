@@ -3,7 +3,7 @@
 // generality
 define("THEME_NAME", "Mor·Pho·GEN·e·sis 3.0"); //ok
 define("THEME_DESC", "Nascimento da Evolução"); // ok
-define("THEME_DESIGNER","Design by : <a href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratorio'>XooFoo</a> - <a href='http://www.afux.org/' title='Comunidade Francesa do Projeto XOOPS'>Comunidade XOOPS França</a>");
+define("THEME_DESIGNER","Design by : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratorio'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Comunidade Francesa do Projeto XOOPS'>Comunidade XOOPS França</a>");
 define("THEME_UPTOP", "Voltar ao início"); //ok
 define("THEME_VALIDCSS","Este tema é válidado pelo W3C em CSS 1 e 2"); //ok
 define("THEME_VALIDXHTML","Este tema é válidado pelo W3C em XHTML 1.01"); //ok

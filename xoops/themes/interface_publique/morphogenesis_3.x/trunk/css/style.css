@@ -112,19 +112,17 @@ body {font-size:75%;}
 	padding-top : 				10px;
 }
 #xo-sitetitle a {
+	display:					block;
 	background-color: 			transparent;
 	font:						2.6em/1 'BakerSignet BT',sans-serif;
-	font-weight: 				bold;
-	text-shadow: 				2px 2px 3px #aaa;
-}
-#xo-sitetitle a {
-	background-color: 			transparent;
 	color: 						#32529C;
 	text-decoration	: 			none;
+	font-weight: 				bold;
 	text-shadow: 				2px 2px 3px #aaa;
 }
 #xo-sitetitle a:hover { background-color: transparent; color: #E9CB38;}
 #xo-siteslogan {
+	display:					block;
 	padding-top:				5px;
 	font:						1.4em/1 'BakerSignet BT',sans-serif;
 	font-style: 				italic;

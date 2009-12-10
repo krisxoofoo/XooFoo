@@ -23,13 +23,13 @@
 
       <!-- for my message box  -->
 		<{xoInboxCount assign=pmcount}>
-		<a href="<{xoAppUrl viewpmsg.php}>">
+		<a href="<{xoAppUrl viewpmsg.php}>" title="">
 		<{if $pmcount}>
 			<!-- if I have messages -->
-			<img class="xo-icons" src="<{xoImgUrl icons/users/email_open.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
+			<img class="xo-icons" src="<{xoImgUrl icons/users/email_open.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>" title="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
 		<{else}>
 			<!-- if I do not have a message -->
-			<img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+			<img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" alt="<{$smarty.const.THEME_MESSAGE}>" title="<{$smarty.const.THEME_MESSAGE}>"/>
 		<{/if}>
 		</a>
 		<!-- end my message box-->
@@ -44,6 +44,6 @@
 		<{/if}>
 		<!-- end additional link-->
 
-		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img class="xo-icons" src="<{xoImgUrl icons/users/exit.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
+		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>"><img class="xo-icons" src="<{xoImgUrl icons/users/exit.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
 	<{/if}>
 </div>

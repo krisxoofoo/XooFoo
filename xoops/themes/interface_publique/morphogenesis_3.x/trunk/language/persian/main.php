@@ -2,7 +2,7 @@
 // generality
 define("THEME_NAME",					"MorPhoGENesis 3.0");
 define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"طراحی : <a href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a href='http://www.afux.org/' title='XOOPS Project French Community'>زوپس فرانسه</a>");
+define("THEME_DESIGNER",				"طراحی : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>زوپس فرانسه</a>");
 define("THEME_UPTOP",					"بالا صفحه");
 define("THEME_VALIDCSS",				"تمپلیت های این قالب دارای W3C Validated برای CSS 1 و 2");
 define("THEME_VALIDXHTML",				"تمپلیت های این قالب دارای W3C Validated برای XHTML 1.01");

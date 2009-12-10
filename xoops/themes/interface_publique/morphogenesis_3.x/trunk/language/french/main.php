@@ -2,13 +2,13 @@
 // g&eacute;n&eacute;ralit&eacute;s
 define("THEME_NAME",					"Mor&#42;Pho&#42;GEN&#42;e&#42;sis 3.0");
 define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design by : <a href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a href='http://www.afux.org/' title='Communaut&eacute; Francophone du Projet XOOPS'>Communaut&#233; Francophone XOOPS</a>");
+define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communaut&eacute; Francophone du Projet XOOPS'>Communaut&#233; Francophone XOOPS</a>");
 define("THEME_UPTOP",					"Haut de Page");
 define("THEME_VALIDCSS",				"Ce gabarit de th&#232;me est valide W3C pour le CSS 1 et 2");
 define("THEME_VALIDXHTML",				"Ce gabarit de th&#232;me est valide W3C pour le XHTML 1.01");
 define("THEME_LICENSE",					"License de distribution de ce gabarit de th&#232;me");
 
-// userbar.html
+// xo_userbar.html
 define("THEME_REGISTER",				"Cr&#233;er un compte ?");
 define("THEME_REMEMBER",				"Se rappeller de moi ?");
 define("THEME_PSEUDO",					"Pseudo");
@@ -26,12 +26,12 @@ define("THEME_NOTREAD",					"message(s) non lu(s)");
 define("THEME_MYACCOUNT",				"Mon compte");
 define("THEME_PRIVATE",					"Acc&#232;s Priv&#233;");
 
-// searchbar.html
+// xo_searchbar.html
 define("THEME_SEARCH",					"Recherche");
 define("THEME_DESC_SEARCH",				"Recherche sur le site");
 define("THEME_KEYWORDS",				"Saisissez les mots-cl&#233;s");
 
-// language.html
+// xo_language.html
 define("THEME_ENGLISH",					"English");
 define("THEME_FRENCH",					"Fran&#231;ais");
 define("THEME_SPAIN",					"Espa&#241;ol");
@@ -50,7 +50,7 @@ define("THEME_HEBRAIC",					"Hebrew");
 define("THEME_BREITZ",					"Breitz");
 define("THEME_BASQUE",					"Euskadi");
 
-// globalnav.html
+// xo_globalnav.html
 define("THEME_SHOWHIDE_COLUMN",			"Afficher/Cacher la colonne");
 
 define("THEME_CONTACT",					"Contact");
@@ -122,21 +122,23 @@ define("THEME_ADMIN_MODULES_DESC",		"Administration des Modules");
 define("THEME_ADMIN_IMAGES",			"Images");
 define("THEME_ADMIN_IMAGES_DESC",		"Gestionnaire d&#39;Images");
 
-// accessibilitybar.html
+// xo_accessibilitybar.html
 define("THEME_ACCESS_PLUS",				"Augmenter la taille de police de caract&#232;res");
 define("THEME_ACCESS_MINUS",			"Diminuer la taille de police de caract&#232;res");
 define("THEME_ACCESS_RESET",			"Taille initiale de la police de caract&#232;res");
 
-// notification.html
-define("THEME_NOTIFICATION_PLUS",		"Afficher les options de Notification");
-define("THEME_NOTIFICATION_MINUS",		"Cacher les options de Notification");
+// system_notification_select.html
+define("THEME_NOTIFICATION_PLUS",		"Afficher");
+define("THEME_NOTIFICATION_PLUS_DESC",	"Afficher les options de Notification");
+define("THEME_NOTIFICATION_MINUS",		"Cacher");
+define("THEME_NOTIFICATION_MINUS_DESC",	"Cacher les options de Notification");
 
 // blockszone and centerblocks.html
 define("THEME_THISBLOCK_EDIT",			"Editer le bloc");
 
 // compléments xoops core (surcharge)
 define("THEME_WRITE_EMAIL", 			"Saisissez votre adresse de courriel");
-define("THEME_BROWSERCHECK",  			"V&#233;rifier la compatibilit&#233; de votre navigateur et parefeu <a href='http://tutos.xoofoo.org/browser_check/'><strong>ici</strong></a>");
+define("THEME_BROWSERCHECK",  			"V&#233;rifier la compatibilit&#233; de votre navigateur et parefeu <a rel='external' href='http://tutos.xoofoo.org/browser_check/' title=''><strong>ici</strong></a>");
 
 /* ------------------- xo_socialbookmark.html ------------------- */
 define("THEME_BK_SCRIPSTYLE",          	"Soumettre ceci sur Script & Style");

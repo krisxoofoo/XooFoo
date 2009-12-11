@@ -12,7 +12,7 @@ Pour vos commentaires, suggestions et bugs vous pouvez aller sur les forums de s
 Il existe un wiki concernant ce thème et ses fichiers à cette adresse http://labs.xoofoo.org
 
 Installation :
-Décompressez l'archive et téléverser l'ensemble des dossiers et fichiers directement à la racine de votre site
+Décompressez l'archive et téléverser l'ensemble des dossiers et fichiers directement dans le dossier 'themes' de votre site
 NOTE 1 : Pour profiter de la possibilité d'ajout de blocs dans le pied de page, vous devez mettre le fichier "function.block.php" dans votresite/class/smarty/xoops_plugins/
 NOTE 2 : Pour profiter de la possibilité d'ajout d'un encart de contenu sous le header en page d'accueil, vous devez vérifier ou renseigner la ligne suivante dans le fichier xo_homepage.html : <{if !$xoops_isuser && $smarty.server.PHP_SELF=='/index.php'}>
 - si votre site est à la racine du serveur, mettez '/index.php',
@@ -27,7 +27,7 @@ For your feeback and bugs you can go on the forums of support of Xoops France (h
 There is a wiki concerning this theme and its files at this adresss http://labs.xoofoo.org 
 
 Installation:
-Decompress the file and upload the whole of the files and files directly to the root of your site
+Decompress the file and upload the whole of the files and files directly to folder 'themes' of your site
 NOTE 1 : To take advantage of the opportunity to add blocks in the footer, you must save the file "function.block.php" in yourSite/class/smarty/xoops_plugins/
 NOTE 2 : To enjoy the possibility of adding an insert content in the header in home page, you must verify or fill the following line in the file xo_homepage.html: <{if !$xoops_isuser && $smarty.server.PHP_SELF=='/index.php'}>
 - If your site is at the root of the server, put '/index.php',

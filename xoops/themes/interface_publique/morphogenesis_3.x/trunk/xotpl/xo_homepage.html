@@ -1,11 +1,11 @@
-<{if !$xoops_isuser && $smarty.server.PHP_SELF=='/index.php'}>
+<{if !$xoops_isuser && $smarty.server.PHP_SELF=='/241fr/index.php'}>
 <!-- In the above line: if your site is at the root of the server, put '/index.php', otherwise '/foldername/index.php'
 If you have difficulty finding the path, add <{$smarty.server.PHP_SELF}> in first line of this file and the information displayed, then remove the line and this comments for safety issues
 Dans la ligne ci-dessus : si votre site est à la racine du serveur, mettez '/index.php', sinon '/nomdudossier/index.php'
 Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SELF}> en première ligne de ce fichier et les informations s'afficheront, puis retirer la ligne et ce commentaire pour des questions de sécurité -->
-
+<{if $theme_homepage_toggle}>
 	<div id="xo-showhidehomepage" onclick="xoToggleBlock('xo-homepage');" title="<{$smarty.const.THEME_SHOWHIDE_HOMEPAGE}>"><{$smarty.const.THEME_SHOWHIDE_HOMEPAGE}></div>
-
+<{/if}>
 	<div id="xo-homepage">
 
 		<div id="xo-homepage-content">
@@ -27,7 +27,7 @@ Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SE
 			</div>
 			
 			<div id="homeimage">
-				<a rel="external" href="http://sourceforge.net/projects/xfr/files/Xoops/" title=""><img src="<{xoImgUrl img/TuxG2-xoops.png}>" alt="" /></a>
+				<a rel="external" href="http://sourceforge.net/projects/xfr/" title="Xoops Project !!"><img src="<{xoImgUrl img/TuxG2-xoops.png}>" alt="" /></a>
 			</div>
 			
 		</div>

@@ -1,5 +1,7 @@
 <div id="xo-globalnav">
-	<div id="xo-leftcolswitch" onclick="xoToggleBlock('xo-canvas-leftcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<{if $xoBlocks.canvas_left}>
+		<div id="xo-leftcolswitch" onclick="xoToggleBlock('xo-canvas-leftcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<{/if}>
 	<div id="xo-globalmenu">
 	<ul class="xo-navigation">
 		<li class="xo-label"><{$smarty.const.THEME_NAVTITLE}> : <{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}> - <{$xoops_meta_keywords}></li>
@@ -26,5 +28,7 @@
 		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><{$smarty.const.THEME_CONTACT}></a></li>
 	</ul>
 	</div>
-	<div id="xo-rightcolswitch"  onclick="xoToggleBlock('xo-canvas-rightcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<{if $xoBlocks.canvas_right}>
+		<div id="xo-rightcolswitch" onclick="xoToggleBlock('xo-canvas-rightcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<{/if}>
 </div>

@@ -13,7 +13,11 @@ Il existe un wiki concernant ce thème et ses fichiers à cette adresse http://l
 
 Installation :
 Décompressez l'archive et téléverser l'ensemble des dossiers et fichiers directement à la racine de votre site
-Pour profiter de la possibilité d'ajout de blocs dans le pied de page, vous devez mettre le fichier "function.block.php" dans votresite/class/smarty/xoops_plugins/
+NOTE 1 : Pour profiter de la possibilité d'ajout de blocs dans le pied de page, vous devez mettre le fichier "function.block.php" dans votresite/class/smarty/xoops_plugins/
+NOTE 2 : Pour profiter de la possibilité d'ajout d'un encart de contenu sous le header en page d'accueil, vous devez vérifier ou renseigner la ligne suivante dans le fichier xo_homepage.html : <{if !$xoops_isuser && $smarty.server.PHP_SELF=='/index.php'}>
+- si votre site est à la racine du serveur, mettez '/index.php',
+- sinon '/nomdudossier/index.php'
+- Si vous avez des difficultés à trouver le chemin, insérer <{$smarty.server.PHP_SELF}> en première ligne de ce fichier et les informations s'afficheront, puis retirer la ligne et les commentaires pour des questions de sécurité
 
 
 /**** English version ****/
@@ -24,6 +28,11 @@ There is a wiki concerning this theme and its files at this adresss http://labs.
 
 Installation:
 Decompress the file and upload the whole of the files and files directly to the root of your site
+NOTE 1 : To take advantage of the opportunity to add blocks in the footer, you must save the file "function.block.php" in yourSite/class/smarty/xoops_plugins/
+NOTE 2 : To enjoy the possibility of adding an insert content in the header in home page, you must verify or fill the following line in the file xo_homepage.html: <{if !$xoops_isuser && $smarty.server.PHP_SELF=='/index.php'}>
+- If your site is at the root of the server, put '/index.php',
+- If '/foldername/index.php'
+- If you have difficulty finding the path, add <{$smarty.server.PHP_SELF}> first line of this file and the information displayed, then remove the line and comments on issues of security
 
 
 /**** Versão de Portugues ****/

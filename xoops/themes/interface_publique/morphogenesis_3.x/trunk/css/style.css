@@ -19,6 +19,7 @@
 /* include style sheets */
 @import url(baradmin.css); /* administration access in footer */
 @import url(globalnav.css); /* horizontal menu in header */
+@import url(homepage.css); /* style for specific content in mainpage */
 @import url(blocks.css); /* style for blocks */
 @import url(content.css); /* style for content */
 @import url(module.css); /* style for content menu */
@@ -57,7 +58,7 @@ body {font-size:75%;}
 #xo-canvas {
 	/*max-width: 				1200px;*/
 	margin:						0 auto;
-	background-color: 			#fffff0;
+	background-color: 			#eee;
 	color: 						#333;
 }
 /*================= Content zone ===================*/

@@ -127,6 +127,9 @@ define("THEME_ACCESS_PLUS",				"Augmenter la taille de police de caract&#232;res
 define("THEME_ACCESS_MINUS",			"Diminuer la taille de police de caract&#232;res");
 define("THEME_ACCESS_RESET",			"Taille initiale de la police de caract&#232;res");
 
+// xo_homepage.html
+define("THEME_SHOWHIDE_HOMEPAGE",		"Afficher/Cacher l&#39;encart d&#39;accueil");
+
 // system_notification_select.html
 //define("THEME_NOTIFICATION_PLUS",		"Afficher");
 //define("THEME_NOTIFICATION_PLUS_DESC",	"Afficher les options de Notification");

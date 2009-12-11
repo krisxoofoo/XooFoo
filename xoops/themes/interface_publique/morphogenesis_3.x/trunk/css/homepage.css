@@ -1,0 +1,83 @@
+/*
+ * Mor.pho.GEN.e.sis 3.0
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+#xo-homepage {
+	width:						100%;
+	height:						280px;
+	margin-top:					0;
+	margin-bottom:				1em;
+	background-color:			#eee;
+	color :						#333;
+	border-bottom:				2px solid #ddd;
+	box-shadow: 				0px 4px 4px rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		0px 4px 4px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	0px 4px 4px rgba(102, 102, 102, .5);}
+#xo-homepage-content {width:75%; margin:1em auto;}
+
+#xo-showhidehomepage {
+	position:					relative;
+	float:						right;
+	display: 					block;
+	width:						2%;
+	z-index:					10;
+	margin-top:					4px;
+	margin-right:				2px;
+	background:					transparent url(../icons/action/up.png) no-repeat left center;
+	opacity:					.25;
+	filter: 					alpha(opacity=25);
+	overflow:					hidden;
+	text-indent:				-1000em;
+	cursor:						pointer;
+}
+#xo-leftcolswitch:hover { opacity: 1; filter: alpha(opacity=100);}
+
+#homemenu {
+	display:					block;
+	float : 					left;
+	width:						14%;
+	margin: 					1.5em 0 1em 1em;
+}
+#homemenu a {
+	padding-left: 				5px;
+	font-size: 					1.1em;
+	text-decoration: 			none;
+	text-shadow: 				2px 2px 3px #bbb;
+	font-weight:				bold;
+}
+#homemenu ul {
+	padding-right: 				0;
+	padding-left: 				0;
+	line-height: 				2.2em;
+}
+#homemenu li {list-style-type: none;}
+#homepage-text {
+	display:					block;
+	float:						left;
+	width:						52%;
+	margin-left:				.75em;
+	margin-right:				.75em;
+	padding: 					1em .5em 1em .5em;
+}
+#homeimage {
+	display:					block;
+	float : 					right;
+	width:						28%;
+	margin-top : 				1em;
+	margin-right : 				.5em;
+	text-align: 				right;
+}

@@ -27,29 +27,31 @@
 	<div id="xo-bgstatic" class="<{$xoops_dirname}>"></div>
 	<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
 
-		<!-- début du HAUT DE PAGE -->
+		<!-- HEADER -->
 		<div id="xo-header" class="<{$xoops_dirname}>">
 
-			<!-- include du TOPHEADER -->
+			<!-- include TOPHEADER -->
 			<{includeq file="$theme_name/xo_topheader.html"}>
 
-      	<!-- include du HEADER avec logo et bannière -->
+			<!-- INCLUDE HEADER WITH LOGO AND BANNER -->
 			<!-- vérification si l'affichage de la bannière est activée ou non dans l'administration du site -->
 			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
-				<!-- include avec affichage de la bannière activé-->
+				<!-- include WITH BANNER ACTIVED-->
 				<{includeq file="$theme_name/xo_banner_commercial.html"}>
 			<{else}>
-				<!-- include avec affichage de la bannière désactivé -->
+				<!-- INCLUDE WITH BANNER DESACTIVED -->
 				<{includeq file="$theme_name/xo_banner.html"}>
 			<{/if}>
-			<!-- fin de la condition d'affichage en fonction de l'activation de la bannière -->
-         <!-- Include du MENU HORIZONTAL -->
+			<!-- INCLUDE HORIZONTAL MENU -->
 			<{includeq file="$theme_name/xo_globalnav.html"}>
 		</div>
-		<!-- fin du haut de page -->
-
-      <!-- zone CONTENU -->
-		<!-- Ne pas modifier la partie ci-dessous, c'est supposé être l'architecture standard que chacun doit utiliser -->
+		<!-- END HEADER -->
+		
+		<!-- INCLUDE HOMEPAGE FOR ANONYMOUS AND ONLY MAINPAGE (see comments in file xo_homepage.html -->
+		<{includeq file="$theme_name/xo_homepage.html"}>		
+		
+      <!-- CONTENT AREA -->
+		<!-- Do not change the part below is supposed to be the standard architecture that everyone should use -->
 		<div id="xo-canvas-content" class="<{$xoops_dirname}>">
 			<!--<{if $xoBlocks.canvas_top}>
 				<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
@@ -65,8 +67,7 @@
 				<{/if}>
 
 				<td id="xo-page">
-
-				<{includeq file="$theme_name/xo_breadcrumb.html"}>
+					<{includeq file="$theme_name/xo_breadcrumb.html"}>
 
 					<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
 						<div id="xo-page-topblocks" class="xo-blockszone-xo-<{$theme_top_order}>pageblocks">
@@ -90,11 +91,11 @@
 						</div>
 					<{/if}>
 				</td>
-				<{if $xoBlocks.canvas_right}>
-					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_right
-						zoneClass='xo-canvas-column' zoneId='xo-canvas-rightcolumn' zoneTag='td'
-					}>
-				<{/if}>
+					<{if $xoBlocks.canvas_right}>
+						<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_right
+							zoneClass='xo-canvas-column' zoneId='xo-canvas-rightcolumn' zoneTag='td'
+						}>
+					<{/if}>
 			</tr>
 			</table>
 
@@ -104,16 +105,16 @@
 					}>
 			<{/if}>-->
 			
-         <!-- include du "bottom page" -->
+			<!-- INCLUDE BOTTOM PAGE" -->
 			<{includeq file="$theme_name/xo_bottompage.html"}>
 
 		</div>
-		<!-- include du PIED DE PAGE -->
+		<!-- INCLUDE FOOTER -->
 		<{includeq file="$theme_name/xo_footer.html"}>
 	</div>
 	<!--{xo-logger-output}-->
 </div>
-	<!-- include baradmin - xo_footerstatic.html -->
+	<!-- INCLUDE BARADMIN - xo_footerstatic.html -->
 	<!--{if $xoops_isadmin} --><!-- {includeq file="$theme_name/xo_footerstatic.html"} --><!-- {/if}-->
 	<{if $xoops_isadmin}><{includeq file="$theme_name/xo_footerstatic.html"}><{/if}>
 </body>

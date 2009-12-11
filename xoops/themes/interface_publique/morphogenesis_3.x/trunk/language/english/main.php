@@ -127,6 +127,9 @@ define("THEME_ACCESS_PLUS",				"Font size Up !");
 define("THEME_ACCESS_MINUS",			"Font size Down !");
 define("THEME_ACCESS_RESET",			"Font size Reset !");
 
+// xo_homepage.html
+define("THEME_SHOWHIDE_HOMEPAGE",		"Show/Hide Homepage Box");
+
 // system_notification_select.html
 //define("THEME_NOTIFICATION_PLUS",		"Show");
 //define("THEME_NOTIFICATION_PLUS_DESC",	"Show Notification Options");

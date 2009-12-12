@@ -70,9 +70,16 @@
 	display:					block;
 	float:						left;
 	width:						52%;
+	margin-top:					1.5em;
 	margin-left:				.75em;
 	margin-right:				.75em;
-	padding: 					1em .5em 1em .5em;
+	padding: 					1em .75em 1em .75em;
+	border-radius:				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
 }
 #homeimage-anonymous {
 	display:					block;
@@ -92,9 +99,12 @@
 	min-height:					210px;
 	/*max-height: 210px; overflow:auto;*/
 	border: 					1px solid #777;
-	border-radius:				10px;
-		-moz-border-radius:		10px;
-		-webkit-border-radius:	10px;
+	border-radius:				5px;
+		-moz-border-radius:		5px;
+		-webkit-border-radius:	5px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
 }
 #xo-homepage-block .xo-blocktitle {
 	background-color: 			#777;
@@ -113,7 +123,7 @@
 	padding :					.5em;
 	line-height: 				1.4em;
 }
-#xo-homepage-block .outer {}
+#xo-homepage-block .outer {background-color:transparent;}
 #xo-homepage-block .head {}
 #xo-homepage-block .even {}
 #xo-homepage-block .odd {}

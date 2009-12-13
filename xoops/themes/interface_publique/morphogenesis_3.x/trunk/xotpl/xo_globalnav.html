@@ -1,5 +1,5 @@
 <div id="xo-globalnav">
-	<{if $xoBlocks.canvas_left}>
+	<{if $xoBlocks.canvas_left && $theme_left_toggle}>
 		<div id="xo-leftcolswitch" onclick="xoToggleBlock('xo-canvas-leftcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
 	<{/if}>
 	<div id="xo-globalmenu">
@@ -28,7 +28,7 @@
 		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><{$smarty.const.THEME_CONTACT}></a></li>
 	</ul>
 	</div>
-	<{if $xoBlocks.canvas_right}>
+	<{if $xoBlocks.canvas_right && $theme_right_toggle}>
 		<div id="xo-rightcolswitch" onclick="xoToggleBlock('xo-canvas-rightcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
 	<{/if}>
 </div>

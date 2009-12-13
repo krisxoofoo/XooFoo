@@ -11,7 +11,8 @@
 	<{assign var=theme_js value=$xoTheme->folderName|cat:'/js'}>
 <!-- Metas -->
 	<{includeq file="$theme_name/xo_metas.html"}>
-
+<!-- Theme others parameters -->
+	<{includeq file="$theme_name/xo_thm_parameters.html"}>
 </head>
 <body id="xo-sitemaintenance">
 	<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
@@ -20,7 +21,7 @@
 				<div id="xo-header" class="<{$xoops_dirname}>">
 					<div id="xo-topheader">
 						<!-- include du bloc Langues dans le header -->
-						<{includeq file="$theme_name/xo_language.html"}>
+						<{if $theme_view_languagechoice}><{includeq file="$theme_name/xo_language.html"}><{/if}>
 						<!-- include du bloc Utilisateur dans le header -->
 						<{includeq file="$theme_name/xo_userbar_siteclosed.html"}>
 					</div>

@@ -140,6 +140,7 @@ define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"Afficher ou cacher les options de No
 
 // blockszone and centerblocks.html
 define("THEME_THISBLOCK_EDIT",			"Editer le bloc");
+define("THEME_VIEWALL",					"Tout afficher");
 
 // compléments xoops core (surcharge)
 define("THEME_WRITE_EMAIL", 			"Saisissez votre adresse de courriel");

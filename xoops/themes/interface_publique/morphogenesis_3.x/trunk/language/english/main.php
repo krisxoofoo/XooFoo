@@ -140,6 +140,7 @@ define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"Show or hide the notification option
 
 // blockszone and centerblocks.html
 define("THEME_THISBLOCK_EDIT",			"Edit this block");
+define("THEME_VIEWALL",					"View All");
 
 // complements for xoops core (override)
 define("THEME_WRITE_EMAIL", "Put your email");

@@ -28,13 +28,13 @@
 		<!-- HEADER -->
 		<div id="xo-header" class="<{$xoops_dirname}>">
 
-			<!-- include TOPHEADER -->
+			<!-- INCLUDE TOPHEADER -->
 			<{if $theme_view_topheader}><{includeq file="$theme_name/xo_topheader.html"}><{/if}>
 
 			<!-- INCLUDE HEADER WITH LOGO AND BANNER -->
-			<!-- vérification si l'affichage de la bannière est activée ou non dans l'administration du site -->
+			<!-- checking whether the display of the banner is enabled or not in the site administration -->
 			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
-				<!-- include WITH BANNER ACTIVED-->
+				<!-- INCLUDE WITH BANNER ACTIVED-->
 				<{includeq file="$theme_name/xo_banner_commercial.html"}>
 			<{else}>
 				<!-- INCLUDE WITH BANNER DESACTIVED -->

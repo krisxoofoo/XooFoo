@@ -7,15 +7,15 @@ define("THEME_UPTOP",					"Inapoi Sus");
 define("THEME_VALIDCSS",				"Aceasta tema a fost validata de W3C pentru CSS 1 si 2");
 define("THEME_VALIDXHTML",				"Aceasta tema a fost validata de W3C pentru XHTML 1.01");
 define("THEME_LICENSE",					"See Creative Commons Licence");
-define("THEME_W3C",						"Valid W3C - XHTML 1.01 and CSS 1/2/3");
 
-// userbar.html
+// xo_userbar.html
 define("THEME_REGISTER",				"Inregistrare Utilizator");
 define("THEME_REMEMBER",				" Tine-ma Minte ?");
 define("THEME_PSEUDO",					" Login");
 define("THEME_DESC_PSEUDO",				" Introdu user");
 define("THEME_PASSWORD",				" Parola");
 define("THEME_DESC_PASSWORD",			" Introdu Parola");
+define("THEME_CONNECT",					"Connexion");
 
 define("THEME_WELLCOME",				"Bun Venit");
 define("THEME_PROFILE",					"Vizioneaza profil");
@@ -24,13 +24,14 @@ define("THEME_MESSAGE",					"Vizioneaza mesaje");
 define("THEME_YOUHAVE",					"Ai ");
 define("THEME_NOTREAD",					"mesaj(e) necitit(e)");
 define("THEME_MYACCOUNT",				"Contul meu");
+define("THEME_PRIVATE",					"Private Access");
 
-// searchbar.html
+// xo_searchbar.html
 define("THEME_SEARCH",					"Cautare");
 define("THEME_DESC_SEARCH",				"Cauta pe acest site");
 define("THEME_KEYWORDS",				"Introdu criterii");
 
-// language.html
+// xo_language.html
 define("THEME_ENGLISH",					"Engleza");
 define("THEME_FRENCH",					"Franceza");
 define("THEME_SPAIN",					"Spaniola");
@@ -49,7 +50,9 @@ define("THEME_HEBRAIC",					"Ebraica");
 define("THEME_BREITZ",					"Breitz");
 define("THEME_BASQUE",					"Euskadi");
 
-// globalnav.html
+// xo_globalnav.html
+define("THEME_SHOWHIDE_COLUMN",			"Show/Hide Column");
+
 define("THEME_CONTACT",					"Contact");
 define("THEME_CONTACT_DESC",			"Contacteaza-ne");
 define("THEME_SITEMAP",					"Harta Site");
@@ -119,60 +122,70 @@ define("THEME_ADMIN_MODULES_DESC",		"Acceseaza Panou Administrare Module");
 define("THEME_ADMIN_IMAGES",			"Imagini");
 define("THEME_ADMIN_IMAGES_DESC",		"Acceseaza Panou Administrare Imagini");
 
-// accessibilitybar.html
-define("THEME_ACCESS_PLUS",				"Mareste Font !");
-define("THEME_ACCESS_MINUS",			"Micsoreaza Font !");
+// xo_accessibilitybar.html
+define("THEME_ACCESS_PLUS",				"Font size Up !");
+define("THEME_ACCESS_MINUS",			"Font size Down !");
+define("THEME_ACCESS_RESET",			"Font size Reset !");
 
-// notification.html
-define("THEME_NOTIFICATION_PLUS",		"Afficher les options de Notification");
-define("THEME_NOTIFICATION_MINUS",		"Cacher les options de Notification");
+// xo_homepage.html
+define("THEME_SHOWHIDE_HOMEPAGE",		"Show/Hide Homepage Box");
+
+// system_notification_select.html
+//define("THEME_NOTIFICATION_PLUS",		"Show");
+//define("THEME_NOTIFICATION_PLUS_DESC",	"Show Notification Options");
+//define("THEME_NOTIFICATION_MINUS",		"Cacher");
+//define("THEME_NOTIFICATION_MINUS_DESC",	"Hide Notification Options");
+define("THEME_SHOWHIDE_NOTIFICATION",	"Show / Hide");
+define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"Show or hide the notification options");
 
 // blockszone and centerblocks.html
-define("THEME_THISBLOCK_EDIT",			"Editer le bloc");
+define("THEME_THISBLOCK_EDIT",			"Edit this block");
+define("THEME_VIEWALL",					"View All");
 
-// compléments xoops core (surcharge)
-define("THEME_WRITE_EMAIL", "Saisissez votre adresse de courriel");
+// complements for xoops core (override)
+define("THEME_WRITE_EMAIL", 			"Put your email");
 define("THEME_BROWSERCHECK",  " ");
 
 /* ------------------- xo_socialbookmark.html ------------------- */
-define("THEME_BK_SCRIPSTYLE",          "Submit this to Script & Style");
-define("THEME_BK_BLINKLIST",           "Share this on Blinklist");
-define("THEME_BK_DELICIOUS",           "Share this on del.icio.us");
-define("THEME_BK_DIGG",            	"Digg this!");
-define("THEME_BK_FURL",            	"Share this on Furl");
+define("THEME_BK_SCRIPSTYLE",          	"Submit this to Script & Style");
+define("THEME_BK_BLINKLIST",           	"Share this on Blinklist");
+define("THEME_BK_DELICIOUS",           	"Share this on del.icio.us");
+define("THEME_BK_DIGG",            		"Digg this!");
+define("THEME_BK_FURL",            		"Share this on Furl");
 define("THEME_BK_REDDIT",            	"Share this on Reddit");
 define("THEME_BK_YAHOO",            	"Save this to Yahoo MyWeb");
 define("THEME_BK_STUMBLE",            	"Stumble upon something good? Share it on StumbleUpon");
 define("THEME_BK_TWITTER",            	"Tweet This!");
-define("THEME_BK_TECHNORATI",          "Share this on Technorati");
-define("THEME_BK_MIXX",            	"Share this on Mixx");
+define("THEME_BK_TECHNORATI",          	"Share this on Technorati");
+define("THEME_BK_MIXX",            		"Share this on Mixx");
 define("THEME_BK_MYSPACE",            	"Post this to MySpace");
-define("THEME_BK_DESIGNFLOAT",         "Submit this to DesignFloat");
-define("THEME_BK_FACEBOOK",            "Share this on Facebook");
+define("THEME_BK_DESIGNFLOAT",         	"Submit this to DesignFloat");
+define("THEME_BK_FACEBOOK",            	"Share this on Facebook");
 
 /* ------------------- xo_footerstatic.html ------------------- */
-define("_THEME_INBOX",            		"Voir vos messages");
-define("_THEME_INBOX_NOTREAD",    		"message(s) non lu(s)");
-define("_THEME_NOTIFICATIONS",   		"Voir vos notifications");
-define("_THEME_PROFILE",         		"Voir votre profil");
+define("_THEME_INBOX",            		"See your messages");
+define("_THEME_INBOX_NOTREAD",    		"message(s) no read");
+define("_THEME_NOTIFICATIONS",   		"See notifications");
+define("_THEME_PROFILE",         		"See profil");
 define("_THEME_ADMINISTRATION",  		"Administration");
-define("_THEME_LOGOUT",          		"D&#233;connexion");
-define("THEME_EDITPROFILE",				"Editer son profil");
-define("THEME_USER",					"Utilisateurs");
+define("_THEME_LOGOUT",          		"Logout");
+define("THEME_EDITPROFILE",				"Edit profil");
+define("THEME_USER",					"Users");
 define("THEME_CPHOME",					"Administration");
-define("THEME_BANS",					"G&#233;rer les banni&#232;res publicitaires");
-define("THEME_BKAD",					"G&#233;rer les blocs");
-define("THEME_ADGS",					"G&#233;rer les groupes");
-define("THEME_PREF",					"Pr&#233;f&#233;rences");
-define("THEME_INSTALLEDMODULES",		"G&#233;rer les modules install&#233;s");
+define("THEME_BANS",					"Manage banners");
+define("THEME_BKAD",					"Manage blocks");
+define("THEME_ADGS",					"Manage users groups");
+define("THEME_PREF",					"Settings");
+define("THEME_INSTALLEDMODULES",		"Manage module(s)");
 define("THEME_IMAGES",					"Images");
 define("THEME_MDAD",					"Modules");
-define("THEME_SMLS",					"G&#233;rer les &#233;motic&#244;nes");
-define("THEME_RANK",					"Rang des utilisateurs");
-define("THEME_EUSER",					"Editer les utilisateurs");
-define("THEME_FINDUSER",				"Chercher un utilisateur");
-define("THEME_MLUS",					"Envoyer un courriel");
-define("THEME_AVATARS",					"G&#233;rer les avatars");
-define("THEME_TPLS",					"G&#233;rer les templates");
-define("THEME_COMMENTS",				"G&#233;rer les commentaires");
+define("THEME_SMLS",					"Manage smilies");
+define("THEME_RANK",					"User Ranks");
+define("THEME_EUSER",					"Edit User(s)");
+define("THEME_FINDUSER",				"Find a user");
+define("THEME_MLUS",					"Send email");
+define("THEME_AVATARS",					"Manage avatars");
+define("THEME_TPLS",					"Manage templates");
+define("THEME_COMMENTS",				"Manage comments");
+
 ?>

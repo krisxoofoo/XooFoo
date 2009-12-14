@@ -104,13 +104,13 @@ define("THEME_MODULE7_DESC",			"Use XoopsInfo Module");
 define("THEME_MODULE8",					"Protector");
 define("THEME_MODULE8_DESC",			"Use Protector Module");
 
-// module name in globalnav.html  anomymous mode
+// module name in xo_globalnav.html  anomymous mode
 define("THEME_MODULE1a",				"Credits");
 define("THEME_MODULE1a_DESC",			"Website Credits");
 define("THEME_MODULE2a",				"Localization");
 define("THEME_MODULE2a_DESC",			"Localize us on a map");
 
-// menu Admin in globalnav.html 'Dynamic'
+// menu Admin in xo_globalnav.html 'Dynamic'
 define("THEME_ADMIN",					"Administration");
 define("THEME_ADMIN_DESC",				"Go to Administration");
 define("THEME_ADMIN_PREFERENCES",		"Site Preferences");

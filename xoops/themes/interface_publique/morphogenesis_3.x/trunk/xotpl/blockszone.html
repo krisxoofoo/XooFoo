@@ -1,7 +1,7 @@
 <{if $blocks}>
 	<<{$zoneTag}> <{if $zoneId}> id="<{$zoneId}>"<{/if}> class="xo-blockszone <{if $zoneClass}> <{$zoneClass}><{/if}>">
 	<{foreach from=$blocks item=block}>
-	<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block <{$block.module}>">
+	<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block <{$block.module}>">
 		<{if $block.module !='system' && $block.module !=''}>
 			<div id="xo-blockviewall">
 				<a href="<{$xoops_url}>/modules/<{$block.module}>" title="<{$smarty.const.THEME_VIEWALL}>">

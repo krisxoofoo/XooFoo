@@ -9,7 +9,7 @@
 <{if $xoBlocks[$zone]}>
 	<div id="xo-page-<{$topbottom}><{$lcr}>blocks" class="xo-blockszone">
 		<{foreach from=$xoBlocks[$zone] item=block}>
-			<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block <{$block.module}>">
+			<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block <{$block.module}>">
 				<{if $theme_viewall_content && $block.module !='system' && $block.module !=''}>
 					<div id="xo-blockviewall">
 						<a href="<{$xoops_url}>/modules/<{$block.module}>" title="<{$smarty.const.THEME_VIEWALL}>">
@@ -45,7 +45,7 @@
 <{if $xoBlocks[$zone]}>
 	<div id="xo-page-<{$topbottom}><{$lcr}>blocks" class="xo-blockszone">
 		<{foreach from=$xoBlocks[$zone] item=block}>
-			<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block <{$block.module}>">	
+			<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block <{$block.module}>">	
 				<{if $theme_viewall_content && $block.module !='system' && $block.module !=''}>
 					<div id="xo-blockviewall">
 						<a href="<{$xoops_url}>/modules/<{$block.module}>" title="<{$smarty.const.THEME_VIEWALL}>">

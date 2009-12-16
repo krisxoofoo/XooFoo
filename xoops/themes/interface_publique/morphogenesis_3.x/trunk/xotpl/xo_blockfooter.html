@@ -2,7 +2,7 @@
 <{if !$xoops_isuser}> <!-- anonym mode -->
 	<div id="xo-blockfooter" class="<{$xoops_dirname}>">
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=4 display="title"}>
 				<{if $xoops_isadmin}>
@@ -14,7 +14,7 @@
 			<div class="xo-blockcontent"><{block id=4}></div>
 		</div>
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=9 display="title"}>
 				<{if $xoops_isadmin}>
@@ -26,7 +26,7 @@
 			<div class="xo-blockcontent"><{block id=9}></div>
 		</div>
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=8 display="title"}>
 				<{if $xoops_isadmin}>
@@ -38,7 +38,7 @@
 			<div class="xo-blockcontent"><{block id=8}></div>
 		</div>
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=7 display="title"}>
 				<{if $xoops_isadmin}>
@@ -54,7 +54,7 @@
 <{else}> <!-- user mode -->
 	<div id="xo-blockfooter">
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=7 display="title"}>
 				<{if $xoops_isadmin}>
@@ -66,7 +66,7 @@
 			<div class="xo-blockcontent"><{block id=7}></div>
 		</div>
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=4 display="title"}>
 				<{if $xoops_isadmin}>
@@ -78,7 +78,7 @@
 			<div class="xo-blockcontent"><{block id=4}></div>
 		</div>
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=8 display="title"}>
 				<{if $xoops_isadmin}>
@@ -90,7 +90,7 @@
 			<div class="xo-blockcontent"><{block id=8}></div>
 		</div>
 
-		<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+		<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 			<div class="xo-blocktitle">
 			<{block id=9 display="title"}>
 				<{if $xoops_isadmin}>

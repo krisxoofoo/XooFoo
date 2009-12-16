@@ -38,7 +38,7 @@ Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SE
 		<{else}>
 			<div id="xo-homepage-users"> <!-- mode user -->
 				<div id="xo-homepage-block">
-					<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+					<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 						<div class="xo-blocktitle">
 						<{block id=4 display="title"}>
 							<{if $xoops_isadmin}>
@@ -50,7 +50,7 @@ Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SE
 						<div class="xo-blockcontent"><{block id=4}></div>
 					</div>
 
-					<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+					<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 						<div class="xo-blocktitle">
 						<{block id=9 display="title"}>
 							<{if $xoops_isadmin}>
@@ -62,7 +62,7 @@ Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SE
 						<div class="xo-blockcontent"><{block id=9}></div>
 					</div>
 
-					<div id="xo-block<{$block.module}><{$block.id}>" class="xo-block">
+					<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
 						<div class="xo-blocktitle">
 						<{block id=8 display="title"}>
 							<{if $xoops_isadmin}>

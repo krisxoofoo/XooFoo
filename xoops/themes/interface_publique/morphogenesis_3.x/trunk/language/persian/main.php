@@ -10,12 +10,12 @@ define("THEME_LICENSE",					"See Creative Commons Licence");
 
 // xo_userbar.html
 define("THEME_REGISTER",				"ثبت نام");
-define("THEME_REMEMBER",				" مرا با یاد داشته باش؟");
-define("THEME_PSEUDO",					" نام کاربری");
-define("THEME_DESC_PSEUDO",				" نام کاربری خود را بنویسید");
-define("THEME_PASSWORD",				" پسورد");
-define("THEME_DESC_PASSWORD",			" واژه رمز خود را بنویسید");
-define("THEME_CONNECT",					"Connexion");
+define("THEME_REMEMBER",				"مرا با یاد داشته باش؟");
+define("THEME_PSEUDO",					"نام کاربری");
+define("THEME_DESC_PSEUDO",				"نام کاربری خود را بنویسید");
+define("THEME_PASSWORD",				"پسورد");
+define("THEME_DESC_PASSWORD",			"واژه رمز خود را بنویسید");
+define("THEME_CONNECT",					"اتصال");
 
 define("THEME_WELLCOME",				"خوش آمدید");
 define("THEME_PROFILE",					"نمایش ویژگی های فردی");
@@ -24,7 +24,7 @@ define("THEME_MESSAGE",					"نمایش پیام ها");
 define("THEME_YOUHAVE",					"شما ");
 define("THEME_NOTREAD",					"پیام های خوانده نشده دارید");
 define("THEME_MYACCOUNT",				"حساب  من");
-define("THEME_PRIVATE",					"Private Access");
+define("THEME_PRIVATE",					"دسترسی خصوصی");
 
 // searchbar.html
 define("THEME_SEARCH",					"جستجو");
@@ -46,12 +46,12 @@ define("THEME_KOREAN",					"کره ای");
 define("THEME_HOLLAND",					"هلندی");
 define("THEME_FARSI",					"فارسی");
 define("THEME_ARAB",					"عربی");
-define("THEME_HEBRAIC",					"Hebrew");
+define("THEME_HEBRAIC",					"عبری");
 define("THEME_BREITZ",					"Breitz");
 define("THEME_BASQUE",					"Euskadi");
 
 // xo_globalnav.html
-define("THEME_SHOWHIDE_COLUMN",			"Show/Hide Column");
+define("THEME_SHOWHIDE_COLUMN",			"نمایش/مخفی  کردن ستون");
 
 define("THEME_CONTACT",					"تماس");
 define("THEME_CONTACT_DESC",			"تماس با ما؟");
@@ -105,9 +105,9 @@ define("THEME_MODULE8",					"پروتکتو");
 define("THEME_MODULE8_DESC",			"استفاده از ماژول پروتکتو");
 
 // module name in xo_globalnav.html  anomymous mode
-define("THEME_MODULE1a",				"Credits");
-define("THEME_MODULE1a_DESC",			"Website Credits");
-define("THEME_MODULE2a",				"Localization");
+define("THEME_MODULE1a",				"دستاندرکاران");
+define("THEME_MODULE1a_DESC",			"دستاندرکاران وب سایت");
+define("THEME_MODULE2a",				"بومی سازی");
 define("THEME_MODULE2a_DESC",			"Localize us on a map");
 
 // menu Admin in xo_globalnav.html 'Dynamic'
@@ -125,67 +125,67 @@ define("THEME_ADMIN_IMAGES_DESC",		"برو به مدیریت تصاویر");
 // accessibilitybar.html
 define("THEME_ACCESS_PLUS",				"بزرگ کردن اندازه فونت ها !");
 define("THEME_ACCESS_MINUS",			"کوچک کردن اندازه فونت ها !");
-define("THEME_ACCESS_RESET",			"Font size Reset !");
+define("THEME_ACCESS_RESET",			"تنظیم اندازه فونت ها");
 
 // xo_homepage.html
-define("THEME_SHOWHIDE_HOMEPAGE",		"Show/Hide Homepage Box");
+define("THEME_SHOWHIDE_HOMEPAGE",		"نمایش/مخفی کردن جعبه صفحه اول");
 
 // system_notification_select.html
 //define("THEME_NOTIFICATION_PLUS",		"Show");
 //define("THEME_NOTIFICATION_PLUS_DESC",	"Show Notification Options");
 //define("THEME_NOTIFICATION_MINUS",		"Cacher");
 //define("THEME_NOTIFICATION_MINUS_DESC",	"Hide Notification Options");
-define("THEME_SHOWHIDE_NOTIFICATION",	"Show / Hide");
-define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"Show or hide the notification options");
+define("THEME_SHOWHIDE_NOTIFICATION",	"نمایش / مخفی کردن");
+define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"نمایش مخفی کردن سیستم آگاهی رسانی");
 
 // blockszone and centerblocks.html
-define("THEME_THISBLOCK_EDIT",			"Edit this block");
-define("THEME_VIEWALL",					"View All");
+define("THEME_THISBLOCK_EDIT",			"ویرایش این بلاک");
+define("THEME_VIEWALL",					"نمایش همه");
 
 // complements for xoops core (override)
-define("THEME_WRITE_EMAIL", 			"Put your email");
+define("THEME_WRITE_EMAIL", 			"ایمیل خود را وارد کنید");
 define("THEME_BROWSERCHECK",  " ");
 
 /* ------------------- xo_socialbookmark.html ------------------- */
-define("THEME_BK_SCRIPSTYLE",          	"Submit this to Script & Style");
-define("THEME_BK_BLINKLIST",           	"Share this on Blinklist");
-define("THEME_BK_DELICIOUS",           	"Share this on del.icio.us");
-define("THEME_BK_DIGG",            		"Digg this!");
-define("THEME_BK_FURL",            		"Share this on Furl");
-define("THEME_BK_REDDIT",            	"Share this on Reddit");
-define("THEME_BK_YAHOO",            	"Save this to Yahoo MyWeb");
+define("THEME_BK_SCRIPSTYLE",          	"ارسال در Script & Style");
+define("THEME_BK_BLINKLIST",           	"انتشار در Blinklist");
+define("THEME_BK_DELICIOUS",           	"انتشار در del.icio.us");
+define("THEME_BK_DIGG",            		"Digg کنید!");
+define("THEME_BK_FURL",            		"انتشار در Furl");
+define("THEME_BK_REDDIT",            	"انتشار در Reddit");
+define("THEME_BK_YAHOO",            	"ذخیره در Yahoo MyWeb");
 define("THEME_BK_STUMBLE",            	"Stumble upon something good? Share it on StumbleUpon");
-define("THEME_BK_TWITTER",            	"Tweet This!");
-define("THEME_BK_TECHNORATI",          	"Share this on Technorati");
-define("THEME_BK_MIXX",            		"Share this on Mixx");
-define("THEME_BK_MYSPACE",            	"Post this to MySpace");
-define("THEME_BK_DESIGNFLOAT",         	"Submit this to DesignFloat");
-define("THEME_BK_FACEBOOK",            	"Share this on Facebook");
+define("THEME_BK_TWITTER",            	"Tweet کنید!");
+define("THEME_BK_TECHNORATI",          	"انتشار در Technorati");
+define("THEME_BK_MIXX",            		"انتشار در Mixx");
+define("THEME_BK_MYSPACE",            	"ارسال به MySpace");
+define("THEME_BK_DESIGNFLOAT",         	"ارسال در DesignFloat");
+define("THEME_BK_FACEBOOK",            	"انتشار در Facebook");
 
 /* ------------------- xo_footerstatic.html ------------------- */
-define("_THEME_INBOX",            		"See your messages");
-define("_THEME_INBOX_NOTREAD",    		"message(s) no read");
-define("_THEME_NOTIFICATIONS",   		"See notifications");
-define("_THEME_PROFILE",         		"See profil");
-define("_THEME_ADMINISTRATION",  		"Administration");
-define("_THEME_LOGOUT",          		"Logout");
-define("THEME_EDITPROFILE",				"Edit profil");
-define("THEME_USER",					"Users");
-define("THEME_CPHOME",					"Administration");
-define("THEME_BANS",					"Manage banners");
-define("THEME_BKAD",					"Manage blocks");
-define("THEME_ADGS",					"Manage users groups");
-define("THEME_PREF",					"Settings");
-define("THEME_INSTALLEDMODULES",		"Manage module(s)");
-define("THEME_IMAGES",					"Images");
-define("THEME_MDAD",					"Modules");
-define("THEME_SMLS",					"Manage smilies");
-define("THEME_RANK",					"User Ranks");
-define("THEME_EUSER",					"Edit User(s)");
-define("THEME_FINDUSER",				"Find a user");
-define("THEME_MLUS",					"Send email");
-define("THEME_AVATARS",					"Manage avatars");
-define("THEME_TPLS",					"Manage templates");
-define("THEME_COMMENTS",				"Manage comments");
+define("_THEME_INBOX",                  "نمایش پیام شخصی");
+define("_THEME_INBOX_NOTREAD",          "پیام خوانده نشده");
+define("_THEME_NOTIFICATIONS",          "نمایش آگاهی رسانی ها");
+define("_THEME_PROFILE",                "نمایش ویژگی های فردی");
+define("_THEME_ADMINISTRATION",         "مدیریت");
+define("_THEME_LOGOUT",                 "برای خروج کلیک کنید");
+define("THEME_EDITPROFILE",				"ویرایش ویژگی های فردی");
+define("THEME_USER",					"کاربران");
+define("THEME_CPHOME",					"بخش مدیریت");
+define("THEME_BANS",					"مدیریت بنر ها");
+define("THEME_BKAD",					"مدیریت بلاک ها");
+define("THEME_ADGS",					"مدیریت گروه ها");
+define("THEME_PREF",					"ویژگی ها");
+define("THEME_INSTALLEDMODULES",		"مدیریت ماژول ها");
+define("THEME_IMAGES",					"تصاویر");
+define("THEME_MDAD",					"ماژول ها");
+define("THEME_SMLS",					"مدیریت لبخند ها");
+define("THEME_RANK",					"نشان اعضا");
+define("THEME_EUSER",					"ویرایش اعضا");
+define("THEME_FINDUSER",				"جستجو اعضا");
+define("THEME_MLUS",					"ارسال پیام با اعضا");
+define("THEME_AVATARS",					"مدیریت تصاویر اعضا");
+define("THEME_TPLS",					"مدیریت الگو ها");
+define("THEME_COMMENTS",				"مدیریت نظر ها");
 
 ?>

@@ -1,0 +1,126 @@
+ ##############################################################################
+ # File name: UniServer USB.txt
+ # Created By: The Uniform Server Development Team
+ # Edited Last By: Kris 
+ # V 1.0 17/12/09
+ # Opera USB 10.10 
+ ##############################################################################
+
+ This plugin integrates portable Opera into Uniform Server 5.5-Nano’s
+ architecture. This allows Uniform Server to be run independently of the host
+ PC. To achieve this it uses Portable Opera and a PAC file. (PAC file
+ prevents issues with Vista and W7 "hosts" file).
+
+ ------
+ INSALL
+ ------
+
+ Options 1:
+
+   1. Unpack a new copy of Uniform Server 5.5-Nano.
+   2. Download file V55UniServer_USB_1.0.exe from Sourceforge
+   3. Save it to folder UniServer.
+   4. To extract files, double click on file V55UniServer_USB_1.0.exe,
+      no need to change the path.
+   5. New files are added to folders UniServer.
+      Note: Several Uniform Server files are updated.
+      Opera USB is extracted to folder apps/opera.
+
+ Options 2:
+
+   1. Unpack a new copy of Uniform Server 5.5-Nano.
+   2. Download file V55UniServer_USB_1.0.zip from Sourceforge
+   3. Save to any folder
+   4. Extract files, navigate to folder V55UniServer_USB_1.0
+   5. Copy its entire contents folder UniServer
+   6. New files are added to folders UniServer.
+      Note: Several Uniform Server files are updated.
+
+ ---
+ Run
+ ---
+ 
+ When running on a local hard drive start the servers using Start.exe or the
+ batch files in folder alternative_control. This allows faster development
+
+ The server is independent of the host PC and no longer uses a host's browser
+ or "hosts" file. Instead the integrated Opera USB and PAC file are used.            
+
+ ---------------------------
+ Install on USB memory stick
+ ---------------------------
+
+ Copy the entire content of folder UniServer to the root (top-level) of a
+ USB memory stick.
+
+ The servers are automatically run when memory stick is inserted into a USB
+ port, just click run at the alert pop-up.
+
+ Manually start UniTray using either Start.exe or AutorunPro.EXE,
+ close servers using UniTray.
+
+ --------------
+ Port conflicts
+ --------------
+
+ If you whish to run the servers either alongside another running server or
+ if there are port conflicts run the move server script. From UniTray
+ select Advanced > Move Servers multi-server operation (third menu idem)  
+
+ Aternatively navigate to  folder UniServer\unicon\move_servers and
+ run batch file Run.bat
+
+ Note: When prompted you can enter new parameters however quickest method
+       is to accept the proposed values by pressing enter at every prompt.
+
+ -------
+ UniTray
+ -------
+
+ UniTray provides convenient links to display various server web pages and
+ information. In order to display server web pages Opera USB has to
+ be restarted with the new page parameter. It’s a minor irritation however 
+ is required to avoid Windows opening it’s default browser. Note all server 
+ web pages are reflected in Apanel hence this is the only link you need to
+ use from UniTray.
+
+ --------
+ PAC file
+ --------
+
+ Browsers resolve a web-address by first checking a PC’s “hosts” if unresolved
+ sends a request to a DNS server. Localhost is resolved with an entry in the
+ “hosts” file however some PC’s may not have this “hosts” file hence the server
+ will fail. Vista and W7 security makes it difficult to update this file.
+
+ Aadded to this for development you may be running several Apache virtual hosts 
+ which require an entry in the “hosts” file.
+
+ For a portable development server the above becomes significant hence reason
+ for integrating Opera USB this has been enabled to use a PAC file.
+ When a web-address requires resolving this file is checked first then the
+ “hosts” file and lastly a DNS request.
+
+ The PAC file resolves localhost and any required Apache virtual hosts thus
+ avoiding the need for a local “hosts” file. The file is named my_sites.pac
+ and located in folder UniServer\pac it contains this single function.
+
+ function FindProxyForURL (url, host){
+  if (shExpMatch(url,"http://localhost*")) return "PROXY 127.0.0.1:80";
+  if (shExpMatch(url,"http://localhost:80*")) return "PROXY 127.0.0.1:80";
+  return "";
+ }
+
+ Do not remove the lines “localhost” they are required. Below these add as
+ many lines as you like one for each virtual host. For example:
+ 
+  if (shExpMatch(url,"http://wiki.uniformserver.com/*")) return "PROXY 127.0.0.1";
+  if (shExpMatch(url,"http://forum.uniformserver.com/*")) return "PROXY 127.0.0.1";
+
+ Note: If you use Apanels's "Virtual Host Admin" enteries are automatically
+        inserted into my_sites.pac file.
+
+ Wiki: http://wiki.uniformserver.com/index.php/UniServer_USB:_Introduction     
+   
+
+                                        .... End ....

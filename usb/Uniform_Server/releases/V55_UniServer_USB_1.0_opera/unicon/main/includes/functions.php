@@ -1139,7 +1139,7 @@ function start_opera($page){
 // Multi-servers increment digit  
 function get_opera_exe(){
   global $base_f;
-  $firefox_folder = "$base_f/apps/opera"; 		// Opera folder
+  $opera_folder = "$base_f/apps/opera"; 		// Opera folder
 
   $dir_handle=opendir($opera_folder);         // Get handle to Opera folder 
   while($file=readdir($dir_handle)){              // Loop through folder names 

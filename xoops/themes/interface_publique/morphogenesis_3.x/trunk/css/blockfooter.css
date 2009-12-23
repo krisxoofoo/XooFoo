@@ -50,7 +50,7 @@
 	padding :					.5em;
 	line-height: 				1.4em;
 }
-#xo-blockfooter .outer {}
+#xo-blockfooter .outer {background-color: transparent; color:inherit;}
 #xo-blockfooter .head {}
 #xo-blockfooter .even {}
 #xo-blockfooter .odd {}

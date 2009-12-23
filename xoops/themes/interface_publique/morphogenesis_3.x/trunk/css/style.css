@@ -35,7 +35,7 @@
 @font-face { font-family: BakerSignet BT; font-style:  normal; font-weight: normal; src: url(../fonts/BAKERSI3.eot);}
 
 /* reset css for web browsers*/
-* { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none;font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal;}
+* { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none;font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal; resize:none;}
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 
@@ -178,7 +178,7 @@ body {font-size:75%;}
 	text-decoration: 			underline;
 }
 
-#xo-blockfooter { /* see also in block.css */ }
+#xo-blockfooter { /* see also in blockfooter.css */ }
 
 #xo-footerbottom {
 	clear:						both;

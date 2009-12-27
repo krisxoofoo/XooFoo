@@ -1,6 +1,6 @@
 <?php
 // g&eacute;n&eacute;ralit&eacute;s
-define("THEME_NAME",					"Mor&#42;Pho&#42;GEN&#42;e&#42;sis 3.0");
+define("THEME_NAME",					"Mor&#42;Pho&#42;GEN&#42;e&#42;sis 3.1");
 define("THEME_DESC",					"birth of evolution");
 define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communaut&eacute; Francophone du Projet XOOPS'>Communaut&#233; Francophone XOOPS</a>");
 define("THEME_UPTOP",					"Haut de Page");

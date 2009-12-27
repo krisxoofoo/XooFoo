@@ -18,14 +18,22 @@
  * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
  * @author      Taiwen Jiang <phppp@users.sourceforge.net>
  * @since       2.3
- * @version     $Id$
+ * @version     $Id: xo-info.php 2793 2009-02-10 19:49:25Z dugris $
  */
 
 
 return array(
-        'copyright'        => '&copy; AfuX.org, maintained by Kris - XooFoo.org',
-        // Types of language constants
-        "languages" => array("main", "admin"),
+    'copyright'       		=> '&copy; AfuX.org, maintained by Kris - XooFoo.org',
+	//'xoBundleIdentifier'	=> 'theme_morphogenesis',
+	//'xoBundleDisplayName'	=> 'XOOPS Morphogenesis 3 beta 1 (standards compliant)',
+	//'parentTheme'			=> 'morphogenesis',
+	// This theme default templates
+	// templates paths must start with a "." to be considered relative to the theme folder
+	//'canvasTemplate' => './xotpl/xo_canvas.html',
+	//'pageTemplate' => './xotpl/xo_page.html',
+	
+    // Types of language constants
+    "languages" => array("main", "admin"),
 );
 
 ?>

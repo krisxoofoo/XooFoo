@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
 <meta name="robots" content="<{$xoops_meta_robots}>" />
 <meta name="keywords" content="<{$xoops_pagetitle}>,<{$xoops_meta_keywords}>" />
-<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="description" content="<{$xoops_pagetitle}>, <{$xoops_meta_description}>" />
 <meta name="rating" content="<{$xoops_meta_rating}>" />
 <meta name="author" content="<{$xoops_meta_author}>" />
 <meta name="copyright" content="<{$xoops_meta_copyright}>" />
@@ -26,11 +26,8 @@
 <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
 <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
 
-<!-- include xoops.js and others via header.php -->
-<{$xoops_module_header}>
-
 <!-- Xoops style sheet -->
-<link rel="stylesheet" type="text/css" media="screen" href="<{xoAppUrl browse.php?style.css}>" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{xoAppUrl browse.php?xoops.css}>" />
 
 <!-- Theme style sheets -->
 <link rel="stylesheet" type="text/css" media="screen,projection,print" href="<{xoImgUrl css/layout-soup.css}>" /><!-- canvas theme style sheet -->
@@ -38,3 +35,6 @@
 <link rel="stylesheet" type="text/css" media="screen" title="Color" href="<{xoImgUrl css/style.css}>" /> <!--for production -->
 <link rel="stylesheet" type="text/css" media="print" href="<{xoImgUrl css/print.css}>" />  <!-- print style sheet experimental -->
 <!--<link rel="stylesheet" type="text/css" media="aural" href="<{xoImgUrl /aural.css}>" />-->  <!-- audio style sheet -->
+
+<!-- include xoops.js and others via header.php -->
+<{$xoops_module_header}>

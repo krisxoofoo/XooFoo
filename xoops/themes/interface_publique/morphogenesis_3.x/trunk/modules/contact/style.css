@@ -12,9 +12,6 @@
  * @version         $Id
 */
 
-/*============== Styles for profile_userform.html =================*/
-#xo-profil-userform label[name=xolb_agree_disc] {display:block; max-width: 400px !important;} /* specifix fix for profile module */
-#xo-profile-userform  input[type=submit]{margin-left: 200px;}
-#xo-profile-userform p {margin-bottom: 1em; margin-left:180px;}
-
-#xo-homepage {	height:	220px;}
+/*============== Override Style for contact module =================*/
+#xo-canvas-content {margin: 2em auto; width:800px;}
+#xo-uptop {width:50%;}

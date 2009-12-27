@@ -1,0 +1,9 @@
+<{php}>
+$mod = $GLOBALS['xoopsModule'];
+$dirname = (isset($mod) ? $mod->getVar('dirname') :'system');
+$GLOBALS['xoopsTpl']->assign( 'xoops_cmod', $dirname );
+<{/php}>
+
+<div id="xo-breadcrumb">
+<a href="<{xoAppUrl}>" title="<{$smarty.const.THEME_HOME_DESC}>"><{$smarty.const.THEME_HOME}></a> >> <a href="<{$xoops_url}>/modules/<{$xoops_cmod}>/"><{$xoops_cmod}></a> >> <{$xoops_pagetitle}>
+</div>

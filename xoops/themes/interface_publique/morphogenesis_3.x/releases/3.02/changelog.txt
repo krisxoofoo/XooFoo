@@ -1,0 +1,11 @@
+Mor.Pho.GEN.e.sis Theme - Changelog
+
+============================
+Version 3.0.2 ( for xoops 2.4.x )
+============================
+- Add css resize width for left and right columns (+ blocks) - (kris)
+
+============================
+Version 3.0.1 ( for xoops 2.4.x )
+============================
+- Change Block Id Css - (kris/trabis)

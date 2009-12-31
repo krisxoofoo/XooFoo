@@ -1,7 +1,7 @@
 Mor.Pho.GEN.e.sis Theme Framework - Changelog
 
 ============================
-Version 3.1 beta 1 ( for xoops 2.4.x )
+Version 3.1 ( for xoops 2.4.x )
 ============================
 - Add an extra SMARTY variable $xoops_themeurl - (kris / kaifulee team)
 - Add an extra SMARTY variable $xoops_module_theme - (kris / kaifulee team)

@@ -25,7 +25,7 @@
 return array(
     'copyright'       		=> '&copy; AfuX.org, maintained by Kris - XooFoo.org',
 	//'xoBundleIdentifier'	=> 'theme_morphogenesis',
-	//'xoBundleDisplayName'	=> 'XOOPS Morphogenesis 3 beta 1 (standards compliant)',
+	//'xoBundleDisplayName'	=> 'XOOPS Morphogenesis 3.1 (standards compliant)',
 	//'parentTheme'			=> 'morphogenesis',
 	// This theme default templates
 	// templates paths must start with a "." to be considered relative to the theme folder

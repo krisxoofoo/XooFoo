@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+<!-- Directory html blocks files or additional html files by include -->
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+<!-- Directory html plugins files -->	
+	<{assign var=theme_plugin value=$xoTheme->folderName|cat:'/xoplugins'}>
+<!-- Directory html javascript files -->	
+	<{assign var=theme_js value=$xoTheme->folderName|cat:'/js'}>
+<!-- Metas -->
+	<{includeq file="$theme_name/xo_metas.html"}>
+<!-- Theme others parameters -->
+	<{includeq file="$theme_name/xo_thm_parameters.html"}>
+</head>
+<body id="xo-sitemaintenance">
+	<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+		<div class="xo-wrapper">
+			<div id="xo-bgstatic" class="<{$xoops_dirname}>"></div>
+				<div id="xo-header" class="<{$xoops_dirname}>">
+					<div id="xo-topheader">
+						<!-- include du bloc Langues dans le header -->
+						<{if $theme_view_languagechoice}><{includeq file="$theme_name/xo_language.html"}><{/if}>
+						<!-- include du bloc Utilisateur dans le header -->
+						<{includeq file="$theme_name/xo_userbar_siteclosed.html"}>
+					</div>
+					<!-- vérification si l'affichage de la bannière est activée ou non dans l'administration du site -->
+					<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+							<!-- include avec affichage de la bannière activé-->
+							<{includeq file="$theme_name/xo_banner_commercial.html"}>
+					<{else}>
+							<!-- include avec affichage de la bannière désactivé -->
+							<{includeq file="$theme_name/xo_banner.html"}>
+					<{/if}>
+					<!-- fin de la condition d'affichage en fonction de l'activation de la bannière -->
+				</div>
+
+				<div id="xo-canvas-content">
+					<div id="xo-page">
+						<div id="xo-siteclose"><{$lang_siteclosemsg}></div>
+					</div>
+				</div>
+
+			<!-- include du PIED DE PAGE -->
+					<{includeq file="$theme_name/xo_footer.html"}>
+				<!--{xo-logger-output}-->
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<{if $smarty.server.PHP_SELF=='/241fr/modules/profile/userinfo.php'}>
+<!-- In the above line: if your site is at the root of the server, put '/index.php', otherwise '/foldername/index.php'
+If you have difficulty finding the path, add <{$smarty.server.PHP_SELF}> in first line of this file and the information displayed, then remove the line and this comments for safety issues  <{$xoops_rootpath}>
+Dans la ligne ci-dessus : si votre site est à la racine du serveur, mettez '/index.php', sinon '/nomdudossier/index.php'
+Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SELF}> en première ligne de ce fichier et les informations s'afficheront, puis retirer la ligne et ce commentaire pour des questions de sécurité -->
+
+	<{if $theme_homepage_toggle}>
+		<div id="xo-showhidehomepage" onclick="xoToggleBlock('xo-homepage');" title="<{$smarty.const.THEME_SHOWHIDE_HOMEPAGE}>">
+			<{$smarty.const.THEME_SHOWHIDE_HOMEPAGE}>
+		</div>
+	<{/if}>
+
+	<div id="xo-homepage">
+		<div class="center">
+			<br />
+			<{if $avatar}>
+				<img class="comUserImg" src="<{$avatar}>" alt="<{$uname}>" />
+				<br />
+			<{/if}>
+				<strong><{$uname}></strong>
+				<br />
+			<{if $email}>
+				 <img class="xo-icons" src="<{xoImgUrl icons/users/email.png}>" alt=""/><{$email}>
+			<{/if}>
+			<{if !$user_ownpage && $xoops_isuser == true}>
+			<form name="usernav" action="user.php" method="post">
+				<input type="button" value="<{$smarty.const._PROFILE_MA_SENDPM}>" onclick="javascript:openWithSelfMain('<{$xoops_url}>/pmlite.php?send2=1&amp;to_userid=<{$user_uid}>', 'pmlite', 450, 380);" />
+			</form>
+			<{/if}>        
+		</div>
+		
+		<br style="clear: both;" />
+		
+		<{if $user_ownpage == true}>
+			<div class="center">
+				<form name="usernav" action="user.php" method="post">
+					<input type="button" value="<{$lang_editprofile}>" onclick="location='<{$xoops_url}>/modules/<{$xoops_dirname}>/edituser.php'" />
+					<input type="button" value="<{$lang_changepassword}>" onclick="location='<{$xoops_url}>/modules/<{$xoops_dirname}>/changepass.php'" />
+					<{if $user_changeemail}>
+						<input type="button" value="<{$smarty.const._PROFILE_MA_CHANGEMAIL}>" onclick="location='<{$xoops_url}>/modules/<{$xoops_dirname}>/changemail.php'" />
+					<{/if}>
+
+					<{if $user_candelete == true}>
+						<form method="post" action="<{$xoops_url}>/modules/<{$xoops_dirname}>/user.php">
+							<input type="hidden" name="op" value="delete">
+							<input type="hidden" name="uid" value="<{$user_uid}>">
+							<input type="button" value="<{$lang_deleteaccount}>" onclick="submit();" />
+						</form>
+					<{/if}>
+
+					<input type="button" value="<{$lang_avatar}>" onclick="location='edituser.php?op=avatarform'" />
+					<input type="button" value="<{$lang_inbox}>" onclick="location='<{$xoops_url}>/viewpmsg.php'" />
+					<input type="button" value="<{$lang_logout}>" onclick="location='<{$xoops_url}>/modules/<{$xoops_dirname}>/user.php?op=logout'" />
+				</form>
+			</div>
+		<{elseif $xoops_isadmin != false}>
+			<div class="center">
+					<form method="post" action="<{$xoops_url}>/modules/<{$xoops_dirname}>/admin/deactivate.php">
+					<input type="button" value="<{$lang_editprofile}>" onclick="location='<{$xoops_url}>/modules/<{$xoops_dirname}>/admin/user.php?op=edit&amp;id=<{$user_uid}>'" />
+					<input type="hidden" name="uid" value="<{$user_uid}>" />
+					<{if $userlevel == 1}>
+						<input type="hidden" name="level" value="0" />
+						<input type="button" value="<{$smarty.const._PROFILE_MA_DEACTIVATE}>" onclick="submit();" />
+					<{else}>
+						<input type="hidden" name="level" value="1" />
+						<input type="button" value="<{$smarty.const._PROFILE_MA_ACTIVATE}>" onclick="submit();" />
+					<{/if}>
+					</form>
+			</div>
+		<{/if}>
+		
+	</div>
+<{/if}>

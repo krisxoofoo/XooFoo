@@ -1,0 +1,34 @@
+<div id="xo-globalnav">
+	<{if $xoBlocks.canvas_left && $theme_left_toggle}>
+		<div id="xo-leftcolswitch" onclick="xoToggleBlock('xo-canvas-leftcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<{/if}>
+	<div id="xo-globalmenu">
+	<ul class="xo-navigation">
+		<li class="xo-label"><{$smarty.const.THEME_NAVTITLE}> : <{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}> - <{$xoops_meta_keywords}></li>
+		<!-- menu in anonymous mode-->
+		<li><a href="<{xoAppUrl}>" accesskey="a"  title="<{$smarty.const.THEME_HOME_DESC}>"><{$smarty.const.THEME_HOME}></a></li>
+		<{if !$xoops_isuser}>
+			<li><a href="<{xoAppUrl modules/myCredits/}>" accesskey="" title="<{$smarty.const.THEME_MODULE1a_DESC}>"><{$smarty.const.THEME_MODULE1a}></a></li>
+			<li><a href="<{xoAppUrl modules/google/}>" accesskey="" title="<{$smarty.const.THEME_MODULE2a_DESC}>"><{$smarty.const.THEME_MODULE2a}></a></li>
+			<{else}>
+			<!-- menu in mode recorded -->
+			<li><a href="<{xoAppUrl modules/news/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE1_DESC}>"><{$smarty.const.THEME_MODULE1}></a></li>
+			<li><a href="<{xoAppUrl modules/newbb/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE2_DESC}>"><{$smarty.const.THEME_MODULE2}></a></li>
+			<li><a href="<{xoAppUrl modules/xcgal/}>" accesskey="" title="<{$smarty.const.THEME_MODULE3_DESC}>"><{$smarty.const.THEME_MODULE3}></a></li>
+			<li><a href="<{xoAppUrl modules/smartmedia/}>" accesskey="" title="<{$smarty.const.THEME_MODULE4_DESC}>"><{$smarty.const.THEME_MODULE4}></a></li>
+			<li><a href="<{xoAppUrl modules/mylinks/}>" accesskey="" title="<{$smarty.const.THEME_MODULE5_DESC}>"><{$smarty.const.THEME_MODULE5}></a></li>
+			<li><a href="<{xoAppUrl modules/mydownloads/}>" accesskey="" title="<{$smarty.const.THEME_MODULE6_DESC}>"><{$smarty.const.THEME_MODULE6}></a></li>
+			
+			<{if $xoops_isadmin}>
+				<!-- additional link if I am administrator -->
+				<li><a href="<{xoAppUrl modules/xoopsinfo/admin/}>" accesskey="" title="<{$smarty.const.THEME_MODULE7_DESC}>"><{$smarty.const.THEME_MODULE7}></a></li>
+				<li><a href="<{xoAppUrl modules/protector/admin/}>" accesskey="" title="<{$smarty.const.THEME_MODULE8_DESC}>"><{$smarty.const.THEME_MODULE8}></a></li>
+			<{/if}>
+		<{/if}>
+		<li><a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><{$smarty.const.THEME_CONTACT}></a></li>
+	</ul>
+	</div>
+	<{if $xoBlocks.canvas_right && $theme_right_toggle}>
+		<div id="xo-rightcolswitch" onclick="xoToggleBlock('xo-canvas-rightcolumn');" title="<{$smarty.const.THEME_SHOWHIDE_COLUMN}>"><{$smarty.const.THEME_SHOWHIDE_COLUMN}></div>
+	<{/if}>
+</div>

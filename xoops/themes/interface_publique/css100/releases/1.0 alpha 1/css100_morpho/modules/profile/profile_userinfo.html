@@ -1,0 +1,43 @@
+<{includeq file="db:profile_breadcrumbs.html"}>
+
+<{foreach item=category from=$categories}>
+    <{if isset($category.fields)}>
+        <div class="profile-list-category" id="profile-category-<{$category.cat_id}>">
+            <table class="outer" cellpadding="4" cellspacing="1">
+                <tr>
+                  <th colspan="2" align="center"><{$category.cat_title}></th>
+                </tr>
+                <{foreach item=field from=$category.fields}>
+                    <tr>
+                        <td class="head"><{$field.title}></td>
+                        <td class="even"><{$field.value}></td>
+                    </tr>
+                <{/foreach}>
+            </table>
+        </div>
+    <{/if}>
+<{/foreach}>
+
+<{if $modules}>
+<br style="clear: both;" />
+<div class="profile-list-activity">
+    <h3><{$recent_activity}></h3>
+    <!-- start module search results loop -->
+    <{foreach item=module from=$modules}>
+
+    <h4><{$module.name}></h4>
+
+      <!-- start results item loop -->
+          <{foreach item=result from=$module.results}>
+
+          <p><img class="xo-icons" src="<{$result.image}>" alt="<{$module.name}>" />&nbsp;<strong><a href="<{$result.link}>"><{$result.title}></a></strong> - <span class="small italic">(<{$result.time}>)</span></p>
+
+          <{/foreach}>
+          <!-- end results item loop -->
+
+    <{$module.showall_link}>
+
+    <{/foreach}>
+    <!-- end module search results loop -->
+</div>    
+<{/if}>

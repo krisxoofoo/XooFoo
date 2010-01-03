@@ -1,0 +1,11 @@
+Css100 Theme Framework - Changelog
+
+============================
+Version 1.0 alpha 1 ( for xoops 2.4.x )
+============================
+- completely recoded and reorganized on the basis of morphogenesis 3.1 (kris)
+
+============================
+Version 0.2.1
+============================
+- Neolithic (mdr / lol / kris)

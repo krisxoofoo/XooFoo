@@ -1,5 +1,5 @@
-<!-- Theme others parameters -->
-	<{includeq file="$theme_name/xo_thm_parameters.html"}>
+	<!-- Theme others parameters -->
+	<{includeq file="$xoops_module_theme/xo_thm_parameters.html"}>
 <!-- Metas, Titles, and Style Sheets -->
 	<{includeq file="$theme_name/xo_metas.html"}>
 <!-- Additionals Scripts -->
@@ -13,10 +13,13 @@
 <div id="xo-wrapper" class="<{$xoops_dirname}>">
 	<div id="xo-bgstatic" class="<{$xoops_dirname}>"></div>
 	<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
-		<!-- start header -->
+
+		<!-- HEADER -->
 		<div id="xo-header" class="<{$xoops_dirname}>">
+
 			<!-- INCLUDE TOPHEADER -->
 			<{if $theme_view_topheader}><{includeq file="$theme_name/xo_topheader.html"}><{/if}>
+
 			<!-- INCLUDE HEADER WITH LOGO AND BANNER -->
 			<!-- checking whether the display of the banner is enabled or not in the site administration -->
 			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
@@ -29,6 +32,13 @@
 			<!-- INCLUDE HORIZONTAL MENU -->
 			<{if $theme_view_globalnav}><{includeq file="$theme_name/xo_globalnav.html"}><{/if}>
 		</div>
+		<!-- END HEADER -->
+		
+		<!-- INCLUDE HOMEPAGE FOR ANONYMOUS AND ONLY MAINPAGE (see comments in file xo_homepage.html -->
+		<{if $theme_view_homepage}><{includeq file="$xoops_module_theme/xo_homepage.html"}><{/if}>	
+		
+      <!-- CONTENT AREA -->
+		<!-- Do not change the part below is supposed to be the standard architecture that everyone should use -->
 		<!-- INCLUDE HOMEPAGE FOR ANONYMOUS AND ONLY MAINPAGE (see comments in file xo_homepage.html -->
 		<{if $theme_view_homepage}><{includeq file="$theme_name/xo_homepage.html"}><{/if}>	
 		<br />
@@ -39,13 +49,11 @@
 		<!-- INCLUDE BOTTOM PAGE" -->
 		<{includeq file="$theme_name/xo_bottompage.html"}>
 		<!-- more content here for example -->
-
+		<!-- INCLUDE FOOTER -->
+		<{includeq file="$theme_name/xo_footer.html"}>
 	</div>
-	<!-- Start footer -->
-	<{includeq file="$theme_name/xo_footer.html"}>
-	<!-- end xo-canvas -->
-	<!--{xo-logger-output}-->
-</div> <!-- end xo-wrapper -->
+		<!--{xo-logger-output}-->
+</div>
 	<!-- INCLUDE BARADMIN - xo_footerstatic.html -->
 	<{if $xoops_isadmin && $theme_view_baradmin}><{includeq file="$theme_name/xo_footerstatic.html"}><{/if}>
 </body>

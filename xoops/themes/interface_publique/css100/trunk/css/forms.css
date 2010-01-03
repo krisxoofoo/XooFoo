@@ -107,3 +107,19 @@ input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, inpu
     outline:                	1px solid #139EE8;
 }
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
+
+.xoops-form-element-caption .caption-marker {
+    display:            none;
+}
+
+.xoops-form-element-caption-required .caption-marker {
+	background-color:   inherit;
+	padding-left: 	    2px;
+	color: 			    #ff0000;
+}
+
+.xoops-form-element-help {
+	font-size:		    .9em;
+    padding-top:        5px;
+    font-weight:        normal;
+}

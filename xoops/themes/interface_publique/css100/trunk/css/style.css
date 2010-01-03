@@ -33,7 +33,6 @@
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 /* insert specific font */
 @font-face { font-family: BakerSignet BT; font-style:  normal; font-weight: normal; src: url(../fonts/BAKERSI3.eot);}
-
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 
@@ -62,8 +61,9 @@ body {font-size:75%;}
 }
 /*================= Content zone ===================*/
 #xo-canvas-content {
+	margin:						.5em;
 	background-color: 			#eee;
-	padding:					12px;
+	padding:					.75em;
 	color: 						#333;
 }
 #xo-page {
@@ -116,22 +116,6 @@ body {font-size:75%;}
 }
 #xo-banner-ad object, #xo-banner-ad img {display: block;}
 
-
-/* Start Center Column */
-/*#xo-page th {
-	background-color: 		#639ACE;
-	color: 						#fff;
-	vertical-align: 			middle;
-}*/
-
-
-/* Start Footer */
-/*#xo-footer {
-	clear:						both;
-	background-image:			url(../img/hbar.gif);
-	text-align:					center;
-	font-size:					.8em;
-}*/
 /*=============== Style for the Footer  ====================*/
 #xo-footer {
 	width:						100%;
@@ -144,16 +128,13 @@ body {font-size:75%;}
 	color:             			#fffff0;
 	border-top: 				#32529C 3px solid;
 }
-
 #xo-footer a {background-color:transparent; color:#E9CB38;}
 #xo-footer a:hover {
 	background-color:			transparent;
 	color: 						#F4E28E;
 	text-decoration: 			underline;
 }
-
 #xo-blockfooter { /* see also in blockfooter.css */ }
-
 #xo-footerbottom {
 	clear:						both;
 	display: 					block;
@@ -163,7 +144,6 @@ body {font-size:75%;}
 	font-size: 					.9em;
 	text-shadow: 				1px 1px 2px #aaa;
 }
-
 #xo-validw3c {
 	display: 					block;
 	float: 						left;

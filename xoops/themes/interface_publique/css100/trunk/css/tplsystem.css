@@ -13,7 +13,7 @@
 */
 
 /*============== Styles for system_siteclosed.html =================*/
-/*#xo-siteclose {
+#xo-siteclose {
 	display:					block;
 	width: 						450px;
 	margin:						130px auto 250px;
@@ -22,9 +22,9 @@
 	font-size: 					1.6em;
 	text-align: 				center;
 	text-shadow: 				1px 1px 2px #aaa;
-}*/
+}
 /*============== Styles for xo_userbar_siteclosed.html =================*/
-/*#xo-userbar_siteclosed {
+#xo-userbar_siteclosed {
 	display: 					block;
 	float: 						right;
 	margin-top: 				5px;
@@ -57,7 +57,7 @@
 	color: 						#fff;
 	outline: 					1px solid #E9CB38;
 }
-body.site_closed form { padding: 1em 35%;}*/
+body.site_closed form { padding: 1em 35%;}
 /*============== Styles for system_redirect.html =================*/
 #xo-redirect {
 	display:					block;
@@ -96,7 +96,7 @@ body.site_closed form { padding: 1em 35%;}*/
 
 /* ============ Style for debug mode ============ */
 #xo-logger-output {
-	margin-bottom : 			45px;
+	margin-bottom : 			35px;
 	font-size: 					.8em;
 }
 

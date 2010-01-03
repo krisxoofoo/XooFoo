@@ -1,6 +1,6 @@
 /*
- * Mor.pho.GEN.e.sis 3.1
- * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ * Css100
+ * Thanks to Snow77, Dugris and Burning for help and test
  *
  * @copyright       Kris <http://labs.xoofoo.org/>
  * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
@@ -40,7 +40,7 @@ body>#xo-footerstatic {  position: fixed;}
 }
 #xo-footerstatic .separator { margin-left: 3px; border-left: 1px solid #b5b5b5;}
 #xo-footerstatic #controls ul, li { margin: 0;  padding: 0;}
-#xo-footerstatic #controls ul { list-style: none;}
+#xo-footerstatic #controls ul { list-style: none; font-weight:bold;}
 #xo-footerstatic #controls li {
 	display: 			inline-block;
 	height: 			29px;

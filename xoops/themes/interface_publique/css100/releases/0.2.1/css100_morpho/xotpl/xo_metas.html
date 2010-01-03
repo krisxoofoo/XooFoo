@@ -1,0 +1,30 @@
+<!-- Title and meta -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+	<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="XOOPS" />
+	
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="<{$smarty.const.THEME_RSS}>" href="<{xoAppUrl backend.php}>" />
+
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+	
+<!-- scripts xoops.js and instructions header.php files-->
+		<{$xoops_module_header}>
+		
+<!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+<!-- if print.css, add this and comment before (2 lines)-->
+<!--	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="screen" title="Screen Style sheet" href="<{xoImgUrl css/style.css}>" />
+	<link rel="stylesheet" type="text/css" media="screen" title="Print Style sheet" href="<{xoImgUrl css/print.css}>" /> -->
+<!-- if aural.css, add -->
+<!--	<link rel="stylesheet" type="text/css" media="screen" title="Aural Style sheet" href="<{xoImgUrl css/aural.css}>" /> -->

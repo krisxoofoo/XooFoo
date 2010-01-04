@@ -1,0 +1,47 @@
+	<!-- Theme others parameters -->
+	<{includeq file="$theme_name/xo_thm_parameters.html"}>
+<!-- Metas, Titles, and Style Sheets -->
+	<{includeq file="$theme_name/xo_metas.html"}>
+<!-- Additionals Scripts -->
+	<{includeq file="$theme_name/xo_scripts.html"}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+	<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>
+	<{elseif $xoBlocks.canvas_left}><{assign var=columns_layout value='leftcolumn-layout'}>
+	<{elseif $xoBlocks.canvas_right}><{assign var=columns_layout value='rightcolumn-layout'}>
+	<{/if}>
+	<div id="xo-wrapper">
+		<div id="xo-bgstatic"></div>
+		<div id="xo-canvas">
+			<!-- Start header -->
+			<div id="xo-header">
+				<div id="xo-banner" class="<{$xoops_dirname}>">
+					<div id="xo-headerlogo"><a href="<{xoAppUrl /}>" title=""><img src="<{xoImgUrl img/logo.png}>" alt="<{$xoops_sitename}>" /></a></div>
+					<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+						<div id="xo-headerbanner"><{$xoops_banner|smarty:nodefaults}></div>
+					<{/if}>
+				</div>
+				<div id="xo-globalnav">&nbsp;</div>
+			</div>
+			<!-- End header -->
+			<div id="xo-canvas-content" class="<{$xoops_dirname}>">
+				<!--<{if $xoBlocks.canvas_top}>
+					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
+						zoneClass='' zoneId='xo-canvas-header'}>
+				<{/if}>-->
+				<{includeq file="$theme_name/xo_page.html"}>
+				<!--<{if $xoBlocks.canvas_bottom}>
+					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_bottom
+					zoneClass='' zoneId='xo-canvas-footer'}>
+				<{/if}>-->
+			</div>
+			<!-- Start footer -->
+			<div id="xo-footer"><{$xoops_footer}></div>
+			<!-- end Footer -->	  
+		</div><!-- End xo-canvas -->
+		<!--{xo-logger-output}-->	
+	</div><!-- End xo-wrapper -->
+	<!-- INCLUDE BARADMIN - xo_footerstatic.html -->
+	<{if $xoops_isadmin && $theme_view_baradmin}><{includeq file="$theme_name/xo_footerstatic.html"}><{/if}>
+</body>
+</html>

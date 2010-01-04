@@ -8,6 +8,7 @@
 		<{/if}>
 		
 		<div id="xo-page">
+		<{if $theme_view_breadcrumb}><{includeq file="$theme_name/xo_breadcrumb.html"}><{/if}>
 		<!-- Start Center Column -->
 			<!-- Display center top blocks if any -->
 			<{if $theme_view_topblock && ($xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright)}>

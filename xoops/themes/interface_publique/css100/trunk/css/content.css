@@ -130,7 +130,7 @@ table {
 	border-spacing: 		0;
 }
 table td, table th, table thead { padding: 4px; border: 0;}
-th, thead, caption {
+th, th.head thead, caption {
 	background-color: 		#4478b0;
 	color: 					#f6f6f6;
 	vertical-align: 		middle;
@@ -156,8 +156,7 @@ th a, thead a {
 #xo-canvas-content .outer {	border: #ccc 1px solid;}
 .xo-canvas-column .outer, .xo-canvas-column td.outer { /* general central zone */}
 #xo-canvas-content th.head {
-	background-color: 		inherit;
-	color:					#f6f6f6;
+	background-color: 		#4478b0;
 	padding: 				5px;
 	color: 					#f6f6f6;
 	font-weight: 			bold;

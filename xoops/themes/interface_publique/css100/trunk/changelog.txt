@@ -1,6 +1,12 @@
 Css100 Theme Framework - Changelog
 
 ============================
+Version 1.0 beta 2 ( for xoops 2.4.x )
+============================
+- add xo_breadcrumb (kris)
+- modified css styles for th.head (kris)
+
+============================
 Version 1.0 beta 1 ( for xoops 2.4.x )
 ============================
 - modified css styles for quote and code (kris)

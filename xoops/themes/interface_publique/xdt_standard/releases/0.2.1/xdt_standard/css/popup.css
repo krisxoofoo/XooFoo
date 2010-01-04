@@ -1,0 +1,14 @@
+/* Style sheet for the popups */
+
+/* SYSTEM MODULE */
+/* imagemanager.html */
+table#imagenav td {vertical-align: bottom; padding: 5px;}
+table#imagemain td {border-right: 1px solid silver; border-bottom: 1px solid silver; padding: 5px; vertical-align: middle;}
+table#imagemain th {border: 0; background-color: #2F5376; color:white; font-size: 12px; padding: 5px; vertical-align: top; text-align:center; font-family: Verdana, Arial, Helvetica, sans-serif;}
+
+/* imagemanager2.html */
+td.body {padding: 5px; vertical-align: middle;}
+td.caption {border: 0; background-color: #2F5376; color:white; font-size: 12px; padding: 5px; vertical-align: top; text-align:left; font-family: Verdana, Arial, Helvetica, sans-serif;}
+table#imageform {border: 1px solid silver;}
+
+/* MODULE NAME */

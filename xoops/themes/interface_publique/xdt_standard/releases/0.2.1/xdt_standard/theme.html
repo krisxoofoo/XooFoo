@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<!-- Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+<!-- Directory html blocks files or additional html files by include -->
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+<!-- Directory html plugins files -->	
+	<{assign var=theme_plugin value=$xoTheme->folderName|cat:'/xoplugins'}>
+<!-- Metas, Titles, and Style Sheets -->
+	<{includeq file="$theme_name/xo_metas.html"}>
+<!-- Additionals Scripts -->
+	<{includeq file="$theme_name/xo_scripts.html"}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+	<div id="xo-wrapper">
+		<div id="xo-bgstatic"></div>
+		<div id="xo-canvas">
+		
+		  <!-- Start header -->
+		  <table>
+		    <tr id="xo-header">
+		      <td id="xo-headerlogo"><a href="<{xoAppUrl /}>" title=""><img src="<{xoImgUrl img/logo.png}>" alt="<{$xoops_sitename}>" /></a></td>
+			  <{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+		      <td id="xo-headerbanner"><{$xoops_banner|smarty:nodefaults}></td>
+			  <{/if}>
+		    </tr>
+		    <tr>
+		      <td id="xo-globalnav" colspan="2">&nbsp;</td>
+		    </tr>
+		  </table>
+		  <!-- End header -->
+	<div id="xo-canvas-content" class="<{$xoops_dirname}>">
+	
+		  <table id="xo-canvas-columns">
+		    <tr > 
+				<!-- Start left blocks loop -->
+				<{if $xoops_showlblock}>
+				<td id="xo-canvas-leftcolumn">
+					<{foreach item=block from=$xoBlocks.canvas_left}>
+					<{includeq file="$theme_name/theme_blockleft.html"}>
+					<{/foreach}>         
+				 </td>
+				 <{/if}>
+				<!-- End left blocks loop -->
+
+			    <td id="xo-page">
+				
+					<!-- Start center top blocks loop -->
+					<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+					<table  id="xo-topblocks">
+						<tr>
+							<td id="xo-topcenterblocks" colspan="2">
+								<{foreach item=block from=$xoBlocks.page_topcenter}>
+								<{includeq file="$theme_name/theme_blockcenter_c.html"}>
+								<{/foreach}>
+							</td>
+						</tr>
+						<tr>
+							<td id="xo-topleftblocks">
+								<{foreach item=block from=$xoBlocks.page_topleft}>
+								<{includeq file="$theme_name/theme_blockcenter_l.html"}>
+								<{/foreach}>
+							</td>
+								
+							<td id="xo-toprightblocks">
+								<{foreach item=block from=$xoBlocks.page_topright}>
+								<{includeq file="$theme_name/theme_blockcenter_r.html"}>
+								<{/foreach}>
+							</td>
+						</tr>
+					</table>
+					<{/if}>
+					<!-- End center top blocks loop -->
+					
+					<{if $xoops_contents && ($xoops_contents != ' ') }>
+					<!-- Start content module page -->
+			        <div id="xo-content"><{$xoops_contents}></div>
+					<!-- End content module -->
+					<{/if}>
+				
+				    <!-- Start center bottom blocks loop -->
+			        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+					<table id="xo-bottomblocks">
+					<{if $xoBlocks.page_bottomcenter}>
+						<tr>
+							<td id="xo-bottomcenterblocks" colspan="2">
+								<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+								<{include file="$theme_name/theme_blockcenter_c.html"}><{/foreach}>
+							</td>
+						</tr>
+					<{/if}>
+					<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+						<tr>
+							<td id="xo-bottomleftblocks">
+								<{foreach from=$xoBlocks.page_bottomleft item=block}>
+								<{include file="$theme_name/theme_blockcenter_l.html"}>
+								<{/foreach}>
+							</td>
+								
+							<td id="xo-bottomrightblocks">
+								<{foreach from=$xoBlocks.page_bottomright item=block}>
+								<{include file="$theme_name/theme_blockcenter_r.html"}>
+								<{/foreach}>
+							</td>
+						</tr>
+					<{/if}>
+					</table>
+					<{/if}>
+					<!-- End center bottom blocks loop -->
+			      </td>
+
+		        <!-- Start right blocks loop -->
+				<{if $xoops_showrblock}>
+				<td id="xo-canvas-rightcolumn">
+		        <{foreach item=block from=$xoBlocks.canvas_right}>
+		          <{includeq file="$theme_name/theme_blockright.html"}>
+		        <{/foreach}>
+				</td>
+				<{/if}>
+		        <!-- End right blocks loop -->	
+		    </tr>
+		  </table>
+	</div>
+		  <!-- Start footer -->
+		  <table id="xo-footer">
+				<tr >
+					<td><{$xoops_footer}></td>
+				</tr>
+		  </table>
+		  <!-- end Footer -->
+		  
+		</div>
+		<!-- End xo-canvas -->
+		
+	<!--{xo-logger-output}-->	
+	</div>
+	<!-- End xo-wrapper -->
+</body>
+</html>

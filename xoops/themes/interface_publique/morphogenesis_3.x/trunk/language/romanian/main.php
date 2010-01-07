@@ -1,6 +1,6 @@
 <?php
 // generality
-define("THEME_NAME",					"Mor感ho廉EN搪新is 3.1");
+define("THEME_NAME",					"Mor感ho廉EN搪新is 3.1.1");
 define("THEME_DESC",					"nasterea evolutiei");
 define("THEME_DESIGNER",				"Design de : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Comunitatea Francofona XOOPS'>Comunitatea Francofona XOOPS</a>");
 define("THEME_UPTOP",					"Inapoi Sus");

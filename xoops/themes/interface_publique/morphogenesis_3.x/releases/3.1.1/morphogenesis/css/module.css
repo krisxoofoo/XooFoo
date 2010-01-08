@@ -1,0 +1,113 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/* ========== styles used in the articleù of contents (exemple : news) ============*/
+.item { margin-bottom: 			1.5em;}
+.itemHead {
+	background-color: 			transparent;
+	padding: 					3px;
+	color: 						#32529C;
+}
+.itemInfo, .itemPoster, .itemPostDate, .itemStats, .itemFoot {
+	background-color: 			transparent;
+	padding: 					3px;
+	color: 						#E98838;
+	font-size: 					.9em;
+	font-style: 				italic;
+	text-align: 				right;
+}
+.itemTitle { font-size: 1.4em; text-shadow:	2px 2px 3px #aaa;}
+.itemTitle a { font-weight: bold; text-decoration: none;}
+.itemAdminLink, .itemAdminLink a { background-color: transparent; color: #ff0000;}
+.itemInfo a:hover, .itemTitle a:hover, .itemPoster a:hover, .itemAdminLink a:hover { text-decoration: underline;}
+.itemBody {}
+.itemText {	margin : 1px; text-align: justify;}
+.itemText a , .itemInfo a, .itemFoot a {text-decoration: none;}
+.itemText a:hover .itemInfo a:hover, .itemFoot a:hover { text-decoration: underline;}
+.itemBody a{}
+.itemBody a:hover { text-decoration: underline;}
+.itemText:first-letter {}
+.itemFoot {}
+.itemPermaLink {}
+
+/*=========== Styles used in the comments (and CBB/NewBB also) ===========*/
+.comTitle {
+	margin-bottom: 				2px;
+	font-weight: 				bold;
+}
+.comText {
+	background-color: 			transparent;
+	padding: 					2px;
+	color:						inherit;
+}
+.comUserStat {
+	margin: 					5px;
+	background-color: 			transparent;
+	padding: 					2px;
+	color: 						inherit;
+	font-weight:				bold;
+	font-size: 					.9em;
+	border: 					1px solid #ddd;
+}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {
+	margin-left: 				2px;
+	margin-top: 				10px;
+	font-weight:				bold;
+	font-size: 					.9em;
+	text-align:					center;
+}
+.comUserRank {margin: 			2px;}
+.comUserRankText {
+	margin-left: 				5px;
+	font-size: 					.9em;
+	font-weight:				bold;
+}
+.comUserRankImg {border: 		0;}
+.comUserName {}
+.comUserImg {
+	margin:						5px 0 10px 5px;
+	padding:					3px;
+	border: 					1px solid #ddd !important;
+	box-shadow: 				2px 3px 4px rgba(0,0,0,0.5);
+		-moz-box-shadow: 		2px 3px 4px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 	2px 3px 4px rgba(0,0,0,0.5);
+}
+.comUserImg:hover {opacity:.5; filter: alpha(opacity=50);}
+.comDate {
+	font-weight: 				normal;
+	font-style: 				italic;
+	font-size: 					.8em;
+}
+.comDateCaption {
+	font-weight: 				bold;
+	font-style: 				normal;
+}
+/* dropdown in CBB/NewBB */
+div.dropdown .menu, div.dropdown .userbar {
+	background-color: 			#f6f6f6;
+	color: 						#333;
+	font-size: 					.9em;
+	border: 					2px inset #f1f3f8 !important;
+}
+/* -- signature in CBB/NewBB -- */
+.signature { font-style: italic; font-size: .9em;}
+
+/*======== body for tinyeditor/inbetwen module ======== */
+body.mceContentBody {
+	background-color: 			#fff;
+	background-image: 			none;
+	color: 						#333;
+}
+

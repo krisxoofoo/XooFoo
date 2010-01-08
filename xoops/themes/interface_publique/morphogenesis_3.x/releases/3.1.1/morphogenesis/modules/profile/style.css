@@ -1,0 +1,20 @@
+/*
+ * Mor.pho.GEN.e.sis 3.0
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/*============== Styles for profile_userform.html =================*/
+#xo-profil-userform label[name=xolb_agree_disc] {display:block; max-width: 400px !important;} /* specifix fix for profile module */
+#xo-profile-userform  input[type=submit]{margin-left: 200px;}
+#xo-profile-userform p {margin-bottom: 1em; margin-left:180px;}
+
+#xo-homepage {	height:	220px;}

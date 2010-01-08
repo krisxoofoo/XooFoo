@@ -1,0 +1,111 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/*======== others float class ======== */
+.floatleft {	float: left; margin: .75em; padding-left: 4px; border:	0;}
+.floatright { float: right; margin: .75em; padding: 2px; border: 0;}
+/*========  others alignment class ======== */
+.left { text-align: 				left; }
+.right { text-align: 			right; }
+.center { text-align: 			center;	}
+.justify { text-align: 			justify; }
+.middle { vertical-align: 		middle;}
+.top { vertical-align: 			top;}
+.bottom { vertical-align: 		bottom;}
+/*========  others width class ======== */
+.widthauto { width:				auto;}
+.width100 { width: 				100%;}
+.width95 { width: 				95%}
+.width75 { width: 				75%;}
+.width70 { width:				70%}
+.width50 { width: 				50%;}
+.width33 { width: 				33%;}
+.width25 { width: 				25%;}
+.width20 { width: 				20%;}
+.width10 { width: 				10%;}
+/*========  others table div class ======== */
+.table {display:table;}
+.tcaption1 { display:block; width:100%; for 1 columns */}
+.tcaption2 { display:block; width:200%; for 2 columns */}
+.tcaption3 { display:block; width:300%; for 3 columns */}
+.tcaption4 { display:block; width:400%; for 4 columns */}
+.tcaption5 { display:block; width:500%; for 5 columns */}
+.tcaption6 { display:block; width:600%; for 6 columns */}
+.tbody { display:table-row-group;}
+.trow { display:table-row;}
+.tcell { display:table-cell;}
+.tfootend { width:auto;}
+/*========  multiple columns content ======== */
+.twocolumn {
+	column-count:2; column-gap:1.5em;
+		-moz-column-count: 2; -moz-column-gap: 1.5em;
+		-webkit-column-count: 2; -webkit-column-gap: 1.5em;
+}
+.threecolumn {
+	column-count:3; column-gap:1.2em;
+		-moz-column-count: 3; -moz-column-gap: 1.2em;
+		-webkit-column-count: 3; -webkit-column-gap: 1.2em;
+}
+.forcolumn {
+	column-count:4; column-gap:1.2em;
+		-moz-column-count: 4; -moz-column-gap: 1.2em;
+		-webkit-column-count: 4; -webkit-column-gap: 1.2em;
+}
+.column25 {
+	column-width:24%; column-gap:1.2em;
+		-moz-column-count: 24%; -moz-column-gap: 1.2em;
+		-webkit-column-count: 24%; -webkit-column-gap: 1.2em;
+}
+.column33 {
+	column-width:33%; column-gap:1.2em;
+		-moz-column-count: 33%; -moz-column-gap: 1.2em;
+		-webkit-column-count: 33%; -webkit-column-gap: 1.2em;
+}
+.column50 {
+	column-width:49%; column-gap:1.5em;
+		-moz-column-count: 49%; -moz-column-gap: 1.5em;
+		-webkit-column-count: 49%; -webkit-column-gap: 1.5em;
+}
+/* ========= others font class ========== */
+.smallsmall { font-size: 		.8em;}
+.small {	font-size: 				.92em;}
+.normal { font-size: 			1em;}
+.big { font-size: 				1.17em;}
+.maxi { font-size: 				1.5em;}
+.bold { font-weight:				bold;}
+.italic {font-style: 			italic;}
+/*========  others display class ======== */
+.clear { clear: 					both;}
+.block { display: 				block;}
+.blockinline { display: 		inline-block;}
+.hide  { display: 				none;}
+.shadow { text-shadow: 			2px 2px 3px #aaa;}
+.boxshadow {
+	box-shadow: 				1px 2px 3px rgba(0,0,0,0.5);
+		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
+}
+/* ======== others hypertext links ================ */
+a.printable, a.pdf, a.friend {
+	width:						16px;
+	height:						16px;
+	background-repeat:			no-repeat;
+	background-position:		left top;
+	text-indent:				-1000em;
+}
+a.printable { background-image: url(../icons/action/printer.png); }
+a.pdf { background-image: url(../icons/action/page_white_acrobat.png); }
+a.friend { background-image: url(../icons/action/email_go.png); }
+
+

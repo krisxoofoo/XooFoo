@@ -1,0 +1,144 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/*=============   Style for xo_topheader.html ------------- */
+#xo-topheader {
+	height: 					35px;
+	background-color: 			transparent;
+	color: 						#32529C;
+}
+/*  ------------  Style for xo_language.html ------------- */
+#xo-language {
+	display: 					block;
+	float:						left;
+	margin-top : 				10px;
+	padding-left: 				1em;
+}
+#xo-language img:hover{opacity:.5; filter: alpha(opacity=50);}
+/*  ------------ Style for searchbar.html ------------- */
+#xo-searchbar {
+	display: 					block;
+	float: 						left;
+	margin-top: 				5px;
+	margin-left : 				1em;
+}
+#xo-searchbar button  {
+	margin-left: 				5px;
+	background-color:			transparent;
+	border:0 					!important;
+}
+#xo-searchbar button:hover,#xo-searchbar button:focus {opacity:.5; filter: alpha(opacity=50);}
+#xo-searchbar input[type=text]{
+	background-color: 			transparent;
+	padding-left: 				5px;
+	color:						#fff;
+	border: 					1px solid #32529C;
+	border-radius:				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+}
+#xo-searchbar input[type=text]:hover { background: #8198CE; color: #fff;}
+#xo-searchbar input[type=text]:focus  { outline: 2px solid #139EE8;}
+/*  ------------ Style for xo_userbar.html ------------- */
+#xo-userbar {
+	display: 					block;
+	float: 						right;
+	margin-top: 				5px;
+	background-color: 			transparent;
+	color: 						#E9CB38;
+	text-shadow: 				2px 2px 3px #aaa;
+}
+#xo-userbar form { display: inline;}
+#xo-userbar button {
+	background-image: 			none;
+	background-color: 			transparent;
+	color: 						inherit;
+	border: 					none;
+}
+#xo-userbar button:hover, #xo-userbar img:hover { border: 0 !important; opacity:.5; filter: alpha(opacity=50);}
+#xo-userbar input {
+	width: 						80px;
+	background-color: 			transparent;
+	padding-left: 				5px;
+	color: 						#fff;
+	border: 					1px solid #32529C;
+	border-radius:				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+}
+#xo-userbar input:hover { background-color: #8198CE; color: #fff;}
+#xo-userbar input:focus { outline: 2px solid #139EE8;}
+#xo-userbar a {padding-right: 10px !important;}
+#xo-userbar a.register {background: inherit; color: #E9CB38;}
+#xo-userbar a.register:hover {
+	background-color: 			transparent;
+	color: 						#F4E28E;
+	text-decoration: 			underline;
+}
+#xo-userbar a:hover {}
+a#xo-uname {
+	background-color: 			transparent;
+	color: 						#F4A869;
+	font-size: 					1.1em;
+	font-weight: 				bold;
+}
+/*  ------------ Style for xo_accessibilitybar.html ------------- */
+#xo-accessibilitybar {
+	display:					block;
+	float: 						right;
+	margin-top: 				5px;
+	padding-right: 				1em;
+}
+#xo-accessibilitybar a {	text-decoration: none;	border: none;}
+#xo-accessibilitybar img:hover {opacity: .5; filter: alpha(opacity=50);}
+
+/*============= Style for breadcrumb.html ================*/
+#xo-breadcrumb {
+	margin-left:				1em;
+	padding: 					0 0 15px 10px;
+	font-size: 					1em;
+	text-shadow: 				1px 1px 2px #aaa;
+}
+#xo-breadcrumb a:hover {
+	background-color:			transparent;
+	color: 						#8198CE;
+	text-decoration: 			underline;
+}
+
+/* ============= Style for xo_bottompage.html ============= */
+#xo-bottompage {	width:100%; min-height: 40px; margin: 0; font-size: .9em;}
+/*  ------------ xo_socialbookmark.html ------------- */
+#xo-socialbookmark { /* see style sheet socialbookmark.css */}
+/* ------------ xo_uptop.html ------------- */
+#xo-uptop {
+	display: 					block;
+	float: 						right;
+	width: 						8%;
+	margin:						.5em;
+	text-align:					right;
+}
+#xo-uptop a {}
+#xo-uptop a:hover {}
+
+/* ======== for accessibility ================ */
+/*a[hreflang]:after {
+	content: "\0000a0[alt+" attr(hreflang) "]";
+}
+a[accesskey]:after {
+	content: "\0000a0[alt+" attr(accesskey) "]";
+}*/
+
+
+
+

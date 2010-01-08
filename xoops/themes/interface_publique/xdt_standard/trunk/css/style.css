@@ -197,6 +197,7 @@ button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type
 	background-color: 			#639ace;
 	color:						#fff;
 }
+input[type=checkbox], input[type=radio] {	margin: 3px; padding:2px;}
 select {
 	background-color:			#f6f6f6;
 	color: 						#000;

@@ -1,0 +1,11 @@
+Xdt Standard Theme Framework - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- complete rewrite of the code and style (kris)
+
+============================
+Version 0.2.1
+============================
+- Neolithic (mdr / lol / kris)

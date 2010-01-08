@@ -2,14 +2,14 @@
 // g&eacute;n&eacute;ralit&eacute;s
 define("THEME_NAME",					"Css100 MorPho 1.0");
 define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communauté Francophone du Projet XOOPS'>Communauté Francophone XOOPS</a>");
+define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communaut&#233; Francophone du Projet XOOPS'>Communaut&#233; Francophone XOOPS</a>");
 define("THEME_UPTOP",					"Haut de Page");
-define("THEME_VALIDCSS",				"Ce gabarit de thème est valide W3C pour le CSS 1 et 2");
-define("THEME_VALIDXHTML",				"Ce gabarit de thème est valide W3C pour le XHTML 1.01");
-define("THEME_LICENSE",					"License de distribution de ce gabarit de thème");
+define("THEME_VALIDCSS",				"Ce gabarit de th&#232;me est valide W3C pour le CSS 1 et 2");
+define("THEME_VALIDXHTML",				"Ce gabarit de th&#232;me est valide W3C pour le XHTML 1.01");
+define("THEME_LICENSE",					"License de distribution de ce gabarit de th&#232;me");
 
 // xo_userbar.html
-define("THEME_REGISTER",				"Créer un compte ?");
+define("THEME_REGISTER",				"Cr&#233;er un compte ?");
 define("THEME_REMEMBER",				"Se rappeller de moi ?");
 define("THEME_PSEUDO",					"Pseudo");
 define("THEME_DESC_PSEUDO",				"Saisissez votre Pseudo");
@@ -24,22 +24,22 @@ define("THEME_MESSAGE",					"Voir ses messages");
 define("THEME_YOUHAVE",					"Vous avez");
 define("THEME_NOTREAD",					"message(s) non lu(s)");
 define("THEME_MYACCOUNT",				"Mon compte");
-define("THEME_PRIVATE",					"Accès Privé");
+define("THEME_PRIVATE",					"Acc&#232;s Priv&#233;");
 
 // xo_searchbar.html
 define("THEME_SEARCH",					"Recherche");
 define("THEME_DESC_SEARCH",				"Recherche sur le site");
-define("THEME_KEYWORDS",				"Saisissez les mots-clés");
+define("THEME_KEYWORDS",				"Saisissez les mots-cl&#233;s");
 
 // xo_language.html
 define("THEME_ENGLISH",					"English");
-define("THEME_FRENCH",					"Français");
-define("THEME_SPAIN",					"Espagnol");
+define("THEME_FRENCH",					"Fran&#231;ais");
+define("THEME_SPAIN",					"Espa&#241;ol");
 define("THEME_DEUTCH",					"Deutsch");
 define("THEME_ITALIA",					"Italiano");
-define("THEME_PORTUGUESE",				"Portuguais");
+define("THEME_PORTUGUESE",				"Portugu&#234;s");
 define("THEME_RUSSE",					"Russian");
-define("THEME_ROMANIAN",				"Romaneste");
+define("THEME_ROMANIAN",				"Rom&#226;neste");
 define("THEME_JAPAN",					"Japanese");
 define("THEME_CHINESE",					"Chinese");
 define("THEME_KOREAN",					"Korean");
@@ -60,16 +60,16 @@ define("THEME_RSS",						"Alimentations du fil RSS");
 
 define("THEME_NAVTITLE",				"Navigation");
 define("THEME_HOME",					"Accueil");
-define("THEME_HOME_DESC",				"Revenir à l'accueil");
+define("THEME_HOME_DESC",				"Revenir &#224; l&#39;accueil");
 
 define("THEME_MODULE1",					"Articles");
 define("THEME_MODULE1_DESC",			"Voir les news");
 
-define("THEME_MODULE1_SUB1",			"Catégorie 1"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE1_SUB2",			"Catégorie 2"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE1_SUB3",			"Catégorie 3"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE1_SUB4",			"Catégorie 4"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE1_SUB5",			"Catégorie 5"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE1_SUB1",			"Cat&#233;gorie 1"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE1_SUB2",			"Cat&#233;gorie 2"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE1_SUB3",			"Cat&#233;gorie 3"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE1_SUB4",			"Cat&#233;gorie 4"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE1_SUB5",			"Cat&#233;gorie 5"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
 
 define("THEME_MODULE2",					"Forum");
 define("THEME_MODULE2_DESC",			"Visiter les Forums du site");
@@ -83,20 +83,20 @@ define("THEME_MODULE3_SUB3",			"Galerie 3"); //*** les SUB correspondent aux sou
 define("THEME_MODULE3_SUB4",			"Galerie 4"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
 define("THEME_MODULE3_SUB5",			"Galerie 5"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
 
-define("THEME_MODULE4",					"Vidéos");
-define("THEME_MODULE4_DESC",			"Regarder les Vidéos publiées");
+define("THEME_MODULE4",					"Vid&#233;os");
+define("THEME_MODULE4_DESC",			"Regarder les Vid&#233;os publi&#233;es");
 
-define("THEME_MODULE4_SUB1",			"Vidéo 1"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE4_SUB2",			"Vidéo 2"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE4_SUB3",			"Vidéo 3"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE4_SUB4",			"Vidéo 4"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
-define("THEME_MODULE4_SUB5",			"Vidéo 5"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE4_SUB1",			"Vid&#233;o 1"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE4_SUB2",			"Vid&#233;o 2"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE4_SUB3",			"Vid&#233;o 3"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE4_SUB4",			"Vid&#233;o 4"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
+define("THEME_MODULE4_SUB5",			"Vid&#233;o 5"); //*** les SUB correspondent aux sous-menus dans le globalnav.html 'dynamic'
 
 define("THEME_MODULE5",					"Liens Web");
 define("THEME_MODULE5_DESC",			"Visiter nos Liens web favoris");
 
-define("THEME_MODULE6",					"Téléchargements");
-define("THEME_MODULE6_DESC",			"Télécharger nos fichiers");
+define("THEME_MODULE6",					"T&#233;l&#233;chargements");
+define("THEME_MODULE6_DESC",			"T&#233;l&#233;charger nos fichiers");
 
 define("THEME_MODULE7",					"XoopsInfo");
 define("THEME_MODULE7_DESC",			"Utiliser le module XoopsInfo");
@@ -105,30 +105,30 @@ define("THEME_MODULE8",					"Protector");
 define("THEME_MODULE8_DESC",			"Utiliser Protector");
 
 // noms des modules dans globalnav.html en mode anonyme
-define("THEME_MODULE1a",				"Crédits");
-define("THEME_MODULE1a_DESC",			"Crédits à la réalisation de ce site");
+define("THEME_MODULE1a",				"Cr&#233;dits");
+define("THEME_MODULE1a_DESC",			"Cr&#233;dits &#224; la r&#233;alisation de ce site");
 define("THEME_MODULE2a",				"Localisation");
 define("THEME_MODULE2a_DESC",			"Nous localiser sur une carte");
 
 // Menu Admin in globalnav.html 'dynamic'
 define("THEME_ADMIN",					"Administration");
-define("THEME_ADMIN_DESC",				"Se rendre dans l'Administration");
-define("THEME_ADMIN_PREFERENCES",		"Préférences du site");
-define("THEME_ADMIN_PREFERENCES_DESC",	"se rendre dans les Préférences du site");
-define("THEME_ADMIN_GENERAL",			"Paramàtres généraux");
-define("THEME_ADMIN_GENERAL_DESC",		"Se rendre dans les Paramàtres généraux");
+define("THEME_ADMIN_DESC",				"Se rendre dans l&#39;Administration");
+define("THEME_ADMIN_PREFERENCES",		"Pr&#233;f&#233;rences du site");
+define("THEME_ADMIN_PREFERENCES_DESC",	"se rendre dans les Pr&#233;f&#233;rences du site");
+define("THEME_ADMIN_GENERAL",			"Param&#224;tres g&#233;n&#233;raux");
+define("THEME_ADMIN_GENERAL_DESC",		"Se rendre dans les Param&#224;tres g&#233;n&#233;raux");
 define("THEME_ADMIN_MODULES",			"Modules");
 define("THEME_ADMIN_MODULES_DESC",		"Administration des Modules");
 define("THEME_ADMIN_IMAGES",			"Images");
-define("THEME_ADMIN_IMAGES_DESC",		"Gestionnaire d'Images");
+define("THEME_ADMIN_IMAGES_DESC",		"Gestionnaire d&#39;Images");
 
 // xo_accessibilitybar.html
-define("THEME_ACCESS_PLUS",				"Augmenter la taille de police de caractères");
-define("THEME_ACCESS_MINUS",			"Diminuer la taille de police de caractères");
-define("THEME_ACCESS_RESET",			"Taille initiale de la police de caractères");
+define("THEME_ACCESS_PLUS",				"Augmenter la taille de police de caract&#232;res");
+define("THEME_ACCESS_MINUS",			"Diminuer la taille de police de caract&#232;res");
+define("THEME_ACCESS_RESET",			"Taille initiale de la police de caract&#232;res");
 
 // xo_homepage.html
-define("THEME_SHOWHIDE_HOMEPAGE",		"Afficher/Cacher l'encart d'accueil");
+define("THEME_SHOWHIDE_HOMEPAGE",		"Afficher/Cacher l&#39;encart d&#39;accueil");
 
 // system_notification_select.html
 //define("THEME_NOTIFICATION_PLUS",		"Afficher");
@@ -142,9 +142,9 @@ define("THEME_SHOWHIDE_NOTIFICATION_DESC",	"Afficher ou cacher les options de No
 define("THEME_THISBLOCK_EDIT",			"Editer le bloc");
 define("THEME_VIEWALL",					"Tout afficher");
 
-// compléments xoops core (surcharge)
+// compl�ments xoops core (surcharge)
 define("THEME_WRITE_EMAIL", 			"Saisissez votre adresse de courriel");
-define("THEME_BROWSERCHECK",  			"Vérifier la compatibilité de votre navigateur et parefeu <a rel='external' href='http://tutos.xoofoo.org/browser_check/' title=''><strong>ici</strong></a>");
+define("THEME_BROWSERCHECK",  			"V&#233;rifier la compatibilit&#233; de votre navigateur et parefeu <a rel='external' href='http://tutos.xoofoo.org/browser_check/' title=''><strong>ici</strong></a>");
 
 /* ------------------- xo_socialbookmark.html ------------------- */
 define("THEME_BK_SCRIPSTYLE",          	"Soumettre ceci sur Script & Style");
@@ -168,24 +168,24 @@ define("_THEME_INBOX_NOTREAD",    		"message(s) non lu(s)");
 define("_THEME_NOTIFICATIONS",   		"Voir vos notifications");
 define("_THEME_PROFILE",         		"Voir votre profil");
 define("_THEME_ADMINISTRATION",  		"Administration");
-define("_THEME_LOGOUT",          		"Déconnexion");
+define("_THEME_LOGOUT",          		"D&#233;connexion");
 define("THEME_EDITPROFILE",				"Editer son profil");
 define("THEME_USER",					"Utilisateurs");
 define("THEME_CPHOME",					"Administration");
-define("THEME_BANS",					"Gérer les bannières publicitaires");
-define("THEME_BKAD",					"Gérer les blocs");
-define("THEME_ADGS",					"Gérer les groupes");
-define("THEME_PREF",					"Préférences");
-define("THEME_INSTALLEDMODULES",		"Gérer les modules installés");
+define("THEME_BANS",					"G&#233;rer les banni&#232;res publicitaires");
+define("THEME_BKAD",					"G&#233;rer les blocs");
+define("THEME_ADGS",					"G&#233;rer les groupes");
+define("THEME_PREF",					"Pr&#233;f&#233;rences");
+define("THEME_INSTALLEDMODULES",		"G&#233;rer les modules install&#233;s");
 define("THEME_IMAGES",					"Images");
 define("THEME_MDAD",					"Modules");
-define("THEME_SMLS",					"Gérer les émoticônes");
+define("THEME_SMLS",					"G&#233;rer les &#233;motic&#244;nes");
 define("THEME_RANK",					"Rang des utilisateurs");
 define("THEME_EUSER",					"Editer les utilisateurs");
 define("THEME_FINDUSER",				"Chercher un utilisateur");
 define("THEME_MLUS",					"Envoyer un courriel");
-define("THEME_AVATARS",					"Gérer les avatars");
-define("THEME_TPLS",					"Gérer les templates");
-define("THEME_COMMENTS",				"Gérer les commentaires");
+define("THEME_AVATARS",					"G&#233;rer les avatars");
+define("THEME_TPLS",					"G&#233;rer les templates");
+define("THEME_COMMENTS",				"G&#233;rer les commentaires");
 		
 ?>

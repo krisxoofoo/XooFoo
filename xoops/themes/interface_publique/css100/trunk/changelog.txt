@@ -1,6 +1,11 @@
 Css100 Theme Framework - Changelog
 
 ============================
+Version 1.0 final ( for xoops 2.4.x )
+============================
+- add french translation in iso, utf8 and numeric encodage
+
+============================
 Version 1.0 beta 2 ( for xoops 2.4.x )
 ============================
 - add xo_breadcrumb (kris)

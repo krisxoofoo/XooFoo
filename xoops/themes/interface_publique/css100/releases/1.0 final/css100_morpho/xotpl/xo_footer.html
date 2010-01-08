@@ -1,0 +1,31 @@
+<div id="xo-footer" class="<{$xoops_dirname}>">
+
+<{if $lang_siteclosemsg}>
+	<div></div>
+	<{else}>
+	<!-- include for additionnal blocks -->
+	<{if $theme_view_blockfooter}><{includeq file="$theme_name/xo_blockfooter.html"}><{/if}>
+<{/if}>
+
+	<div id="xo-footerbottom">
+		<!-- link for validation w3c -->
+		<{if $theme_view_w3cblockfooter}>
+			<div id="xo-validw3c">
+				<a rel="external" id="licence" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" title="<{$smarty.const.THEME_LICENSE}>" rel="license">&nbsp;</a>
+				<a rel="external" id="validxhtml" href="http://validator.w3.org/" title="<{$smarty.const.THEME_VALIDXHTML}>">&nbsp;</a>
+				<a rel="external" id="validcss" href="http://jigsaw.w3.org/css-validator/check/referer" title="<{$smarty.const.THEME_VALIDCSS}>">&nbsp;</a>
+			</div>
+		<{/if}>
+		
+		<!-- footer infos defined in the preferences of the site -->
+		<div id="xo-copyright"><{$xoops_footer}></div>
+		<!--  end  footer infos defined in the preferences of the site -->
+
+		<!-- link for rss -->
+		<div id="xo-rss">
+			<span class="design"><{$smarty.const.THEME_DESIGNER}></span>
+			<a id="feedrss" href="<{xoAppUrl backend.php}>" title="<{$smarty.const.THEME_RSS}>">&nbsp;</a>
+		</div>
+	</div>
+	
+</div>

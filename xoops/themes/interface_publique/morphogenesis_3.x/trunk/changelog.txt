@@ -5,6 +5,7 @@ Version 3.1.1 ( for xoops 2.4.x )
 ============================
 - Add news class in extras.css for display div in table - (kris)
 - encode xo_homepage.html to utf 8 sans bom (kris)
+- add french translation in iso, utf8 and numeric encodage
 
 ============================
 Version 3.1 ( for xoops 2.4.x )

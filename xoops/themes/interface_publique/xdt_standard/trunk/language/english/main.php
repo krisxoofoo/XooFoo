@@ -26,4 +26,10 @@ define("THEME_AVATARS",					"Manage avatars");
 define("THEME_TPLS",					"Manage templates");
 define("THEME_COMMENTS",				"Manage comments");
 
+define("THEME_NOTIFICATION",			"See notifications");
+define("THEME_MESSAGE",					"See private messages");
+define("THEME_YOUHAVE",					"You have");
+define("THEME_NOTREAD",					"message(s) no read");
+define("THEME_MYACCOUNT",				"My Account");
+
 ?>

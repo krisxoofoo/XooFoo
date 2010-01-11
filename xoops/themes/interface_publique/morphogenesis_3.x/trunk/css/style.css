@@ -17,6 +17,7 @@
 */
 
 /* include style sheets */
+@import url(reset.css); /* reset css for web browsers*/
 @import url(baradmin.css); /* administration access in footer */
 @import url(globalnav.css); /* horizontal menu in header */
 @import url(homepage.css); /* style for specific content in mainpage */
@@ -30,12 +31,8 @@
 @import url(extras.css); /* extras style for perzonalisation templates */
 @import url(iconize.css); /* style for icone in specific link */
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
-
 /* insert specific font */
 @font-face { font-family: BakerSignet BT; font-style:  normal; font-weight: normal; src: url(../fonts/BAKERSI3.eot);}
-
-/* reset css for web browsers*/
-* { margin: 0; padding: 0; border: 0; outline: none; text-decoration: none;font-family: sans-serif; font-size: 1em; font-weight: normal; font-style: normal; resize:none;}
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 

@@ -1,6 +1,11 @@
 Mor.Pho.GEN.e.sis Theme Framework - Changelog
 
 ============================
+Version 3.1.2 ( for xoops 2.4.x )
+============================
+- Add style sheet reset.css - (kris)
+
+============================
 Version 3.1.1 ( for xoops 2.4.x )
 ============================
 - Add news class in extras.css for display div in table - (kris)

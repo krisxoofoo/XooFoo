@@ -15,11 +15,11 @@
 /*============== Styles for system_siteclosed.html =================*/
 #xo-siteclose {
 	display:					block;
-	width: 						450px;
+	width: 						500px;
 	margin:						130px auto 250px;
 	padding: 					30px;
 	line-height:				2em;
-	font-size: 					1.6em;
+	font-size: 					1.5em;
 	text-align: 				center;
 	text-shadow: 				1px 1px 2px #aaa;
 }
@@ -67,7 +67,7 @@ body.site_closed form { padding: 1em 35%;}
 	background-color: 			#fff;
 	padding:					1em;
 	color: 						#333;
-	font-size:					1.4em;
+	font-size:					1.1em;
 	font-weight:				bold;
 	text-align:					center;
 	text-shadow: 				1px 1px 2px #aaa;

@@ -1,0 +1,15 @@
+ZetaDigme Admin Gui for Xoops 2.4.x - Changelog
+
+============================
+Version 1.1 - Final release ( for xoops 2.4.x )
+============================
+- Add xo_parameters.html - (kris)
+- Add changelog.txt (kris)
+- Add xo-info.php (kris)
+- Add admingui.ini (ktis)
+- Move extras files in xotpl (kris)
+
+============================
+Version 1.0 and 1.0.1 ( for xoops 2.4.x )
+============================
+- Initial work based on Exm and Oxygen Admin Gui (kris)

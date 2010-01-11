@@ -1,0 +1,21 @@
+<div id="xo-userbar">
+	<{$smarty.const.THEME_WELLCOME}>&nbsp;<a id="xo-uname" href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_PROFILE}>"><{$xoops_uname}></a>
+      <!--, we are the <{$smarty.now|date_format:"%d %B %Y"}> if you want to display the current date it decomment is needed the line -->&nbsp;:
+      <!-- for my message box  -->
+		<{xoInboxCount assign=pmcount}>
+		<a href="<{xoAppUrl viewpmsg.php}>">
+		<{if $pmcount}>
+			<!-- if I have messages -->
+			<img src="<{xoImgUrl img/home.png}>" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>
+		<{else}>
+			<!-- if I do not have a message -->
+			<img src="<{xoImgUrl img/home.png}>" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+		<{/if}>
+		</a>
+		<!-- end my message box-->
+		<a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img src="<{xoImgUrl img/home.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
+		<a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img src="<{xoImgUrl img/home.png}>" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a>
+		<a href="<{xoAppUrl /search.php}>" title="<{$smarty.const.THEME_DESC_SEARCH}>"><img src="<{xoImgUrl img/home.png}>" alt="<{$smarty.const.THEME_DESC_SEARCH}>" /></a>
+		<a href="<{xoAppUrl /}>" title="<{$smarty.const._YOURHOME}>"><img src="<{xoImgUrl img/home.png}>" alt="<{$smarty.const._YOURHOME}>" /></a>
+		<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img src="<{xoImgUrl img/logout.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
+</div>

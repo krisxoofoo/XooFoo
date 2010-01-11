@@ -1,19 +1,22 @@
 /* $Id$ */
 
 /****** english ******/ 
-To view the blocks in the cpanel: 
+Installation:
+Decompress the file and upload the whole of the files and files directly to folder 'modules/system/class/gui/' of your site
+
+NOTA 1: To view the blocks in the cpanel: 
 - Install the plugin smarty function.block.php (http://www.xuups.com/modules/publisher/item.php?itemid=10) in root/class/smarty/xoops_plugins/
-- Copy the file xo_block.html to "extras" in "xotpl" 
-- Remove the comments to activate the template xo_block.html 
 - Edit the template xo_block.html and put Id number of blocks you wish to display
+NOTA 2: You can disable or enable different files (include) by changing the values in the file xo_parameters.html
 
 /****** french ******/
-Pour afficher des blocs dans le cpanel :
-- installer le plugin smarty function.block.php (http://www.xuups.com/modules/publisher/item.php?itemid=10) dans root/class/smarty/xoops_plugins/
-- copier le fichier xo_block.html du dossier "extras" dans "xotpl"
-- retirer les commentaires pour activer le template xo_block.html
-- éditer le template xo_block.html et saissisez le numéro des blocs que vous désirez afficher
+Installation :
+Décompressez l'archive et téléverser l'ensemble des dossiers et fichiers directement dans le dossier 'modules/system/class/gui/' de votre site
 
+NOTA 1 : pour afficher des blocs dans le cpanel :
+- installer le plugin smarty function.block.php (http://www.xuups.com/modules/publisher/item.php?itemid=10) dans root/class/smarty/xoops_plugins/
+- éditer le template xo_block.html et saissisez le numéro des blocs que vous désirez afficher
+NOTA 2 : vous pouvez désactiver ou activer les différents fichiers (en include) du thème en modifiant les valeurs dans le fichier xo_parameters.html
 
 ATTENTION :
 Si vous rencontrez des problèmes (page blanche, problème de menu déroulant) avec cette interface d'administration, mettez en commentaires les lignes 243 à 245 du fichier zetadigme.php, comme ceci :

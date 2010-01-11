@@ -1,5 +1,5 @@
 <?php
-// $Id: localsupport.php 28 2009-12-06 01:09:24Z kris_fr $
+// $Id$
 
 $menu = array();
 
@@ -50,6 +50,6 @@ return $menu;
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8
  *
- * @version         $Id: localsupport.php 28 2009-12-06 01:09:24Z kris_fr $
+ * @version         $Id$
 **/
 ?>

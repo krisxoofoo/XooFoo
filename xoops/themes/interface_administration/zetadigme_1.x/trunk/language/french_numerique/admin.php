@@ -1,5 +1,5 @@
 <?php
-// $Id: admin.php 28 2009-12-06 01:09:24Z kris_fr $
+// $Id$
 
 define("_AD_SYSOPTIONS","Options du syst&#232;me");
 define("_AD_INSTALLEDMODULES","Modules install&#233;s");
@@ -58,6 +58,6 @@ define('_MD_MOVETOBLUE_LINK','http://www.frxoops.org/modules/TDMDownloads/');
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8
  *
- * @version         $Id: admin.php 28 2009-12-06 01:09:24Z kris_fr $
+ * @version         $Id$
 **/
 ?>

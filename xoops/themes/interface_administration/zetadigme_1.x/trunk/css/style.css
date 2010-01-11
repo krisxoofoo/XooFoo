@@ -1,7 +1,7 @@
 /* $Id$ */
 
 /* IMPORTANT, PLEASE RESPECT THIS SEMANTIC ORDER !!! : position box; width; heigth; margin; background-color; background-image; padding; content (color, style font, ...); border ... */
-  
+
 /*========== xo_footerstatic.html ==========*/
 #xo-footerstatic * { margin: 0; padding: 0;}
 #xo-footerstatic {
@@ -96,10 +96,10 @@ strong {font-weight:bold;}
 
 /*========== xo_bluemove.html ==========*/
 #xo-banner-ad {
-	display:block;
+	display:				block;
     position:               absolute;
     top:                    0;
-    right:                  210px;
+    right:                  250px;
     width:                  400px;
     height:                 70px;
     padding:                6px;
@@ -107,13 +107,26 @@ strong {font-weight:bold;}
 }
 
 /*========== xo_userbar.html ==========*/
-/*#xo-userbar { float: right; background-color: inherit; padding-top: 0; padding-right: 1em; color: #666;}
+#xo-userbar {
+	display: 					block;
+	position: 					absolute;
+	top: 						.5em;
+	right : 					1em;
+	background-color: 			transparent;
+	color: 						#666;
+	text-shadow: 				2px 2px 3px #aaa;
+}
 #xo-userbar a {	background-color: inherit;	color: #32529C;	text-decoration: none;}
 #xo-userbar a:hover { background-color: inherit;	color: 	#EAAD7B;}
-a#xo-uname { background-color: inherit; color: #ff0000; font-size: 1.1em; font-weight: bold;}*/
+a#xo-uname { background-color: inherit; color: #ff0000; font-size: 1.1em; font-weight: bold;}
 
 /*========== xo_searchbar.html ==========*/
-#xo-searchbar {	display: block;	float: right; margin-top: 2em; margin-right : 1em;}
+#xo-searchbar {
+	display: 				block;
+	position: 				absolute;
+	top: 					2.5em;
+	right : 				1em;
+}
 #xo-searchbar input[type=submit] {
 	margin-left: 5px;
 	background-color: transparent;
@@ -214,9 +227,10 @@ tr.odd td {background-color: #EFEFEF; padding: 5px; border-bottom: 1px solid #cc
 tr.foot td {background-color: #E1E7EF; padding: 5px; font-weight: bold;}
 th, thead { background: url(../img/table-caption3.png) repeat left;}
 th {background-color: #56BAFA; padding : 4px; vertical-align : middle; color: #fff;}
-
+td.head {width:30%} /* kris à voir */
 /*========== xo_systembar.html ==========*/
-#navbarCP{ margin:0; padding: 1px 0 0; min-height: 30px; background: #1479D6 url(../img/navbar-bg.png) repeat-x left bottom; font-weight: normal; font-size:1em;}
+#xo-globalnav {height:30px; margin:0; background: #1479D6 url(../img/navbar-bg.png) repeat-x left bottom; font-weight: normal; font-size:1em;}
+#navbarCP{ display:block; width:auto; padding: 1px 0 0; }
 /*#navbarCP ul{ list-style: none; padding: 0; margin: 0; margin-left: 1em;}
 #navbarCP ul li{ list-style: none;	padding: 0;	float: left; margin: 0;	margin-left: 3px; position: relative;}
 #navbarCP ul li a{	padding: 4px; display: block; color: #000; font-weight: normal;	border: 1px solid #F1F1FC;}
@@ -248,15 +262,8 @@ th {background-color: #56BAFA; padding : 4px; vertical-align : middle; color: #f
 #nav li:hover ul, #nav ul li:hover ul, #nav ul ul li:hover ul, #nav ul ul ul li:hover ul, #nav ul ul ul ul li:hover ul {display:block;}
 
 /*========== xo_toolsbar.html ==========*/
-/*#navOptionsCP{ padding: 0 5px 0 5px; background: #F1F1FC; border-top: 1px solid #fff; border-bottom: 1px solid #ccc; height: 35px;}
-#navOptionsCP a{ border: 1px solid #DFE0FD; height: 32px; display: block; width: 32px; float: right; margin: 0; margin-right: 2px;}
-#navOptionsCP a:hover{ background-color: #E7F4F7; border-color: #ADD8E6;}*/
-/*#navOptionsCP .modname{float: left; font-size: 1.4em; font-weight: bold; color: Silver; margin-top: 4px; margin-left: 1em;}*/
-/*#navOptionsCP .module{ float: left; font-weight: bold; color: Silver; margin-top: 4px;}*/
-/*.CPrssLinks{	padding: 4px;}
-.CPrssLinks a{background: url(../img/item.png) no-repeat left;padding: 2px;	display: block;	padding-left: 18px;}
-#xo-menusystem .CPbigTitle {	background: url(../img/modules.png) no-repeat left;}
-#xo-modules .CPbigTitle { background: url(../img/cp.png) no-repeat left;}*/
+#navOptionsCP{ margin-top:-5px; padding: 0 5px 0 5px; height: 30px;}
+#navOptionsCP a{ display: block; float: right; margin: 0; margin-right: 2px;}
 
 /*========== xo_menusystem.html and xo_modules.html ==========*/
 .CPbigTitle{
@@ -331,15 +338,15 @@ th {background-color: #56BAFA; padding : 4px; vertical-align : middle; color: #f
 #xo-accordion dl a.ie dt { display: block; background: url(../img/tab_bg.png) repeat left;	padding: 4px;	font-weight: bold; text-decoration: none; text-align:center;}
 #xo-accordion dl a.ie:hover dd,#xo-accordion dl a.ie:active dd,#xo-accordion dl a.ie:focus dd{	display: block; height: auto; color:#000 !important; text-shadow: 2px 2px 3px #aaa;}
 /*========== xo_block.html ==========*/
-/*#xo-blockcp { width: 100%; text-align:center;}
+#xo-blockcp { width: 100%; text-align:center;}
 #xo-block { display: block; float: left; width: 23% !important; min-height:110px; height: auto; margin: 1em;
 	border: 1px solid #ccc;	border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; -khtml-border-radius: 10px;}
-.xo-blocktitle { background: url(../img/tab_bg.png) repeat left;  padding: 5px; font-size:1.1em; font-weight:bolder; text-align:center; text-shadow: 2px 2px 3px #aaa; color:#fff;
+.xo-blocktitle { background: url(../img/table-caption3.png) repeat left;  padding: 5px; font-size:1.1em; font-weight:bolder; text-align:center; text-shadow: 2px 2px 3px #aaa; color:#fff;
 	border-radius-topleft:10px; border-radius-topright:10px;
 	-moz-border-radius-topleft :10px; -moz-border-radius-topright :10px;
 	-webkit-border-radius-topleft:10px; -webkit-border-radius-topright:10px;
 	-khtml-border-radius-topleft: 10px; -khtml-border-radius-topright: 10px; }
-.xo-blockcontent { margin : 0; padding :5px; line-height: 1.3em; }*/
+.xo-blockcontent { margin : 0; padding :5px; line-height: 1.3em; }
 
 /*========== xo_footer.html ==========*/
 #xo-footer {background-color: #F1F1FC;	padding: 4px;	text-align: center;	color: #666; font-size: 10px; font-weight: bold;	border-bottom: 1px solid #ccc;	border-top: 1px solid #fff;}

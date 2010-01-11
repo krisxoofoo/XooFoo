@@ -195,7 +195,7 @@ window.onload= function(){
             $mod_options = $adminmenu;
             foreach (array_keys($mod_options) as $item) {
                 $mod_options[$item]['link'] = empty($mod_options[$item]['absolute']) ? XOOPS_URL . '/modules/system/' . $mod_options[$item]['link'] : $mod_options[$item]['link'];
-                $mod_options[$item]['icon'] = empty($mod_options[$item]['icon']) ? '' : XOOPS_ADMINTHEME_URL . '/zetadigme/' . $mod_options[$item]['icon'];
+                $mod_options[$item]['icon'] = empty($mod_options[$item]['icon']) ? '' : XOOPS_ADMINTHEME_URL . '/zetadigme/' . $mod_options[$item]['icon_small'];
                 unset($mod_options[$item]['icon_small']);
             }
         } else {

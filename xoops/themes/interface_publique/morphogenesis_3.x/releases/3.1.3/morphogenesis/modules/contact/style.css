@@ -1,0 +1,17 @@
+/*
+ * Mor.pho.GEN.e.sis 3.0
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/*============== Override Style for contact module =================*/
+#xo-canvas-content {margin: 2em auto; width:800px;}
+#xo-uptop {width:50%;}

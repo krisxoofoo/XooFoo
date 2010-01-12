@@ -1,0 +1,33 @@
+Css100 Theme Framework - Changelog
+
+============================
+Version 1.0.1 ( for xoops 2.4.x )
+============================
+- Add new smarty balise <{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/ - (kris)
+
+============================
+Version 1.0 final ( for xoops 2.4.x )
+============================
+- add french translation in iso, utf8 and numeric encodage
+
+============================
+Version 1.0 beta 2 ( for xoops 2.4.x )
+============================
+- add xo_breadcrumb (kris)
+- add xo_language (kris / burning)
+- modified css styles for th.head (kris)
+
+============================
+Version 1.0 beta 1 ( for xoops 2.4.x )
+============================
+- modified css styles for quote and code (kris)
+
+============================
+Version 1.0 alpha 1 ( for xoops 2.4.x )
+============================
+- completely recoded and reorganized on the basis of morphogenesis 3.1 (kris)
+
+============================
+Version 0.2.1
+============================
+- Neolithic (mdr / lol / kris)

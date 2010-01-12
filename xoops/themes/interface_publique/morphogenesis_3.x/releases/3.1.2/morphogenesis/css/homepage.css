@@ -1,0 +1,138 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+#xo-homepage {
+	width:						100%;
+	height:						280px;
+	margin-top:					0;
+	margin-bottom:				1em;
+	background-color:			#eee;
+	color :						#333;
+	border-bottom:				2px solid #ddd;
+	box-shadow: 				0px 4px 4px rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		0px 4px 4px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	0px 4px 4px rgba(102, 102, 102, .5);
+}
+#xo-showhidehomepage {
+	position:					relative;
+	float:						right;
+	display: 					block;
+	width:						2%;
+	z-index:					10;
+	margin-top:					4px;
+	margin-right:				2px;
+	background:					transparent url(../icons/action/up.png) no-repeat left center;
+	opacity:					.25;
+	filter: 					alpha(opacity=25);
+	overflow:					hidden;
+	text-indent:				-1000em;
+	cursor:						pointer;
+}
+#xo-showhidehomepage:hover { opacity: 1; filter: alpha(opacity=100);}
+
+/* anonymous mode */
+#xo-homepage-anonymous {width:75%; margin:1em auto;}
+#homemenu-anonymous {
+	display:					block;
+	float : 					left;
+	width:						14%;
+	margin: 					1.5em 0 1em 1em;
+}
+#homemenu-anonymous a {
+	padding-left: 				5px;
+	font-size: 					1.1em;
+	text-decoration: 			none;
+	text-shadow: 				2px 2px 3px #bbb;
+	font-weight:				bold;
+}
+#homemenu-anonymous ul {
+	padding-right: 				0;
+	padding-left: 				0;
+	line-height: 				2.2em;
+}
+#homemenu-anonymous li {list-style-type: none;}
+#homepage-text-anonymous {
+	display:					block;
+	float:						left;
+	width:						52%;
+	margin-top:					1.5em;
+	margin-left:				.75em;
+	margin-right:				.75em;
+	padding: 					1em .75em 1em .75em;
+	border-radius:				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
+}
+#homeimage-anonymous {
+	display:					block;
+	float : 					right;
+	width:						28%;
+	margin-top : 				1em;
+	margin-right : 				.5em;
+	text-align: 				right;
+}
+/* users mode */
+#xo-homepage-users {width:85%; margin:1em auto;}
+#xo-homepage-block .xo-block {
+	display: 					block;
+	float: 						left;
+	width: 						23%;
+	margin: 					1.8em .5em .5em 1em;
+	min-height:					210px;
+	/*max-height: 210px; overflow:auto;*/
+	border: 					1px solid #777;
+	border-radius:				5px;
+		-moz-border-radius:		5px;
+		-webkit-border-radius:	5px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
+}
+#xo-homepage-block .xo-blocktitle {
+	background-color: 			#777;
+	padding: 					5px;
+	font-size:					1.1em;
+	font-weight:				bolder;
+	text-align:					center;
+	text-shadow: 				1px 1px 2px #aaa;
+	color:						#f6f6f6;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+#xo-homepage-block .xo-blockcontent {
+	margin : 					1em;
+	padding :					.5em;
+	line-height: 				1.4em;
+}
+#xo-homepage-block .outer {background-color:transparent;}
+#xo-homepage-block .head {}
+#xo-homepage-block .even {}
+#xo-homepage-block .odd {}
+#xo-homepage-block .foot {}
+#homeimage-users {
+	display:					block;
+	float : 					right;
+	width:						23%;
+	margin-top : 				1em;
+	margin-right : 				.5em;
+	text-align: 				right;
+}

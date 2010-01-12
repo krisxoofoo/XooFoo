@@ -1,0 +1,69 @@
+	<!-- Theme others parameters -->
+	<{includeq file="$xoops_module_theme/xo_thm_parameters.html"}>
+<!-- Metas, Titles, and Style Sheets -->
+	<{includeq file="$theme_name/xo_metas.html"}>
+<!-- Additionals Scripts -->
+	<{includeq file="$theme_name/xo_scripts.html"}>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>
+<{elseif $xoBlocks.canvas_left}><{assign var=columns_layout value='leftcolumn-layout'}>
+<{elseif $xoBlocks.canvas_right}><{assign var=columns_layout value='rightcolumn-layout'}>
+<{/if}>
+<div id="xo-wrapper" class="<{$xoops_dirname}>">
+	<div id="xo-bgstatic" class="<{$xoops_dirname}>"></div>
+	<div id="xo-canvas"<{if $columns_layout}> class="<{$columns_layout}>"<{/if}>>
+
+		<!-- HEADER -->
+		<div id="xo-header" class="<{$xoops_dirname}>">
+
+			<!-- INCLUDE TOPHEADER -->
+			<{if $theme_view_topheader}><{includeq file="$theme_name/xo_topheader.html"}><{/if}>
+
+			<!-- INCLUDE HEADER WITH LOGO AND BANNER -->
+			<!-- checking whether the display of the banner is enabled or not in the site administration -->
+			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+				<!-- INCLUDE WITH BANNER ACTIVED-->
+				<{includeq file="$theme_name/xo_banner_commercial.html"}>
+			<{else}>
+				<!-- INCLUDE WITH BANNER DESACTIVED -->
+				<{includeq file="$theme_name/xo_banner.html"}>
+			<{/if}>
+			<!-- INCLUDE HORIZONTAL MENU -->
+			<{if $theme_view_globalnav}><{includeq file="$theme_name/xo_globalnav.html"}><{/if}>
+		</div>
+		<!-- END HEADER -->
+		
+		<!-- INCLUDE HOMEPAGE FOR ANONYMOUS AND ONLY MAINPAGE (see comments in file xo_homepage.html -->
+		<{if $theme_view_homepage}><{includeq file="$theme_name/xo_homepage.html"}><{/if}>	
+		
+      <!-- CONTENT AREA -->
+		<!-- Do not change the part below is supposed to be the standard architecture that everyone should use -->
+		<div id="xo-canvas-content" class="<{$xoops_dirname}>">
+			<!--<{if $xoBlocks.canvas_top}>
+				<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
+					zoneClass='' zoneId='xo-canvas-header'
+					}>
+			<{/if}>-->
+			
+			<{includeq file="$theme_name/xo_page.html"}>
+
+			<!--<{if $xoBlocks.canvas_bottom}>
+				<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_bottom
+					zoneClass='' zoneId='xo-canvas-footer'
+					}>
+			<{/if}>-->
+			
+			<!-- INCLUDE BOTTOM PAGE" -->
+			<{includeq file="$theme_name/xo_bottompage.html"}>
+
+		</div>
+		<!-- INCLUDE FOOTER -->
+		<{includeq file="$theme_name/xo_footer.html"}>
+	</div>
+		<!--{xo-logger-output}-->
+</div>
+	<!-- INCLUDE BARADMIN - xo_footerstatic.html -->
+	<{if $xoops_isadmin && $theme_view_baradmin}><{includeq file="$theme_name/xo_footerstatic.html"}><{/if}>
+</body>
+</html>

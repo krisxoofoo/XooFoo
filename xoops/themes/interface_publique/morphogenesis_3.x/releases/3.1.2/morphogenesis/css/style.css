@@ -1,0 +1,247 @@
+/*
+ * Mor.pho.GEN.e.sis 3.0
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+/* include style sheets */
+@import url(reset.css); /* reset css for web browsers*/
+@import url(baradmin.css); /* administration access in footer */
+@import url(globalnav.css); /* horizontal menu in header */
+@import url(homepage.css); /* style for specific content in mainpage */
+@import url(blocks.css); /* style for blocks */
+@import url(content.css); /* style for content */
+@import url(module.css); /* style for content menu */
+@import url(content-data.css); /* style for files include in header or bottom page content */
+@import url(socialbookmark.css); /* style for socialbookmark in end content zone */
+@import url(blockfooter.css); /* style for blocks in footer */
+@import url(forms.css); /* style for forms */
+@import url(extras.css); /* extras style for perzonalisation templates */
+@import url(iconize.css); /* style for icone in specific link */
+@import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
+/* insert specific font */
+@font-face { font-family: BakerSignet BT; font-style:  normal; font-weight: normal; src: url(../fonts/BAKERSI3.eot);}
+/*  for html 5 in next time */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+/* beginning of the applicable styles */
+html, body {
+	max-width: 					100%;
+	margin:						0;
+	background-color: 			#000;
+	padding:					0 10px;
+	color:						#333;
+	font-family:				"Lucida Grande", Verdana, sans-serif;
+	line-height:				1.5em;
+}
+html {font-size:100.01%;}
+body {font-size:75%;}
+
+/* ======= Body box ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+	/*max-width: 				1200px;*/
+	margin:						0 auto;
+	background-color: 			#eee;
+	color: 						#333;
+}
+/*================= Content zone ===================*/
+#xo-canvas-content {
+	background-color: 			#eee;
+	padding:					12px;
+	color: 						#333;
+}
+#xo-page {
+	background-color:			#fffff0;
+	color:						#333;
+	font-size: 					1em;
+	border-width: 				1px 2px 1px 1px;
+	border-style: 				solid;
+	border-color:				#ddd;
+	/*border-radius: 			10px;
+		-moz-border-radius: 	10px;
+		-webkit-border-radius: 	10px;*/
+	/*box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);*/
+}
+
+#xo-content {
+	clear:						both;
+	margin: 					0;
+	padding: 					.5em;
+}
+/* see also block.css for design blocks */
+/* see also forms.csss for design forms elements*/
+/* see also content.css for design content text */
+
+
+/* ============== header ================= */
+#xo-header {background: url(../img/background_repeat.jpg) repeat-x left bottom;}
+/* ---------- xo_topheader.html ---------- */
+#xo-topheader {/* see style sheet content-data.css */}
+/* ---------- xo_banner.html ---------- */
+#xo-banner {	width: 100%; height: 80px;}
+/* Logo and site name in the header */
+#xo-mainlogo {
+	display: 					block;
+	float: 						left;
+	padding-left: 				20px;
+	padding-top: 				5px;
+	padding-right:				20px;
+}
+#xo-sitename {
+	display: 					block;
+	float: 						left;
+	background:					transparent;
+	padding-top : 				10px;
+}
+#xo-sitetitle a {
+	display:					block;
+	background-color: 			transparent;
+	font:						2.6em/1 'BakerSignet BT',sans-serif;
+	color: 						#32529C;
+	text-decoration	: 			none;
+	font-weight: 				bold;
+	text-shadow: 				2px 2px 3px #aaa;
+}
+#xo-sitetitle a:hover { background-color: transparent; color: #E9CB38;}
+#xo-siteslogan {
+	display:					block;
+	padding-top:				5px;
+	font:						1.4em/1 'BakerSignet BT',sans-serif;
+	font-style: 				italic;
+	color: 						#E9CB38;
+	text-shadow: 				2px 2px 3px #aaa;
+}
+/* ---------- xo_banner_commercial.html ---------- */
+/* Logo and site name in the header */
+#xo-banner.commercial {	height:	100px;}
+#xo-mainlogo.commercial { padding-top: 20px;}
+#xo-sitename.commercial { padding-top : 25px;}
+#xo-sitetitle.commercial {}
+#xo-sitetitle.commercial a:hover {}
+#xo-siteslogan.commercial {}
+/* commercial banner in the header */
+#xo-banner-ad {
+	float:						right;
+	width: 						480px;
+	height: 					72px;
+	margin: 					10px;
+	background: 				url(../img/bg-ad-top.png) no-repeat;
+	padding: 					6px;
+}
+#xo-banner-ad object, #xo-banner-ad img {display: block;}
+
+/*============= others files include ================*/
+#xo-language {/* see style sheet content-data.css */}
+#xo-searchbar {/* see style sheet content-data.css */}
+#xo-userbar {/* see style sheet content-data.css */}
+#xo-accessibilitybar {/* see style sheet content-data.css */}
+
+/*============= Style for globalnav.html ================*/
+#xo-globalnav{/* see specific style sheet : globalnav.css */}
+
+/*=============== Style for the Footer  ====================*/
+#xo-footer {
+	width:						100%;
+	min-height: 				35px;
+	margin:						0;
+	background-image :  		url(../img/xobottom.png);
+	background-position :		left top;
+	background-repeat :			repeat;
+	background-color: 			#666;
+	color:             			#fffff0;
+	border-top: 				#32529C 3px solid;
+}
+
+#xo-footer a {background-color:transparent; color:#E9CB38;}
+#xo-footer a:hover {
+	background-color:			transparent;
+	color: 						#F4E28E;
+	text-decoration: 			underline;
+}
+
+#xo-blockfooter { /* see also in blockfooter.css */ }
+
+#xo-footerbottom {
+	clear:						both;
+	display: 					block;
+	width: 						100%;
+	height:						25px;
+	margin-top:					.75em;
+	font-size: 					.9em;
+	text-shadow: 				1px 1px 2px #aaa;
+}
+
+#xo-validw3c {
+	display: 					block;
+	float: 						left;
+	width: 						33%;
+	margin-left: 				10px;
+}
+#xo-validw3c a#licence {
+	background-color: 			transparent;
+	background-image: 			url(../icons/action/cc-logo.png);
+	background-repeat: 			no-repeat;
+	background-position: 		right center;
+	padding-left: 				1.5em;
+	color: 						inherit;
+	text-decoration: 			none;
+}
+#xo-validw3c a#validxhtml {
+	background-color: 			transparent;
+	background-image: 			url(../icons/action/html_valid.png);
+	background-repeat: 			no-repeat;
+	background-position: 		left;
+	padding-left: 				1.5em;
+	color: 						inherit;
+	text-decoration: 			none;
+}
+#xo-validw3c a#validcss {
+	background-color: 			transparent;
+	background-image: 			url(../icons/action/css_valid.png);
+	background-repeat: 			no-repeat;
+	background-position: 		left;
+	padding-left: 				1.5em;
+	color: 						inherit;
+	text-decoration: 			none;
+}
+#xo-copyright {
+	display: 					block;
+	float: 						left;
+	width:						33%;
+	background-color:			transparent;
+	color: 						inherit;
+	font-size: 					0.9em;
+	text-align: 				center !important;
+}
+#xo-rss {
+	display:					block;
+	float: 						right;
+	width: 						33%;
+	text-align:					right;
+}
+#xo-rss a#feedrss {
+	margin-right: 				16px !important;
+	background: 				transparent	url(../icons/action/feed_add.png) no-repeat center right;
+	padding-right:				20px;
+	color: 						inherit;
+	text-decoration: 			none;
+}
+#xo-validw3c a#validxhtml:hover, #xo-validw3c a#licence:hover, #xo-validw3c a#validcss:hover, #xo-rss a#feedrss:hover {opacity: .5; filter: alpha(opacity=50);}
+
+/* for site closed, site redirection, debug mode, core messages : see style sheet tplsystem.css */

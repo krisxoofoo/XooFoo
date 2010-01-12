@@ -1,0 +1,213 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/*========== Main menu block =============*/
+#mainmenu a {
+	display: 					block;
+	margin: 					0;
+	background-color: 			transparent;
+	padding: 					1px;
+	color:						#974F12;
+	font-weight: 				bold;
+	text-shadow:				1px 1px 2px #aaa;
+}
+#mainmenu a:hover {
+	background-color:			transparent;
+	color: 						#4478b0;
+	text-decoration:			none !important;
+}
+#mainmenu a.menuTop, #mainmenu a.menuMain {padding-left: .5em;}
+#mainmenu a.menuSub {
+	background-color:			transparent;
+	padding-left: 				20px;
+	color:						#4478b0;
+	font-size:					.9em;
+	font-style: 				italic;
+	font-weight: 				normal;
+}
+#mainmenu a.menuSub:hover {
+	background-color: 			transparent;
+	color: 						#974F12;
+	text-decoration: 			underline !important;
+}
+
+/*============ Usermenu block ============*/
+#usermenu a {
+	display: 					block;
+	background-color: 			transparent;
+	padding: 					2px;
+	color: 						#4478b0;
+	font-size: 					0.9em;
+	font-weight: 				normal;
+	text-shadow:				1px 1px 2px #aaa;
+	line-height: 				1em;
+}
+#usermenu a:hover {
+	background-color: 			transparent;
+	padding-left: 				1em;
+	color:						#974F12;
+	font-style: 				italic;
+	text-decoration:			underline !important;
+}
+#usermenu a.menuTop {}
+#usermenu a.highlight {
+	background-color: 			transparent;
+	color: 						#ff0000;
+	font-size: 					1em;
+}
+
+/*=========== for old templates system ============*/
+#usermenu a, #mainmenu a {	display: block;}
+.xo-canvas-column .menuSub { padding-left: 1em;}
+
+
+/*===== general blocks =======*/
+#xo-blockviewall img {margin:0; padding:0; border:0;}
+#xo-blockviewall {
+	position:					relative;
+	display:					block;
+	float:						right;
+	width:						16px;
+	background-color: 			transparent;
+	color:						inherit;
+	text-align:					center;
+	opacity:					.25;
+	filter: 					alpha(opacity=25);
+}
+#xo-page-topblocks #xo-blockviewall, #xo-page-bottomblocks #xo-blockviewall  {top: .5em; right: .5em;}
+#xo-canvas-leftcolumn #xo-blockviewall,#xo-canvas-rightcolumn #xo-blockviewall  {top:	-.25em; right: 1em;}
+#xo-blockviewall:hover { opacity: 1; filter: alpha(opacity=100);}
+.xo-blockquicklink {}
+img.xo-blockquickedit {border: 0 !important; vertical-align:middle; opacity: .25; filter: alpha(opacity=25);}
+img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
+/*===== left column =======*/
+#xo-canvas-leftcolumn { padding: .8em .5em .5em .5em;}
+#xo-canvas-leftcolumn .xo-block {
+	/*max-width:					95%;
+	resize:						horizontal;
+	overflow:					hidden;*/
+	margin-right:				.25em;
+	margin-bottom:				1.2em;
+}
+#xo-canvas-leftcolumn .xo-blocktitle {
+	background-color: 			transparent;
+	padding-left:				6px;
+	padding-bottom:				5px;
+	color:						#4478b0;
+	font-size:					1.1em;
+	font-weight:				bold;
+	text-align:					center;
+	text-shadow:				1px 1px 2px #aaa;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent { padding: 2px 8px 0; /*text-align: justify;*/}
+* html #xo-canvas-leftcolumn .xo-blockcontent { height: 110px;}
+#xo-canvas-leftcolumn .xo-blockcontent a {}
+#xo-canvas-leftcolumn .xo-blockcontent a:hover { text-decoration: underline;}
+#xo-canvas-leftcolumn img {
+	margin: 					3px 3px 0 7px;
+	padding: 					3px;
+	border: 					1px solid #ddd;
+}
+#xo-canvas-leftcolumn img:hover {border: 1px solid #aaa;}
+
+/*======== right column ========*/
+#xo-canvas-rightcolumn {
+	background-color:			#f6f6f6;
+	padding: 					.8em .5em .5em .5em;
+	color:						inherit;
+	border-width:				1px 1px 1px 0;
+	border-style:				solid;
+	border-color:				#ddd;
+}
+#xo-canvas-rightcolumn .xo-block {
+	/*max-width:					95%;
+	resize:						horizontal;
+	overflow:					auto;*/
+	margin-bottom: 				1.2em;
+	margin-left:				.25em;
+}
+#xo-canvas-rightcolumn a {	text-decoration: none;}
+#xo-canvas-rightcolumn a:hover { text-decoration: underline;}
+#xo-canvas-rightcolumn .xo-blocktitle {
+	background-color: 			transparent;
+	color:						#4478b0;
+	font-size:					1.1em;
+	font-weight:				bold;
+	text-align:					center;
+	text-shadow:				1px 1px 2px #aaa;
+}	
+#xo-canvas-rightcolumn .xo-blockcontent {padding: .5em; text-align: justify;}
+#xo-canvas-rightcolumn img {
+	margin: 					3px 3px 0 7px;
+	padding: 					3px;
+	border: 					1px solid #ddd;
+}
+#xo-canvas-rightcolumn img:hover {border: 1px solid #aaa;}
+
+/* ======= Content center ===========*/
+#xo-page .xo-blockszone > .xo-block {
+	border:						1px solid #ddd;
+	border-radius: 				10px;
+		-moz-border-radius: 	10px;
+		-webkit-border-radius: 	10px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
+}
+.xo-block ul {
+	margin:						0;
+	padding:					0;
+	list-style-type:			none;
+}
+#xo-page .xo-blockszone .xo-blocktitle {
+	margin:						0 .5em;
+	background-color: 			transparent;
+	padding: 					.5em .25em .25em .5em;
+	color:						#4478b0;
+	font-size:					1.1em;
+	font-weight:				bold;
+	text-shadow:				1px 1px 2px #aaa;
+	border-bottom:				1px solid #ddd;
+}
+#xo-page .xo-blockszone .xo-blockcontent { padding: .5em; text-align: justify;}
+#xo-page .xo-blockszone .xo-blockcontent img {
+	margin: 					3px 3px 0 7px;
+	padding: 					3px;
+	border: 					1px solid #ddd !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+	background-color: 			#f6f6f6 !important;
+	color:						inherit;
+	border: 					1px solid #aaa !important;
+}
+#xo-page .xo-blockszone .xo-blockcontent a { text-decoration: none;}
+#xo-page .xo-blockszone .xo-blockcontent a:hover { text-decoration : underline;}
+
+/* ======= Center blocks ===========*/
+#xo-page-topblocks {}
+#xo-page-bottomblocks {}
+#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block,#xo-page-bottomleftblocks .xo-block, #xo-page-bottomrightblocks .xo-block {
+	/*min-height:					180px;*/}
+#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {}
+/* exemple :
+#xo-page-topleftblocks .xo-block .xo-blocktitle {
+	color: #ff00ff;
+	background-color: transparent;
+} 
+#xo-page-topleftblocks .xo-block .xo-blockcontent {
+	color: #ff0000;
+	background-color: #000;
+} 
+etc ...*/

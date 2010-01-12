@@ -1,0 +1,17 @@
+<!-- with display activated of the banner -->
+<div id="xo-banner" class="commercial">
+
+	<!-- display of the logo -->
+    <div id="xo-mainlogo" class="commercial">
+		<a href="<{xoAppUrl /}>" title=""><img src="<{xoImgUrl img/logo_morpho.png}>" alt="<{$xoops_sitename}>" /></a>
+	</div>
+	
+	<!-- display of the title and description of the site such as defined in the file theme.php of the file language to the root of the site -->
+	<div id="xo-sitename"  class="commercial">
+		<span id="xo-sitetitle"><a href="<{xoAppUrl /}>" title="<{$xoops_sitename}>"><{$smarty.const.THEME_NAME}></a></span>
+		<span id="xo-siteslogan" class="commercial"><{$smarty.const.THEME_DESC}></span>
+	</div>
+	
+	<!-- display of the banner -->
+	<div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+</div>

@@ -1,0 +1,239 @@
+/*
+ * Mor.pho.GEN.e.sis 3.0
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/* style sheet for microformats */
+/*@import url(microforms.css);*/
+
+/*=============== Style for Titles ... ===============*/
+h1, h2, h3, h4, h5, h6 { 
+  margin: 					1em 0 .5em 0;
+  line-height: 				1.2; 
+  font-weight: 				bold;
+  font-style: 				normal; 
+}
+h1 {font-size: 1.7em; text-shadow: 2px 2px 3px #aaa;}
+h2 {font-size: 1.5em; text-shadow: 2px 2px 3px #aaa;}
+h3 {font-size: 1.4em; text-shadow: 2px 2px 3px #aaa;}
+h4 {font-size: 1.2em; text-shadow: 2px 2px 3px #aaa;}
+h5 {font-size: 1em;}
+h6 {font-size: .8em;}
+
+h1 {
+	clear: 					both;
+	background-color: 		transparent;
+	padding-left: 			.25em;
+	color:					#32529c;
+	border-bottom:			1px solid #32529c;
+}
+h1 a, h2 a{
+	background-color: 		transparent;
+	color:					#32529C;
+	text-decoration: 		none;
+}
+h1 a:hover, h2 a:hover, h1 a:focus, h2 a:focus, h1 a:active, h2 a:active {
+	background-color: 		transparent;
+	color: 					#974F12;
+	text-decoration:		underline;
+	outline: 				none; 
+}
+h2 { background-color: transparent; color: #4478b0;}
+h3 { background-color: transparent; color :#E98838;}
+
+/*=============== Style for links ===============*/
+a[rel~=alternate] { float: right;}
+a {
+	background-color: 		transparent;
+	color: 					#32529C;
+	text-decoration: 		none;
+}
+a:hover, a:focus, a:active {
+	background-color: 		transparent;
+	color: 					#974F12;
+	outline: 				none;
+}
+#xo-page a:hover { text-decoration: underline;}
+
+/* Style for images (general) */
+img { border: 0 !important; margin-right:.5em;}
+img.xo-icons {margin-bottom:-3px;}
+p img { margin-left: .5em; margin-right:.5em;}
+a img:hover, a img:focus {opacity:.5; filter: alpha(opacity=50);}
+a img { border: none;}
+.imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
+img.xo-icons {margin-bottom:-3px;}
+
+/*=============== Style for general content ===============*/
+/*br { clear: both;}*/
+p {
+	margin-top: 			.5em;
+	margin-bottom:			.5em;
+	text-align:				justify;
+}
+hr{}
+em { font-style: italic;}
+strong, b { font-weight: bold;}
+del { text-decoration: line-through;}
+address	{ font-style: normal; letter-spacing: .1em;}
+small {font-size: .8em;}
+/*=============== Style for acronyms and abbreviation ===============*/
+acronym, abbr, abbr[title] { border-bottom: 1px dashed; cursor: help;}
+abbr[title] { border-bottom: 1px dotted; cursor: help;} 
+acronym:hover, abbr:hover { border-bottom: #32529C 1px dashed;}
+
+/*=============== Style for lists ===============*/
+dl { margin: .75em 0;} 
+dt { margin: .75em 0 0 0; font-weight: bold;} 
+dd { margin: .25em 0 .25em 2em; }
+
+#xo-canvas-columns ul, #xo-canvas-columns ol, #xo-footer ul, #xo-footer ol { margin: .5em 0 .5em 2em; padding: 0;}
+#xo-canvas-columns ul, #xo-footer ul {list-style-type: circle;}
+#xo-canvas-columns ol, #xo-footer ol {list-style-type: decimal;}
+#xo-canvas-columns li , #xo-footer li { margin: .3em 0;}
+#xo-canvas-columns ul ul li, #xo-canvas-columns ol ol li {
+	margin: 				.5em 0 .5em 3em;
+	padding: 				0;
+	font-style:				italic;
+}
+#xo-canvas-columns ul ul li,#xo-canvas-columns ol ol li {
+	padding-top: 			0;
+	padding-bottom: 		0;
+	padding-left:			1em;
+}
+#xo-canvas-content ul, #xo-canvas-content ol {}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li {}
+#xo-canvas-content ul {}
+#xo-canvas-content ol {}
+#xo-canvas-content li {}
+
+
+/*=============== styles for tables =================*/
+table {
+	margin: 				0;
+	width: 					100%;
+	font-size: 				1em;
+	border: 				none;
+	border-collapse: 		separate/*collapse*/;
+	border-spacing: 		0;
+}
+table td, table th, table thead { padding: 4px; border: 0;}
+th, thead, caption {
+	background-color: 		#4478b0;
+	color: 					#f6f6f6;
+	vertical-align: 		middle;
+	font-size:				1.1em;
+	font-weight : 			bold;
+	text-shadow:			1px 1px 2px #aaa;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+th a, thead a {
+	background-color: 		transparent;
+	color: 					#f6f6f6;
+	text-shadow:			1px 1px 2px #aaa;
+}
+.outer {background-color:#fffff0; color:inherit;}
+.xo-canvas-column .outer img, .xo-canvas-column .outer img:hover {/* kris à voir */
+	/*margin:							0;
+	padding:							0;
+	border: 							0 !important;*/
+}
+#xo-canvas-content .outer {	border: #ccc 1px solid;}
+.xo-canvas-column .outer, .xo-canvas-column td.outer { /* general central zone */}
+#xo-canvas-content .head {
+	background-color: 		#f5f5f5;
+	padding: 				5px;
+	color: 					inherit;
+	font-weight: 			bold;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+#xo-canvas-content .head a {}
+#xo-canvas-content .head a:hover {}
+#xo-canvas-content .even {
+	background-color: 		#f7f7f7;
+	padding: 				5px;
+	color: 					inherit;
+}
+#xo-canvas-content .odd {
+	background-color: 		#f9f9f9;
+	padding: 				5px;
+	color: 					inherit;
+}
+#xo-canvas-content tr.even td {
+	background-color: 		#f7f7f7;
+	padding: 				5px;
+	color: 					inherit;
+}
+#xo-canvas-content tr.odd td {
+	background-color: 		#f9f9f9;
+	padding: 				5px;
+	color: 					inherit;
+}
+#xo-canvas-content .foot, #xo-page tfoot {
+	background-color : 		#f4f4f4;
+	padding: 				2px;
+	color: 					inherit;
+	font-weight: 			bolder;
+	text-align: 			center;
+}
+
+
+#xo-logger-output table.outer {background-color:#fffff0; color:inherit;}
+
+/*================ Style for Quotes ================*/
+blockquote {
+	display: 				block;
+	width : 				95%;
+	margin-right: 			2em;
+	background-color: 		#f6f6f6;
+	padding:				.5em;
+	color: 					inherit;
+	font-size: 				.9em;
+	font-style: 			italic;
+	border:					1px dashed #4478b0;
+}
+.xoopsQuote {}
+q, cite { font-style: italic;} 
+q cite, q q { font-style: normal;} 
+/* delete auto dobble quotes */ 
+q { quotes: none; } 
+q:before, q:after { content: ""; /* for Safari/Chrome */}
+
+/*================== Style for Codes =================*/
+.xoopsCode{}
+code {
+	display:				block;
+	width:					95%;
+	max-height: 			400px;
+	overflow: 				auto;
+	background-color:		#f6f6f6;
+	padding:				.5em;
+	color:					inherit;
+	font-size: 				.9em;
+	border-width:			1px 1px 1px 3px;
+	border-color:			#4478b0;
+	border-style: 			solid;
+}
+code, pre { white-space: -pre-wrap /* for opera */; white-space: pre-wrap;}
+
+
+
+
+
+
+
+
+

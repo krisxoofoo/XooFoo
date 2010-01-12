@@ -1,0 +1,39 @@
+Mor.Pho.GEN.e.sis Theme Framework - Changelog
+
+============================
+Version 3.1.3 ( for xoops 2.4.x )
+============================
+- Add new smarty balise <{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/ - (kris)
+
+============================
+Version 3.1.2 ( for xoops 2.4.x )
+============================
+- Add style sheet reset.css - (kris)
+
+============================
+Version 3.1.1 ( for xoops 2.4.x )
+============================
+- Add news class in extras.css for display div in table - (kris)
+- encode xo_homepage.html to utf 8 sans bom (kris)
+- add french translation in iso, utf8 and numeric encodage
+
+============================
+Version 3.1 ( for xoops 2.4.x )
+============================
+- Add an extra SMARTY variable $xoops_themeurl - (kris / kaifulee team)
+- Add an extra SMARTY variable $xoops_module_theme - (kris / kaifulee team)
+- If a module has its own css (located themes/themename/modules/dirname/style.css), append it to $xoops_module_header - (kris / kaifulee team)
+- If a module defines its own canvas template (located themes/themename/modules/dirname/xo_canvas.html), take it; otherwise the default canvas (themes/themename/xotpl/xo_canvas.html) is used - (kris / kaifulee team)
+- Add new include file xo_page.html for xoops basics columns (kris)
+- Add personalization exemple for contact module and display userinfo (kris)
+- Search engine optimization - see http://www.xoops.org/modules/smartfaq/faq.php?faqid=362 (kris)
+
+============================
+Version 3.0.2 ( for xoops 2.4.x )
+============================
+- Add css resize width for left and right columns (+ blocks) - (kris)
+
+============================
+Version 3.0.1 ( for xoops 2.4.x )
+============================
+- Change Block Id Css - (kris / trabis)

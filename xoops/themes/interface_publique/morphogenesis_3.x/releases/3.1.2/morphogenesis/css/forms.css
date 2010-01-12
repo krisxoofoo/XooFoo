@@ -1,0 +1,109 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/*======= forms ========*/
+input, button, select { vertical-align: middle;}
+fieldset { margin: .5em; padding : 1em;}
+legend {
+	padding: 					.5em;
+	font-size:					1.1em;
+	font-weight: 				bolder;
+	text-shadow: 				2px 2px 3px #aaa;
+}
+label, .caption-text {
+	margin-bottom: 				.5em; 
+	padding-right: 				.5em;
+	font-weight: 				bold;
+	text-shadow: 				2px 2px 3px #aaa;
+}
+select {
+	background-color: 			#fff;
+	color: 						#333;
+	font-size: 					.9em;
+	border: 					2px inset #f1f3f8 !important;
+}
+select[name=timezone_offset] { font-size: .9em;}
+textarea {
+	width: 						95%;
+	max-height: 				100px;
+	overflow: 					auto;
+}
+#xo-page fieldset { border: 		1px solid #ccc;
+	border-radius:				5px;
+		-moz-border-radius:		5px;
+		-webkit-border-radius:	5px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5) ;
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5);
+}
+#xo-page fieldset a {}
+#xo-page fieldset a:hover {	text-decoration: underline;}
+#xo-page legend {}
+#xo-page label, #xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {
+  /*float: 						left;*/
+  /*width: 						100%;*/
+ /*max-width: 					180px;*/
+  text-align: 					right !important;
+  font-weight: 					bolder;
+}
+/*#xo-page .xoops-form-element-caption {margin-top: 5px !important;}*/
+#xo-content .xo-formfield.required label:after, .caption-marker {
+	background-color: 			transparent;
+	color: 						#ff0000;
+	content: 					'*';
+	text-shadow: 				2px 2px 3px #aaa;
+}
+input[type=submit], input[type=reset], input[type=button], .xo-formbuttons, .formButton, button {
+    margin: 					2px 5px 2px 5px;
+    background-color:          	#D3D2D6;
+	padding: 					2px;
+    color:                  	#405A80;
+    font-size:              	.9em;
+    font-weight:            	bold;
+    border:                 	1px solid #ccc;
+	border-radius:				5px;
+		-moz-border-radius:		5px;
+		-webkit-border-radius:	5px;
+	box-shadow: 				1px 1px 5px  rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		1px 1px 5px rgba(102, 102, 102, .5);
+		-webkit-box-shadow: 	1px 1px 5px rgba(102, 102, 102, .5);
+    cursor:                 pointer;
+}
+input[type=submit]:hover, input[type=reset]:hover, input[type=button]:hover,.xo-formbuttons:hover, .formButton:hover, button:hover  {
+   background-color:      		#E6EBFF;
+	padding: 					2px;
+   color:                  		inherit;
+   cursor:                 		pointer;
+}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {
+    border:                		1px solid #ccc;
+    margin:                		2px 5px 2px 0;
+    background-color:      		#fff;
+    padding-left:          		.2em;
+    color:                 		inherit;
+    border:						#ccc solid 1px;
+}
+input[type=text], input[type=password], input[type=file] { background-color:#fff; color: #333;}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover {
+    background-color:      		#E6EBFF;
+    color:                 		inherit;
+    border: 					1px solid #E9CB38;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {
+    background-color:       	#F4FAFF;
+    color:                  	#333;
+    border:           			#139EE8 solid 1px;
+    outline:                	1px solid #139EE8;
+}
+input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}

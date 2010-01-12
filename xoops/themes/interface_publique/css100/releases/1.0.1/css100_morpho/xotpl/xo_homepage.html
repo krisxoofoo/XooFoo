@@ -1,0 +1,85 @@
+<{if $smarty.server.PHP_SELF=='/index.php'}>
+<!-- In the above line: if your site is at the root of the server, put '/index.php', otherwise '/foldername/index.php'
+If you have difficulty finding the path, add <{$smarty.server.PHP_SELF}> in first line of this file and the information displayed, then remove the line and this comments for safety issues  <{$xoops_rootpath}>
+Dans la ligne ci-dessus : si votre site est à la racine du serveur, mettez '/index.php', sinon '/nomdudossier/index.php'
+Si vous avez des difficultés à trouver le chemin,insérer <{$smarty.server.PHP_SELF}> en première ligne de ce fichier et les informations s'afficheront, puis retirer la ligne et ce commentaire pour des questions de sécurité -->
+
+	<{if $theme_homepage_toggle}>
+		<div id="xo-showhidehomepage" onclick="xoToggleBlock('xo-homepage');" title="<{$smarty.const.THEME_SHOWHIDE_HOMEPAGE}>"><{$smarty.const.THEME_SHOWHIDE_HOMEPAGE}></div>
+	<{/if}>
+
+	<div id="xo-homepage">
+		<{if !$xoops_isuser}> <!-- mode anonymous -->
+			<div id="xo-homepage-anonymous">
+				<div id="homemenu-anonymous">
+					<ul>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 1</a></li>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 2</a></li>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 3</a></li>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 3</a></li>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 4</a></li>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 5</a></li>
+						<li><a title="" href="<{xoAppUrl /}>">Link Exemple 6</a></li>
+					</ul>
+				</div>
+				
+				<div id="homepage-text-anonymous">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras posuere luctus nulla, sit amet semper sapien eleifend ac. Donec ultricies sapien ut leo pharetra in vulputate urna eleifend. Maecenas nec velit sed orci pharetra ultricies ut eu odio. Pellentesque pharetra dolor in ipsum molestie luctus. Aenean luctus hendrerit vehicula. Cras commodo, justo et pellentesque bibendum, dolor est malesuada arcu, id pulvinar diam elit eu dui. Sed iaculis nisi vel nunc auctor quis auctor sapien condimentum.</p>
+					<p>Maecenas et elit nunc. Vivamus egestas velit ut metus ultrices facilisis. In tortor turpis, sodales a tristique et, lacinia sit amet magna. Nulla posuere auctor ultricies. Curabitur bibendum, elit sollicitudin viverra euismod, nulla eros commodo elit, viverra elementum lacus libero sed dolor. Aliquam euismod ipsum eu arcu placerat id ultricies erat elementum. Quisque ac tellus ut enim pharetra suscipit.</p>
+				</div>
+				
+				<div id="homeimage-anonymous">
+					<a rel="external" href="http://sourceforge.net/projects/xfr/" title="Xoops Project !!"><img src="<{xoImgUrl img/TuxG2-xoops.png}>" alt="" /></a>
+				</div>
+				
+			</div>
+
+
+		<{else}>
+			<div id="xo-homepage-users"> <!-- mode user -->
+				<div id="xo-homepage-block">
+					<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
+						<div class="xo-blocktitle">
+						<{block id=4 display="title"}>
+							<{if $xoops_isadmin}>
+								<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+									<img  class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>"/>
+								</a>
+							<{/if}>
+						</div>
+						<div class="xo-blockcontent"><{block id=4}></div>
+					</div>
+
+					<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
+						<div class="xo-blocktitle">
+						<{block id=9 display="title"}>
+							<{if $xoops_isadmin}>
+								<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+									<img  class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>"/>
+								</a>
+							<{/if}>
+						</div>
+						<div class="xo-blockcontent"><{block id=9}></div>
+					</div>
+
+					<div id="xo-block-<{$block.module}>-<{$block.id}>" class="xo-block">
+						<div class="xo-blocktitle">
+						<{block id=8 display="title"}>
+							<{if $xoops_isadmin}>
+								<a rel="external" href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+									<img  class="xo-blockquickedit" src="<{xoImgUrl icons/action/edit-block.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>"/>
+								</a>
+							<{/if}>
+						</div>
+						<div class="xo-blockcontent"><{block id=8}></div>
+					</div>
+					
+				<div id="homeimage-users">
+					<a rel="external" href="http://sourceforge.net/projects/xfr/" title="Xoops Project !!"><img src="<{xoImgUrl img/TuxG2-xoops.png}>" alt="" /></a>
+				</div>					
+					
+				</div>
+			</div>
+		<{/if}>
+	</div>
+<{/if}>

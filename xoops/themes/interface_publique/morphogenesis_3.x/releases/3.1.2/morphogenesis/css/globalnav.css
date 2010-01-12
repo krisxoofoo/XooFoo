@@ -1,0 +1,88 @@
+/*
+ * Mor.pho.GEN.e.sis 3.1
+ * Thanks to Snow77, Skalpa and Leostotch for the initial work, Dugris and Burning for help and test
+ *
+ * @copyright       Kris <http://labs.xoofoo.org/>
+ * @license         CREATIVE COMMONS Attribution-ShareAlike 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris <http://labs.xoofoo.org/>
+ * @maintained      Afux <http://www.afux.org>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+/*============= Style for globalnav.html ================*/
+#xo-globalnav {
+	clear: 						both;
+	min-height:					23px !important;
+	width:						100%;
+	margin:						0;
+	background : 				#fffff0 url(../img/navbar.gif) repeat-x left top;
+	color:						#32529C;
+	font-size:					1.2em;
+	font-weight: 				bold;
+	text-align: 				center;
+	vertical-align:				middle;
+	text-shadow:				2px 2px 3px #aaa;
+}
+* html #xo-globalnav { height: 23px; }
+#xo-globalnav .xo-label { display: none;}
+#xo-globalmenu {display: block; float:left; width:95%;}
+/**** columns collapse ****/
+#xo-leftcolswitch {
+	position:					relative;
+	display: 					block;
+	z-index:					10;
+	opacity:					.25;
+	filter: 					alpha(opacity=25);
+	margin-top:					4px;
+	margin-left:				2px;
+	float:						left;
+	background:					transparent url(../icons/action/agt_back.png) no-repeat left center;
+	width:						2%;
+	overflow:					hidden;
+	text-indent:				-1000em;
+	cursor:						pointer;
+}
+#xo-leftcolswitch:hover { opacity: 1; filter: alpha(opacity=100);}
+#xo-rightcolswitch {
+	display: 					block;
+	position:					relative;
+	z-index:					10;
+	opacity:					.25;
+	filter: 					alpha(opacity=25);
+	margin-top:					4px;
+	margin-right:				2px;
+	float:						right;
+	background:					transparent url(../icons/action/agt_forward.png) no-repeat right center;
+	width:						2%;
+	overflow:					hidden;
+	text-indent:				-1000em;
+	cursor:						pointer;
+}
+#xo-rightcolswitch:hover { opacity: 1;}
+/**** horizontal menu ****/
+#xo-globalnav ul { padding: 2px; list-style-type:	none;}
+#xo-globalnav li {
+	display: 					inline;
+	margin: 					0;
+	padding-left: 				.5em;
+	padding-right: 				.5em;
+	font-size: 					.9em;
+}
+#xo-globalnav a {
+	background-color: 			transparent;
+	color: 						#32529C;
+	font-weight: 				bold;
+	text-decoration: 			none;
+}
+#xo-globalnav a:hover {
+	background-color: 			transparent;
+	color: 						#8198CE;
+	text-decoration: 			none;
+}

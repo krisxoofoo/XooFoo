@@ -1,6 +1,6 @@
 <?php
 // generality
-define("THEME_NAME",					"Mor稰ho稧EN積穝is 3.1.2");
+define("THEME_NAME",					"Mor路Pho路GEN路e路sis 3.1.3");
 define("THEME_DESC",					"nascita di sviluppo");
 define("THEME_DESIGNER",				"Disegno da : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
 define("THEME_UPTOP",					"Parte Superiore");
@@ -34,12 +34,12 @@ define("THEME_KEYWORDS",				"Invia keywords");
 
 // xo_language.html
 define("THEME_ENGLISH",					"English");
-define("THEME_FRENCH",					"Fran鏰is");
-define("THEME_SPAIN",					"Espa駉l");
+define("THEME_FRENCH",					"Fran莽ais");
+define("THEME_SPAIN",					"Espa帽ol");
 define("THEME_DEUTCH",					"Deutsch");
 define("THEME_ITALIA",					"Italiano");
-define("THEME_PORTUGUESE",				"Portugu阺");
-define("THEME_ROMANIAN",				"Rom鈔este");
+define("THEME_PORTUGUESE",				"Portugu锚s");
+define("THEME_ROMANIAN",				"Rom芒neste");
 define("THEME_RUSSE",					"Russian");
 define("THEME_JAPAN",					"Japanese");
 define("THEME_CHINESE",					"Chinese");

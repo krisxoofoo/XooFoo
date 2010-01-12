@@ -1,6 +1,6 @@
 <?php
 // generality
-define("THEME_NAME",					"Css100 MorPho 1.0");
+define("THEME_NAME",					"Css100 MorPho 1.0.1");
 define("THEME_DESC",					"birth of evolution");
 define("THEME_DESIGNER",				"Design by : <a rel='external' rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
 define("THEME_UPTOP",					"Back to Top");
@@ -33,12 +33,12 @@ define("THEME_KEYWORDS",				"Put the keywords");
 
 // xo_language.html
 define("THEME_ENGLISH",					"English");
-define("THEME_FRENCH",					"Français");
-define("THEME_SPAIN",					"Español");
+define("THEME_FRENCH",					"FranÃ§ais");
+define("THEME_SPAIN",					"EspaÃ±ol");
 define("THEME_DEUTCH",					"Deutsch");
 define("THEME_ITALIA",					"Italiano");
-define("THEME_PORTUGUESE",				"Português");
-define("THEME_ROMANIAN",				"Româneste");
+define("THEME_PORTUGUESE",				"PortuguÃªs");
+define("THEME_ROMANIAN",				"RomÃ¢neste");
 define("THEME_RUSSE",					"Russian");
 define("THEME_JAPAN",					"Japanese");
 define("THEME_CHINESE",					"Chinese");

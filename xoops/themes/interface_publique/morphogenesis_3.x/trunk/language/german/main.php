@@ -1,11 +1,11 @@
 <?php
 // generality
-define("THEME_NAME",					"Mor·Pho·GEN·e·sis 3.1.2");
+define("THEME_NAME",					"MorÂ·PhoÂ·GENÂ·eÂ·sis 3.1.3");
 define("THEME_DESC",					"birth of evolution");
 define("THEME_DESIGNER",				"Design by : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
-define("THEME_UPTOP",					"Zurück nach Oben");
-define("THEME_VALIDCSS",				"Diese Theme ist W3C Validated für CSS 1 und 2");
-define("THEME_VALIDXHTML",				"Diese Theme ist W3C Validated für XHTML 1.01");
+define("THEME_UPTOP",					"ZurÃ¼ck nach Oben");
+define("THEME_VALIDCSS",				"Diese Theme ist W3C Validated fÃ¼r CSS 1 und 2");
+define("THEME_VALIDXHTML",				"Diese Theme ist W3C Validated fÃ¼r XHTML 1.01");
 define("THEME_LICENSE",					"See Creative Commons Licence");
 
 // xo_userbar.html
@@ -33,12 +33,12 @@ define("THEME_KEYWORDS",				"Suchwort eingeben");
 
 // xo_language.html
 define("THEME_ENGLISH",					"English");
-define("THEME_FRENCH",					"Français");
-define("THEME_SPAIN",					"Español");
+define("THEME_FRENCH",					"FranÃ§ais");
+define("THEME_SPAIN",					"EspaÃ±ol");
 define("THEME_DEUTCH",					"Deutsch");
 define("THEME_ITALIA",					"Italiano");
-define("THEME_PORTUGUESE",				"Português");
-define("THEME_ROMANIAN",				"Româneste");
+define("THEME_PORTUGUESE",				"PortuguÃªs");
+define("THEME_ROMANIAN",				"RomÃ¢neste");
 define("THEME_RUSSE",					"Russian");
 define("THEME_JAPAN",					"Japanese");
 define("THEME_CHINESE",					"Chinese");
@@ -60,7 +60,7 @@ define("THEME_RSS",						"RSS Feeds");
 
 define("THEME_NAVTITLE",				"Navigation");
 define("THEME_HOME",					"Startseite");
-define("THEME_HOME_DESC",				"Zurück zur Startseite");
+define("THEME_HOME_DESC",				"ZurÃ¼ck zur Startseite");
 
 define("THEME_MODULE1",					"News");
 define("THEME_MODULE1_DESC",			"News ansehen");
@@ -123,7 +123,7 @@ define("THEME_ADMIN_IMAGES",			"Bilder");
 define("THEME_ADMIN_IMAGES_DESC",		"Gehe zum Bildmanager");
 
 // xo_accessibilitybar.html
-define("THEME_ACCESS_PLUS",				"Schriftart größer !");
+define("THEME_ACCESS_PLUS",				"Schriftart grÃ¶ÃŸer !");
 define("THEME_ACCESS_MINUS",			"Schriftart kleiner !");
 define("THEME_ACCESS_RESET",			"Font size Reset !");
 

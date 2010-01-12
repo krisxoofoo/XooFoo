@@ -1,6 +1,6 @@
 <?php
 // generality
-define("THEME_NAME",					"Css100 MorPho 1.0");
+define("THEME_NAME",					"Css100 MorPho 1.0.1");
 define("THEME_DESC",					"nasterea evolutiei");
 define("THEME_DESIGNER",				"Design de : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Comunitatea Francofona XOOPS'>Comunitatea Francofona XOOPS</a>");
 define("THEME_UPTOP",					"Inapoi Sus");
@@ -38,7 +38,7 @@ define("THEME_SPAIN",					"Spaniola");
 define("THEME_DEUTCH",					"Germana");
 define("THEME_ITALIA",					"Italiana");
 define("THEME_PORTUGUESE",				"Portugheza");
-define("THEME_ROMANIAN",				"Rom‚neste");
+define("THEME_ROMANIAN",				"Rom√¢neste");
 define("THEME_RUSSE",					"Rusa");
 define("THEME_JAPAN",					"Japoneza");
 define("THEME_CHINESE",					"Chineza");

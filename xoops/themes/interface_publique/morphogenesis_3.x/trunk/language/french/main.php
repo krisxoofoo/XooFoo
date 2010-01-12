@@ -1,6 +1,6 @@
 <?php
 // global defines
-define("THEME_NAME",					"Mor*Pho*GEN*e*sis 3.1.2");
+define("THEME_NAME",					"Mor*Pho*GEN*e*sis 3.1.3");
 define("THEME_DESC",					"birth of evolution");
 define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communauté Francophone du Projet XOOPS'>Communauté Francophone XOOPS</a>");
 define("THEME_UPTOP",					"Haut de Page");

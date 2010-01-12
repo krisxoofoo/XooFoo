@@ -3,7 +3,7 @@
 **/
 
 /* Thanks to Snow77, Skalpa and Leostotch for the initial work, and Dugris for help  */
-/* Theme Mor.pho.GEN.e.sis version 3.0 by kris (http://www.xoofoo.org and http://www.frxoops.org) */
+/* Theme Mor.pho.GEN.e.sis version 3.x by kris (http://www.xoofoo.org and http://www.frxoops.org) */
 
 /**** Version française ****/
 Morphogenesis est un gabarit pour réaliser vos thèmes pour XOOPS
@@ -19,7 +19,11 @@ NOTE 2 : Pour profiter de la possibilité d'ajout d'un encart de contenu sous le
 - sinon '/nomdudossier/index.php'
 - Si vous avez des difficultés à trouver le chemin, insérer <{$smarty.server.PHP_SELF}> en première ligne de ce fichier et les informations s'afficheront, puis retirer la ligne et les commentaires pour des questions de sécurité
 - vous pouvez désactiver ou activer les différents fichiers (en include) ou zone du thème (colonnes droite et gauche, blocs hauts et bas) en modifiant les valeurs dans le fichier xo_thm_parameters.html
-
+NOTE 3 : vous avez des 4 nouvelles balises smarty que vous pouvez utiliser avec ce thème
+<{$canvas_template}> affichera -->  themes/nomdutheme/modules/nomdumodule/xo_canvas.html
+<{$xoops_themeurl}> affichera -->  urldusite/themes/nomdutheme
+<{$xoops_module_theme}> affichera -->  nomdutheme/modules/nomdumodule
+<{$xoops_module_themeurl}> affichera -->  urldusite/themes/nomdutheme/modules/nomdumodule/
 
 /**** English version ****/
 Morphogenesis is a template to carry out your theme for XOOPS
@@ -35,6 +39,12 @@ NOTE 2 : To enjoy the possibility of adding an insert content in the header in h
 - If '/foldername/index.php'
 - If you have difficulty finding the path, add <{$smarty.server.PHP_SELF}> first line of this file and the information displayed, then remove the line and comments on issues of security
 - You can disable or enable different files (include) or zone area (left and right columns, top and bottom block) by changing the values in the file xo_thm_parameters.html
+NOTE 3 : you have 4 news smarty balises for use in this theme
+<{$canvas_template}>  for -->  themes/themename/modules/modulename/xo_canvas.html
+<{$xoops_themeurl}>  for -->  urldusite/themes/themename
+<{$xoops_module_theme}> for -->  themename/modules/namemodule
+<{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/
+
 
 /**** Versão de Portugues ****/
 

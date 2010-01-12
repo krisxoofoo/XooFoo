@@ -1,11 +1,11 @@
 <?php
 // generality
-define("THEME_NAME",					"Css100 MorPho 1.0");
-define("THEME_DESC", "Nascimento da EvoluÁ„o"); // ok
-define("THEME_DESIGNER","Design by : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratorio'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Comunidade Francesa do Projeto XOOPS'>Comunidade XOOPS FranÁa</a>");
-define("THEME_UPTOP", "Voltar ao inÌcio"); //ok
-define("THEME_VALIDCSS","Este tema È v·lidado pelo W3C em CSS 1 e 2"); //ok
-define("THEME_VALIDXHTML","Este tema È v·lidado pelo W3C em XHTML 1.01"); //ok
+define("THEME_NAME",					"Css100 MorPho 1.0.1");
+define("THEME_DESC", "Nascimento da Evolu√ß√£o"); // ok
+define("THEME_DESIGNER","Design by : <a rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratorio'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Comunidade Francesa do Projeto XOOPS'>Comunidade XOOPS Fran√ßa</a>");
+define("THEME_UPTOP", "Voltar ao in√≠cio"); //ok
+define("THEME_VALIDCSS","Este tema √© v√°lidado pelo W3C em CSS 1 e 2"); //ok
+define("THEME_VALIDXHTML","Este tema √© v√°lidado pelo W3C em XHTML 1.01"); //ok
 define("THEME_LICENSE",					"See Creative Commons Licence");
 
 // xo_userbar.html
@@ -19,35 +19,35 @@ define("THEME_CONNECT",					"Connexion");
 
 define("THEME_WELLCOME","Bem-vindo"); //ok
 define("THEME_PROFILE", "Ver Perfil"); //ok
-define("THEME_NOTIFICATION","Ver notificaÁıes"); //ok
+define("THEME_NOTIFICATION","Ver notifica√ß√µes"); //ok
 define("THEME_MESSAGE", "Ver mensagens"); //ok
-define("THEME_YOUHAVE", "VocÍ tÍm "); //ok
-define("THEME_NOTREAD", "mensagen(s) n„o lidas"); //ok
+define("THEME_YOUHAVE", "Voc√™ t√™m "); //ok
+define("THEME_NOTREAD", "mensagen(s) n√£o lidas"); //ok
 define("THEME_MYACCOUNT","Minha Conta"); //ok
 define("THEME_PRIVATE",					"Private Access");
 
 // xo_searchbar.html
 define("THEME_SEARCH", "Pesquisar"); //ok
 define("THEME_DESC_SEARCH","Pesquisar neste site"); //ok
-define("THEME_KEYWORDS","Pır as palavras-chaves"); // add by kris
+define("THEME_KEYWORDS","P√µr as palavras-chaves"); // add by kris
 
 // xo_language.html
-define("THEME_ENGLISH", "InglÍs"); //ok
-define("THEME_FRENCH", "FrancÍs"); //ok
+define("THEME_ENGLISH", "Ingl√™s"); //ok
+define("THEME_FRENCH", "Franc√™s"); //ok
 define("THEME_SPAIN", "Espanhol"); //ok
-define("THEME_DEUTCH", "Alem„o"); //ok
+define("THEME_DEUTCH", "Alem√£o"); //ok
 define("THEME_ITALIA", "Italiano"); //ok
-define("THEME_PORTUGUESE","PortuguÍs"); //ok
-define("THEME_ROMANIAN", "Rom‚neste"); // ok kris
+define("THEME_PORTUGUESE","Portugu√™s"); //ok
+define("THEME_ROMANIAN", "Rom√¢neste"); // ok kris
 define("THEME_RUSSE", "Russo"); //ok
-define("THEME_JAPAN", "JaponÍs"); //ok
-define("THEME_CHINESE", "ChinÍs"); //ok
+define("THEME_JAPAN", "Japon√™s"); //ok
+define("THEME_CHINESE", "Chin√™s"); //ok
 define("THEME_KOREAN",					"Korean");
-define("THEME_HOLLAND", "HolandÍs"); //ok
+define("THEME_HOLLAND", "Holand√™s"); //ok
 define("THEME_FARSI", "Farsi"); //ok
-define("THEME_ARAB", "¡rabe"); //ok
+define("THEME_ARAB", "√Årabe"); //ok
 define("THEME_HEBRAIC", "Hebreu"); //ok
-define("THEME_BREITZ", "Bret„o"); // Acho que È isso, olhem
+define("THEME_BREITZ", "Bret√£o"); // Acho que √© isso, olhem
 define("THEME_BASQUE", "Basco"); //ok
 
 // xo_globalnav.html
@@ -58,7 +58,7 @@ define("THEME_CONTACT_DESC","Fale conosco"); //ok
 define("THEME_SITEMAP", "Mapa do site"); //ok
 define("THEME_RSS","RSS Feeds"); //ok
 
-define("THEME_NAVTITLE","NavegaÁ„o"); //ok
+define("THEME_NAVTITLE","Navega√ß√£o"); //ok
 define("THEME_HOME", "Home"); //ok
 define("THEME_HOME_DESC","Voltar para home"); //ok
 
@@ -71,8 +71,8 @@ define("THEME_MODULE1_SUB3","Categoria 3"); //*** the SUB are for sub-menu in gl
 define("THEME_MODULE1_SUB4","Categoria 4"); //*** the SUB are for sub-menu in globalnav.html 'dynamic'
 define("THEME_MODULE1_SUB5","Categoria 5"); //*** the SUB are for sub-menu in globalnav.html 'dynamic'
 
-define("THEME_MODULE2", "FÛrum");
-define("THEME_MODULE2_DESC","Visite nossos FÛrums"); // ok
+define("THEME_MODULE2", "F√≥rum");
+define("THEME_MODULE2_DESC","Visite nossos F√≥rums"); // ok
 
 define("THEME_MODULE3", "Galeria"); //ok
 define("THEME_MODULE3_DESC","Visite nossa galeria de fotos"); //ok
@@ -99,28 +99,28 @@ define("THEME_MODULE6", "Downloads"); // ok
 define("THEME_MODULE6_DESC", "Download de nossos arquivos"); //ok
 
 define("THEME_MODULE7", "XoopsInfo"); //ok
-define("THEME_MODULE7_DESC", "Use mÛdulo Xoopsinfo"); //ok
+define("THEME_MODULE7_DESC", "Use m√≥dulo Xoopsinfo"); //ok
 
 define("THEME_MODULE8", "Protector"); //ok
-define("THEME_MODULE8_DESC", "Use mÛdulo Protector"); // ok
+define("THEME_MODULE8_DESC", "Use m√≥dulo Protector"); // ok
 
 // module name in xo_globalnav.html  anomymous mode
-define("THEME_MODULE1a", "CrÈditos"); //ok
-define("THEME_MODULE1a_DESC", "CrÈditos do Website"); //vejam esse tambÈm
-define("THEME_MODULE2a", "LocalizaÁ„o"); //ok
+define("THEME_MODULE1a", "Cr√©ditos"); //ok
+define("THEME_MODULE1a_DESC", "Cr√©ditos do Website"); //vejam esse tamb√©m
+define("THEME_MODULE2a", "Localiza√ß√£o"); //ok
 define("THEME_MODULE2a_DESC", "Localize-se no mapa"); //ok
 
 // menu Admin in xo_globalnav.html 'Dynamic'
-define("THEME_ADMIN", "AdministraÁ„o"); //ok gibaphp
+define("THEME_ADMIN", "Administra√ß√£o"); //ok gibaphp
 define("THEME_ADMIN_DESC", "Ir para o Admin"); //ok gibaphp
-define("THEME_ADMIN_PREFERENCES","PreferÍncias"); //ok gibaphp
-define("THEME_ADMIN_PREFERENCES_DESC","V· para as PreferÍncias"); //ok gibaphp
-define("THEME_ADMIN_GENERAL","ConfiguraÁ„o Geral"); //ok gibaphp
-define("THEME_ADMIN_GENERAL_DESC","V· para as ConfiguraÁıes"); //ok gibaphp
-define("THEME_ADMIN_MODULES", "MÛdulos"); //ok gibaphp
-define("THEME_ADMIN_MODULES_DESC","V· para o Admin de MÛdulos"); //ok gibaphp
+define("THEME_ADMIN_PREFERENCES","Prefer√™ncias"); //ok gibaphp
+define("THEME_ADMIN_PREFERENCES_DESC","V√° para as Prefer√™ncias"); //ok gibaphp
+define("THEME_ADMIN_GENERAL","Configura√ß√£o Geral"); //ok gibaphp
+define("THEME_ADMIN_GENERAL_DESC","V√° para as Configura√ß√µes"); //ok gibaphp
+define("THEME_ADMIN_MODULES", "M√≥dulos"); //ok gibaphp
+define("THEME_ADMIN_MODULES_DESC","V√° para o Admin de M√≥dulos"); //ok gibaphp
 define("THEME_ADMIN_IMAGES", "Imagens"); //ok gibaphp
-define("THEME_ADMIN_IMAGES_DESC","V· para o Admin de Imagens"); //ok gibaphp
+define("THEME_ADMIN_IMAGES_DESC","V√° para o Admin de Imagens"); //ok gibaphp
 
 // accessibilitybar.html
 define("THEME_ACCESS_PLUS","Aumentar tamanho da fonte !"); //ok

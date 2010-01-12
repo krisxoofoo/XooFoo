@@ -1,6 +1,6 @@
 <?php
 // global defines
-define("THEME_NAME",					"Css100 MorPho 1.0");
+define("THEME_NAME",					"Css100 MorPho 1.0.1");
 define("THEME_DESC",					"birth of evolution");
 define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communauté Francophone du Projet XOOPS'>Communauté Francophone XOOPS</a>");
 define("THEME_UPTOP",					"Haut de Page");

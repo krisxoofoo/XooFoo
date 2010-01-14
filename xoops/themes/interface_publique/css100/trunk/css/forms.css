@@ -51,9 +51,6 @@ textarea {
 #xo-page fieldset a:hover {	text-decoration: underline;}
 #xo-page legend {}
 #xo-page label, #xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {
-  /*float: 						left;*/
-  /*width: 						100%;*/
- /*max-width: 					180px;*/
   text-align: 					right !important;
   font-weight: 					bolder;
 }

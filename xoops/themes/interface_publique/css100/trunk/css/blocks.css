@@ -73,7 +73,6 @@
 #usermenu a, #mainmenu a {	display: block;}
 .xo-canvas-column .menuSub { padding-left: 1em;}
 
-
 /*===== general blocks =======*/
 #xo-blockviewall img {margin:0; padding:0; border:0;}
 #xo-blockviewall {
@@ -119,7 +118,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	padding: 					3px;
 	border: 					1px solid #ddd;
 }
-#xo-canvas-leftcolumn img:hover {border: 1px solid #aaa;}*/
+#xo-canvas-leftcolumn img:hover {border: 1px solid #aaa;}
 #xo-canvas-leftcolumn .xo-blocktitle {
 	margin: 						0 0 5px 0;
 	background-color: 		#ddd;

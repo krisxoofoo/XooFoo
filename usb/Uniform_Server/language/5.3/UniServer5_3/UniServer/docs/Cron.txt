@@ -1,0 +1,173 @@
+###############################################################################
+# File name: Cron.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 8-9-2009
+# V 1.1 6-10-2009
+###############################################################################
+
+ ----
+ Cron
+ ----
+
+ Cron originated from a Unix environment it is a job scheduler allowing scripts
+ to be run automatically at a certain time or date. Cron (chronograph) has
+ become a more general term referring to a periodic tick.  
+
+ -------------
+ Portable cron
+ -------------
+
+ For a permanent installation of UniServer running as a service you can set-up
+ Windows to schedule a task similar to Unix Cron check out
+ http://support.microsoft.com/kb/308569 for details? This is not practical when
+ running UniServer from a USB memory stick. UniServer 5-Nano resolves this
+ with a small script scheduler referred to as portable cron.
+
+ It’s fully integrated into UniServers’s control architecture allowing it to be
+ run from either batch files or UniTray. To run a script or scripts a small
+ amount of configuration is required as explained below.
+
+ --------------------------- 
+ Portable Cron Configuration
+ ---------------------------
+
+ Each script that requires running is added to the cron configuration file cron.ini
+ located in folder UniServer\unicon\main
+
+ Configuration file includes four examples two for server scripts (Drupal and 
+ Moodle) and two for inbuilt CLI script (DtDNS updater and db_backup).
+
+ Block Format: Each block has the following format
+
+  [Unique Block Name]
+  start  = 
+  period = 
+  path   = 
+  ref    = 
+
+ Explanation:
+ [moodle] - Header a unique name enclosed in square brackets example moodle.
+ start    - Time you initially want the script to start (seconds are ignored)
+ period   - How often the script is to be run after the initial start
+ path     - Full path and name of the script to be run
+ ref      - A tracker set by Cron script effectively time to next run.
+            Deleting this value allows a new start time to be set. 
+
+ A) Server Script Example
+
+ [drupal]
+ start  = 2009-09-21 2:56:52
+ period = hourly
+ path   = http://localhost/drupal/cron.php
+ ref = 
+
+ Note 1: If you have installed the application to different folder
+         use the appropriate folder names.
+
+ Note 2: If you have moved the servers remember to add a port number to the url.
+         For example moving the servers once, Apache port becomes 81 and the
+         above line need to change as follows:
+
+         path   = http://localhost:81/drupal/cron.php     
+
+ B) CLI Script Example
+
+ [dtdns]
+ start  = 2009-09-21 2:56:52
+ period = 600                 ; 10 Mins as required by DtDNS
+ path   = ..\..\plugins\dtdns_updater\dtdns_updater.php
+ ref = 
+
+ Note 1: For portability always use relative paths as shown (..\..\)
+         Path is relative to cron.ini (Note ..\ moves up one folder level)
+
+ -------------
+ Periodic tick
+ -------------
+
+ Starting Cron immediately runs all scripts defined in the configuration file.
+ A new start reference (ref =) is saved to the configuration file. 
+ After this, the new reference start times will be periodically checked every
+ minuete.
+
+ If the "ref" time is lessthan the current time it signals that the script is
+ to be run.   
+
+ ------------
+ Running Cron
+ ------------
+
+ Start the servers and run cron from either the batch files or UniTray
+
+  UniTray:
+    Start: Left click tray icon > Advanced > click Run Portable Cron
+    Stop:  Left click tray icon > Advanced > click Stop Portable Cron
+
+  Batch files:
+    Navigate to folder  UniServer\alternative_control
+    Start: Double click Start_Cron.bat
+    Stop: Double click Stop_Cron.bat
+
+  Note: There can be a delay of up to one second before cron stops.
+
+ -------
+ Logging
+ -------
+
+  Logging is enabled by default. Log file: UniServer\unicon\main\cron.log
+
+  Disable enable logging edit file: UniServer\unicon\main\run_cron.php
+  Change the following line as required:
+
+  $logging   = true;  // true = Enable logging false = disable logging
+
+ -------------
+ General Notes
+ -------------
+
+ A) Control architecture, for independent control Cron has been binary coded
+    with a value of 16.
+
+ Example of use:
+  If you wish to start and stop Cron when starting and stopping both servers
+  from UniTray edit file UniServer\unicon\tray_menu\UniTray1.ini
+
+  Change these two lines from:
+
+  Type: item; Caption: "Start UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\start_servers.php 7";
+  ShowCmd: hidden; Glyph: 9
+
+  Type: item; Caption: "Stop  UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\stop_servers.php 7";
+  ShowCmd: hidden; Glyph: 11
+
+  To:
+  Type: item; Caption: "Start UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\start_servers.php 23";
+  ShowCmd: hidden; Glyph: 9
+
+  Type: item; Caption: "Stop  UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\stop_servers.php 23";
+  ShowCmd: hidden; Glyph: 11
+
+     Note: Binary 1+2+4+16 = 23  
+       1  - Run Apache server 
+       2  - Run MySQL  server
+       4  - Start Index page
+      16  - Run cron
+
+ B) Portable Cron and Service
+    Portable Cron may be run when servers are installed as a service. However
+    will not restart after restarting PC, you need to manually run Portable
+    Cron again.
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+
+

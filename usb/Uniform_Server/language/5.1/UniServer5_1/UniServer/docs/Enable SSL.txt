@@ -1,0 +1,108 @@
+################################################################################
+# File name: Enable SSL.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 14-6-2009
+################################################################################
+
+The server has been pre-configured to run SSL, place any pages/site
+you wish to be encrypted in the root folder “ssl”.
+
+Uniform Server does not include a test server certificate/key pair hence a default
+installation has SSL disabled. The reason is one of security a certificate/key pair
+must be unique to that server after creating a new server certificate/key pair
+SSL is automatically enabled in Apache's configuration file.
+
+1) Creating a new server certificate and key.
+
+   To create a new server certificate and key use one of the following methods:
+
+   a) Apanel: 
+
+   Left menu, scroll down to “Plugin Manager” and click link “Server Key & Cert Gen”
+   A new page opens “Server Certificate and Key Generation” click link “Generate”.
+
+   b) Apanel:
+
+   Left menu, click link “Server Security” a new page opens “Security Center”.
+
+   Scroll down to section “Server Certificate and Key (SSL)” to the right the
+   link will display “Unsecure” click this link, it takes you to page “Server
+   Certificate and Key Generation”
+  
+  c) Manually
+
+   Navigate to folder “unicon\key_cert_gen” double click on “Run.bat”
+
+  d) UniTray
+  
+  Left or right mouse click on UniTray Icon, mouse-over Advanced and select
+  Server Certificate and key Generator. 
+
+  Note 1 - common to a-d
+  The certificate and key generation script will prompt for three pieces of 
+  information. If you are running a local test server just press enter to
+  accept the defaults.
+
+  If you have a real domain name for example www.fred.com enter that at the CN
+  (common name prompt). The remaining two prompts OU (organisation unit) and O
+  (organisation) are not strictly required hence enter something that meets
+  your requirements
+
+General notes:
+
+Note 1: Once the server certificate and key have been generated re-start the
+        servers for the new configuration to be picked up by Apache.
+
+Note 2: View secure, pages by typing https://localhost/ into your browser.
+          Or if you have a real domain name
+        https://www.mydomain.com/
+
+Note 3: You can change the defaults for CN, OU and O edit file:
+        unicon\key_cert_gen\ssl_gen.php
+
+        Locate this section:
+
+       // Get user input
+       //********* Edit defaults *****************************************************
+
+       $str1 = &prompt_user("  CN Common Name. Your full domain name ", "localhost");
+       $str2 = &prompt_user("  OU Organization Unit (eg, section)  ", "Secure demo");
+       $str3 = &prompt_user("  O  Organization Name (eg, company)    ", "UniServer");
+       print "\n ";
+
+       //********* Do not Edit below this line ***************************************
+
+        If your site is accessed by typing this into a browser mydomain.net and your
+        company is Fred and has asection Software the lines are as follows:
+
+       // Get user input
+       //********* Edit defaults *****************************************************
+
+       $str1 = &prompt_user("  CN Common Name. Your full domain name ", "mydomain.net");
+       $str2 = &prompt_user("  OU Organization Unit (eg, section)  ", "Fred");
+       $str3 = &prompt_user("  O  Organization Name (eg, company)    ", "Software");
+       print "\n ";
+
+       //********* Do not Edit below this line ***************************************
+
+        Create a new certificate and restart the servers.
+
+Note 4: It is strongly recommend obtaining a signed certificate by a trusted CA check out
+        Uniform Server’s Wiki for details.
+
+        http://wiki.uniformserver.com/index.php/SSL_Part_2:_CAcert_Signing_Process
+
+        You will require the certificate signing request this is located in folder
+
+        unicon\key_cert_gen  file name server.csr  
+
+Note 5: If you need to create a new key and certificate repeat the above.
+
+
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

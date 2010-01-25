@@ -1,0 +1,18 @@
+---------------------
+Traduction française Uniform Server 3.6
+
+Révision 0.2 - 07/12/2008
+
+Kris - http://www.xoofoo.org
+---------------------
+
+Copiez ces fichiers à la racine du répertoire de votre serveur Uniform
+
+
+-------------------------------------------------------
+Copyright 2002-2004 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product. But they 
+can not be responsible for any type of damages or troubles 
+caused by using this or another software.

@@ -1,0 +1,187 @@
+###############################################################################
+# File name: SERVER STRUCTURE.txt
+# Created By: The Uniform Server Development Team
+# 4-10-2009
+###############################################################################
+
+--------------------
+The Server Structure
+--------------------
+
+UniServer\
+  help.bat   - Display Quick help file
+  Start.exe  - Start UniTray
+
+UniServer\alternative_control
+  Contains batch files to start/stop servers, Cron and UniTray 
+
+UniServer\cgi-bin
+  Script root (/cgi-bin/).
+	By default:
+	cgi-script .bat .exe .pl .cgi
+
+UniServer\db_backup         - Created when script run
+  Database backup log
+UniServer\db_backup\archive - Created when script run
+  Database backup files
+
+UniServer\docs
+  Uniform Server Documentation (/docs/)
+
+UniServer\docs\src
+  Uniform Server Source Files
+
+UniServer\home
+  Users home page.
+
+UniServer\home\access
+UniServer\home\access\www
+  A test page directly accessible from Internet 
+
+UniServer\home\admin
+  Administration page.
+UniServer\home\admin\www
+  Server administration pages root (/apanel/);
+
+UniServer\home\admin\www\phpMyAdmin
+  MySQL administrator (/apanel/phpMyAdmin/)
+UniServer\home\admin\www\plugins
+  Admin Plugins directory.
+UniServer\home\admin\www\images
+  Admin Panel Images
+
+UniServer\htpasspwd
+  Uniform Server HTPASSWD dirctory
+        By default:
+        Contains the dir for the htpasswds of admin and www
+
+UniServer\msmtp
+  SMTP mail client
+       Contains executable and configuration file
+
+
+UniServer\plugins
+  Server Plugins directory.
+
+UniServer\plugins\db_backup
+  Database backup scripts
+       Contains 7z executable and configuration file       
+
+UniServer\plugins\dtdns_updater
+   DtDNS automatic account updater
+        Contains script and configuration file
+
+
+UniServer\ssl
+  Secure Document root (/).
+	By default:
+	server-parsed .shtml .shtm .sht
+	DirectoryIndex index.html index.shtml index.html.var 
+                       index.htm index.php3 index.php index.pl 
+                       index.cgi
+
+UniServer\ssl\css
+  Common ccs files
+
+UniServer\ssl\images
+  Images directory
+
+UniServer\tmp
+  Temporally folder.
+
+
+UniServer\unicon
+  Server control folder
+UniServer\unicon\docs
+  Redirection script display list of doc files in browser
+UniServer\unicon\key_cert_gen   
+  Server SSL certificate and key generater scripts (ssl_098k) 
+UniServer\unicon\key_cert_gen\gen   
+  SSL scripts and program.
+UniServer\unicon\main
+  Server control scriipts     
+UniServer\unicon\main\includes
+  Server control functions and configuration
+UniServer\unicon\move_servers
+  Moves servers to diffrent ports and renames executables
+  allows multi-server on the same PC
+UniServer\unicon\perl
+  Perl related folder
+UniServer\unicon\perl\shebang_update
+  scripts to update Perl scripts shebang and new scripts
+UniServer\unicon\perl\win2unix_shebang
+  conversion script, converts windows to unix format  
+UniServer\unicon\php_dev_production
+  contains script to switch PHP ini file between
+  production and development
+UniServer\unicon\program
+  server support programs for control
+UniServer\unicon\restore_mysql_password
+  scripts to restore MySQL password
+UniServer\unicon\tray_menu
+  UniTray and control scripts
+UniServer\usr
+  User Program directory
+
+UniServer\usr\bin          - Installed by Perl plugin
+  PERL folder.
+UniServer\usr\lib
+  PERL libraries. - Installed by Perl plugin
+
+UniServer\usr\local
+  Program folder.
+
+UniServer\usr\local\apache2
+  Apache2 folder.
+UniServer\usr\local\apache2\bin
+  Apache2 binaries.
+  A copy of php.ini should be placed here for php module!
+UniServer\usr\local\apache2\conf
+  Apache2 configuration files. (see httpd.conf)
+UniServer\usr\local\apache2\conf\ssl.crt
+  Server SSL certificate
+UniServer\usr\local\apache2\conf\ssl.key
+  Server SSL Key
+UniServer\usr\local\apache2\icons
+  Apache2 icons.
+UniServer\usr\local\apache2\logs
+  Apache2 logs.
+UniServer\usr\local\apache2\modules
+
+UniServer\usr\local\mysql
+  MySQL folder.
+UniServer\usr\local\mysql\bin
+  MySQL binaries.
+UniServer\usr\local\mysql\data
+  MySQL databases.
+UniServer\usr\local\mysql\share
+  MySQL share.
+
+UniServer\usr\local\php
+  PHP folder. (see php.ini)
+UniServer\usr\local\php\extensions
+  PHP Extensions
+
+UniServer\www
+  Document root (/).
+	By default:
+	ReadmeName README.html
+	HeaderName HEADER.html
+	server-parsed .shtml .shtm .sht
+	DirectoryIndex index.html index.shtml index.html.var 
+                       index.htm index.php3 index.php index.pl 
+                       index.cgi
+UniServer\www\images
+  Images directory
+
+UniServer\www\css
+  Common ccs files
+         
+
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

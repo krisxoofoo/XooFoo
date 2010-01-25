@@ -1,0 +1,134 @@
+###############################################################################
+# File name: db_backup.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 27-9-2009
+###############################################################################
+
+ Uniform Servers database backup allows for either manual or periodic backups.
+ Each database is extracted from the MySQL server in SQL format and compressed
+ using 7z these are then archived into a single file (7z).
+
+ Archive files consist of a base name (changeable) with a timestamp appended.
+ These are saved to folder UniServer\db_backup\archive (automatically created).
+
+ Archive files can become large hence eat disk space. To minimise this, the
+ archive folder implements a FIFO (first in first out) total number of files is
+ user specified. On reaching this value the eldest file is deleted to make way
+ for a new archive file.
+ The above applies to both manual and automatic updates.
+
+
+ -----------------------------
+ Database Backup Configuration
+ -----------------------------
+
+  Edit the following file:
+
+  UniServer\plugins\db_backup\db_backup.ini
+
+  Default settings as shown below:
+
+  Fifo = 6                         ; How many archive files to save. 
+  Archive_name = dbs_              ; Archive name a timesramp will be added
+  Excludes[] = information_schema  ; Do not remove 
+
+  Explanation:
+
+  Fifo = 6 This defines total number of archives to save. When limit is reached
+           eldest archive is deleted to make way for a new archive. 
+           Fifo stands for first in first out (deleted)  
+ 
+ Archive_name = dbs_  This is part of an archive’s name. A timestamp is added 
+                      for example: dbs_2009-09-26-18-56-32.7z
+
+ Excludes[] = db_name If you wish to exclude databases from being backed up
+                      add each one to the list with format shown. The fist in
+                      this list is information_schema it is a built-in virtual
+                      database which cannot be archived hence excluded                       
+                      Example: To exludes databases fred123 and books.
+                               List as follows:                        
+
+                      Excludes[] = information_schema  ; Do not remove
+                      Excludes[] = fred123
+                      Excludes[] = books 
+
+ Note: Fifo size is a compromise between database size, disk space and how
+       often backups are required. Six was only a test value hence it needs
+       changing to suit your particular requirements.
+
+ ------------------------------
+ Running Database Backup Script
+ ------------------------------
+
+ A) Manual Update
+
+ You can run the following batch file to manually force a backup,
+ Batch file: UniServer\plugins\db_backup\Run_db_backup.bat 
+
+ B) Cron - Automatic backups
+
+ Cron provides a periodic tick to automtically run scripts. The database backup
+ script has been pre-configured in Cron however it is disabled by default.
+
+ To enable db_backup edit file UniServer\unicon\main\cron.ini
+
+ Locate the db_backup block:
+
+  ;[db_backup]
+  ;start  = 2009-09-21 2:56:52
+  ;period = hourly
+  ;path   = ..\..\plugins\db_backup\db_backup.php
+  ;ref = 
+
+ Uncomment to enable shown below:
+
+  [db_backup]
+  start  = 2009-09-21 2:56:52
+  period = hourly
+  path   = ..\..\plugins\db_backup\db_backup.php
+  ref = 
+
+ Optionally change the start time. If you do not change this the current time
+ will be used. When Cron is initially run db_backup will immediately run
+ thereafter runs every hour. You can change the period to suit your specific
+ requirements. 
+
+ Note:  You need to start Cron either manually or automatically
+        refer to Cron.txt page for details.
+
+ -------
+ Logging
+ -------
+
+  Logging is enabled by default. Log file: UniServer\db_backup\db_backup.log
+
+  Disable enable logging edit file: UniServer\plugins\db_backup\db_backup.php
+  Change the following line as required:
+
+  $logging   = true;  // true = Enable logging false = disable logging
+
+-----------------------------
+Extracting Files from Archive
+-----------------------------
+
+ Background 7z was chosen because of its impressive compression and provides a
+ 7-Zip Standalone Console application 7za.exe. Of real importance it is fully
+ portable.
+
+ To extract archive files you require 7-Zip Portable this can be found on
+ PortableApps website  http://portableapps.com/
+
+ Download 7-Zip Portable from the following page:
+ (http://portableapps.com/apps/utilities/7-zip_portable)
+
+ The advantage of using 7-Zip Portable it allows you to view archive
+ content and to extract a single database if you wish.
+
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

@@ -1,0 +1,187 @@
+###############################################################################
+# File name: DtDNS.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 8-9-2009
+# V 1.1 6-10-2009
+###############################################################################
+
+ Majority of domestic Internet connections are via a dynamic IP address, one
+ that changes every time you connect to the Internet. This means you cannot run
+ a web server unless you purchase a, static IP address from your ISP
+ (Internet service provider). Even with a static IP you require and entry in a
+ DNS server that converts your domain name into this IP address allowing other
+ users to access your server.
+
+ An alternative is to use a free service such as DtDNS they provide accounts
+ that allow you to obtain a domain name and tracking software to automatically
+ update your IP address as it changes. A big advantage of their free service
+ they automatically enable Wild cards by default.
+
+ Uniform Server supports the DtDNS service by integrating a, simple PHP scrip
+ to automatically update hostname IP address at DtDNS. Script is configurable
+ allowing you to update all five free hostnames. The script can optionally be
+ run by cron making the whole task transparent. 
+
+ --------------------
+ Create DtDNS Account
+ --------------------
+
+  Creating an account at DtDNS.
+   * Go to DtDNS home page http://www.dtdns.com/
+   * To the right of log in click Create an Account 
+
+   There are two pages to fill in, enter the following details:
+   Page 1:	 
+    1) Desired Username    - This name is used for logging into your account
+    2) Your Name           - Your real name (Internal use)
+    3) Desired Password    - A password for logging into your account
+    4) Confirm Password    - As above
+    5) E-mail Address      - A real active e-mail is required,
+                             activation code sent to this e-mail address
+    6) Confirm E-mail      - As above
+    7) Optional            - Skip Optional Information section or fill it in.
+    8) Two CAPCHA words    - Enter the two CAPCHA words (if these are difficult
+                             to read click the new challenge button)
+   Page 2:	 
+    9) Username            - Enter your Username as entered in 1).
+   10) Enter code          - Enter code sent to your email. (Note: The email
+                             contains a link to page 2 hence you can close the
+                             page and wait for the e-mail.) 
+ ---------------
+ Create Hostname
+ ---------------
+
+ To create a new hostname at DtDNS
+  Login
+   * Go to Login page https://www.dtdns.com/index.cfm?fuseaction=account.login
+   * Enter Username: As set in step 1)
+   * Enter Password: As set in step 3)
+   * My Services page displayed
+   * Click on Hostnames this opens the Hostname Manager 
+
+  Create hostname
+   * Enter a desired Hostname
+   * From the drop down menu select a Domain
+   * Click Add Hostname
+   * Enter the two CAPCHA words (if these are difficult to read click the
+     new challenge button)
+   * Click Add Hostname button
+   * This is added to your list of hostnames
+
+  Notes 1:
+   * A DtDNS account is limited to five free hostnames.
+   * A hostname is concatenated with a domain name.
+
+   * Your full URL is created from two parts as follows for example
+     o If you chose "books" as hostname
+     o And select from the drop down menu "effers.com" 
+
+    Full URL will look like this:
+
+    http://books.effers.com 
+
+  Notes 2:
+   After creating a hostname wild cards are enabled by default.
+   This allows you to use a URL such as
+
+   http://www.books.effers.com - Note www. is the wild card part this can be
+                                 anything you like for example:
+
+   * http://www.books.effers.com
+   * http://www-internation.books.effers.com
+   * http://local.books.effers.com
+   * http://www.home.books.effers.com 
+
+ ---------------------------------
+ Auto-updater Script Configuration
+ ---------------------------------
+
+  Edit the following file:
+
+  UniServer\plugins\dtdns_updater\dtdns.ini
+
+  For each account you wish to update add a bock with the following format.
+
+  [account_1]   - A uniquete name enclosed in square brackets. 
+                  Can be any name you wish do not include spaces.    
+  hostname =    - Full host name as configured at DtDNS
+  password =    - Your DtDNS account password
+
+  The configuration file contains examples one shown below:
+
+  ;[account_1]
+  ;hostname = books.effers.com
+  ;password = fred123
+
+  Uncomment (remove ;) to enable 
+  Substitute books.effers.com with your real host and domain names,
+  replace the password fred123 with the one you set in step 1)
+
+  Uncomment blocks as required and substitute your details.
+  If you need extra bocks copy an existing one making sure you change
+  the block name to something unique.
+
+ ---------------------------
+ Running Auto-updater Script
+ ---------------------------
+
+ A) Manual Update
+
+ You can run the following batch file to manually force an update,
+ remember to leave around ten minuets before performing another manual update.
+
+ Batch file: UniServer\plugins\dtdns_updater\Run_dtdns_updater.bat 
+
+ Note: It takes around ten minutes for the DNS to propagate, additional updates
+       within this period are regarded as an abuse and you may find your IP banned.
+
+ B) Cron - Automatic update
+
+ Cron provides a periodic tick Uniform Server's default is every ten minutes.
+ DtDNS automatic updater has been pre-configured however it is disabled by default.
+
+ To enable DtDNS edit file UniServer\unicon\main\cron.ini
+
+ Locate the dtdns block:
+
+  ;[dtdns]
+  ;start  = 2009-09-21 2:56:52
+  ;period = 600                 ; 10 Mins as required by DtDNS
+  ;path   = ..\..\plugins\dtdns_updater\dtdns_updater.php
+  ;ref = 
+
+ Uncomment to enable shown below:
+
+  [dtdns]
+  start  = 2009-09-21 2:56:52
+  period = 600                 ; 10 Mins as required by DtDNS
+  path   = ..\..\plugins\dtdns_updater\dtdns_updater.php
+  ref = 
+
+ Optionally change the start time. If you do not change this the current time
+ will be used. When Cron is initially run DtDNS will immediately run thereafter
+ runs every ten minutes. Note: An update is performed only if your
+ IP address has changed. 
+
+ Note:  You need to start Cron either manually or automatically
+        refer to Cron.txt page for details.
+
+ -------
+ Logging
+ -------
+
+  Logging is enabled by default. Log file: UniServer\plugins\dtdns_updater\dtdns.log
+
+  Disable enable logging edit file: UniServer\plugins\dtdns_updater\dtdns_updater.php
+  Change the following line as required:
+
+  $logging   = true;  // true = Enable logging false = disable logging
+
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

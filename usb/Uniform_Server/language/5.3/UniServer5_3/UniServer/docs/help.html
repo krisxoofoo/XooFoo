@@ -1,0 +1,1213 @@
+
+<html>
+<head>
+<title>Uniform Server</title>
+
+<script type="text/javascript">
+// Re-position Div if scrolled. Toggle visibility
+
+function TDiv(id,mode) {
+ var el = document.getElementById(id);      // get handle
+ var el2 = document.getElementById('intro'); // get handle
+ 
+ if (mode=="1"){
+   s1 = document.body.scrollTop;          // scroll position
+   v1 = getRealTop('ref1');               // get top ref 
+   el.style.left = getRealLeft('ref1');   // move to position left
+     if(v1>s1){                           // track scroll
+      top1 = v1;                          // correct movement        
+     }
+     else{                                // scroll limit reached
+      top1 = s1+5;                        // no correction   
+     }
+   el.style.top  = top1;                  // move to position top
+   el.style.width = getRealLeft('ref2') - getRealLeft('ref1');
+   el.style.visibility = "visible";       // display div
+   el2.style.visibility = "hidden";       // hide intro div
+ }
+ else{
+   el.style.visibility = "hidden";        // hide div
+   el2.style.visibility = "visible";      // display intro div
+ }
+}
+
+function getRealLeft(el){
+  xPos = document.getElementById(el).offsetLeft;
+  tempEl = document.getElementById(el).offsetParent;
+  while (tempEl != null) {
+  xPos += tempEl.offsetLeft;
+  tempEl = tempEl.offsetParent;
+}
+return xPos;
+}
+
+function getRealTop(el){
+  yPos = document.getElementById(el).offsetTop;
+  tempEl = document.getElementById(el).offsetParent;
+  while (tempEl != null) {
+  yPos += tempEl.offsetTop;
+  tempEl = tempEl.offsetParent;
+}
+return yPos;
+}
+</script>
+
+
+<style type="text/css">
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Now I remember why I hate IE!!!! */
+
+/* display divs */
+#divL5, #divL10, #divL15, #divL20, #divL25, #divL30, #divL35, #divL40, 
+#divR5, #divR10, #divR15, #divR20, #divR25, #divR30, #divR35, #divR40,
+#divC5, #divC10, #divC15, #divC20, #divC25, #divC30, #divC35, #divC40,
+#divC45, #divC50, #divC55, #divC60, #divC65, #divC70, #divC71, #divC75, #divC80,
+#divC84, #divC85, #divC86, #divC87, #divC88, #divC89, #divC90, #divC95, #divC100, #divC105, #divC110, #divC115, #divC120,
+#divC125, #divC130, #divC135, #divC140, #divC145, #divC150, #divC155
+
+{
+position:absolute;
+  background: #F9FCFC;
+  visibility:hidden;
+  border:1px solid black;
+  padding-bottom: 10px;
+}
+
+#divL5 pre, #divL10 pre, #divL15 pre, #divL20 pre, #divL25 pre, #divL30 pre, #divL35 pre, #divL40 pre, 
+#divR5 pre, #divR10 pre, #divR15 pre, #divR20 pre, #divR25 pre, #divR30 pre, #divR35 pre, #divR40 pre,
+#divC5 pre, #divC10 pre, #divC15 pre, #divC20 pre, #divC25 pre, #divC30 pre, #divC35 pre, #divC40 pre,
+#divC45 pre, #divC50 pre, #divC55 pre, #divC60 pre, #divC65 pre, #divC70 pre, #divC71 pre, #divC75 pre, #divC80 pre,
+#divC84 pre, #divC85 pre, #divC86 pre, #divC87 pre, #divC88 pre, #divC89 pre,#divC90 pre, #divC95 pre, #divC100 pre, #divC105 pre, #divC110 pre, #divC115 pre, #divC120 pre,
+#divC125 pre, #divC130 pre, #divC135 pre, #divC140 pre, #divC145 pre, #divC150 pre, #divC155 pre
+{
+ font-size: 11px;
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+}
+
+#divL5 h2, #divL10 h2, #divL15 h2, #divL20 h2, #divL25 h2, #divL30 h2, #divL35 h2, #divL40 h2, 
+#divR5 h2, #divR10 h2, #divR15 h2, #divR20 h2, #divR25 h2, #divR30 h2, #divR35 h2, #divR40 h2,
+#divC5 h2, #divC10 h2, #divC15 h2, #divC20 h2, #divC25 h2, #divC30 h2, #divC35 h2, #divC40 h2,
+#divC45 h2, #divC50 h2, #divC55 h2, #divC60 h2, #divC65 h2, #divC70 h2, #divC71 h2, #divC75 h2, #divC80 h2,
+#divC84 h2, #divC85 h2, #divC86 h2, #divC87 h2,  #divC88 h2, #divC89 h2, #divC90 h2, #divC95 h2, #divC100 h2, #divC105 h2, #divC110 h2, #divC115 h2, #divC120 h2,
+#divC125 h2, #divC130 h2, #divC135 h2, #divC140 h2, #divC145 h2, #divC150 h2, #divC155 h2
+{
+ padding-left: 10px;
+ padding-top: 0px;
+ font-size: 25px;
+}
+
+#divL5 p, #divL10 p, #divL15 p, #divL20 p, #divL25 p, #divL30 p, #divL35 p, #divL40 p, 
+#divR5 p, #divR10 p, #divR15 p, #divR20 p, #divR25 p, #divR30 p, #divR35 p, #divR40 p,
+#divC5 p, #divC10 p, #divC15 p, #divC20 p, #divC25 p, #divC30 p, #divC35 p, #divC40 p,
+#divC45 p, #divC50 p, #divC55 p, #divC60 p, #divC65 p, #divC70 p, #divC71 p, #divC75 p, #divC80 p,
+#divC84 p, #divC85 p, #divC86 p, #divC87 p,  #divC88 p, #divC89 p, #divC90 p, #divC95 p, #divC100 p, #divC105 p, #divC110 p, #divC115 p, #divC120 p,
+#divC125 p, #divC130 p, #divC135 p, #divC140 p, #divC145 p, #divC150 p, #divC155 p
+{
+ padding-left: 10px;
+ padding-right: 10px;
+ padding-top: 0px;
+ font-size: 14px;
+}
+
+#divL5 ul, #divL10 ul, #divL15 ul, #divL20 ul, #divL25 ul, #divL30 ul, #divL35 ul, #divL40 ul, 
+#divR5 ul, #divR10 ul, #divR15 ul, #divR20 ul, #divR25 ul, #divR30 ul, #divR35 ul, #divR40 ul,
+#divC5 ul, #divC10 ul, #divC15 ul, #divC20 ul, #divC25 ul, #divC30 ul, #divC35 ul, #divC40 ul,
+#divC45 ul, #divC50 ul, #divC55 ul, #divC60 ul, #divC65 ul, #divC70 ul, #divC71 ul, #divC75 ul, #divC80 ul,
+#divC84 ul, #divC85 ul, #divC86 ul, #divC87 ul,  #divC88 ul, #divC89 ul, #divC90 ul, #divC95 ul, #divC100 ul, #divC105 ul, #divC110 ul, #divC115 ul, #divC120 ul,
+#divC125 ul, #divC130 ul, #divC135 ul, #divC140 ul, #divC145 ul, #divC150 ul, #divC155 ul
+{
+ padding-left: 30px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+
+
+/* left right menus divs */
+#left, #right{
+  width:250px;
+  font-size : 11px;
+  padding: 2px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #D8E3EE;
+  background: #F9FCFC;
+}
+#left ul, #right ul{
+  padding-left: 2px;
+  margin-left: 20px;
+}
+
+#left ul li a, #right ul li a{
+  color: #31799F;
+  text-decoration: none;
+}
+
+#left p, #right p{
+  padding-left: 10px;
+  padding-bottom: 6px;
+  margin:0px;
+  font-size : 14px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#left p a, #right p a{
+  font-size : 14px;
+  color: #31799F;
+  text-decoration: none;
+}
+
+/* menu title */
+#menu{
+  padding-left: 10px;
+  font-size : 18px;
+  color: #31799F;
+  text-decoration: none;
+}
+</style>
+
+</head>
+
+<body  marginwidth="0" marginheight="0" topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" background="menubg.gif" bgcolor="#333333"  >
+
+<table border="0" cellspacing="10" >
+<tr bgcolor="#4f4f97" >
+<td colspan="3" align="center" >
+<img src="../home/admin/www/images/logo.jpg" alt="Uniform Server" />
+</td>
+</tr>
+
+
+<tr valign="top">
+<td>
+<div id="left">
+<p><a href="#" onMouseOver="TDiv('divC5',1)" onMouseOut="TDiv('divC5',0)" >Install UniServer</a></p>
+<p><a href="#" onMouseOver="TDiv('divC10',1)" onMouseOut="TDiv('divC10',0)" >Run UniServer</a></p>
+<a id="menu" href="#" onMouseOver="TDiv('divL5',1)" onMouseOut="TDiv('divL5',0)" >Left Menu</a>
+
+<ul>
+ <li><a href="#" onMouseOver="TDiv('divL10',1)" onMouseOut="TDiv('divL10',0)" >Start UniServer (Apache MySQL)</a></li>
+ <li><a href="#" onMouseOver="TDiv('divL15',1)" onMouseOut="TDiv('divL15',0)" >Stop  UniServer (Apache MySQL)</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divL20',1)" onMouseOut="TDiv('divL20',0)" >Individual Server Control</a>
+  <ul>
+    <li><a href="#"  onMouseOver="TDiv('divL25',1)" onMouseOut="TDiv('divL25',0)" >Start Apache Server</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divL30',1)" onMouseOut="TDiv('divL30',0)" >Stop  Apache Server</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divL35',1)" onMouseOut="TDiv('divL35',0)" >Start MySQL  Server</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divL40',1)" onMouseOut="TDiv('divL40',0)" >Stop  MySQL  Server</a></li>
+  </ul>
+  </li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC15',1)" onMouseOut="TDiv('divC15',0)" >Server Status</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC20',1)" onMouseOut="TDiv('divC20',0)" >Apache Syntax Check</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC25',1)" onMouseOut="TDiv('divC25',0)" >Admin Panel</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC35',1)" onMouseOut="TDiv('divC35',0)" >phpMyAdmin</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC40',1)" onMouseOut="TDiv('divC40',0)" >WWW Root</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC45',1)" onMouseOut="TDiv('divC45',0)" >SSL Root</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC50',1)" onMouseOut="TDiv('divC50',0)" >Advanced</a>
+  <ul>
+    <li><a href="#"  onMouseOver="TDiv('divC55',1)" onMouseOut="TDiv('divC55',0)" >MySQL password restore</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC60',1)" onMouseOut="TDiv('divC60',0)" >Server Certificate and Key Generator</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC65',1)" onMouseOut="TDiv('divC65',0)" >Move Servers multi-server operation</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC70',1)" onMouseOut="TDiv('divC70',0)" >Perl Shebang Update cgi-bin</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC71',1)" onMouseOut="TDiv('divC71',0)" >Perl win2unix + Shebang Update</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC75',1)" onMouseOut="TDiv('divC75',0)" >Edit Apache Configuration</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC80',1)" onMouseOut="TDiv('divC80',0)" >Edit MySQL Configuration</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC84',1)" onMouseOut="TDiv('divC84',0)" >Edit php.ini Production</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC85',1)" onMouseOut="TDiv('divC85',0)" >Edit php.ini Development</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC86',1)" onMouseOut="TDiv('divC86',0)" >php.ini switch to Production</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC87',1)" onMouseOut="TDiv('divC87',0)" >php.ini switch to Development</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC88',1)" onMouseOut="TDiv('divC88',0)" >Start Portable Cron</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC89',1)" onMouseOut="TDiv('divC89',0)" >Stop Portable Cron</a></li>
+  </ul>
+  </li>
+  <hr />
+ <li><a href="#" onMouseOver="TDiv('divC90',1)" onMouseOut="TDiv('divC90',0)" >Server information and Logs</a>
+  <ul>
+    <li><a href="#"  onMouseOver="TDiv('divC95',1)" onMouseOut="TDiv('divC95',0)" >Server Information</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC100',1)" onMouseOut="TDiv('divC100',0)" >Server Status</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC110',1)" onMouseOut="TDiv('divC110',0)" >PHP Information</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC115',1)" onMouseOut="TDiv('divC115',0)" >Apache Error Log</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC120',1)" onMouseOut="TDiv('divC120',0)" >Apache Access Log</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC125',1)" onMouseOut="TDiv('divC125',0)" >Apache SSL Error Log</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC130',1)" onMouseOut="TDiv('divC130',0)" >Apache SSL Access Log</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC135',1)" onMouseOut="TDiv('divC135',0)" >MySQL Error Log</a></li>
+  </ul>
+  </li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC140',1)" onMouseOut="TDiv('divC140',0)" >Reload Menu</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC145',1)" onMouseOut="TDiv('divC145',0)" >Server Documentation</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC150',1)" onMouseOut="TDiv('divC150',0)" >About</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC155',1)" onMouseOut="TDiv('divC155',0)" >Exit</a></li>
+ </ul>
+</div>
+</td>
+<td width="100%" bgcolor="#f0f0f0">
+
+<div id="ref1"  style="float:left;  width:1px; height:1px"></div>
+<div id="ref2"  style="float:right; width:1px; height:1px"></div>
+
+<div id="intro">
+<h3 align="center"><i>Uniform Server 5-Nano Quick Guide</i></h3>
+  <div style="padding:10px">
+<p><b><i>Intro</i>:</b></p>
+<p>This quick guide starts with installation and running Uniform Server.<br />In addition it mimics menu items in UniTray.</p>
+<p>&nbsp;</p>
+<p><b><i>Installation</i>:</b></p>
+<p>In reality there is no installation once the files are extracted servers are ready to run. That said if you run the servers as a service these services are installed. There is no restriction you can install a service from a USB memory stick. Hence to prevent leaving any dross behind, please remember to uninstall any services.</p>
+<p>&nbsp;</p>
+<p><b><i>Menu Items</i>:</b></p>
+<p>Although there are a bewildering number of menu items. To run the servers only the first two items are required. Remaining menu items, provide useful features, of importance is the Server Status.</p>
+<p>&nbsp;</p>
+<p><b><i>Server Status</i>:</b></p>
+<p>Run this first it checks current ports status if these are in use will prevent the servers starting.</p>
+<p>&nbsp;</p>
+<p>With your server running and connected to the Internet server status will display your IP address as seen from the Internet. In addition will attempt to connect to your server over the Internet using the above IP address.</p>
+  </div>
+</div>
+
+</td>
+<td >
+<div id="right" >
+<p><a href="#" onMouseOver="TDiv('divC5',1)" onMouseOut="TDiv('divC5',0)" >Install UniServer</a></p>
+<p><a href="#" onMouseOver="TDiv('divC10',1)" onMouseOut="TDiv('divC10',0)" >Run UniServer</a></p>
+<a id="menu" href="#" onMouseOver="TDiv('divR5',1)" onMouseOut="TDiv('divR5',0)" >Right Menu</a>
+
+<ul>
+ <li><a href="#" onMouseOver="TDiv('divR10',1)" onMouseOut="TDiv('divR10',0)" >Install and Run All Services</a></li>
+ <li><a href="#" onMouseOver="TDiv('divR15',1)" onMouseOut="TDiv('divR15',0)" >Stop and Remove All Services</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divR20',1)" onMouseOut="TDiv('divR20',0)" >Individual Server Control</a>
+  <ul>
+    <li><a href="#"  onMouseOver="TDiv('divR25',1)" onMouseOut="TDiv('divR25',0)" >Install Run Apache Service</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divR30',1)" onMouseOut="TDiv('divR30',0)" >Stop Uninstall Apache Service</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divR35',1)" onMouseOut="TDiv('divR35',0)" >Install Run MySQL Service</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divR40',1)" onMouseOut="TDiv('divR40',0)" >Stop Uninstall MySQL Service</a></li>
+  </ul>
+  </li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC15',1)" onMouseOut="TDiv('divC15',0)" >Server Status</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC20',1)" onMouseOut="TDiv('divC20',0)" >Apache Syntax Check</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC25',1)" onMouseOut="TDiv('divC25',0)" >Admin Panel</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC35',1)" onMouseOut="TDiv('divC35',0)" >phpMyAdmin</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC40',1)" onMouseOut="TDiv('divC40',0)" >WWW Root</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC45',1)" onMouseOut="TDiv('divC45',0)" >SSL Root</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC50',1)" onMouseOut="TDiv('divC50',0)" >Advanced</a>
+  <ul>
+    <li><a href="#"  onMouseOver="TDiv('divC55',1)" onMouseOut="TDiv('divC55',0)" >MySQL password restore</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC60',1)" onMouseOut="TDiv('divC60',0)" >Server Certificate and Key Generator</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC65',1)" onMouseOut="TDiv('divC65',0)" >Move Servers multi-server operation</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC70',1)" onMouseOut="TDiv('divC70',0)" >Perl Shebang Update cgi-bin</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC71',1)" onMouseOut="TDiv('divC71',0)" >Perl win2unix + Shebang Update</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC75',1)" onMouseOut="TDiv('divC75',0)" >Edit Apache Configuration</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC80',1)" onMouseOut="TDiv('divC80',0)" >Edit MySQL Configuration</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC84',1)" onMouseOut="TDiv('divC84',0)" >Edit php.ini Production</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC85',1)" onMouseOut="TDiv('divC85',0)" >Edit php.ini Development</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC86',1)" onMouseOut="TDiv('divC86',0)" >php.ini switch to Production</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC87',1)" onMouseOut="TDiv('divC87',0)" >php.ini switch to Development</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC88',1)" onMouseOut="TDiv('divC88',0)" >Start Portable Cron</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC89',1)" onMouseOut="TDiv('divC89',0)" >Stop Portable Cron</a></li>
+  </ul>
+  </li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC90',1)" onMouseOut="TDiv('divC90',0)" >Server information and Logs</a>
+  <ul>
+    <li><a href="#"  onMouseOver="TDiv('divC95',1)" onMouseOut="TDiv('divC95',0)" >Server Information</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC100',1)" onMouseOut="TDiv('divC100',0)" >Server Status</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC110',1)" onMouseOut="TDiv('divC110',0)" >PHP Information</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC115',1)" onMouseOut="TDiv('divC115',0)" >Apache Error Log</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC120',1)" onMouseOut="TDiv('divC120',0)" >Apache Access Log</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC125',1)" onMouseOut="TDiv('divC125',0)" >Apache SSL Error Log</a></li>
+    <li><a href="#"  onMouseOver="TDiv('divC130',1)" onMouseOut="TDiv('divC130',0)" >Apache SSL Access Log</a></li>
+    <hr />
+    <li><a href="#"  onMouseOver="TDiv('divC135',1)" onMouseOut="TDiv('divC135',0)" >MySQL Error Log</a></li>
+  </ul>
+  </li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC140',1)" onMouseOut="TDiv('divC140',0)" >Reload Menu</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC145',1)" onMouseOut="TDiv('divC145',0)" >Server Documentation</a></li>
+ <li><a href="#" onMouseOver="TDiv('divC150',1)" onMouseOut="TDiv('divC150',0)" >About</a></li>
+ <hr />
+ <li><a href="#" onMouseOver="TDiv('divC155',1)" onMouseOut="TDiv('divC155',0)" >Exit</a></li>
+ </ul>
+</div>
+</td>
+</tr>
+</table>
+
+<!-- ### LEFT MENU ITEMS #### -->
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL5">
+<h2>Left Menu</h2>
+<p>This page you are now viewing shows Unitray’s left and right menus expanded.</p>
+<p>&nbsp;</p>
+<p> <b>Left Menu:</b> Selected with left-mouse button, this runs the servers as a standard program.</p>
+<ul>
+ <li>Top menu item starts both Apache and MySQL servers.</li>
+ <li>Second item stops both servers.</li>
+</ul>
+<p><b>Standard program:</b> Every time you switch your PC on you need to restart the servers.</p>
+<p>&nbsp;</p>
+<p><b>Note:</b> After individual server control all menu items are common these are include in both menus for connivance.</p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL10">
+<h2>Start UniServer (Apache MySQL)</h2>
+<p>Starts, Apache and MySQL as a standard program also opens www index page</p>
+<p>&nbsp;</p>
+<p> Note: Runs script unicon\main\<b>start_servers.php</b> with <b>parameter 7</b></P>
+<p>&nbsp;</p>
+<p>This parameter is optional, in its absents defaults are used these are configurable in file unicon\main\includes\<b>config.inc.php</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache server 0 - Do not run program
+  Mysql          2  1 - Run MySQL  server 0 - Do not run program
+  Index page     4  1 - Start Index page  0 - Do not start index page
+  MySQL Console  8  1 - Display console   0 - Do not display console
+  Cron          16  1 - Run cron          0 - no change ignore
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script start_servers.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to run Apache and MySQL gives parameter 3</P>
+<p><b>Note 3:</b> You cannot use selections 4 and 8 on their own you must include the appropriate server. Hence 4+1 would start the Apache server and display the index page.</P>
+<p><b>Note 4:</b> Selecting this menu option with the servers already running script ignores request.</P>
+<p><b>Note 5:</b> If one of the servers is running as a service only the free server will be run as a standard program.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL15">
+<h2>Stop  UniServer (Apache MySQL)</h2>
+<p>Stops, Apache and MySQL when run as a standard program</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>stop_servers.php</b> with <b>parameter 7</b></P>
+<p>&nbsp;</p>
+<p>This parameter is optional, in its absents defaults are used these are configurable in file unicon\main\includes\<b>config.inc.php</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache server 0 - Do not run program
+  Mysql          2  1 - Run MySQL  server 0 - Do not run program
+  Index page     4  1 - Start Index page  0 - Do not start index page
+  MySQL Console  8  1 - Display console   0 - Do not display console
+  Cron          16  1 - Run cron          0 - no change ignore
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script stop_servers.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to stop Apache and MySQL gives parameter 3</P>
+<p><b>Note 3:</b> Selections 4 and 8 are ignored hence if included have no effect.</P>
+<p><b>Note 4:</b>  Selecting this menu option with the servers already stopped script ignores request.</P>
+<p><b>Note 5:</b> If one of the servers is running as a service only the server running as a standard program will be stopped.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL20">
+<h2>Individual Server Control</h2>
+<p>This menu option opens the individual server control sub-menu.</p>
+<p>&nbsp;</p>
+<p>You can individually start and stop each server as a standard program. </p>
+<p>&nbsp;</p>
+<p>You can run one server as a standard program and the other as a service. </p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL25">
+<h2>Start Apache Server</h2>
+<p>Start Apache as a standard program</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>start_servers.php</b> with <b>parameter 1</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache server 0 - Do not run program
+  Index page     4  1 - Start Index page  0 - Do not start index page
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script start_servers.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to run Apache and start index page use parameter 5</P>
+<p><b>Note 3:</b> Selecting this menu option with the server already running script ignores request.</P>
+<p><b>Note 4:</b> If Apache server is running as a service script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL30">
+<h2>Stop  Apache Server</h2>
+<p>Stop Apache as a standard program.</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>stop_servers.php</b> with <b>parameter 1</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache server 0 - Do not run program
+  Index page     4  1 - Start Index page  0 - Do not start index page
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script stop_servers.php overrides defaults.</P>    
+<p><b>Note 2:</b> Selection numbers 4 is ignore hence not included when stopping server.</P>
+<p><b>Note 3:</b> Selecting this menu option with the server already stopped script ignores request.</P>
+<p><b>Note 4:</b> If Apache server is running as a service script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL35">
+<h2>Start MySQL  Server</h2>
+<p>Start MySQL as a standard program .<p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>start_servers.php</b> with <b>parameter 2</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Mysql          2  1 - Run MySQL  server 0 - Do not run program
+  MySQL Console  8  1 - Display console   0 - Do not display consolee
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script start_servers.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to run MySQL and MySQL Console use parameter 10</P>
+<p><b>Note 3:</b> Selecting this menu option with the server already running script ignores request.</P>
+<p><b>Note 4:</b> If MySQL server is running as a service script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divL40">
+<h2>Stop  MySQL  Server</h2>
+<p>Stop MySQL as a standard program.<p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>stop_servers.php</b> with <b>parameter 2</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Mysql          2  1 - Run MySQL  server 0 - Do not run program
+  MySQL Console  8  1 - Display console   0 - Do not display consolee
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script stop_servers.php overrides defaults.</P>    
+<p><b>Note 2:</b> Selection numbers 8 is ignored when stopping server.</P>
+<p><b>Note 3:</b> Selecting this menu option with the server already stopped script ignores request.</P>
+<p><b>Note 4:</b> If MySQL server is running as a service script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+
+<!-- ### RIGHT MENU ITEMS #### -->
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR5">
+<h2>Right Menu</h2>
+<p>This page you are now viewing shows Unitray’s left and right menus expanded.</p>
+<p>&nbsp;</p>
+<p> <b>Right Menu:</b> Selected with right-mouse button, this runs the servers as a service.</p>
+<ul>
+ <li>Top menu item installs and runs both Apache and MySQL as a service.</li>
+ <li>Second item stops and uninstalls both services.</li>
+</ul>
+<p><b>Service:</b> Every time you switch your PC on servers are automatically started.</p>
+<p>&nbsp;</p>
+<p><b>Note:</b> After individual server control all menu items are common these are include in both menus for connivance.</p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR10">
+<h2>Install and Run All Services</h2>
+<p>Installs and runs both Apache and MySQL as a service also opens www index page.</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>service_install_run.php</b> with <b>parameter 7</b></P>
+<p>&nbsp;</p>
+<p>This parameter is optional, in its absents defaults are used these are configurable in file unicon\main\includes\<b>config.inc.php</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache as a service 0 - Do not run service
+  Mysql          2  1 - Run MySQL  as a service 0 - Do not run service
+  Index page     4  1 - Start Index page        0 - Do not start index page
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script service_install_run.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to run Apache and MySQL service gives parameter 3</P>
+<p><b>Note 3:</b> You cannot use selection 4 on its own you must include the Apache server. Hence 4+1 would start the Apache server and display the index page at start-up.</P>
+<p><b>Note 4:</b>  Selecting this menu option with the servers already running as a service script ignores request.</P>
+<p><b>Note 5:</b> If one of the servers is running as a standard program only the free server will be installed and run as a service.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR15">
+<h2>Stop and Remove All Services</h2>
+<p>Stops Apache and MySQL services and uninstals both services.<p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>service_stop_uninstall.php</b> with <b>parameter 7</b></P>
+<p>&nbsp;</p>
+<p>This parameter is optional, in its absents defaults are used these are configurable in file unicon\main\includes\<b>config.inc.php</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache as a service 0 - Do not run service
+  Mysql          2  1 - Run MySQL  as a service 0 - Do not run service
+  Index page     4  1 - Start Index page        0 - Do not start index page
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script service_stop_uninstall.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to stop and unintal Apache and MySQL service gives parameter 3</P>
+<p><b>Note 3:</b> Selection 4 is ignored including it has no effect.</P>
+<p><b>Note 4:</b>  Selecting this menu option with the servers already stopped and uninstalled script ignores request.</P>
+<p><b>Note 5:</b> If one of the servers is running as a standard program only the server runining as a service will be stopped and uninstalled.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR20">
+<h2>Individual Server Control</h2>
+<p>This menu option opens the individual server control sub-menu. </p>
+<p>&nbsp;</p>
+<p>You can individually install/run or stop/uninstall each server as a service. </p>
+<p>&nbsp;</p>
+<p>You can run one server as a service and the other as a standard program. </p>
+<p>&nbsp;</p>
+<p><b>Note:</b> There are no restrictions hence you can runs the servers as a service from a USB memory stick. When you have finished remember to uninstall service. </p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR25">
+<h2>Install Run Apache Service</h2>
+<p>Install and run Apache as a service.</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>service_install_run.php</b> with <b>parameter 1</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1  1 - Run Apache as a service 0 - Do not run service
+  Index page     4  1 - Start Index page        0 - Do not start index page
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script service_install_run.php overrides defaults.</P>    
+<p><b>Note 2:</b> Add selection numbers to create a parameter e.g to run Apache and start index page use parameter 5</P>
+<p><b>Note 3:</b>  Selecting this menu option with the service already installed and running script ignores request.</P>
+<p><b>Note 4:</b> If Apache server is running as a standard program script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR30">
+<h2>Stop Uninstall Apache Service</h2>
+<p>Stop and uninstall Apache service.</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>service_stop_uninstall.php</b> with <b>parameter 1</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Apache         1 - Run Apache as a service 0 - Do not run service
+  Index page     4 - Start Index page        0 - Do not start index page
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script service_stop_uninstall.php overrides defaults.</P>    
+<p><b>Note 2:</b> Selection number 4 is ignored by script.</P>
+<p><b>Note 3:</b>  Selecting this menu option with the service already stopped and uninstalled script ignores request.</P>
+<p><b>Note 4:</b> If Apache server is running as a standard program script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR35">
+<h2>Install Run MySQL Service</h2>
+<p>Install and run MySQL as a service.</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>service_install_run.php</b> with <b>parameter 2</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Mysql          2  1 - Run MySQL  as a service 0 - Do not run service
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script service_install_run.php overrides defaults.</P>    
+<p><b>Note 2:</b>  Selecting this menu option with the service already installed and running script ignores request.</P>
+<p><b>Note 3:</b> If MySQL server is running as a standard program script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divR40">
+<h2>Stop Uninstall MySQL Service</h2>
+<p>Stop and uninstall MySQL service.</p>
+<p>&nbsp;</p>
+<p>Note: Runs script unicon\main\<b>service_stop_uninstall.php</b> with <b>parameter 2</b></P>
+<p>&nbsp;</p>
+<p>Parameters are binary coded allowing single bit option selection as follows:</P>
+<pre>
+
+                    Bit function
+  Mysql          2  1 - Run MySQL  as a service 0 - Do not run service
+
+</pre>
+<p><b>Note 1:</b> A parameter passed to script service_stop_uninstall.php overrides defaults.</P>    
+<p><b>Note 2:</b>  Selecting this menu option with the service already stopped and uninstalled script ignores request.</P>
+<p><b>Note 3:</b> If MySQL server is running as a standard program script ignores request.</P>
+<p>&nbsp;</P>
+</div>
+<!-- ### COMMON MENU ITEMS #### -->
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC5">
+<h2>Install</h2>
+<p>Extract Uniform Server to any folder on any hard drive or USB memory stick.<p>
+<p>&nbsp;</P>
+<p><b>Note:</b> Path to UniServer folder must not contain any spaces in the folder names</p>
+<p>&nbsp;</P>
+<p>c:\myserver\UniServer - Correct</P>
+<p>c:\my_server\UniServer - Correct</P>
+<p>c:\my server\UniServer - Incorrect servers will fail to start</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC10">
+<h2>Run - Quick Start Guide</h2>
+<p>Navigate to folder UniServer and double click on <b>Start.exe</b><br />This starts the tray menu where your servers are controlled from.</p>
+<p>&nbsp;</p>
+<p> <b>Left Menu:</b> Selected with left-mouse button, this runs the servers as a standard program.</p>
+<ul>
+ <li>Top menu item starts both Apache and MySQL servers.</li>
+ <li>Second item stops both servers.</li>
+</ul>
+<p><b>Standard program:</b> Every time you switch your PC on you need to restart the servers.</p>
+<p>&nbsp;</p>
+
+<p> <b>Right Menu:</b> Selected with right-mouse button, this runs the servers as a service.</p>
+<ul>
+ <li>Top menu item installs and runs both Apache and MySQL as a service.</li>
+ <li>Second item stops and uninstalls both services.</li>
+</ul>
+<p><b>Service:</b> Every time you switch your PC on servers are automatically started.</p>
+<p>&nbsp;</p>
+<p><b>Note 1:</b> If the servers fail to start run "Server Status" this provides diagnostic information.</p>
+<p><b>Note 2:</b> If path to folder UniServer contains spaces servers will not start and an error is reported in an alert box.</p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC15">
+<h2>Server Status</h2>
+<p>Provides diagnostic information, as shown in this example:</p> 
+<pre> 
+ Your Internet IP Address = 99.999.22.181
+ Accessible from Internet = NO
+ PHP INI: php.ini file    = Development
+
+ APACHE SERVER:
+   Apache port            = 81
+   Apache SSL port        = 444
+   Apache executable name = Apache1.exe
+   Apache service name    = ApacheS2
+   Apache SSL server      = Enabled
+   Apache run status      = Not running
+   Apache install status  = Free to install
+
+ MySQL SERVER:
+   MySQL port             = 3307
+   MySQL executable name  = mysqld-opt1.exe
+   MySQL service name     = MySQLS2
+   MySQL run status       = Not running
+   MySQL install status   = Free to install
+
+ PORT STATUS:
+   Apache port     = 81 Is free to use
+   Apache SSL port = 444 Is free to use
+   MySQL port      = 3307 Is free to use.
+</pre>
+<p>&nbsp;</P>
+<p><b>Note:</b> The values displayed are the result of running the move-script once. In other words I am running two servers this being the second one.</p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC20">
+<h2>Apache Syntax Check</h2>
+<p>If you make changes to the server configuration files this menu item provides a quick check for Apache syntax errors.</P>
+<p>&nbsp;</P>
+<p><b>Example with no errors:</b></P>
+<pre>
+
+ Server version: Apache/2.2.11 (Win32)
+ Server built:   Dec 10 2008 00:10:06
+
+ Syntax OK
+ Press any key to continue . . .
+</pre>
+<p>&nbsp;</P>
+<p><b>Exampe with errors:</b></P>
+<pre>
+
+ Server version: Apache/2.2.11 (Win32)
+ Server built:   Dec 10 2008 00:10:06
+
+ Syntax error on line 124 of usr/local/apache2/conf/httpd.conf:
+ Port must be specified
+ Press any key to continue . . .
+</pre>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC25">
+<h2>Admin Panel</h2>
+<p>Admin panel provides fine server control and security configuration. </p>
+<p>&nbsp;</p>
+<p>It allows you to set the root password for the MySQL server, which should be the first thing you do on a new server installation. </p>
+<p>&nbsp;</p>
+<p>You can easily set main-parameters for each server configuration file. </p>
+<p>&nbsp;</p>
+<p>For a personal server or to restrict access to specific areas you can set a name and password for each area. </p>
+<p>&nbsp;</p>
+<p>The first port of call is Admin Panel’s security centre it is comprehensive and details each security option avaiable. </p>
+<p>&nbsp;</p>
+<p><b>Note 1:</b> By default the server is locked down allowing only local access.</p>
+<p>&nbsp;</p> 
+<p><b>Note 2:</b> Double clicking on UniTray’s icon opens Admin Panel</p>
+<p>&nbsp;</p> 
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC35">
+<h2>phpMyAdmin</h2>
+<p>phpMyAdmin is a software tool written in PHP to handle the administration of MySQL server. </p>
+<p>&nbsp; </p>
+<p>It supports a wide range of operations such as managing databases, tables, fields, relations, indexes, users, permissions, etc these are accessible via a web page interface. </p>
+<p>&nbsp; </p>
+<p>You can either directly execute any SQL statement or run a SQL file. </p>
+<p>&nbsp; </p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC40">
+<h2>WWW Root</h2>
+<p>To view your web site this menu item takes you to the index page  contained in folder UniServer\www </p>
+<p>&nbsp;</p>
+<p><b>Note 1:</b> With the exception of file .htaccess you can delete the content of this folder and replace it with yours.</p>
+<p>&nbsp;</p>
+<p><b>Note 2:</b> To put your serves on-line it needs to be enabled in file <b>.htaccess</b> edit the file and change these three lines: </p>
+<p>&nbsp;</p>
+<p><b><I>Location:</I></b> UniServer\www\<b>.htaccess</b></p>
+<p>&nbsp;</p>
+<p><b><I>From:</I> </b></p>
+<pre>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</pre>
+<p><b><I>To:</I></b> </p>
+<pre>
+    #Order Deny,Allow
+    #Deny from all
+    #Allow from 127.0.0.1
+</pre>
+
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC45">
+<h2>SSL Root</h2>
+<p>To view your secure web site this menu item takes you to the index page contained in folder UniServer\SSL</p>
+<p>&nbsp;</p>
+<p><b> Note 1: </b> With the exception of file .htaccess you can delete the content of this folder and replace it with yours. </p>
+<p>&nbsp;</p>
+<p><b> Note 2: </b> SSL by default is disabled, you need to create a server certificate and key to have it automatically enabled hence navigate to the Advance section and generate a certificate and key. </p>
+<p>&nbsp;</p>
+<p><b>Note 3:</b> To put your serves on-line it needs to be enabled in file <b>.htaccess</b> edit the file and change these three lines: </p>
+<p>&nbsp;</p>
+<p><b><I>Location:</I></b> UniServer\ssl\<b>.htaccess</b></p>
+<p>&nbsp;</p>
+<p><b><I>From:</I> </b></p>
+<pre>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</pre>
+<p><b><I>To:</I></b> </p>
+<pre>
+    #Order Deny,Allow
+    #Deny from all
+    #Allow from 127.0.0.1
+</pre>
+
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC50">
+<h2>Advanced</h2>
+<p>This menu opens a sub-menu with items allowing you to configure the servers via their configuration files. </p>
+<p>&nbsp;</p>
+<p>If the MySQL password has become corrupted the defaults can be restored using the first sub-menu option. </p>
+<p>&nbsp;</p>
+<p>Running a personal secure server requires a server certificate and key this is easily generated and installed using the second sub-menu option. </p>
+<p>&nbsp;</p>
+<p>Running multi-servers on the same PC is a snip using the third sub-menu option. Extract a new UniServer and run the script once, extract another new UniServer and run the script twice. This gives you two independent servers, when run the tray icons will display 2 and 3 respectively. The main server is number 1 and uses the standard ports. </p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC55">
+<h2>MySQL password restore</h2>
+<p>The MySQL password although very rare can become corrupted for any number of reasons click this menu item to restore the default name and password both to <b>root</b></p>
+<p>&nbsp;</p>
+<p>Generally the password gets corrupted because a user changes it using phpMyAdmin. The correct way to change the root MySQL password is via <b>Admin Panel</b>. </p>
+<p>&nbsp;</p>
+<p><b>Note:</b> Setting up additional user accounts with name/password access use phpMyAdmin make sure these users have limited privileges. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC60">
+<h2>Server Certificate and Key Generator</h2>
+<p>Running a personal secure server requires a server certificate and key run this sub-menu option. </p>
+<p>&nbsp;</p>
+<p>The certificate and key generation script will prompt for three pieces of information. If you are running a local test server just press enter to accept the defaults. </p>
+<p>&nbsp;</p>
+<p>If you have a real domain name for example www.fred.com enter that at the CN   (common name prompt). The remaining two prompts OU (organisation unit) and O 
+(organisation) are not strictly required hence enter something that meets your requirements. </p>
+<p>&nbsp;</p>
+<p>Once the server certificate and key have been generated re-start the servers for the new configuration to be picked up by Apache. </p>
+<p>&nbsp;</p>
+<p>Remember to type <b>https:</b>//localhost/ into your browser or if you have a real domain name <b>https:</b>//www.mydomain.com/ to access the secure site. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC65">
+<h2>Move Servers multi-server operation</h2>
+<p>To run multi-servers on the same PC several items require changing such as server ports, service names, Apache and UniTray executable names.
+Manually changing these can be time consuming and prone to errors. The process has been automated with the following script: unicon\<b>move_servers.php</b></P>
+<p>&nbsp;</P>
+<p>Start with a clean version of UniServer run the script one or more times, Unitray's icon digit increments each time you move the server. </P>
+<p>&nbsp;</P>
+<p>Unless you want to use specific ports and names accept defaults shown in
+brackets by pressing enter. When run for the first time the output looks similar to this:</P>
+<pre>
+
+ Current Apache port = 80         Proposed port [81] :
+ Current SSL port    = 443        Proposed port [444] :
+ Current MySQL port  = 3306       Proposed port [3307] :
+ Current Apache name = Apache.exe Proposed name [Apache1.exe] :
+ Current MySQL name  = mysqld-opt.exe  Proposed name [mysqld-opt1.exe] :
+
+ ===== SERVICES Service names ====
+ Current Apache name = ApacheS1 Proposed name = [ApacheS2] :
+ Current MySQL  name = MySQLS1  Proposed name = [MySQLS2] :
+
+ ===== UniTray Controller  ====
+ Current UniTray name = UniTray1.exe Proposed name [UniTray2.exe] :
+
+ ===== eAccelerator  ====
+ If running a single server do not disable eAccelerator.
+ For multi-servers enter Y
+ Disable_eAccelerator type Y or N [Y] :
+ Commit type Y or N [Y] :
+</pre>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC70">
+<h2>Perl Shebang Update cgi-bin</h2>
+<p>Perl scripts contain a Shebang (first line) this informs a server where to find the Perl program. Uniform Server is dynamic and tracks any path changes automatically updating the Shebang. </p>
+<p>&nbsp;</p>
+<p>However if the server remains static and you have added new scripts in the cgi-bin folder the Shebang is never updated. Hence run this menu item after installing new scripts. It updates the Shebang in all files to the current Perl location. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC71">
+<h2>Perl win2unix + Shebang Update</h2>
+<p>&nbsp;</P>
+<p> Perl scripts developed on Windows will not run on a Unix machine they require conversion to a Unix format.</p>  
+<p>&nbsp;</P>
+<p> This script copies all files in <b>cgi-bin</b> to a new folder <b>\cgi-bin-unix\</b> </p>
+<p> Scripts in this new folder are converted from Windows to Unix format.</p> 
+<ul>
+<li> Converts end of line:<br />&nbsp;&nbsp;<b><i>Esc</i>:</b> \r\n to \n <br />&nbsp;&nbsp;<b><i>Dec</i>:</b> #10#13 to  #13  <br />&nbsp;&nbsp;<b><i>Hex</i>:</b> 0D0A to 0A</li>
+<li> Replaces Windows shebang with Unix shebang</li>
+</ul>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC75">
+<h2>Edit Apache Configuration</h2>
+<p> Opens Apache configuration file usr\local\apache2\conf\<b>httpd.conf</b> in Notepad ready for editing. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC80">
+<h2>Edit MySQL Configuration</h2>
+<p> Opens MySQL configuration file usr\local\mysql\<b>my.cnf </b>in Notepad ready for editing. </p>
+<p>&nbsp;</P>
+<p> The most likely reason for editing this file is to enable <b>innodb</b></p>
+<p>&nbsp;</P>
+<ul>
+<li>Locate this line: <b>skip-innodb</b></li>
+<li>Change to : <b>#skip-innodb</b></li>
+</ul>
+<p>&nbsp;</P>
+<p><b> Note:</b> Enabling innodb initially crates three large files these will increase in size </p>
+<ul>
+<li>ib_logfile0 file size: 5M</li>
+<li>ib_logfile1 file size: 5M</li>
+<li>ibdata1 file size:  10M</li>
+</ul>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC84">
+<h2>Edit php.ini Production</h2>
+<p>&nbsp;</P>
+<p> After editing the file save it and run <b>php.ini switch to Production</b> this overwrites php.ini</p>
+<p>&nbsp;</P>
+<p><b><I>Note 1</I>:</b> For the changes to be picked-up restart the servers </p>
+<p>&nbsp;</P>
+<p><b><I>Note 2</I>:</b> If changes are common to both production and development both configurations require changing. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC85">
+<h2>Edit php.ini Development</h2>
+<p>&nbsp;</P>
+<p> After editing the file save it and run <b>php.ini switch to Development</b> this overwrites php.ini</p>
+<p>&nbsp;</P>
+<p><b><I>Note 1</I>:</b> For the changes to be picked-up restart the servers </p>
+<p>&nbsp;</P>
+<p><b><I>Note 2</I>:</b> If changes are common to both production and development both configurations require changing. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC86">
+<h2>php.ini switch to Production</h2>
+<p>&nbsp;</P>
+<p> Copies file: UniServer\usr\local\php\<b>php.ini_production_nano</b></p>
+<p> To file: UniServer\usr\local\php\<b>php.ini</b></p>
+<p>&nbsp;</P>
+<p><b><i>Note</i>:</b> Requires a server restart for the new file to be picked-up. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC87">
+<h2>php.ini switch to Development</h2>
+<p>&nbsp;</P>
+<p> Copies file: UniServer\usr\local\php\<b>php.ini_delvelopment_nano</b> </p>
+<p> To file: UniServer\usr\local\php\<b>php.ini</b> </p>
+<p>&nbsp;</P>
+<p><b><i>Note</i>:</b> Requires a server restart for the new file to be picked-up. </p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC88">
+<h2>Start Portable Cron</h2>
+<p>&nbsp;</P>
+<p> Starts script UniServer\unicon\main\<b>run_cron.php</b> in the background (hidden)</p>
+<p>&nbsp;</P>
+<p> The script periodically runs a list of scripts contained in a configuration file <b>cron.ini</b>.</p>
+<p>&nbsp;</P>
+<p> Edit file UniServer\unicon\main\<b>cron.ini</b><br /> Add scripts as required.</p>
+<p>&nbsp;</P>
+
+<pre>
+ A) Server Script Example
+
+ [drupal]
+ start  = 2009-09-21 2:56:52
+ period = hourly
+ path   = http://localhost/drupal/cron.php
+ ref =
+
+  B) CLI Script Example
+
+ [dtdns]
+ start  = 2009-09-21 2:56:52
+ period = 36000                 ; 10 Mins as required by DtDNS
+ path   = ..\..\plugins\dtdns_updater\dtdns_updater.php
+ ref = 
+</pre>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC89">
+<h2>Stop Portable Cron</h2>
+<p>&nbsp;</P>
+<p> Stops script UniServer\unicon\main\<b>run_cron.php</b></p>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC90">
+<h2>Server information and Logs</h2>
+<p>Opens a sub-menu with items allowing you to select and view specific server information. </p>
+<p>&nbsp;</p>
+<p>For development having the ability to quickly display error log files and display server status will reduce amount of time when resolving server issues.</p>
+<p>&nbsp;</p>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC95">
+<h2>Server Information</h2>
+<p>Displays Apache Server Information for example:</P>
+<p>&nbsp;</P>
+<p><b><i>Subpages:</i></b></P>
+<p>Configuration Files, Server Settings, Module List, Active Hooks</P>
+<p>&nbsp;</P>
+<p><b><i>Loaded Modules:</i></b></P>
+<p>mod_php5.c, mod_vhost_alias.c, mod_version.c, mod_userdir.c, etc</P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Selecting a loaded module link displays <b>all its current settings</b> either set in the configuration file or defaults that are being used.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC100">
+<h2>Server Status</h2>
+<p>Displays Apache’s <b>current</b> running status:</P>
+<p>&nbsp;</P>
+<p>Example of information provided:</P>
+<p>&nbsp;</P>
+<p>Server Version: Apache/2.2.11 (Win32) PHP/5.3.0RC4 DAV/2</P>
+<p>Server Built: Dec 10 2008 00:10:06</P>
+<p>&nbsp;</P>
+<p>Current Time: Monday, 21-Jun-2009 09:46:42 GMT Standard Time</P>
+<p>Restart Time: Monday, 21-Jun-2009 09:04:23 GMT Standard Time</P>
+<p>Parent Server Generation: 0</P>
+<p>Server uptime: 42 minutes 19 seconds</P>
+<p>Total accesses: 53 - Total Traffic: 101 kB</P>
+<p>.0209 requests/sec - 40 B/second - 1951 B/request</P>
+<p>1 requests currently being processed, 249 idle workers</P>
+<p>... etc</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC110">
+<h2>PHP Information</h2>
+<p>Displays PHP information.</P>
+<p>&nbsp;</P>
+<p>A comprehensive web page detailing PHP’s configuration and modules loaded.</P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Generated with function <b>phpinfo()</b></P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC115">
+<h2>Apache Error Log</h2>
+<p>&nbsp;</P>
+<p>Displays Apache’s error log file.</P>
+<p>&nbsp;</P>
+<p><b>Location:</b> usr\local\apache2\logs\<b>error.log</b></P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Overtime this becomes increasingly large. You can safely delete this file at any time. </P> 
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC120">
+<h2>Apache Access Log</h2>
+<p>&nbsp;</P>
+<p>Displays Apache’s Access log file.</P>
+<p>&nbsp;</P>
+<p><b>Location:</b> usr\local\apache2\logs\<b>access.log</b></P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Overtime this becomes increasingly large (it logs every access). You can safely delete this file at any time. </P> 
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC125">
+<h2>Apache SSL Error Log</h2>
+<p>&nbsp;</P>
+<p>Displays Apache’s SSL error log file.</P>
+<p>&nbsp;</P>
+<p><b>Location:</b> usr\local\apache2\logs\<b>error_ssl.log</b></P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Overtime this becomes increasingly large. You can safely delete this file at any time. </P> 
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC130">
+<h2>Apache SSL Access Log</h2>
+<p>&nbsp;</P>
+<p>Displays Apache’s SSL Access log file.</P>
+<p>&nbsp;</P>
+<p><b>Location:</b> usr\local\apache2\logs\<b>access_ssl.log</b></P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Overtime this becomes increasingly large (logs ever access). You can safely delete this file at any time. </P> 
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC135">
+<h2>MySQL Error Log</h2>
+<p>&nbsp;</P>
+<p>Displays MySQL Error log file.</P>
+<p>&nbsp;</P>
+<p><b>Location:</b> usr\local\mysql\data\<b>mysql.err</b></P>
+<p>&nbsp;</P>
+<p><b>Note:</b> Overtime this becomes increasingly large. You can safely delete this file at any time. </P> 
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC140">
+<h2>Reload Menu</h2>
+<p>This allows you to reload the menu configuration file. Preferably make small changes to this file, run menu item to quickly see any adverse effects of making changes. Makes it easier to revert back to a working menu. </p>
+<p>&nbsp;</P>
+<p>Location of configuration file: <b>unicon\tray_menu\UniTray1.ini</b></P>
+<p>&nbsp;</P>
+<p><b>Note:</b> If you have moved the servers UniTray1.ini will be diffirent, moving the servers incremets the digit each time the move script is run.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC145">
+<h2>Server Documentation</h2>
+<p>&nbsp;</P>
+<p>Opens folder <b>UniServer\docs</b> in a browser allowing you to access server documentation.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC150">
+<h2>About</h2>
+<p>&nbsp;</P>
+<p>About displays UniTray intro information in particular it acknowledges Onno Broekmans as the menu  designer and provides a link to the designers site.</P>
+<p>&nbsp;</P>
+</div>
+
+<div con="content" style="position:absolute; top:20px; left:150px;width:600px;"  id="divC155">
+<h2>Exit</h2>
+<p>&nbsp;</P>
+<p>Click this menu option to close UniTray.</P>
+<p>&nbsp;</P>
+<p><b><i>Note:</i></b> It does not close the servers. If you close UniTray with the servers running and wish to stop them just run UniTray again.</P>
+<p>&nbsp;</P>
+</div>
+ <div id="divider" align="center">Developed By <a href="http://www.uniformserver.com/">The Uniform Server Development Team</a></div>
+</body>
+</html>

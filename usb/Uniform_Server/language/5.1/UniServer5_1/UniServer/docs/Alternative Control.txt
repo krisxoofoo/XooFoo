@@ -1,0 +1,187 @@
+###############################################################################
+# File name: Alternative Control.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 8-9-2009
+###############################################################################
+
+ Uniform Server’s control architecture has been designed to be as flexible as
+ possible. It is recognised not everyone likes tray icons but prefer batch file
+ control to prevent tray icon clutter.
+
+ Batch files found in folder UniServer\alternative_control offer this
+ alternative control they can be run from that folder. If you wish can be
+ copied to the server’s top folder UniServer however in order to run they
+ require minor modification as explained below.
+
+ The batch files can be tweaked to automatically close after a predefined time
+ and or start UniTray. Details are provided under section Batch files and UniTray.
+
+ -----------
+ Start_2.exe
+ -----------
+
+ Before looking at batch files you will have noticed file Start_2.exe this is
+ an alternative to Start.exe. Like Start.exe it starts UniTray however without
+ the annoying pop-up to inform you it has done so. If you would like to use
+ this file copy it to folder UniServer and optionally delete Start.exe and
+ rename Start_2.exe to Start.exe choice is yours. The only reason for deleting
+ and renaming is to reduce clutter and keep things consistent.
+
+ -------------------
+ Common Core Control
+ -------------------
+
+ Uniform Server has a single central control architecture located in
+ folder UniServer\unicon\main all server control requests are passed to this
+ core for processing. Unitray, batch files and Apanel all make requests to this
+ core it has the advantage of reducing complexity of external scripts.
+
+ -----------
+ Batch files
+ -----------
+
+ Batch file control is nothing more than a single line, which calls the
+ appropriate script with an optional parameter.
+
+ The following batch files:
+
+   Start_Server.bat
+   Stop_Server.bat
+   Service_Install_Run.bat
+   Service_Stop_Uninstall.bat
+
+ Can be reduced to a single control line as shown respectively:
+
+   ..\usr\local\php\php.exe -n  ..\unicon\main\start_servers.php
+   ..\usr\local\php\php.exe -n  ..\unicon\main\stop_servers.php
+   ..\usr\local\php\php.exe -n  ..\unicon\main\service_install_run.php
+   ..\usr\local\php\php.exe -n  ..\unicon\main\service_stop_uninstall.php
+
+ Each line runs the PHP script interpreter “php.exe” two parameters are
+ passed “-n” and the script to be run.
+
+ –n Instructs the interpreter not use a configuration file.
+
+ ----------------------
+ Relocating batch files
+ ----------------------
+
+ After copying each batch file to folder UniServer you need to remove “..\”
+ from each line. Note “..\” means move up one level from the current location.
+ With the files physically moved to this location the “..\” is redundant.
+ Hence the lines now look like this:
+
+   usr\local\php\php.exe -n  unicon\main\start_servers.php
+   usr\local\php\php.exe -n  unicon\main\stop_servers.php
+   usr\local\php\php.exe -n  unicon\main\service_install_run.php
+   usr\local\php\php.exe -n  unicon\main\service_stop_uninstall.php
+
+ -----------------
+ Script Parameters
+ -----------------
+
+ An optional parameter passed to a script provides selection of various control
+ options. Defaults are used when a script is run with no parameter. A parameter
+ passed to a script overrides the defaults.
+ Defaults can be changed in file  UniServer\unicon\main\includes\config.inc.php
+ they are binary coded as follows:
+
+  #############################################################################
+  # User Variables:
+  # $server_standard - Controls server when run as a standard program 
+  # $server_service  - Controls server when run as a service 
+  #
+  # $server_standard - Options are binary coded as follows:
+  # Apache         1 - Run Apache server 0 - Do not run program
+  # Mysql          2 - Run MySQL  server 0 - Do not run program
+  # Index page     4 - Start Index page  0 - Do not start index page
+  # MySQL Console  8 - Display console   0 - Do not display console
+  #
+  # $server_service  - Options are binary coded as follows:
+  # Apache         1 - Run Apache as a service 0 - Do not run service
+  # Mysql          2 - Run MySQL  as a service 0 - Do not run service
+  # Index page     4 - Start Index page        0 - Do not start index page
+  #
+  # Defaults: 
+  # $server_standard = 7;
+  # $server_service  = 7;
+  #############################################################################
+
+ Example 1:
+
+ If you wish to run only the Apache server when running as a standard program
+ edit the batch files:
+
+   Start_Server.bat
+   Stop_Server.bat
+
+ Change the respective lines as follows:
+
+   usr\local\php\php.exe -n  unicon\main\start_servers.php 1
+   usr\local\php\php.exe -n  unicon\main\stop_servers.php 1
+
+ Example 2:
+
+ Apache and MySQL servers can be run without automatically displaying the index
+ page using a parameter value of 3 as shown below:
+ 
+   usr\local\php\php.exe -n  unicon\main\start_servers.php 3
+   usr\local\php\php.exe -n  unicon\main\stop_servers.php 3
+
+ Note 1: Changing the defaults in file config.inc.php affect  Apanel, UniTray
+         and batch files if they are not using parameters to override defaults.
+
+ Batch files and UniTray:
+ 
+ The batch files contain additional commands these have been disabled using
+ “rem” (remark) removing the rem enables the command.
+
+ For example changing “rem  Start.exe” to “Start.exe” starts UniTray when the
+ batch file is run.
+
+ When a batch file is run its window remains open until a user presses any key.
+ To have the window automatically close disable the pause command using a “rem”
+ Doing this you have no time to read any displayed text if you wish to read
+ text enable the delay command by removing the “rem”.
+
+ Example 3:
+
+ This example uses UniServer\alternative_control\Start_Server.bat its current
+ configuration looks like this:
+
+   ..\usr\local\php\php.exe -n  ..\unicon\main\start_servers.php 1
+   rem Start.exe
+   rem ..\unicon\program\unidelay.exe 10
+   pause
+
+ Move the file to folder UniServer and edit to look like this:
+
+   usr\local\php\php.exe -n  unicon\main\start_servers.php 3
+   Start.exe
+   unicon\program\unidelay.exe 10
+   rem pause
+
+ a) Only the MySQL and Apache server started (parameter 3)
+ b) Start.exe - UniTray is started
+ c) unicon\program\unidelay.exe 10 - A ten second delay allows text to be read
+ d) rem pause - Pause is disabled hence window closes after 10 seconds
+
+ -------
+ Summary
+ -------
+
+ Uniform Server’s control architecture provides a great deal of flexibly
+ allowing you to tailor the servers.
+
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+
+
+
+

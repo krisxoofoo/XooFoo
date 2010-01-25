@@ -1,0 +1,119 @@
+###############################################################################
+# File name: Move Server.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 8-10-2009
+###############################################################################
+
+ To run multi-servers on the same PC several items require changing such as
+ server ports, service names, Apache and UniTray executable names.
+
+ Manually changing these can be time consuming and prone to errors. The process
+ has been automated with the following script: move_servers.php
+
+ -----------
+ Preparation
+ -----------
+
+ Close all running servers and their corresponding UniTrays
+
+ Note: This script must be run on a clean install of Uniform Server.
+
+ -----------
+ Run Options
+ -----------
+
+ There are two methods of running the script:
+
+ Method 1:
+
+ Run the script using the following batch file Run.bat located in folder:
+ unicon\move_servers
+ Double click Run.bat and enter appropriate values. 
+
+ Method 2:
+
+ Alternatively you can run the script from UniTray:
+ Use either the right or left menu, mouse-over "Advanced" and select
+ "Move Servers multi-server operation"
+
+ ------
+ Script
+ ------ 
+
+ Unless you want to use specific ports and names accept defaults shown in
+ brackets by pressing enter.
+
+ Note: If you change service or Apache executable names make sure these have
+ eight or less characters.
+
+ The script uses existing file and service names  it either appends a digit or
+ increments an exiting one. Ports are incremented, note invalid ports
+ are skipped.
+
+ When run for the first time output looks like this:
+
+ ##############################################################################
+  Current Apache port = 80         Proposed port [81] :
+  Current SSL port    = 443        Proposed port [444] :
+  Current MySQL port  = 3306       Proposed port [3307] :
+  Current Apache name = Apache.exe Proposed name [Apache1.exe] :
+  Current MySQL name  = mysqld-opt.exe  Proposed name [mysqld-opt1.exe] :
+
+  ===== SERVICES Service names ====
+
+  Current Apache name = ApacheS1 Proposed name = [ApacheS2] :
+  Current MySQL  name = MySQLS1  Proposed name = [MySQLS2] :
+
+  ===== UniTray Controller  ====
+  Current UniTray name = UniTray1.exe Proposed name [UniTray2.exe] :
+
+  ===== eAccelerator  ====
+
+  If running a single server do not disable eAccelerator.
+  For multi-servers enter Y
+
+  Disable_eAccelerator type Y or N [Y] :
+
+  Commit type Y or N [Y] :
+ ##############################################################################
+
+ UniTray: Unitray's icon is updated to reflect changes (digit increments)
+
+ -----------------------
+ Known number of servers
+ -----------------------
+
+ If you know in advance the number of additional servers that will be run
+ create them at the same time, just makes the task a little easier.
+
+  1) Extract a new copy of Uniform Server
+  2) Move the server using the above script.
+  3) Clone this server (copy to a new folder)
+  4) Move the server using the above script.
+  5) Repeat steps 3 to 4 for each new server.
+
+ -------------
+ General Notes
+ -------------
+
+ 1) If all the servers are to be installed as a service there is no need to
+    disable eAccelerator.
+
+ 2) If the servers are to be run as a standard program eAccelerator must be
+    disabled otherwise Apache will fail to start.
+
+ 3) Remember to append the new port number to access server pages for example
+    if the server was moved to port 81 type the following into your browser:
+
+      http://localhost:81/
+
+ 4) Important note: MySQL port
+
+    When installing third party software you may be given a choice of entering
+    a port number, enter the one corresponding to the moved server (you can
+    find this by running server status) 
+
+    If this option is not provided (generally not) then append it to the server
+    name e.g. localhost:3307
+
+---------------------------------- End -----------------------------------------

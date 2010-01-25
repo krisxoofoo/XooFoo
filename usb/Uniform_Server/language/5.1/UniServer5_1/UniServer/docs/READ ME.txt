@@ -1,0 +1,59 @@
+###############################################################################
+# File name: READ ME.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 16-6-2009
+###############################################################################
+
+------------
+Read Me File
+------------
+
+The Uniform Server is a free product and does not contain commercial software!
+You can use it for free. 
+
+ - No installation required!
+
+
+-------------------
+System Requirements
+-------------------
+
+ - Windows NT or 2000 or XP.
+ - TCP/IP protocol support.
+
+
+-----------------------
+To enable Apache server
+-----------------------
+
+ - Switch on TCP/IP network protocol (if you have no network card just install something).
+
+
+--------------------------------
+Starting and stopping the server
+--------------------------------
+
+ - Run Start_UniTray.bat this creates a tray menu. Left mouse click on the icon use the top
+ - two menus to start and stop both Apache and MySQL servers.
+ - Starting the servers will automatically open up a browser that will connect to http://localhost/apanel/
+ - or by IP address http://127.0.0.1/apanel/.
+ - To start as service right mouse click on tray icon, install and run or stop and uninstall services
+ - using the top two menues.
+
+
+--------------------------
+Troubleshooting the server
+--------------------------
+
+ - Run "Server Status" from UniTray it provides diagnostic information.
+ - If ports already opened, disable the program or whatever it is that is using it.
+ - If others, go to http://forum.uniformserver.com
+
+
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.

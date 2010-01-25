@@ -1,0 +1,153 @@
+###############################################################################
+# File name: Install and Run.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 27-6-2009
+###############################################################################
+
+  Web root folders are located as follows:
+    * UniServer\www - Where your web-pages are placed
+    * UniServer\ssl - Where your secure web-pages are placed
+
+1) Install
+   Extract Uniform Server to any folder (on any hard drive or USB stick);
+
+2) Run - Quick Start Guide
+   Navigate to folder UniServer and double click on Start.exe:
+
+   This starts the tray menu where your servers are controlled from.
+   Tray icon blue background with white number one, bottom right of screen. 
+
+   LEFT MENU:
+   Selected with left-mouse button, this runs the servers as a standard program.
+   Top menu item starts both Apache and MySQL servers.
+   Second item stops both servers.
+
+   Standard program: Every time you switch your PC on you need to 
+                     restart the servers.
+
+   RIGHT MENU:
+   Selected with right-mouse button, this runs the servers as a service.
+   Top menu item installs and runs both Apache and MySQL services.
+   Second item stops and uninstalls both services.   
+
+   Note: There are no restrictions! You can install services from a USB memory
+         stick. Remember to uninstall services before removing memory stick.
+
+   Service: Servers automatically restart when PC is switched on.
+
+3) Run - Individual server control
+   The third menu item (left or right menus) allows individual server control.
+   You can start/stop each server as a standard program or 
+   install-run/stop-uninstall each server as a service.
+
+   Individual control allows you to mix the above, for example run one server
+   as a standard program and the other as a service. 
+
+4) Common:
+   Appart from the above all other menu items are common to both standard and
+   service operation.
+
+5) Server Status:
+   Fourth menu item provides diagnostic information, as shown in this example:  
+ 
+ ================== UNIFORM SERVER STATUS ==================
+
+ APACHE SERVER:
+
+   Apache port            = 81
+   Apache SSL port        = 444
+   Apache executable name = Apache1.exe
+   Apache service name    = ApacheS2
+   Apache SSL server      = Enabled
+   Apache run status      = Not running
+   Apache install status  = Free to install
+
+ MySQL SERVER:
+
+   MySQL port             = 3307
+   MySQL executable name  = mysqld-opt1.exe
+   MySQL service name     = MySQLS2
+   MySQL run status       = Not running
+   MySQL install status   = Free to install
+
+ PORT STATUS:
+
+   Apache port     = 81 Is free to use
+   Apache SSL port = 444 Is free to use
+   MySQL port      = 3307 Is free to use.
+===============================================================
+
+6) Apache Syntax check
+   If you make changes to the server configuration files this
+   menu item provides a quick check for Apache syntax errors.
+
+7) Admin Panel
+   Admin panel provides fine server control along with server security
+   configuration. By default the server is locked down allowing only
+   local access. 
+
+8) phpMyAdmin
+   MySQL server user accounts and database configurations can be accessed
+   using phpMyAdmin.
+
+9) WWW and SSL root
+   To view your web site these menu items take you to the index page
+   contained in folders UniServer\www and UniServer\SSL
+
+10) Advanced
+    Advance opens a set of submenu items.
+
+    MySQL password restore – 
+     This restores the password back to the default root
+
+    Server Certificate and Key generator –
+     The server default is SSL disabled. Click this link to generate a new
+     server certificate and key. Once created the server is enabled for SSL
+     operation. The server requires restarting for the new configuration
+     to be picked-up.
+
+    Move Servers multi-server operation -
+     This menu option automatically reconfigures the servers to run on
+     different ports and service names allowing multi servers to be run
+     on the same PC. Extract a new version of Uniform Server and run
+     the script using this menu item.    
+
+    Perl Shebang Update cgi-bin -
+     Perl scripts contain a Shebang (first line) this informs a server where
+     to find the Perl program. Uniform Server is dynamic and tracks any path
+     changes automatically updating the Shebang. However if the server remains
+     static and you have added new scripts in the cgi-bin folder the Shebang
+     is never updated. Hence run this menu item after installing new scripts.
+     It updates the Shebang in all files to the current Perl location.
+
+11) Server information and Logs -
+    Opens a set of sub-menu items allowing you to select and view
+    specific server information.
+
+12) Reload Menu -
+    This allows you to reload the menu configuration file. Preferably make
+    small changes to this file, run menu item to quickly see any adverse 
+    effects of making changes. Makes it easier to revert back to a working
+    menu.   
+
+13) Server Documentation -
+    Provides quick access to server documentation contained in folder UniServer\docs 
+
+14) About -
+    Intro information.
+
+15) Exit -
+    Closes menu.
+
+16) Double click icon -
+    Double click on the tray icon to display Apanel.
+
+               
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+

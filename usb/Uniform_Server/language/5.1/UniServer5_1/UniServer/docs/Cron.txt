@@ -1,0 +1,163 @@
+###############################################################################
+# File name: Cron.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 8-9-2009
+###############################################################################
+
+ ----
+ Cron
+ ----
+
+ Cron originated from a Unix environment it is a job scheduler allowing scripts
+ to be run automatically at a certain time or date. Cron (chronograph) has
+ become a more general term referring to a periodic tick.  
+
+ -------------
+ Portable cron
+ -------------
+
+ For a permanent installation of UniServer running as a service you can set-up
+ Windows to schedule a task similar to Unix Cron check out
+ http://support.microsoft.com/kb/308569 for details? This is not practical when
+ running UniServer from a USB memory stick. UniServer 5-Nano resolves this
+ with a small script scheduler referred to as portable cron.
+
+ It’s fully integrated into UniServers’s control architecture allowing it to be
+ run from either batch files or UniTray. To run a script or scripts a small
+ amount of configuration is required as explained below.
+
+ --------------------------- 
+ Portable Cron Configuration
+ ---------------------------
+
+ Each script that requires running is added to the cron script run_cron.php
+ located in folder UniServer\unicon\main
+
+ There are three examples two for server scripts (Drupal and Moodle) and one
+ for CLI script (DtDNS updater.
+ Consider the three as templates allowing to to add other scripts. 
+
+ A) Server Scripts
+
+ These are generally single pages that require running.
+
+ Enable a line by removing the two forward slashes. Insert a script’s full url
+ (effectively this is what you would type into a browser
+ to run an applications Cron script).
+
+ The two enabled example lines as follows:
+
+ $dummy = file("http://localhost/moodle/admin/cron.php");// Uncomment to enable
+ $dummy = file("http://localhost/drupal/cron.php");      // Uncomment to enable
+
+ The variable $dummy is just that and is never used.
+
+ Note 1: If you have installed the above applications to different folders
+         use the appropriate folder names.
+
+ Note 2: If you have moved the servers remember to add a port number to the url.
+         For example moving the servers once, Apache port becomes 81 and the
+         above two lines need to change as follows:
+      
+ $dummy = file("http://localhost:81/moodle/admin/cron.php"); // Uncomment to enable
+ $dummy = file("http://localhost:81/drupal/cron.php");       // Uncomment to enable
+
+ B) CLI Scripts
+
+ CLI scripts may require more than a single line to run. The DtDNS script for
+ example uses two lines.
+
+ The DtDNS automatic updater has been pre-configured and is disabled by default.
+ These two lines in section List of scripts to be run
+
+  // $cmd = 'start ..\..\usr\local\php\php-win.exe ..\..\plugins\dtdns_updater\dtdns_updater.php';
+  // pclose(popen($cmd,'r'));             // Start detatched process  
+
+ Need to be un-commented as shown below
+
+  $cmd = 'start ..\..\usr\local\php\php-win.exe ..\..\plugins\dtdns_updater\dtdns_updater.php';
+  pclose(popen($cmd,'r'));             // Start detatched process  
+
+ First line defines a command (script) to be run. If you wish this can expanded
+ into several lines depends on complexity. Last line is required to detached
+ the process and must be included otherwise the Cron script is killed.
+
+ -------------
+ Periodic tick
+ -------------
+
+ Starting Cron immediately runs all scripts defined in the list. After this,
+ scripts will run periodically defined by variable $cron_time currently set
+ to 10 minuets.
+
+ This is a reasonable value and should be adequate for most applications.
+ Consider this to be a minimum value, ideally increase it to a higher value
+ to reduce processor overhead..  
+
+ ------------
+ Running Cron
+ ------------
+
+ Start the servers and run cron from either the batch files or UniTray
+
+  UniTray:
+    Start: Left click tray icon > Advanced > click Run Portable Cron
+    Stop:  Left click tray icon > Advanced > click Stop Portable Cron
+
+  Batch files:
+    Navigate to folder  UniServer\alternative_control
+    Start: Double click Start_Cron.bat
+    Stop: Double click Stop_Cron.bat
+
+  Note: There can be a delay of up to one second before cron stops.
+
+ -------------
+ General Notes
+ -------------
+
+ A) Control architecture, for independent control Cron has been binary coded
+    with a value of 16.
+
+ Example of use:
+  If you wish to start and stop Cron when starting and stopping both servers
+  from UniTray edit file UniServer\unicon\tray_menu\UniTray1.ini
+
+  Change these two lines from:
+
+  Type: item; Caption: "Start UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\start_servers.php 7";
+  ShowCmd: hidden; Glyph: 9
+
+  Type: item; Caption: "Stop  UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\stop_servers.php 7";
+  ShowCmd: hidden; Glyph: 11
+
+  To:
+  Type: item; Caption: "Start UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\start_servers.php 23";
+  ShowCmd: hidden; Glyph: 9
+
+  Type: item; Caption: "Stop  UniServer (Apache MySQL)"; Action: shellexecute;
+  FileName: "%PHP%\php.exe"; Parameters: " -n %ServerConMain%\stop_servers.php 23";
+  ShowCmd: hidden; Glyph: 11
+
+     Note: Binary 1+2+4+16 = 23  
+       1  - Run Apache server 
+       2  - Run MySQL  server
+       4  - Start Index page
+      16  - Run cron
+
+ B) Portable Cron and Service
+    Portable Cron may be run when servers are installed as a service. However
+    will not restart after restarting PC, you need to manually run Portable
+    Cron again.
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+
+

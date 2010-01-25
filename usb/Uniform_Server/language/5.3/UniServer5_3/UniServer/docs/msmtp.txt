@@ -1,0 +1,145 @@
+###############################################################################
+# File name: msmtp.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 4-10-2009
+###############################################################################
+
+ -----
+ msmtp
+ -----
+ MSMTP is an SMTP client once configured allows PHP scripts to directly send
+ emails via your SMTP mail server. This can be a local server, your ISP’s
+ server or a free email provider’s server such as Gmail and Hotmail.
+
+ Free email providers require authentication before relaying your emails via 
+ their servers. Msmtp provides a transparent interface between PHP scripts and
+ an smtp server, automatically performing this authentication.
+
+ MSMTP is an open source project latest version can be downloaded
+ from http://sourceforge.net/projects/msmtp/files/  
+
+ MSMTP has been integrated into Uniform Server a small amount of configuration
+ is required as explained below:
+
+ -------------
+ Configuration
+ -------------
+
+ PHP uses the default account as set in configuration file
+ UniServer\msmtp\msmtprc.ini
+
+ Before running any PHP scripts that send mail at least one account in this
+ file must be configured and set as default.
+
+ The file contains three-example configurations that will suit most
+ requirements.
+
+ ----------------------
+  Configuration - MyISP
+ ----------------------
+
+ The first account, MyISP replaces the basic sendmail settings that would have
+ been set in the php.ini file.
+
+ It assumes your Internet service provider does not require you to
+ authenticate. Hence all that is required is your ISP’s smtp server name and
+ your email address.
+
+   account MyISP
+   host smpt.tiscali.co.uk
+   from johm.doe@tiscali.co.uk
+   auth off
+
+ Substitute smpt.tiscali.co.uk with your ISP's smpt server (The one you used to
+ set up your e-mail client e.g Outlook express.)
+
+ Substitute john.doe@tiscali.co.uk with your real email address 
+
+ To make this account the default (Bottom of configuration file))
+ Change line "account default : Hotmail" to "account default : MyISP"
+
+ Note: Other accounts are ignored. PHP will use this account to send emails and
+       your ISP will relay them to the appropriate address.
+
+ Note: This account is restrictive because it ties you to your service provider
+       hence is not portable. However it has one advantage requires minimum
+       of configuration.
+
+ -----------------------
+ Configuration - Hotmail
+ -----------------------
+
+ The second account, Hotmail is a free account that you need to create at the
+ following address http//www.hotmail.com once signed up you will have an email
+ address and password. These are required to configure your msmtp account.
+
+   account Hotmail
+   tls on
+   tls_certcheck off
+   host smtp.live.com
+   from john.doe123@hotmail.co.uk
+   auth on
+   user john.doe123@hotmail.co.uk
+   password fred123
+
+ Substitute from john.doe123@hotmail.co.uk with your login email address 
+
+ This account requires authentication hence your login details:
+
+ Substitute user john.doe123@hotmail.co.uk with your login email address
+ Substitute password fred123 with your login password 
+
+ To make this account the default (Bottom of configuration file))
+ Line "account default : Hotmail" remains unchanged
+
+ Note: Other accounts are ignored. PHP will use this account to send emails
+       and Hotmail servers will relay them to the appropriate address.
+
+ ---------------------
+ Configuration - Gmail
+ ---------------------
+
+ The third account, Gmail is a free account that you need to create at the
+ following address http://mail.google.com/ once signed up you will have an
+ email address and password. These are required to configure your
+ msmtp account.
+
+   account Gmail
+   tls on
+   port 587
+   tls_certcheck off
+   host smtp.gmail.com
+   from john.doe777@gmail.com
+   auth on
+   user john.doe777@gmail.com
+   password fred999
+
+ Substitute from john.doe777@gmail.com with your login email address 
+
+ This account requires authentication hence your login details:
+
+ Substitute user john.doe777@gmail.com with your login email address
+ Substitute password fred999 with your login password 
+
+ To make this account the default (Bottom of configuration file))
+ Change line "account default : Hotmail" to "account default : Gmail"
+
+ Note: Other accounts are ignored. PHP will use this account to send emails
+       and Gmail servers will relay them to the appropriate address.
+
+ ------------
+ General Note
+ ------------
+
+ You can create any number of accounts however make sure the account name is
+ unique. PHP will use only the account you set as default.
+
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+

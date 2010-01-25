@@ -1,0 +1,24 @@
+---------------------
+A T T E N T I O N !!!
+---------------------
+
+
+Ne pas démarrer ces scripts sans être sûr de ce que vous faites.
+Les fichiers originaux de ce package ne sont pas faits pour fonctionner comme services sous NT.
+Pour les utilisateurs qui désirent utiliser Apache2 comme service sous windows NT, il y a les fichiers suivants :
++ run.bat  - il installe Apache2 et MySQL comme services windows; (un répertoire C:\UniServerZ.Z\ doit être créé)
++ w2c1.pl  - Perl script;
+
+Pour désinstaller les services, utilisez : C:\Uniserver\Uninstall.bat
+
+Pour plus d'informations, lire : http://httpd.apache.org/docs-2.0/platform/windows.html
+
+
+
+-------------------------------------------------------
+Copyright 2002-2008 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product. But they 
+can not be responsible for any type of damages or troubles 
+caused by using this or another software.

@@ -1,0 +1,299 @@
+################################################################################
+# File name: CHANGE LOG.txt
+# Created By: The Uniform Server Development Team
+# Updated 5-10-2009
+################################################################################
+
+-------------------------
+Uniform Server Change Log
+-------------------------
+
+5.3  - Replaced PHP with 5.3.0;
+     ...
+
+5.2  - Apache updated to 2.2.14
+     - MySQL updated to 5.1.39;  
+     - PHP updated to 5.2.11;
+     - phpMyAdmin updated to 3.2.2;
+     - Cron updated   - Added ini configuration and logging
+     - DtDNS updated  - Added ini configuration and logging
+     - New db_backup  - Ini configuration + logging + archive to 7z files
+     - New msmtp      - Integrated msmtp an SMTP client 
+     - Bug Fixes;
+     ...
+
+5.1 - PHP updated to 5.3.0;
+     ...
+
+5.0 - Apache updated to 2.2.13;
+    - MySQL updated to 5.1.38;      
+    - phpMyAdmin updated to 3.2.2-rc1;
+    - PHP updated to 5.2.10;
+    - ActivePerl updated to 5,10,0,1005 Plugin;
+    - Integrated UniTray;
+    - eAccelerator -  0.9.6-rc1
+    - Major Architecture change;
+     ...
+
+4.4 - Apache updated to 2.2.13;
+    - MySQL updated to 5.1.38;      
+    - phpMyAdmin updated to 3.2.2-rc1;
+    - PHP updated to 5.3.0;
+    - eAccelerator updated to 0.9.6-rc1
+     ...
+
+4.3 - MySQL updated to 5.1.35;
+    - PHP security update 5.2.10;
+    - phpMyAdmin updated to 3.2.0;
+    - eAccelerator updated to 0953_5.2.10 
+
+4.2 - MySQL updated to 5.1.34;
+    - PHP security update 5.2.9-2;
+    - eAccelerator updated to 0953_5.2.9.2 
+    - few minor corrections;
+     ...
+
+4.1 - MySQL updated to 5.1.33;
+    - PHP updated to 5.2.9-1;
+    - eAccelerator updated to 0953_5.2.9.1 
+    - phpMyAdmin updated to 3.1.3.1;
+    - ActivePerl updated to 5,10,0,1004;
+    - Openssl updated to 0.9.8k
+    - New Plugin, Move server 
+    - Bug fix, UniController v2.1;
+    - Service Scripts Updated;
+    - Batch scripts Updated;
+    - core server arcitecture/structure updated;
+     ...
+
+4.0 - Apache updated to 2.2.11;
+    - MySQL updated to 5.1.30;
+    - PHP updated to 5.2.8;
+    - phpMyAdmin updated to 3.0.1.1;
+    - ActivePerl updated to 5,10,0,1003;
+    - Updated, Brand New UniController v2;
+    - Service Scripts Updated/Bug Fixes;
+    - Implemented Combined bug fix see Wiki;
+    - Pear install updated
+    - SSL PreInstalled;
+    - Admin Panel 2.1;
+    ...
+
+3.5 - phpMyAdmin updated to 2.10.2;
+    - Admin Panel 2.0 Updated;
+    - Service Scripts Updated/Bug Fixes;
+    - MySQL Priv Bug Fix
+    - core server arcitecture/structure updated;
+    ...
+
+3.4 - phpMyAdmin updated to 2.10.1;
+    - eAccelerator 0.9.5.1 + Control Panel
+    - MySQL updated to 5.0.41;
+    - Apache updated to 2.0.59;
+    - PHP & PHP Extensions updated to 5.2.3;
+    - ActivePerl updated to 5.8.8.820;
+    - phpMyBackupPro updated to - 2.1;
+    - Admin Panel 2.0 Updated;
+    - Service Scripts Updated/Bug Fixes;
+    - Scroller Fixed/Removed
+    - core server arcitecture/structure updated;
+    ...
+
+3.3 - phpMyAdmin updated to 2.6.4-pl4;
+    - MySQL updated to 5.1.17;
+    - Apache updated to 2.0.55;
+    - PHP & PHP Extensions updated to 5.1.1;
+    - ActivePerl updated to 5.8.7.815;
+    - phpMyBackupPro Added - 1.7.1;
+    - New Admin Panel 2.0 - Alpha Release;
+    - Multilingual;
+    - SSL PreInstalled;
+    - Service Scripts Updated/Bug Fix
+    - New Start Page;
+    - Plugin System Suitable;
+    - core server arcitecture/structure updated;
+    ...
+
+3.2a - Apache updated to 2.0.54;
+     - PHP updated to 5.0.4;
+     - MySQL updated to 4.1.12a;
+     - ActivePerl updated to 5.8.7.813;
+     - phpMyAdmin updated to 2.6.3-rc1;
+
+3.2 - Apache updated to 2.0.50;
+    - PHP updated to 5.0.0;
+    - MySQL updated to 4.0.20d;
+    - ActivePerl updated to 5.8.4.810;
+    - phpMyAdmin updated to 2.6.0-beta2;
+    - PHP GD2,mysql and sockets extentions included;
+    - Script to convert server to NTservices works again;
+    - Turck MMCache removed;
+    - core server arcitecture improved;
+    ...
+
+3.1 - ActivePerl updated to 5.8.0.809;
+    - MySQL updated to 4.0.18;
+    - phpMyAdmin updated to 2.5.6;
+    - secure.pm allow from 127.0.0.1;
+    - bugfix in start.bat "subst /D";
+    - AddType Application/x-httpd-php-source .phps
+     
+3.0 - ActivePerl updated to 5.8.0.808;
+    - MySQL updated to 4.0.17;
+    - phpMyAdmin updated to 2.5.5-RC2;
+    - Check for old Apache in start.bat.
+    - perl location changed to \usr\bin;
+    - \home\unix deleted;
+    - mod_dav for dav-fs support added;
+    - many minor and major corrections;
+    - now it is possible to change the server disk!
+    - Script to convert server to NTservices temporally disabled;
+    - very new concept!!!
+
+2.8a - PHP updated to 4.3.4;
+     - Turck MMCache 2.4.6 added;
+     - Kill old Apache in start.bat.
+     - PHP: go-pear.bat added;
+     - mod_deflate for output compression added;
+     - few minor corrections;
+
+2.8 - Apache updated to 2.0.48;
+    - PHP updated to 4.3.4RC3;
+    - phpMyAdmin updated to 2.5.4;
+    - MySQL updated to 4.0.16;
+    - 1 second pause in start.vbs.
+    - PHP Zend Optimizer removed (module may be);
+
+2.7 - Apache updated to 2.0.47;
+    - PHP updated to 4.3.3;
+    - PHP Zend Optimizer v2.1.0 included;
+    - phpMyAdmin updated to 2.5.3;
+    - MySQL updated to 4.0.15;
+
+2.6 - phpMyAdmin updated to 2.5.1;
+    - PHP updated to 4.3.2;
+    - AddHandler in httpd.conf resolved;
+
+2.5 - Apache updated to 2.0.46;
+    - PHP updated to 4.3.2RC4;
+    - MySQL updated to 4.0.13;
+    - phpMyAdmin updated to 2.5.1-rc1;
+    - ActivePerl updated to 5.8.0.806;
+    - AddHandler in httpd.conf still not resolved;
+
+
+2.4 - Apache updated to 2.0.45;
+    - a bug with AddHandler in httpd.conf corrected;
+
+2.3 - phpMyAdmin updated to 2.4.0;
+    - MySQL updated to 4.0.12 and included by default;
+
+2.3a1 - PHP updated to 4.3.1;
+      - phpMyAdmin updated to 2.4.0-rc2;
+      - PrcView updated to 3.7.2.5;
+      - double php.ini removed;
+      - configuration script corrected;
+      - Some Perl modules added by default;
+
+2.2 - Server directory renamed to UniServer_XX for better compatibility;
+    - phpMyAdmin updated to 2.4.0-rc1;
+    - by default PHP loads as "Apache 2.0 Filter";
+    - in "httpd.conf" one can chouse way in which PHP interacts with Apache;
+    - the server serves two copies of php.ini see php.ini;
+    - a patch to correct win98 error applied to Apache 2.0.44;
+    - my-small.cnf corrected "skip-innodb" by default;
+    - Start.vbs added options for start of MySQL and browser;
+    - Start.vbs starts browser by default;
+    - a lot of minor corrections;
+
+2.1 - Apache updated to 2.0.44;
+    - ActivePerl updated to ActivePerl 5.8.0.804;
+    - Uniconfig.php corrected;
+    - Start.vbs for hidden start added;
+
+2.0 - PHP updated to 4.3.0;
+    - MySQL updated to 3.23.54a;
+    - phpMyAdmin updated to 2.3.3pl1;
+    - Few mistakes corrected.
+
+2b4 - MySQL configuration file created;
+    - phpMyAdmin updated to 2.3.3;
+    - MySQL control scripts changed;
+    - Few minor bugs corrected;
+
+2b3 - MySQL updated to 3.23.53-max;
+    - PrcView updated to 3.7.2.4;
+    - phpMyAdmin updated to 2.3.2;
+
+2b2 - Apache updated to 2.0.43;
+    - Added security check in administration scripts;
+    - In php.ini session.save_path =w:/tmp;
+
+2b1 - Apache updated to 2.0.42;
+    - PHP updated to 4.2.3;
+    - phpMyAdmin updated to 2.3.1;
+    - Added update script;
+    - A bug in MySQL control scripts corrected;
+
+2a2 - MySQL updated to 3.23.52;
+    - PERl updated to 5.6.1.633;
+    - Added script to convert server to NTservices;
+    - Additional futures of PhpMyAdmin preconfigured;
+    - Added plugis directory;
+    - A lot of minor and major corrections;
+
+2a1 - The server combined into one distribution;
+    - WSH is not required any more;
+    - "Serveradmin" directory renamed to "admin";
+    - administration scripts modified;
+    - execution of cgi scripts outside of defined aliases restricted;
+    - phpMyAdmin updated to 2.3.0;
+    - 7z archive used for is distribution packages;
+    - Added scripts to control Apache2 as service on windows NT.
+
+1.10.NT - Uniform server configuration script extended;
+        - windows to unix script bug corrected;
+        - phpMyAdmin updated to 2.3.0-rc4
+        - start.vbs - starts browser;
+        - short documentation added;
+        - Register globals in PHP.ini is on by default!!!
+          (not most secure but compatible with old scripts);
+        - A lot of minor corrections;
+
+1.9.NT - PHP updated to 4.2.2.
+
+1.8.NT - PHP.ini minor bug corrected;
+       - unused apache modules deleted;
+       - The distributions are split for 95, 98 or ME and NT, 2000 or XP;
+
+1.8 - Design of main page optimized;
+    - Apache configuration added;
+    - Administration scripts corrected;
+
+1.7 - Apache, MySQL, PhpMyadmin - Updated;
+    - Minor bugfix and optimization;
+
+1.6.1 - The problem with mysql stop corrected;
+
+1.6 - Minor bugfix;
+    - Server temporally directory improved;
+    - httpd.conf -> LogFormat -> combined;
+
+1.5 - Major bugfix;
+    - documentation links added;
+
+1.4 - Bug fix;
+    - security update;
+    - test pages added;
+
+1.3 - First public release.
+
+
+-----------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+

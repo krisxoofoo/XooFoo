@@ -36,12 +36,12 @@
 .width10 { width: 				10%;}
 /*========  others table div class ======== */
 .table {display:table;}
-.tcaption1 { display:block; width:100%; for 1 columns */}
-.tcaption2 { display:block; width:200%; for 2 columns */}
-.tcaption3 { display:block; width:300%; for 3 columns */}
-.tcaption4 { display:block; width:400%; for 4 columns */}
-.tcaption5 { display:block; width:500%; for 5 columns */}
-.tcaption6 { display:block; width:600%; for 6 columns */}
+.tcaption1 { display:block; width:100%; /* for 1 columns */}
+.tcaption2 { display:block; width:200%; /* for 2 columns */}
+.tcaption3 { display:block; width:300%; /* for 3 columns */}
+.tcaption4 { display:block; width:400%; /* for 4 columns */}
+.tcaption5 { display:block; width:500%; /* for 5 columns */}
+.tcaption6 { display:block; width:600%; /* for 6 columns */}
 .tbody { display:table-row-group;}
 .trow { display:table-row;}
 .tcell { display:table-cell;}

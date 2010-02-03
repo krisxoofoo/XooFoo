@@ -1,0 +1,6 @@
+Css100 Xdt Standard Theme Template - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- first work : design and code (kris)

@@ -32,8 +32,7 @@ html, body {
 	line-height:				1.5em;
 }
 html {font-size:100.01%;}
-body {font-size:75%;
-}
+body {font-size:75%;}
 /* ======= Body box ======= */
 #xo-wrapper { background : #fff url(../img/wizard_bg.png) fixed no-repeat left bottom;}
 #xo-bgstatic {}
@@ -341,7 +340,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 }
 #xo-searchfooter input {font-size:1.1em;}
 #xo-copyright {float:right; padding-top:.45em; padding-right:1em;}
-.xo-footbottom {padding-bottom:30px;}
+.xo-footbottom {mzrgin-bottom:30px;}
 /* ===== tables and cells ===== */
 table {width:100%; border-collapse: collapse;}
 caption { font-style: italic; font-weight: bold;}

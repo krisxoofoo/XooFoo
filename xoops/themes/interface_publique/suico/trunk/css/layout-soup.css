@@ -16,7 +16,7 @@
 body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /*============= Canvas rules ============*/
-#xo-canvas-content { display:table; width:99%; border-collapse:collapse;}
+#xo-canvas-content { display:table; width:99%; min-height:550px !important; border-collapse:collapse;}
 #xo-canvas-columns {	max-width: 100%; display:table-row;}
 #xo-content-caption {display:none;}
 #xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top; display:table-cell;}

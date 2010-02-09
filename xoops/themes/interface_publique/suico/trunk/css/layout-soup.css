@@ -17,9 +17,12 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /*============= Canvas rules ============*/
 #xo-canvas-content { display:table; width:99%; border-collapse:collapse;}
-#xo-canvas-columns {	width: 100%; display:table-row;}
+#xo-canvas-columns {	max-width: 100%; display:table-row;}
 #xo-content-caption {display:none;}
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top; display:table-cell;}
+
 #xo-canvas-leftcolumn { width: 180px;}
+#xo-canvas-leftcolumn .xo-block { max-width:180px !important;}
 /* Page [center column] rules */
 * html #xo-page {	height: 500px;}
 #xo-page {
@@ -29,9 +32,7 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 	padding: 				0;
 } 
 #xo-canvas-rightcolumn {	width: 180px;}
-
-#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top; display:table-cell;}
-
+#xo-canvas-rightcolumn .xo-block { max-width:180px !important;}
 /*========== Canvas rules (when columns are visible) ===========*/
 #xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {}
 #xo-canvas.rightcolumn-layout #xo-page, #xo-canvas.threecolumns-layout #xo-page { border-right-width:	0;}

@@ -3,4 +3,4 @@ Suico Theme (in memory of Marcello Brandao) - Changelog
 ============================
 Version 1.0 ( for xoops 2.4.x )
 ============================
-- first work : design and code (kris_fr)
+- first work : design and code (kris_fr & Xoops Design Team for help and debug)

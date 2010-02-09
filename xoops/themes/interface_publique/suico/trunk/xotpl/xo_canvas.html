@@ -30,7 +30,7 @@
 				</div>
 			</div>
 			<!-- End header -->
-			<div id="xo-canvas-content" class="<{$xoops_dirname}>">
+			<div id="xo-canvas-content" <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
 				<!--<{if $xoBlocks.canvas_top}>
 					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
 						zoneClass='' zoneId='xo-canvas-header'}>
@@ -42,7 +42,7 @@
 				<{/if}>-->
 			</div>
 			<!-- Start footer -->
-			<div id="xo-footer">
+			<div id="xo-footer" <{if $xoops_isadmin}>class="xo-footbottom"<{/if}>>
 				<div id="xo-rss"><a href="<{xoAppUrl backend.php}>" title="<{$smarty.const.THEME_RSS}>"><img src="<{xoImgUrl icons/action/feed.png}>" alt="<{$smarty.const.THEME_RSS}>" /></a></div>
 				<div id="xo-searchfooter">
 					<form name="search" method="get" action="<{xoAppUrl /search.php}>">

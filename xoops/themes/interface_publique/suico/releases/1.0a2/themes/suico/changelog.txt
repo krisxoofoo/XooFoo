@@ -1,0 +1,16 @@
+Suico Theme (in memory of Marcello Brandao) - Changelog
+
+============================
+Version 1.0 Alpha 2 ( for xoops 2.4.5 )
+============================
+- Improved new xo_userbar.html with popup for login and member infos (kris_fr & Xoops Design Team for help and debug)
+- Add smarty plugin for member infos (kris_fr / Dugris)
+- Fixed bug for display footer in admin mode
+- Fixed bug for display horizontal menu (kris_fr / Burning)
+- Fixed bug for width columns (kris_fr / Burning)
+- Fixed color for input form [kris_fr / Burning)
+
+============================
+Version 1.0 Alpha 1 ( for xoops 2.4.x )
+============================
+- first work : design and code (kris_fr & Xoops Design Team for help and debug)

@@ -116,6 +116,8 @@ bdo {	direction: ltr;}
 acronym, abbr, abbr[title], dfn { border-bottom: 1px dashed; cursor: help;}
 abbr[title] { border-bottom: 1px dotted; cursor: help;} 
 acronym:hover, abbr:hover { border-bottom: #32529C 1px dashed;}
+::selection { background-color: #E7F4F7;	color: #66A3E1;}
+::-moz-selection { background-color: #E7F4F7;	color: #66A3E1;}
 /* ===== lists ===== */
 #xo-canvas-content ol {
 	margin: 					.5em 0 .5em .5em;

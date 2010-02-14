@@ -4,7 +4,7 @@
 <div id="xo-userbar">
 	<{if !$xoops_isuser}>
 		<!-- menu in anonymous mode-->
-		<a class="register" href="javascript:XoShowDiv('marcello');"><{$smarty.const._LOGIN}></a>&nbsp;|&nbsp;<a href="<{xoAppUrl /register.php}>" class="register" title="<{$smarty.const.THEME_REGISTER}>"><{$smarty.const.THEME_REGISTER}></a>
+		<a class="register" href="javascript:XoShowDiv('marcello');" title="<{$smarty.const._LOGIN}>"><{$smarty.const._LOGIN}></a>&nbsp;|&nbsp;<a href="<{xoAppUrl /register.php}>" class="register" title="<{$smarty.const.THEME_REGISTER}>"><{$smarty.const.THEME_REGISTER}></a>
 	<{else}>
 	<!-- menu in user mode-->
 	<a href="javascript:XoShowDiv('brandao');" title="<{$smarty.const.THEME_MYACCOUNT}>"><img class="xo-icons opac5" src="<{xoImgUrl icons/users/vcard_edit.png}>" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a><{xoInboxCount assign=pmcount}><{xoInboxCount assign=pmcount}><{if $pmcount}><a class="highlight" href="<{xoAppUrl viewpmsg.php}>" title="<{$pmcount}> <{$smarty.const.THEME_NOTREAD}>">(<{$pmcount}> Msg)</a><{/if}>
@@ -21,7 +21,7 @@
 	<div id="xo-fade"></div>
 	<div class="xo-popup_block">
 		<div class="xo-popup">
-			<a href="javascript:XoHideDiv('marcello');"><img src="<{xoImgUrl img/icon_close.png}>" class="cntrl" title="<{$smarty.const.THEME_CLOSEPOPUP}>" /></a>
+			<a href="javascript:XoHideDiv('marcello');" title="<{$smarty.const.THEME_CLOSEPOPUP}>"><img src="<{xoImgUrl img/icon_close.png}>" class="cntrl" alt="X"/></a>
 			<fieldset>
 				<legend><{$smarty.const._LOGIN}></legend>	
 				<form action="<{xoAppUrl /user.php op=login}>" method="post" class="login_form">
@@ -36,9 +36,9 @@
 				</form>
 			</fieldset>
 			<div class="center">
-				<a href="<{xoAppUrl user.php#lost}>"><{$smarty.const.THEME_LOSTACCOUNT}></a>
+				<a href="<{xoAppUrl user.php#lost}>" title="<{$smarty.const.THEME_LOSTACCOUNT}>"><{$smarty.const.THEME_LOSTACCOUNT}></a>
 				<br />
-				<a href="<{xoAppUrl register.php}>"><{$smarty.const.THEME_REGISTER}></a>
+				<a href="<{xoAppUrl register.php}>" title="<{$smarty.const.THEME_REGISTER}>"><{$smarty.const.THEME_REGISTER}></a>
 			</div>
 		</div>
 	</div>
@@ -50,12 +50,12 @@
 	<div id="xo-fade"></div>
 	<div class="xo-popup_block1">
 		<div class="xo-popup">
-			<a href="javascript:XoHideDiv('brandao');"><img src="<{xoImgUrl img/icon_close.png}>" class="cntrl" title="<{$smarty.const.THEME_CLOSEPOPUP}>" /></a>
+			<a href="javascript:XoHideDiv('brandao');" title="<{$smarty.const.THEME_CLOSEPOPUP}>"><img src="<{xoImgUrl img/icon_close.png}>" class="cntrl" alt="X"/></a>
 			
 			<table>
 			
 				<tr class="center">
-					<td class="width33"><img class="xo-uavatar boxshadow" src="<{$xoops_avatar}>" alt="" /></td>
+					<td class="width33"><img class="xo-uavatar boxshadow" src="<{$xoops_avatar}>" alt="<{$xoops_uname}>" title="<{$xoops_uname}>"/></td>
 					<td class=" width66 middle"><span class="bold maxi shadow"><{$xoops_uname}></span><br /><span class="italic"><{$xoops_name}></span></td>
 				</tr>
 				
@@ -97,8 +97,8 @@
 						<a href="<{xoAppUrl user.php}>" title="<{$smarty.const.THEME_PROFILE}>">
 						<img class="xo-uicons" src="<{xoImgUrl icons/users/edit_user.png}>" alt="<{$smarty.const.THEME_PROFILE}>"/></a>
 					<{xoInboxCount assign=pmcount}>
-						<a href="<{xoAppUrl viewpmsg.php}>" title="">
-						<img class="xo-uicons" src="<{xoImgUrl icons/users/messagebox_info.png}>" alt="<{$smarty.const.THEME_MESSAGE}> | <{$pmcount}> <{$smarty.const.THEME_NOTREAD}>" title="<{$smarty.const.THEME_MESSAGE}> | <{$pmcount}> <{$smarty.const.THEME_NOTREAD}>"/></a>
+						<a href="<{xoAppUrl viewpmsg.php}>"  title="<{$smarty.const.THEME_MESSAGE}> | <{$pmcount}> <{$smarty.const.THEME_NOTREAD}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/messagebox_info.png}>" alt="<{$smarty.const.THEME_MESSAGE}> | <{$pmcount}> <{$smarty.const.THEME_NOTREAD}>"/></a>
 						<a href="<{xoAppUrl notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>">
 						<img class="xo-uicons" src="<{xoImgUrl icons/users/knotes.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
 					</td>

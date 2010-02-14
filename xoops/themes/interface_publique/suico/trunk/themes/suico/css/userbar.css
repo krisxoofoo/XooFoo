@@ -48,8 +48,8 @@
 	cursor: 					pointer;
 }
 #xo-userbar a.register:hover { color: #fff;}
-#xo-userbar a.highlight { background-color:transparent; color: #fff; font-size:.8em; font-style: italic; opacity: .5;  filter: alpha(opacity=100); filter: alpha(opacity=50);}
-#xo-userbar a.highlight:hover { opacity: 1; filter: alpha(opacity=100);}
+#xo-userbar a.highlight { background-color:transparent; color: #fff; font-size:.8em; font-style: italic; opacity: .5 !important; filter: alpha(opacity=50) !important;}
+#xo-userbar a.highlight:hover { opacity: 1 !important; filter: alpha(opacity=100) !important;}
 #xo-userbar a:hover {}
 
 /* for popup (general) */
@@ -70,7 +70,7 @@
 	z-index: 					100;
 	opacity: 					.80;
 		filter:					alpha(opacity=80);
-		-ms-filter: 			"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /*--IE 8 Transparency--*/
+		-ms-filter: 			"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 .xo-popup {
 	float: 						left;

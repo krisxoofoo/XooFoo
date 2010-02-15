@@ -27,6 +27,9 @@
 		$this->_tpl_vars["xoops_module_header"]."\n".
 		"<link rel=\"stylesheet\" type=\"text/css\" media=\"screen,projection\" href=\"".$this->_tpl_vars["xoops_themeurl"]."/modules/".$this->_tpl_vars["xoops_dirname"]."/style.css\"/>\n");
 	}
+GLOBAL $xoopsModule; 
+$modulename = (isset($xoopsModule) ? $xoopsModule->getVar('name') :'system');
+$GLOBALS['xoopsTpl']->assign('modulename', $modulename); 
 <{/php}>
 	
 <{includeq file="$canvas_template"}>

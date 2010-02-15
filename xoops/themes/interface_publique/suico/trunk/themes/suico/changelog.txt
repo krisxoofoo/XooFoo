@@ -1,6 +1,14 @@
 Suico Theme (in memory of Marcello Brandao) - Changelog
 
 ============================
+Version 1.0 Beta 1 ( for xoops 2.4.5 )
+============================
+- Add border-radius and border-shadow in footer (kris_fr / voltan)
+- Add current link in mainmenu block (kris_fr / mariane / trabis)
+- Add current link in globalnav (kris_fr)
+- Add style for text selection (kris_fr)
+
+============================
 Version 1.0 Alpha 2 ( for xoops 2.4.5 )
 ============================
 - Improved new xo_userbar.html with popup for login and member infos (kris_fr & Xoops Design Team for help and debug)

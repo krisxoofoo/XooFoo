@@ -39,7 +39,17 @@
   color: 			#fff;
 }
 .menu .items a:hover { color: #333; text-shadow: 1px 1px 2px #aaa;}
-.menu .items a.current {}
+.menu .items a.current {color:red;}
+/* for current link */
+body#news .menu .xo-gbnavmod1 {background-color:transparent; color:#333; text-decoration: underline;}
+body#newbb .menu .xo-gbnavmod2 {background-color:transparent; color:#333; text-decoration: underline;}
+body#tdgallery.menu .xo-gbnavmod3 {background-color:transparent; color:#333; text-decoration: underline;}
+body#mytube .menu .xo-gbnavmod4 {background-color:transparent; color:#333; text-decoration: underline;}
+body#mylinks .menu .xo-gbnavmod5 {background-color:transparent; color:#333; text-decoration: underline;}
+body#mydownloads .menu .xo-gbnavmod6 {background-color:transparent; color:#333; text-decoration: underline;}
+body#contact .menu .xo-gbnavmodcontact {background-color:transparent; color:#333; text-decoration: underline;}
+body#sitemap .menu .xo-gbnavmodsitemap {background-color:transparent; color:#333; text-decoration: underline;}
+
 .clearfix:after {
   content: 			"."; 
   display: 			block; 

@@ -229,6 +229,7 @@ textarea:focus {
 }
 #mainmenu a.menuTop  {}
 #mainmenu a.menuMain {}
+#mainmenu a.maincurrent {background-color:transparent; color:#ff9900; text-decoration: underline;}
 #mainmenu a.menuSub {
 	padding: 					2px 0 2px 12px;
 	font-size:					.8em;

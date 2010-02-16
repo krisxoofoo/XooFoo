@@ -40,7 +40,7 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /*=========== Center blocks =============*/
 #xo-page-topblocks { padding: 0 10px;}
-#xo-page-bottomblocks { padding:	0 10px 10px;}
+#xo-page-bottomblocks { padding:	0 10px;}
 #xo-page .xo-blockszone .xo-block { margin-bottom: 10px;}
 
 /* ------- Top and bottom zones (2 columns) ------- */
@@ -67,5 +67,5 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 #xo-page-topblocks *>.xo-block, #xo-page-bottomblocks *>.xo-block { padding-top: 0;}
 #xo-page .xo-blockszone > .xo-block {	padding-left: 4px;}
 #xo-page .xo-blockszone .xo-block:before { display: block; height: 9px; margin-left: -4px; margin-right: -1px;}
-#xo-page .xo-blockszone .xo-block:after {	display: block; height: 7px; margin-left: -4px;	margin-right:-1px;}
+#xo-page .xo-blockszone .xo-block:after { display: block; height: 7px; margin-left: -4px;	margin-right:-1px;}
 

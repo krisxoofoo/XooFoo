@@ -622,3 +622,5 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	 border-bottom:				2px solid #333;
 } 
 
+/* fix bug publisher module */
+#tabs ul li {list-style: none;}

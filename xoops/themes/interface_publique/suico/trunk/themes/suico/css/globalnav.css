@@ -16,7 +16,7 @@
 .menu .toggle {
 	display : 		block;
 	position: 		absolute;
-	background : 	#fffff0 url(../img/navbar-bg.png) repeat-x left top;
+	background : 	#139ee8 url(../img/navbar-bg.png) repeat-x left top;
 	color: 			#333;
 	font-weight: 	bold;
 	cursor: 		hand;
@@ -39,7 +39,7 @@
   color: 			#fff;
 }
 .menu .items a:hover { color: #333; text-shadow: 1px 1px 2px #aaa;}
-.menu .items a.current {color:red;}
+.menu .items a.current {color:#ff0000;}
 /* for current link */
 body#news .menu .xo-gbnavmod1 {background-color:transparent; color:#333; text-decoration: underline;}
 body#newbb .menu .xo-gbnavmod2 {background-color:transparent; color:#333; text-decoration: underline;}

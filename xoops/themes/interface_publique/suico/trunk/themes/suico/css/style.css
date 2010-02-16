@@ -59,14 +59,14 @@ body {font-size:75%;}
 	height:						30px;
 	width:						100%;
 	margin:						0;
-	background : 				#fffff0 url(../img/navbar-bg.png) repeat-x left top;
+	background : 				#139ee8 url(../img/navbar-bg.png) repeat-x left top;
 	font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
 	font-size:					1.1em;
 }
 * html #xo-globalnav { height:  30px;}
 #xo-wrapnav {width: 1020px; margin: 0 auto;}
 /* ====== hypertext links ===== */
-a { background-color: transparent; color: #888; text-decoration: none;}
+a { background-color: transparent; color: #8b8b8b; text-decoration: none;}
 a:visited, a:focus, a:hover, a:active { background-color: inherit; color: #ff9900;}
 a.printable, a.pdf, a.friend {
 	width:						16px;
@@ -115,9 +115,9 @@ q, cite, em, dfn, strong { font-style:italic;}
 bdo {	direction: ltr;}
 acronym, abbr, abbr[title], dfn { border-bottom: 1px dashed; cursor: help;}
 abbr[title] { border-bottom: 1px dotted; cursor: help;} 
-acronym:hover, abbr:hover { border-bottom: #32529C 1px dashed;}
-::selection { background-color: #E7F4F7;	color: #66A3E1;}
-::-moz-selection { background-color: #E7F4F7;	color: #66A3E1;}
+acronym:hover, abbr:hover { border-bottom: #139EE8 1px dashed;}
+::selection { background-color: #E7F4F7;	color: #139EE8;}
+::-moz-selection { background-color: #E7F4F7;	color: #139EE8;}
 /* ===== lists ===== */
 #xo-canvas-content ol {
 	margin: 					.5em 0 .5em .5em;
@@ -150,16 +150,16 @@ label {font-size: 1em; font-weight: normal !important; font-style:italic !import
 input, button, select {margin: .25em; vertical-align: middle; }
 input {
 	border:						1px solid;
-	border-color:				#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;
+	border-color:				#aaa #ccc #ccc #aaa;
 	padding : 					2px 3px 2px 3px;
 	background-color:			#fff;
 	font-size:					1em;
 }
 button, input[type="submit"], input[type="button"], input[type="reset"] {
 	background-color: 			#F4F9FE;
-	color: 						#66A3E1;
+	color: 						#139EE8;
 	border:						1px solid;
-	border-color: 				#d8d8d8;
+	border-color: 				#ccc;
 }
 input:hover, button:hover, .xo-formbuttons:hover, .formButton:hover {
     border:           			#139EE8 solid 1px;
@@ -170,19 +170,19 @@ button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type
 	border-color :				#333;
 }
 input[type=checkbox], input[type=radio] {	margin: 3px; padding:2px !important; height:1em;}
-select { border:1px solid; border-color:#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6;}
+select { border:1px solid; border-color:#aaa #ccc #ccc #aaa;}
 select[name=timezone_offset] { font-size: .9em;}
 select:focus {
 	background-color:			#fff;
 	color: 						#333;
-	border:						1px solid #999;
+	border:						1px solid #aaa;
 }
 textarea {
 	width: 						90%;
 	margin:						0.5em 0.5em 0.5em 0;
 	overflow: 					auto;
 	border:						1px solid;
-	border-color:				#a6a6a6 #d8d8d8 #d8d8d8 #a6a6a6 !important;
+	border-color:				#aaa #ccc #ccc #aaa !important;
 	background-color:			#fff;
 	font-size:					1em;
 	height:						110px;
@@ -221,7 +221,7 @@ textarea:focus {
 	display:					block;
 	margin: 					0;
 	padding: 					4px 4px 4px 4px;
-	color: 						#8b8b8b;
+	color: 						#aaa;
 	font-size:					1.2em;
 	font-weight:				bold;
 }
@@ -293,7 +293,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 font-size: 				1.4em;
 	 font-weight:				bold;
 	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
-	 border-bottom:				2px solid #434343;
+	 border-bottom:				2px solid #333;
 }
 #xo-canvas-rightcolumn .xo-blockcontent { margin-bottom: 5px; padding: 3px;}
 /* ===== center blocks ===== */
@@ -307,7 +307,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 font-size: 				1.4em;
 	 font-weight:				bold;
 	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
-	 border-bottom:				2px solid #434343;
+	 border-bottom:				2px solid #333;
 }
 #xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {
 	margin-bottom: 				2px;
@@ -322,7 +322,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 font-size: 				1.4em;
 	 font-weight:				bold;
 	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
-	 border-bottom:				2px solid #434343;
+	 border-bottom:				2px solid #333;
 }
 #xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
 #xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {
@@ -339,7 +339,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	width:						1020px;
 	margin:						0 auto;
 	margin-bottom:				1em;
-	color:						#8b8b8b;
+	color:						#aaa;
 	font-size: 					.9em;
 	font-family:				Tahoma;
 	text-align:					center;
@@ -381,7 +381,7 @@ caption { font-style: italic; font-weight: bold;}
 th, thead {
 	background-color: 			/*#639ACE*//*#51A2FF*/#F4F9FE;
 	padding : 					2px;
-	color: 						#66A3E1;
+	color: 						#139EE8;
 	font-size:					1.1em;
 	font-weight:				bold;
 	text-align: 				center;
@@ -411,7 +411,7 @@ tr.odd td {background-color: #E9E9E9; padding: 5px;}*/
 	background-color: 			#F4F9FE;
 	padding: 					5px;
 	font-weight: 				bold;
-	color: 						#66A3E1;
+	color: 						#139EE8;
 }
 .even {
 	background-color: 			#F9FCFE;
@@ -443,14 +443,14 @@ tr.odd td {
 	padding: 					6px;
 	color: 						inherit;
 	font-family: 				"Courier New",Courier,monospace; 
-	border: 					1px solid #d0d0d0;
+	border: 					1px solid #ddd;
 }
 .xoopsQuote {
 	margin-left:				.5em;
 	font-family: 				"Courier New",Courier,monospace;
-	border:						1px solid #66A3E1;
+	border:						1px solid #139EE8;
 	border-left-width:			4px;
-	background-color:			#f4faff;
+	background-color:			#f7fbff;
 	padding:					.5em;
 }
 blockquote { font-style:		italic;}
@@ -460,7 +460,7 @@ blockquote { font-style:		italic;}
 	 font-size: 				1.4em;
 	 font-weight:				bold;
 	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
-	 border-bottom:				2px solid #434343;
+	 border-bottom:				2px solid #333;
 }
 .itemInfo {
 	background-color: 			transparent;
@@ -502,7 +502,7 @@ blockquote { font-style:		italic;}
 	margin: 					2px;
 	background-color: 			transparent;
 	padding: 					2px;
-	color: 						#639ACE;
+	color: 						#139EE8;
 	font-size: 					.7em;
 	font-weight:				bold;
 }
@@ -511,7 +511,7 @@ blockquote { font-style:		italic;}
 	margin-left: 				2px;
 	margin-top: 				10px;
 	background-color:			inherit;
-	color: 						#639ACE;
+	color: 						#139EE8;
 	font-size: 					.8em;
 	font-weight:				bold;
 }
@@ -531,7 +531,7 @@ blockquote { font-style:		italic;}
 	font-style: 				normal;
 }
 .signature { font-size: .8em; font-style: italic;}
-div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #f1f3f8 !important;}
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #e7f4f7 !important;}
 /* ============ Style for debug mode ============ */
 #xo-logger-output { margin-bottom: 35px; font-size: .8em;}
 #xo-logger-tabs {
@@ -551,10 +551,10 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	-moz-box-shadow: 			2px 2px 10px rgba(102, 102, 102, .5) ;
 	-webkit-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);
 }
-.errorMsg {	background-color: #FBE3E4; color: #D12F19;	border-color: #FBC2C4;}
+.errorMsg {	background-color: #FBE3E4; color: #ff0000;	border-color: #FBC2C4;}
 .confirmMsg { background-color: #FFF6BF; color:#817134; border-color:	#FFD324;}
 .resultMsg {	background-color:#E6EFC2; color: #529214; border-color: #C6D880;}
-.errorMsg a {background-color: transparent; color: #D12F19;}
+.errorMsg a {background-color: transparent; color: #ff0000;}
 .confirmMsg a   {	background-color:transparent; color: #817134;}
 .successMsg a  {background-color: transparent; color: #529214;}
 /* ===== pages navigation ===== */
@@ -585,7 +585,7 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	text-align:					center;
 }
 #xo-redirect .notreload { height: 28px; padding-top:	2px;}
-#xo-redirect .notreload a { background-color: transparent; color:	#32529C;}
+#xo-redirect .notreload a { background-color: transparent; color:	#139EE8;}
 #xo-redirect .message {}
 #xo-redirect .message img{ padding: 1em;}
 /*============== Styles for system_siteclosed.html =================*/
@@ -619,6 +619,6 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	 font-size: 				1.4em;
 	 font-weight:				bold;
 	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
-	 border-bottom:				2px solid #434343;
+	 border-bottom:				2px solid #333;
 } 
 

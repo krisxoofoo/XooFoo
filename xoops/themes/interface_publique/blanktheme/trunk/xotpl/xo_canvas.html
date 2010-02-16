@@ -1,4 +1,4 @@
-	<!-- Theme others parameters -->
+<!-- Theme others parameters -->
 	<{includeq file="$theme_name/xo_thm_parameters.html"}>
 <!-- Metas, Titles, and Style Sheets -->
 	<{includeq file="$theme_name/xo_metas.html"}>
@@ -25,15 +25,7 @@
 			</div>
 			<!-- End header -->
 			<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
-				<!--<{if $xoBlocks.canvas_top}>
-					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_top
-						zoneClass='' zoneId='xo-canvas-header'}>
-				<{/if}>-->
 				<{includeq file="$theme_name/xo_page.html"}>
-				<!--<{if $xoBlocks.canvas_bottom}>
-					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_bottom
-					zoneClass='' zoneId='xo-canvas-footer'}>
-				<{/if}>-->
 			</div>
 			<!-- Start footer -->
 			<div id="xo-footer"><{$xoops_footer}></div>

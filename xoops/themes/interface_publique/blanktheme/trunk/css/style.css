@@ -24,12 +24,12 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 
 /* beginning of the applicable styles */
 html, body {
-	max-width: 					100%;
-	margin:						0 auto;
-	background-color: 			#fffff0;
-	color:						#333;
-	font-family:				"Lucida Grande", Verdana, sans-serif;
-	line-height:				1.5em;
+	max-width: 			100%;
+	margin:				0 auto;
+	background-color: 	#fffff0;
+	color:				#333;
+	font-family:		"Lucida Grande", Verdana, sans-serif;
+	line-height:		1.5em;
 }
 html {font-size:100.01%;}
 body {font-size:75%;}
@@ -37,12 +37,7 @@ body {font-size:75%;}
 /* ======= Body box ======= */
 #xo-wrapper {}
 #xo-bgstatic {}
-#xo-canvas {
-	width:						100%;
-	margin:						0 auto;
-	/*background-color: 			#fff;
-	color: 						#333;*/
-}
+#xo-canvas {	width: 100%; margin: 0 auto;}
 #xo-canvas-content {}
 #xo-canvas-columns {}
 #xo-page {}
@@ -53,59 +48,41 @@ body {font-size:75%;}
 #xo-headerbanner {}
 /* fix for banner */
 #xo-bannerfix {
-    position:               	absolute;
-    top:                    	3px;
-    right:                  	25px;
-    width:                  	480px;
-    height:                 	72px;
-    background:             	url(../img/bg-ad-top.png) no-repeat;
-    padding:                	6px;
-	z-index:					99;
+    position:          	absolute;
+    top:               	3px;
+    right:             	25px;
+    width:             	480px;
+    height:            	72px;
+    background:        	url(../img/bg-ad-top.png) no-repeat;
+    padding:           	6px;
+	z-index:			99;
 }
 #xo-globalnav {
-	clear: 						both;
-	width:						100%;
-	margin:						0;
+	clear: 				both;
+	width:				100%;
+	margin:				0;
 }
 /* ====== hypertext links ===== */
-a {
-	background-color: 			transparent;
-	color: 						#666;
-	text-decoration: 			none;
-}
-a:visited, a:focus, a:hover, a:active {
-	background-color: 			inherit;
-	color: 						#ff9900;
-}
-
-/*a.printable, a.pdf, a.friend {
-	width:						16px;
-	height:						16px;
-	background-repeat:			no-repeat;
-	background-position:		left top;
-	text-indent:				-1000em;
-}*/
-/*a.printable	{	background-image: url(../icons/action/printable.png);}
-a.pdf	{	background-image: url(../icons/action/pdf.png);}
-a.friend	{	background-image: url(../icons/action/friend.png);}*/
+a {}
+a:visited, a:focus, a:hover, a:active {}
 
 /* ===== titles ===== */
 h1, h2, h3, h4, h5, h6 { 
-  margin: 					1em 0 .5em 0;
-  line-height: 				1.2; 
-  font-weight: 				bold;
-  font-style: 				normal; 
+  margin: 				1em 0 .5em 0;
+  line-height: 			1.2; 
+  font-weight: 			bold;
+  font-style: 			normal; 
 }
-h1 {	font-size: 					1.4em;}
-h2 {font-size: 					1.2em;}
-h3 {	font-size: 					1em;}
-h4 {	font-size: 					1em;}
-h5 {font-size: 					.9em;}
-h6 {font-size: 					.8em;}
+h1 {	font-size: 1.4em;}
+h2 {font-size: 1.2em;}
+h3 {	font-size: 1em;}
+h4 {	font-size: 1em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
 
 /* ===== images ===== */
-img { border: 0 !important; margin-right:.5em;}
-p img { margin-left: .5em; margin-right:.5em;}
+img { border: 0 !important;}
+p img { margin: .5em;}
 a img:hover, a img:focus {}
 a img { border: none;}
 .imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
@@ -120,6 +97,8 @@ q, cite, em, dfn, strong {}
 bdo { direction: ltr;}
 acronym, abbr, abbr[title], dfn {}
 acronym:hover, abbr:hover {}
+::selection {}
+	::-moz-selection {}
 /* ===== lists ===== */
 #xo-canvas-content ol {}
 #xo-canvas-content ul {}
@@ -146,10 +125,7 @@ textarea {}
 textarea:focus {}
 #xo-page fieldset {}
 #xo-page legend { font-weight:	bold;}
-#xo-page label {
-	display: 					block;
-	font-weight: 				bold;
-}
+#xo-page label { display: block; font-weight: bold;}
 
 /* ===== block main menu ===== */
 #mainmenu {}
@@ -198,10 +174,10 @@ textarea:focus {}
 
 /* ===== footer ===== */
 #xo-footer {
-	clear: 						both;
-	width:						100%;
-	margin:						0;
-	text-align:					center;
+	clear: 					both;
+	width:					100%;
+	margin:					0;
+	text-align:				center;
 }
 #xo-logger-output{ font-size: .8em;}
 
@@ -209,9 +185,9 @@ textarea:focus {}
 table {width:100%; border-collapse: collapse;}
 caption {}
 th, thead {
-	font-weight: bold;
-	text-align: center;
-	vertical-align : middle;
+	font-weight: 			bold;
+	text-align: 			center;
+	vertical-align : 		middle;
 }
 .foot, tfoot {}
 tbody {}
@@ -226,9 +202,9 @@ tr.odd td {}
 
 /* ===== codes and quotes ===== */
 .xoopsCode {
-	max-height: 				200px;
-	overflow: 					auto;
-	white-space:				pre;
+	max-height: 			200px;
+	overflow: 				auto;
+	white-space:			pre;
 }
 .xoopsQuote {}
 blockquote { font-style: italic;}
@@ -263,10 +239,7 @@ blockquote { font-style: italic;}
 .comDateCaption {}
 .signature {}
 /* ============ Style for debug mode ============ */
-#xo-logger-output {
-	margin-bottom : 			15px;
-	font-size: 					.8em;
-}
+#xo-logger-output { margin-bottom : 15px; font-size: .8em;}
 /* ===== core messages ===== */
 .highlight {	}
 .errorMsg,.confirmMsg, .resultMsg, .successMsg  {}

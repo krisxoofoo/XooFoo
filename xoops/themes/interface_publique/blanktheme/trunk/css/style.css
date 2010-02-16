@@ -1,0 +1,287 @@
+/*
+ * Blank Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+	 
+/* include style sheets */
+@import url(reset.css); /* reset css for web browsers*/
+@import url(dev.css); /* dev css only for web development */
+@import url(extras.css); /* extras style for perzonalisation templates */
+/*  for html 5 in next time */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+/* beginning of the applicable styles */
+html, body {
+	max-width: 					100%;
+	margin:						0 auto;
+	background-color: 			#fffff0;
+	color:						#333;
+	font-family:				"Lucida Grande", Verdana, sans-serif;
+	line-height:				1.5em;
+}
+html {font-size:100.01%;}
+body {font-size:75%;}
+
+/* ======= Body box ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+	width:						100%;
+	margin:						0 auto;
+	/*background-color: 			#fff;
+	color: 						#333;*/
+}
+#xo-canvas-content {}
+#xo-canvas-columns {}
+#xo-page {}
+/* ===== header ===== */
+#xo-header {	}
+#xo-headerlogo {padding-top: .5em; padding-left:.5em;}
+#xo-banner {}
+#xo-headerbanner {}
+/* fix for banner */
+#xo-bannerfix {
+    position:               	absolute;
+    top:                    	3px;
+    right:                  	25px;
+    width:                  	480px;
+    height:                 	72px;
+    background:             	url(../img/bg-ad-top.png) no-repeat;
+    padding:                	6px;
+	z-index:					99;
+}
+#xo-globalnav {
+	clear: 						both;
+	width:						100%;
+	margin:						0;
+}
+/* ====== hypertext links ===== */
+a {
+	background-color: 			transparent;
+	color: 						#666;
+	text-decoration: 			none;
+}
+a:visited, a:focus, a:hover, a:active {
+	background-color: 			inherit;
+	color: 						#ff9900;
+}
+
+/*a.printable, a.pdf, a.friend {
+	width:						16px;
+	height:						16px;
+	background-repeat:			no-repeat;
+	background-position:		left top;
+	text-indent:				-1000em;
+}*/
+/*a.printable	{	background-image: url(../icons/action/printable.png);}
+a.pdf	{	background-image: url(../icons/action/pdf.png);}
+a.friend	{	background-image: url(../icons/action/friend.png);}*/
+
+/* ===== titles ===== */
+h1, h2, h3, h4, h5, h6 { 
+  margin: 					1em 0 .5em 0;
+  line-height: 				1.2; 
+  font-weight: 				bold;
+  font-style: 				normal; 
+}
+h1 {	font-size: 					1.4em;}
+h2 {font-size: 					1.2em;}
+h3 {	font-size: 					1em;}
+h4 {	font-size: 					1em;}
+h5 {font-size: 					.9em;}
+h6 {font-size: 					.8em;}
+
+/* ===== images ===== */
+img { border: 0 !important; margin-right:.5em;}
+p img { margin-left: .5em; margin-right:.5em;}
+a img:hover, a img:focus {}
+a img { border: none;}
+.imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
+
+/* ===== other attributes of contents ===== */
+p {}
+hr{}
+strong, b, dfn { font-weight: bold;}
+del { text-decoration: line-through;}
+address	{}
+q, cite, em, dfn, strong {}
+bdo { direction: ltr;}
+acronym, abbr, abbr[title], dfn {}
+acronym:hover, abbr:hover {}
+/* ===== lists ===== */
+#xo-canvas-content ol {}
+#xo-canvas-content ul {}
+#xo-canvas-content li {}
+#xo-canvas-content dd {}
+#xo-canvas-content dl {}
+#xo-canvas-content dt {}
+dl {} 
+dt {} 
+dd {}
+
+/* ===== forms ===== */
+fieldset {}
+legend {	font-weight: bold;}
+input, button, select {vertical-align: middle;}
+input {}
+button, input[type="submit"], input[type="button"], input[type="reset"], .xo-formbuttons, .formButton {}
+button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, .xo-formbuttons:focus, .formButton:focus, 
+button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, .xo-formbuttons:hover, .formButton:hover {}
+input[type=checkbox], input[type=radio] {}
+select {}
+select:focus {}
+textarea {}
+textarea:focus {}
+#xo-page fieldset {}
+#xo-page legend { font-weight:	bold;}
+#xo-page label {
+	display: 					block;
+	font-weight: 				bold;
+}
+
+/* ===== block main menu ===== */
+#mainmenu {}
+#mainmenu a {display: block;}
+#mainmenu a:hover {}
+#mainmenu a.menuTop  {}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub{}
+#mainmenu a.menuSub:hover  {}
+#mainmenu a.maincurrent {}
+/* ===== block user menu ===== */
+#usermenu {}
+#usermenu a {display: block;}
+#usermenu a:hover  {}
+#usermenu a.menuTop {}
+#usermenu a.highlight {}
+
+/* ===== left columns ===== */
+#xo-canvas-leftcolumn {}
+#xo-canvas-leftcolumn .xo-block {}
+#xo-canvas-leftcolumn .xo-blocktitle  { font-weight: bold;}
+#xo-canvas-leftcolumn .xo-blockcontent {}
+
+/* ===== right columns ===== */
+#xo-canvas-rightcolumn {}
+#xo-canvas-rightcolumn .xo-block {}
+#xo-canvas-rightcolumn .xo-blocktitle { font-weight: bold;}
+#xo-canvas-rightcolumn .xo-blockcontent {}
+
+/* ===== center content and block ====== */
+#xo-page {}
+/* ----- center blocks ----- */
+#xo-page .xo-blockszone > .xo-block {}
+#xo-page .xo-blockszone .xo-blocktitle {}
+#xo-page .xo-blockszone .xo-blockcontent {}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle { font-weight: bold;}
+#xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
+#xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
+#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle { font-weight: bold;}
+#xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
+#xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {}
+
+/* ----- content module page ----- */
+#xo-content {}
+
+/* ===== footer ===== */
+#xo-footer {
+	clear: 						both;
+	width:						100%;
+	margin:						0;
+	text-align:					center;
+}
+#xo-logger-output{ font-size: .8em;}
+
+/* ===== tables and cells ===== */
+table {width:100%; border-collapse: collapse;}
+caption {}
+th, thead {
+	font-weight: bold;
+	text-align: center;
+	vertical-align : middle;
+}
+.foot, tfoot {}
+tbody {}
+table.outer { border-collapse: separate;}
+table td {}
+.outer {}
+.head {	font-weight: bold;}
+.even {}
+.odd {}
+tr.even td {}
+tr.odd td {}
+
+/* ===== codes and quotes ===== */
+.xoopsCode {
+	max-height: 				200px;
+	overflow: 					auto;
+	white-space:				pre;
+}
+.xoopsQuote {}
+blockquote { font-style: italic;}
+
+/* ===== articles (content-type in example) ===== */
+.item {}
+.itemHead {}
+.itemInfo {}
+.itemTitle a {}
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+.itemBody {}
+.itemText {}
+.itemText:first-letter {}
+.itemFoot {}
+.itemAdminLink {}
+.itemPermaLink {}
+
+/* ===== forums (content-type in example) ===== */
+.comTitle {	font-weight: bold;}
+.comText {}
+.comUserStat {}
+.comUserStatCaption {}
+.comUserStatus {}
+.comUserRank {}
+.comUserRankText {}
+.comUserRankImg {}
+.comUserName {}
+.comUserImg {}
+.comDate {}
+.comDateCaption {}
+.signature {}
+/* ============ Style for debug mode ============ */
+#xo-logger-output {
+	margin-bottom : 			15px;
+	font-size: 					.8em;
+}
+/* ===== core messages ===== */
+.highlight {	}
+.errorMsg,.confirmMsg, .resultMsg, .successMsg  {}
+.errorMsg {}
+.confirmMsg {}
+.resultMsg {	}
+.errorMsg a {}
+.confirmMsg a   {}
+.successMsg a  {}
+/* ===== pages navigation ===== */
+.pagneutral {}
+.pagact {}
+.paginact {}
+
+
+
+
+

@@ -1,0 +1,6 @@
+XOOPS Blank Theme - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- cleaning code and style (kris)

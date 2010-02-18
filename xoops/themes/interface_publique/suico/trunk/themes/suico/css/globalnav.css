@@ -16,8 +16,10 @@
 .menu .toggle {
 	display : 		block;
 	position: 		absolute;
-	background : 	#139ee8 url(../img/navbar-bg.png) repeat-x left top;
+	background : 	#3390EF url(../img/navbar-bg.png) repeat-x left top;
 	color: 			#333;
+	font-family:	"Malgun Gothic", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+	font-size:		.9em;
 	font-weight: 	bold;
 	cursor: 		hand;
 	cursor: 		pointer;

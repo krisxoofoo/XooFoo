@@ -7,7 +7,7 @@ Version 1.0 Beta 1 ( for xoops 2.4.5 )
 - Add current link in mainmenu block (kris_fr / mariane / trabis)
 - Add current link in globalnav (kris_fr)
 - Add style for text selection (kris_fr)
-- redefining and limiting the colors used (kris_fr & Xoops Design Team)
+- redefining and limiting the colors used (kris_fr / Mariane & Xoops Design Team)
 - fix bug tabs li in publisher module (kris_fr / mariane)
 
 ============================

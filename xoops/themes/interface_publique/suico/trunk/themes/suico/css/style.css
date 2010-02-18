@@ -28,11 +28,12 @@ html, body {
 	margin:						0;
 	background-color: 			#fff;
 	color:						#333;
-	font-family:				"Lucida Grande", Verdana, sans-serif;
+	font-family:	"Malgun Gothic", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+	/*font-family:				"Lucida Grande", Verdana, sans-serif;*/
 	line-height:				1.5em;
 }
 html {font-size:100.01%;}
-body {font-size:75%;}
+body {font-size:80%;}
 /* ======= Body box ======= */
 #xo-wrapper { background : #fff url(../img/wizard_bg.png) fixed no-repeat left bottom;}
 #xo-bgstatic {}
@@ -59,8 +60,7 @@ body {font-size:75%;}
 	height:						30px;
 	width:						100%;
 	margin:						0;
-	background : 				#139ee8 url(../img/navbar-bg.png) repeat-x left top;
-	font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
+	background : 				#3390EF url(../img/navbar-bg.png) repeat-x left top;
 	font-size:					1.1em;
 }
 * html #xo-globalnav { height:  30px;}
@@ -115,9 +115,9 @@ q, cite, em, dfn, strong { font-style:italic;}
 bdo {	direction: ltr;}
 acronym, abbr, abbr[title], dfn { border-bottom: 1px dashed; cursor: help;}
 abbr[title] { border-bottom: 1px dotted; cursor: help;} 
-acronym:hover, abbr:hover { border-bottom: #139EE8 1px dashed;}
-::selection { background-color: #E7F4F7;	color: #139EE8;}
-::-moz-selection { background-color: #E7F4F7;	color: #139EE8;}
+acronym:hover, abbr:hover { border-bottom: #3390EF 1px dashed;}
+::selection { background-color: #E7F4F7;	color: #3390EF;}
+::-moz-selection { background-color: #E7F4F7;	color: #3390EF;}
 /* ===== lists ===== */
 #xo-canvas-content ol {
 	margin: 					.5em 0 .5em .5em;
@@ -157,13 +157,13 @@ input {
 }
 button, input[type="submit"], input[type="button"], input[type="reset"] {
 	background-color: 			#F4F9FE;
-	color: 						#139EE8;
+	color: 						#3390EF;
 	border:						1px solid;
 	border-color: 				#ccc;
 }
 input:hover, button:hover, .xo-formbuttons:hover, .formButton:hover {
-    border:           			#139EE8 solid 1px;
-    outline:                	1px solid #139EE8;
+    border:           			#3390EF solid 1px;
+    outline:                	1px solid #3390EF;
 }
 button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, .xo-formbuttons:focus, .formButton:focus {
 	background-color:			#f4f4f4;
@@ -190,8 +190,8 @@ textarea {
 textarea:focus {
 	background-color:			#fff;
 	color: 						#333;
-    border:           			#139EE8 solid 1px;
-    outline:                	1px solid #139EE8;
+    border:           			#3390EF solid 1px;
+    outline:                	1px solid #3390EF;
 }
 #xo-page fieldset {
 	margin: 					0 0 1em 0;
@@ -202,7 +202,7 @@ textarea:focus {
 #xo-page label { font-weight: bold;}
 #xo-content .xo-formfield.required label:after .caption-marker {
 	background-color: 			transparent;
-	color: 						#ff0000;
+	color: 						#ff9900;
 	content: 					'*';
 }
 .xoops-form-element-caption .caption-marker { display:none;}
@@ -221,11 +221,12 @@ textarea:focus {
 	display:					block;
 	margin: 					0;
 	padding: 					4px 4px 4px 4px;
-	color: 						#aaa;
+	color: 						/*#aaa*/#3390EF;
+	text-shadow: 1px 1px 2px #ccc;
 	font-size:					1.2em;
 	font-weight:				bold;
 }
-#mainmenu a:hover { background-color:transparent; color: #ff9900; text-shadow: 1px 1px 2px #aaa;}
+#mainmenu a:hover { background-color:transparent; color: #ff9900; /*text-shadow: 1px 1px 2px #aaa;*/}
 }
 #mainmenu a.menuTop  {}
 #mainmenu a.menuMain {}
@@ -251,7 +252,7 @@ textarea:focus {
 #usermenu a { display: block; margin: 0;	font-style:	italic;}
 #usermenu a:hover  {}
 #usermenu a.menuTop {}
-#usermenu a.highlight { background-color: #fff; color: #ff0000;}
+#usermenu a.highlight { background-color: #fff; color: #ff9900;}
 /*===== general blocks =======*/
 #xo-blockviewall img {margin:0; padding:0; border:0;}
 #xo-blockviewall {
@@ -280,8 +281,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 padding:					0 0 5px 0;
 	 font-size: 				1.4em;
 	 font-weight:				bold;
-	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
-	 border-bottom:				2px solid #434343;
+	 border-bottom:				2px solid #333;
 }
 #xo-canvas-leftcolumn .xo-blockcontent {	margin-bottom: 5px; padding: 3px;}
 /* ===== right columns ===== */
@@ -292,7 +292,6 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 padding:					0 0 5px 0;
 	 font-size: 				1.4em;
 	 font-weight:				bold;
-	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
 	 border-bottom:				2px solid #333;
 }
 #xo-canvas-rightcolumn .xo-blockcontent { margin-bottom: 5px; padding: 3px;}
@@ -306,7 +305,6 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 padding:					0 0 5px 0;
 	 font-size: 				1.4em;
 	 font-weight:				bold;
-	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
 	 border-bottom:				2px solid #333;
 }
 #xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {
@@ -321,7 +319,6 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	 padding:					0 0 5px 0;
 	 font-size: 				1.4em;
 	 font-weight:				bold;
-	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
 	 border-bottom:				2px solid #333;
 }
 #xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
@@ -343,7 +340,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	font-size: 					.9em;
 	font-family:				Tahoma;
 	text-align:					center;
-	text-shadow: 				1px 1px 2px #aaa;
+	text-shadow: 				1px 1px 2px #ccc;
 	/*border-top : 				1px solid #ddd;
 	border-bottom : 			1px solid #ddd;*/
 	border :					1px solid #ddd;
@@ -381,7 +378,7 @@ caption { font-style: italic; font-weight: bold;}
 th, thead {
 	background-color: 			/*#639ACE*//*#51A2FF*/#F4F9FE;
 	padding : 					2px;
-	color: 						#139EE8;
+	color: 						#3390EF;
 	font-size:					1.1em;
 	font-weight:				bold;
 	text-align: 				center;
@@ -411,7 +408,7 @@ tr.odd td {background-color: #E9E9E9; padding: 5px;}*/
 	background-color: 			#F4F9FE;
 	padding: 					5px;
 	font-weight: 				bold;
-	color: 						#139EE8;
+	color: 						#3390EF;
 }
 .even {
 	background-color: 			#F9FCFE;
@@ -448,7 +445,7 @@ tr.odd td {
 .xoopsQuote {
 	margin-left:				.5em;
 	font-family: 				"Courier New",Courier,monospace;
-	border:						1px solid #139EE8;
+	border:						1px solid #3390EF;
 	border-left-width:			4px;
 	background-color:			#f7fbff;
 	padding:					.5em;
@@ -459,7 +456,6 @@ blockquote { font-style:		italic;}
 .itemHead {
 	 font-size: 				1.4em;
 	 font-weight:				bold;
-	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
 	 border-bottom:				2px solid #333;
 }
 .itemInfo {
@@ -471,7 +467,7 @@ blockquote { font-style:		italic;}
 }
 .itemTitle {}
 .itemTitle a { background-color: transparent; color: #333;}
-.itemTitle a:hover {color:#ff9900; text-shadow: 	1px 1px 2px #aaa;}
+.itemTitle a:hover {color:#ff9900; text-shadow: 	1px 1px 2px #ccc;}
 .itemPoster { font-size: .9em; font-style: italic;}
 .itemPostDate { font-size: .9em; font-style: italic;}
 .itemStats { font-size: .9em; font-style: italic;}
@@ -502,7 +498,7 @@ blockquote { font-style:		italic;}
 	margin: 					2px;
 	background-color: 			transparent;
 	padding: 					2px;
-	color: 						#139EE8;
+	color: 						#3390EF;
 	font-size: 					.7em;
 	font-weight:				bold;
 }
@@ -511,7 +507,7 @@ blockquote { font-style:		italic;}
 	margin-left: 				2px;
 	margin-top: 				10px;
 	background-color:			inherit;
-	color: 						#139EE8;
+	color: 						#3390EF;
 	font-size: 					.8em;
 	font-weight:				bold;
 }
@@ -542,7 +538,7 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
     padding-right:				2%;
 }
 /* ===== core messages ===== */
-.highlight {	background-color:transparent; color:#ff0000; font-weight:bold; text-shadow: 1px 1px 2px #aaa;}
+.highlight {	background-color:transparent; color:#ff9900; font-weight:bold; text-shadow: 1px 1px 2px #ccc;}
 .errorMsg,.confirmMsg, .resultMsg, .successMsg  { padding: .8em; text-align: center; margin-bottom: 1em;
 	border-radius: 				10px;
 	-moz-border-radius: 		10px;
@@ -551,10 +547,10 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	-moz-box-shadow: 			2px 2px 10px rgba(102, 102, 102, .5) ;
 	-webkit-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);
 }
-.errorMsg {	background-color: #FBE3E4; color: #ff0000;	border-color: #FBC2C4;}
+.errorMsg {	background-color: #FBE3E4; color: #ff9900;	border-color: #FBC2C4;}
 .confirmMsg { background-color: #FFF6BF; color:#817134; border-color:	#FFD324;}
-.resultMsg {	background-color:#E6EFC2; color: #529214; border-color: #C6D880;}
-.errorMsg a {background-color: transparent; color: #ff0000;}
+.resultMsg {	background-color:#f7fbff; color: #529214; border-color: #C6D880;}
+.errorMsg a {background-color: transparent; color: #ff9900;}
 .confirmMsg a   {	background-color:transparent; color: #817134;}
 .successMsg a  {background-color: transparent; color: #529214;}
 /* ===== pages navigation ===== */
@@ -569,7 +565,7 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	font-size:					1.1em;
 	font-weight:				bold;
 	text-align:					center;
-	text-shadow: 				1px 1px 2px #aaa;}
+	text-shadow: 				1px 1px 2px #ccc;}
 #notifform { display: none;}
 /*============== Styles for system_redirect.html =================*/
 #xo-redirect {
@@ -585,7 +581,7 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	text-align:					center;
 }
 #xo-redirect .notreload { height: 28px; padding-top:	2px;}
-#xo-redirect .notreload a { background-color: transparent; color:	#139EE8;}
+#xo-redirect .notreload a { background-color: transparent; color:	#3390EF;}
 #xo-redirect .message {}
 #xo-redirect .message img{ padding: 1em;}
 /*============== Styles for system_siteclosed.html =================*/
@@ -598,7 +594,7 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	line-height:				2em;
 	font-size: 					1.4em;
 	text-align: 				center;
-	text-shadow: 				1px 1px 2px #aaa;
+	text-shadow: 				1px 1px 2px #ccc;
 }
 #login_window  {	width: 450px; margin: 0 auto;}
 .login_form  .credentials { margin: .5em 1em; padding: 1em;}
@@ -607,7 +603,7 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	width:                      33%;
 	margin:                     1px;
 	text-align:					right;
-	text-shadow: 				1px 1px 2px #aaa;
+	text-shadow: 				1px 1px 2px #ccc;
 }
 .login_form  .credentials input[type="text"], .login_form  .credentials input[type="password"]  {	width: 25%;}
 .login_form  .credentials input:focus {}
@@ -618,7 +614,6 @@ div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !
 	 padding:					6px 0 5px 0;
 	 font-size: 				1.4em;
 	 font-weight:				bold;
-	 font-family:				"Malgun Gothic", AppleGothic, Dotum, Sans-serif;
 	 border-bottom:				2px solid #333;
 } 
 

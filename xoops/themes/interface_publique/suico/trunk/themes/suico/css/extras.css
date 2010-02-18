@@ -113,17 +113,6 @@
 		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
 		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
 }
-/* ======== others hypertext links ================ */
-a.printable, a.pdf, a.friend {
-	width:						16px;
-	height:						16px;
-	background-repeat:			no-repeat;
-	background-position:		left top;
-	text-indent:				-1000em;
-}
-a.printable { background-image: url(../icons/action/printer.png); }
-a.pdf { background-image: url(../icons/action/page_white_acrobat.png); }
-a.friend { background-image: url(../icons/action/email_go.png); }
 
 
 

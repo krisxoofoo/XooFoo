@@ -16,9 +16,11 @@
 */
 	 
 /* include style sheets */
-@import url(reset.css); /* reset css for web browsers*/
-@import url(baradmin.css); /* administration access in footer */
-@import url(extras.css); /* extras style for perzonalisation templates */
+@import url(reset.css); 	/* reset css for web browsers */
+@import url(globalnav.css); /* horizontal menu in header */
+@import url(userbar.css); 	/* usermenu in header */
+@import url(baradmin.css); 	/* administration access in footer */
+@import url(extras.css); 	/* extras style for perzonalisation templates */
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 
@@ -28,14 +30,13 @@ html, body {
 	margin:						0;
 	background-color: 			#fff;
 	color:						#333;
-	font-family:	"Malgun Gothic", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
-	/*font-family:				"Lucida Grande", Verdana, sans-serif;*/
+	font-family:				"Malgun Gothic", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
 	line-height:				1.5em;
 }
 html {font-size:100.01%;}
-body {font-size:80%;}
+body {font-size:75%;}
 /* ======= Body box ======= */
-#xo-wrapper { background : #fff url(../img/wizard_bg.png) fixed no-repeat left bottom;}
+#xo-wrapper { background : #fff url(../img/wizard_bg.png) fixed no-repeat left bottom; font-size: 1.1em;}
 #xo-bgstatic {}
 #xo-canvas { width:	100%; margin: 0 auto;}
 #xo-canvas-content {	width: 1020px; margin:10px auto;}
@@ -51,9 +52,9 @@ body {font-size:80%;}
     width:                  	480px;
     height:                 	70px;
     background:             	url(../img/bg-ad-top.png) no-repeat;
-    padding-top:                	6px;
-    padding-right:                	6px;
-    padding-left:                	6px;
+    padding-top:                6px;
+    padding-right:              6px;
+    padding-left:               6px;
 	z-index:					99;
 }
 #xo-globalnav {
@@ -64,7 +65,6 @@ body {font-size:80%;}
 	font-size:					1.1em;
 }
 * html #xo-globalnav { height:  30px;}
-#xo-wrapnav {width: 1020px; margin: 0 auto;}
 /* ====== hypertext links ===== */
 a { background-color: transparent; color: #8b8b8b; text-decoration: none;}
 a:visited, a:focus, a:hover, a:active { background-color: inherit; color: #ff9900;}
@@ -80,10 +80,10 @@ a.pdf	{	background-image: url(../icons/action/pdf.png);}
 a.friend	{	background-image: url(../icons/action/friend.png);}
 /* ===== titles ===== */
 h1, h2, h3, h4, h5, h6 { 
-  margin: 					1em 0 .5em 0;
-  line-height: 				1.2; 
-  font-weight: 				bold;
-  font-style: 				normal; 
+  margin: 						1em 0 .5em 0;
+  line-height: 					1.2; 
+  font-weight: 					bold;
+  font-style: 					normal; 
 }
 h1 {	font-size: 1.4em; font-weight: bold;}
 h2 {font-size: 1.2em;}
@@ -102,11 +102,11 @@ img.xo-icons {margin-bottom:-3px;}
 /* ===== other attributes of contents ===== */
 p {	margin-top: .5em; margin-bottom: .5em;}
 hr{
-	height: 				1px;
-	padding: 				0;
-	color: 					#ddd;
-	background-color: 		#ddd;
-	border: 				0;
+	height: 					1px;
+	padding: 					0;
+	color: 						#ddd;
+	background-color: 			#ddd;
+	border: 					0;
 }
 strong, b, dfn { font-weight: bold;}
 del { text-decoration: line-through;}
@@ -126,7 +126,7 @@ acronym:hover, abbr:hover { border-bottom: #3390EF 1px dashed;}
 }
 #xo-canvas-content ul {
 	margin: 					.5em 0 .5em .5em;
-	padding: 0;
+	padding: 					0;
 	list-style: 				decimal inside;
 	text-align: 				left;
 }
@@ -221,12 +221,12 @@ textarea:focus {
 	display:					block;
 	margin: 					0;
 	padding: 					4px 4px 4px 4px;
-	color: 						/*#aaa*/#3390EF;
-	text-shadow: 1px 1px 2px #ccc;
+	color: 						#3390EF;
+	text-shadow: 				1px 1px 2px #ccc;
 	font-size:					1.2em;
 	font-weight:				bold;
 }
-#mainmenu a:hover { background-color:transparent; color: #ff9900; /*text-shadow: 1px 1px 2px #aaa;*/}
+#mainmenu a:hover { background-color:transparent; color: #ff9900;}
 }
 #mainmenu a.menuTop  {}
 #mainmenu a.menuMain {}
@@ -261,7 +261,7 @@ textarea:focus {
 	float:						right;
 	width:						16px;
 	background-color: 			transparent;
-	padding-top: 2px;
+	padding-top: 				2px;
 	color:						inherit;
 	text-align:					center;
 	opacity:					.25;
@@ -285,7 +285,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 }
 #xo-canvas-leftcolumn .xo-blockcontent {	margin-bottom: 5px; padding: 3px;}
 /* ===== right columns ===== */
-#xo-canvas-rightcolumn {/*border-left: 1px solid #ddd;*/ padding-left:.5em;}
+#xo-canvas-rightcolumn { padding-left:.5em;}
 #xo-canvas-rightcolumn .xo-block { margin-bottom:	1.2em;}
 #xo-canvas-rightcolumn .xo-blocktitle {
 	 margin:					5px 0 10px 0;
@@ -341,8 +341,6 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	font-family:				Tahoma;
 	text-align:					center;
 	text-shadow: 				1px 1px 2px #ccc;
-	/*border-top : 				1px solid #ddd;
-	border-bottom : 			1px solid #ddd;*/
 	border :					1px solid #ddd;
 	border-radius:				5px;
 	-moz-border-radius:			5px;
@@ -351,9 +349,6 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 	box-shadow: 				1px 2px 3px rgba(0,0,0,0.5);
 		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
 		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
-	/*box-shadow: 			0 20px 10px -5px rgba(0,0,0,0.3) inset;
-		-moz-box-shadow: 	0 20px 10px -5px rgba(0,0,0,0.3) inset;
-		-webkit-box-shadow: 0 20px 10px -5px rgba(0,0,0,0.3) inset;*/
 }
 #xo-rss {
 	float: 						left;
@@ -376,7 +371,7 @@ img:hover .xo-blockquicklink { opacity: 1; filter: alpha(opacity=100);}
 table {width:100%; border-collapse: collapse;}
 caption { font-style: italic; font-weight: bold;}
 th, thead {
-	background-color: 			/*#639ACE*//*#51A2FF*/#F4F9FE;
+	background-color: 			#F4F9FE;
 	padding : 					2px;
 	color: 						#3390EF;
 	font-size:					1.1em;
@@ -397,13 +392,6 @@ table td {
 	vertical-align: 			top;
 	border-width: 				0;
 }
-/*.outer {border: 1px solid silver;}
-.head {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
-.even {background-color: #dee3e7; padding: 5px;}
-.odd {background-color: #E9E9E9; padding: 5px;}
-.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
-tr.even td {background-color: #dee3e7; padding: 5px;}
-tr.odd td {background-color: #E9E9E9; padding: 5px;}*/
 .head {
 	background-color: 			#F4F9FE;
 	padding: 					5px;
@@ -485,8 +473,8 @@ blockquote { font-style:		italic;}
 	font-size: 					.9em;
 	text-align: 				right;
 }
-.itemAdminLink {font-size: 	.9em;}
-.itemPermaLink {font-size: 	.9em;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
 /* ===== forums (content-type in example) ===== */
 .comTitle {
 	margin-bottom: 				2px;

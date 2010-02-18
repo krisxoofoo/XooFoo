@@ -23,24 +23,18 @@ html {font-size:100.01%;}
 body {font-size:75%;}
 
 /* display none */
-#xo-noprint {	display: none;}
+#xo-noprint { display: none;}
 #xo-canvas-leftcolumn { display: none;}
 #xo-canvas-rightcolumn { display: none;}
-#xo-language, #xo-userbar, xo-searchbar { display: none;}
-#xo-top { display: none;}
+#xo-userbar { display: none;}
 #xo-footerstatic { display: none;}
-body.theme-dialog #xo-banner {display: none;}
-/*#xo-banner, */#xo-banner-ad { display: none;}
+#xo-banner-ad { display: none;}
 #xo-globalnav { display: none;}
 #xo-userbar {display:none;}
-#xo-uptop {display: none;}
-#xo-breadcrumb {display: none;}
-#xo-footer .validw3c {display: none;}
-#xo-footer span.design {display:none;}
-#xo-footer .rss {display:none;}
+#xo-searchfooter {display:none;}
+#xo-rss {display:none;}
 #xo-logger-output  {display:none;}
 #system-select_notifications {display:none;}
-.itemFoot { display: none;}
 #xo-smiley { display: none;}
 #user_sigSmiley { display: none;}
 #user_sigStyletext { display: none;}
@@ -49,8 +43,6 @@ span#xoopsHiddenText { display: none;}
 hr {	display: none;}
 form [name=notification_select] { display: none;}
 input[type=submit], input[type=reset], input[type=button] {display:none;}
-/*select {	display: none;}*/
-/*textarea { display: none;}*/
 
 /*================ display for print ====================*/
 h1, h2, h3, h4, h5, h6  {	text-decoration: none;}
@@ -70,10 +62,7 @@ input[type=text] {
 	border-style: 					dotted;
 	border-color: 					#666;
 }
-input[type=checkbox] {
-	margin: 						0;
-	border:							none;
-}
+input[type=checkbox] { margin: 0; border: none;}
 select {
 	font-size: 						.8em;
 	border-width: 					0 0 1px 0 !important;
@@ -97,22 +86,6 @@ table th, thead {
 	color: 							#000;
 	font-size: 						1em;
 	line-height: 					1.2em;
-}
-#xo-sitetitle {
-	background-color: 				inherit;
-	padding-left: 					10px;
-	color: 							#006CD5;
-	font-size:						1.4em;
-	font-weight:					bold;
-	text-align:						right;
-}
-a#xo-sitetitle {	text-decoration: none;}
-#xo-siteslogan {
-	background-color: 				inherit;
-	padding-left: 					40px;
-	color:							#666;
-	font-size: 						1.2em;
-	font-style: 					italic;
 }
 #xo-footer {
 	margin-top: 					50px;
@@ -153,6 +126,7 @@ a#xo-sitetitle {	text-decoration: none;}
 	padding:						5px;
 	color: 							#000;
 }
+.itemFoot { display: none;}
 
 /* list */
 #xo-canvas-content ul {
@@ -164,22 +138,18 @@ a#xo-sitetitle {	text-decoration: none;}
 }
 #xo-canvas-content li {}
 
-
 /* for newbb/cbb */
 td.foot { display: none;}
 form#quick_reply { display: none;}
 form[name=forum_jumpbox] { display: none;}
-/*.dropdown {
-	display: none;
-}*/
 select#topicoption, select#viewmode { display: none;}
 .comTitle {
-	background-color: 		inherit;
+	background-color: 			inherit;
 	color: 						#006CD5;
 	font-size: 					.9em;
 }
-.comText { padding: 			2px;}
-.comUserStat { font-size: 	.7em;}
+.comText { padding: 	2px;}
+.comUserStat { font-size: .7em;}
 .comUserStatCaption { font-size: .7em;}
 .comUserStatus {display:none;}
 .comUserRank {	font-size:1em;}
@@ -188,13 +158,7 @@ select#topicoption, select#viewmode { display: none;}
 .comUserRankImg {}
 .comUserName {}
 .comUserImg {}
-.comDate {
-	font-style: 					italic;
-	font-size: 						.7em;
-}
+.comDate { font-style: italic; font-size: .7em;}
 .comDateCaption {	font-size: .7em;}
-.signature {
-	font-size: 						.7em;
-	font-style:						italic;
-}
+.signature { font-size: .7em; font-style: italic;}
 .itemPermaLink, .itemFoot, .itemAdminLink { display: none;}

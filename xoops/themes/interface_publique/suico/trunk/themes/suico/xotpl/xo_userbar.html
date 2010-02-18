@@ -1,4 +1,3 @@
-<link rel="stylesheet" type="text/css" media="screen" href="<{xoImgUrl css/userbar.css}>" />
 <{xoMemberInfo assign=member_info}>
 
 <div id="xo-userbar">
@@ -51,14 +50,11 @@
 	<div class="xo-popup_block1">
 		<div class="xo-popup">
 			<a href="javascript:XoHideDiv('brandao');" title="<{$smarty.const.THEME_CLOSEPOPUP}>"><img src="<{xoImgUrl img/icon_close.png}>" class="cntrl" alt="X"/></a>
-			
 			<table>
-			
 				<tr class="center">
 					<td class="width33"><img class="xo-uavatar boxshadow" src="<{$xoops_avatar}>" alt="<{$xoops_uname}>" title="<{$xoops_uname}>"/></td>
 					<td class=" width66 middle"><span class="bold maxi shadow"><{$xoops_uname}></span><br /><span class="italic"><{$xoops_name}></span></td>
 				</tr>
-				
 				<tr>
 					<td colspan="2">
 						<span class="xo-ulabel"><img class="xo-icons" src="<{xoImgUrl icons/users/web.png}>" alt=""/></span>: <span class="xo-uleft"><a rel="external" href="<{$member_info.url}>" title="<{$member_info.url}>"><{$member_info.url}></a></span><br />
@@ -67,7 +63,6 @@
 						<span class="xo-ulabel"><img class="xo-icons" src="<{xoImgUrl icons/users/Ym.png}>" alt=""/></span>: <span class="xo-uleft"><{$member_info.user_yim}></span>
 					</td>
 				</tr>
-				
 				<tr>
 					<td colspan="2">
 						<span class="xo-ulabel"><{$smarty.const.THEME_UFROM}></span>: <span class="xo-uleft"><{$member_info.user_from}></span><br />
@@ -76,7 +71,6 @@
 						<span class="xo-ulabel"><{$smarty.const.THEME_UINFOS}></span>: <span class="xo-uleft small italic"><{$member_info.bio}></span>
 					</td>
 				</tr>
-				
 				<tr>
 					<td colspan="2">
 						<!-- <span class="xo-ulabel"><{$smarty.const.THEME_UREGDATE}></span>: <span class="xo-uleft">grrrrrrrr !!!</span><br /> -->
@@ -84,7 +78,6 @@
 						<span class="xo-ulabel"><{$smarty.const.THEME_UPOSTS}></span>: <span class="xo-uleft"><{$member_info.posts}></span>
 					</td>
 				</tr>
-				
 				<tr>
 					<td class="center middle" colspan="2">
 						<a href="<{xoAppUrl edituser.php}>" title="<{$smarty.const.THEME_UEDITPROFILE}>">

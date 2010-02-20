@@ -29,6 +29,10 @@ body {font-size:75%;}
 #xo-banner {display: none;}
 #xo-banner-ad { display: none;}
 #xo-globalnav { display: none;}
+#xo-blockviewall {display:none;}
+.xo-blockquickedit {display:none;}
+#xo-blockviewall {display:none;}
+.xo-blockquickedit {display:none;}
 #xo-logger-output  {display:none;}
 #system-select_notifications {display:none;}
 .itemFoot { display: none;}

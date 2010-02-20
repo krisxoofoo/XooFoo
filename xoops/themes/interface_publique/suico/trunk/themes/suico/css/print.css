@@ -24,6 +24,8 @@ body {font-size:75%;}
 
 /* display none */
 #xo-noprint { display: none;}
+#xo-banner {display: none;}
+#xo-banner-ad { display: none;}
 #xo-canvas-leftcolumn { display: none;}
 #xo-canvas-rightcolumn { display: none;}
 #xo-userbar { display: none;}
@@ -31,6 +33,8 @@ body {font-size:75%;}
 #xo-banner-ad { display: none;}
 #xo-globalnav { display: none;}
 #xo-userbar {display:none;}
+#xo-blockviewall {display:none;}
+.xo-blockquickedit {display:none;}
 #xo-searchfooter {display:none;}
 #xo-rss {display:none;}
 #xo-logger-output  {display:none;}

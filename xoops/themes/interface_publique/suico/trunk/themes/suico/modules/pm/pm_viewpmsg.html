@@ -1,4 +1,4 @@
-<h4 style='text-align:center;'><{$smarty.const._PM_PRIVATEMESSAGE}></h4><br />
+<h4 class='center'><{$smarty.const._PM_PRIVATEMESSAGE}></h4><br />
 <div style="float:right; width: 49%; text-align: right;">
     <{if $op == "out"}>
         <a href='viewpmsg.php?op=in'><{$smarty.const._PM_INBOX}></a> | <a href='viewpmsg.php?op=save'><{$smarty.const._PM_SAVEBOX}></a>
@@ -82,8 +82,8 @@
                 </td>
             </tr>
         <{/foreach}>
-        <tr class='bg2' align='left'>
-            <td colspan='6' align='left'>
+        <tr class='bg2 center'>
+            <td colspan='6'>
                 <{$pmform.elements.send.body}>
                 <{if $display}>
                     &nbsp;<{$pmform.elements.move_messages.body}>

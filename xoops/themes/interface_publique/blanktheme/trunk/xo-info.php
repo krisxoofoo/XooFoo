@@ -21,7 +21,6 @@
  * @version     $Id$
  */
 
-
 return array(
     'copyright'       		=> '&copy; Xoops.org, maintained by Xoops Design Team',
 	//'xoBundleIdentifier'	=> 'theme_blank',
@@ -35,5 +34,4 @@ return array(
     // Types of language constants
     "languages" => array("main", "admin"),
 );
-
 ?>

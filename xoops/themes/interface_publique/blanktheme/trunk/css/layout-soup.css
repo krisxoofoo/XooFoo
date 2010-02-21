@@ -64,4 +64,3 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 #xo-page .xo-blockszone > .xo-block {	padding-left: 4px;}
 #xo-page .xo-blockszone .xo-block:before { display: block; height: 9px; margin-left: -4px; margin-right: -1px;}
 #xo-page .xo-blockszone .xo-block:after {	display: block; height: 7px; margin-left: -4px;	margin-right:-1px;}
-

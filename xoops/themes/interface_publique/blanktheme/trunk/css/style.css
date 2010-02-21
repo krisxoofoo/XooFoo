@@ -18,6 +18,7 @@
 /* include style sheets */
 @import url(reset.css); /* reset css for web browsers*/
 @import url(dev.css); /* dev css only for web development */
+/* @import url(tplsystem.css); */ /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 @import url(extras.css); /* extras style for perzonalisation templates */
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
@@ -46,7 +47,6 @@ body {font-size:75%;}
 #xo-headerlogo {padding-top: .5em; padding-left:.5em;}
 #xo-banner {}
 #xo-headerbanner {}
-/* fix for banner */
 #xo-bannerfix {
     position:          	absolute;
     top:               	3px;
@@ -143,19 +143,19 @@ textarea:focus {}
 #usermenu a.menuTop {}
 #usermenu a.highlight {}
 
-/* ===== left columns ===== */
+/* ===== left column ===== */
 #xo-canvas-leftcolumn {}
 #xo-canvas-leftcolumn .xo-block {}
 #xo-canvas-leftcolumn .xo-blocktitle  { font-weight: bold;}
 #xo-canvas-leftcolumn .xo-blockcontent {}
 
-/* ===== right columns ===== */
+/* ===== right column ===== */
 #xo-canvas-rightcolumn {}
 #xo-canvas-rightcolumn .xo-block {}
 #xo-canvas-rightcolumn .xo-blocktitle { font-weight: bold;}
 #xo-canvas-rightcolumn .xo-blockcontent {}
 
-/* ===== center content and block ====== */
+/* ===== center content and block in center column ====== */
 #xo-page {}
 /* ----- center blocks ----- */
 #xo-page .xo-blockszone > .xo-block {}
@@ -204,7 +204,6 @@ tr.odd td {}
 .xoopsCode {
 	max-height: 			200px;
 	overflow: 				auto;
-	white-space:			pre;
 }
 .xoopsQuote {}
 blockquote { font-style: italic;}
@@ -253,8 +252,3 @@ blockquote { font-style: italic;}
 .pagneutral {}
 .pagact {}
 .paginact {}
-
-
-
-
-

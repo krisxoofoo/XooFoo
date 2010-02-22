@@ -1,0 +1,90 @@
+﻿##############################################################################
+# File name: Vista W7.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 23-12-2009
+##############################################################################
+
+ -----------------------------
+ Running as a standard Program
+ -----------------------------
+
+ Running servers as a normal program there is no issue and you don't need to
+ run as administrator. 
+
+ 1) Run as standard program left mouse click on system tray icon (UniTray) and
+    select 'Start Uniserver'.
+
+ --------------------
+ Running as a service
+ --------------------
+
+ There are two simple options to run as a service:
+
+ --------
+ Option 1
+ --------
+
+ Simplest way of running UniServer as service on Windows 7 and Vista as follows:
+ 
+ 1) Download 'UniServer5_6.exe' to your machine.
+ 2) Run 'UniServer5_6.exe' and choose a location to extract to
+    for example c:\server
+ 3) Go to the location you chose to extract Uniform Server to and
+    open the 'UniServer' folder.
+ 4) Right click on 'Start.exe' and select 'Run as administrator'.
+    This creates a tray icon referred to as UniTray
+    (blue background white digit one)
+ 5) Right click on the system tray icon (UniTray) and select
+    “Install and run all services”. 
+
+     After a couple of seconds Apache and MySQL should now run as expected.
+
+ --------
+ Option 2
+ --------
+
+ If you are happy to always grant UniServer 'Run as administrator'
+ privileges then perform the following:
+
+ 1) Right click on Start.exe and choose “Properties”
+ 2) Click the compatibility tab.
+ 3) Tick the box 'Run this program as administrator'. 
+
+ Now in future you can just run Start.exe as normal by double clicking it and
+ it will always automatically be run as an administrator.
+
+ ---------------------------- 
+ Disable User Account Control
+ ----------------------------
+
+ The above two options are preferable however if you wish you can disable 
+ User Account Control as follows:
+
+ -------------------------------
+ A) Disable UAC on Windows Vista
+ -------------------------------
+
+ a) Open up Control Panel, type in “UAC” into the search box.
+ b) You will see a link for “Turn User Account Control (UAC)
+ o) or off” click this link:
+ c) A new screen opens uncheck the box for “Use User Account Control (UAC)”,
+    click the OK button.
+ d) You must restart Windows.
+
+ ---------------------------
+ B) Disable UAC on Windows 7
+ ---------------------------
+
+ a) Type UAC into the start menu or Control Panel search box.
+ b) Drag the slider up or down, defines how often you want to be alerted.
+ c) Drag it all the way down to the bottom, this disables UAC entirely.
+
+
+-------------------------------------------------------------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+All rights reserved.
+
+The authors were trying to make the best product so they 
+cannot be held responsible for any type of damage or 
+problems caused by using this or another software.
+

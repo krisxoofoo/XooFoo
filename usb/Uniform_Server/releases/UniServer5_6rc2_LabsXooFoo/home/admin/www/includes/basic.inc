@@ -2,7 +2,7 @@
 <div id="01" class="hidden"><a target="content" onClick="h(this);" href="start.php"><?php echo  $US['nav-home']?></a>
 <a target="content" onclick="h(this);" href="security.php"><?php echo  $US['nav-secure']?></a>
 <a target="content" onclick="h(this);" href="phpinfo.php"><?php echo  $US['nav-phpinfo']?></a>
-<?php if (is_file($usf_perl)){ ?>
+<?php if (is_file(USF_PERL_EXE)){ ?>
 <a target="content" onclick="h(this);" href="perl_envirnonment.php"><?php echo $US['nav-cgienv']?></a>
 <?php }?>
 <a target="_status" onclick="h(this);" href="/server-status"><?php echo  $US['nav-status']?></a>

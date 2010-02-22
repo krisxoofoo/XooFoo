@@ -6,7 +6,7 @@
 $root= substr($_SERVER["DOCUMENT_ROOT"],0,-4);
 include "$root\home\admin\www\includes\.version"; 
 ?></title>
-<meta name="Description" content="Uniform Server 5.6 rc2 - Nano." />
+<meta name="Description" content="Uniform Server 4.0-Mona." />
 <meta name="Keywords" content="Uniform Server, MPG, Mike, Ric, UniServer, Olajide" />
 <meta http-equiv="Content-Type" content="text/html" />
 <style type="text/css">

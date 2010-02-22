@@ -1,6 +1,6 @@
 <?php
   include_once "includes/config.inc.php";
-  include_once $usf_con_functions;
+  include_once USF_CON_FUNCTIONS;
 ?>
 <h3><a href="javascript:unhide('07');"><?php echo  $US['nav-start']?></a></h3>
 <div id="07" class="hidden">

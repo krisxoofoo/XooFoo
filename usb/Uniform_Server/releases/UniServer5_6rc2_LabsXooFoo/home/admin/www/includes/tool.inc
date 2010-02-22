@@ -2,13 +2,13 @@
 <div id="08" class="hidden">
 <?php
   include_once "includes/config.inc.php";
-  include_once $usf_con_functions;
+  include_once USF_CON_FUNCTIONS;
   if (mysql_running() ){ ?>
 <a target="_phpmyadmin" onclick="h(this);" href="phpMyAdmin/"><?php echo  $US['nav-pma']?></a>
 <?php }?>
 
 <a target="content" onclick="h(this);" href="error_log_viewer.php"><?php echo $US['nav-elog']?></a>
-<?php if (is_file($usf_perl)){ ?>
+<?php if (is_file(USF_PERL_EXE)){ ?>
 <a target="content" onclick="h(this);" href="win_to_unix_converter.php"><?php echo $US['nav-u2w']?></a>
 <?php }?>
 <a target="content" onclick="h(this);" href="certificate_and_key_gen.php"><?php echo  $US['nav-key']?></a>

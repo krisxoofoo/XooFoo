@@ -13,23 +13,19 @@
 	<div id="xo-wrapper">
 		<div id="xo-bgstatic"></div>
 		<div id="xo-canvas">
-			<!-- Start header -->
-			<div id="xo-header">
-				<div id="xo-banner" class="<{$xoops_dirname}>">
-					<div id="xo-headerlogo"><a href="<{xoAppUrl /}>" title="<{$xoops_sitename}> - <{$xoops_slogan}>"><img src="<{xoImgUrl img/logo.png}>" alt="<{$xoops_sitename}>" /></a></div>
-					<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
-						<div id="xo-headerbanner"><{$xoops_banner|smarty:nodefaults}></div>
-					<{/if}>
+			<!-- Include Header -->
+			<{if $theme_view_header}>
+				<div id="xo-header">
+				<{if $theme_view_logobanner}><{includeq file="$theme_name/xo_header.html"}><{/if}>
+				<{if $theme_view_globalnav}><{includeq file="$theme_name/xo_globalnav.html"}><{/if}>
 				</div>
-				<div id="xo-globalnav">&nbsp;</div>
-			</div>
-			<!-- End header -->
+			<{/if}>
+			<!-- Include Content Columns -->
 			<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
 				<{includeq file="$theme_name/xo_page.html"}>
 			</div>
-			<!-- Start footer -->
-			<div id="xo-footer"><{$xoops_footer}></div>
-			<!-- end Footer -->	  
+			<!-- Include Footer -->
+			<{if $theme_view_footer}><{includeq file="$theme_name/xo_footer.html"}><{/if}> 
 		</div><!-- End xo-canvas -->
 		<!--{xo-logger-output}-->	
 	</div><!-- End xo-wrapper -->

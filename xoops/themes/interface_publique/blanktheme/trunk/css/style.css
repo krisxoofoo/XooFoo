@@ -111,21 +111,35 @@ dt {}
 dd {}
 
 /* ===== forms ===== */
+form {}
 fieldset {}
-legend {	font-weight: bold;}
+legend {font-weight: bold;}
 input, button, select {vertical-align: middle;}
 input {}
-button, input[type="submit"], input[type="button"], input[type="reset"], .xo-formbuttons, .formButton {}
-button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, .xo-formbuttons:focus, .formButton:focus, 
-button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, .xo-formbuttons:hover, .formButton:hover {}
-input[type=checkbox], input[type=radio] {}
+label, .caption-text {}
 select {}
+select[name=timezone_offset] {}
 select:focus {}
 textarea {}
 textarea:focus {}
-#xo-page fieldset {}
+#xo-page fieldset a {}
+#xo-page fieldset a:hover {}
 #xo-page legend { font-weight:	bold;}
-#xo-page label { display: block; font-weight: bold;}
+#xo-page label {}
+button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {}
+button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus {}
+button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover {}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
+input[type=text], input[type=password], input[type=file] {}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover {}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {}
+input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
+
+#xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
+#xo-content .xo-formfield.required label:after, .caption-marker {}
+.xoops-form-element-caption .caption-marker {}
+.xoops-form-element-caption-required .caption-marker {}
+.xoops-form-element-help {}
 
 /* ===== block main menu ===== */
 #mainmenu {}

@@ -1043,7 +1043,7 @@ function start_opera($page){
   // Build command line
   $cmd1 = "start ";
   $cmd2 = USF_UNISERV_EXE." \"";
-  $cmd3 = US_BASE_F."/apps/opera/OperaUSB.exe -new-tab $page\" ";
+  $cmd3 = US_BASE_F."/apps/opera/opera.exe -new-tab $page\" ";
   $cmd = $cmd1.$cmd2.$cmd3;
 
   exec($cmd,$dummy,$return);         // Run opera browser
@@ -1058,7 +1058,7 @@ function get_opera_exe(){
 
   $dir_handle=opendir($opera_folder);         // Get handle to opera folder 
   while($file=readdir($dir_handle)){              // Loop through folder names 
-    if(preg_match("/^operausb.+exe/", $file)){ // Search for executable name 
+    if(preg_match("/^opera.+exe/", $file)){ // Search for executable name 
      $opera_exe=$file;                          // Match found save
      break;                                       // Noting else to do give up 
     }

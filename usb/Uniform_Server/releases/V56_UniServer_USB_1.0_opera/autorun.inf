@@ -1,0 +1,20 @@
+[Autorun]
+; 13-12-09 V1.0.0 for Nano-USB
+; action new for Vista!
+open=AutoRunPro.exe
+action=Uniform Server USB
+icon=unicenter.ico
+
+[AutorunPro]
+; Here are some sample uses for Autorunpro.
+; It keeps processing Them in Run1..RunN order until it doesnt find one.
+;Run1=notepad.exe
+;Run3=http://www.gui.com.au
+;run6=http://geek.forthephone.com
+;Run2=Calc.exe
+;Run4=relpath\doguff.bat
+;Run5="mailto:mct@gui.com.au?subject=I have an Autorun Question"
+
+Run1=unicon\tray_menu\Start_UniTray.bat
+
+

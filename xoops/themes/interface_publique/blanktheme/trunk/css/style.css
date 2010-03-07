@@ -193,8 +193,10 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	width:					100%;
 	margin:					0;
 	text-align:				center;
-}
-#xo-logger-output{ font-size: .8em;}
+	
+}/* ============ Style for debug mode ============ */
+#xo-logger-output { margin-bottom : 15px; font-size: .8em;}
+#xo-logger-tabs {}
 
 /* ===== tables and cells ===== */
 table {width:100%; border-collapse: collapse;}
@@ -227,6 +229,7 @@ blockquote { font-style: italic;}
 .item {}
 .itemHead {}
 .itemInfo {}
+.itemTitle {}
 .itemTitle a {}
 .itemPoster {}
 .itemPostDate {}
@@ -252,8 +255,7 @@ blockquote { font-style: italic;}
 .comDate {}
 .comDateCaption {}
 .signature {}
-/* ============ Style for debug mode ============ */
-#xo-logger-output { margin-bottom : 15px; font-size: .8em;}
+
 /* ===== core messages ===== */
 .highlight {	}
 .errorMsg,.confirmMsg, .resultMsg, .successMsg  {}
@@ -267,3 +269,7 @@ blockquote { font-style: italic;}
 .pagneutral {}
 .pagact {}
 .paginact {}
+/*==================== for jGrowl =========================*/
+.jGrowl {}
+.jGrowl .jGrowl-notification,.jGrowl .jGrowl-closer {}
+.jGrowl-notification .header {}

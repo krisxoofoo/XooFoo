@@ -243,6 +243,8 @@ blockquote { font-style: italic;}
 
 /* ===== forums (content-type in example) ===== */
 .comTitle {	font-weight: bold;}
+.comTitle a {}
+.comTitle a:hover {}
 .comText {}
 .comUserStat {}
 .comUserStatCaption {}

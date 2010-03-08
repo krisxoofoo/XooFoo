@@ -13,6 +13,8 @@
 */
 
 define("THEME_RSS",						"Alimentations du fil RSS");
+define("THEME_FANFACE",					"Nous rejoindre sur Facebook");
+define("THEME_TWITME",					"Suivre nos twitts !");
 
 define("THEME_PROFILE",					"Voir son profil");
 define("THEME_NOTIFICATION",			"voir ses notifications");

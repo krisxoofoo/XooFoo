@@ -13,8 +13,10 @@
 */
 
 define("THEME_RSS",						"Alimentations du fil RSS");
+define("THEME_FANFACE",					"Nous rejoindre sur Facebook");
+define("THEME_TWITME",					"Suivre nos twitts !");
 
-define("THEME_NOTIFICATION",			"voir ses notifications");
+define("THEME_NOTIFICATION",			"Voir ses notifications");
 define("THEME_MESSAGE",					"Voir ses messages");
 define("THEME_YOUHAVE",					"Vous avez");
 define("THEME_NOTREAD",					"message(s) non lu(s)");

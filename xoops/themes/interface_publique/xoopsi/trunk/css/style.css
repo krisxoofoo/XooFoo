@@ -1,0 +1,568 @@
+/*
+ * Xoopsi Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Team <http://www.xoops.org/>
+ * @maintained      Xoops Design Team<http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+	 
+/* include style sheets */
+@import url(reset.css); /* reset css for web browsers*/
+@import url(extras.css); /* extras style for perzonalisation templates */
+/*  for html 5 in next time */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+/* beginning of the applicable styles */
+html, body {
+	max-width: 			100%;
+	margin:				0 auto;
+	background-color: 	#fff;
+	color:				#333;
+	font-family:		"Malgun Gothic", AppleGothic, Dotum, Lucida Grande, Verdana Sans-serif;
+	line-height:		1.5em;
+}
+html {font-size:100.01%;}
+body {font-size:80%;}
+
+/* ======= Body box ======= */
+#xo-wrapper { height: 100%;}
+#xo-bgstatic {}
+#xo-canvas {	 margin: 0 auto;}
+#xo-canvas-content { width: 1000px !important; margin: 1em auto;}
+#xo-canvas-columns {}
+#xo-page {}
+/* ===== header ===== */
+#xo-header {	background: #F9A607 url(../img/bgxobanner.png) repeat left top;}
+#xo-headerlogo { 
+	float:left;
+	width: 40%;
+	padding-top: 10px;
+	padding-left:10px;
+}
+#xo-headerlogo:hover {opacity:.5;}
+#xo-banner {
+	width: 1000px;
+	height: 80px;
+	margin: 0 auto;
+}
+#xo-banner.commercial {}
+#xo-headerbanner {float:right; padding-top: 5px;}
+#xo-bannerfix {
+    width:                  	480px;
+    height:                 	70px;
+    background:             	url(../img/bg-ad-top.png) no-repeat;
+    padding-top:                6px;
+    padding-right:              6px;
+    padding-left:               6px;
+	z-index:					99;
+}
+#xo-globalnav {
+	clear: 				both;
+	width:				100%;
+	height:				23px;
+	margin:				0;
+	background: red url(../img/navbar.gif) repeat left top;
+}
+/* ====== hypertext links ===== */
+a { color: #F9A607;}
+a:visited, a:focus {color: #AD7305;}
+a:hover, a:active {color: #000; text-decoration: underline;}
+
+/* ===== titles ===== */
+h1, h2, h3, h4, h5, h6 { 
+  margin: 				1em 0 .5em 0;
+  line-height: 			1.2; 
+  font-weight: 			bold;
+  font-style: 			normal;
+  text-shadow: 1px 1px 2px #ccc;
+}
+h1 {	font-size: 1.4em;}
+h2 {font-size: 1.2em;}
+h3 {	font-size: 1em;}
+h4 {	font-size: 1em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
+
+/* ===== images ===== */
+img { border: 0 !important;}
+p img { margin: .5em;}
+a img:hover, a img:focus {opacity:.5}
+a img { border: none;}
+.imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
+
+/* ===== other attributes of contents ===== */
+p {
+	margin-top: 			.5em;
+	margin-bottom:			.5em;
+	text-align:				justify;
+}
+hr{
+	height:					72px;
+	background:			url(../img/hr.png) no-repeat top center;
+}
+em { font-style: italic;}
+strong, b, dfn { font-weight: bold;}
+del { text-decoration: line-through;}
+address	{ font-style: normal; letter-spacing: .1em;}
+small {font-size: .8em;}
+q, cite { font-style: italic;}
+bdo { direction: ltr;}
+acronym, abbr, abbr[title], dfn { border-bottom: 1px dashed; cursor: help;}
+abbr[title] { border-bottom: 1px dotted; cursor: help;} 
+acronym:hover, abbr:hover { border-bottom: #32529C 1px dashed;}
+::selection { background-color: #ccc;}
+	::-moz-selection {background-color: #ccc;}
+/* ===== lists ===== */
+#xo-canvas-content ul, #xo-canvas-content ol { margin: .5em 0 .5em 1em; padding: 0;}
+#xo-canvas-content ul {list-style-type: circle;}
+#xo-canvas-content ol {list-style-type: decimal;}
+#xo-canvas-content li  { margin: .3em 0;}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li {
+	padding: 				0;
+	font-style:				italic;
+}
+#xo-canvas-content ul ul li,#xo-canvas-content ol ol li {
+	padding-top: 			0;
+	padding-bottom: 		0;
+	padding-left:			1em;
+}
+#xo-canvas-content ul, #xo-canvas-content ol {}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li {}
+
+
+#xo-canvas-content dd {}
+#xo-canvas-content dl {}
+#xo-canvas-content dt {}
+dl { margin: .75em 0;} 
+dt { margin: .75em 0 0 0; font-weight: bold;} 
+dd { margin: .25em 0 .25em 2em; }
+
+/* ===== forms ===== */
+form {}
+fieldset {margin: 0 .5em 1em .5em; padding: .5em;}
+legend {padding-left:.5em; font-size:1.2em; font-weight: bold; text-shadow: 1px 1px 2px #ccc;}
+input, button, select {vertical-align: middle;}
+input {}
+label, .caption-text {font-weight: bold; text-shadow: 1px 1px 2px #ccc;}
+select {margin : 5px; background-color: #fff !important; padding: 6px; border: 2px inset #e7f4f7 !important; font-size:.9em; font-weight: normal;}
+select[name=timezone_offset] {}
+select:focus {}
+textarea {}
+textarea:focus {}
+#xo-page fieldset a {}
+#xo-page fieldset a:hover {}
+#xo-page legend { font-weight:	bold;}
+#xo-page label {font-weight:	bold;}
+
+input, textarea { 
+	margin: 5px;
+	padding: 5px;
+	border: #E5E5E5 solid 1px;
+	outline: 0;
+	font-size: 1.1em;
+}
+
+textarea { 
+	width: 90%;
+	max-width: 400px;
+	height: 200px;
+	line-height: 150%;
+	overflow: auto;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus { 
+	border-color: #C9C9C9; 
+	box-shadow: rgba(0, 0, 0, 0.15) 0 0 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.15) 0 0 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.15) 0 0 8px;
+}
+	
+button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {
+	width: auto;
+	background-color: #F9A607 !important;
+	padding: 6px 10px;
+	color: #fff;
+	text-shadow: 1px 1px 2px #ccc;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+}
+button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus {}
+button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover { background: #fff; color: #000;}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {
+	background: #fff url(../img/bg_form.png) left top repeat-x;
+	background: -webkit-gradient(linear, left top, left 25, from(#fff), color-stop(4%, #eee), to(#fff));
+	background: -moz-linear-gradient(top, #ccc, #eee 1px, #ccc 25px);
+}
+input[type=text], input[type=password], input[type=file] {min-width: 170px; width: auto;}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover {}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {}
+input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-color: transparent;}
+
+#xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
+.xo-formfield.required label:after, .caption-marker {
+    content:                '*';
+    color:                  #ff0000;
+    background-color:       transparent;
+}
+.xoops-form-element-caption .caption-marker { display:none;}
+.xoops-form-element-caption-required .caption-marker {}
+.xoops-form-element-help {}
+
+/* ===== block main menu ===== */
+#mainmenu { font-size:1.1em;}
+#mainmenu a {
+	display: block;
+	font-weight: bolder;
+	padding-bottom: .5em;
+	text-shadow: 1px 1px 2px #ddd;
+}
+#mainmenu a:hover {text-decoration: none; text-transform: uppercase !important;}
+#mainmenu a.menuTop  {}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub{ color: #000; padding-left: .5em; padding-bottom: 0; font-size: .8em; font-style: italic; font-weight: normal;}
+#mainmenu a.menuSub:hover  { text-transform: none !important; text-decoration: underline;}
+#mainmenu a.maincurrent {}
+/* ===== block user menu ===== */
+#usermenu { padding-left:.5em; font-size: .9em;}
+#usermenu a {display: block; color: #42B3C7;}
+#usermenu a:hover  { font-style:italic;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {}
+
+/* ===== left column ===== */
+#xo-canvas-leftcolumn { padding: 0 .5em 0 .5em;}
+#xo-canvas-leftcolumn .xo-block {margin-bottom: 1em; padding-top:.5em; border-top: 2px solid #333;}
+#xo-canvas-leftcolumn .xo-blocktitle  { padding-left:.5em; font-size:1.2em; font-weight: bold; text-shadow: 1px 1px 2px #ccc; }
+#xo-canvas-leftcolumn .xo-blockcontent {padding-top:.5em;}
+
+/* ===== right column ===== */
+#xo-canvas-rightcolumn { padding: 0 .5em 0 .5em;}
+#xo-canvas-rightcolumn .xo-block {margin-bottom:1em; padding-top:.5em; border-top: 2px solid #333;}
+#xo-canvas-rightcolumn .xo-blocktitle { padding-left:.5em; font-size:1.2em; font-weight: bold; text-shadow: 1px 1px 2px #ccc;}
+#xo-canvas-rightcolumn .xo-blockcontent {padding-top:.5em;}
+
+/* ===== center content and block in center column ====== */
+#xo-page { padding: 0 .5em 0 .5em;}
+/* ----- center blocks ----- */
+#xo-page .xo-blockszone > .xo-block { margin-bottom: 1em;  padding-top:.5em; border-top: 2px solid #333;}
+#xo-page .xo-blockszone .xo-blocktitle { padding-left:.5em; font-size:1.2em; font-weight: bold; text-shadow: 1px 1px 2px #ccc;}
+#xo-page .xo-blockszone .xo-blockcontent { padding-top:.5em; text-align:justify;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
+#xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
+#xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
+#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle { font-weight: bold;}
+#xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
+#xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {}
+
+/* ----- content module page ----- */
+#xo-content {text-align: justify; margin-bottom: 1em;}
+
+/* ===== footer ===== */
+#xo-footer {
+	clear: 					both;
+	width: 1000px;
+	height: 20px;
+	margin: 1em auto;
+	padding-top: 1em;
+	font-size:				.9em;
+	text-shadow: 				1px 1px 2px #ccc;
+	border-top:			#000 2px solid;
+}
+.xo-footbottom {padding-bottom: 2em;}
+#xo-rss {
+	float: 						right;
+	width: 						30px;
+	margin-top: -10px;
+}
+#xo-rss a { text-decoration: none;}
+#xo-copyright {float:left;}
+/* ============ Style for debug mode ============ */
+#xo-logger-output { padding-bottom: 20px; font-size: .85em;}
+#xo-logger-tabs {
+    margin-top: 				-2px;
+    padding-top: 				8px;
+    padding-bottom: 			8px;
+    padding-left: 				2%;
+    padding-right:				2%;
+	font-weight: bold;
+}
+
+/* ===== tables and cells ===== */
+table {width:100%; border-collapse: collapse;}
+caption {}
+th, th.head, thead {
+	background-color: 		#F9A607;
+	padding: 2px 8px 2px 8px;
+	color: 					#fff;
+	vertical-align: 		middle;
+	font-size:				1.1em;
+	font-weight : 			bold;
+	text-align:				center;
+	text-shadow:			1px 1px 2px #aaa;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+.foot, tfoot { padding: 2px 8px 2px 8px; text-align: center;}
+tbody {}
+table.outer {
+	margin: .5em;
+	border-collapse: separate;
+	border: #ddd 1px solid;
+	border-radius: 				5px;
+		-moz-border-radius:		5px;
+		-webkit-border-radius:	5px;
+	box-shadow: 				2px 3px 4px rgba(0,0,0,0.25);
+		-moz-box-shadow: 		2px 3px 4px rgba(0,0,0,0.25);
+		-webkit-box-shadow: 	2px 3px 4px rgba(0,0,0,0.25);
+}
+table td {padding: 3px;}
+.outer {}
+.head { background-color: #f2f2f2; font-weight: bold; vertical-align: top;}
+.even {}
+.odd {}
+tr.even td {}
+tr.odd td {}
+
+/* ===== codes and quotes ===== */
+.xoopsCode {
+	display:					block;
+	max-height: 				350px;
+	overflow: 					auto;
+	margin-left:				.5em;
+	background-color: 			#fff;
+	padding: 					6px;
+	font-size:					.9em;
+	color: 						inherit;
+	font-family: 				"Courier New",Courier,monospace; 
+	border: 					1px solid #ddd;
+}
+.xoopsQuote {
+	margin-left:				.5em;
+	padding:					.5em;
+	font-size:					.9em;
+	font-family: 				"Courier New",Courier,monospace;
+	font-style:					italic;
+	background:			#f7fbff url(../img/quote.png) no-repeat top left;
+}
+blockquote {}
+
+/* ===== articles (content-type in example) ===== */
+.item {}
+.itemHead {font-size: 1.3em; font-weight: bold; padding-bottom: .5em; text-shadow: 1px 1px 2px #ccc;}
+.itemInfo { font-size: .9em; font-style: italic;}
+.itemTitle { }
+.itemTitle a {}
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+.itemBody {}
+.itemText {}
+.itemText:first-letter {font-weight: bold;}
+.itemFoot {font-size: .9em; text-align: right;}
+.itemAdminLink {}
+.itemPermaLink {}
+
+/* ===== forums (content-type in example) ===== */
+.comTitle {	font-weight: bold;}
+.comTitle a {background-color: transparent; color: #fff;}
+.comTitle a:hover {background-color: transparent; color: #000; text-decoration: underline;}
+.comText { margin: .5em;}
+.comUserStat { margin: 3px; padding: 2px; font-size: .85em; border: #ccc 1px solid; text-align: left;}
+.comUserStatCaption {}
+.comUserStatus {}
+.comUserRank {}
+.comUserRankText {}
+.comUserRankImg {}
+.comUserName {}
+.comUserImg {
+	margin: .5em;
+	padding: .5em;
+	border: 					1px solid #ccc;
+	border-radius:				10px;
+	-moz-border-radius:			10px;
+	-webkit-border-radius:		10px;
+	-khtml-border-radius: 		10px;
+	box-shadow: 				1px 2px 3px rgba(0,0,0,0.5);
+		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
+
+}
+.comDate {}
+.comDateCaption {}
+.signature {padding: .5em; font-size: .9em; font-style: italic;}
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #e7f4f7 !important; font-size:.9em; font-weight: normal;}
+/* ===== core messages ===== */
+.highlight {	color:#ff0000 !important; font-weight:bold; text-shadow: 1px 1px 2px #ccc;}
+.errorMsg,.confirmMsg, .resultMsg, .successMsg  { padding: .8em; text-align: center; margin-bottom: 1em;
+	text-shadow: 1px 1px 2px #ccc;
+	border-radius: 				10px;
+	-moz-border-radius: 		10px;
+	-webkit-border-radius: 		10px;
+	box-shadow: 				2px 2px 10px  rgba(102, 102, 102, .5);
+	-moz-box-shadow: 			2px 2px 10px rgba(102, 102, 102, .5) ;
+	-webkit-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);}
+.errorMsg {	background-color: #FBE3E4; color: #D12F19;	border-color: #FBC2C4;}
+.confirmMsg { background-color: #FFF6BF; color:#817134; border-color:	#FFD324;}
+.resultMsg {	background-color:#E6EFC2; color: #529214; border-color: #C6D880;}
+.errorMsg a {background-color: transparent; color: #D12F19;}
+.confirmMsg a   {	background-color:transparent; color: #817134;}
+.successMsg a  {background-color: transparent; color: #529214;}
+/* ===== pages navigation ===== */
+.pagneutral {}
+#xo-pagenav {
+    margin:                 7px 0;
+    text-align:             center;
+    font-size:              1.05em;
+}
+#xo-pagenav a {}
+#xo-pagenav a:hover {  border: 1px solid #ccc;}
+.xo-pagact {
+    margin:                 0;
+    padding:                .2em .5em;
+    background-color:       #f2f2f2;
+    border:                 1px solid #ccc;
+	border-radius : 5px;
+		-webkit-border-radius : 5px;
+		-moz-border-radius: 	5px;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #000;
+    background-color:       #fff;
+    border:                 1px solid #ccc;
+	border-radius : 5px;
+		-webkit-border-radius : 5px;
+		-moz-border-radius: 	5px;
+}
+.xo-counterpage:hover {}
+.xo-pagarrow { letter-spacing: 0.2em;}
+/*==================== for jGrowl =========================*/
+.jGrowl {margin: 200px auto; width:450px;}
+.jGrowl .jGrowl-notification,.jGrowl .jGrowl-closer {
+	text-shadow: 1px 1px 2px #ccc;
+	border: 2px solid #666;
+	border-radius : 10px;
+		-webkit-border-radius : 10px;
+		-moz-border-radius: 	10px;
+	-khtml-border-radius: 		10px;
+	box-shadow: 				2px 2px 10px rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5) ;
+}
+.jGrowl-notification .header { font-size : 1.2em; padding-top: .75em; padding-bottom: .75em;}
+/*========== xo_footerstatic.html ==========*/
+#xo-footerstatic * { margin: 0; padding: 0;}
+#xo-footerstatic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: none;
+  color: #000;
+  font-size: 11px;
+}
+body>#xo-footerstatic {  position: fixed;}
+#xo-footerstatic #controls {
+  margin: 0 20px 0 20px;
+  background-color: #fff;
+  line-height: 39px;
+  font-weight: bolder;
+  text-shadow:	1px 1px 2px #ccc;
+  border: 1px solid #b5b5b5;
+  border-bottom: none;
+}
+#xo-footerstatic #controls  { margin-top: 1px; background: #fff; padding: 3px 10px 0 10px;}
+#xo-footerstatic .separator { margin-left: 3px; border-left: 1px solid #b5b5b5;}
+#xo-footerstatic #controls ul, li { margin: 0;  padding: 0;}
+#xo-footerstatic #controls ul { list-style: none;}
+#xo-footerstatic #controls li { display: inline-block; height: 29px; line-height: 27px; padding-right: 6px;}
+#xo-footerstatic .icon { vertical-align: text-bottom;}
+#xo-footerstatic .icon-chat { padding-top: 3px;}
+#xo-footerstatic .chat, .icon-chat { float: right;}
+#xo-footerstatic .text { vertical-align: top;}
+/*============== Styles for system_siteclosed.html =================*/
+#xo-page-siteclose  {
+	display:					block;
+	width: 						450px;
+	margin:						50px auto;
+	padding:					2em;
+	text-align: center;
+	border-radius:				10px;
+		moz-border-radius:		10px;
+		-webkit-border-radius	10px;
+	box-shadow: 				2px 2px 10px rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5) ;
+}
+#xo-siteclose {
+	line-height:				2em;
+	font-size: 					1.4em;
+	text-align: 				center;
+	text-shadow: 1px 1px 2px #ccc;
+}
+#login_window  {	width: 450px; margin: 2em auto;}
+/*============== Styles for system_redirect.html =================*/
+#xo-redirect {
+	display:					block;
+	width:						600px;
+	min-height:					70px;
+	margin:						140px auto;
+	background-color: 			#fff;
+	padding:					1em;
+	color: 						#333;
+	font-size:					1.1em;
+	font-weight:				bold;
+	text-align:					center;
+	text-shadow: 1px 1px 2px #ccc;
+	border-radius:				10px;
+		moz-border-radius:		10px;
+		-webkit-border-radius	10px;
+	box-shadow: 				2px 2px 10px rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5) ;
+}
+#xo-redirect .notreload { height: 28px; padding-top:	2px;}
+#xo-redirect .notreload a { background-color: transparent; color: #F9A607; font-weight: bold;}
+#xo-redirect .message {}
+#xo-redirect .message img{ padding: 1em;}
+/*============== Styles for system_userform.html =================*/
+#xo-system-userform fieldset {
+	border-radius:				10px;
+		moz-border-radius:		10px;
+		-webkit-border-radius	10px;
+	box-shadow: 				2px 2px 10px rgba(102, 102, 102, .5);
+		-moz-box-shadow: 		2px 2px 10px rgba(102, 102, 102, .5);
+		-webkit-box-shadow: 	2px 2px 10px rgba(102, 102, 102, .5) ;
+}
+.login_form  .credentials { margin: .5em 1em; padding: 1em;}
+.login_form  .credentials label {
+	display:                    inline-block;
+	width:                      33%;
+	margin:                     1px;
+	text-align:					right;
+	text-shadow: 				1px 1px 2px #ccc;
+}
+.login_form  .credentials input[type="text"], .login_form  .credentials input[type="password"]  {	width: 25%;}
+.login_form  .credentials input:focus {}
+.login_form  .actions { margin-left:34%; }
+/*============== css fix for modules =================*/
+.register-steps {text-align: left; font-size: .9em !important;} /* profile */
+#tabs ul li {list-style: none;} /* publisher */

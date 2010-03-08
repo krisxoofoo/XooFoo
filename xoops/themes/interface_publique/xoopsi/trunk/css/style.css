@@ -296,7 +296,7 @@ table.outer {
 }
 table td {padding: 3px;}
 .outer {}
-.head { background-color: #f7fbff; font-weight: bold; vertical-align: top;}
+.head { background-color: #f7fbff; color: inherit; font-weight: bold; vertical-align: top;}
 .even {}
 .odd {}
 tr.even td {}

@@ -325,7 +325,7 @@ tr.odd td {}
 	font-family: 				"Courier New",Courier,monospace;
 	font-style:					italic;
 }
-blockquote {}
+blockquote {font-style: italic;}
 
 /* ===== articles (content-type in example) ===== */
 .item {}
@@ -348,7 +348,7 @@ blockquote {}
 .comTitle a {background-color: transparent; color: #fff;}
 .comTitle a:hover {background-color: transparent; color: #333; text-decoration: underline;}
 .comText { margin: .5em;}
-.comUserStat { margin: 3px; padding: 2px; font-size: .85em; border: #ccc 1px solid; text-align: left;}
+.comUserStat { margin: 3px; padding: 2px; font-size: .85em; border: #ccc 1px solid; text-align: left; line-height:1.2em;}
 .comUserStatCaption {}
 .comUserStatus {}
 .comUserRank {}
@@ -367,7 +367,7 @@ blockquote {}
 		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
 		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
 }
-.comDate {}
+.comDate { font-size: .9em; font-style: italic; font-weight: normal;}
 .comDateCaption {}
 .signature {padding: .5em; font-size: .9em; font-style: italic;}
 

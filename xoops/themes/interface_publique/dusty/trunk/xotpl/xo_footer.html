@@ -1,0 +1,35 @@
+<div id="xo-footer">
+	<div id="footPanel">
+		  <div id="footNav">
+		   <!-- menu in anonymous mode-->
+			<a href="<{xoAppUrl}>" accesskey="a"  title="<{$smarty.const.THEME_HOME_DESC}>"><{$smarty.const.THEME_HOME}></a> | 
+				<{if !$xoops_isuser}>
+					<a href="<{xoAppUrl modules/myCredits/}>" accesskey="" title="<{$smarty.const.THEME_MODULE1a_DESC}>"><{$smarty.const.THEME_MODULE1a}></a> | 
+					<a href="<{xoAppUrl modules/google/}>" accesskey="" title="<{$smarty.const.THEME_MODULE2a_DESC}>"><{$smarty.const.THEME_MODULE2a}></a> | 
+					<{else}>
+					<!-- menu in mode recorded -->
+					<a href="<{xoAppUrl modules/news/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE1_DESC}>"><{$smarty.const.THEME_MODULE1}></a> | 
+					<a href="<{xoAppUrl modules/newbb/}>" accesskey=""  title="<{$smarty.const.THEME_MODULE2_DESC}>"><{$smarty.const.THEME_MODULE2}></a> | 
+					<a href="<{xoAppUrl modules/xcgal/}>" accesskey="" title="<{$smarty.const.THEME_MODULE3_DESC}>"><{$smarty.const.THEME_MODULE3}></a> | 
+					<a href="<{xoAppUrl modules/smartmedia/}>" accesskey="" title="<{$smarty.const.THEME_MODULE4_DESC}>"><{$smarty.const.THEME_MODULE4}></a> | 
+					<a href="<{xoAppUrl modules/mylinks/}>" accesskey="" title="<{$smarty.const.THEME_MODULE5_DESC}>"><{$smarty.const.THEME_MODULE5}></a> | 
+					<a href="<{xoAppUrl modules/mydownloads/}>" accesskey="" title="<{$smarty.const.THEME_MODULE6_DESC}>"><{$smarty.const.THEME_MODULE6}></a> | 
+					<{if $xoops_isadmin}>
+						<!-- additional link if I am administrator -->
+						<a href="<{xoAppUrl modules/xoopsinfo/admin/}>" accesskey="" title="<{$smarty.const.THEME_MODULE7_DESC}>"><{$smarty.const.THEME_MODULE7}></a> | 
+						<a href="<{xoAppUrl modules/protector/admin/}>" accesskey="" title="<{$smarty.const.THEME_MODULE8_DESC}>"><{$smarty.const.THEME_MODULE8}></a> | 
+					<{/if}>
+				<{/if}>
+			<a href="<{xoAppUrl modules/contact/}>" accesskey="c" title="<{$smarty.const.THEME_CONTACT_DESC}>"><{$smarty.const.THEME_CONTACT}></a>
+		  </div>
+		<p><{$xoops_footer}></p>
+		<p>Design original by <a rel="external" href="http://www.templateworld.com/" title="TemplateWorld">TemplateWorld</a> and brought to you by <a rel="external" href="http://www.smashingmagazine.com/" title="SmashingMagazine">SmashingMagazine</a><br />Adapted for Xoops by <a rel="external" href="http://www.xoops.org/userinfo.php?uid=43273" title="Kris_fr - Xoops">Kris_fr</a></p>
+		  <div id="validation">
+		   <ul>
+			<li><a href="http://validator.w3.org/check?uri=referer">xhtml</a></li>
+			<li><div class="blank"></div></li>
+			<li><a href="http://jigsaw.w3.org/css-validator/check/referer">css</a></li>
+		   </ul>
+		  </div>
+	 </div>
+</div>

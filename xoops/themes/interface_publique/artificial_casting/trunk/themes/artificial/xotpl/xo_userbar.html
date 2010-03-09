@@ -1,0 +1,58 @@
+<{xoMemberInfo assign=member_info}>
+<div id="login">
+	<{if !$xoops_isuser}>
+		<div id="logintxtblank">
+			<div id="loginheading">
+				<h4><{$smarty.const._LOGIN}></h4>
+			</div>
+			<form method="post" action="<{xoAppUrl /user.php op=login}>">
+				<div id="username"><{$smarty.const.THEME_PSEUDO}></div>
+				<div id="input">
+					<label>
+						<input name="uname" type="text" class="input" id="textfield" title="<{$smarty.const.THEME_DESC_PSEUDO}>" />
+					</label>
+				</div>
+				<div id="password"><{$smarty.const.THEME_PASSWORD}></div>
+				<div id="input02">
+					<label>
+						<input name="pass" type="password" class="input" id="textfield2" title="<{$smarty.const.THEME_DESC_PASSWORD}>" />
+					</label>
+				</div>
+				<input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
+				<{if $lang_siteclosemsg}>
+					<input type="hidden" name="xoops_login" value="1" />
+				<{/if}>
+				<div id="loginbutton"><button class="login" type="submit" title="<{$smarty.const._LOGIN}>"><{$smarty.const.THEME_OK}></button></div>
+			</form>
+				<div id="member"><a href="<{xoAppUrl user.php#lost}>" title="<{$smarty.const.THEME_LOSTACCOUNT}>"><{$smarty.const.THEME_LOSTACCOUNT}></a></div>
+				<div id="register"><a href="<{xoAppUrl /register.php}>" title="<{$smarty.const.THEME_REGISTER}>"><{$smarty.const.THEME_REGISTER}></a></div>
+		</div>
+	<{else}>
+	<table id="xo-userhead">
+				<tr class="center">
+					<td class="width33"><img class="xo-uavatar boxshadow" src="<{$xoops_avatar}>" alt="<{$xoops_uname}>" title="<{$xoops_uname}>"/></td>
+					<td class=" width66 aligntop">
+						<{$smarty.const.THEME_WELLCOME}> <span class="bold maxi shadow"><{$xoops_uname}></span>
+						<br />
+						<span class="xo-ulabel"><{$smarty.const.THEME_UPOSTS}></span>: <span class="xo-uleft"><{$member_info.posts}></span>
+						<br /><br />
+						<a href="<{xoAppUrl edituser.php}>" title="<{$smarty.const.THEME_UEDITPROFILE}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/identity.png}>" alt="<{$smarty.const.THEME_UEDITPROFILE}>"/></a>
+						<a href="<{xoAppUrl edituser.php?op=avatarform}>" title="<{$smarty.const.THEME_UEDITAVATAR}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/organizer.png}>" alt="<{$smarty.const.THEME_UEDITAVATAR}>"/></a>
+						<a href="<{xoAppUrl modules/profile/changepass.php}>" title="<{$smarty.const.THEME_UEDITPASSWORD}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/password.png}>" alt="<{$smarty.const.THEME_UEDITPASSWORD}>"/></a>
+						<a href="<{xoAppUrl user.php}>" title="<{$smarty.const.THEME_PROFILE}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/edit_user.png}>" alt="<{$smarty.const.THEME_PROFILE}>"/></a>
+					<{xoInboxCount assign=pmcount}>
+						<a href="<{xoAppUrl viewpmsg.php}>"  title="<{$smarty.const.THEME_MESSAGE}> | <{$pmcount}> <{$smarty.const.THEME_NOTREAD}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/messagebox_info.png}>" alt="<{$smarty.const.THEME_MESSAGE}> | <{$pmcount}> <{$smarty.const.THEME_NOTREAD}>"/></a>
+						<a href="<{xoAppUrl notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/knotes.png}>" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a>
+						<a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>">
+						<img class="xo-uicons" src="<{xoImgUrl icons/users/logout.png}>" alt="<{$smarty.const._LOGOUT}>"/></a>
+					</td>
+				</tr>
+			</table>
+	<{/if}>
+</div>

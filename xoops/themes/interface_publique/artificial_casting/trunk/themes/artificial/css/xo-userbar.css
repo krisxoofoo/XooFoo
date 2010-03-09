@@ -1,0 +1,179 @@
+/*
+ * Artificial Casting Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+
+/* xo_userbar.html */
+#login	{
+	width:				649px;
+	height:				106px;
+	float: 				right;
+	margin:				-120px 53px 0 0;
+	padding:			0;
+	background-image:	url(../img/loginbg.jpg);
+	background-repeat:	no-repeat;
+}
+#logintxtblank	{
+	width:				622px;
+	height:				89px;
+	float: 				left;
+	margin:				0;
+	padding:			17px 0 0 27px;
+}
+#loginheading	{
+	width:				622px;
+	height:				21px;
+	float: 				left;
+	margin:				0 0 8px 0;
+	padding:			0;
+	color:				#333;
+	font-family:		Georgia;
+	font-size: 			1.3em;
+}
+#loginheading h4	{
+	width:				622px;
+	height:				21px;
+	float: 				left;
+	margin:				0;
+	padding:			0;
+	color:				#333;
+	font-family:		Georgia;
+	font-size:			1.3em;
+	font-weight:		normal;
+}
+#username	{
+	width:				65px;
+	height:				14px;
+	float: 				left;
+	margin:				0;
+	padding:			7px 0 0 0;
+	color:				#95844d;
+	font-family:		Arial;
+	font-size:			.9em;
+}
+#input	{
+	width:				197px;
+	height:				21px;
+	float: 				left;
+	margin:				0;
+	padding:			0;
+	color:				#95844d;
+	font-family:		Arial;
+	font-size:			.9em;
+}
+#password	{
+	width:				52px;
+	height:				14px;
+	float:				left;
+	margin:				0;
+	padding:			7px 0 0 23px;
+	color:				#95844d;
+	font-family:		Arial;
+	font-size:			.9em;
+}
+#input02	{
+	width:				197px;
+	height:				21px;
+	float:				left;
+	margin:				0;
+	padding:			0;
+	color:				#95844d;
+	font-family:		Arial;
+	font-size:			.9em;
+}
+.input	{
+	width:				181px;
+	height:				17px;
+	float: 				left;
+	margin:				0;
+	background-color:	#ead28b;
+	padding:			4px 0 0 16px;
+	color:				#95844d;
+	font-family:		Arial;
+	font-size: 			1em;
+	border:				solid 1px #ead28b;
+}
+#loginbutton	{
+	width:				50px;
+	height:				23px;
+	float:				left;
+	margin:				0 0 0 20px;
+	padding:			0;
+}
+.login	{
+	width:				50px;
+	height:				23px;
+	float:				left;
+	margin:				0;
+	background-image:	url(../img/login.jpg);
+	background-repeat:	no-repeat;
+	padding: 			2px 0 0 0;
+	color:				#333;
+	font-family:		Arial;
+	font-size: 			1em;
+	text-align:			center;
+	text-decoration:	none;
+	border: 			0;
+}
+.login:hover	{
+	float:				left;
+	margin:				0;
+	background-image: 	url(../img/loginover.jpg);
+	background-repeat	:no-repeat;
+	color:				#33;
+	font-family:		Arial;
+	font-size:			1em;
+	text-align:			center;
+	text-decoration:	none;
+}
+#member	{
+	width:				300px;
+	height:				14px;
+	float: 				left;
+	margin:				9px 0 0 0;
+	padding:			0;
+	color:				#ab8e4e;
+	font-family:		 Arial;
+	font-size:			1.1em;
+	text-align:			center;
+}
+#register	{
+	width:				300px;
+	height:				14px;
+	float: 				left;
+	margin:				9px 0 0 0;
+	padding:			0;
+	color:				#943415;
+	font-family: 		Arial;
+	font-size:			1.1em;
+	text-align: 		center;
+}
+.register	{
+	color:				#943415;
+	font-family: 		Arial;
+	font-size:			1.1em;
+	text-decoration:	none;
+}
+.register:hover	{
+	color:				#943415;
+	font-family: 		Arial;
+	font-size:			1.1em;
+	text-decoration: 	underline;
+}
+#xo-userhead a img {padding-right: 1.5em;}
+.xo-uavatar {
+	background-color: 	#fff;
+	padding: 			.5em;
+	color: 				inherit;
+	border-radius: 				5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 		5px;
+}

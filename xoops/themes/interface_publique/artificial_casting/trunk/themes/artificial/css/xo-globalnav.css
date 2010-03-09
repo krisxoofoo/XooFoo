@@ -1,0 +1,59 @@
+/*
+ * Artificial Casting Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+
+#xo-globalnav ul	{
+		width:385px;
+		height:33px;
+		float:left;
+		margin:0;
+		padding:0;
+		display:block;
+	}
+#xo-globalnav ul li	{
+		width:76px;
+		height:33px;
+		float:left;
+		margin:0 1px 0 0;
+		padding:0;
+		display:block;		
+	}
+#xo-globalnav ul li a.menu	{
+		width:76px;
+		height:26px;
+		float:left;
+		margin:0;
+		padding:7px 0 0 0;
+		font-family:Arial;
+		font-size:13px;
+		font-weight:bold;
+		color:#FFF;
+		text-align:center;
+		text-decoration:none;
+		background-image:url(../img/menu.jpg);
+		background-repeat:no-repeat;
+	}	
+#xo-globalnav ul li a.menu:hover	{
+		width:76px;
+		height:26px;
+		float:left;
+		margin:0;
+		padding:7px 0 0 0;
+		font-family:Arial;
+		font-size:13px;
+		font-weight:bold;
+		color:#FFF;
+		text-align:center;
+		text-decoration:none;
+		background-image: url(../img/menuover.jpg);
+		background-repeat:no-repeat;		
+	}

@@ -226,9 +226,6 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #validation ul li{ float:left; display:block; width:auto; margin:0; padding:0;}
 #validation ul li .blank{ float:left; width:7px; height:10px; margin:0; padding:0;}
 #validation ul li a{ float:left; width:64px; height:23px; margin:0; padding:0 3px 0 0; font-size:.9em; color:#100703; font-weight:bold; line-height:23px; text-align:center; text-decoration:none; background:url(../img/validationBg.jpg) no-repeat}	
-/* ============ Style for debug mode ============ */
-#xo-logger-output { margin-bottom : 15px; font-size: .8em;}
-#xo-logger-tabs {}
 
 /* ===== tables and cells ===== */
 table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
@@ -302,7 +299,7 @@ blockquote { font-style: italic;}
 .comTitle a { background-color: transparent; color: #fff;}
 .comTitle a:hover {}
 .comText {}
-.comUserStat {margin: 3px; padding: 2px; font-size: .85em; border: #f3efc0 1px solid; text-align: left;}
+.comUserStat {margin: 3px; padding: 2px; font-size: .85em; border: #f3efc0 1px solid; text-align: left; line-height:1.2em;}
 .comUserStatCaption {}
 .comUserStatus {}
 .comUserRank {}
@@ -313,7 +310,7 @@ blockquote { font-style: italic;}
 	margin: .5em;
 	padding: .5em;
 }
-.comDate {}
+.comDate { font-size: .9em; font-style: italic; font-weight: normal;}
 .comDateCaption {}
 .signature { font-size: .9em; font-style: italic;}
 

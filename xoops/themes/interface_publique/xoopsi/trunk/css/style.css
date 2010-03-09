@@ -49,7 +49,7 @@ body {font-size:80%;}
 	padding-top: 10px;
 	padding-left:10px;
 }
-#xo-headerlogo:hover {opacity:.5;}
+#xo-headerlogo:hover {opacity:.5; filter: alpha(opacity=50);}
 #xo-banner {
 	width: 1000px;
 	height: 80px;
@@ -266,7 +266,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 #xo-copyright {float:left;}
 
 /* ===== tables and cells ===== */
-table {width:100%; border-collapse: collapse;}
+table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
 caption {}
 th, th.head, thead {
 	background-color: 		#F9A607;
@@ -336,7 +336,7 @@ blockquote {}
 .itemPoster {}
 .itemPostDate {}
 .itemStats {}
-.itemBody {}
+.itemBody {padding: .5em 0 .5em 0;}
 .itemText {}
 .itemText:first-letter {font-weight: bold;}
 .itemFoot {font-size: .9em; text-align: right;}

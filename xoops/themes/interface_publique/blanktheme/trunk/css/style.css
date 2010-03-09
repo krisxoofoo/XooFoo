@@ -199,9 +199,9 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-logger-tabs {}
 
 /* ===== tables and cells ===== */
-table {width:100%; border-collapse: collapse;}
+table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
 caption {}
-th, thead {
+th, th.head, thead {
 	font-weight: 			bold;
 	text-align: 			center;
 	vertical-align : 		middle;

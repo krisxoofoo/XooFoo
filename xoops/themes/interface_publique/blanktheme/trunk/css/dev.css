@@ -15,4 +15,11 @@
 #xo-wrapper, #xo-canvas, #xo-canvas-content {border: 1px solid green;}
 #xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn {border: 1px solid red;}
 #xo-globalnav, #xo-banner, .xo-blockszone > .xo-block  {border: 1px solid blue;}
+.xo-blocktitle , .xo-blockcontent {border: 1px dotted blue;}
+
 table {border: 1px solid yellow;}
+tr {border: 1px dotted yellow;}
+th {border: 1px dotted green;}
+td {border: 1px dotted red;}
+
+form {border: 1px dotted black;}

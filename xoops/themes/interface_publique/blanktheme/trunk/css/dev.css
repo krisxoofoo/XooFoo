@@ -12,8 +12,9 @@
 */
 
 /* remove this css sheet after web development */
-#xo-wrapper, #xo-canvas, #xo-canvas-content {border: 1px solid green;}
-#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn {border: 1px solid red;}
+#xo-wrapper, #xo-canvas, #xo-canvas-content{border: 1px solid green;}
+#xo-header, #xo-canvas-columns  {border: 1px solid orange;}
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn, #xo-footer {border: 1px solid red;}
 #xo-globalnav, #xo-banner, .xo-blockszone > .xo-block  {border: 1px solid blue;}
 .xo-blocktitle , .xo-blockcontent {border: 1px dotted blue;}
 

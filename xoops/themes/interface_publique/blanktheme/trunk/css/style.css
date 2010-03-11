@@ -96,7 +96,8 @@ del { text-decoration: line-through;}
 address	{}
 q, cite, em, dfn, strong {}
 bdo { direction: ltr;}
-acronym, abbr, abbr[title], dfn {}
+acronym, abbr, dfn {}
+abbr[title] {}
 acronym:hover, abbr:hover {}
 ::selection {}
 	::-moz-selection {}
@@ -115,17 +116,22 @@ dd {}
 form {}
 fieldset {}
 legend {font-weight: bold;}
-input, button, select {vertical-align: middle;}
+input, button, select {vertical-align: middle; margin: .5em;}
 input {}
 label, .caption-text {}
 select {}
 select[name=timezone_offset] {}
 select:focus {}
-textarea {}
+textarea {
+	width: 			90%;
+	max-height: 	250px;
+	line-height: 	1.5em;
+	overflow: 		auto;
+}
 textarea:focus {}
 #xo-page fieldset a {}
 #xo-page fieldset a:hover {}
-#xo-page legend { font-weight:	bold;}
+#xo-page legend { font-weight: bold;}
 #xo-page label {}
 button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {}
 button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus {}
@@ -137,8 +143,8 @@ input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, inpu
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 
 #xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
-#xo-content .xo-formfield.required label:after, .caption-marker {}
-.xoops-form-element-caption .caption-marker {}
+.xo-formfield.required label:after, .caption-marker { content: '*'; color: #ff0000; background-color: transparent;}
+.xoops-form-element-caption .caption-marker { display:none;}
 .xoops-form-element-caption-required .caption-marker {}
 .xoops-form-element-help {}
 
@@ -146,6 +152,8 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #mainmenu {}
 #mainmenu a {display: block;}
 #mainmenu a:hover {}
+#mainmenu a:active, #mainmenu a.current {}
+#mainmenu a:visited {}
 #mainmenu a.menuTop  {}
 #mainmenu a.menuMain {}
 #mainmenu a.menuSub{}
@@ -155,19 +163,21 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #usermenu {}
 #usermenu a {display: block;}
 #usermenu a:hover  {}
+#usermenu a:active, #usermenu a.current {}
+#usermenu a:visited {}
 #usermenu a.menuTop {}
 #usermenu a.highlight {}
 
 /* ===== left column ===== */
 #xo-canvas-leftcolumn {}
 #xo-canvas-leftcolumn .xo-block {}
-#xo-canvas-leftcolumn .xo-blocktitle  { font-weight: bold;}
+#xo-canvas-leftcolumn .xo-blocktitle  {}
 #xo-canvas-leftcolumn .xo-blockcontent {}
 
 /* ===== right column ===== */
 #xo-canvas-rightcolumn {}
 #xo-canvas-rightcolumn .xo-block {}
-#xo-canvas-rightcolumn .xo-blocktitle { font-weight: bold;}
+#xo-canvas-rightcolumn .xo-blocktitle {}
 #xo-canvas-rightcolumn .xo-blockcontent {}
 
 /* ===== center content and block in center column ====== */
@@ -177,10 +187,10 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-page .xo-blockszone .xo-blocktitle {}
 #xo-page .xo-blockszone .xo-blockcontent {}
 #xo-topcenterblocks, #xo-bottomcenterblocks {}
-#xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle { font-weight: bold;}
+#xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
 #xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
 #xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
-#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle { font-weight: bold;}
+#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle {}
 #xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
 #xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {}
 
@@ -192,9 +202,10 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	clear: 					both;
 	width:					100%;
 	margin:					0;
-	text-align:				center;
-	
-}/* ============ Style for debug mode ============ */
+	text-align:				center;	
+}
+
+/* ============ Style for debug mode ============ */
 #xo-logger-output { margin-bottom : 15px; font-size: .8em;}
 #xo-logger-tabs {}
 
@@ -206,12 +217,14 @@ th, th.head, thead {
 	text-align: 			center;
 	vertical-align : 		middle;
 }
+th.head a {}
+th.head a:hover {}
 .foot, tfoot {}
 tbody {}
 table.outer { border-collapse: separate;}
 table td {}
 .outer {}
-.head {	font-weight: bold;}
+.head {	font-weight: bold; vertical-align: top;}
 .even {}
 .odd {}
 tr.even td {}

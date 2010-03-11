@@ -87,7 +87,6 @@ body {font-size:75%;}
     padding-left:               6px;
 	z-index:					99;
 }
-
 #xo-globalnav {
 	width:385px;
 	height:33px;
@@ -176,7 +175,7 @@ textarea {
 	width: 			90%;
 	max-height: 	250px;
 	background-color: #f4e7bd;
-	line-height: 	150%;
+	line-height: 	1.5em;
 	overflow: 		auto;
 	border:solid 1px #ead28b;
 }
@@ -361,7 +360,7 @@ table.outer {
 }
 table td {padding: 3px;}
 .outer {}
-.head { /*background-color: #f4e7bd;*/ color: inherit; font-weight: bold; vertical-align: top;}
+.head { color: inherit; font-weight: bold; vertical-align: top;}
 .even {}
 .odd {}
 tr.even td {}

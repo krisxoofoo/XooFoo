@@ -24,6 +24,9 @@
 			<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
 				<{includeq file="$theme_name/xo_page.html"}>
 			</div>
+			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+				<div id="xo-headerbanner"><{$xoops_banner|smarty:nodefaults}></div>
+			<{/if}>
 			<!-- Include Footer -->
 			<{if $theme_view_footer}><{includeq file="$theme_name/xo_footer.html"}><{/if}> 
 		</div><!-- End xo-canvas -->

@@ -1,0 +1,59 @@
+/*
+ * Onepage Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+/* rgba(red,blue,green,alpha) */
+
+#xo-globalnav {
+	width:				900px;
+	height: 48px;
+	margin: 0 auto;
+	/*background-color : #ccc;*/
+	background-color: rgba(204,204,204,0.5);
+	padding: 0;
+	/*opacity : .5;*/
+	border-radius : 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+#xo-globalnav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} 
+#xo-globalnav ul li {
+	display: inline;
+	margin: 0;
+} 
+#xo-globalnav ul li a {
+	height:33px;
+	display: block;
+	float: left;
+	padding: 15px 15px 0 15px;
+	color: #9C6270;
+	font-weight: bold;
+	font-size: 1.3em;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px #fffff0;
+}
+.xo-gbnavmodhome { margin-left: 1.25em;}
+
+#xo-globalnav ul li a:hover { background-color: rgba(204,204,204, 1); color: #777;}
+
+/* for current link */
+body#news .xo-gbnavmod1 { background-color: rgba(204,204,204, 1); color: #777;}
+body#newbb .xo-gbnavmod2 { background-color: rgba(204,204,204, 1); color: #777;}
+body#tdgallery .xo-gbnavmod3 { background-color: rgba(204,204,204, 1); color: #777;}
+body#mytube .xo-gbnavmod4 { background-color: rgba(204,204,204, 1); color: #777;}
+body#mylinks .xo-gbnavmod5 { background-color: rgba(204,204,204, 1); color: #777;}
+body#mydownloads .xo-gbnavmod6 { background-color: rgba(204,204,204, 1); color: #777;}
+body#contact .xo-gbnavmodcontact { background-color: rgba(204,204,204, 1); color: #777;}
+body#sitemap.xo-gbnavmodsitemap { background-color: rgba(204,204,204, 1); color: #777;}

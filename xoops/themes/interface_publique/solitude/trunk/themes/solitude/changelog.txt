@@ -1,0 +1,6 @@
+XOOPS Solitude Theme - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- Initial work based on design original by TemplateWorld and brought to you by SmashingMagazine (kris_fr)

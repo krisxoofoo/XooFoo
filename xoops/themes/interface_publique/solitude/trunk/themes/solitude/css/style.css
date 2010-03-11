@@ -1,0 +1,412 @@
+/*
+ * Solitude Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+	 
+/* include style sheets */
+@import url(reset.css); /* reset css for web browsers*/
+/*@import url(dev.css);*/ /* dev css only for web development */
+@import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
+@import url(extras.css); /* extras style for perzonalisation templates */
+/*  for html 5 in next time */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+/* beginning of the applicable styles */
+html, body {
+	max-width: 			100%;
+	margin:				0 auto;
+	color:				#bb9d59;
+	font-family:		Arial;
+	line-height:		1.5em;
+}
+html {font-size:100.01%;}
+body { font-size:80%; background:#fffde4 url(../img/bodyBg.jpg) repeat-x;}
+
+/* ======= Body box ======= */
+#xo-wrapper {width:100%; margin:0; padding:0; float:left; background: url(../img/headBg.jpg) no-repeat top left;}
+#xo-bgstatic {}
+#xo-canvas {	width: 100%; margin: 0 auto;}
+#xo-canvas-content {	clear: both; width:1020px; margin-top: 3em;}
+#xo-canvas-columns {}
+#xo-page {}
+/* ===== header ===== */
+#xo-header { width:1020px; float:left;}
+#xo-headerlogo {width:100%; float:left;}
+#xo-headerlogo h1 {width:223px; height:48px; margin:20px 0 0 0; padding:0 110px; float:right; line-height:1em; text-indent:-9999px; background:url(../img/logo.png) no-repeat;}
+#xo-headerslogan {width:1020px; margin:75px 0 0 0; float:left}
+#xo-headerslogan p { font-family:Georgia; font-size: 1.9em; color:#497f35; line-height:1.5em; text-align: center; text-indent:50px;}
+#xo-banner {}
+#xo-banner.commercial {}
+#xo-headerbanner {width: 500px; margin: 0.5em auto; padding-bottom: 1em;}
+#xo-bannerfix {
+    width:                  	480px;
+    height:                 	70px;
+    background:             	url(../img/bg-ad-top.png) no-repeat;
+    padding-top:                6px;
+    padding-right:              6px;
+    padding-left:               6px;
+	z-index:					99;
+}
+
+#xo-globalnav {width:1020px; margin:32px 0 0 0; float:left;}
+#xo-globalnav ul {width:500px; float:right; display:block;}
+#xo-globalnav ul li {width:auto; float:left; display:block;}
+#xo-globalnav ul li a {
+	width:auto; height:18px; float:left; font-size:12px; color:#45ada9; line-height:13px; text-decoration:none; cursor:pointer;}
+#xo-globalnav ul li a:hover {background:url(../img/rightCurve.jpg) no-repeat right;}
+#xo-globalnav ul li a span {width:auto; height:16px; padding:2px 8px 0 8px; float:left; cursor:pointer;}
+#xo-globalnav ul li a:hover span{ background:url(../img/leftCurve.jpg) no-repeat left;}
+#xo-globalnav ul li .blank{ width:1px; height:18px; padding:0 5px 0 5px; float:left; background:url(../img/mBlank.jpg) no-repeat center top;}
+
+/* user bar */
+#xo-userlogin {width:397px; height: 120px; margin:28px 0 0 0; padding:0 0 0 546px; float:left;}
+#xo-userlogin h2{width:397px; margin:0; padding:0; float:left; font-family:Georgia; font-size:27px; color:#497f35; line-height:31px; font-weight:normal;}
+#xo-userlogin input{width:175px; height:18px; margin:9px 0 0 0; padding:3px 0 0 5px; float:left; font-family:Arial; font-size:10px; color:#bb9d59; line-height:14px; border:0; background:#f9f6d4;}
+#xo-userlogin .blank{width:25px; height:21px; margin:0; padding:0; float:left;}
+#xo-userlogin p{width:253px; margin:10px 0 0 0; padding:0; float:left; font-family:Arial; font-size:16px; color:#ab8e4e; line-height:20px;}
+#xo-userlogin p a{color:#943415; text-decoration:none;}
+#xo-userlogin input.login{width:66px; height:20px; margin:10px 0 0 0; padding:0; float:left; font-family:Arial; font-size:11px; color:#943415; line-height:20px; text-align:center; text-decoration:none; background:url(../img/loginBg.jpg) no-repeat;}
+
+#xo-userhead {width:517px; height: 120px; margin: 28px 0 0 0; padding:0 0 0 426px; float:left;}
+#xo-userhead a img {padding-right: 1.2em;}
+.xo-uavatar {
+	background-color: 			#fff;
+	padding: 					.5em;
+	color: 						inherit;
+	border-radius: 				5px;
+		-moz-border-radius: 	5px;
+		-webkit-border-radius: 	5px;
+}
+#xo-userhead a img { opacity: .5; filter: alpha(opacity=50);}
+#xo-userhead a img:hover { opacity: 1; filter: alpha(opacity=100);}
+/* ====== hypertext links ===== */
+a { background-color: transparent;  color:#0b636b;}
+a:visited, a:focus, a:hover, a:active { background-color: transparent; color:#497f35; text-decoration: underline;}
+
+/* ===== titles ===== */
+h1, h2, h3, h4, h5, h6 { 
+  margin: 				1em 0 .5em 0;
+  font-family:			eorgia;
+  line-height: 			1.1;
+}
+h1 { background-color : transparent; color:#497f35;	font-size: 1.5em;}
+h2 { background-color: transparent; color:#943415; font-size: 1.3em;}
+h3 { background-color: transparent; color: #45ada9;	font-size: 1.2em;}
+h4 { background-color: transparent; color: #000;	font-size: 1.1em;}
+h5 { background-color: transparent; color: #000; font-size: 1em;}
+h6 { background-color: transparent; color: #000; font-size: .9em;}
+
+/* ===== images ===== */
+img { border: 0 !important;}
+p img { margin: .5em;}
+a img:hover, a img:focus { opacity: .5; filter: alpha(opacity=50);}
+a img { border: none;}
+.imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
+
+/* ===== other attributes of contents ===== */
+p { margin-top: .5em; margin-bottom:	 .5em; text-align: justify;}
+hr{
+	height: 					1px;
+	padding: 					0;
+	color: 						#ccc;
+	background-color: 			#ccc;
+	border: 					0;
+}
+em { font-style: italic;}
+strong, b, dfn { font-weight: bold;}
+del { text-decoration: line-through;}
+address	{ font-style: normal; letter-spacing: .1em;}
+small { font-size: .8em;}
+q, cite { font-style: italic;}
+bdo { direction: ltr;}
+acronym, abbr, dfn { border-bottom: #bb9d59 1px dashed; cursor: help;}
+abbr[title] { border-bottom: #bb9d59 1px dotted; cursor: help;} 
+acronym:hover, abbr:hover { color: #497f35; border-bottom: #497f35 1px dashed;}
+::selection { background-color:#EFDB9E; color: #943415;}
+	::-moz-selection { background-color:#EFDB9E; color: #943415;}
+	
+/* ===== lists ===== */
+#xo-canvas-content ul, #xo-canvas-content ol { margin: .5em 0 .5em 1em; padding: 0;}
+#xo-canvas-content ul {list-style-type: circle;}
+#xo-canvas-content ol {list-style-type: decimal;}
+#xo-canvas-content li  { margin: .3em 0;}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li { padding: 0; font-style:	 italic;}
+#xo-canvas-content ul ul li,#xo-canvas-content ol ol li { padding-top: 0; padding-bottom: 0; padding-left:	 1em;}
+#xo-canvas-content ul, #xo-canvas-content ol {}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li {}
+#xo-canvas-content dd {}
+#xo-canvas-content dl {}
+#xo-canvas-content dt {}
+dl { margin: .75em 0;} 
+dt { margin: .75em 0 0 0; font-weight: bold;} 
+dd { margin: .25em 0 .25em 2em; }
+
+/* ===== forms ===== */
+form { margin-bottom: .5em;}
+fieldset {margin: 0 .5em 1em .5em; padding: .5em;}
+legend {
+	color:#0b636b;
+	padding-left:.5em; 
+	font-family:Georgia;
+	font-size:1.7em;
+}
+input, button, select { vertical-align: middle; margin: .5em;}
+input {}
+label, .caption-text {}
+select { border: 2px inset #e5e5e5 !important;}
+select[name=timezone_offset] {}
+select:focus {}
+textarea {
+	width: 				90%;
+	max-height: 		250px;
+	background-color: 	#f9f6d4;
+	line-height: 		1.5em;
+	overflow: 			auto;
+	border:				solid 1px #e8e6c8;
+}
+textarea:focus {}
+#xo-page fieldset a {}
+#xo-page fieldset a:hover {}
+#xo-page legend { font-weight:	bold;}
+#xo-page label {}
+button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {
+	width:93px;
+	height:19px;
+	color:#943415;
+	line-height:18px;
+	text-align:center;
+	text-decoration:none;
+	background:url(../img/contactsBg.jpg) no-repeat;
+}
+button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus {}
+button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover {}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
+input[type=text], input[type=password], input[type=file] {
+	min-width:	 170px;
+	height:16px;
+	background:#f8f5d2;
+	padding:2px 0 0 9px;
+	color:#000;
+	font-size:1em;
+	border:						#e8e6c8 solid 1px;
+	border-radius: 				5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 		5px;
+}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover {}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {}
+input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
+
+#xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
+.xo-formfield.required label:after, .caption-marker { content: '*'; color: #ff0000; background-color: transparent;}
+.xoops-form-element-caption .caption-marker { display:none;}
+.xoops-form-element-caption-required .caption-marker {}
+.xoops-form-element-help {}
+
+/* ===== block main menu ===== */
+#mainmenu {}
+#mainmenu a {display: block; padding-left: .5em; font-family:Georgia; font-size: 1.4em; color:#497f35; line-height:1.5em;}
+#mainmenu a:hover {color:#943415; text-decoration: underline;}
+#mainmenu a:visited {color:#943415; text-decoration: none;}
+#mainmenu a:active, #mainmenu a.current {color:#943415; font-weight: bold; text-decoration: none;}
+#mainmenu a.menuTop  {}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub{ margin-left: 1em; padding:0 1em 0 1em; font-size:1em; color:#bb9d59; background:url(../img/listbg.jpg) no-repeat;}
+#mainmenu a.menuSub:hover  {font-weight:bold; color:#943415; text-decoration: none;}
+#mainmenu a.maincurrent {}
+/* ===== block user menu ===== */
+#usermenu {}
+#usermenu a {display: block; margin-left: 1em; padding:0 1em 0 1em; font-size:1em; color:#bb9d59; background:url(../img/listbg.jpg) no-repeat;}
+#usermenu a:hover  {font-weight:bold; color:#943415; text-decoration: none;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {}
+
+/* ===== left column ===== */
+#xo-canvas-leftcolumn { padding: 0 .25em 0 .25em;}
+#xo-canvas-leftcolumn .xo-block { margin-bottom: 1em;}
+#xo-canvas-leftcolumn .xo-blocktitle  { padding: 0 .25em 0 .25em; font-family: Georgia; font-size:1.7em; color:#0b636b; line-height:1.8em;}
+#xo-canvas-leftcolumn .xo-blockcontent { padding: .25em; text-align: justify;}
+
+/* ===== right column ===== */
+#xo-canvas-rightcolumn { padding: 0 .25em 0 .25em;}
+#xo-canvas-rightcolumn .xo-block { margin-bottom: 1em;}
+#xo-canvas-rightcolumn .xo-blocktitle { padding: 0 .25em 0 .25em; font-family:Georgia; font-size:1.7em; color:#0b636b; line-height:1.8em;}
+#xo-canvas-rightcolumn .xo-blockcontent { padding: .25em; text-align: justify;}
+
+/* ===== center content and block in center column ====== */
+#xo-page {}
+/* ----- center blocks ----- */
+#xo-page .xo-blockszone > .xo-block { margin-bottom: 1em;}
+#xo-page .xo-blockszone .xo-blocktitle { padding: 0 .25em 0 .25em; font-family:Georgia; font-size:1.7em; color:#0b636b; line-height:1.8em;}
+#xo-page .xo-blockszone .xo-blockcontent { padding: .25em; text-align: justify;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
+#xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
+#xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
+#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle {}
+#xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
+#xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {}
+
+/* ----- content module page ----- */
+#xo-content { clear: both; padding: 0 .5em 0 .5em;}
+
+/* ===== footer ===== */
+#xo-footer {width:1020px; height:80px; padding:25px 0 29px 0; color:#bb9d59; background:url(../img/footbg.jpg) no-repeat center top; font-size:.8em; text-align: center; line-height: 2em;}
+#xo-footer a {background-color: transparent;  color:#943415; font-weight:bold;}
+#xo-footer .nav a {width:auto; padding-right: 1em; font-size: 1.2em;}
+#xo-footer .copyright {width:100%; margin:3px 0 0 0;}
+
+#xo-footer .designInfo {width:100%; margin:3px 0 0 0;}
+#xo-footer .designInfo a {}
+#xo-footer .validation {width:100%; margin:4px 0 0 0; padding:0; float:left;}
+#xo-footer .validation ul {width:138px; margin:0 auto; padding:0; display:block;}
+#xo-footer .validation ul li {width:auto; margin:0; padding:0; float:left; display:block;}
+#xo-footer .validation ul li .blank{width:6px; height:17px; margin:0; padding:0; float:left;}
+#xo-footer .validation ul li a {width:66px; height:17px; margin:0; padding:0; float:left; line-height:16px; text-align:center; background:url(../img/validationBg.jpg) no-repeat;}
+
+/* ===== tables and cells ===== */
+table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
+caption {}
+th, th.head, thead {
+	background-color: #45ada9;
+	padding: 				2px 8px 2px 8px;
+	color: #fffde4;
+	font-weight: 			bold;
+	text-align: 			center;
+	vertical-align : 		middle;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+.foot, tfoot { padding: 2px 8px 2px 8px; text-align: center;}
+tbody {}
+table.outer {
+	border-collapse: 			separate;
+	border: 					#e8e6c8 2px solid;
+	border-radius: 				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+}
+table td { /*padding: 3px;*/} /* grrrrrrrrrr !! */
+.outer {}
+.head { vertical-align: top;	font-weight: bold;}
+.even {}
+.odd {}
+tr.even td {}
+tr.odd td {}
+
+/* ===== codes and quotes ===== */
+.xoopsCode {
+	display:					block;
+	max-height: 				350px;
+	overflow: 					auto;
+	margin-left:				.5em;
+	background-color: 			#f8f5d2;
+	padding: 					6px;
+	color:						inherit;
+	font-size:					.9em;
+	color: 						inherit;
+	font-family: 				"Courier New",Courier,monospace; 
+	border: 					1px solid #ab8e4e;
+}
+.xoopsQuote {
+	margin-left:				.5em;
+	background:					#EFDB9E url(../img/quote.png) no-repeat top left;
+	padding:					.5em;
+	color:						#943415;
+	font-family:				Georgia;
+	font-size:					.9em;
+	font-style:					italic;
+	border:						#943415 1px dotted;
+}
+blockquote { font-style: italic;}
+
+/* ===== articles (content-type in example) ===== */
+.item {}
+.itemHead {}
+.itemInfo { background-color: transparent; color:#45ada9; font-size: .9em; font-style: italic;}
+.itemTitle { padding: 0 .25em 0 .25em; font-family:Georgia; font-size:1.7em; color:#0b636b; line-height:1.1em;}
+.itemTitle a {}
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+.itemBody {}
+.itemText {}
+.itemText:first-letter {}
+.itemFoot { font-size: .9em; padding-top: 1em; text-align: center;}
+.itemAdminLink {}
+.itemPermaLink {}
+
+/* ===== forums (content-type in example) ===== */
+.comTitle {	font-weight: bold;}
+.comTitle a {}
+.comTitle a:hover {}
+.comText { margin: .5em;}
+.comUserStat { margin: 3px; padding: 2px; font-size: .8em; text-align: left; line-height:1.2em; border: #e8e6c8 1px solid;}
+.comUserStatCaption {}
+.comUserStatus {}
+.comUserRank {}
+.comUserRankText {}
+.comUserRankImg {}
+.comUserName {}
+.comUserImg {
+	margin: .5em;
+	background-color : #fff;
+	padding: .5em;
+	border: 					1px solid #ccc;
+	border-radius:				10px;
+	-moz-border-radius:			10px;
+	-webkit-border-radius:		10px;
+	-khtml-border-radius: 		10px;
+	box-shadow: 				1px 2px 3px rgba(0,0,0,0.5);
+		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
+}
+.comDate { font-size: .9em; font-style: italic; font-weight: normal;}
+.comDateCaption {}
+.signature {padding: .5em; font-size: .9em; font-style: italic;}
+
+/* ===== pages navigation ===== */
+.pagneutral {}
+#xo-pagenav { margin: 7px 0; text-align: center; font-size: 1.05em;}
+#xo-pagenav a {}
+#xo-pagenav a:hover {  border: 1px solid #ccc;}
+.xo-pagact {
+    margin:                 	0;
+    padding:                	.2em .5em;
+    background-color:       	#f7fbff;
+    border:                 	1px solid #ccc;
+	border-radius : 			5px;
+		-webkit-border-radius : 5px;
+		-moz-border-radius: 	5px;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 	0;
+    padding:                	.2em .5em;
+    color:                  	#333;
+    background-color:       	#fff;
+    border:                 	1px solid #ccc;
+	border-radius : 			5px;
+		-webkit-border-radius : 5px;
+		-moz-border-radius: 	5px;
+}
+.xo-counterpage:hover {}
+.xo-pagarrow { letter-spacing: 0.2em;}
+
+/*============== css fix for modules =================*/
+.register-steps {text-align: left; font-size: .9em !important;} /* profile */
+#tabs ul li {list-style: none;} /* publisher */
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #e5e5e5 !important; font-weight: normal;} /* newbb - cbb */
+#xo-block-system-7 .xo-blockcontent {text-align: left;}

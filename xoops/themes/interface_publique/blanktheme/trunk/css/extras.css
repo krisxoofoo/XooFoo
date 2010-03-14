@@ -149,3 +149,18 @@
 .cursormove{ cursor: 			move; }
 .cursorpointer{ cursor: 		pointer; }
 .cursorhelp{ cursor: 			help; }
+/*========  font family class ======== */
+.arial { font-family: Arial, Helvetica, sans-serif; }
+.courierNew { font-family: 'Courier New', Courier, monospace; }
+.georgia { font-family: Georgia, 'Times New Roman', Times, serif; }
+.lucidaConsole { font-family: 'Lucida Console', Monaco, monospace; }
+.lucidaSansUnicode { font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
+.tahoma { font-family: Tahoma, Geneva, sans-serif; }
+.times { font-family: 'Times New Roman', Times, serif; }
+.trebuchet { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+.verdana { font-family: Verdana, Geneva, sans-serif; }
+.msSans { font-family: 'MS Sans Serif', Geneva, sans-serif; }
+.msSerif { font-family: 'MS Serif', 'New York', serif; }
+.helvetica { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.impact { font-family: Impact, Charcoal, sans-serif; }
+.century { font-family: 'Century Gothic', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif; }

@@ -18,7 +18,7 @@
 /* include style sheets */
 @import url(reset.css); /* reset css for web browsers*/
 @import url(dev.css); /* dev css only for web development */
-/* @import url(tplsystem.css); */ /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
+@import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 @import url(extras.css); /* extras style for perzonalisation templates */
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
@@ -205,10 +205,6 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	text-align:				center;	
 }
 
-/* ============ Style for debug mode ============ */
-#xo-logger-output { margin-bottom : 15px; font-size: .8em;}
-#xo-logger-tabs {}
-
 /* ===== tables and cells ===== */
 table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
 caption {}
@@ -271,20 +267,7 @@ blockquote { font-style: italic;}
 .comDateCaption {}
 .signature {}
 
-/* ===== core messages ===== */
-.highlight {	}
-.errorMsg,.confirmMsg, .resultMsg, .successMsg  {}
-.errorMsg {}
-.confirmMsg {}
-.resultMsg {	}
-.errorMsg a {}
-.confirmMsg a   {}
-.successMsg a  {}
 /* ===== pages navigation ===== */
 .pagneutral {}
 .pagact {}
 .paginact {}
-/*==================== for jGrowl =========================*/
-.jGrowl {}
-.jGrowl .jGrowl-notification,.jGrowl .jGrowl-closer {}
-.jGrowl-notification .header {}

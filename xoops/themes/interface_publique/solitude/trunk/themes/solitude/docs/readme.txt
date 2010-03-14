@@ -3,7 +3,7 @@
 **/
 
 /* Theme XOOPS Solitude Theme version 1.0 by Xoops Design Theme (http://www.xoops.org) */
-
+/* Theme based on design original by PSDThemes */
 
 /* English */
 Decompress the file and upload the folders directly to root of your site

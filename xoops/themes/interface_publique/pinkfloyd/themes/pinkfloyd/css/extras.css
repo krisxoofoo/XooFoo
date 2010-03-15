@@ -115,19 +115,24 @@
 .big { font-size: 				1.17em;}
 .maxi { font-size: 				1.5em;}
 .bold { font-weight:				bold;}
-.bolder{ font-weight:			bolder; }
-.lighter{ font-weight:			lighter; }
+.bolder { font-weight:			bolder; }
+.lighter { font-weight:			lighter; }
 .italic {font-style: 			italic;}
-.oblique{ font-style:			oblique; }
+.oblique { font-style:			oblique; }
 .underline{ text-decoration:	underline; }
-.red{background-color:transparent; color:#ff0000;}
-.blue{background-color:transparent; color:#0000ff;}
-.black{background-color:transparent; color:#000;}
-.white{background-color:transparent; color:#fff;}
-.yellow{background-color:transparent; color:#ffff00;}
-.orange{background-color:transparent; color:#ffa500;}
-.green{	background-color:transparent; color:#32CD32;}
-.silver{background-color:transparent; color:#c0c0c0;}
+.expanded { letter-spacing: .5em; }
+.condensed { letter-spacing: -.1em; }
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.red {background-color:transparent; color:#ff0000;}
+.blue {background-color:transparent; color:#0000ff;}
+.black {background-color:transparent; color:#000;}
+.white {background-color:transparent; color:#fff;}
+.yellow {background-color:transparent; color:#ffff00;}
+.orange {background-color:transparent; color:#ffa500;}
+.green {	background-color:transparent; color:#008000;}
+.silver {background-color:transparent; color:#c0c0c0;}
 /*========  others display class ======== */
 .clear { clear: 					both;}
 .block { display: 				block;}
@@ -173,6 +178,7 @@
 .dashed{ border: 				1px dashed #000; }
 
 .solidblack { border : 1px solid #000;}
+.solidwhite { border : 1px solid #fff;}
 .solidred { border : 1px solid #ff0000;}
 .solidyellow { border : 1px solid #ffff00;}
 .solidblue { border : 1px solid #0000ff;}
@@ -181,6 +187,7 @@
 .solidbrown { border : 1px solid #a52a2a;}
 .solidsilver { border : 1px solid #c0c0c0;}
 .dottedblack { border : 1px dotted #000;}
+.dottedwhite { border : 1px dotted #fff;}
 .dottedred { border : 1px dotted #ff0000;}
 .dottedyellow { border : 1px dotted #ffff00;}
 .dottedblue { border : 1px dotted #0000ff;}
@@ -189,6 +196,7 @@
 .dottedbrown { border : 1px dotted #a52a2a;}
 .dottedsilver { border : 1px dotted #c0c0c0;}
 .dashedblack { border : 1px dashed #000;}
+.dashedwhite { border : 1px dashed #fff;}
 .dashedred { border : 1px dashed #ff0000;}
 .dashedyellow { border : 1px dashed #ffff00;}
 .dashedblue { border : 1px dashed #0000ff;}

@@ -1,11 +1,11 @@
 /*
- * Pink Floyd Theme
+ * Blank Theme
  *
  * @copyright       Xoops Project <http://www.xoops.org/>
  * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
  * @package         themes
  * @since           2.4.x
- * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @author          Xoops Design Theme <http://www.xoops.org/>
  * @maintained      Xoops Design Theme <http://www.xoops.org/>
  *
  * @version         $Id
@@ -143,9 +143,56 @@
 		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
 		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
 }
-.border{ border: 				1px solid #000; }
-.dashed{ border: 				1px dashed #000; }
+.boxrelief {
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
 .cursordefault{ cursor: 		default; }
 .cursormove{ cursor: 			move; }
 .cursorpointer{ cursor: 		pointer; }
 .cursorhelp{ cursor: 			help; }
+/*========  font family class ======== */
+.arial { font-family: Arial, Helvetica, sans-serif; }
+.courierNew { font-family: 'Courier New', Courier, monospace; }
+.georgia { font-family: Georgia, 'Times New Roman', Times, serif; }
+.lucidaConsole { font-family: 'Lucida Console', Monaco, monospace; }
+.lucidaSansUnicode { font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; }
+.tahoma { font-family: Tahoma, Geneva, sans-serif; }
+.times { font-family: 'Times New Roman', Times, serif; }
+.trebuchet { font-family: 'Trebuchet MS', Helvetica, sans-serif; }
+.verdana { font-family: Verdana, Geneva, sans-serif; }
+.msSans { font-family: 'MS Sans Serif', Geneva, sans-serif; }
+.msSerif { font-family: 'MS Serif', 'New York', serif; }
+.helvetica { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+.impact { font-family: Impact, Charcoal, sans-serif; }
+.century { font-family: 'Century Gothic', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif; }
+/*========  border class ======== */
+.border{ border: 				1px solid #000; }
+.dotted{ border: 				1px dotted #000; }
+.dashed{ border: 				1px dashed #000; }
+
+.solidblack { border : 1px solid #000;}
+.solidred { border : 1px solid #ff0000;}
+.solidyellow { border : 1px solid #ffff00;}
+.solidblue { border : 1px solid #0000ff;}
+.solidorange { border : 1px solid #ffa500;}
+.solidgreen { border : 1px solid #008000;}
+.solidbrown { border : 1px solid #a52a2a;}
+.solidsilver { border : 1px solid #c0c0c0;}
+.dottedblack { border : 1px dotted #000;}
+.dottedred { border : 1px dotted #ff0000;}
+.dottedyellow { border : 1px dotted #ffff00;}
+.dottedblue { border : 1px dotted #0000ff;}
+.dottedorange { border : 1px dotted #ffa500;}
+.dottedgreen { border : 1px dotted #008000;}
+.dottedbrown { border : 1px dotted #a52a2a;}
+.dottedsilver { border : 1px dotted #c0c0c0;}
+.dashedblack { border : 1px dashed #000;}
+.dashedred { border : 1px dashed #ff0000;}
+.dashedyellow { border : 1px dashed #ffff00;}
+.dashedblue { border : 1px dashed #0000ff;}
+.dashedorange { border : 1px dashed #ffa500;}
+.dashedgreen { border : 1px dashed #008000;}
+.dashedbrown { border : 1px dashed #a52a2a;}
+.dashedsilver { border : 1px dashed #c0c0c0;}

@@ -1,0 +1,448 @@
+/*
+ * Pink Floyd Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+/* include style sheets */
+@import url(reset.css); /* reset css for web browsers*/
+/*@import url(dev.css);*/ /* dev css only for web development */
+@import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
+@import url(extras.css); /* extras style for perzonalisation templates */
+
+/*  for html 5 in next time */
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
+
+/* beginning of the applicable styles */
+html, body {
+	max-width: 			100%;
+	margin:				0 auto;
+	color:				#333;
+	font-family:		Georgia, Arial;
+	line-height:		1.5em;
+}
+html {font-size:100.01%;}
+body {font-size:80%; background: #A5460D url(../img/bg_wood.jpg) repeat top left;}
+
+/* ======= Body box ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {	width: 1007px; margin: 0 auto;}
+#xo-canvas-content {	clear: both; background: url(../img/book_bg.png) repeat;}
+#xo-canvas-columns {}
+#xo-page { padding-left: 1.5em; padding-right: 1em;}
+/* ===== header ===== */
+#xo-header {	height: 180px; background: url(../img/book_top.png) no-repeat bottom left;}
+#xo-headerlogo { padding-top: 1.5em; padding-left:1em;}
+#xo-banner {}
+#xo-banner.commercial {}
+#xo-headerbanner {width: 1007px; height: 170px; background: url(../img/book_bottom.png) no-repeat top left; padding-top: 2em;}
+#xo-bannerfix {
+	margin: 			0 auto;
+    width:              480px;
+    height:             70px;
+    background:         url(../img/bg-ad-top.png) no-repeat;
+    padding-top:        6px;
+    padding-right:		6px;
+    padding-left:       6px;
+	z-index:			99;
+}
+#xo-globalnav {width:600px; margin:32px 0 0 0; float:right;}
+#xo-globalnav ul {width:590px; float:right; display:block;}
+#xo-globalnav ul li {width:auto; float:left; display:block; }
+#xo-globalnav ul li a {
+	width:				auto;
+	height:				18px;
+	float:				left;
+	padding: 			5px;
+	background:			url(../img/bg_globalnav.png) repeat;
+	font-size:			1.1em;
+	color:				#EAD28B;
+	line-height:		13px;
+	text-shadow: 		1px 1px 2px #ccc;
+	cursor:				pointer;
+	border-radius: 					10px;
+		-moz-border-radius: 		10px;
+		-webkit-border-radius: 		10px;
+}
+#xo-globalnav ul li a:hover {color: #fff;}
+#xo-globalnav ul li a span {width:auto; height:16px; padding:2px 8px 0 8px; float:left; cursor:pointer;}
+#xo-globalnav ul li a:hover span{ }
+#xo-globalnav ul li .blank{ width:1px; height:18px; padding:0 5px 0 5px; float:left;}
+/* ====== hypertext links ===== */
+a { color: #5CAFB7;}
+a:visited, a:focus { color: #000; text-decoration: underline;}
+a:hover, a:active { color: #A5460D;}
+
+/* ===== titles ===== */
+h1, h2, h3, h4, h5, h6 { 
+  margin: 				1em 0 .5em 0;
+  font-family: 			"Apple Chancery", "Zapf Chancery", cursive;
+  font-weight: 			bold;
+  font-style: 			normal;
+   text-shadow: 		1px 1px 2px #aaa;
+}
+h1 {	font-size: 1.5em;}
+h2 {font-size: 1.3em;}
+h3 {	font-size: 1.2em;}
+h4 {	font-size: 1.2em;}
+h5 {font-size: 1em;}
+h6 {font-size: .9em;}
+
+/* ===== images ===== */
+img { border: 0 !important;}
+p img { margin: .5em;}
+a img:hover, a img:focus { opacity: .5; filter: alpha(opacity=50);}
+a img { border: none;}
+.imgsmile {padding:0 !important; border:0 !important; margin-bottom:-2px !important;}
+
+/* ===== other attributes of contents ===== */
+p { margin-top: .5em; margin-bottom:	 .5em; text-align: justify;}
+hr{
+	height: 					1px;
+	padding: 					0;
+	color: 						#ccc;
+	background-color: 			#ccc;
+	border: 					0;
+}
+em { font-style: italic;}
+strong, b, dfn { font-weight: bold;}
+del { text-decoration: line-through;}
+address	{ font-style: normal; letter-spacing: .1em;}
+small {font-size: .8em;}
+q, cite { font-style: italic;}
+bdo { direction: ltr;}
+acronym, abbr, abbr[title], dfn { border-bottom: #333 1px dashed; cursor: help;}
+abbr[title] { border-bottom: 1px dotted; cursor: help;} 
+acronym:hover, abbr:hover { border-bottom: #c0943c 1px dashed;}
+::selection {background-color:#c0943c; color: #fff;}
+	::-moz-selection {background-color:#c0943c; color: #fff;}
+	
+/* ===== lists ===== */
+#xo-canvas-content ul, #xo-canvas-content ol { margin: .5em 0 .5em 1em; padding: 0;}
+#xo-canvas-content ul {list-style-type: circle;}
+#xo-canvas-content ol {list-style-type: decimal;}
+#xo-canvas-content li  { margin: .3em 0;}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li { padding: 0; font-style:	 italic;}
+#xo-canvas-content ul ul li,#xo-canvas-content ol ol li { padding-top: 0; padding-bottom: 0; padding-left:	 1em;}
+#xo-canvas-content ul, #xo-canvas-content ol {}
+#xo-canvas-content ul ul li, #xo-canvas-content ol ol li {}
+#xo-canvas-content dd {}
+#xo-canvas-content dl {}
+#xo-canvas-content dt {}
+dl { margin: .75em 0;} 
+dt { margin: .75em 0 0 0; font-weight: bold;} 
+dd { margin: .25em 0 .25em 2em; }
+
+/* ===== forms ===== */
+form {}
+fieldset {margin: 0 .5em 1em .5em; padding: .5em;}
+legend {
+	color: 				#000;
+	padding-left: 		.5em;
+	font-size: 			1.1em;
+}
+input, button, select {vertical-align: middle; border: #c0943c 1px solid; margin: .5em;}
+input {}
+label, .caption-text { text-align: center;}
+select { border: 2px inset #e5e5e5 !important;}
+select[name=timezone_offset] {}
+select:focus {}
+textarea {
+	width: 				90%;
+	max-height: 		250px;
+	background-color: 	#f4e7bd;
+	line-height: 		1.5em;
+	overflow: 			auto;
+	border:				solid 1px #ead28b;
+}
+textarea:focus {}
+#xo-page fieldset a {}
+#xo-page fieldset a:hover {}
+#xo-page legend { font-weight:	bold;}
+#xo-page label {}
+button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {
+	background-color: #C39B44;
+	padding: 5px;
+	color: #f4e7bd;
+	border-radius: 				5px;
+		-moz-border-radius: 		5px;
+		-webkit-border-radius: 		5px;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus {}
+button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover {background-color: #b22d00;}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
+input[type=text], input[type=password], input[type=file] {
+	max-width: 					200px;
+	background-color:		 	#EAD28B;
+	padding: 					3px 6px 3px 6px;
+	border-radius: 				5px;
+	-moz-border-radius: 		5px;
+	-webkit-border-radius: 		5px;
+}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover { background-color: #fff; border: #b22d00 1px solid;}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus { background-color: #fff; border: #b22d00 1px solid;}
+input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
+
+#xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
+.xo-formfield.required label:after, .caption-marker { content: '*'; color: #ff0000; background-color: transparent;}
+.xoops-form-element-caption .caption-marker { display:none;}
+.xoops-form-element-caption-required .caption-marker {}
+.xoops-form-element-help {}
+
+/* ===== block main menu ===== */
+#mainmenu { font-family: "Apple Chancery", "Zapf Chancery", cursive;}
+#mainmenu a {display: block; padding-left: .5em; color: #5CAFB7; font-size: 1.4em; line-height: 1.6em;}
+#mainmenu a:hover { color: #A5460D; font-weight: bold;}
+#mainmenu a:active, #mainmenu a.current {}
+#mainmenu a:visited {}
+#mainmenu a.menuTop  {}
+#mainmenu a.menuMain {}
+#mainmenu a.menuSub{ padding-left: 1.5em; color: #000; font-size: 1em; font-style: italic;}
+#mainmenu a.menuSub:hover  { font-weight: normal; text-decoration: underline;}
+#mainmenu a.maincurrent {}
+/* ===== block user menu ===== */
+#usermenu {font-family: "Apple Chancery", "Zapf Chancery", cursive; font-size: 1em;}
+#usermenu a {display: block; color: #A5460D;}
+#usermenu a:hover  { font-style: italic; text-decoration: underline;}
+#usermenu a:active, #usermenu a.current { font-weight: bold; text-decoration: none;}
+#usermenu a:visited {}
+#usermenu a.menuTop {}
+#usermenu a.highlight {}
+
+/* ===== left column ===== */
+#xo-canvas-leftcolumn {padding-right:1em;}
+#xo-canvas-leftcolumn .xo-block { margin-right: .5em; margin-bottom: 1.5em;}
+#xo-canvas-leftcolumn .xo-blocktitle  { color: #000; font-family: "Apple Chancery", "Zapf Chancery", cursive; font-size: 1.6em; text-shadow: 2px 2px 3px #aaa;}
+#xo-canvas-leftcolumn .xo-blockcontent { padding: .5em; text-align: justify;}
+
+/* ===== right column ===== */
+#xo-canvas-rightcolumn {padding-right:1em;}
+#xo-canvas-rightcolumn .xo-block {margin-bottom: 1.5em;}
+#xo-canvas-rightcolumn .xo-blocktitle { color: #000; font-family: "Apple Chancery", "Zapf Chancery", cursive; font-size: 1.6em; text-shadow: 2px 2px 3px #aaa;}
+#xo-canvas-rightcolumn .xo-blockcontent { padding: .5em; text-align: justify;}
+
+/* ===== center content and block in center column ====== */
+#xo-page {}
+/* ----- center blocks ----- */
+#xo-page .xo-blockszone > .xo-block {margin-bottom: 1.5em;}
+#xo-page .xo-blockszone .xo-blocktitle { color: #000; font-family: "Apple Chancery", "Zapf Chancery", cursive; font-size: 1.6em; text-shadow: 2px 2px 3px #aaa;}
+#xo-page .xo-blockszone .xo-blockcontent { padding: .5em; text-align: justify;}
+#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
+#xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
+#xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
+#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle {}
+#xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
+#xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {}
+
+/* ----- content module page ----- */
+#xo-content {padding: 1em;}
+
+/* ===== footer ===== */
+#xo-footer {
+	clear: 					both;
+	width:					100%;
+	margin:					0;
+	color: 					#fff;
+	font-family: 			"Apple Chancery", "Zapf Chancery", cursive;
+	font-size: 				.9em;
+	text-align:				center;
+}
+#xo-footer-copyright {width: 100%; display: block; float: left; text-align: center; margin-bottom: 1em;}
+#xo-footer-copyright a:hover {color: #fff;}
+/*========== xo_block.html in footer ==========*/
+#xo-blockfooter {
+	float: 					left; 
+	width: 					95%;
+	margin: 				1.5em;
+	background: 			url(../img/bg_blockfooter.png) repeat;
+	text-align: 			center;
+	border-radius:				20px;
+		-moz-border-radius:		20px;
+		-webkit-border-radius:	20px;
+}
+#xo-blockfooter .xo-block {
+	display: 					block;
+	float: 						left;
+	width: 						31%;
+	margin: 					.8em .5em .5em 1em;
+	min-height:					210px;
+	text-align: 				left;
+}
+#xo-blockfooter .xo-blocktitle {
+	background-color: 			#C24D01;
+	padding: 					5px;
+	color:						#f6f6f6;
+	font-size:					1.1em;
+	font-weight: 				bold;
+	text-align: 				center;
+	text-shadow: 				1px 1px 2px #aaa;
+	border-radius:				5px;
+		-moz-border-radius:		5px;
+		-webkit-border-radius:	5px;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+#xo-blockfooter .xo-blockcontent {
+	margin : 					1em;
+	padding :					.5em;
+	line-height: 				1.4em;
+}
+#xo-blockfooter .outer {background-color: transparent; color:inherit;}
+#xo-blockfooter .head {}
+#xo-blockfooter .even {}
+#xo-blockfooter .odd {}
+#xo-blockfooter .foot {}
+
+/* ===== tables and cells ===== */
+table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
+caption { font-size: 1.2em; font-weight: bold;}
+th, th.head, thead {
+	background-color: 		#C24D01;
+	padding: 				2px 8px 2px 8px;
+	color:					#f4e7bd;
+	font-weight: 			bold;
+	text-align: 			center;
+	vertical-align : 		middle;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+th a, th.head a, thead a {color: #ead28b;}
+th a:hover, th.head a:hover, thead a:hover {color: #f4e7bd; text-decoration: underline;}
+.foot, tfoot { padding: 2px 8px 2px 8px; text-align: center;}
+tbody {}
+table.outer {
+	border-collapse: 			separate;
+	border: 					#E6CB7B 2px solid;
+	border-radius: 				10px;
+		-moz-border-radius:		10px;
+		-webkit-border-radius:	10px;
+}
+table td {padding: 3px;}
+.outer {}
+.head { color: inherit; font-weight: bold; vertical-align: top;}
+.even {}
+.odd {}
+tr.even td {}
+tr.odd td {}
+
+/* ===== codes and quotes ===== */
+.xoopsCode {
+	display:					block;
+	width:						90%;
+	max-height: 				350px;
+	overflow: 					auto;
+	margin-left:				.5em;
+	background-color: 			#EFDB9E;
+	padding: 					6px;
+	color:						inherit;
+	font-size:					.9em;
+	color: 						inherit;
+	font-family: 				"Courier New",Courier,monospace; 
+	border: 					1px solid #ccc;
+}
+.xoopsQuote {
+	width:						90%;
+	margin-left:				.5em;
+	background:					#EFDB9E url(../img/quote.png) no-repeat top left;
+	padding:					.5em;
+	color:						inherit;
+	font-size:					.9em;
+	font-style:					italic;
+	border:						#b22d00 1px dotted;
+}
+blockquote {font-style: italic;}
+
+/* ===== articles (content-type in example) ===== */
+.item {}
+.itemHead {}
+.itemInfo { font-size: .9em;}
+.itemTitle { color: #000; font-family: "Apple Chancery", "Zapf Chancery", cursive; font-size: 1.6em; text-shadow: 2px 2px 3px #aaa;}
+.itemTitle a {text-decoration: none;}
+.itemPoster {}
+.itemPostDate {}
+.itemStats {}
+.itemBody {}
+.itemText {}
+.itemText:first-letter {}
+.itemFoot { font-size: .9em; text-align: center;}
+.itemAdminLink {}
+.itemPermaLink {}
+
+/* ===== forums (content-type in example) ===== */
+.comTitle {	font-weight: bold;}
+.comTitle a {background-color: transparent; color: #f4e7bd;}
+.comTitle a:hover {background-color: transparent; color: #f4e7bd; text-decoration: underline;}
+.comText { margin: .5em;}
+.comUserStat { margin: 3px; padding: 2px; font-size: .85em; border: #E6CB7B 1px solid; text-align: left; line-height:1.2em;}
+.comUserStatCaption {}
+.comUserStatus {}
+.comUserRank {}
+.comUserRankText {}
+.comUserRankImg {}
+.comUserName {}
+.comUserImg {
+	margin: 					.5em;
+	background-color : 			#fff;
+	padding: 					.5em;
+	border: 					1px solid #ccc;
+	border-radius:				10px;
+	-moz-border-radius:			10px;
+	-webkit-border-radius:		10px;
+	-khtml-border-radius: 		10px;
+	box-shadow: 				1px 2px 3px rgba(0,0,0,0.5);
+		-moz-box-shadow: 		1px 2px 3px rgba(0,0,0,0.5);
+		-webkit-box-shadow: 	1px 2px 3px rgba(0,0,0,0.5);
+}
+.comDate { font-size: .9em; font-style: italic; font-weight: normal;}
+.comDateCaption {}
+.signature {padding: .5em; font-size: .9em; font-style: italic;}
+
+/* ===== pages navigation ===== */
+.pagneutral {}
+#xo-pagenav { margin: 7px 0; text-align: center; font-size: 1.05em;}
+#xo-pagenav a {}
+#xo-pagenav a:hover { border: 1px solid #ccc;}
+.xo-pagact {
+    margin:                 	0;
+    padding:                	.2em .5em;
+    background-color:       	transparent;
+    border:                 	1px solid #ccc;
+	border-radius : 			5px;
+		-webkit-border-radius : 5px;
+		-moz-border-radius: 	5px;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 	0;
+    padding:                	.2em .5em;
+    color:                  	#333;
+    background-color:       	transparent;
+    border:                 	1px solid #ccc;
+	border-radius : 			5px;
+		-webkit-border-radius : 5px;
+		-moz-border-radius: 	5px;
+}
+.xo-pagarrow { letter-spacing: 0.2em;}
+
+/*============== css fix for modules =================*/
+.register-steps {text-align: left; font-size: .9em !important;} /* profile */
+#tabs ul li {list-style: none;} /* publisher */
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #e5e5e5 !important; font-weight: normal;} /* newbb - cbb */
+#xo-block-system-7 .xo-blockcontent {text-align: left;}

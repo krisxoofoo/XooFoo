@@ -1,0 +1,9 @@
+<div id="xo-footer">
+	<{if $lang_siteclosemsg}>
+		<div></div>
+		<{else}>
+		<!-- include for additionnal blocks -->
+		<{if $theme_view_blockfooter}><{includeq file="$theme_name/xo_blockfooter.html"}><{/if}>
+	<{/if}>
+	<div id="xo-footer-copyright"><{$xoops_footer}></div>
+</div>

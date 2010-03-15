@@ -26,8 +26,6 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 #xo-canvas-rightcolumn {	width: 180px !important;}
 
 #xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top; display:table-cell;}
-}
-#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top;}
 
 /*========== Canvas rules (when columns are visible) ===========*/
 #xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {}

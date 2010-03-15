@@ -267,7 +267,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 
 /* ===== tables and cells ===== */
 table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}
-caption {}
+caption { font-size: 1.2em; font-weight: bold;}
 th, th.head, thead {
 	background-color: 		#F9A607;
 	padding: 				2px 8px 2px 8px;

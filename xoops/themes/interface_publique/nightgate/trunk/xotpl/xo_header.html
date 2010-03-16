@@ -1,0 +1,8 @@
+<div id="xo-banner" class="<{$xoops_dirname}><{if $xoops_banner and $xoops_banner != '&nbsp;'}> commercial<{/if}>">
+	<div id="xo-headerlogo"><a href="<{xoAppUrl /}>" title="<{$xoops_sitename}> - <{$xoops_slogan}>"><img src="<{xoImgUrl img/logo.png}>" alt="<{$xoops_sitename}>" /></a></div>
+	<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+		<div id="xo-headerbanner"><{$xoops_banner|smarty:nodefaults}></div>
+	<{/if}>
+	<!-- include of the block search in the header -->
+	<{if $theme_view_searchbar}><{includeq file="$theme_name/xo_searchbar.html"}><{/if}>
+</div>

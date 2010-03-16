@@ -1,0 +1,6 @@
+XOOPS Nightgate Theme - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- Initial work based on design original by DREAMTEMPLATE.COM & FREETHEMELAYOUTS.COM (kris_fr)

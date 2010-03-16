@@ -47,7 +47,7 @@ body {font-size:75%;}
 	width:1004px;
 	float: none;
 	margin:0 auto;
-	padding:0;}
+}
 #xo-canvas-columns {}
 #xo-page {}
 /* ===== header ===== */
@@ -283,7 +283,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-canvas-leftcolumn .xo-blockcontent {padding-top: 1em; text-align: justify;}
 
 /* ===== right column ===== */
-#xo-canvas-rightcolumn {}
+#xo-canvas-rightcolumn { padding-left: 1em;}
 #xo-canvas-rightcolumn .xo-block {padding: 1em 0 1em 0;}
 #xo-canvas-rightcolumn .xo-blocktitle {
 	font-family:Georgia;

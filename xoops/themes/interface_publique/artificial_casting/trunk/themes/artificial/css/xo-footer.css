@@ -21,7 +21,7 @@
 		background-repeat:no-repeat;
 		padding:0;
 		line-height: normal;
-	}
+}
 #footermid	{
 		width:215px;
 		height:168px;
@@ -31,7 +31,7 @@
 		background-repeat:no-repeat;
 		padding:0;
 		line-height: normal;
-	}
+}
 #footerlast	{
 		width:215px;
 		height:168px;
@@ -41,7 +41,7 @@
 		background-repeat:no-repeat;
 		padding:0;
 		line-height: normal;
-	}
+}
 .footerheading	{
 		width:215px;
 		height:21px;
@@ -49,197 +49,160 @@
 		margin:28px 0 0 0;
 		padding:0;
 		font-family: Arial;
-		font-size:24px;
+		font-size:1em;
 		color:#f4e7bd;
-	}
+}
 .footerheading h4	{
 		width:215px;
 		height:21px;
 		float: left;
-		margin:0px;
+		margin:0;
 		padding:0;
 		font-family: Arial;
-		font-size:24px;
+		font-size:1.7em;
 		font-weight:normal;
 		color:#f4e7bd;
 		text-align:center;
-	}
+}
 .footertxt	{
 		width:184px;
 		float: left;
 		margin:17px 0 0 16px;
 		padding:0;
 		font-family:Arial;
-		font-size:12px;
+		font-size:.9em;
 		font-weight:bold;
 		color:#FFF;
 		text-align:center;
-	}
+}
 .footerbutton	{
 		width:68px;
 		height:19px;
 		float: left;
 		margin:15px 0 0 73px;
 		padding:0;
-	}
+}
 .button	{
-		width:68px;
-		height:15px;
-		float: left;
-		margin:0px;
-		padding:4px 0 0 0;
-		font-family:Arial;
-		font-size:9px;
-		color:#000;
-		text-align:center;
-		text-decoration:none;
-		background-image:url(../img/footerbutton.jpg);
-		background-repeat:no-repeat;
-	}
-.button:hover	{
 		width:68px;
 		height:15px;
 		float: left;
 		margin:0;
 		padding:4px 0 0 0;
 		font-family:Arial;
-		font-size:9px;
+		font-size:.7em;
 		color:#000;
 		text-align:center;
 		text-decoration:none;
-		background-image: url(../img/footerover.jpg);
+		background-image:url(../img/footerbutton.jpg);
 		background-repeat:no-repeat;
-	}
-
-
+}
+.button:hover	{
+		color:#000;
+		text-decoration:none;
+}
 
 #footerlinks	{
 		width:715px;
 		float:left;
 		margin:25px 0 0 0;
-		padding:0px;
+		padding:0;
 		font-family:Arial;
-		font-size:11px;
+		font-size:1.1em;
 		font-weight:bold;
 		color:#ee7e1f;
 		text-align:center;
 		text-decoration:none;
-	}
+}
 .footerlinks {
 		font-family:Arial;
-		font-size:11px;
+		font-size:.9em;
 		font-weight:bold;
 		color:#ee7e1f;
 		text-align:center;
 		text-decoration:none;
 		padding:0 3px 0 3px;
-	}
+}
 .footerlinks:hover	{
-		font-family:Arial;
-		font-size:11px;
 		font-weight:bold;
 		color:#ee7e1f;
-		text-align:center;
 		text-decoration: underline;
-		padding:0 3px 0 3px;		
-	}
+}
 #copyrights	{
 		width:715px;
 		float:left;
 		margin:5px 0 0 0;
-		padding:0px;
+		padding:0;
 		font-family:Arial;
-		font-size:11px;
+		font-size:.9em;
 		color:#401400;
 		text-align:center;
-	}
+}
 #designedby	{
 		width:715px;
 		float:left;
 		margin:5px 0 0 0;
-		padding:0px;
+		padding:0;
 		font-family:Arial;
-		font-size:11px;
+		font-size:.9em;
 		font-weight:bold;
 		color:#401400;
 		text-align:center;
-	}
+}
 .designedby	{
 		font-family:Arial;
-		font-size:11px;
+		font-size:.7em;
 		font-weight:bold;
 		color:#ee7e1f;
 		text-align:center;
 		text-decoration:none;
-	}
+}
 .designedby:hover	{
 		font-family:Arial;
-		font-size:11px;
+		font-size:.7em;
 		font-weight:bold;
 		color:#ee7e1f;
 		text-align:center;
 		text-decoration:underline;
-		}
-
+}
 #validation	{
 		width:422px;
 		float:left;
 		margin:5px 0 0 0;
 		padding:0 0 0 293px;
-	}
+}
 .xhtml	{
 		width:66px;
 		height:17px;
 		float: left;
-		margin:0px;
+		margin:0;
 		padding:1px 0 0 0;
 		font-family:Arial;
-		font-size:11px;
+		font-size:.7em;
 		color:#000;
 		text-align:center;
 		text-decoration:none;
 		background-image:url(../img/xhtml.jpg);
 		background-repeat:no-repeat;
-	}
+}
 .xhtml:hover	{
-		width:66px;
-		height:17px;
-		float: left;
-		margin:0px;
-		padding:1px 0 0 0;
-		font-family:Arial;
-		font-size:11px;
 		color:#000;
-		text-align:center;
 		text-decoration:none;
-		background-image:url(../img/xhtml.jpg);
-		background-repeat:no-repeat;
-	}
+}
 .css	{
 		width:66px;
 		height:18px;
 		float: left;
 		margin:0 0 0 5px;
-		padding:0px;
+		padding:0;
 		font-family:Arial;
-		font-size:11px;
+		font-size:.7em;
 		color:#000;
 		text-align:center;
 		text-decoration:none;
 		background-image:url(../img/xhtml.jpg);
 		background-repeat:no-repeat;
-	}
+}
 .css:hover	{
-		width:66px;
-		height:18px;
-		float: left;
-		margin:0 0 0 5px;
-		padding:0px;
-		font-family:Arial;
-		font-size:11px;
 		color:#000;
-		text-align:center;
 		text-decoration:none;
-		background-image:url(../img/xhtml.jpg);
-		background-repeat:no-repeat;
-	}
+}

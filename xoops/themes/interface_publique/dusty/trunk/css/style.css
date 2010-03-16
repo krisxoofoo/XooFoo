@@ -216,7 +216,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-footer { width:100%; height: 140px; padding:0 0 26px 0;}
 #footPanel{ display: block; width:934px; margin:1.75em auto; padding:0; text-align: center !important;}
 #footNav { idth:758px; margin:0 auto; padding:0; color: #fff; font-weight: bold;}
-#footNav a { margin:0; padding:0 5px 0 5px; font-family:Arial; font-size:12px; color:#e5df85; line-height:16px; font-weight:bold; text-decoration:none;}
+#footNav a { margin:0; padding:0 5px 0 5px; font-family:Arial; font-size:1em; color:#e5df85; line-height:16px; font-weight:bold; text-decoration:none;}
 #footNav a:hover { text-decoration:underline;}
 #footPanel p{ float: left; width:934px; margin: 2px 0 0 0; padding: 0; font-size: .9em; color: #fffcd5; line-height: 15px; font-weight: bold; text-align: center;}
 #footPanel p a{ color: #e5df85; text-decoration: none;}

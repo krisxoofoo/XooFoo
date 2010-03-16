@@ -16,7 +16,7 @@
 #xo-header, #xo-canvas-columns  {border: 1px solid orange;}
 #xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn, #xo-footer {border: 1px solid red;}
 #xo-globalnav, #xo-banner, .xo-blockszone > .xo-block  {border: 1px solid blue;}
-#xo-headerbanner, .xo-blocktitle , .xo-blockcontent {border: 1px dotted blue;}
+#xo-headerbanner, #xo-headerlogo, .xo-blocktitle , .xo-blockcontent {border: 1px dotted blue;}
 
 table {border: 1px solid yellow;}
 tr {border: 1px dotted yellow;}

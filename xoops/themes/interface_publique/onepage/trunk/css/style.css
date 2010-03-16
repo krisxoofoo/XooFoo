@@ -323,7 +323,7 @@ blockquote { font-style: italic;}
 
 /* ===== articles (content-type in example) ===== */
 .item {}
-.itemHead { text-align: center;}
+.itemHead {}
 body#publisher .itemHead {
 	background-color: 		#9C6270;
 	padding: 				2px 8px 2px 8px;

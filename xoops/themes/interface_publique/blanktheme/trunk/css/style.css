@@ -92,6 +92,8 @@ a img { border: none;}
 p {}
 hr{}
 strong, b, dfn { font-weight: bold;}
+u {text-decoration: underline;}
+i, em { font-style: italic;}
 del { text-decoration: line-through;}
 address	{}
 q, cite, em, dfn, strong {}

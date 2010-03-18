@@ -1,0 +1,143 @@
+﻿################################################## #############################
+# Nom du fichier: msmtp.txt
+# Created By: The Uniform Server Development Team
+################################################## #############################
+
+  -----
+  msmtp
+  -----
+  Msmtp est un client SMTP Une fois configuré permet aux scripts PHP pour envoyer directement
+  e-mails via votre serveur de messagerie SMTP. Cela peut être un serveur local, votre FAI
+  le serveur ou d'un fournisseur de messagerie gratuite, tels que Gmail et Hotmail.
+
+  Fournisseurs de messagerie libres requièrent une authentification avant de relayer vos e-mails via
+  leurs serveurs. Msmtp fournit une interface transparente entre les scripts PHP et
+  un serveur SMTP, effectuant automatiquement cette authentification.
+
+  Msmtp est un projet open source dernière version peut être téléchargée
+  de http://sourceforge.net/projects/msmtp/files/
+
+  Msmtp a été intégré dans Uniform Server une petite quantité de configuration
+  est nécessaire, comme expliqué ci-dessous:
+
+  -------------
+  Configuration
+  -------------
+
+  PHP utilise le compte par défaut comme indiqué dans le fichier de configuration
+  UniServer\msmtp\msmtprc.ini
+
+  Avant d'exécuter tous les scripts PHP qui envoient le courrier au moins un compte dans le présent
+  fichier doit être configurés par défaut.
+
+  Le fichier contient trois exemples de configuration qui vous convient le plus
+  exigences.
+
+  ----------------------
+   Configuration - MyISP
+  ----------------------
+
+  Le premier compte, MyISP remplace les paramètres sendmail de base qui auraient
+  été défini dans le fichier php.ini.
+
+  Elle suppose que votre fournisseur de services Internet ne vous oblige pas à
+  s'authentifier. D'où tout ce qui est requis est le nom de votre fournisseur d'accès du serveur SMTP et
+  votre adresse email.
+
+   account MyISP
+   host smpt.tiscali.co.uk
+   from johm.doe@tiscali.co.uk
+   auth off
+
+  Smpt.tiscali.co.uk Suppléant avec votre serveur SMTP du FAI (celui que vous utilisé pour
+  configurer votre client e-mail e.g Outlook Express.)
+
+  Suppléant john.doe@tiscali.co.uk avec votre adresse email réelle
+
+  Pour faire de ce compte par défaut (en bas du fichier de configuration))
+  Ligne de changement "par défaut du compte: Hotmail» à «compte par défaut: MyISP"
+
+  Note: Les autres comptes sont ignorés. PHP va utiliser ce compte pour envoyer des emails et
+        votre FAI les relaiera vers l'adresse appropriée.
+
+  Note: Ce compte est restrictif car il vous lie à votre fournisseur de services
+        n'est donc pas portable. Toutefois, il a un avantage nécessite un minimum
+        de configuration.
+
+  -----------------------
+  Configuration - Hotmail
+  -----------------------
+
+  Le deuxième compte, Hotmail est un compte gratuit que vous avez besoin pour créer à la
+  l'adresse suivante http / / www.hotmail.com Une fois inscrit, vous aurez un e-mail
+  l'adresse et le mot de passe. Elles sont nécessaires pour configurer votre compte msmtp.
+
+   account Hotmail
+   tls on
+   tls_certcheck off
+   host smtp.live.com
+   from john.doe123@hotmail.co.uk
+   auth on
+   user john.doe123@hotmail.co.uk
+   password fred123
+
+  Suppléant du john.doe123@hotmail.co.uk avec votre adresse e-mail de connexion
+
+  Ce compte requiert une authentification par conséquent vos identifiants:
+
+  Suppléant utilisateur john.doe123@hotmail.co.uk avec votre adresse e-mail de connexion
+  Suppléant de passe fred123 avec votre login mot de passe
+
+  Pour faire de ce compte par défaut (en bas du fichier de configuration))
+  Line "compte par défaut: Hotmail" reste inchangée
+
+  Note: Les autres comptes sont ignorés. PHP va utiliser ce compte pour envoyer des emails
+        et les serveurs Hotmail les relaiera vers l'adresse appropriée.
+
+  ---------------------
+  Configuration - Gmail
+  ---------------------
+
+  Le troisième compte, Gmail est un compte gratuit que vous avez besoin pour créer à la
+  l'adresse suivante http://mail.google.com/ Une fois inscrit, vous aurez une
+  adresse e-mail et mot de passe. Elles sont nécessaires pour configurer votre
+  msmtp compte.
+
+   account Gmail
+   tls on
+   port 587
+   tls_certcheck off
+   host smtp.gmail.com
+   from john.doe777@gmail.com
+   auth on
+   user john.doe777@gmail.com
+   password fred999
+
+  Suppléant du john.doe777@gmail.com avec votre adresse e-mail de connexion
+
+  Ce compte requiert une authentification par conséquent vos identifiants:
+
+  Suppléant utilisateur john.doe777@gmail.com avec votre adresse e-mail de connexion
+  Suppléant de passe fred999 avec votre login mot de passe
+
+  Pour faire de ce compte par défaut (en bas du fichier de configuration))
+  Ligne de changement "par défaut du compte: Hotmail» à «compte par défaut: Gmail"
+
+  Note: Les autres comptes sont ignorés. PHP va utiliser ce compte pour envoyer des emails
+        et les serveurs de Gmail les relaiera vers l'adresse appropriée.
+
+  ------------
+  Note générale
+  ------------
+
+  Vous pouvez créer autant de comptes toutefois s'assurer que le nom du compte est
+  unique. PHP va utiliser uniquement le compte que vous définir par défaut.
+
+
+-------------------------------------------------- -----------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+Tous droits réservés.
+
+Les auteurs tentaient de faire le meilleur produit pour qu'ils
+ne peut être tenue responsable pour tout type de dommage ou de
+problèmes causés par l'utilisation de ce ou un autre logiciel. 

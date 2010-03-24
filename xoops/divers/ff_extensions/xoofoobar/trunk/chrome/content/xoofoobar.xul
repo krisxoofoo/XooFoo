@@ -143,6 +143,7 @@
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/yefaywz');" label="Package Web Tools" image="chrome://xoofoobar/skin/xoofoo.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.svn.sourceforge.net/viewvc/xoops/XoopsThemes/PublicInterface/blanktheme.tar.gz?view=tar');" label="BlankTheme for Xoops" image="chrome://xoofoobar/skin/xoops.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.uniformserver.com/');" label="Uniform Server" image="chrome://xoofoobar/skin/uniserver.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('https://secure.logmein.com/US/products/express/Default.aspx');" label="LogMeIn" image="chrome://xoofoobar/skin/logmein.jpg" />
 					<menuitem oncommand="xo_loadURL('http://jsfiddle.net/');" label="JsFiddle.net" />
 					<menuitem oncommand="xo_loadURL('http://westciv.com/tools/');" label="WestCiv.com" />
 					<menuitem oncommand="xo_loadURL('http://www.css3generator.com/');" label="Css3 Generator" />

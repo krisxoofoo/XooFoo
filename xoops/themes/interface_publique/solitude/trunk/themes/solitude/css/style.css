@@ -125,8 +125,9 @@ hr{
 	background-color: 			#ccc;
 	border: 					0;
 }
-em { font-style: italic;}
 strong, b, dfn { font-weight: bold;}
+u {text-decoration: underline;}
+i, em { font-style: italic;}
 del { text-decoration: line-through;}
 address	{ font-style: normal; letter-spacing: .1em;}
 small { font-size: .8em;}

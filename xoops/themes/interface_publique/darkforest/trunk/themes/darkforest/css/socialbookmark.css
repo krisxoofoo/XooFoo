@@ -1,0 +1,66 @@
+/*
+ * DarkForest Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+/* ------------ Style for xo_socialbookmark.html ------------ */
+#xo-socialbookmark{ background:url(../img/CON_bg_body.gif) repeat-y top; padding: 1.5em 0 1.5em 0; color:#8a867c;	text-align:	center !important;}
+ul.xo-socials {}
+ul.xo-socials li {
+	display:					inline-block;
+	height:						29px;
+	width:						50px;
+	margin:						0 2px 0 0;
+	list-style-type:			none;
+	cursor:						pointer;
+}
+ul.xo-socials a {
+	display:					block;
+	width:						50px;
+	height:						29px;
+	font-size:					0;
+	color:						transparent;
+}
+.furl, .furl:hover, .digg, .digg:hover, .reddit, .reddit:hover, .stumble, .stumble:hover, .delicious, .delicious:hover, .yahoo, .yahoo:hover, .blinklist, .blinklist:hover, .technorati, .technorati:hover, .facebook, .facebook:hover, .twitter, .twitter:hover, .myspace, .myspace:hover, .mixx, .mixx:hover, .script-style, .script-style:hover, .designfloat, .designfloat:hover, .rss, .rss:hover  {background:url("../img/socialbookmark.png") no-repeat;}
+.furl {	background-position:-300px top;}
+.furl:hover {background-position:-300px bottom;}
+.digg {	background-position:-500px top;}
+.digg:hover {background-position:-500px bottom;}
+.reddit {background-position:-100px top;}
+.reddit:hover {	background-position:-100px bottom;}
+.stumble {	background-position:-50px top;}
+.stumble:hover {	background-position:-50px bottom;}
+.delicious {	background-position:left top;}
+.delicious:hover {	background-position:left bottom;}
+.yahoo {	background-position:-650px top;}
+.yahoo:hover {	background-position:-650px bottom;}
+.blinklist {	background-position:-600px top;}
+.blinklist:hover {	background-position:-600px bottom;}
+.technorati {	background-position:-700px top;}
+.technorati:hover {	background-position:-700px bottom;}
+.myspace {	background-position:-200px top;}
+.myspace:hover {	background-position:-200px bottom;}
+.twitter {	background-position:-350px top;}
+.twitter:hover {	background-position:-350px bottom;}
+.facebook {	background-position:-450px top;}
+.facebook:hover {	background-position:-450px bottom;}
+.mixx {	background-position:-250px top;}
+.mixx:hover {	background-position:-250px bottom;}
+.rss {	background-position:-150px top;}
+.rss:hover {	background-position:-150px bottom;}
+.script-style {	background-position:-400px top;}
+.script-style:hover { background-position:-400px bottom;}
+.designfloat { background-position:-550px top;}
+.designfloat:hover {	background-position:-550px bottom;}

@@ -1,0 +1,22 @@
+/**
+ * @version         $Id
+**/
+
+/* Theme XOOPS DarForest Theme version 1.0 by Xoops Design Theme (http://www.xoops.org) */
+/* Credits : based on design original for WordPress by http://www.freethemelayouts.com */
+
+/* English */
+Decompress the file and upload the folders directly to root of your site
+Nice tools for Xoops Designer :
+- Xoops-Styles Module 	--> see http://www.xoops.org/modules/newbb/viewtopic.php?topic_id=70833&forum=16&post_id=325340#forumpost325340
+- Web Browser Package 	--> http://tutos.xoofoo.org/modules/mydownloads/visit.php?cid=23&lid=96
+- Web Tools Package		--> http://tutos.xoofoo.org/modules/mydownloads/visit.php?cid=23&lid=295
+- ColorMatch Remix		--> http://tutos.xoofoo.org/colorcss/
+
+/* french */
+Installation : une fois l'archive décompressée, il faut téléverser  les dossiers du thème à la racine de votre site.
+Outils sympas pour Xoops Designer :
+- Xoops-Styles Module 	--> see http://www.frxoops.org/modules/newbb/viewtopic.php?topic_id=32119&forum=15
+- Web Browser Package 	--> http://tutos.xoofoo.org/modules/mydownloads/visit.php?cid=23&lid=96
+- Web Tools Package		--> http://tutos.xoofoo.org/modules/mydownloads/visit.php?cid=23&lid=295
+- ColorMatch Remix		--> http://tutos.xoofoo.org/colorcss/

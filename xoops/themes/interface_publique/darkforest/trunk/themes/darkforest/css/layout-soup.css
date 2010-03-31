@@ -1,0 +1,67 @@
+/*
+ * DarkForest Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+/* Here normally, you have only to amend dimensions and the visual one of the canvas strictly speaking */
+
+body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
+
+/*============= Canvas rules ============*/
+#xo-canvas-content { display:table; width:100%; border-collapse:collapse;}
+#xo-canvas-columns {	width: 100%; display:table-row;}
+#xo-content-caption {display:none;}
+#xo-canvas-leftcolumn { width: 195px !important;}
+/* Page [center column] rules */
+* html #xo-page {	height: 500px;}
+#xo-page { min-height : 500px;} 
+#xo-canvas-rightcolumn {	width: 195px !important;}
+
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top; display:table-cell;}
+
+/*========== Canvas rules (when content are visible) ===========*/
+#xo-content { margin: 10px;}
+
+/*========== Canvas rules (when columns are visible) ===========*/
+#xo-canvas.leftcolumn-layout #xo-canvas-columns, #xo-canvas.threecolumns-layout #xo-canvas-columns {}
+#xo-canvas.rightcolumn-layout #xo-page, #xo-canvas.threecolumns-layout #xo-page { border-right-width:	0;}
+#xo-canvas-bottom, #xo-canvas-footer {}
+
+/*=========== Center blocks =============*/
+#xo-page-topblocks { padding: 0 10px;}
+#xo-page-bottomblocks { padding:	0 10px 10px;}
+#xo-page .xo-blockszone .xo-block { margin-bottom: 10px;}
+
+/* ------- Top and bottom zones (2 columns) ------- */
+#xo-page-topleftblocks, #xo-page-bottomleftblocks { float: left; width: 49.5%;}
+#xo-page-toprightblocks, #xo-page-bottomrightblocks { float:	right; width: 49.5%;}
+#xo-page-topcenterblocks, #xo-page-bottomcenterblocks { clear: both;}
+
+/* ------- Top and bottom zones (3 columns) ------- */
+#xo-page .xo-lcrpageblocks .xo-blockszone, #xo-page .xo-lcrpageblocks .xo-blockszone { float: left; clear: none; width: 33%;}
+.xo-lcrpageblocks #xo-page-topleftblocks,
+.xo-lcrpageblocks #xo-page-topcenterblocks,
+.xo-lcrpageblocks #xo-page-bottomleftblocks,
+.xo-lcrpageblocks #xo-page-bottomcenterblocks { margin-right: .5%;}
+#xo-page .xo-blockszone .xo-blockcontent { min-height: 50px;}
+* html #xo-page .xo-blockszone .xo-blockcontent { height: 100px; }
+
+/* Give a min-height to centerleft/centerright blocks, and lcr center blocks */
+#xo-page-topleftblocks .xo-block, #xo-page-bottomleftblocks .xo-block,
+#xo-page-toprightblocks .xo-block, #xo-page-bottomrightblocks .xo-block,
+.xo-lcrpageblocks #xo-page-topcenterblocks .xo-block, 
+.xo-lcrpageblocks #xo-page-bottomcenterblocks  .xo-block { min-height: 130px;}
+
+#xo-page-topblocks .xo-block, #xo-page-bottomblocks .xo-block { padding-top: 2px;}
+#xo-page-topblocks *>.xo-block, #xo-page-bottomblocks *>.xo-block { padding-top: 0;}
+#xo-page .xo-blockszone > .xo-block {	padding-left: 4px;}
+#xo-page .xo-blockszone .xo-block:before { display: block; height: 9px; margin-left: -4px; margin-right: -1px;}
+#xo-page .xo-blockszone .xo-block:after {	display: block; height: 7px; margin-left: -4px;	margin-right:-1px;}

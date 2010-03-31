@@ -1,0 +1,26 @@
+/*
+ * DarkForest Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+/* remove this css sheet after web development */
+#xo-wrapper, #xo-canvas, #xo-canvas-content{border: 1px solid green;}
+#xo-header, #xo-canvas-columns  {border: 1px solid orange;}
+#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn, #xo-footer {border: 1px solid red;}
+#xo-globalnav, #xo-banner, .xo-blockszone > .xo-block  {border: 1px solid blue;}
+#xo-headerbanner, #xo-headerlogo, .xo-blocktitle , .xo-blockcontent {border: 1px dotted blue;}
+
+table {border: 1px solid yellow;}
+tr {border: 1px dotted yellow;}
+th {border: 1px dotted green;}
+td {border: 1px dotted red;}
+
+form {border: 1px dotted black;}

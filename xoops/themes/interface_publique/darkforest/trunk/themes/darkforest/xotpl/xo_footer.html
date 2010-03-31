@@ -1,0 +1,17 @@
+<div id="xo-footer" class="<{$xoops_dirname}>">
+
+<{if $lang_siteclosemsg}>
+	<div></div>
+	<{else}>
+	<!-- include for additionnal blocks -->
+	<{if $theme_view_blockfooter}><{includeq file="$theme_name/xo_blockfooter.html"}><{/if}>
+<{/if}>
+
+	<div id="xo-footerbottom">
+		<!-- footer infos defined in the preferences of the site -->
+		<div id="xo-copyright"><{$xoops_footer}></div>
+		<!--  end  footer infos defined in the preferences of the site -->
+		<div id="designedby">Original design by <a href="http://www.dreamtemplate.com/" rel="external" class="designedby" title="Dream Template">DT Website Templates</a> and adapted for Xoops by <a class="designedby" rel="external" href="http://www.xoops.org/userinfo.php?uid=43273" title="Kris_fr - Xoops">Kris_fr</a></div>
+	</div>
+	
+</div>

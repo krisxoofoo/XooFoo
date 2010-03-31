@@ -1,0 +1,6 @@
+XOOPS DarkForest Theme - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- Initial work based on design original for WordPress by http://www.freethemelayouts.com (kris_fr)

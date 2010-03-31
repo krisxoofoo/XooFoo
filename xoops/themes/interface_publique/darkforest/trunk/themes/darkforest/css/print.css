@@ -1,0 +1,97 @@
+/*
+ * DarkForest Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+html, body {
+	width: 							99%;
+	margin:							0;
+	background-color:				#fff;
+	padding:						0;
+	font-family:					"Lucida Grande", Verdana, sans-serif;
+	color:							#000;
+}
+html {font-size:100.01%;}
+body {font-size:75%;}
+
+/* display none */
+#xo-noprint {	display: none;}
+#xo-canvas-leftcolumn { display: none;}
+#xo-canvas-rightcolumn { display: none;}
+#xo-banner {display: none;}
+#xo-banner-ad { display: none;}
+#xo-globalnav { display: none;}
+#xo-blockviewall {display:none;}
+.xo-blockquickedit {display:none;}
+#xo-blockviewall {display:none;}
+.xo-blockquickedit {display:none;}
+#xo-logger-output  {display:none;}
+#system-select_notifications {display:none;}
+.itemFoot { display: none;}
+#user_sigSmiley { display: none;}
+#user_sigStyletext { display: none;}
+select#user_sigFont, select#user_sigColor, select#user_sigFont, select#user_sigSize { display: none;}
+span#xoopsHiddenText { display: none;}
+hr {	display: none;}
+form [name=notification_select] { display: none;}
+input[type=submit], input[type=reset], input[type=button] {display:none;}
+
+/*================ display for print ====================*/
+h1, h2, h3, h4, h5, h6  { text-decoration: none;}
+h1 { font-size: 1.3em; font-weight: bold;}
+h2 { font-size: 1.2em;}
+h3,h4,h5,h6 {font-size: 1em;}
+h1,h2,h3,h4,h5,h6 { page-break-after : avoid !important;}
+img { border: 0;}
+abbr, acronym { border: 0;}
+abbr[title]:after,acronym[title]:after{ content: " (" attr(title) ")";}
+blockquote,q {}
+pre, code, table { page-break-inside : avoid !important;}
+pre {}
+form, input, select {}
+input[type=text] {}
+input[type=checkbox] {}
+select {}
+textarea {}
+table th, thead {}
+#xo-page {}
+#xo-footer {}
+#xo-footer a {}
+.xo-blocktitle {}
+.xo-blockcontent {}
+.xo-blockcontent a {}
+.xo-blockcontent a:after,.xo-blockcontent a[href]:after {}
+.item {}
+
+/* list */
+#xo-canvas-content ul {}
+#xo-canvas-content li {}
+
+
+/* for newbb/cbb */
+td.foot { display: none;}
+form#quick_reply { display: none;}
+form[name=forum_jumpbox] { display: none;}
+select#topicoption, select#viewmode { display: none;}
+.comTitle {}
+.comText {}
+.comUserStat {}
+.comUserStatCaption {}
+.comUserStatus {display:none;}
+.comUserRank {}
+.comUserRankText {}
+.comUserRankImg {}
+.comUserName {}
+.comUserImg {}
+.comDate {}
+.comDateCaption {}
+.signature {	}
+.itemPermaLink, .itemFoot, .itemAdminLink { display: none;}

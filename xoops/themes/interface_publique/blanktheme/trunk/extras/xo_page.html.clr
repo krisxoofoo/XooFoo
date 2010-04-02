@@ -1,3 +1,4 @@
+<!-- [* $Id$ *] -->
 <div id="xo-canvas-columns">
 	<div id="xo-content-caption"><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> <{else}> <{$xoops_meta_description}><{/if}></div>
 		<div id="xo-page">

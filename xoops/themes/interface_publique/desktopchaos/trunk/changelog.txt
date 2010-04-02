@@ -1,0 +1,6 @@
+XOOPS DesktopChaos Theme - Changelog
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- Initial work based on original design by Evan Eckard - http://www.evaneckard.com (kris_fr)

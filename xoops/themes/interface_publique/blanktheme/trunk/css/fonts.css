@@ -12,3 +12,15 @@
 */
 
 /* Put your @font-face include, in first for IE and after others browsers */
+
+ /* == TTF file for IE == */
+/*@font-face {
+ font-family: MyFonts;
+ src: url("../fonts/myfonts.eot")
+}*/
+
+ /* == TTF file for CSS3 browsers == */
+/*@font-face {
+ font-family: MyFonts;
+ src: url("../fonts/myfonts.ttf")
+}*/

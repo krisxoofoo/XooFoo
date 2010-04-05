@@ -1,12 +1,20 @@
 <?php
+/**
+ * XOOPS Blank Theme language file
+ * @copyright   The Xoops project http://www.xoops.org/
+ * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
+ * @author      kris_fr
+ * @translator  kris_fr
+ * @version     $Id$
+ */
+
 // g&eacute;n&eacute;ralit&eacute;s
-define("THEME_NAME",					"Css100 MorPho 1.0.1");
-define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communaut&#233; Francophone du Projet XOOPS'>Communaut&#233; Francophone XOOPS</a>");
-define("THEME_UPTOP",					"Haut de Page");
-define("THEME_VALIDCSS",				"Ce gabarit de th&#232;me est valide W3C pour le CSS 1 et 2");
-define("THEME_VALIDXHTML",				"Ce gabarit de th&#232;me est valide W3C pour le XHTML 1.01");
-define("THEME_LICENSE",					"License de distribution de ce gabarit de th&#232;me");
+define("THEME_NAME",					"Blank Theme");
+define("THEME_DESC",					"This is a blank theme for Xoops");
+define("THEME_DESIGNER",				"Design by kris_fr for <a rel='external' href='http://www.xoops.org/' title='XOOPS Design Team'>XOOPS Design Team</a>");
+define("THEME_VALIDCSS",				"Ce th&#232;me est valide W3C pour le CSS 1 et 2");
+define("THEME_VALIDXHTML",				"Ce th&#232;me est valide W3C pour le XHTML 1.01");
+define("THEME_LICENSE",					"Voir la License GPL 3.0");
 
 // xo_userbar.html
 define("THEME_REGISTER",				"Cr&#233;er un compte ?");
@@ -173,13 +181,13 @@ define("THEME_EDITPROFILE",				"Editer son profil");
 define("THEME_USER",					"Utilisateurs");
 define("THEME_CPHOME",					"Administration");
 define("THEME_BANS",					"G&#233;rer les banni&#232;res publicitaires");
-define("THEME_BKAD",					"G&#233;rer les blocs");
+define("THEME_BKAD",					"G&#233;;rer les blocs");
 define("THEME_ADGS",					"G&#233;rer les groupes");
 define("THEME_PREF",					"Pr&#233;f&#233;rences");
 define("THEME_INSTALLEDMODULES",		"G&#233;rer les modules install&#233;s");
 define("THEME_IMAGES",					"Images");
 define("THEME_MDAD",					"Modules");
-define("THEME_SMLS",					"G&#233;rer les &#233;motic&#244;nes");
+define("THEME_SMLS",					"G&#233;rer les &#233;moticônes");
 define("THEME_RANK",					"Rang des utilisateurs");
 define("THEME_EUSER",					"Editer les utilisateurs");
 define("THEME_FINDUSER",				"Chercher un utilisateur");
@@ -187,5 +195,10 @@ define("THEME_MLUS",					"Envoyer un courriel");
 define("THEME_AVATARS",					"G&#233;rer les avatars");
 define("THEME_TPLS",					"G&#233;rer les templates");
 define("THEME_COMMENTS",				"G&#233;rer les commentaires");
+define("THEME_ADMTOOLS",				"Outils");
+define("THEME_ADMFILES",				"Gestionnaire de fichiers");
+define("THEME_ADMCLEAN",				"Op&#233;rations de maintenance");
+define("THEME_SYSSETTING",				"Options Module Syst&#232;me");
+define("THEME_UPTOP",					"Remonter en haut de page");
 		
 ?>

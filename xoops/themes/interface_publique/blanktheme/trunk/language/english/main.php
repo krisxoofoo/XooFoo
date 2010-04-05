@@ -1,12 +1,20 @@
 <?php
+/**
+ * XOOPS Blank Theme language file
+ * @copyright   The Xoops project http://www.xoops.org/
+ * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
+ * @author      kris_fr
+ * @translator  kris_fr
+ * @version     $Id$
+ */
+ 
 // generality
-define("THEME_NAME",					"Css100 MorPho 1.0.1");
-define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design by : <a rel='external' rel='external' href='http://labs.xoofoo.org/' title='Kris XooFoo Laboratory'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='XOOPS Project French Community'>XOOPS French Community</a>");
-define("THEME_UPTOP",					"Back to Top");
-define("THEME_VALIDCSS",				"This theme template is W3C Validated for CSS 1 and 2");
-define("THEME_VALIDXHTML",				"This theme template is W3C Validated for XHTML 1.01");
-define("THEME_LICENSE",					"See Creative Commons Licence");
+define("THEME_NAME",					"Blank Theme");
+define("THEME_DESC",					"This is a blank theme for Xoops");
+define("THEME_DESIGNER",				"Design by kris_fr for <a rel='external' href='http://www.xoops.org/' title='XOOPS Design Team'>XOOPS Design Team</a>");
+define("THEME_VALIDCSS",				"This theme is W3C Validated for CSS 1 and 2");
+define("THEME_VALIDXHTML",				"This theme is W3C Validated for XHTML 1.01");
+define("THEME_LICENSE",					"See GPL 3.0 Licence");
 
 // xo_userbar.html
 define("THEME_REGISTER",				"Create account ?");
@@ -187,5 +195,10 @@ define("THEME_MLUS",					"Send email");
 define("THEME_AVATARS",					"Manage avatars");
 define("THEME_TPLS",					"Manage templates");
 define("THEME_COMMENTS",				"Manage comments");
+define("THEME_ADMTOOLS",				"Tools");
+define("THEME_ADMFILES",				"Files Manager");
+define("THEME_ADMCLEAN",				"Maintenance");
+define("THEME_SYSSETTING",				"System Module Settings");
+define("THEME_UPTOP",					"Top Page");
 
 ?>

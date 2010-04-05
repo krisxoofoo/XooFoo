@@ -1,12 +1,20 @@
 <?php
+/**
+ * XOOPS Blank Theme language file
+ * @copyright   The Xoops project http://www.xoops.org/
+ * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
+ * @author      kris_fr
+ * @translator  kris_fr
+ * @version     $Id$
+ */
+ 
 // global defines
-define("THEME_NAME",					"Css100 MorPho 1.0.1");
-define("THEME_DESC",					"birth of evolution");
-define("THEME_DESIGNER",				"Design par : <a rel='external' href='http://labs.xoofoo.org/' title='Le laboratoire XooFoo.org de Kris'>XooFoo</a> - <a rel='external' href='http://www.afux.org/' title='Communauté Francophone du Projet XOOPS'>Communauté Francophone XOOPS</a>");
-define("THEME_UPTOP",					"Haut de Page");
-define("THEME_VALIDCSS",				"Ce gabarit de thème est valide W3C pour le CSS 1 et 2");
-define("THEME_VALIDXHTML",				"Ce gabarit de thème est valide W3C pour le XHTML 1.01");
-define("THEME_LICENSE",					"License de distribution de ce gabarit de thème");
+define("THEME_NAME",					"Blank Theme");
+define("THEME_DESC",					"This is a blank theme for Xoops");
+define("THEME_DESIGNER",				"Design by kris_fr for <a rel='external' href='http://www.xoops.org/' title='XOOPS Design Team'>XOOPS Design Team</a>");
+define("THEME_VALIDCSS",				"Ce thème est valide W3C pour le CSS 1 et 2");
+define("THEME_VALIDXHTML",				"Ce thème est valide W3C pour le XHTML 1.01");
+define("THEME_LICENSE",					"Voir la License GPL 3.0");
 
 // xo_userbar.html
 define("THEME_REGISTER",				"Créer un compte ?");
@@ -162,7 +170,7 @@ define("THEME_BK_MYSPACE",            	"Poster sur MySpace");
 define("THEME_BK_DESIGNFLOAT",         	"Soumettre ceci sur DesignFloat");
 define("THEME_BK_FACEBOOK",            	"Suivre ceci sur Facebook");
 
-/* ------------------- xo_footerstatic.html ------------------- */
+// xo_footerstatic.html
 define("_THEME_INBOX",            		"Voir vos messages");
 define("_THEME_INBOX_NOTREAD",    		"message(s) non lu(s)");
 define("_THEME_NOTIFICATIONS",   		"Voir vos notifications");
@@ -187,5 +195,10 @@ define("THEME_MLUS",					"Envoyer un courriel");
 define("THEME_AVATARS",					"Gérer les avatars");
 define("THEME_TPLS",					"Gérer les templates");
 define("THEME_COMMENTS",				"Gérer les commentaires");
+define("THEME_ADMTOOLS",				"Outils");
+define("THEME_ADMFILES",				"Gestionnaire de fichiers");
+define("THEME_ADMCLEAN",				"Opérations de maintenance");
+define("THEME_SYSSETTING",				"Options Module Système");
+define("THEME_UPTOP",					"Remonter en haut de page");
 		
 ?>

@@ -41,21 +41,24 @@ body {font-size:75%;}
 #xo-canvas {	width: 100%; margin: 0 auto;}
 #xo-canvas-content {}
 #xo-canvas-columns {}
-#xo-page {}
+
 /* ===== header ===== */
 #xo-header {	}
-#xo-headerlogo {padding-top: .5em; padding-left:.5em;}
+#xo-headerlogo {
+	float: 				left;
+	margin-top: 		.5em;
+	margin-left:		.5em;
+}
 #xo-banner {}
 #xo-banner.commercial {}
-#xo-headerbanner {}
+#xo-headerbanner { float: right;	padding-top: 5px;}
 #xo-bannerfix {
-    position:          	absolute;
-    top:               	3px;
-    right:             	25px;
-    width:             	480px;
-    height:            	72px;
-    background:        	url(../img/bg-ad-top.png) no-repeat;
-    padding:           	6px;
+    width:              480px;
+    height:             70px;
+    background:         url(../img/bg-ad-top.png) no-repeat;
+    padding-top:        6px;
+    padding-right:      6px;
+    padding-left:       6px;
 	z-index:			99;
 }
 #xo-globalnav {
@@ -70,7 +73,7 @@ a:visited, a:focus, a:hover, a:active {}
 /* ===== titles ===== */
 h1, h2, h3, h4, h5, h6 { 
   margin: 				1em 0 .5em 0;
-  line-height: 			1.2em; 
+  line-height: 			1.2; 
   font-weight: 			bold;
   font-style: 			normal; 
 }
@@ -240,8 +243,11 @@ blockquote { font-style: italic;}
 .item {}
 .itemHead {}
 .itemInfo {}
+.itemInfo a {}
+.itemInfo a:hover {}
 .itemTitle {}
 .itemTitle a {}
+.itemTitle a:hover {}
 .itemPoster {}
 .itemPostDate {}
 .itemStats {}
@@ -249,6 +255,8 @@ blockquote { font-style: italic;}
 .itemText {}
 .itemText:first-letter {}
 .itemFoot {}
+.itemFoot a {}
+.itemFoot a:hover {}
 .itemAdminLink {}
 .itemPermaLink {}
 
@@ -273,3 +281,11 @@ blockquote { font-style: italic;}
 .pagneutral {}
 .pagact {}
 .paginact {}
+
+/*============== css fix for modules =================*/
+/* for profile module */
+.register-steps {text-align: left; font-size: .9em !important;}
+/* for publisher module */
+#tabs ul li {list-style: none;}
+/* for cbb/newbb module */
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #e5e5e5 !important; font-size:.9em; font-weight: normal;}

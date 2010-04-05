@@ -1,0 +1,7 @@
+XOOPS Simple Theme - Changelog
+
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- initial work based on idea template to Free CSS Templates (kris_fr)

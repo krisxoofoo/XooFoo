@@ -106,7 +106,7 @@ body {font-size:75%;}
 
 #xo-globalnav a:hover {	text-decoration: underline;}
 /* ====== hypertext links ===== */
-a {	text-decoration: none;	color: #704A21;}
+a {	text-decoration: none;	color: #474036;}
 a:visited, a:focus, a:hover, a:active {}
 
 /* ===== titles ===== */
@@ -114,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 				1em 0 .5em 0;
   line-height: 			1.2em;
   padding: 				0;
-  color: 				#F93D00;
+  color: 				#E06813;
   font-family: 			Georgia, "Times New Roman", Times, serif;
   font-weight: 			normal;
 }
@@ -173,7 +173,7 @@ legend {padding-left:.5em; font-size:1.2em; font-weight: bold;
 input, button, select {vertical-align: middle;}
 input {}
 label, .caption-text {font-weight: bold; text-shadow: 1px 1px 2px #ccc;}
-select {margin : 5px; background-color: #fff !important; padding: 6px; border: 2px inset #e5e5e5 !important; font-size:.9em; font-weight: normal;}
+select {margin : 5px; background-color: #fff !important; padding: 6px; border: 2px inset #ccc !important; font-size:.9em; font-weight: normal;}
 select[name=timezone_offset] {}
 select:focus {}
 textarea {}
@@ -186,7 +186,7 @@ textarea:focus {}
 input, textarea { 
 	margin: 		5px;
 	padding:		5px;
-	border: 		#E5E5E5 solid 1px;
+	border: 		#ccc solid 1px;
 	outline: 		0;
 	font-size: 		1.1em;
 }
@@ -230,7 +230,7 @@ input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, inpu
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-color: transparent;}
 
 #xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
-.xo-formfield.required label:after, .caption-marker { content: '*'; color: #ff0000; background-color: transparent;}
+.xo-formfield.required label:after, .caption-marker { content: '*'; color: #e06813; background-color: transparent;}
 .xoops-form-element-caption .caption-marker { display:none;}
 .xoops-form-element-caption-required .caption-marker {}
 .xoops-form-element-help {}
@@ -244,7 +244,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	color: 				#787878;
 	font-weight: 		bold;
 	font-size: 			1.1em;
-	border-top: 		1px dashed #C5DB76;
+	border-top: 		1px dashed #94B301;
 	padding-left: 		1em;
 }
 #mainmenu a:hover {
@@ -372,7 +372,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	width: 				960px;
 	background-color:	#474036;
 	padding: 			0 0 15px 0;
-	color: #E1F5A6;
+	color: #94B301;
 	margin: 			0 auto;
 	margin-bottom: 		1em;
 	font-family: 		Arial, Helvetica, sans-serif;
@@ -441,7 +441,7 @@ tr.odd td {}
 	font-size:					.9em;
 	color: 						inherit;
 	font-family: 				"Courier New",Courier,monospace; 
-	border: 					1px solid #aaa;
+	border: 					1px solid #787878;
 }
 .xoopsQuote {
 	margin-left:				.5em;
@@ -451,7 +451,7 @@ tr.odd td {}
 	font-family:				Georgia;
 	font-size:					.9em;
 	font-style:					italic;
-	border:						#aaa 1px dotted;
+	border:						#787878 1px dotted;
 }
 blockquote {font-style: italic; font-family:	Georgia;}
 
@@ -465,7 +465,7 @@ blockquote {font-style: italic; font-family:	Georgia;}
 	font-size: 					.9em;
 	font-style: 				italic;
 }
-.itemInfo a { background-color: transparent; color: #8AB52B;}
+.itemInfo a { background-color: transparent; color: #94B301;}
 .itemInfo a:hover {text-decoration: underline;}
 .itemTitle {
 	background-color: 			#E06813;
@@ -495,7 +495,7 @@ blockquote {font-style: italic; font-family:	Georgia;}
 	font-family: 				Arial, Helvetica, sans-serif;
 	font-style: 				italic;
 }
-.itemFoot a { background-color: transparent; color: #8AB52B;}
+.itemFoot a { background-color: transparent; color: #94B301;}
 .itemFoot a:hover {}
 .itemAdminLink {}
 .itemPermaLink {}
@@ -543,7 +543,7 @@ blockquote {font-style: italic; font-family:	Georgia;}
   width: 				100%;
   height: 				30px;
   background: 			none;
-  color: 				#333;
+  color: 				#474036;
   font-size: 			.9em;
 }
 body>#xo-footerstatic {  position: fixed;}
@@ -570,4 +570,4 @@ body>#xo-footerstatic {  position: fixed;}
 /*============== css fix for modules =================*/
 .register-steps {text-align: left; font-size: .9em !important;} /* profile */
 #tabs ul li {list-style: none;} /* publisher */
-div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #e5e5e5 !important; font-size:.9em; font-weight: normal;} /* newbb - cbb */
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #ccc !important; font-size:.9em; font-weight: normal;} /* newbb - cbb */

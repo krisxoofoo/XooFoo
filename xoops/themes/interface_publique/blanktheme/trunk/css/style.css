@@ -106,6 +106,7 @@ abbr[title] {}
 acronym:hover, abbr:hover {}
 ::selection {}
 	::-moz-selection {}
+:target {}
 /* ===== lists ===== */
 #xo-canvas-content ol {}
 #xo-canvas-content ul {}

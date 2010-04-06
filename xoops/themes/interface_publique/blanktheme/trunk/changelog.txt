@@ -7,6 +7,7 @@ Version 1.1 ( for xoops 2.4.x )
 - Add style sheat for fonts (kris)
 - Add language files (kris & XDT)
 - Change style position for logo and banner in header
+- fix smarty xoops_module_themeurl
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

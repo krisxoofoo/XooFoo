@@ -42,7 +42,7 @@ body {font-size:75%;}
 #xo-canvas {	width: 1000px; margin: 0 auto;}
 #xo-canvas-content {margin-top: 1em;}
 #xo-canvas-columns {}
-#xo-page {}
+#xo-page { min-width: 620px;}
 /* ===== header ===== */
 #xo-header {	
 	width: 				100%;

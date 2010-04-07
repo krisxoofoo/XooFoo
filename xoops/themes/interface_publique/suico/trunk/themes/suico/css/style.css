@@ -41,7 +41,7 @@ body {font-size:75%;}
 #xo-canvas { width:	100%; margin: 0 auto;}
 #xo-canvas-content {	width: 1020px; margin:10px auto;}
 #xo-canvas-columns {}
-#xo-page {}
+#xo-page { min-width: 600px;}
 /* ===== header ===== */
 #xo-header {	height: 110px;}
 #xo-banner { width: 1020px; height:85px;	margin: 0 auto;}

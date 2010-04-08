@@ -279,9 +279,14 @@ blockquote { font-style: italic;}
 .signature {}
 
 /* ===== pages navigation ===== */
+#xo-pagenav {}
+
 .pagneutral {}
 .pagact {}
 .paginact {}
+
+.xo-counterpage {}
+.xo-pagarrow {}
 
 /*============== css fix for modules =================*/
 /* for profile module */

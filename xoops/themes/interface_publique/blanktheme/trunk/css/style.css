@@ -210,6 +210,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	margin:					0;
 	text-align:				center;	
 }
+#xo-copyright {}
 
 /* ===== tables and cells ===== */
 table {width:100%; margin: .5em 0 1em 0; border-collapse: collapse;}

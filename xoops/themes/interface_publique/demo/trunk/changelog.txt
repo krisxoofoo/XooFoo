@@ -1,0 +1,7 @@
+XOOPS Demo Theme - Changelog
+
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- initial work based on Simple Xoops Theme (kris_fr)

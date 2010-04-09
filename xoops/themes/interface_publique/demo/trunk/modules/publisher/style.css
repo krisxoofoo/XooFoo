@@ -1,0 +1,40 @@
+/*
+ * Demo Theme
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+/* IMPORTANT !!! :
+	propriety semantic order =	position box, width, heigth, margin, background-color, background-image, padding, content (color, style font, ...), border, ...
+*/
+
+/* kris_fr change width canvas, banner and logo position, bakcground-color for horizontal menu in header and titles in left and right columns */
+	 
+#xo-canvas {	width: 95%;}
+#xo-headerlogo {	float: 	right;}
+#xo-headerbanner {float:left;}
+
+#xo-globalnav {	background-color: 	#94B301;}
+
+/* ===== block main menu ===== */
+#mainmenu a:hover {	background-color: 	#000;}
+
+/* ===== left column ===== */
+#xo-canvas-leftcolumn .xo-blocktitle  {	background-color: 	#E06813;}
+
+/* ===== right column ===== */
+#xo-canvas-rightcolumn .xo-blocktitle {	background-color: 	#E06813;}
+#xo-page .xo-blockszone .xo-blocktitle {	background-color: 	#0180B3;}
+
+/* ===== footer ===== */
+#xo-footer {	width: 	100%;}
+
+/* rss button in footer */
+#xo-rss {	margin:	8px 0 0 90%;}

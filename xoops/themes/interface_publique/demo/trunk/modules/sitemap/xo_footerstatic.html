@@ -1,0 +1,133 @@
+<{php}>
+define("THEME_WELLCOME",				"Bienvenue");
+define("THEME_EDITPROFILE",				"Editer son profil");
+define("THEME_NOTIFICATION",			"Voir ses notifications");
+define("THEME_MESSAGE",					"Voir ses messages");
+define("THEME_YOUHAVE",					"Vous avez");
+define("THEME_NOTREAD",					"message(s) non lu(s)");
+define("THEME_MYACCOUNT",				"Mon compte");
+define("THEME_SEARCH",					"Recherche");
+define("THEME_DESC_SEARCH",				"Recherche sur le site");
+define("THEME_KEYWORDS",				"Saisissez les mots-clés");
+define("THEME_UPTOP",					"Haut de page");
+define("THEME_USER",					"Utilisateurs");
+define("THEME_CPHOME",					"Administration");
+define("THEME_SYSOPTIONS",				"Options");
+define("THEME_BANS",					"Gérer les bannières publicitaires");
+define("THEME_BKAD",					"Gérer les blocs");
+define("THEME_ADGS",					"Gérer les groupes");
+define("THEME_PREF",					"Préférences");
+define("THEME_INSTALLEDMODULES",		"Gérer les modules installés");
+define("THEME_IMAGES",					"Images");
+define("THEME_MDAD",					"Modules");
+define("THEME_SMLS",					"Gérer les émoticônes");
+define("THEME_RANK",					"Rang des utilisateurs");
+define("THEME_EUSER",					"Editer les utilisateurs");
+define("THEME_FINDUSER",				"Chercher un utilisateur");
+define("THEME_MLUS",					"Envoyer un courriel");
+define("THEME_AVATARS",					"Gérer les avatars");
+define("THEME_TPLS",					"Gérer les templates");
+define("THEME_COMMENTS",				"Gérer les commentaires");
+<{/php}>
+<style rel="stylesheet" type="text/css" media="screen,projection">
+#xo-footerstatic * {	margin: 0; padding: 0;}
+#xo-footerstatic {
+	position: 			absolute;
+	left: 				0;
+	bottom: 			0;
+	width: 				100%;
+	height: 			30px;
+	background: 		none;
+	color: 				#000;
+	font-size: 			11px;
+}
+body>#xo-footerstatic {  position: fixed;}
+#xo-footerstatic #controls {
+	margin: 			0 20px 0 20px;
+	background-color: 	#fff;
+	line-height: 		39px;
+	text-shadow:		2px 2px 3px #aaa;
+	border: 			1px solid #b5b5b5;
+	border-bottom: 		none;
+}
+#xo-footerstatic #controls  {
+	margin-top: 		1px;
+	background-color: 	#E7F4F7;
+	padding: 			3px 10px 0 10px;
+}
+#xo-footerstatic .separator { margin-left: 3px; border-left: 1px solid #b5b5b5;}
+#xo-footerstatic #controls ul, li { margin: 0;  padding: 0;}
+#xo-footerstatic #controls ul { list-style: none; font-weight:bold;}
+#xo-footerstatic #controls li {
+	display: 			inline-block;
+	height: 			29px;
+	line-height: 		27px;
+	padding-right: 		6px;
+}
+#xo-footerstatic .icon { vertical-align: text-bottom;}
+#xo-footerstatic .icon-chat { padding-top: 3px;}
+#xo-footerstatic .chat, .icon-chat { float: right;}
+#xo-footerstatic .text { vertical-align: top;}
+
+#xo-logger-output {
+	margin-bottom : 	35px;
+	font-size: 			.8em;
+}
+</style>
+
+<!-- change img links with new smarty, eg : <{xoImgUrl icons/footer/home.png}> by <{$xoops_module_themeurl}>/icons/footer/home.png -->
+
+
+<div id="xo-footerstatic">
+	<div id="controls">
+		<div>
+			<ul>
+				<li class="icon"><a href="<{xoAppUrl /}>" title="<{$smarty.const._YOURHOME}>"><img src="<{$xoops_module_themeurl}>/icons/footer/home.png" alt="<{$smarty.const._YOURHOME}>" /></a></li>
+				<li class="separator">&nbsp;</li>
+				<li class="text"><a href="<{xoAppUrl modules/system/admin.php?fct=preferences}>" title="<{$smarty.const.THEME_PREF}>"><{$smarty.const.THEME_PREF}></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=preferences&op=show&confcat_id=1}>" title="<{$smarty.const.THEME_CPHOME}>"><img src="<{$xoops_module_themeurl}>/icons/footer/prefs_small.png" alt="<{$smarty.const._CPHOME}>" /></a></li>
+				<li class="icon"><a href="<{xoAppUrl admin.php}>" title="<{$smarty.const._CPHOME}>"><img src="<{$xoops_module_themeurl}>/icons/footer/process.png" alt="<{$smarty.const._CPHOME}>" /></a></li>
+				<li class="separator">&nbsp;</li>
+				<li class="text"><a href="<{xoAppUrl modules/system/admin.php?fct=modulesadmin}>" title="<{$smarty.const.THEME_INSTALLEDMODULES}>"><{$smarty.const.THEME_MDAD}></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=modulesadmin}>" title="<{$smarty.const.THEME_INSTALLEDMODULES}>"><img src="<{$xoops_module_themeurl}>/icons/footer/modules_small.png" title="<{$smarty.const.THEME_INSTALLEDMODULES}>"></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=blocksadmin}>" title="<{$smarty.const.THEME_BKAD}>"><img src="<{$xoops_module_themeurl}>/icons/footer/blocks_small.png" alt=""/></a></li>
+				<li class="separator">&nbsp;</li>
+				<li class="text"><a href="<{xoAppUrl modules/system/admin.php?fct=users}>" title="<{$smarty.const.THEME_USER}>"><{$smarty.const.THEME_USER}></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=groups}>" title="<{$smarty.const.THEME_ADGS}>"><img src="<{$xoops_module_themeurl}>/icons/footer/groups_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=userrank}>" title="<{$smarty.const.THEME_RANK}>"><img src="<{$xoops_module_themeurl}>/icons/footer/userrank_small.png" alt=""/></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=users}>" title="<{$smarty.const.THEME_EUSER}>"><img src="<{$xoops_module_themeurl}>/icons/footer/edituser_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=findusers}>" title="<{$smarty.const.THEME_FINDUSER}>"><img src="<{$xoops_module_themeurl}>/icons/footer/finduser_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=mailusers}>" title="<{$smarty.const.THEME_MLUS}>"><img src="<{$xoops_module_themeurl}>/icons/footer/mailuser_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=comments}>" title="<{$smarty.const.THEME_COMMENTS}>"><img src="<{$xoops_module_themeurl}>/icons/footer/comments_small.png" alt=""/></a></li>
+				<li class="separator">&nbsp;</li>
+				<li class="text"><a href="<{xoAppUrl modules/system/admin.php?fct=images}>" title="<{$smarty.const.THEME_IMAGES}>"><{$smarty.const.THEME_IMAGES}></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=images}>" title="<{$smarty.const.THEME_IMAGES}>"><img src="<{$xoops_module_themeurl}>/icons/footer/images_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=avatars}>" title="<{$smarty.const.THEME_AVATARS}>"><img src="<{$xoops_module_themeurl}>/icons/footer/avatar_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=smilies}>" title="<{$smarty.const.THEME_SMLS}>"><img src="<{$xoops_module_themeurl}>/icons/footer/smilies_small.png" alt=""/></a></li>
+				<li class="icon"><a href="<{xoAppUrl modules/system/admin.php?fct=banners}>" title="<{$smarty.const.THEME_BANS}>"><img src="<{$xoops_module_themeurl}>/icons/footer/banners_small.png" alt=""/></a></li>
+				<li class="separator">&nbsp;</li>
+
+				<li class="chat text"><a href="#" title="<{$smarty.const.THEME_UPTOP}>"><img src="<{$xoops_module_themeurl}>/icons/footer/up.png" alt="<{$smarty.const.THEME_UPTOP}>" alt=""/></a></li>
+				<li class="chat separator">&nbsp;</li>	
+				<li class="chat text">Powered by <a href="http://sourceforge.net/projects/xoops/" title="XOOPS Key : <{$smarty.const.XOOPS_LICENSE_KEY}>"><{$xoops_version}></a></li>
+				<li class="chat separator">&nbsp;</li>			
+				<li class="chat"><a href="<{xoAppUrl /user.php op=logout}>" title="<{$smarty.const._LOGOUT}>" ><img src="<{$xoops_module_themeurl}>/icons/footer/logout.png" alt="<{$smarty.const._LOGOUT}>"/></a></li>
+				<!-- for my message box  -->
+				<{xoInboxCount assign=pmcount}>
+					<li class="chat"><a href="<{xoAppUrl viewpmsg.php}>" title="<{$smarty.const.THEME_MESSAGE}> (<{$pmcount}>)">
+					<{if $pmcount}>
+						<!-- if I have messages -->
+						<img src="<{$xoops_module_themeurl}>/icons/footer/mail_warning.png" alt="(<{$pmcount}>) <{$smarty.const.THEME_NOTREAD}>"/>(<span class="shadow" style="color:#ff0000; font-weight: bold;"><{$pmcount}></span>)
+					<{else}>
+						<!-- if I do not have a message -->
+						<img src="<{$xoops_module_themeurl}>/icons/footer/mail.png" alt="<{$smarty.const.THEME_MESSAGE}>"/>
+					<{/if}>
+					</a></li>
+				<li class="chat"><a href="<{xoAppUrl /notifications.php}>" title="<{$smarty.const.THEME_NOTIFICATION}>"><img src="<{$xoops_module_themeurl}>/icons/footer/comment_accept.png" alt="<{$smarty.const.THEME_NOTIFICATION}>"/></a></li>
+							<li class="chat"><a href="<{xoAppUrl modules/profile/edituser.php}>" title="<{$smarty.const.THEME_EDITPROFILE}>"><img src="<{$xoops_module_themeurl}>/icons/footer/user_edit.png" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a></li>
+							<li class="chat"><a href="<{xoAppUrl /user.php}>" title="<{$smarty.const.THEME_MYACCOUNT}>"><img src="<{$xoops_module_themeurl}>/icons/footer/user.png" alt="<{$smarty.const.THEME_MYACCOUNT}>"/></a></li>
+				<li class="chat separator">&nbsp;</li>
+			</ul>
+		</div>
+	</div>
+</div>

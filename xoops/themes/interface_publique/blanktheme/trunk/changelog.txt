@@ -1,5 +1,10 @@
 XOOPS Blank Theme - Changelog
 
+============================
+Version 1.2 ( for xoops 2.4.x )
+============================
+- Deplace xo-canvas-content div in xo_page.html
+- Add two new xo_page.html (left center bottom and center right bottom) in extras folder
 
 ============================
 Version 1.1 ( for xoops 2.4.x )

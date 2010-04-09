@@ -206,6 +206,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 /* ===== footer ===== */
 #xo-footer {
 	clear: 					both;
+	float:					left;
 	width:					100%;
 	margin:					0;
 	text-align:				center;	

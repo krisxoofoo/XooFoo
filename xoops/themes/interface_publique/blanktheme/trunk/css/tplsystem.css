@@ -22,7 +22,12 @@
 .successMsg a  {}
 
 /* ============ Style for debug mode ============ */
-#xo-logger-output { margin-bottom : 15px; font-size: .8em;}
+#xo-logger-output {
+	float: 				left;
+	width: 				100%;
+	padding-bottom: 	20px;
+	font-size: 			.9em;
+}
 #xo-logger-tabs {}
 #xo-logger-tabs  a {}
 #xo-logger-tabs  a:hover {}

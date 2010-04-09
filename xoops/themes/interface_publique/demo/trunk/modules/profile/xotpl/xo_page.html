@@ -1,10 +1,8 @@
+<!-- kris_fr replace old xo_page.html and layout-soup.css by files in xo_page_html.rcb.zip (file in extras folder) after dezip -->
 <!-- [* $Id$ *] -->
 <div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
 	<div id="xo-canvas-columns">
-		<div id="xo-content-caption"><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> <{else}> <{$xoops_meta_description}><{/if}></div>
-
-		<!-- kris_fr delete left columns and paste code in xo-canvas after the xo-canvas-content div -->
-			
+		<div id="xo-content-caption"><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> <{else}> <{$xoops_meta_description}><{/if}></div>		
 			<div id="xo-page">
 			<!-- Start Center Column -->
 				<!-- Display center top blocks if any -->
@@ -40,6 +38,12 @@
 </div>
 <!-- Include Socialbookmark bar -->
 <{if $theme_view_socialbookmark}><{includeq file="$theme_name/xo_socialbookmark.html"}><{/if}>
+<!-- Start Right Column --><!-- kris paste right columns here -->
+<{if $xoBlocks.canvas_left && $theme_view_leftcolumn}>
+	<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_left
+		zoneClass='xo-canvas-column' zoneId='xo-canvas-leftcolumn' zoneTag='div'
+	}>
+<{/if}>
 		
 
 		

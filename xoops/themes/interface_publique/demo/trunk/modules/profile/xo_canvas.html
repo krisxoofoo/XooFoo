@@ -2,7 +2,7 @@
 <!-- Theme others parameters -->
 	<{includeq file="$theme_name/xo_thm_parameters.html"}>
 <!-- Metas, Titles, and Style Sheets -->
-	<{includeq file="$xoops_module_theme/xotpl/xo_metas.html"}> <!-- kris replace $theme_name by $xoops_module_theme/xoptpl -->
+	<{includeq file="$xoops_module_theme/xotpl/xo_metas.html"}> <!-- kris replace $theme_name by $xoops_module_theme/xotpl -->
 <!-- Additionals Scripts -->
 	<{includeq file="$theme_name/xo_scripts.html"}>
 </head>
@@ -23,12 +23,6 @@
 			<{/if}>
 			<!-- Include Content Columns -->
 			<{includeq file="$xoops_module_theme/xotpl/xo_page.html"}> <!-- kris replace $theme_name by $xoops_module_theme/xotpl -->
-			<!-- Start Right Column --><!-- kris paste right columns here -->
-			<{if $xoBlocks.canvas_left && $theme_view_leftcolumn}>
-				<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_left
-					zoneClass='xo-canvas-column' zoneId='xo-canvas-leftcolumn' zoneTag='div'
-				}>
-			<{/if}>
 			<!-- Include Footer -->
 			<{if $theme_view_footer}><{includeq file="$theme_name/xo_footer.html"}><{/if}> 
 		</div><!-- End xo-canvas -->

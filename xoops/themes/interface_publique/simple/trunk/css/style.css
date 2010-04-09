@@ -369,10 +369,11 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 
 /* ===== footer ===== */
 #xo-footer {
-	width: 				960px;
+	float:				left;
+	width: 				1000px;
 	background-color:	#474036;
 	padding: 			0 0 15px 0;
-	color: #94B301;
+	color: 				#94B301;
 	margin: 			0 auto;
 	margin-bottom: 		1em;
 	font-family: 		Arial, Helvetica, sans-serif;

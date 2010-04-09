@@ -22,11 +22,7 @@
 				</div>
 			<{/if}>
 			<!-- Include Content Columns -->
-			<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
-				<{includeq file="$theme_name/xo_page.html"}>
-			</div>
-			<!-- Include Socialbookmark bar -->
-			<{if $theme_view_socialbookmark}><{includeq file="$theme_name/xo_socialbookmark.html"}><{/if}>
+			<{includeq file="$theme_name/xo_page.html"}>
 			<!-- Include Footer -->
 			<{if $theme_view_footer}><{includeq file="$theme_name/xo_footer.html"}><{/if}> 
 		</div><!-- End xo-canvas -->

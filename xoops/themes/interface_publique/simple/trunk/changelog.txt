@@ -1,5 +1,9 @@
 XOOPS Simple Theme - Changelog
 
+============================
+Version 1.1 ( for xoops 2.4.x )
+============================
+- harmonize with blanktheme 1.2 (kris_fr)
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

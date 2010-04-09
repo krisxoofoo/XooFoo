@@ -103,9 +103,8 @@ a img { border: none;}
 /* ===== other attributes of contents ===== */
 p { margin-top: .5em; margin-bottom:	 .5em; text-align: justify;}
 hr{ height: 72px; background: url(../img/hr.png) no-repeat top center;}
+em { font-style: italic;}
 strong, b, dfn { font-weight: bold;}
-u {text-decoration: underline;}
-i, em { font-style: italic;}
 del { text-decoration: line-through;}
 address	{ font-style: normal; letter-spacing: .1em;}
 small {font-size: .8em;}

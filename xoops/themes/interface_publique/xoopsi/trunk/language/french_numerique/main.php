@@ -20,6 +20,9 @@ define("THEME_SEARCH",					"Recherche");
 define("THEME_DESC_SEARCH",				"Recherche sur le site");
 define("THEME_KEYWORDS",				"Saisissez les mots-cl&#233;s");
 
+define("THEME_TWITME",					"Suivre mes Twit !");
+define("THEME_FANFACE",					"Devenir un de nos Fan !");
+
 // blockszone and centerblocks.html
 define("THEME_THISBLOCK_EDIT",			"Editer le bloc");
 define("THEME_VIEWALL",					"Tout afficher");

@@ -34,7 +34,7 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 	padding: 		0;
 }
 
-#xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top; display:table-cell;}
+#xo-canvas-leftcolumn, #xo-page { vertical-align: top; display:table-cell;}
 
 /*========== Canvas rules (when content are visible) ===========*/
 #xo-content { margin: 10px;}

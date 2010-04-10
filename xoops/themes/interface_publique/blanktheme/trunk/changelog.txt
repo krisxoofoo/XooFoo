@@ -1,5 +1,7 @@
 XOOPS Blank Theme - Changelog
 
+Documentation on line --> http://dev.xoofoo.org/BlankTheme/
+
 ============================
 Version 1.2 ( for xoops 2.4.x )
 ============================

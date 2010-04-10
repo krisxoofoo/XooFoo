@@ -1,16 +1,16 @@
 <?php
 /**
- * XOOPS simple theme language file
+ * XOOPS Demo Theme language file
  * @copyright   The Xoops project http://www.xoops.org/
  * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
- * @author      kris_fr
+ * @author      kris_fr for Xoops Design Team
  * @translator  kris_fr
  * @version     $Id$
  */
  
 // généralités
-define("THEME_NAME",					"Blank Theme");
-define("THEME_DESC",					"This is a blank theme for Xoops");
+define("THEME_NAME",					"Demo Theme");
+define("THEME_DESC",					"This is a demo theme for Xoops");
 define("THEME_DESIGNER",				"Design by kris_fr for <a rel='external' href='http://www.xoops.org/' title='XOOPS Design Team'>XOOPS Design Team</a>");
 define("THEME_VALIDCSS",				"Ce thème est valide W3C pour le CSS 1 et 2");
 define("THEME_VALIDXHTML",				"Ce thème est valide W3C pour le XHTML 1.01");
@@ -203,5 +203,10 @@ define("THEME_ADMFILES",				"Gestionnaire de fichiers");
 define("THEME_ADMCLEAN",				"Opérations de maintenance");
 define("THEME_SYSSETTING",				"Options Module Système");
 define("THEME_UPTOP",					"Remonter en haut de page");
-		
+
+// xo_blockadmin.html - add by kris_fr for demo theme */
+define("THEME_THISBLOCK_EDIT",			"Editer ce bloc");
+define("THEME_THISBLOCK_DELETE",		"Supprimer ce bloc");
+define("THEME_THISBLOCK_ADD",			"Ajouter un bloc");
+
 ?>

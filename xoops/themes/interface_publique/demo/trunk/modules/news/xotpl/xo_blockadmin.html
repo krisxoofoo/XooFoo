@@ -1,0 +1,19 @@
+ <!-- kris_fr add new language define in themename/language/mylanguage/main.php -->
+<{if $xoops_isadmin}>
+	<div id="xo-blockadmin">
+		<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+			<!-- kris_fr change link for image -->
+			<img src="<{$xoops_module_themeurl}>/icons/action/cell_edit.png" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>">
+		</a>
+		<{if $block.module !='system'}>
+			<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=delete&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_DELETE}>" >
+				<!-- kris_fr change link for image -->
+				<img src="<{$xoops_module_themeurl}>/icons/action/deletecell.png" alt="<{$smarty.const.THEME_THISBLOCK_DELETE}>">
+			</a>
+		<{/if}>
+		<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin}>" title="<{$smarty.const.THEME_THISBLOCK_ADD}>" >
+			<!-- kris_fr change link for image -->
+			<img src="<{$xoops_module_themeurl}>/icons/action/insertcell.png" alt="<{$smarty.const.THEME_THISBLOCK_ADD}>">
+		</a>
+	</div>
+<{/if}>

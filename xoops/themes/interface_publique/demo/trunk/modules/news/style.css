@@ -21,3 +21,7 @@
 	position:				absolute;
 	margin:					8px 0 0 10px;
 }
+
+/* blockadmin buttons in right columns - xo_blockadmin.html include in blockzone.html */
+#xo-blockadmin {	text-align:	center;}
+#xo-blockadmin  img {padding: 0 4px 2px 4px;}

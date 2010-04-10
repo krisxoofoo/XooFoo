@@ -36,9 +36,9 @@
 				<{/if}>
 			<!-- Start Right Column -->
 				<{if $xoBlocks.canvas_right && $theme_view_rightcolumn}>
-					<{includeq file="$theme_name/blockszone.html" blocks=$xoBlocks.canvas_right
+					<{includeq file="$xoops_module_theme/xotpl/blockszone.html" blocks=$xoBlocks.canvas_right 
 						zoneClass='xo-canvas-column' zoneId='xo-canvas-rightcolumn' zoneTag='div'
-					}>
+					}> <!-- kris_fr replace theme_name by xoops_module_theme for include blockadmin buttons in blockszone.html -->
 				<{/if}>
 	</div>
 </div>

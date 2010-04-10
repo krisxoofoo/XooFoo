@@ -1,0 +1,15 @@
+<{if $xoops_isadmin && $theme_blockadmin}>
+	<div id="xo-blockadmin">
+		<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_EDIT}>" >
+			<img src="<{xoImgUrl icons/action/cell_edit.png}>" alt="<{$smarty.const.THEME_THISBLOCK_EDIT}>">
+		</a>
+		<{if $block.module !='system'}>
+			<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=delete&bid=}><{$block.id}>" title="<{$smarty.const.THEME_THISBLOCK_DELETE}>" >
+				<img src="<{xoImgUrl icons/action/deletecell.png}>" alt="<{$smarty.const.THEME_THISBLOCK_DELETE}>">
+			</a>
+		<{/if}>
+		<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin}>" title="<{$smarty.const.THEME_THISBLOCK_ADD}>" >
+			<img src="<{xoImgUrl icons/action/insertcell.png}>" alt="<{$smarty.const.THEME_THISBLOCK_ADD}>">
+		</a>
+	</div>
+<{/if}>

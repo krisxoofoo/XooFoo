@@ -1,9 +1,9 @@
 <?php
 /**
- * XOOPS simple theme language file
+ * XOOPS Demo Theme language file
  * @copyright   The Xoops project http://www.xoops.org/
  * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
- * @author      kris_fr
+ * @author      kris_fr for Xoops Design Team
  * @translator  kris_fr
  * @version     $Id$
  */
@@ -203,5 +203,10 @@ define("THEME_ADMFILES",				"Files Manager");
 define("THEME_ADMCLEAN",				"Maintenance");
 define("THEME_SYSSETTING",				"System Module Settings");
 define("THEME_UPTOP",					"Top Page");
+
+// xo_blockadmin.html - add by kris_fr for demo theme */
+define("THEME_THISBLOCK_EDIT",			"Edit this block");
+define("THEME_THISBLOCK_DELETE",		"Delete this block");
+define("THEME_THISBLOCK_ADD",			"Add a block");
 
 ?>

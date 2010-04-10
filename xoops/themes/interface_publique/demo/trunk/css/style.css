@@ -475,6 +475,7 @@ blockquote {font-style: italic; font-family:	Georgia;}
 	padding: 					8px 20px 8px 20px;
 	color: 						#fff;
 	letter-spacing: 			-.5px;
+	line-height:				2.3em;
 	font-size: 					1.2em;
 	font-weight: 				bold;
 	border-radius: 				5px;
@@ -536,7 +537,7 @@ blockquote {font-style: italic; font-family:	Georgia;}
 #xo-pagenav {
     margin:                 7px 0;
     text-align:             center;
-    font-size:              1.05em;
+    font-size:              .9em;
 }
 #xo-pagenav a { text-decoration: none;}
 #xo-pagenav a:hover {
@@ -610,3 +611,4 @@ body>#xo-footerstatic {  position: fixed;}
 .register-steps {text-align: left; font-size: .9em !important;} /* profile */
 #tabs ul li {list-style: none;} /* publisher */
 div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #ccc !important; font-size:.9em; font-weight: normal;} /* newbb - cbb */
+#xo-pagenav u { text-decoration: none;} /* news */

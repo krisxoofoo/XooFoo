@@ -181,7 +181,7 @@ textarea:focus {}
 #xo-page label {}
 button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {
 	padding: 8px;
-	background-color: #51615B ;
+	background-color: #51615B;
 	color:#fff;
 	border:1px solid #333;
 	border-radius: 				5px;
@@ -245,6 +245,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-canvas-leftcolumn .xo-block { margin-bottom: 1.5em;}
 #xo-canvas-leftcolumn .xo-blocktitle  { margin:0 0 5px 10px; background:url(../img/bg_CS.jpg) no-repeat left; padding:5px 0 5px 30px; line-height:24px; letter-spacing:-1px; color:#e2c47c; font:normal 1.5em Arial, Helvetica, sans-serif;}
 #xo-canvas-leftcolumn .xo-blockcontent {}
+
 /* specific for block user and main menu */
 #xo-block-system-1 { width:180px; height: 212px; margin:0;background: url(../img/menu_bgbg.gif) no-repeat top; padding:0 0 10px 10px; }
 #xo-block-system-5 { width:180px; margin:0; background: url(../img/menu_bgbg.gif) no-repeat bottom; padding:0 0 10px 10px; }

@@ -7,7 +7,7 @@
 			  <form method="post" action="<{xoAppUrl /user.php op=login}>">
 			  <input name="uname" type="text" value="<{$smarty.const.THEME_DESC_PSEUDO}>" onfocus="if(this.value=='<{$smarty.const.THEME_DESC_PSEUDO}>')this.value=''" onblur="if(this.value=='')this.value='<{$smarty.const.THEME_DESC_PSEUDO}>'"/>
 			   <div class="blank"></div>
-			  <input name="pass" type="text" value="<{$smarty.const.THEME_DESC_PASSWORD}>" onfocus="if(this.value=='<{$smarty.const.THEME_DESC_PASSWORD}>')this.value=''" onblur="if(this.value=='')this.value='<{$smarty.const.THEME_DESC_PASSWORD}>'"/>
+			  <input name="pass" type="password" value="<{$smarty.const.THEME_DESC_PASSWORD}>" onfocus="if(this.value=='<{$smarty.const.THEME_DESC_PASSWORD}>')this.value=''" onblur="if(this.value=='')this.value='<{$smarty.const.THEME_DESC_PASSWORD}>'"/>
 			  <input type="hidden" name="xoops_redirect" value="<{$smarty.server.REQUEST_URI}>" />
 					<{if $lang_siteclosemsg}>
 						<input type="hidden" name="xoops_login" value="1" />

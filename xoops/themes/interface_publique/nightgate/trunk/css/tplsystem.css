@@ -11,7 +11,7 @@
  * @version         $Id
 */
 
-#xo-logger-output { padding-bottom: 20px; font-size: .9em;}
+#xo-logger-output { padding-bottom: 20px; color: #fff; font-size: .9em;}
 #xo-logger-tabs {
     margin-top: 				-2px;
     padding-top: 				8px;

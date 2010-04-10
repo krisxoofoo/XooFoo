@@ -20,10 +20,8 @@
 				</div>
 			<{/if}>
 			<!-- Include Content Columns -->
-			<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
-				<{includeq file="$theme_name/xo_page.html"}>
-
-			</div>
+			<{includeq file="$theme_name/xo_page.html"}>
+			<!-- include banner -->
 			<{if $xoops_banner and $xoops_banner != '&nbsp;'}>
 				<div id="xo-headerbanner"><{$xoops_banner|smarty:nodefaults}></div>
 			<{/if}>

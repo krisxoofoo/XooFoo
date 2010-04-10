@@ -11,6 +11,7 @@
  * @version         $Id
 */
 
+
 /* ============ Style for debug mode ============ */
 #xo-logger-output { padding-bottom: 20px; font-size: .9em;}
 #xo-logger-tabs {
@@ -21,7 +22,7 @@
     padding-right:				2%;
 	font-weight: 				bold;
 }
-#xo-logger-tabs  a {color:	#fff;}
+#xo-logger-tabs  a {color:	#333;}
 /* ===== core messages ===== */
 .highlight {	color:#ff0000 !important; font-weight:bold; text-shadow: 1px 1px 2px #ccc;}
 .errorMsg,.confirmMsg, .resultMsg, .successMsg  {

@@ -30,7 +30,7 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 html, body {
 	max-width: 			100%;
 	margin:				0 auto;
-	background-color:#f4e7bd;
+	background-color:	#f4e7bd;
 	color:				#333;
 	font-family:		"Lucida Grande", Verdana, sans-serif;
 	line-height:		1.5em;

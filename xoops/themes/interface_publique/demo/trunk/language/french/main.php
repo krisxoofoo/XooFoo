@@ -205,7 +205,6 @@ define("THEME_SYSSETTING",				"Options Module Système");
 define("THEME_UPTOP",					"Remonter en haut de page");
 
 // xo_blockadmin.html - add by kris_fr for demo theme */
-define("THEME_THISBLOCK_EDIT",			"Editer ce bloc");
 define("THEME_THISBLOCK_DELETE",		"Supprimer ce bloc");
 define("THEME_THISBLOCK_ADD",			"Ajouter un bloc");
 

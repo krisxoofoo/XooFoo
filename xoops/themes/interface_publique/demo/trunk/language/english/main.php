@@ -205,7 +205,6 @@ define("THEME_SYSSETTING",				"System Module Settings");
 define("THEME_UPTOP",					"Top Page");
 
 // xo_blockadmin.html - add by kris_fr for demo theme */
-define("THEME_THISBLOCK_EDIT",			"Edit this block");
 define("THEME_THISBLOCK_DELETE",		"Delete this block");
 define("THEME_THISBLOCK_ADD",			"Add a block");
 

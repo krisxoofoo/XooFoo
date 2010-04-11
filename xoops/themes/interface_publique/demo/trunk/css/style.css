@@ -506,7 +506,7 @@ blockquote {font-style: italic; font-family:	Georgia;}
 
 /* ===== forums (content-type in example) ===== */
 .comTitle {	font-weight: bold;}
-.comTitle a { background-color: tranparent; color: #fff;}
+.comTitle a { background-color: transparent; color: #fff;}
 .comTitle a:hover {text-decoration: underline;}
 .comText { margin: .5em;}
 .comUserStat { margin: 3px; padding: 2px; font-size: .85em; border: #ccc 1px solid; text-align: left; line-height:1.2em;}

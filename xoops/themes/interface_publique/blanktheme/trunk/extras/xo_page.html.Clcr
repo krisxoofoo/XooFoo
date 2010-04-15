@@ -41,5 +41,3 @@
 				<{/if}>
 	</div>
 </div>
-<!-- Include Socialbookmark bar -->
-<{if $theme_view_socialbookmark}><{includeq file="$theme_name/xo_socialbookmark.html"}><{/if}>

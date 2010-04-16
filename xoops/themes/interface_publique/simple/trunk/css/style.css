@@ -609,3 +609,4 @@ body>#xo-footerstatic {  position: fixed;}
 .register-steps {text-align: left; font-size: .9em !important;} /* profile */
 #tabs ul li {list-style: none;} /* publisher */
 div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; border: 2px inset #ccc !important; font-size:.9em; font-weight: normal;} /* newbb - cbb */
+#xo-pagenav u { text-decoration: none;} /* news */

@@ -1,15 +1,7 @@
 <!-- [* $Id$ *] -->
 <div id="xo-footer" <{if $xoops_isadmin}>class="xo-footbottom"<{/if}>>
 	<!-- add by kris_fr for img/link facebook and twitter -->
-	<div id="xo-followme">
-			<a href="<{xoAppUrl backend.php}>" title="<{$smarty.const.THEME_TWITME}>">
-				<img src="<{$xoops_module_themeurl}>/img/twitter.png" alt="<{$smarty.const.THEME_TWITME}>" />
-			</a>
-			<a href="<{xoAppUrl backend.php}>" title="<{$smarty.const.THEME_FANFACE}>">
-				<img src="<{$xoops_module_themeurl}>/img/facebook.png" alt="<{$smarty.const.THEME_FANFACE}>" />
-			</a>
-	</div>
-	<!-- end add -->
+	<{includeq file="$xoops_module_theme/xotpl/xo_followme.html"}>
 	
 	<div id="xo-rss">
 		<a href="<{xoAppUrl backend.php}>" title="<{$smarty.const.THEME_RSS}>">

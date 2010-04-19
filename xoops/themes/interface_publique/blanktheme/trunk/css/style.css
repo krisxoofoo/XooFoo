@@ -193,6 +193,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-page .xo-blockszone .xo-blocktitle {}
 #xo-page .xo-blockszone .xo-blockcontent {}
 #xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {}
 #xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
 #xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
 #xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,

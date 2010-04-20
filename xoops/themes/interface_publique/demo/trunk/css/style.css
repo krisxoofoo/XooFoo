@@ -81,6 +81,8 @@ body {font-size:75%;}
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 
 #xo-globalnav ul {
@@ -214,6 +216,8 @@ button, input[type=submit], input[type=button], input[type=reset], .xo-formbutto
 	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 	border-radius: 				5px;
 		-moz-border-radius: 	5px;
 		-webkit-border-radius: 	5px;
@@ -258,6 +262,8 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 #mainmenu a:active, #mainmenu a.current {
 	background-color: 	#ccc;
@@ -268,6 +274,8 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 #mainmenu a:visited {}
 #mainmenu a.menuTop  {border-top: none;}
@@ -317,6 +325,8 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 #xo-canvas-leftcolumn .xo-blockcontent {padding: .5em;}
 
@@ -336,6 +346,8 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 #xo-canvas-rightcolumn .xo-blockcontent {padding: .5em;}
 
@@ -356,9 +368,12 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px; background-c
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 #xo-page .xo-blockszone .xo-blockcontent {padding: .5em; text-align: justify;}
 #xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {}
 #xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
 #xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
 #xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
@@ -414,6 +429,8 @@ th, th.head, thead {
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 th.head a {}
 th.head a:hover {}
@@ -484,6 +501,8 @@ blockquote {font-style: italic; font-family:	Georgia;}
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 .itemTitle a {background-color: transparent; color: #fff;}
 .itemTitle a:hover {}
@@ -547,6 +566,8 @@ blockquote {font-style: italic; font-family:	Georgia;}
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 .xo-pagact {
     margin:                 0;
@@ -560,6 +581,8 @@ blockquote {font-style: italic; font-family:	Georgia;}
 	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
 		-webkit-box-shadow: 0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
 }
 .xo-counterpage, .xo-pagarrow {
     margin:                 0;

@@ -1,0 +1,107 @@
+﻿################################################## ##############################
+# Nom du fichier: Activer SSL.txt
+# Created By: The Uniform Server Development Team
+################################################## ##############################
+
+Le serveur a été pré-configuré pour exécuter le protocole SSL, le lieu, une pages / site
+vous souhaitez être cryptée dans le dossier racine "SSL".
+
+Uniform Server n'inclut pas de certificat de serveur de test/d'où une paire de clés par défaut
+installation a SSL désactivé. La raison est une question de sécurité un certificat/paire de clés
+doit être unique pour ce serveur après avoir créé un nouveau certificat de serveur/paire de clés
+SSL est automatiquement activé dans le fichier de configuration d'Apache.
+
+1) Création d'un nouveau certificat de serveur et la clé.
+
+    Pour créer un nouveau certificat de serveur et utilisez la touche d'une des méthodes suivantes:
+
+    a) Un groupe spécial:
+
+    Menu de gauche, faites défiler vers le bas jusqu'à "Plugin Manager" et cliquez sur le lien "Server Key & Cert Gen"
+    Une nouvelle page s'ouvre "Certificat de serveur et de génération de clés lien" cliquez sur "Générer".
+
+    b) Un groupe spécial:
+
+    Menu de gauche, cliquez sur le lien "Server Security" une nouvelle page s'ouvre "Security Center".
+
+    Faites défiler jusqu'à la section "Server certificat et la clé (SSL)" à droite, le
+    Le lien affichera «non sécurisé», cliquez sur ce lien, il vous emmène à la page "Server
+    Certificat et la clé Generation "
+  
+   c) Manuellement
+
+    Naviguez jusqu'au dossier "Unicon\key_cert_gen" double clic sur "run.bat"
+
+   d) UniTray
+  
+   Gauche ou clic droit sur UniTray Icon, déplacez la souris sur Avancé et sélectionnez
+   Le certificat du serveur et la clé Generator.
+
+   Note 1 - commun à A-D
+   Le certificat et le script de génération de clés vous invite pendant trois morceaux de
+   l'information. Si vous utilisez un serveur de test local appuyez simplement sur Entrée pour
+   accepter les valeurs par défaut.
+
+   Si vous avez un véritable nom de domaine www.fred.com exemple, entrez que lors de la CN
+   (nom commun prompt). Les deux autres invites UO (unité d'organisation) et O
+   (organisation) ne sont pas strictement obligatoire, d'où entrer quelque chose qui répond
+   à vos besoins
+
+Notes générales:
+
+Note 1: re fois que le certificat du serveur et la clé a été générée démarrer le
+         serveurs pour la nouvelle configuration à être ramassé par Apache.
+
+Note 2: Voir sûr, les pages en tapant https://localhost/ dans votre navigateur.
+           Ou si vous avez un nom de domaine réel
+         https://www.mydomain.com/
+
+Note 3: Vous pouvez changer les valeurs par défaut pour le CN, OU et O modifier le fichier:
+          unicon\key_cert_gen\ssl_gen.php
+
+         Localisez la section:
+
+        / / Récupère les entrées d'utilisateur
+        //********* Modifier defaults ************************************* ****************
+
+       $str1 = &prompt_user("  CN Common Name. Your full domain name ", "localhost");
+       $str2 = &prompt_user("  OU Organization Unit (eg, section)  ", "Secure demo");
+       $str3 = &prompt_user("  O  Organization Name (eg, company)    ", "UniServer");
+       print "\n ";
+
+        //********* Ne modifiez pas en dessous de cette ligne ********************************* ******
+
+         Si votre site est accessible en tapant dans un navigateur et de votre mydomain.net
+         Fred est l'entreprise et a asection logiciels, les lignes sont comme suit:
+
+        / / Récupère les entrées d'utilisateur
+        //********* Modifier defaults ************************************* ****************
+
+       $str1 = &prompt_user("  CN Common Name. Your full domain name ", "mydomain.net");
+       $str2 = &prompt_user("  OU Organization Unit (eg, section)  ", "Fred");
+       $str3 = &prompt_user("  O  Organization Name (eg, company)    ", "Software");
+       print "\n ";
+
+        //********* Ne modifiez pas en dessous de cette ligne ********************************* ******
+
+         Créer un nouveau certificat et redémarrer les serveurs.
+
+Note 4: Il est fortement recommandé de l'obtention d'un certificat signé par une CA de confiance Départ
+         Uniform Server Wiki pour plus de détails.
+
+         http://wiki.uniformserver.com/index.php/SSL_Part_2:_CAcert_Signing_Process
+
+         Vous aurez besoin du certificat de signature de cette demande est situé dans le dossier
+
+         unicon\key_cert_gen nom de fichier server.csr
+
+Note 5: Si vous avez besoin pour créer une nouvelle clé et répétez le certificat ci-dessus.
+
+
+-------------------------------------------------- ---------
+Copyright 2002-2009 The Uniform Server Development Team
+Tous droits réservés.
+
+Les auteurs tentaient de faire le meilleur produit pour qu'ils
+ne peut être tenue responsable pour tout type de dommage ou de
+problèmes causés par l'utilisation de ce ou un autre logiciel. 

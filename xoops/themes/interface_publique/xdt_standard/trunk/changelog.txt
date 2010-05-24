@@ -18,7 +18,16 @@ Version 1.1 ( for xoops 2.4.x )
 	- system_block_user.html (kris_fr)
 	- system_redirect.html (kris_fr)
 	- system_siteclosed.html (kris_fr)
-- add new parameters in xo_thm_parameters.html
+- add new parameters in xo_thm_parameters.html (kris_fr)
+- add morpho.js (kris_fr)
+- add xo_blockadmin.html and images (kris_fr and Mariane)
+- add xo_breadscrumb.html (kris_fr)
+- add xo_homepage.html (kris_fr)
+- add homepage.css (kris_fr)
+- add smarty plugin function.block.php in extras folder (kris_fr and Trabis)
+- add smarty plugin function.xoMemberInfo.php in extras folder (kris_fr and Dugris)
+
+- fix bug with xoopsCode class (kris_fr)
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

@@ -18,6 +18,7 @@
 /* include style sheets */
 @import url(reset.css); /* reset css for web browsers*/
 /*@import url(dev.css);*/ /* dev css only for web development */
+@import url(homepage.css); /* style for specific content in mainpage */
 @import url(baradmin.css); /* administration access in footer */
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 @import url(extras.css); /* extras style for perzonalisation templates */
@@ -50,7 +51,7 @@ body {font-size:75%;}
 #xo-page {}
 /* ===== header ===== */
 #xo-header {
-	height: 					107px;
+	height: 					103px;
 }
 #xo-banner { background:	url(../img/bghead.png) repeat-x left;}
 #xo-headerbanner {}
@@ -67,7 +68,7 @@ body {font-size:75%;}
 }
 #xo-globalnav {
 	clear: 						both;
-	min-height:					23px !important;
+	height:					23px;
 	width:						100%;
 	margin:						0;
 	background : 				#fffff0 url(../img/hbar.gif) repeat-x left top;
@@ -464,7 +465,6 @@ tr.odd td {
 	color: 						inherit;
 	font-family: 				"Courier New",Courier,monospace; 
 	border: 					1px inset #000080;
-	white-space:				pre;
 }
 .xoopsQuote {
 	background-color: 			#fff;

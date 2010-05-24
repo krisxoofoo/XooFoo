@@ -10,7 +10,37 @@
  *
  * @version         $Id$
 */
+/* blockadmin buttons in blocks */
+#xo-blockadmin { float: right; /*text-align:	center;*/}
+#xo-blockadmin  img {margin: 0; padding: 3px 0;  opacity: .5; filter: alpha(opacity=50);}
+#xo-blockadmin  img:hover {margin: 0; padding: 3px 0;  opacity: 1; filter: alpha(opacity=100);}
+/*===== general blocks =======*/
+#xo-blockviewall img {margin:0; padding:0; border:0;}
+#xo-blockviewall {
+	position:					relative;
+	display:					block;
+	float:						right;
+	width:						16px;
+	background-color: 			transparent;
+	color:						inherit;
+	text-align:					center;
+	opacity:					.25;
+	filter: 					alpha(opacity=25);
+}
+#xo-blockviewall:hover { opacity: 1; filter: alpha(opacity=100);}
 
+/*============= Style for breadcrumb.html ================*/
+#xo-breadcrumb {
+	margin-left:				1em;
+	padding: 					0 0 15px 10px;
+	font-size: 					1em;
+	text-shadow: 				1px 1px 2px #aaa;
+}
+#xo-breadcrumb a:hover {
+	background-color:			transparent;
+	color: 						#8198CE;
+	text-decoration: 			underline;
+}
 /* ===== core messages ===== */
 .highlight {	}
 .errorMsg,.confirmMsg, .resultMsg, .successMsg  {}

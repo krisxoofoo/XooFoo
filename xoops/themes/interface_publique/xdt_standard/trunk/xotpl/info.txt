@@ -1,3 +1,4 @@
+<!-- [* $Id$ *] -->
 /* english */
 - To put here “include” HTML of the theme …
 

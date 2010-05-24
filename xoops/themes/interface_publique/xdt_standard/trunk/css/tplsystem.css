@@ -1,0 +1,51 @@
+/*
+ * XDT Standard
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+/* ===== core messages ===== */
+.highlight {	}
+.errorMsg,.confirmMsg, .resultMsg, .successMsg  {}
+.errorMsg {}
+.confirmMsg {}
+.resultMsg {	}
+.errorMsg a {}
+.confirmMsg a   {}
+.successMsg a  {}
+
+/* ============ Style for debug mode ============ */
+#xo-logger-output {
+	float: 				left;
+	width: 				100%;
+	padding-bottom: 	20px;
+	font-size: 			.9em;
+}
+#xo-logger-tabs {}
+#xo-logger-tabs  a {}
+#xo-logger-tabs  a:hover {}
+
+/*==================== for jGrowl =========================*/
+.jGrowl {}
+.jGrowl .jGrowl-notification,.jGrowl .jGrowl-closer {}
+.jGrowl-notification .header {}
+
+/*============== Styles for system_redirect.html =================*/
+body#xo-await {}
+#xo-redirect {}
+#xo-redirect .notreload {}
+#xo-redirect .notreload a {}
+#xo-redirect .message {}
+#xo-redirect .message img{}
+
+/*============== Styles for system_siteclosed.html =================*/
+body#xo-sitemaintenance {}
+#xo-page-siteclose  {}
+#xo-siteclose {}

@@ -25,11 +25,5 @@ define("THEME_MLUS",					"Envoyer un courriel");
 define("THEME_AVATARS",					"G&#233;rer les avatars");
 define("THEME_TPLS",					"G&#233;rer les templates");
 define("THEME_COMMENTS",				"G&#233;rer les commentaires");
-
-define("THEME_NOTIFICATION",			"voir ses notifications");
-define("THEME_MESSAGE",					"Voir ses messages");
-define("THEME_YOUHAVE",					"Vous avez");
-define("THEME_NOTREAD",					"message(s) non lu(s)");
-define("THEME_MYACCOUNT",				"Mon compte");
 		
 ?>

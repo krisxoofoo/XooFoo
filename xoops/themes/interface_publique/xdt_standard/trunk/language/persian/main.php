@@ -26,10 +26,4 @@ define("THEME_AVATARS",					"مدیریت تصاویر اعضا");
 define("THEME_TPLS",					"مدیریت الگو ها");
 define("THEME_COMMENTS",				"مدیریت نظر ها");
 
-define("THEME_NOTIFICATION",			"See notifications");
-define("THEME_MESSAGE",					"See private messages");
-define("THEME_YOUHAVE",					"You have");
-define("THEME_NOTREAD",					"message(s) no read");
-define("THEME_MYACCOUNT",				"My Account");
-
 ?>

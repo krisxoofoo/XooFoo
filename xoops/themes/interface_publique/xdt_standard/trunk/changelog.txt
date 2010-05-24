@@ -7,6 +7,18 @@ Version 1.1 ( for xoops 2.4.x )
 - add tplsystem.css (kris_fr)
 - add fonts.css (kris_fr)
 - complete extras.css (kris_fr)
+- change architecture for xo_canvas.html (kris_fr)
+	- add xo_header.html (kris_fr)
+	- add xo_globalnav.html (kris_fr)
+	- add xo_footer.html (kris_fr)
+- add override for system module (kris_fr)
+	- system_block_login.html (kris_fr)
+	- system_block_mainmenu.html (kris_fr)
+	- system_block_search.html (kris_fr)
+	- system_block_user.html (kris_fr)
+	- system_redirect.html (kris_fr)
+	- system_siteclosed.html (kris_fr)
+- add new parameters in xo_thm_parameters.html
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

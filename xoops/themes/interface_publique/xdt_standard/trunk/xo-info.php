@@ -23,9 +23,9 @@
 
 
 return array(
-    'copyright'       		=> '&copy; AfuX.org, maintained by Kris - XooFoo.org',
+    'copyright'       		=> '&copy; Xoops.org, maintained by Xoops Design Team',
 	//'xoBundleIdentifier'	=> 'theme_xdtstandard',
-	//'xoBundleDisplayName'	=> 'XOOPS Xdt Standard 1.0 (standards compliant)',
+	//'xoBundleDisplayName'	=> 'XOOPS Xdt Standard 1.1 (standards compliant)',
 	//'parentTheme'			=> 'xdt_standard',
 	// This theme default templates
 	// templates paths must start with a "." to be considered relative to the theme folder

@@ -27,10 +27,10 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 
 /* beginning of the applicable styles */
 html, body {
-	max-width: 					100%;
-	margin:						0;
+	max-width: 				100%;
+	margin:					0;
 	background-color: 			#000;
-	color:						#333;
+	color:					#333;
 	font-family:				"Lucida Grande", Verdana, sans-serif;
 	line-height:				1.5em;
 }
@@ -41,10 +41,10 @@ body {font-size:75%;}
 #xo-wrapper {}
 #xo-bgstatic {}
 #xo-canvas {
-	width:						100%;
-	margin:						0 auto;
+	width:					100%;
+	margin:					0 auto;
 	background-color: 			#fff;
-	color: 						#333;
+	color: 					#333;
 }
 #xo-canvas-content {}
 #xo-canvas-columns {}
@@ -390,7 +390,7 @@ textarea:focus {
 
 /* ===== footer ===== */
 #xo-footer {
-	clear: 						both;
+	/*clear: 						both;*/
 	height:						23px;
 	width:						100%;
 	margin:						0;

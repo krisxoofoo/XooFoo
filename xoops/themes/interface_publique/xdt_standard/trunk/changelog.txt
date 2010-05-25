@@ -27,7 +27,11 @@ Version 1.1 ( for xoops 2.4.x )
 - add smarty plugin function.block.php in extras folder (kris_fr and Trabis)
 - add smarty plugin function.xoMemberInfo.php in extras folder (kris_fr and Dugris)
 
+- update baradmin for Xoops 2.5.x
+- update and complete language files - french & english (kris_fr)
+
 - fix bug with xoopsCode class (kris_fr)
+- fix box-shadow for xo_homepage.html in firefox & Safari (kris_fr)
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

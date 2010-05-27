@@ -69,7 +69,7 @@ body { font-size:75%;}
 	height:					23px;
 	width:						100%;
 	margin:						0;
-	background : 				#fffff0 url(../img/hbar.gif) repeat-x left top;
+	background : 				#fff url(../img/hbar.gif) repeat-x left top;
 }
 /* ====== hypertext links ===== */
 a {
@@ -130,10 +130,10 @@ p {
 	margin-top: 			.5em;
 	margin-bottom:			.5em;
 }
-hr{
+hr {
 	height: 				1px;
 	padding: 				0;
-	color: 					#ddd;
+	color: 					inherit;
 	background-color: 		#ddd;
 	border: 				0;
 }
@@ -146,33 +146,23 @@ q, cite, em, dfn, strong { font-style:italic;}
 bdo {	direction: ltr;}
 acronym, abbr, abbr[title], dfn { border-bottom: 1px dashed; cursor: help;}
 abbr[title] { border-bottom: 1px dotted; cursor: help;} 
-acronym:hover, abbr:hover { border-bottom: #32529C 1px dashed;}
-::selection {}
-	::-moz-selection {}
+acronym:hover, abbr:hover { border-bottom: #639ace 1px dashed;}
+::selection { background-color: #639ace; color: #fff;}
+	::-moz-selection { background-color: #639ace; color: #fff;}
 :target {}
 
 /* ===== lists ===== */
-#xo-canvas-content ol {
-	margin: 					.5em 0 .5em 2em;
-	padding: 					0;
-	list-style-type: 			decimal;
-}
-#xo-canvas-content ul {
-	margin: 					.5em 0 .5em 2em;
-	padding: 0;
-	list-style: 				decimal inside;
-	text-align: 				left;
-}
-#xo-canvas-content li {
-	margin-left: 				2px;
-	background-color: 			inherit;
-	color: 						#639ACE;
-	line-height: 				1.4em;
-	list-style:					square inside;
-}
-#xo-canvas-content dd {}
-#xo-canvas-content dl {}
-#xo-canvas-content dt {}
+#xo-canvas-columns ul, #xo-canvas-columns ol { margin: .5em 0 .5em 1em; padding: 0;}
+#xo-canvas-columns ul {list-style-type: circle;}
+#xo-canvas-columns ol {list-style-type: decimal;}
+#xo-canvas-columns li  { margin: .3em 0;}
+#xo-canvas-columns ul ul li, #xo-canvas-columns ol ol li { padding: 0; font-style:	 italic;}
+#xo-canvas-columns ul ul li,#xo-canvas-columns ol ol li { padding-top: 0; padding-bottom: 0; padding-left:	 1em;}
+#xo-canvas-columns ul, #xo-canvas-columns ol {}
+#xo-canvas-columns ul ul li, #xo-canvas-columns ol ol li {}
+#xo-canvas-columns dd {}
+#xo-canvas-columns dl {}
+#xo-canvas-columns dt {}
 dl { margin: .75em 0;} 
 dt { margin: .75em 0 0 0; font-weight: bold;} 
 dd { margin: .25em 0 .25em 2em; }
@@ -184,39 +174,27 @@ legend {
 	padding: 					.5em;
 	font-size:					1.1em;
 	font-weight: 				bolder;
-	text-shadow: 				2px 2px 3px #aaa;
+	text-shadow: 				2px 2px 3px #ccc;
 }
 input, button, select {margin: .25em; vertical-align: middle; }
 input { font-size: 1em; border: 1px solid #ccc;}
 label, .caption-text {}
 select {
-	background-color:			#f6f6f6;
 	padding: 					3px 5px 3px 5px;
-	color: 					#000;
 	border:					1px solid #ccc;
 	font-size: 					.9em;
 }
 select[name=timezone_offset] {}
-select:focus {
-	background-color:			#fff;
-	color: 					#000;
-	border:					1px solid #999;
-}
+select:focus {	border:	1px solid #333;}
 textarea {
 	width: 					95%;
 	min-height:				150px;
 	margin:					0.5em;
-	background-color:			#eee;
 	padding:					5px;
-	color: 					#000;
-	border:					1px solid #bbb;
+	border:					1px solid #666;
 	overflow: 					auto;
 }
-textarea:focus {
-	background-color:			#fff;
-	color: 					#000;
-	border:					1px solid #999;
-}
+textarea:focus {	border: 1px solid #333;}
 #xo-page fieldset {
 	margin: 					0 0 1em 0;
 	padding:					1em;
@@ -234,18 +212,18 @@ textarea:focus {
 	font-weight: 				bold;
 }
 button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {
-	background-color: 			#e6e6e6;
+	background-color: 			#ddd;
 	padding:					3px 5px 3px 5px;
 	color:					inherit;
-	border:					1px solid #bbb;
+	border:					1px solid #ccc;
 	cursor: 					pointer;
 }
-button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus { background-color: #639ace; color: #fff;}
-button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover  { background-color: #639ace; color: #fff;}
+button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus { background-color: #639ace; color: #fff; border: 1px solid #333;}
+button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover  { background-color: #639ace; color: #fff; border: 1px solid #333;}
 input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
 input[type=text], input[type=password], input[type=file] { padding: 3px 5px 3px 5px;}
-input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover {}
-input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover { border: 1px solid #333;}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {  border: 1px solid #639ace;}
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 
 #xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
@@ -259,7 +237,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #mainmenu a {
 	display:					block;
 	margin: 					0;
-	background-color: 			#e6e6e6;
+	background-color: 			#dee3e7;
 	padding: 					4px;
 	color: 						#666;
 	font-weight:				bold;
@@ -289,7 +267,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	border-color: 				#ccc;
 }
 #mainmenu a.menuSub:hover  {
-	background-color: 			#e6e6e6;
+	background-color: 			#ddd;
 	color: 						#ff9900;
 }
 
@@ -298,7 +276,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #usermenu a {
 	display: 					block;
 	margin: 					0;
-	background-color: 			#e6e6e6;
+	background-color: 			#dee3e7;
 	padding: 					2px;
 	color: 						#666;
 	font-style:					italic;
@@ -354,6 +332,9 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-page .xo-blockszone > .xo-block {
 	margin: 					5px;
 	border: 					1px solid #ddd;
+	border-radius: 				10px;
+		-moz-border-radius: 		10px;
+		-webkit-border-radius: 	10px;
 }
 #xo-page .xo-blockszone .xo-blocktitle {}
 #xo-page .xo-blockszone .xo-blockcontent {}
@@ -402,13 +383,14 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	height:				23px;
 	width:				100%;
 	margin:				0;
-	background : 			#fffff0 url(../img/hbar.gif) repeat-x left top;
+	background : 			#fff url(../img/hbar.gif) repeat-x left top;
 	text-align:				center;
 	font-size:				.8em;
 }
 
 /* ===== tables and cells ===== */
-table {width:100%; border-collapse:				collapse;}
+table {width:100%; border-collapse: collapse;}
+#xo-page table {margin-bottom: 1em;}
 caption {
 	font-style: 				italic;
 	font-weight: 			bold;
@@ -471,13 +453,13 @@ tr.odd td {
 	padding: 				6px;
 	color: 				inherit;
 	font-family: 			"Courier New",Courier,monospace; 
-	border: 				1px inset #000080;
+	border: 				1px inset #639ace;
 }
 .xoopsQuote {
 	background-color: 		#fff;
 	padding: 				6px; color: #666;
 	font-family: 			"Courier New",Courier,monospace;
-	border: 				1px dashed #000080;
+	border: 				1px dashed #3259c;
 }
 blockquote { font-style:		italic;}
 
@@ -581,3 +563,8 @@ blockquote { font-style:		italic;}
 	font-size:				.8em;
 	font-style:				italic;
 }
+/*============== css fix for modules =================*/
+.register-steps {text-align: left; font-size: .9em !important;} /* profile */
+#tabs ul li {list-style: none;} /* publisher */
+div.dropdown select.menu, div.dropdown select.userbar { background-color: #fff !important; padding: 3px 5px 3px 5px;border: 2px inset #ccc !important; font-size:.9em; font-weight: normal;} /* newbb - cbb */
+#xo-pagenav u { text-decoration: none;} /* news */

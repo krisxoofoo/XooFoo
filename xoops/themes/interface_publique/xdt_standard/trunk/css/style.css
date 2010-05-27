@@ -295,7 +295,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 
 /* ===== left columns ===== */
-#xo-canvas-leftcolumn {	border-right: 1px solid #ccc;}
+#xo-canvas-leftcolumn { border-right: 1px solid #ccc; border-left: 1px solid #ccc;}
 #xo-canvas-leftcolumn .xo-block { margin-bottom:	1.2em;}
 #xo-canvas-leftcolumn .xo-blocktitle  {
 	margin: 					0 0 5px 0;
@@ -312,7 +312,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 
 /* ===== right columns ===== */
-#xo-canvas-rightcolumn {	border-left: 1px solid #ccc;}
+#xo-canvas-rightcolumn { border-right: 1px solid #ccc; border-left: 1px solid #ccc;}
 #xo-canvas-rightcolumn .xo-block { margin-bottom:	1.2em;}
 #xo-canvas-rightcolumn .xo-blocktitle {
 	margin: 					0 0 5px 0;

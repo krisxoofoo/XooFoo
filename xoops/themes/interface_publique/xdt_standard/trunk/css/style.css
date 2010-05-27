@@ -29,13 +29,13 @@ article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { dis
 html, body {
 	max-width: 				100%;
 	margin:					0;
-	background-color: 			#000;
+	background-color: 			#fff;
 	color:					#333;
 	font-family:				"Lucida Grande", Verdana, sans-serif;
 	line-height:				1.5em;
 }
-html {font-size:100.01%;}
-body {font-size:75%;}
+html { font-size:100.01%;}
+body { font-size:75%;}
 
 /* ======= Body box ======= */
 #xo-wrapper {}
@@ -50,9 +50,7 @@ body {font-size:75%;}
 #xo-canvas-columns {}
 #xo-page {}
 /* ===== header ===== */
-#xo-header {
-	height: 					103px;
-}
+#xo-header { height: 103px;}
 #xo-banner { background:	url(../img/bghead.png) repeat-x left;}
 #xo-headerbanner {}
 /* fix for banner */
@@ -180,6 +178,7 @@ dt { margin: .75em 0 0 0; font-weight: bold;}
 dd { margin: .25em 0 .25em 2em; }
 
 /* ===== forms ===== */
+form {}
 fieldset { margin: .5em; padding : 1em;}
 legend {
 	padding: 					.5em;
@@ -188,63 +187,72 @@ legend {
 	text-shadow: 				2px 2px 3px #aaa;
 }
 input, button, select {margin: .25em; vertical-align: middle; }
-input {
-	font-size: 					1em;
-	border: 					1px solid #ccc;
-}
-button, input[type="submit"], input[type="button"], input[type="reset"], .xo-formbuttons, .formButton {
-	background-color: 			#e6e6e6;
-	padding:					1px 3px 1px 3px;
-	color:						inherit;
-	border:						1px solid #bbb;
-	cursor: 					pointer;
-}
-button:focus, input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus, .xo-formbuttons:focus, .formButton:focus,
- button:hover, input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover, .xo-formbuttons:hover, .formButton:hover {
-	background-color: 			#639ace;
-	color:						#fff;
-}
-input[type=checkbox], input[type=radio] {	margin: 3px; padding:2px;}
+input { font-size: 1em; border: 1px solid #ccc;}
+label, .caption-text {}
 select {
 	background-color:			#f6f6f6;
-	color: 						#000;
-	border:						1px solid #ccc;
+	padding: 					3px 5px 3px 5px;
+	color: 					#000;
+	border:					1px solid #ccc;
 	font-size: 					.9em;
 }
+select[name=timezone_offset] {}
 select:focus {
 	background-color:			#fff;
-	color: 						#000;
-	border:						1px solid #999;
+	color: 					#000;
+	border:					1px solid #999;
 }
 textarea {
-	width: 						85%;
-	height:						110px;
-	margin:						0.5em 0.5em 0.5em 0;
+	width: 					95%;
+	min-height:				150px;
+	margin:					0.5em;
 	background-color:			#eee;
 	padding:					5px;
-	color: 						#000;
-	border:						1px solid #bbb;
+	color: 					#000;
+	border:					1px solid #bbb;
 	overflow: 					auto;
 }
 textarea:focus {
 	background-color:			#fff;
-	color: 						#000;
-	border:						1px solid #999;
+	color: 					#000;
+	border:					1px solid #999;
 }
 #xo-page fieldset {
 	margin: 					0 0 1em 0;
 	padding:					1em;
 	border: 					none;
 }
+#xo-page fieldset a {}
+#xo-page fieldset a:hover {}
 #xo-page legend {
 	font-size: 					1.1em;
 	font-weight:				bold;
 }
 #xo-page label {
 	display: 					block;
-	float: 						left;
+	float: 					left;
 	font-weight: 				bold;
 }
+button, input[type=submit], input[type=button], input[type=reset], .xo-formbuttons, .formButton {
+	background-color: 			#e6e6e6;
+	padding:					3px 5px 3px 5px;
+	color:					inherit;
+	border:					1px solid #bbb;
+	cursor: 					pointer;
+}
+button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus { background-color: #639ace; color: #fff;}
+button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover  { background-color: #639ace; color: #fff;}
+input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
+input[type=text], input[type=password], input[type=file] { padding: 3px 5px 3px 5px;}
+input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover {}
+input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {}
+input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
+
+#xo-page .xoops-form-element-caption-required, #xo-page .xoops-form-element-caption {}
+.xo-formfield.required label:after, .caption-marker { content: '*'; color: #ff0000; background-color: transparent;}
+.xoops-form-element-caption .caption-marker { display:none;}
+.xoops-form-element-caption-required .caption-marker {}
+.xoops-form-element-help {}
 
 /* ===== block main menu ===== */
 #mainmenu {	font-size: 			.9em;}
@@ -390,139 +398,138 @@ textarea:focus {
 
 /* ===== footer ===== */
 #xo-footer {
-	/*clear: 						both;*/
-	height:						23px;
-	width:						100%;
-	margin:						0;
-	background : 				#fffff0 url(../img/hbar.gif) repeat-x left top;
-	text-align:					center;
-	font-size:					.8em;
+	/*clear: 				both;*/
+	height:				23px;
+	width:				100%;
+	margin:				0;
+	background : 			#fffff0 url(../img/hbar.gif) repeat-x left top;
+	text-align:				center;
+	font-size:				.8em;
 }
-#xo-logger-output{ font-size: .8em;}
 
 /* ===== tables and cells ===== */
 table {width:100%; border-collapse:				collapse;}
 caption {
 	font-style: 				italic;
-	font-weight: 				bold;
+	font-weight: 			bold;
 }
 th, thead {
-	background-color: 			#639ACE;
-	padding : 					2px;
-	color: 						#fff;
-	font-size:					1.1em;
-	font-weight:				bold;
+	background-color: 		#639ACE;
+	padding : 				2px;
+	color: 					#fff;
+	font-size:				1.1em;
+	font-weight:			bold;
 	text-align: 				center;
 	vertical-align : 			middle;
 }
 .foot, tfoot {
-	background-color: 			#c2cdd6;
-	padding: 					5px;
-	color: 						inherit;
-	font-weight: 				bold;
+	background-color: 		#c2cdd6;
+	padding: 				5px;
+	color: 				inherit;
+	font-weight: 			bold;
 }
 tbody {}
 table.outer { border-collapse: separate;}
 table td {
-	padding: 					0;
+	padding: 				0;
 	vertical-align: 			top;
-	border-width: 				0;
+	border-width: 			0;
 }
-.outer {border: 					1px solid #ccc;}
+.outer {border: 				1px solid #ccc;}
 .head {
-	background-color: 			#c2cdd6;
-	padding: 					5px;
-	font-weight: 				bold;
-	color: 						inherit;
+	background-color: 		#c2cdd6;
+	padding: 				5px;
+	font-weight: 			bold;
+	color: 				inherit;
 }
 .even {
-	background-color: 			#dee3e7;
-	padding: 					5px;
-	color: 						inherit;
+	background-color: 		#dee3e7;
+	padding: 				5px;
+	color: 				inherit;
 }
 .odd {
-	background-color: 			#E9E9E9;
-	padding: 					5px;
-	color: 						inherit;
+	background-color: 		#E9E9E9;
+	padding: 				5px;
+	color: 				inherit;
 }
 tr.even td {
-	background-color: 			#dee3e7;
-	padding: 					5px;
-	color: 						inherit;
+	background-color: 		#dee3e7;
+	padding: 				5px;
+	color: 				inherit;
 }
 tr.odd td {
-	background-color: 			#E9E9E9;
-	padding: 					5px;
-	color: 						inherit;
+	background-color: 		#E9E9E9;
+	padding: 				5px;
+	color: 				inherit;
 }
 
 /* ===== codes and quotes ===== */
 .xoopsCode {
-	max-height: 				200px;
-	overflow: 					auto;
-	background-color: 			#fff;
-	padding: 					6px;
-	color: 						inherit;
-	font-family: 				"Courier New",Courier,monospace; 
-	border: 					1px inset #000080;
+	max-height: 			200px;
+	overflow: 				auto;
+	background-color: 		#fff;
+	padding: 				6px;
+	color: 				inherit;
+	font-family: 			"Courier New",Courier,monospace; 
+	border: 				1px inset #000080;
 }
 .xoopsQuote {
-	background-color: 			#fff;
-	padding: 					6px; color: #666;
-	font-family: 				"Courier New",Courier,monospace;
-	border: 					1px dashed #000080;
+	background-color: 		#fff;
+	padding: 				6px; color: #666;
+	font-family: 			"Courier New",Courier,monospace;
+	border: 				1px dashed #000080;
 }
 blockquote { font-style:		italic;}
 
 /* ===== articles (content-type in example) ===== */
-.item {border: 					1px solid #ccc;}
+.item {border: 				1px solid #ccc;}
 .itemHead {
-	background-color: 			#639ACE;
-	padding: 					3px;
-	color: 						#fff;
-	font-size: 					1.1em;
+	background-color: 		#639ACE;
+	padding: 				3px;
+	color: 				#fff;
+	font-size: 				1.1em;
 }
 .itemInfo {
-	background-color: 			transparent;
-	padding: 					3px;
-	color: 						inherit;
-	font-size:					.9em;
+	background-color: 		transparent;
+	padding: 				3px;
+	color: 				inherit;
+	font-size:				.9em;
 	text-align: 				right;
 }
 .itemTitle a {
-	background-color: 			transparent;
-	color: 						#fff;
-	font-size: 					1.1em;
-	font-weight: 				bold;
-	font-variant: 				small-caps;
+	background-color: 		transparent;
+	color: 				#fff;
+	font-size: 				1.1em;
+	font-weight: 			bold;
+	font-variant: 			small-caps;
 }
 .itemPoster {
-	font-size: 					.9em;
-	font-style:					italic;
+	font-size: 				.9em;
+	font-style:				italic;
 }
 .itemPostDate {
-	font-size: 					.9em;
-	font-style:					italic;
+	font-size: 				.9em;
+	font-style:				italic;
 }
 .itemStats {
-	font-size: 					.9em;
-	font-style:					italic;
+	font-size: 				.9em;
+	font-style:				italic;
 }
 .itemBody {padding-left: 		5px;}
 .itemText {
-	margin-top: 				5px;
-	margin-bottom: 				5px;
-	line-height: 				1.5em;
+	margin-top: 			5px;
+	margin-bottom: 			5px;
+	line-height: 			1.5em;
 }
 .itemText:first-letter {
-	font-size: 					1.3em;
-	font-weight: 				bold;
+	font-size: 				1.3em;
+	font-weight: 			bold;
 }
 .itemFoot {
-	background-color: 			transparent;
-	padding: 					3px;
-	color: 						inherit;
-	font-size: 					.9em;
+	background-color: 		transparent;
+	padding: 				3px;
+	color: 				inherit;
+	font-size: 				.9em;
 	text-align: 				right;
 }
 .itemAdminLink {font-size: 	.9em;}
@@ -530,52 +537,47 @@ blockquote { font-style:		italic;}
 
 /* ===== forums (content-type in example) ===== */
 .comTitle {
-	margin-bottom: 				2px;
-	font-weight: 				bold;
+	margin-bottom: 			2px;
+	font-weight: 			bold;
 }
-.comText {padding: 				2px;}
+.comText {padding: 			2px;}
 .comUserStat {
-	margin: 					2px;
-	background-color: 			#fff;
-	padding: 					2px;
-	color: 						#639ACE;
-	font-size: 					.7em;
-	font-weight:				bold;
-	border: 					1px solid #ccc;
+	margin: 				2px;
+	background-color: 		#fff;
+	padding: 				2px;
+	color: 				#639ACE;
+	font-size: 				.7em;
+	font-weight:			bold;
+	border: 				1px solid #ccc;
 }
 .comUserStatCaption {font-weight: normal;}
 .comUserStatus {
-	margin-left: 				2px;
-	margin-top: 				10px;
-	background-color:			inherit;
-	color: 						#639ACE;
-	font-size: 					.8em;
-	font-weight:				bold;
+	margin-left: 			2px;
+	margin-top: 			10px;
+	background-color:		inherit;
+	color: 				#639ACE;
+	font-size: 				.8em;
+	font-weight:			bold;
 }
-.comUserRank {margin: 			2px;}
+.comUserRank {margin: 		2px;}
 .comUserRankText {
-	font-size: 					.8em;
-	font-weight:				bold;
+	font-size: 				.8em;
+	font-weight:			bold;
 }
-.comUserRankImg {border: 		0;}
+.comUserRankImg {border: 	0;}
 .comUserName {}
-.comUserImg {margin: 			2px;}
+.comUserImg {margin: 		2px;}
 .comDate {
-	font-size: 					.8em;
-	font-weight: 				normal;
+	font-size: 				.8em;
+	font-weight: 			normal;
 	font-style: 				italic;
 }
 .comDateCaption {
-	font-size:					.8em;
-	font-weight: 				bold;
+	font-size:				.8em;
+	font-weight: 			bold;
 	font-style: 				normal;
 }
 .signature {
-	font-size:					.8em;
-	font-style:					italic;
+	font-size:				.8em;
+	font-style:				italic;
 }
-
-
-
-
-

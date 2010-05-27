@@ -1,16 +1,12 @@
 <?php
-/*
- * XDT Standard
- *
- * @copyright       Xoops Project <http://www.xoops.org/>
- * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
- * @package         themes
- * @since           2.4.x
- * @author          Xoops Design Theme <http://www.xoops.org/>
- * @maintained      Xoops Design Theme <http://www.xoops.org/>
+/**
+ * XOOPS Blank Theme language file
+ * @copyright   The Xoops project http://www.xoops.org/
+ * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
+ * @author      kris_fr
  * @translator  kris_fr
- * @version         $Id$
-*/
+ * @version     $Id$
+ */
  
 // global defines
 define("THEME_NAME",					"Blank Theme");

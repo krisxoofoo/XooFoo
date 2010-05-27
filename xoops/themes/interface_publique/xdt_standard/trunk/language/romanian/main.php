@@ -1,16 +1,4 @@
 <?php
-/*
- * XDT Standard
- *
- * @copyright       Xoops Project <http://www.xoops.org/>
- * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
- * @package         themes
- * @since           2.4.x
- * @author          Xoops Design Theme <http://www.xoops.org/>
- * @maintained      Xoops Design Theme <http://www.xoops.org/>
- * @translator  kris_fr
- * @version         $Id$
-*/
 
 /* ------------------- xo_footerstatic.html ------------------- */
 define("_THEME_INBOX",            		"See your messages");

@@ -47,7 +47,7 @@ body { font-size:75%;}
 	color: 					#333;
 }
 #xo-canvas-content {}
-#xo-canvas-columns {}
+#xo-canvas-columns { /*border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;*/} /* use for a few xo_page.html in "extras folder" */
 #xo-page {}
 /* ===== header ===== */
 #xo-header { height: 103px;}
@@ -318,7 +318,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	margin: 					0 0 5px 0;
 	background-color: 			#ddd;
 	padding: 					3px;
-	color: 						#639ACE;
+	color: 					#639ACE;
 	font-weight: 				bold;
 	text-align:					center;
 }
@@ -339,6 +339,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-page .xo-blockszone .xo-blocktitle {}
 #xo-page .xo-blockszone .xo-blockcontent {}
 #xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks .xo-block, #xo-bottomcenterblocks .xo-block {} /* use also for xo_page.html.TClcr and xo_page.html.lcrBc */
 #xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {
 	margin: 					5px;
 	background-color:			inherit;
@@ -379,7 +380,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 
 /* ===== footer ===== */
 #xo-footer {
-	/*clear: 				both;*/
+	clear: 				both;
 	height:				23px;
 	width:				100%;
 	margin:				0;

@@ -1,11 +1,14 @@
 <?php
 /**
- * XOOPS Blank Theme language file
- * @copyright   The Xoops project http://www.xoops.org/
- * @license     http://www.fsf.org/copyleft/gpl.html GNU public license
- * @author      kris_fr
- * @translator  kris_fr
- * @version     $Id$
+ * XOOPS XDT Standard Theme language file
+ * @copyright 	Xoops Project <http://www.xoops.org/>
+ * @license		http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           	2.4.x
+ * @author          	kris_fr for Xoops Design Theme <http://www.xoops.org/>
+ * @maintained    Xoops Design Theme <http://www.xoops.org/>
+ * @translator  	kris_fr
+ * @version     	$Id$
  */
  
 // generality

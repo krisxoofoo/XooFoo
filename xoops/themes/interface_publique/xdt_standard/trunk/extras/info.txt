@@ -1,0 +1,38 @@
+/* english */
+You have 14 different options to display columns of blocks and contents :
+For use, rename file in "xo_page.html" and paste in "xotpl" folder
+- xo_page.html.Clcr		: content and below, left column - center column (without content) - right column
+- xo_page.html.clr		: center column - leftt column - right column
+- xo_page.html.crl		: center column - right column - left column
+- xo_page.html.Crlc		: content and below, right column - left column - center column (without content)
+- xo_page.html.lcr		: left column - center column - right column (standard xo_page.html)
+- xo_page.html.lcrBc	: left column - center column (without bottom block) - right colum, and below, center bottom block
+- xo_page.html.lrc		: left column - right column - center column
+- xo_page.html.rlc		: right column - left column - center column
+- xo_page.html.Tclcr	: top center block and below, left column - center column (without top block) - right column
+- xo_page.html.lCcr		: left column - content, and below, center column (without content) - right column
+For use, decompress the zip file and paste in themename folder
+- xo_page.html.crb		: center column - right column, and below, left column (horizontal)
+- xo_page.html.lcb		: left column - center column, and below, right colum (horizontal)
+- xo_page.html.tcr		: left column (horizontal), and below, center column - right column
+- xo_page.html.tlc		: right column (horizontal), and below, left column - center column
+
+
+/* french */
+Vous avez 14 possibilités différentes d'afficher les colonnes de blocs et contenus :
+Pour utilisation, renommer le fichier en "xo_page.html" et copiez le dans le dossir "xotpl"
+- xo_page.html.Clcr		: contenu module et en dessous, colonne gauche - colonne centrale (sans contenu module) - colonne de droite
+- xo_page.html.clr		: colonne centrale - colonne de gauche - colonne de droite
+- xo_page.html.crl		: colonne centrale - colonne de droite - colonne de gauche
+- xo_page.html.Crlc		: contenu module et en dessous, colonne de droite - colonne de gauche - colonne centrale (sans contenu module)
+- xo_page.html.lcr		: colonne de gauche - colonne centrale - colonne de droite (standard xo_page.html)
+- xo_page.html.lcrBc	: colonne de gauche - colonne centrale (sans les blocs du bas)- colonne de droite, et en dessous, blocs centraux bas
+- xo_page.html.lrc		: colonne de gauche - colonne de droite - colonne centrale
+- xo_page.html.rlc		: colonne de droite - colonne de gauche - colonne centrale
+- xo_page.html.Tclcr	: top center block and below, left column - center column (without top block) - right column
+- xo_page.html.lCcr		: colonne de gauche - contenu module, et en dessous, colonne centrale (sans contenu module) - colonne de droite
+Pour utilisation, décompressez le fichier zip, et copiez les deux dossiers ("css" et "xotpl") à la racine de votre thème
+- xo_page.html.crb		: colonne centrale - colonne de droite, et en dessous la colonne de gauche à l'horizontale
+- xo_page.html.lcb		: colonne de gauche - colonne centrale, et en dessous la colonne de droite à l'horizontale
+- xo_page.html.tcr		: colonne de gauche à l'horizontale, et en dessous, colonne centrale - colonne de droite
+- xo_page.html.tlc		: colonne de droite à l'horizontale, et en dessous, colonne de gauche - colonne centrale

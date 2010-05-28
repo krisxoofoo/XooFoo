@@ -8,6 +8,7 @@
 				<{if $xoops_contents && ($xoops_contents != ' ') }>
 					<div id="xo-content">
 						<{$xoops_contents}>
+						<{if $theme_uptop}><{includeq file="$theme_name/xo_uptop.html"}><{/if}>
 					</div>
 				<{/if}>
 			</td>
@@ -31,6 +32,7 @@
 						<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}>
+						<{if $theme_uptop}><{includeq file="$theme_name/xo_uptop.html"}><{/if}>
 					</div>
 				<{/if}>
 
@@ -39,6 +41,7 @@
 						<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}>
+						<{if $theme_uptop}><{includeq file="$theme_name/xo_uptop.html"}><{/if}>
 					</div>
 				<{/if}>
 			</td>

@@ -30,9 +30,25 @@ Version 1.1 ( for xoops 2.4.x )
 - add xo_viewall.html (kris_fr)
 - add smarty plugin function.block.php in extras folder (kris_fr and Trabis)
 - add smarty plugin function.xoMemberInfo.php in extras folder (kris_fr and Dugris)
-- add more xo_page.html (columns display) in "extras" (kris_fr)
+- add more xo_page.html (columns display) in "extras" (kris_fr) :
+		* xo_page.html.Clcr		: content and below, left column - center column (without content) - right column
+		* xo_page.html.clr		: center column - leftt column - right column
+		* xo_page.html.crl		: center column - right column - left column
+		* xo_page.html.Crlc		: content and below, right column - left column - center column (without content)
+		* xo_page.html.lcr		: left column - center column - right column (standard xo_page.html)
+		* xo_page.html.lcrBc	: left column - center column (without bottom block) - right colum, and below, center bottom block
+		* xo_page.html.lrc		: left column - right column - center column
+		* xo_page.html.rlc		: right column - left column - center column
+		* xo_page.html.Tclcr	: top center block and below, left column - center column (without top block) - right column
+		* xo_page.html.lCcr		: left column - content, and below, center column (without content) - right column
+		* xo_page.html.crb		: center column - right column, and below, left column (horizontal)
+		* xo_page.html.lcb		: left column - center column, and below, right colum (horizontal)
+		* xo_page.html.tcr		: left column (horizontal), and below, center column - right column
+		* xo_page.html.tlc		: right column (horizontal), and below, left column - center column
+- add info.txt in "extras" folder (kris_fr)
+- complete readme.txt in "docs" folder (kris_fr)
 
-- update baradmin for Xoops 2.5.x
+- update baradmin for Xoops 2.5.x (kris_fr)
 - update and complete language files - french & english (kris_fr)
 
 - fix bug with xoopsCode class (kris_fr)

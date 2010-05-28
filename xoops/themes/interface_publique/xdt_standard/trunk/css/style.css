@@ -83,17 +83,6 @@ a:visited, a:focus, a:hover, a:active {
 	color: 						#ff9900;
 }
 
-a.printable, a.pdf, a.friend {
-	width:						16px;
-	height:						16px;
-	background-repeat:			no-repeat;
-	background-position:		left top;
-	text-indent:				-1000em;
-}
-a.printable	{	background-image: url(../icons/action/printable.png);}
-a.pdf	{	background-image: url(../icons/action/pdf.png);}
-a.friend	{	background-image: url(../icons/action/friend.png);}
-
 /* ===== titles ===== */
 h1, h2, h3, h4, h5, h6 { 
   margin: 					1em 0 .5em 0;
@@ -581,6 +570,26 @@ blockquote { font-style:		italic;}
 	font-size:				.8em;
 	font-style:				italic;
 }
+
+/* ===== pages navigation ===== */
+#xo-pagenav { text-align: center; margin-bottom: 2em;}
+#xo-pagenav a {}
+#xo-pagenav a:hover {}
+.xo-pagact { background-color: #E9E9E9; padding: 5px; color: inherit;}
+.xo-pagact, .xo-counterpage, .xo-pagarrow {
+	margin:                 		0;
+	border:                		1px solid #ccc;
+	border-radius: 			5px;
+		-moz-border-radius: 	5px;
+		-webkit-border-radius: 5px;
+	box-shadow: 			0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 	0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+.xo-counterpage, .xo-pagarrow {padding: 5px 10px 5px 10px;}
+.xo-counterpage:hover, .xo-pagarrow:hover { background-color:       #E9E9E9;}
+.xo-pagarrow { letter-spacing:         0.2em;}
+
 /*============== css fix for modules =================*/
 .register-steps {text-align: left; font-size: .9em !important;} /* profile */
 #tabs ul li {list-style: none;} /* publisher */

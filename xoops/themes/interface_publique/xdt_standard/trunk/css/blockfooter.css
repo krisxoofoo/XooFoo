@@ -1,0 +1,54 @@
+/*
+ * XDT Standard
+ *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
+ * @package         themes
+ * @since           2.4.x
+ * @author          Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
+ *
+ * @version         $Id$
+*/
+
+/*========== xo_blockfooter.html in footer ==========*/
+#xo-blockfooter {
+	width: 					100%;
+	background-color: 			transparent;
+	color: 					inherit;
+	text-align:					center;
+	border-top: 				1px solid #ccc; 
+}
+#xo-blockfooter .xo-block {
+	width: 					23%;
+	min-height: 				180px;
+	display:					inline-block;
+	margin:					1em .6em;
+	text-align: 					justify;
+	vertical-align: 				top;
+	border: 					1px solid #ddd;
+	border-radius: 				10px;
+		-moz-border-radius: 		10px;
+		-webkit-border-radius: 	10px
+}
+#xo-blockfooter .xo-blocktitle {
+	background-color: 			#ddd;
+	padding: 					3px;
+	color: 					#639ACE;
+	font-weight: 				bold;
+	text-align:					center;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+}
+#xo-blockfooter .xo-blockcontent {
+	margin-bottom: 				2px;
+	padding: 					5px 8px 8px 8px;
+	line-height: 				1.4em;
+	text-align:					justify;
+}
+#xo-blockfooter .outer {}
+#xo-blockfooter .head {}
+#xo-blockfooter .even {}
+#xo-blockfooter .odd {}
+#xo-blockfooter .foot {}

@@ -19,6 +19,7 @@
 @import url(reset.css); /* reset css for web browsers*/
 /*@import url(dev.css);*/ /* dev css only for web development */
 @import url(homepage.css); /* style for specific content in mainpage */
+@import url(blockfooter.css); /* style for blocks in footer */
 @import url(baradmin.css); /* administration access in footer */
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 @import url(extras.css); /* extras style for perzonalisation templates */
@@ -307,7 +308,6 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-canvas-leftcolumn { border-right: 1px solid #ccc; border-left: 1px solid #ccc;}
 #xo-canvas-leftcolumn .xo-block { margin-bottom:	1.2em;}
 #xo-canvas-leftcolumn .xo-blocktitle  {
-	margin: 					0 0 5px 0;
 	background-color: 			#ddd;
 	padding: 					3px;
 	color: 					#639ACE;
@@ -319,7 +319,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 #xo-canvas-leftcolumn .xo-blockcontent {
 	margin-bottom: 				5px;
-	padding: 					3px;
+	padding: 					5px;
 	line-height: 				1.2em;
 }
 
@@ -327,7 +327,6 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-canvas-rightcolumn { border-right: 1px solid #ccc; border-left: 1px solid #ccc;}
 #xo-canvas-rightcolumn .xo-block { margin-bottom:	1.2em;}
 #xo-canvas-rightcolumn .xo-blocktitle {
-	margin: 					0 0 5px 0;
 	background-color: 			#ddd;
 	padding: 					3px;
 	color: 					#639ACE;
@@ -339,7 +338,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 #xo-canvas-rightcolumn .xo-blockcontent {
 	margin-bottom: 				5px;
-	padding: 					3px;
+	padding: 					5px;
 	line-height: 				1.2em;
 }
 
@@ -394,7 +393,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 
 /* ===== footer ===== */
-#xo-footer {
+#xo-footerbottom {
 	clear: 					both;
 	height:					23px;
 	width:					100%;
@@ -403,7 +402,14 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	text-align:					center;
 	font-size:					.8em;
 }
-
+/* for text $xoops_footer */
+#xo-copyright { padding-top: 3px;}
+/* rss button in footer */
+#xo-rss {
+	clear: 					both;
+	float:						right;
+	margin:					4px 0;
+}
 /* ===== tables and cells ===== */
 table {width:100%; border-collapse: collapse;}
 #xo-page table {margin-bottom: 1em;}
@@ -483,13 +489,13 @@ blockquote { font-style:		italic;}
 .item {border: 				1px solid #ccc;}
 .itemHead {
 	background-color: 		#639ACE;
-	padding: 				3px;
+	padding: 				.5em;
 	color: 				#fff;
 	font-size: 				1.1em;
 }
 .itemInfo {
 	background-color: 		transparent;
-	padding: 				3px;
+	padding: 				.5em;
 	color: 				inherit;
 	font-size:				.9em;
 	text-align: 				right;
@@ -513,19 +519,15 @@ blockquote { font-style:		italic;}
 	font-size: 				.9em;
 	font-style:				italic;
 }
-.itemBody {padding-left: 		5px;}
-.itemText {
-	margin-top: 			5px;
-	margin-bottom: 			5px;
-	line-height: 			1.5em;
-}
+.itemBody {padding: 			.5em;}
+.itemText { line-height: 		1.5em;}
 .itemText:first-letter {
 	font-size: 				1.3em;
 	font-weight: 			bold;
 }
 .itemFoot {
 	background-color: 		transparent;
-	padding: 				3px;
+	padding: 				.5em;
 	color: 				inherit;
 	font-size: 				.9em;
 	text-align: 				right;

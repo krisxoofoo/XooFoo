@@ -1,11 +1,14 @@
 /*
- * Mor.pho.GEN.e.sis 3.0
+ * XDT Standard
  *
+ * @copyright       Xoops Project <http://www.xoops.org/>
+ * @license         http://www.fsf.org/copyleft/gpl.html GNU public license 3.0
  * @package         themes
  * @since           2.4.x
- * @maintained      Afux <http://www.afux.org>
+ * @author          Xoops Design Theme <http://www.xoops.org/>
+ * @maintained      Xoops Design Theme <http://www.xoops.org/>
  *
- * @version         $Id
+ * @version         $Id$
 */
 
 /* text sizer */

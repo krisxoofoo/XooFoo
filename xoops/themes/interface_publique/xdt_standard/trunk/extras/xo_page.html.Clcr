@@ -1,5 +1,5 @@
 <!-- [* $Id$ *] -->
-<div id="xo-canvas-content  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>">
+<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
 	<{if $xoops_contents && ($xoops_contents != ' ') }>
 		<div id="xo-content">
 			<{$xoops_contents}>

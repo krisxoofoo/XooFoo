@@ -1,5 +1,5 @@
 <!-- [* $Id$ *] -->
-<div id="xo-canvas-content  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>">
+<div id="xo-canvas-content"  <{if $columns_layout}> class="<{$columns_layout}> <{$xoops_dirname}>"<{/if}>>
 	<table id="xo-canvas-columns" summary="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> <{else}> <{$xoops_meta_description}><{/if}>">
 		<tr>
 			<td id="xo-page">

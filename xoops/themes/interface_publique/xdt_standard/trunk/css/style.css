@@ -182,6 +182,9 @@ label, .caption-text {}
 select {
 	padding: 					3px 5px 3px 5px;
 	border:					1px solid #ccc;
+	border-radius: 				5px;
+		-moz-border-radius: 		5px;
+		-webkit-border-radius: 	5px;
 	font-size: 					.9em;
 }
 select[name=timezone_offset] {}
@@ -216,12 +219,18 @@ button, input[type=submit], input[type=button], input[type=reset], .xo-formbutto
 	padding:					3px 5px 3px 5px;
 	color:					inherit;
 	border:					1px solid #ccc;
+	border-radius: 				5px;
+		-moz-border-radius: 		5px;
+		-webkit-border-radius: 	5px;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
 	cursor: 					pointer;
 }
 button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus { background-color: #639ace; color: #fff; border: 1px solid #333;}
 button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover  { background-color: #639ace; color: #fff; border: 1px solid #333;}
 input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
-input[type=text], input[type=password], input[type=file] { padding: 3px 5px 3px 5px;}
+input[type=text], input[type=password], input[type=file] { padding: 3px 5px 3px 5px;  border-radius: 5px; -moz-border-radius: 5px;	-webkit-border-radius: 5px;}
 input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover { border: 1px solid #333;}
 input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {  border: 1px solid #639ace;}
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
@@ -244,7 +253,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 #mainmenu a:hover {
 	background-color: 			#fff; 
-	color: 						#ff9900;
+	color: 					#ff9900;
 }
 #mainmenu a.menuTop  {
 	padding-left: 				3px;
@@ -268,7 +277,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 #mainmenu a.menuSub:hover  {
 	background-color: 			#ddd;
-	color: 						#ff9900;
+	color: 					#ff9900;
 }
 
 /* ===== block user menu ===== */
@@ -286,12 +295,12 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 #usermenu a:hover  {
 	background-color: 			#fff;
-	color: 						#ff9900;
+	color: 					#ff9900;
 }
 #usermenu a.menuTop {border-top: 1px solid #ccc;}
 #usermenu a.highlight {
 	background-color: 			#fcc;
-	color: 						inherit;
+	color: 					inherit;
 }
 
 /* ===== left columns ===== */
@@ -301,9 +310,12 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	margin: 					0 0 5px 0;
 	background-color: 			#ddd;
 	padding: 					3px;
-	color: 						#639ACE;
+	color: 					#639ACE;
 	font-weight: 				bold;
 	text-align:					center;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
 }
 #xo-canvas-leftcolumn .xo-blockcontent {
 	margin-bottom: 				5px;
@@ -321,6 +333,9 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	color: 					#639ACE;
 	font-weight: 				bold;
 	text-align:					center;
+	box-shadow: 				0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-moz-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
+		-webkit-box-shadow: 		0 20px 10px -10px rgba(255,255,255,0.3) inset;
 }
 #xo-canvas-rightcolumn .xo-blockcontent {
 	margin-bottom: 				5px;
@@ -344,7 +359,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	margin: 					5px;
 	background-color:			inherit;
 	padding-left: 				10px;
-	color: 						#639ACE;
+	color: 					#639ACE;
 	font-weight:				bold;
 	border-bottom: 				1px solid #ddd;
 }
@@ -360,7 +375,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	margin: 					5px;
 	background-color:			inherit; 
 	padding-left: 				10px;
-	color: 						#639ACE;
+	color: 					#639ACE;
 	font-weight: 				bold;
 	border-bottom: 				1px solid #ddd;
 }
@@ -375,18 +390,18 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 /* ===== content module page ===== */
 #xo-content {
 	padding: 					8px;
-	text-align: 				justify;
+	text-align: 					justify;
 }
 
 /* ===== footer ===== */
 #xo-footer {
-	clear: 				both;
-	height:				23px;
-	width:				100%;
-	margin:				0;
-	background : 			#fff url(../img/hbar.gif) repeat-x left top;
-	text-align:				center;
-	font-size:				.8em;
+	clear: 					both;
+	height:					23px;
+	width:					100%;
+	margin:					0;
+	background : 				#fff url(../img/hbar.gif) repeat-x left top;
+	text-align:					center;
+	font-size:					.8em;
 }
 
 /* ===== tables and cells ===== */

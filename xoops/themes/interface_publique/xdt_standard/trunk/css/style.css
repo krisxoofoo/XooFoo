@@ -341,7 +341,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 }
 #xo-page .xo-blockszone .xo-blocktitle {}
 #xo-page .xo-blockszone .xo-blockcontent {}
-#xo-topcenterblocks, #xo-bottomcenterblocks {}
+#xo-topcenterblocks, #xo-bottomcenterblocks { clear: both;}
 #xo-topcenterblocks .xo-block, #xo-bottomcenterblocks .xo-block {} /* use also for xo_page.html.TClcr and xo_page.html.lcrBc */
 #xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {
 	margin: 					5px;
@@ -572,7 +572,7 @@ blockquote { font-style:		italic;}
 }
 
 /* ===== pages navigation ===== */
-#xo-pagenav { text-align: center; margin-bottom: 2em;}
+#xo-pagenav { clear: both; text-align: center; margin-bottom: 2em;}
 #xo-pagenav a {}
 #xo-pagenav a:hover {}
 .xo-pagact { background-color: #E9E9E9; padding: 5px; color: inherit;}

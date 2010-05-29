@@ -23,7 +23,7 @@
 		<tr>
 			<td id="xo-page">
 				<{if $theme_view_topblock && ($xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright)}>
-					<div id="xo-page-topblocks" class="xo-blockszone-xo-<{$theme_top_order}>pageblocks">
+					<div id="xo-page-topblocks" class="xo-blockszone xo-<{$theme_top_order}>pageblocks">
 						<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:0:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:1:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=top lcr=$theme_top_order|substr:2:1}>
@@ -32,7 +32,7 @@
 				<{/if}>
 
 				<{if $theme_view_bottomblock && ($xoBlocks.page_bottomleft or $xoBlocks.page_bottomcenter or $xoBlocks.page_bottomright)}>
-					<div id="xo-page-bottomblocks" class="xo-blockszone-xo-<{$theme_bottom_order}>pageblocks">
+					<div id="xo-page-bottomblocks" class="xo-blockszone xo-<{$theme_bottom_order}>pageblocks">
 						<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:0:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:1:1}>
 						<{includeq file="$theme_name/centerblocks.html" topbottom=bottom lcr=$theme_bottom_order|substr:2:1}>

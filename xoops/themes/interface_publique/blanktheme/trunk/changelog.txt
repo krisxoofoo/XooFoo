@@ -6,6 +6,7 @@ Documentation on line --> http://dev.xoofoo.org/BlankTheme/
 Version 1.4 ( for xoops 2.4.x )
 ============================
 - fix blocks position for xo-lcrpageblocks (kris_fr)
+- add new possibility for override xo_thm_parameter.html file (kris_fr)
 
 ============================
 Version 1.3 ( for xoops 2.4.x )

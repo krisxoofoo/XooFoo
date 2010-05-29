@@ -17,6 +17,12 @@
 	}else{
 		$this->assign("canvas_template", $this->_tpl_vars["xoops_theme"]."/xotpl/xo_canvas.html");
 	}
+/** If a module defines its own parameters template (located themes/themename/modules/dirname/xo_thm_parameters.html), take it; otherwise the default parameters (themes/themename/xotpl/xo_thm_parameters.html) is used. */
+	if(file_exists(XOOPS_ROOT_PATH."/themes/".$this->_tpl_vars["xoops_theme"]."/modules/".$this->_tpl_vars["xoops_dirname"]."/xo_thm_parameters.html")) {
+		$this->assign("parameters_template", $this->_tpl_vars["xoops_theme"]."/modules/".$this->_tpl_vars["xoops_dirname"]."/xo_thm_parameters.html");
+	}else{
+		$this->assign("parameters_template", $this->_tpl_vars["xoops_theme"]."/xotpl/xo_thm_parameters.html");
+	}
 /** Defined an extra SMARTY variable $xoops_themeurl, which is identical to $xoops_imageurl, for literal consistence only (siteurl/themes/themename) */
 	$this->assign("xoops_themeurl", $this->_tpl_vars["xoops_url"]."/themes/".$this->_tpl_vars["xoops_theme"]);
 /** Defined an extra SMARTY variable $xoops_module_theme (themename/module/modulename) */

@@ -1,24 +1,57 @@
 <!-- [* $Id$ *] -->
-/* english */
-- To put here “include” HTML of the theme …
 
-/* french */
-- Mettre ici les "include" html du thème ...
+/* ===== ENGLISH ===== */
+- blockszone.html --> display blocks in right and left columns
+- centerblocks.html --> display blocks in central column (top and bottom)
+- xo_blockadmin.html --> display link for manage block (edit, add and delete) in top blocks - activate or desactivate in xo_thm_parameters.html
+- xo_blockfooter.html --> display block in bottom page, for use put smarty plugin function.block.php in root/class/smarty/xoops_plugins/ - activate or desactivate in xo_thm_parameters.html
+- xo_breadcrumb.html --> display breadcrumb in top content - activate or desactivate in xo_thm_parameters.html
+- xo_canvas.html --> important and necessary file !!  (overridind is easy)
+- xo_footer.html --> display footer (block footer / xoops_footer / rss link) - activate or desactivate in xo_thm_parameters.html
+- xo_footerstatic.html --> display admin bar in bottom page - activate or desactivate in xo_thm_parameters.html
+- xo_globalnav.html --> display horizontal menu in header - activate or desactivate in xo_thm_parameters.html
+- xo_header.html --> display header (logo / banner) - activate or desactivate in xo_thm_parameters.html
+- xo_homepage.html --> display any content perso below the header - activate or desactivate in xo_thm_parameters.html
+- xo_metas.html --> include meta html and css link in head section
+- xo_page.html --> display left, center et right column
+- xo_scripts.html --> include scripts link in head section
+- xo_thm_parameters.html --> file for more displays options (overridind is easy)
+- xo_uptop.html --> display links in center column for go to top page - activate or desactivate in xo_thm_parameters.html
+- xo_viewall.html --> display links (in top blocks) for show more or go to module - activate or desactivate in xo_thm_parameters.html
 
-/* spanish */
+/* ===== FRENCH ===== */
+- blockszone.html --> affiche les blocs dans les colonnes de droite et de gauche
+- centerblocks.html --> affiche les blocs haut et bas dans la colonne centrale
+- xo_blockadmin.html --> affiche des liens pour administrer le bloc (éditer, ajouter et effacer) en haut du bloc - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_blockfooter.html --> affiche des blocs en pied de page, utilisation du plugin smarty function.block.php dans root/class/smarty/xoops_plugins/ nécessaire - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_breadcrumb.html --> affiche les liens pour venir (racine/module/catégorie) à la page en haut de la colonne centrale - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_canvas.html --> fichier très important et nécessaire au fonctionnement du thème !! Fichier nécessaire pour la surcharge du thème en lui-même
+- xo_footer.html --> affiche le pied de page (blocs (blocs / xoops_footer / lien rss) - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_footerstatic.html --> affiche la barre d'administration en pied de page - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_globalnav.html --> affiche un éventuel menu horizontal dans l'entête - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_header.html --> affiche l'entête (logo / bannière) - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_homepage.html --> affiche tout contenu personnel sous l'entête - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_metas.html --> inclus les metas html et liens des feuilles de style dans la section head
+- xo_page.html --> affiche les colonnes de gauche, du centre et de droite
+- xo_scripts.html --> inclus les liens des scripts dans la section head
+- xo_thm_parameters.html --> fichier de paramétrage du thème - possibilité de surcharger facilement ce fichier
+- xo_uptop.html --> affiche un lien dans la colonne centrale sous chaque section (top bloc / content / bottom bloc) pour revenir en haut de page - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_viewall.html --> affiche un lien en haut du bloc pour aller au module concerné - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+
+/* ===== SPANISH ===== */
 - Para poner aquí "include" el HTML del tema…
 
-/* portuguese */
+/* ===== PORTUGUESE ===== */
 - Para põr aqui "include" o HTML do tema…
 
-/* italian */
+/* ===== ITALIAN ===== */
 - Per mettere qui "include" il HTML del tema…
 
-/* german */
+/* ===== GERMAN ===== */
 - Sich hier zu setzen HTML des Themas "include"…
 
-/* Dutch */
+/* ===== DUTCH ===== */
 - Om hier te zetten "include" HTML van het thema…
 
-/* polish */
+/* ===== POLISH ===== */
 - Tutaj "include" HTML the temat…

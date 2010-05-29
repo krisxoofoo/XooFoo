@@ -53,6 +53,7 @@ Version 1.1 ( for xoops 2.4.x )
 		* xo_page.html.tlc		: right column (horizontal), and below, left column - center column
 - add info.txt in "extras" folder (kris_fr)
 - complete readme.txt in "docs" folder (kris_fr)
+- complete info.txt in "xotpl" folder (kris_fr)
 - add new possibility for override xo_thm_parameter.html file (kris_fr)
 
 - update baradmin for Xoops 2.5.x (kris_fr)

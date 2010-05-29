@@ -1,4 +1,4 @@
-Xdt Standard Theme Framework - Changelog
+Xdt Standard Theme Template - Changelog
 
 ============================
 Version 1.1 ( for xoops 2.4.x )
@@ -8,17 +8,23 @@ Version 1.1 ( for xoops 2.4.x )
 - add fonts.css (kris_fr)
 - complete extras.css (kris_fr)
 - change architecture for xo_canvas.html (kris_fr)
-	- add xo_header.html (kris_fr)
-	- add xo_globalnav.html (kris_fr)
-	- add xo_footer.html (kris_fr)
+		* add xo_header.html
+		* add xo_globalnav.html
+		* add xo_footer.html
 - add override for system module (kris_fr)
-	- system_block_login.html (kris_fr)
-	- system_block_mainmenu.html (kris_fr)
-	- system_block_search.html (kris_fr)
-	- system_block_user.html (kris_fr)
-	- system_redirect.html (kris_fr)
-	- system_siteclosed.html (kris_fr)
+		* system_block_login.html
+		* system_block_mainmenu.html
+		* system_block_search.html
+		* system_block_user.html
+		* system_redirect.html
+		* system_siteclosed.html
 - add new parameters in xo_thm_parameters.html (kris_fr)
+- add 5 news smarty tags for use in this theme
+		* <{$canvas_template}>  for --> themes/themename/xotpl/xo_canvas.html or themes/themename/modules/modulename/xo_canvas.html if this file is overriding
+		* <{$parameters_template}>  for --> themes/themename/xotpl/xo_thm_parameters.html or themes/themename/modules/modulename/xo_thm_parameters.html if this file is overriding
+		* <{$xoops_themeurl}>  for -->  urldusite/themes/themename
+		* <{$xoops_module_theme}> for -->  themename/modules/namemodule
+		* <{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/
 - add morpho.js (kris_fr)
 - add xo_blockadmin.html and images (kris_fr and Mariane)
 - add xo_breadscrumb.html (kris_fr)
@@ -47,6 +53,7 @@ Version 1.1 ( for xoops 2.4.x )
 		* xo_page.html.tlc		: right column (horizontal), and below, left column - center column
 - add info.txt in "extras" folder (kris_fr)
 - complete readme.txt in "docs" folder (kris_fr)
+- add new possibility for override xo_thm_parameter.html file (kris_fr)
 
 - update baradmin for Xoops 2.5.x (kris_fr)
 - update and complete language files - french & english (kris_fr)

@@ -220,7 +220,7 @@ button, input[type=submit], input[type=button], input[type=reset], .xo-formbutto
 button:focus, input[type=submit]:focus, input[type=button]:focus, input[type=reset]:focus, .xo-formbuttons:focus, .formButton:focus { background-color: #639ace; color: #fff; border: 1px solid #333;}
 button:hover, input[type=submit]:hover, input[type=button]:hover, input[type=reset]:hover, .xo-formbuttons:hover, .formButton:hover  { background-color: #639ace; color: #fff; border: 1px solid #333;}
 input[type=text], input[type=password], input[type=checkbox], input[type=file], textarea {}
-input[type=text], input[type=password], input[type=file] { padding: 3px 5px 3px 5px;  border-radius: 5px; -moz-border-radius: 5px;	-webkit-border-radius: 5px;}
+input[type=text], input[type=password], input[type=file] { background-color: #fff; padding: 3px 5px 3px 5px;  border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;}
 input[type=text]:hover, input[type=password]:hover, input[type=file]:hover, input[type=checkbox]:hover, textarea:hover { border: 1px solid #333;}
 input[type=text]:focus, input[type=password]:focus, input[type=file]:focus, input[type=checkbox]:focus, textarea:focus {  border: 1px solid #639ace;}
 input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
@@ -392,6 +392,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	text-align:					center;
 	font-size:					.8em;
 }
+#xo-footer { }
 /* for text $xoops_footer */
 #xo-copyright { padding-top: 3px;}
 /* rss button in footer */
@@ -471,7 +472,7 @@ tr.odd td {
 	background-color: 		#fff;
 	padding: 				6px; color: #666;
 	font-family: 			"Courier New",Courier,monospace;
-	border: 				1px dashed #3259c;
+	border: 				1px dashed #639ace;
 }
 blockquote { font-style:		italic;}
 

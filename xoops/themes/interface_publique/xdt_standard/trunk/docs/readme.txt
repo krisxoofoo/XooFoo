@@ -1,5 +1,5 @@
 /**
- * @version         $Id
+ * @version         $Id$
 **/
 
 /* Thanks to Mariane and Burning for help and tests */
@@ -20,11 +20,12 @@ NOTE 2 : To enjoy the possibility of adding an insert content in the header in h
 - If '/foldername/index.php'
 - If you have difficulty finding the path, add <{$smarty.server.PHP_SELF}> first line of this file and the information displayed, then remove the line and comments on issues of security
 - You can disable or enable different files (include) or zone area (left and right columns, top and bottom block) by changing the values in the file xo_thm_parameters.html
-NOTE 3 : you have 4 news smarty balises for use in this theme
-<{$canvas_template}>  for -->  themes/themename/modules/modulename/xo_canvas.html
-<{$xoops_themeurl}>  for -->  urldusite/themes/themename
-<{$xoops_module_theme}> for -->  themename/modules/namemodule
-<{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/
+NOTE 3 : you have 5 news smarty balises for use in this theme
+- <{$canvas_template}>  for --> themes/themename/xotpl/xo_canvas.html or themes/themename/modules/modulename/xo_canvas.html if this file is overriding
+- <{$parameters_template}>  for --> themes/themename/xotpl/xo_thm_parameters.html or themes/themename/modules/modulename/xo_thm_parameters.html if this file is overriding
+- <{$xoops_themeurl}>  for -->  urldusite/themes/themename
+- <{$xoops_module_theme}> for -->  themename/modules/namemodule
+- <{$xoops_module_themeurl}> for -->  siteurl/themes/themename/modules/modulename/
 NOTE 4 :
 you have in the "extras" folder, 14 files "xo_page.html" to change the position of columns and blocks of content
 
@@ -43,8 +44,9 @@ NOTE 2 : Pour profiter de la possibilité d'ajout d'un encart de contenu sous le 
 - Si vous avez des difficultés à trouver le chemin, insérer <{$smarty.server.PHP_SELF}> en première ligne de ce fichier et les informations s'afficheront, puis retirer la ligne et les commentaires pour des questions de sécurité
 - vous pouvez désactiver ou activer les différents fichiers (en include) ou zone du thème (colonnes droite et gauche, blocs hauts et bas) en modifiant les valeurs dans le fichier xo_thm_parameters.html
 NOTE 3 : vous avez des 4 nouvelles balises smarty que vous pouvez utiliser avec ce thème
-<{$canvas_template}> affichera -->  themes/nomdutheme/modules/nomdumodule/xo_canvas.html
-<{$xoops_themeurl}> affichera -->  urldusite/themes/nomdutheme
-<{$xoops_module_theme}> affichera -->  nomdutheme/modules/nomdumodule
-<{$xoops_module_themeurl}> affichera -->  urldusite/themes/nomdutheme/modules/nomdumodule/
+- <{$canvas_template}> affichera --> themes/nomdutheme/xotpl/xo_canvashtml ou themes/nomdutheme/modules/nomdumodule/xo_canvas.html si ce fichier est surchargé
+- <{$parameters_template}> affichera --> theme/nomdutheme/xotpl/xo_thm_parameters.html ou themes/nomdutheme/modules/nomdumodule/xo_thm_parameters.html si ce fichier est surchargé
+- <{$xoops_themeurl}> affichera -->  urldusite/themes/nomdutheme
+- <{$xoops_module_theme}> affichera -->  nomdutheme/modules/nomdumodule
+- <{$xoops_module_themeurl}> affichera -->  urldusite/themes/nomdutheme/modules/nomdumodule/
 NOTE 4 : vous avez dans le dossier "extras", 14 fichiers "xo_page.html" afin de modifier la position des colonnes de blocs et de contenus

@@ -282,14 +282,14 @@ blockquote { font-style: italic;}
 .signature {}
 
 /* ===== pages navigation ===== */
-#xo-pagenav {}
-
-.pagneutral {}
-.pagact {}
-.paginact {}
-
-.xo-counterpage {}
+#xo-pagenav { clear: both;}
+#xo-pagenav a {}
+#xo-pagenav a:hover {}
+.xo-pagact, .xo-counterpage, .xo-pagarrow {}
+.xo-pagact { }
+.xo-counterpage{  }
 .xo-pagarrow {}
+.xo-counterpage:hover, .xo-pagarrow:hover { }
 
 /*============== css fix for modules =================*/
 /* for profile module */

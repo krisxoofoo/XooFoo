@@ -3,6 +3,11 @@ XOOPS Blank Theme - Changelog
 Documentation on line --> http://dev.xoofoo.org/BlankTheme/
 
 ============================
+Version 1.4 ( for xoops 2.4.x )
+============================
+- fix blocks position for xo-lcrpageblocks (kris_fr)
+
+============================
 Version 1.3 ( for xoops 2.4.x )
 ============================
 - Add two new xo_page.html : (left - content and below center - right) and (content and below left center right) in extras folder

@@ -1,5 +1,8 @@
 Xdt Standard Theme Template - Changelog
 
+Documentation on line --> http://dev.xoofoo.org/Xdt_Standard/
+Videos on line --> http://tv.xoofoo.org
+
 ============================
 Version 1.1 ( for xoops 2.4.x )
 ============================
@@ -52,8 +55,10 @@ Version 1.1 ( for xoops 2.4.x )
 		* xo_page.html.tcr		: left column (horizontal), and below, center column - right column
 		* xo_page.html.tlc		: right column (horizontal), and below, left column - center column
 - add info.txt in "extras" folder (kris_fr)
-- complete readme.txt in "docs" folder (kris_fr)
-- complete info.txt in "xotpl" folder (kris_fr)
+- complete with description the readme.txt in "docs" folder (kris_fr)
+- complete with description the info.txt in "xotpl" folder (kris_fr)
+- complete with description the info.txt in "extras" folder (kris_fr)
+
 - add new possibility for override xo_thm_parameter.html file (kris_fr)
 
 - update baradmin for Xoops 2.5.x (kris_fr)

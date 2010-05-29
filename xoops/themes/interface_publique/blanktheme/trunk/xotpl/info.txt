@@ -1,23 +1,42 @@
-/* english */
-- To put here “include” HTML of the theme …
+/* ===== ENGLISH ===== */
+- blockszone.html --> display blocks in right and left columns
+- centerblocks.html --> display blocks in central column (top and bottom)
+- xo_canvas.html --> important and necessary file !!  (overridind is easy)
+- xo_footer.html --> display footer (block footer / xoops_footer / rss link) - activate or desactivate in xo_thm_parameters.html
+- xo_globalnav.html --> display horizontal menu in header - activate or desactivate in xo_thm_parameters.html
+- xo_header.html --> display header (logo / banner) - activate or desactivate in xo_thm_parameters.html
+- xo_metas.html --> include meta html and css link in head section
+- xo_page.html --> display left, center et right column
+- xo_scripts.html --> include scripts link in head section
+- xo_thm_parameters.html --> file for more displays options (overridind is easy)
 
-/* french */
-- Mettre ici les "include" html du thème ...
+/* ===== FRENCH ===== */
+- blockszone.html --> affiche les blocs dans les colonnes de droite et de gauche
+- centerblocks.html --> affiche les blocs haut et bas dans la colonne centrale
+- xo_canvas.html --> fichier très important et nécessaire au fonctionnement du thème !! Fichier nécessaire pour la surcharge du thème en lui-même
+- xo_footer.html --> affiche le pied de page (blocs (blocs / xoops_footer / lien rss) - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_globalnav.html --> affiche un éventuel menu horizontal dans l'entête - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_header.html --> affiche l'entête (logo / bannière) - activation ou désactivation par le biais du fichier xo_thm_parameters.html
+- xo_metas.html --> inclus les metas html et liens des feuilles de style dans la section head
+- xo_page.html --> affiche les colonnes de gauche, du centre et de droite
+- xo_scripts.html --> inclus les liens des scripts dans la section head
+- xo_thm_parameters.html --> fichier de paramétrage du thème - possibilité de surcharger facilement ce fichier
 
-/* spanish */
+/* ===== SPANISH ===== */
 - Para poner aquí "include" el HTML del tema…
 
-/* portuguese */
+/* ===== PORTUGUESE ===== */
 - Para põr aqui "include" o HTML do tema…
 
-/* italian */
+/* ===== ITALIAN ===== */
 - Per mettere qui "include" il HTML del tema…
 
-/* german */
+/* ===== GERMAN ===== */
 - Sich hier zu setzen HTML des Themas "include"…
 
-/* Dutch */
+/* ===== DUTCH ===== */
 - Om hier te zetten "include" HTML van het thema…
 
-/* polish */
+/* ===== POLISH ===== */
 - Tutaj "include" HTML the temat…
+

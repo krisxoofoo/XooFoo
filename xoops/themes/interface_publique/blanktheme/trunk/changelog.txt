@@ -1,12 +1,16 @@
 XOOPS Blank Theme - Changelog
 
 Documentation on line --> http://dev.xoofoo.org/BlankTheme/
+Videos on line --> http://tv.xoofoo.org
 
 ============================
 Version 1.4 ( for xoops 2.4.x )
 ============================
 - fix blocks position for xo-lcrpageblocks (kris_fr)
 - add new possibility for override xo_thm_parameter.html file (kris_fr)
+- complete with description the readme.txt in "docs" folder (kris_fr)
+- complete with description the info.txt in "xotpl" folder (kris_fr)
+- complete with description the info.txt in "extras" folder (kris_fr)
 
 ============================
 Version 1.3 ( for xoops 2.4.x )

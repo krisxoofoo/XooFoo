@@ -377,6 +377,7 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 
 /* ===== content module page ===== */
 #xo-content {
+	clear:					both;
 	padding: 					8px;
 	text-align: 					justify;
 }

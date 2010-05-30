@@ -52,6 +52,7 @@ body { font-size:75%;}
 #xo-page {}
 /* ===== header ===== */
 #xo-header { height: 103px;}
+#xo-headerlogo { margin-left: 1em;}
 #xo-banner { background:	url(../img/bghead.png) repeat-x left;}
 #xo-headerbanner {}
 /* fix for banner */

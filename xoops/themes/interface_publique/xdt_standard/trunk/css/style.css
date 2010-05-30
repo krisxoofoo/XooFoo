@@ -18,6 +18,7 @@
 /* include style sheets */
 @import url(reset.css); /* reset css for web browsers*/
 /*@import url(dev.css);*/ /* dev css only for web development */
+/*@import url(fonts.css);*/ /* style for include specific fonts */
 @import url(homepage.css); /* style for specific content in mainpage */
 @import url(blockfooter.css); /* style for blocks in footer */
 @import url(baradmin.css); /* administration access in footer */

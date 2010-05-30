@@ -12,8 +12,8 @@
  */
  
 // généralités
-define("THEME_NAME",					"Blank Theme");
-define("THEME_DESC",					"This is a blank theme for Xoops");
+define("THEME_NAME",					"Xdt Standard");
+define("THEME_DESC",					"This is a standard theme for Xoops");
 define("THEME_DESIGNER",				"Design by kris_fr for <a rel='external' href='http://www.xoops.org/' title='XOOPS Design Team'>XOOPS Design Team</a>");
 define("THEME_VALIDCSS",				"Ce thème est valide W3C pour le CSS 1 et 2");
 define("THEME_VALIDXHTML",				"Ce thème est valide W3C pour le XHTML 1.01");

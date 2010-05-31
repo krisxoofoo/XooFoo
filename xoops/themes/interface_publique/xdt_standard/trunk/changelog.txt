@@ -68,6 +68,7 @@ Version 1.1 ( for xoops 2.4.x )
 - fix bug with xoopsCode class (kris_fr)
 - fix box-shadow for xo_homepage.html in firefox & Safari (kris_fr)
 - fix blocks position for xo-lcrpageblocks (kris_fr)
+- fix link for favicon.ico in xo_metas.html (kris_fr)
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

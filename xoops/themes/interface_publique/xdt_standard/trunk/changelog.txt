@@ -9,6 +9,7 @@ Version 1.1 ( for xoops 2.4.x )
 - add dev.css (kris_fr)
 - add tplsystem.css (kris_fr)
 - add fonts.css (kris_fr)
+- add globalnav.css (kris_fr)
 - complete extras.css (kris_fr)
 - change architecture for xo_canvas.html (kris_fr)
 		* add xo_header.html
@@ -68,7 +69,7 @@ Version 1.1 ( for xoops 2.4.x )
 - fix bug with xoopsCode class (kris_fr)
 - fix box-shadow for xo_homepage.html in firefox & Safari (kris_fr)
 - fix blocks position for xo-lcrpageblocks (kris_fr)
-- fix link for favicon.ico in xo_metas.html (kris_fr)
+- fix link for favicon.png in xo_metas.html (kris_fr)
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

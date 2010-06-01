@@ -21,7 +21,7 @@
 /*@import url(fonts.css);*/ /* style for include specific fonts */
 @import url(globalnav.css); /* style for horizontal menu in header */
 @import url(homepage.css); /* style for specific content in mainpage */
-@import url(blockfooter.css); /* style for blocks in footer */
+@import url(footer.css); /* style for footer (and blockfooter.html) */
 @import url(baradmin.css); /* administration access in footer */
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
 @import url(extras.css); /* extras style for perzonalisation templates */
@@ -380,25 +380,6 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 	text-align: 					justify;
 }
 
-/* ===== footer ===== */
-#xo-footerbottom {
-	clear: 					both;
-	height:					23px;
-	width:					100%;
-	margin:					0;
-	background : 				#fff url(../img/hbar.gif) repeat-x left top;
-	text-align:					center;
-	font-size:					.8em;
-}
-#xo-footer { }
-/* for text $xoops_footer */
-#xo-copyright { padding-top: 3px;}
-/* rss button in footer */
-#xo-rss {
-	clear: 					both;
-	float:						right;
-	margin:					4px 0;
-}
 /* ===== tables and cells ===== */
 table {width:100%; border-collapse: collapse;}
 #xo-page table {margin-bottom: 1em;}
@@ -459,7 +440,8 @@ tr.odd td {
 /* ===== codes and quotes ===== */
 .xoopsCode {
 	max-height: 			200px;
-	overflow: 				auto;
+	overflow : 				auto;
+	word-wrap : 			break-word;
 	background-color: 		#fff;
 	padding: 				6px;
 	color: 				inherit;
@@ -468,6 +450,8 @@ tr.odd td {
 }
 .xoopsQuote {
 	background-color: 		#fff;
+	overflow : 				auto;
+	word-wrap : 			break-word;
 	padding: 				6px; color: #666;
 	font-family: 			"Courier New",Courier,monospace;
 	border: 				1px dashed #639ace;

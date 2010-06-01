@@ -11,6 +11,26 @@
  * @version         $Id$
 */
 
+/* ===== footer ===== */
+#xo-footerbottom {
+	clear: 					both;
+	height:					23px;
+	width:					100%;
+	margin:					0;
+	background : 				#fff url(../img/hbar.gif) repeat-x left top;
+	text-align:					center;
+	font-size:					.8em;
+}
+#xo-footer { }
+/* for text $xoops_footer */
+#xo-copyright { padding-top: 3px;}
+/* rss button in footer */
+#xo-rss {
+	clear: 					both;
+	float:						right;
+	margin:					4px 0;
+}
+
 /*========== xo_blockfooter.html in footer ==========*/
 #xo-blockfooter {
 	width: 					100%;

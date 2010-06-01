@@ -4,7 +4,13 @@ Documentation on line --> http://dev.xoofoo.org/Xdt_Standard/
 Videos on line --> http://tv.xoofoo.org
 
 ============================
-Version 1.1 ( for xoops 2.4.x )
+Version 1.1 Beta ( for xoops 2.4.x )
+============================
+- rename blockfooter.css in footer.css - with css footer (kris_fr)
+- fix word-wrap in xoopsCode and xoopsQuote (kris_fr)
+
+============================
+Version 1.1 Beta ( for xoops 2.4.x )
 ============================
 - add dev.css (kris_fr)
 - add tplsystem.css (kris_fr)

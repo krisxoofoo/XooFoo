@@ -31,6 +31,9 @@ ul.xo-socials li {
 	margin:						0 2px 0 0;
 	list-style-type:			none;
 	cursor:						pointer;
+	zoom:					1;
+	*display:					 inline; 
+	_height:					30px;
 }
 ul.xo-socials a {
 	display:					block;

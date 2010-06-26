@@ -1,0 +1,243 @@
+<?xml version="1.0"?>
+<!-- $Id $ -->
+<!-- ***** BEGIN LICENSE BLOCK *****
+  -   Version: MPL 1.1/GPL 2.0/LGPL 2.1
+  -
+  - The contents of this file are subject to the Mozilla Public License Version
+  - 1.1 (the "License"); you may not use this file except in compliance with
+  - the License. You may obtain a copy of the License at
+  - http://www.mozilla.org/MPL/
+  - 
+  - Software distributed under the License is distributed on an "AS IS" basis,
+  - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+  - for the specific language governing rights and limitations under the
+  - License.
+  -
+  - The Initial Developer of the Original Code is kris_fr (http://www.xoofoo.org)
+  - 
+  - Portions created by the David Walsh (http://davidwalsh.name)
+  - the Initial Developer. All Rights Reserved.
+  -
+  - Contributor(s):
+  -
+  - Alternatively, the contents of this file may be used under the terms of
+  - either the GNU General Public License Version 2 or later (the "GPL"), or
+  - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+  - in which case the provisions of the GPL or the LGPL are applicable instead
+  - of those above. If you wish to allow use of your version of this file only
+  - under the terms of either the GPL or the LGPL, and not to allow others to
+  - use your version of this file under the terms of the MPL, indicate your
+  - decision by deleting the provisions above and replace them with the notice
+  - and other provisions required by the GPL or the LGPL. If you do not delete
+  - the provisions above, a recipient may use your version of this file under
+  - the terms of any one of the MPL, the GPL or the LGPL.
+  - 
+  - ***** END LICENSE BLOCK ***** -->
+<?xml-stylesheet href="chrome://xoofoobar/skin/xoofoobar.css" type="text/css"?>
+<overlay id="xoofoobar-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://xoofoobar/content/xoofoobar.js" />
+	<toolbox id="navigator-toolbox">
+		<toolbar id="xoofoobar-toolbar" context="toolbar-context-menu" accesskey="d" class="chromeclass-toolbar" toolbarname="XooFoo.org Toolbar" hidden="false" persist="hidden">
+					
+			<!-- Xoops.org -->
+			<toolbarbutton label="XooFoo.org" id="xoofoobar-button-xoofoo" type="menu" accesskey="o" image="chrome://xoofoobar/skin/xoofoo1.png" tooltiptext="XooFoo Websites">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoofoo.org');" label="Home" image="chrome://xoofoobar/skin/xoofoo1.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://labs.xoofoo.org');" label="Laboratory" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tutos.xoofoo.org');" label="Tutorials - Tools" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://themes.xoofoo.org');" label="Themes Gallery Online" image="chrome://xoofoobar/skin/xoofoo.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://community.xoofoo.org');" label="Social Community" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://dev.xoofoo.org');" label="XOOPS API Documentation" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://demo.xoofoo.org');" label="WebDesign Possibilities Demo" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tv.xoofoo.org');" label="Videos tutorials on Xoops" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://sourceforge.net/projects/xoofoo/');" label="XooFoo on Sourceforge" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.svn.sourceforge.net/viewvc/xoofoo/');" label="XooFoo SVN" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.ohloh.net/p/XooFoo');" label="XooFoo on Ohloh" image="chrome://xoofoobar/skin/ohloh.png" />
+				</menupopup>
+			</toolbarbutton>
+			
+			<!-- Xoops.org -->
+			<toolbarbutton label="Xoops Project" id="xoofoobar-button-xoops" type="menu" accesskey="p" image="chrome://xoofoobar/skin/xoops.png" tooltiptext="Xoops - Powered by you!">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/');" label="Xoops Homepage" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/wfchannel/index.php?wfc_cid=24');" label="Why XOOPS?" image="chrome://xoofoobar/skin/xoops.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/wfchannel/index.php?wfc_cid=25');" label="Features" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/news');" label="News" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/newbb');" label="Forums" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/newbb/viewall.php');" label="Recent Posts" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/extgallery');" label="Themes Gallery" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://themes.xoops.org/');" label="Themes Demo online" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/repository');" label="Modules Repository" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/smartfaq/');" label="FAQ" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/mediawiki/');" label="Wiki" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/xdonations/');" label="Donations" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/mylinks/');" label="Links" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.ohloh.net/p/xoops');" label="XOOPS on Ohloh" image="chrome://xoofoobar/skin/ohloh.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://sourceforge.net/projects/xoops/');" label="XOOPS on Sourceforge" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.svn.sourceforge.net/viewvc/xoops/');" label="Code SVN" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/6f9cd9');" label="Report Bug" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/6c68am');" label="Request Feature" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/5z7ag8');" label="Submit Patch" image="chrome://xoofoobar/skin/sourceforge.gif" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.org/modules/core/');" label="Download latest XOOPS" image="chrome://xoofoobar/skin/xoops.png" />
+				</menupopup>
+			</toolbarbutton>
+			
+			<!-- Xoops Local Support -->
+			<toolbarbutton label="Xoops Supports" id="xoofoobar-button-supports" type="menu" accesskey="s" image="chrome://xoofoobar/skin/comments.png" tooltiptext="Xoops Supports">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.arabxoops.com/');" label="Arabic" image="chrome://xoofoobar/skin/ae.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsba.org/');" label="Bosnian" image="chrome://xoofoobar/skin/ba.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.pr.gov.br/');" label="Portugese" image="chrome://xoofoobar/skin/br.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.org.cn/');" label="Chinese Simplified" image="chrome://xoofoobar/skin/cn.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.tnc.edu.tw/');" label="Chinese Traditional" image="chrome://xoofoobar/skin/tw.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoopshr.org/');" label="Croatian" image="chrome://xoofoobar/skin/hr.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.zpc.cz/');" label="Czech" image="chrome://xoofoobar/skin/cs.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsnordic.org/');" label="Danish" image="chrome://xoofoobar/skin/dk.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.nl/');" label="Dutch" image="chrome://xoofoobar/skin/nl.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsnordic.org/');" label="Finnish" image="chrome://xoofoobar/skin/fi.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.frxoops.org/');" label="French" image="chrome://xoofoobar/skin/fr.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.myxoops.org/');" label="German" image="chrome://xoofoobar/skin/de.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.chaosteam.hu/');" label="Hungarian" image="chrome://xoofoobar/skin/hu.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.co.il/');" label="Hebrew" image="chrome://xoofoobar/skin/il.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoopsindonesia.com/');" label="Indonesian" image="chrome://xoofoobar/skin/id.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsitalia.org/');" label="Italian" image="chrome://xoofoobar/skin/it.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoopscms.jp/');" label="Japanese" image="chrome://xoofoobar/skin/jp.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.ne.kr/');" label="Korean" image="chrome://xoofoobar/skin/kr.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsnordic.org/');" label="Norwegian" image="chrome://xoofoobar/skin/no.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.irxoops.org/');" label="Persian" image="chrome://xoofoobar/skin/ir.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.pl/');" label="Polish" image="chrome://xoofoobar/skin/pl.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops.ru/');" label="Russian" image="chrome://xoofoobar/skin/ru.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops2.ru/');" label="Russian 2" image="chrome://xoofoobar/skin/ru.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.esxoops.com/');" label="Spanish" image="chrome://xoofoobar/skin/es.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsnordic.org/');" label="Swedish" image="chrome://xoofoobar/skin/se.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoops-tr.com/');" label="Turkish" image="chrome://xoofoobar/skin/tr.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopstr.org/');" label="Turkish 2" image="chrome://xoofoobar/skin/tr.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopsviet.com/');" label="Vietnamese" image="chrome://xoofoobar/skin/vn.png"/>
+				</menupopup>
+			</toolbarbutton>
+			
+			<!-- separator -->
+			<toolbarseparator />
+			
+			<!-- Friends -->
+			<toolbarbutton label="Friends" id="xoofoobar-button-friends" type="menu" accesskey="f" image="chrome://xoofoobar/skin/bookmark.png" tooltiptext="Friends">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.dugris.info');" label="Dugris.info" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xoopspro.com/');" label="XoopsPro.com" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.maitsco.com');" label="Maitsco.com" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xuups.com');" label="Xuups.com" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.chronolabs.org.au/');" label="ChronoLabs" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://redmexico.com.mx/');" label="Red Mexico" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.peak.ne.jp/index.php?easiestml_lang=xlang%3Aen');" label="Peak Xoops - GiJoe" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.tdmxoops.net/');" label="TDM Xoops" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.php.net/');" label="PHP.net" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.mysql.com/');" label="MySql.com" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.smarty.net/');" label="Smarty.net" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jquery.com/');" label="JQuery.com" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://mootools.net/');" label="MooTools.net" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.w3.org/');" label="W3C.org" image="chrome://xoofoobar/skin/internet.png" />
+				</menupopup>
+			</toolbarbutton>
+			
+			<!-- Tools-->
+			<toolbarbutton label="Tools" id="xoofoobar-button-tools" type="menu" accesskey="l" image="chrome://xoofoobar/skin/tools.png" tooltiptext="Tools">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/y8gq6w2');" label="Package Web Browsers" image="chrome://xoofoobar/skin/xoofoo.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/yefaywz');" label="Package Web Tools" image="chrome://xoofoobar/skin/xoofoo.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://xoops.svn.sourceforge.net/viewvc/xoops/XoopsThemes/PublicInterface/blanktheme.tar.gz?view=tar');" label="BlankTheme for Xoops" image="chrome://xoofoobar/skin/xoops.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.uniformserver.com/');" label="Uniform Server" image="chrome://xoofoobar/skin/uniserver.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('https://secure.logmein.com/US/products/express/Default.aspx');" label="LogMeIn" image="chrome://xoofoobar/skin/logmein.jpg" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.screenr.com/');" label="Screenr Screencasts" image="chrome://xoofoobar/skin/screenr.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jsfiddle.net/');" label="JsFiddle.net" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://westciv.com/tools/');" label="WestCiv.com" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.css3generator.com/');" label="Css3 Generator" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://gradients.glrzad.com/');" label="Color Gradient Generator" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://css-tricks.com/examples/ButtonMaker/');" label="Css3 Button Maker" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://page24x7.com/reference/css-color-values-and-shades/');" label="Css Color Values and Shades" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://css3please.com/');" label="Css3 Please" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://css-infos.net/');" label="Css Infos" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://html5doctor.com/');" label="Html5 Doctor" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.onderhond.com/tools/ie6fixer/');" label="IE6 Fixer" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jqueryfordesigners.com/');" label="Jquery for Designers" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyogg.com/');" label="Tiny Ogg" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/');" label="Tiny Url" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://scriptandstyle.com/');" label="Script and Style" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://gtmetrix.com/');" label="GTmetrix Speed Performance" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.realwebsiteworth.com/');" label="RealWebsiteWorth Calculations" image="chrome://xoofoobar/skin/bookmark.png" />
+				</menupopup>
+			</toolbarbutton>http://jqueryfordesigners.com/
+			
+			<!-- separator -->
+			<toolbarseparator />
+			
+			<!-- Become Fans -->
+			<toolbarbutton label="Become a Fan?" id="xoofoobar-button-fans" type="menu" accesskey="o" image="chrome://xoofoobar/skin/ffans.png" tooltiptext="Become a Fan ?">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/XooFoo/334586382333');" label="XooFoo" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/MorPhoGENesis-for-Xoops/201830324626');" label="Mor.Pho.GEN.e.sis" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Afux/118377973098');" label="AfuX" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Xoops-France/109178774820');" label="Xoops France" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/XOOPS/96578889373');" label="Xoops" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/XOOPS-Project/17897253458');" label="Xoops Project" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/XOOPS-Netherlands/138211335481');" label="Xoops Nederlands" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/XOOPS-Arabic/138468495529');" label="Xoops Arabic" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/XOOPS-Nordic/102830702764');" label="Xoops Nordic" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/XoopsEnEspanol');" label="Xoops Spanish" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Xoops-Italia/29858023933');" label="Xoops Italia" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Persian-Xoops/65710290878');" label="Xoops Persian" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Xuups/113801519674');" label="Xuups" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Red-Mexico/113273643193');" label="Red Mexico" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/pages/Danordesign/80800429068');" label="DanorDesign" image="chrome://xoofoobar/skin/facebook.gif"/>					
+				</menupopup>
+			</toolbarbutton>
+			
+			<!-- Join Groups -->
+			<toolbarbutton label="Join a Group?" id="xoofoobar-button-groups" type="menu" accesskey="o" image="chrome://xoofoobar/skin/fgroups.png" tooltiptext="Join a Group?">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=5286365786');" label="Xoops Project" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=111676572771');" label="Xoops Arabic" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=127576384152');" label="Xoops Brasil" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=344399332091');" label="GuxBrasil" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=170023959694');" label="Xoops Croatia" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=110616879226');" label="Xoops France" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=116584458910');" label="Xoops Germany" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=29679337503');" label="Xoops Italia" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=142018286997');" label="Xoops Korea" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=47503354934');" label="Xoops Malaysia" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=200838714971');" label="Xoops Taiwan" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=172514037369');" label="Xoops UK" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=196708520902');" label="Xoops USA" image="chrome://xoofoobar/skin/facebook.gif"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.facebook.com/group.php?gid=7523745867');" label="Xoops Experts" image="chrome://xoofoobar/skin/facebook.gif"/>
+				</menupopup>
+			</toolbarbutton>
+			
+			<!-- separator -->
+			<toolbarseparator />
+			
+			<!-- Twitter -->
+			<toolbarbutton label="Twitter" id="xoofoobar-button-groups" type="menu" accesskey="t" image="chrome://xoofoobar/skin/twitter.png" tooltiptext="Twitt Us?">
+				<menupopup>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/xoopssvn');" label="Xoops Project" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/XoopsProject');" label="Xoops Development" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/afuxoops');" label="AfuX" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/esxoops');" label="EsXoops" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/arabxoops');" label="ArabXoops" image="chrome://xoofoobar/skin/twitter.png"/>
+				</menupopup>
+			</toolbarbutton>			
+		
+			<!-- separator -->
+			<toolbarseparator />
+			
+			<!-- Contact -->
+			<toolbarbutton label="Contact" id="xoofoobar-button-ccontact" accesskey="n" image="chrome://xoofoobar/skin/contact.png" oncommand="xo_loadURL('http://labs.xoofoo.org/modules/contact');" tooltiptext="XooFoo Contact" />
+			
+			<!-- separator -->
+			<toolbarseparator />
+			
+			<!-- Search -->
+			<toolbarbutton label="Xoops Search" id="xoofoobar-button-search" accesskey="" image="chrome://xoofoobar/skin/search.png" oncommand="xo_loadURL('http://www.xoops.org/search.php');" tooltiptext="Search on Xoops Project" />
+					
+			
+		</toolbar>
+	</toolbox>
+</overlay>

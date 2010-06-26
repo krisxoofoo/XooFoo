@@ -190,15 +190,17 @@ input[type=checkbox], input[type=radio] { margin: 3px; padding:2px;}
 #xo-page {}
 /* ----- center blocks ----- */
 #xo-page .xo-blockszone > .xo-block {}
-#xo-page .xo-blockszone .xo-blocktitle {}
+#xo-page .xo-blockszone .xo-blocktitle { margin: 1em.}
 #xo-page .xo-blockszone .xo-blockcontent {}
 #xo-topcenterblocks, #xo-bottomcenterblocks {}
-#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block {}
+#xo-page-topcenterblocks .xo-block, #xo-page-bottomcenterblocks .xo-block { }
 #xo-page-topcenterblocks .xo-blocktitle, #xo-page-bottomcenterblocks .xo-blocktitle {}
 #xo-page-topcenterblocks .xo-blockcontent, #xo-page-bottomcenterblocks .xo-blockcontent {}
-#xo-page-topleftblocks .xo-blocktitle, #xo-page-bottomleftblocks .xo-blocktitle,
-#xo-page-toprightblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle {}
-#xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent,
+#xo-page-topleftblocks .xo-block, #xo-page-toprightblocks .xo-block {}
+#xo-page-topleftblocks .xo-blocktitle, #xo-page-toprightblocks .xo-blocktitle {}
+#xo-page-topleftblocks .xo-blockcontent, #xo-page-toprightblocks .xo-blockcontent {}
+#xo-page-bottomleftblocks .xo-block, #xo-page-bottomrightblocks .xo-block {}
+#xo-page-bottomleftblocks .xo-blocktitle, #xo-page-bottomrightblocks .xo-blocktitle {}
 #xo-page-bottomleftblocks .xo-blockcontent, #xo-page-bottomrightblocks .xo-blockcontent {}
 
 /* ----- content module page ----- */

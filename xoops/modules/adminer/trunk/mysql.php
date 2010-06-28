@@ -24,6 +24,7 @@ include("../mainfile.php");
 } else { 
 include("../../mainfile.php");
 }
+
 function adminer_object() {
     class AdminerSoftware extends Adminer {
         function name() {

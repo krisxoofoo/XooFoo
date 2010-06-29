@@ -26,24 +26,28 @@ include("../../mainfile.php");
 }
 
 function adminer_object() {
-    class AdminerSoftware extends Adminer {
-        function name() {
-            return 'Software';
-        }
-        function permanentLogin() {
-            return "89a1da3abdfc740861cee2c489745085";
-        }
-        function credentials() {
-            return array( XOOPS_DB_HOST,XOOPS_DB_USER,XOOPS_DB_PASS);
-        }
-        function database() {
-            return XOOPS_DB_NAME;
-        }
-        function login($login, $password) {
-            return ($login == XOOPS_DB_USER && $password == XOOPS_DB_PASS);
-        }
-    }
-    return new AdminerSoftware;
+	class AdminerKfr extends Adminer {
+		function name() {
+			return 'Kfr';
+		}
+		function credentials() {
+			return array(XOOPS_DB_HOST,XOOPS_DB_USER,XOOPS_DB_PASS);
+		}
+		function database() {
+			return XOOPS_DB_NAME;
+		}
+		function login($login, $password) {
+			return ($login == XOOPS_DB_USER);
+		}
+		/*function tableName($tableStatus) {
+			return h($tableStatus["Comment"]);
+		}*/
+		/*function fieldName($field, $order = 0) {
+			// only columns with comments will be displayed and only the first five in select
+			return ($order <= 5 && !ereg('_(md5|sha1)$', $field["field"]) ? h($field["comment"]) : "");
+		}*/
+	}
+	return new AdminerKfr;
 }
 include "./include/adminer.php";
 ?>

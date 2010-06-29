@@ -32,7 +32,7 @@ include(XOOPS_ROOT_PATH."/header.php");
 <div style="display:block; width:50%; float:left;"><a rel="external" href="mysql.php" title="Database Management"><img src="images/database.png" alt=""/></a></div>
 <div style="display:block; width:50%; float:left;"><a rel="external" href="editor.php" title="Database Editor"><img src="images/database_edit.png" alt=""/></a></div>
 <div style="display:block;"><a rel="external" href="include/bigdump.php" title="Database Big Dump"><img src="images/database_dump.png" alt=""/></a></div>
-<p style="text-align:right;"><a rel="external" href="http://www.adminer.org/" title="Adminer.org">More info ...</a></p>
+<p style="text-align:right;"><a rel="external" href="http://www.adminer.org/" title="Adminer.org">More info ...</a> and <a rel="external" href="http://php.vrana.cz/architecture-of-adminer.php" title="Architecture of Adminer">more ...</a></p>
 </div>
 <?php
 include(XOOPS_ROOT_PATH."/footer.php");

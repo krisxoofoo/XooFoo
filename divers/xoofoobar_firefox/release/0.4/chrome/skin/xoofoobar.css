@@ -1,0 +1,6 @@
+/*  $Id $ */
+/* original work by David Walsh - http://davidwalsh.name */
+#xoofoobar-search-toolbar-box	{ color: #666; }
+/*#xoofootoolbar-button-mootools		{ list-style-image: url("mootools.png"); min-width:100px; }*/
+/*#xoofootoolbar-button-friends-csstricks	{ list-style-image: url("csstricks.png"); }*/
+#xoofoobar-button-mootools > .toolbarbutton-menubutton-button { -moz-box-orient: horizontal; }

@@ -1,0 +1,5 @@
+content xoofoobar jar:chrome/xoofoobar.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://xoofoobar/content/xoofoobar.xul
+skin xoofoobar classic/1.0 jar:chrome/xoofoobar.jar!/skin/
+
+

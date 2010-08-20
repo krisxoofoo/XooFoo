@@ -1,0 +1,151 @@
+﻿################################################## #############################
+# Nom du fichier: Installer et Run.txt
+# Created By: The Uniform Server Development Team
+################################################## #############################
+
+   Dossiers racine Web sont situés comme suit:
+     * UniServer\www - Où en est votre web-pages sont placées
+     * UniServer\ssl - Lorsque votre site Web sécurisé de pages sont placées
+
+1) Installez
+    Extrait Uniform Server vers n'importe quel dossier (sur n'importe quel disque dur ou clé USB);
+
+2) Lancez - Quick Start Guide
+    Naviguez jusqu'au dossier UniServer et double cliquer sur Start.exe:
+
+    Cette opération démarre le menu de plateau où vos serveurs sont contrôlés à partir.
+    Bac de fond icône bleue avec le numéro de blanc, en bas à droite de l'écran.
+
+    Menu de gauche:
+    Sélectionné avec bouton gauche de la souris, ce qui va les serveurs comme un programme standard.
+    Top menu démarre à la fois les serveurs Apache et MySQL.
+    Deuxième question cesse de deux serveurs.
+
+    Programme standard: Chaque fois que vous allumez votre PC sur vous avez besoin pour
+                      redémarrer les serveurs.
+
+    Menu de droite:
+    Sélectionné avec bouton droit de la souris, cela exécute des serveurs en tant que service.
+    Menu Haut s'installe et fonctionne à la fois Apache et des services de MySQL.
+    Arrêts Deuxième question et désinstalle les deux services.
+
+    Note: Il n'y a aucune restriction! Vous pouvez installer des services à partir d'une mémoire USB
+          coller. N'oubliez pas de désinstaller les services avant de retirer le Memory Stick.
+
+    Service: Les serveurs redémarre automatiquement quand le PC est allumé.
+
+3) Exécuter - Contrôle de serveur individuel
+    Le troisième élément de menu (menus à gauche ou à droite) permet un contrôle serveur individuel.
+    Vous pouvez démarrer / arrêter chaque serveur comme un programme standard ou
+    install-run/stop-uninstall chaque serveur comme un service.
+
+    Le contrôle individuel vous permet de mélanger ce qui précède, par exemple lancer un serveur
+    comme un programme standard et l'autre comme un service.
+
+4) Fréquent:
+    En dehors de ce qui précède tous les autres menus sont communs à la fois standard et
+    Exploitation des services.
+
+5) Server Status:
+    Quatrième élément de menu fournit des informations de diagnostic, comme le montre cet exemple:
+ 
+  ================== ================== UNIFORME Server Status
+
+  Serveur Apache:
+
+    Apache port = 81
+    Apache SSL port = 444
+    Apache nom de l'exécutable = Apache1.exe
+    Apache nom de service = ApacheS2
+    Serveur Apache SSL = Activé
+    Apache statut run = Non actif
+    Installation d'Apache status = libre pour l'installation
+
+  Le serveur MySQL:
+
+    MySQL port = 3307
+    MySQL nom de l'exécutable = mysqld-opt1.exe
+    MySQL nom de service = MySQLS2
+    MySQL statut run = Non actif
+    MySQL installer status = libre pour l'installation
+
+  ÉTAT PORT:
+
+    Apache port = 81 est libre d'utiliser
+    Apache port SSL = 444 est libre d'utiliser
+    MySQL port = 3307 est libre d'utilisation.
+================================================== =============
+
+6) Apache Contrôle de syntaxe
+    Si vous apportez des modifications à la configuration du serveur de fichiers, cela
+    élément de menu permet de vérifier rapidement les erreurs de syntaxe Apache.
+
+7) panneau d'administration
+    Panneau d'administration offre un contrôle excellent serveur avec la sécurité du serveur
+    configuration. Par défaut, le serveur est verrouillé ne permettant que
+    d'accès local.
+
+8) phpMyAdmin
+    Comptes de serveur de l'utilisateur MySQL et les configurations de base de données peut être consulté
+    en utilisant phpMyAdmin.
+
+9) et SSL racine WWW
+    Pour afficher votre site web ces menus vous amène à la page index
+    contenues dans les dossiers UniServer \ www et UniServer \ SSL
+
+10) Advanced
+     Advance ouvre un ensemble de sous-menus.
+
+     Mot de passe MySQL restaurer --
+      Cela restaure le mot de passe Retour à la racine par défaut
+
+     Certificat de serveur et d'un générateur clé --
+      La valeur par défaut de serveur SSL est désactivé. Cliquez sur ce lien pour générer un nouveau
+      certificat de serveur et la clé. Une fois créée, le serveur est activée pour SSL
+      opération. Le serveur requiert le redémarrage de la nouvelle configuration
+      d'être ramassés.
+
+     Déplacer les serveurs multi-fonctionnement du serveur --
+      Cette option de menu reconfigure automatiquement les serveurs de fonctionner sur
+      différents ports et noms de service qui permet aux serveurs multi pour être exécuté
+      sur le même PC. Extrayez une nouvelle version de l'uniforme de serveur et exécuter
+      le script utilisant cette option de menu.
+
+     Perl Shebang Update cgi-bin --
+      Scripts Perl contiennent une Shebang (première ligne), cela indique à un serveur sur lequel
+      pour trouver le programme Perl. Uniform Server est dynamique et les pistes tout chemin
+      changements mettent à jour automatiquement le tralala. Toutefois, si le serveur reste
+      statiques et que vous avez ajouté de nouveaux scripts dans le dossier cgi-bin du Shebang
+      n'est jamais mis à jour. Par conséquent exécuter cet élément de menu après l'installation de nouveaux scripts.
+      Il met à jour le tralala dans tous les fichiers à l'emplacement actuel de Perl.
+
+11) Les informations serveur et les journaux --
+     Ouvre un ensemble de sous-menu vous permettant de sélectionner et de visionner
+     serveur d'informations spécifiques.
+
+12) Menu Reload --
+     Cela vous permet de recharger le fichier de configuration du menu. De préférence faire
+     de petits changements dans ce fichier, exécutez élément de menu pour voir rapidement les conséquences négatives éventuelles
+     effets de faire des changements. Il est plus facile de revenir à un groupe de travail
+     menu.
+
+13) la documentation du serveur --
+     Fournit un accès rapide au serveur de documentation contenue dans le dossier UniServer \ docs
+
+14) A propos --
+     Intro de l'information.
+
+15) de sortie --
+     Ferme le menu.
+
+16) Double cliquez sur l'icône --
+     Double-cliquez sur l'icône à afficher Un groupe spécial.
+
+               
+-------------------------------------------------- ---------
+Copyright 2002-2009 The Uniform Server Development Team
+Tous droits réservés.
+
+Les auteurs tentaient de faire le meilleur produit pour qu'ils
+ne peut être tenue responsable pour tout type de dommage ou de
+problèmes causés par l'utilisation de ce ou un autre logiciel. 

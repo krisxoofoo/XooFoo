@@ -1,0 +1,58 @@
+﻿################################################## #############################
+# Nom du fichier: LIRE moi.txt
+# Created By: The Uniform Server Development Team
+################################################## #############################
+
+------------
+Fichier Lisez-moi
+------------
+
+Le serveur uniforme est un produit gratuit et ne contient pas de logiciel commercial!
+Vous pouvez l'utiliser gratuitement.
+
+  - Pas besoin d'installation!
+
+
+-------------------
+Configuration requise
+-------------------
+
+  - Windows NT ou 2000 ou XP.
+  - TCP/IP de soutien.
+
+
+-----------------------
+Pour activer le serveur Apache
+-----------------------
+
+  - Mettre le protocole TCP/IP réseau (si vous n'avez pas de carte réseau il suffit d'installer quelque chose).
+
+
+--------------------------------
+Démarrage et arrêt du serveur
+--------------------------------
+
+  - Démarrer Start.bat cela crée un menu de plateau. Clic gauche de la souris sur l'icône utilisez le haut
+  - Deux menus pour démarrer et arrêter à la fois les serveurs Apache et MySQL.
+  - A partir des serveurs s'ouvre automatiquement un navigateur qui se connecte au http://localhost/apanel/
+  - Ou par adresse IP http://127.0.0.1/apanel/.
+  - Pour commencer, cliquer sur le droit de la souris sur l'icône de plateau de service, d'installer et d'exécuter ou d'arrêter et désinstaller les services
+  - En utilisant les deux premiers menus.
+
+
+--------------------------
+Dépannage du serveur
+--------------------------
+
+  - Run "Server Status" de UniTray elle fournit des informations de diagnostic.
+  - Si les ports déjà ouvert, désactiver le programme ou quoi que ce soit qui est de l'utiliser.
+  - Si autres, allez à http://forum.uniformserver.com
+
+
+-------------------------------------------------- ---------
+Copyright 2002-2009 The Uniform Server Development Team
+Tous droits réservés.
+
+Les auteurs tentaient de faire le meilleur produit pour qu'ils
+ne peut être tenue responsable pour tout type de dommage ou de
+problèmes causés par l'utilisation de ce ou un autre logiciel.

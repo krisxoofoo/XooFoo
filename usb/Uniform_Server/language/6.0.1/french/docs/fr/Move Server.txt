@@ -1,0 +1,94 @@
+﻿###############################################################################
+# File name: Move Server.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 23-16_2010
+###############################################################################
+
+ To run multi-servers on the same PC several items require changing such as
+ server ports, service names, Apache and UniTray executable names.
+
+ Manually changing these can be time consuming and prone to errors. The process
+ has been automated with the following script:window_move_servers.php
+
+ -----------
+ Preparation
+ -----------
+
+ Close all running servers and their corresponding UniTrays
+
+ ---
+ Run
+ ---
+
+ From UniTray:
+ Advanced server features 1 > click "Move Servers multi-server operation"
+
+ ------
+ Script
+ ------ 
+
+ Unless you want to use specific ports and names accept defaults.
+
+ The script uses existing file and service names  it either appends a digit or
+ increments an exiting one. Ports are incremented, note invalid ports
+ are skipped.
+
+ When run for the first time output looks like this:
+
+ ##############################################################################
+
+  -- Old --       -- New --
+  80              81               Apache port
+  443             444              SSL port
+  3306            3307             MSQL Port
+  Apache.exe      Apache1.exe      Apache executable name
+  mysqld-opt.exe  mysqld-opt1.exe  MySQL executable name
+  ApacheS1        ApacheS2         Apache service name
+  MySQLS1         MySQLS2          MySQL service name
+  UniTray1.exe    UniTray2.exe     UniTray executable name
+                  Disable eAccelerator checked
+ ##############################################################################
+
+ Click "RUN" button to move servers.
+
+ Note 1:
+ If running a single server do not disable eAccelerator.
+ Uncheck the box.
+
+ Note 2:
+ Unitray's icon is updated to reflect prposed changes (digit incremented)
+
+ If you have a server that uses this number press the increment button.
+ Multi-servers must have unique numbers
+
+ Note 3:
+ Original UniTray will be closed and and re-run with new values. 
+
+ -------------
+ General Notes
+ -------------
+
+ 1) If all the servers are to be installed as a service there is no need to
+    disable eAccelerator.
+
+ 2) If the servers are to be run as a standard program eAccelerator must be
+    disabled otherwise Apache will fail to start.
+
+ 3) Remember to append the new port number to access server pages for example
+    if the server was moved to port 81 type the following into your browser:
+
+      http://localhost:81/
+
+ 4) Important note: MySQL port
+
+    When installing third party software you may be given a choice of entering
+    a port number, enter the one corresponding to the moved server (you can
+    find this by running server status) 
+
+    If this option is not provided (generally not) then append it to the server
+    name e.g. 127.0.0.1:3307
+
+-----------------------------------------------------------
+Copyright 2002-2010 The Uniform Server Development Team
+All rights reserved.
+

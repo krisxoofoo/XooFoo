@@ -1,0 +1,303 @@
+﻿###############################################################################
+# File name: Install and Run.txt
+# Created By: The Uniform Server Development Team
+# V 1.0 23-6-2010
+###############################################################################
+
+----------
+1) Install
+----------
+  Extract Uniform Server to any folder (on any hard drive or USB stick);
+
+-------------------------------
+2) Where to place your WebPages
+-------------------------------
+
+ WebPages are placed in either of two folders: 
+
+   UniServer\www or UniServer\ssl
+
+ These are referred to as Web root folders 
+
+ For non-secure applications use root folder UniServer\www
+ For secure applications use root folder UniServer\ssl
+
+ Note 1: A default installation root folders are not empty. They contain 
+         example pages allowing you to check server is serving pages from
+         these folders.
+
+ Note 2: After confirming server is serving pages you can clean server root
+         folders. With the exception of file .htaccess delete everything in
+         the root folders.
+
+ Note 3: File .htaccess is required it provides security features and
+         additional server functionality
+
+--------------
+3) Run UniTray
+--------------
+ Navigate to folder UniServer and double click on Start_UniTray_2.exe:
+
+ Back ground diagnostics are performed in the following order:
+ 
+  * Spaces in path name to folder UniServer – No spaces allowed for legacy
+                                              reasons. A pop-up is displayed
+                                              and program terminated. Remove
+                                              space and re-run script 
+
+  * Apache port in use check                - Must be free to start server 
+  * Apache SSL port in use check            - Must be free to start server
+  * MySQL port in use check                 - Must be free to start server
+                                              A warning message is displayed
+                                              with offending application named.
+ Unless a test fails the above process is transparent.
+
+ Next part of initialisation are three nag pop-ups. If this is a first run
+ click no to each pop-up. They will be displayed next time you run UniTray
+ allowing you to make a choice that best suits your needs.
+ Nag pop-ups:
+
+  * Set MySQL password
+  * Set Apanel name and password
+  * Disable nagging
+
+ After nag pop-ups UniTray is started. This is where your servers are
+ controlled from. Tray menu icon has a blue background with white
+ digit for XP this is generally located bottom right of screen. 
+
+----------------
+4) Start Servers
+----------------
+ Open menu with left-mouse button click.
+ Click top menu item, starts both Apache and MySQL servers as a standard
+ program. Tray menu minimises.
+
+ When challenged by your firewall allow access for both Apache and MySQL.
+ Denying access will block servers preventing them from running.  
+
+----------------
+5) Stop Servers
+----------------
+ Open menu with left-mouse button click.
+ Click top menu item, stops both Apache and MySQL servers
+ Tray menu minimises.
+
+ When challenged by your firewall allow access for both Apache and MySQL.
+ Denying access will block servers preventing them from running. 
+
+----------------
+6) Close UniTray
+----------------
+ Open menu with left-mouse button click.
+ Click menu item "Exit" 
+
+ Note: Clicking bottom menu item minimises menu.
+
+----------
+7) General
+---------- 
+ Icon Red    Indicates servers not running.
+      Green  Indicates servers running.
+      Circle Indicates menu item unavailable click for an explanation as to why. 
+
+ Menu items: Toggel between start and stop as appropriate
+
+-----------------------------------------------------------------------------
+8) Remainder of this document provides a short description for each menu item
+-----------------------------------------------------------------------------
+
+-------------------------------------
+Start UniServer (Apache MySQL Program
+-------------------------------------
+
+ Runs both Apache and MySQL as a standard program.
+
+ Standard program: Every time you switch your PC on you need to 
+                   restart the servers.
+
+ Toggles text to "Stop  UniServer (Apache MySQL Program)"
+
+-----------------------------
+Start Apache Server (Program)
+-----------------------------
+ Runs Apache as a standard program.
+
+ Toggles text to "Stop  Apache Server (Program)"
+
+-----------------------------
+Start MySQL  Server (Program)
+-----------------------------
+
+ Runs MySQL as a standard program.
+
+ Toggles text to "Stop  MySQL Server (Program)"
+
+##########################
+Sub-menu - Service Control
+##########################
+  --------------------------------------
+  Start UniServer (Apache MySQL Service)
+  --------------------------------------
+
+  Runs both Apache and MySQL as a service.
+
+   Service: Servers automatically restart when PC is switched on.
+
+  Toggles text to "Stop  UniServer (Apache MySQL Service)
+
+  Note: There are no restrictions! You can install services from a USB memory
+        stick. Remember to uninstall services before removing memory stick.
+  ----------------------------
+  Install Start Apache Service
+  ----------------------------
+  Runs Apache as a service.
+
+  Toggles text to "Stop  Uninstall Apache Service"
+
+  ---------------------------
+  Install Start MySQL Service
+  ---------------------------
+
+  Runs MySQL as a service.
+
+  Toggles text to "Stop  Uninstall MySQL Service"
+
+-------------
+Server Status
+-------------
+  Fifth menu item provides diagnostic information, as shown in this example:  
+ 
+  ================== UNIFORM SERVER STATUS ==================
+
+  APACHE SERVER:
+
+    Apache port            = 81
+    Apache SSL port        = 444
+    Apache executable name = Apache1.exe
+    Apache service name    = ApacheS2
+    Apache SSL server      = Enabled
+    Apache run status      = Not running
+    Apache install status  = Free to install
+
+  MySQL SERVER:
+
+    MySQL port             = 3307
+    MySQL executable name  = mysqld-opt1.exe
+    MySQL service name     = MySQLS2
+    MySQL run status       = Not running
+    MySQL install status   = Free to install
+
+  PORT STATUS:
+
+    Apache port     = 81 Is free to use
+    Apache SSL port = 444 Is free to use
+    MySQL port      = 3307 Is free to use.
+  ===============================================================
+
+-------------------
+Apache Syntax check
+-------------------
+ If you make changes to the server configuration files this
+ menu item provides a quick check for Apache syntax errors.
+
+##########################
+Sub-menu - MySQL Control
+##########################
+
+  ----------------------
+  MySQL password restore
+  ----------------------
+  This restores the password back to the default root
+
+
+
+-----------
+Admin Panel
+-----------
+ Admin panel provides fine server control along with server security
+ configuration. By default the server is locked down allowing only
+ local access. 
+
+----------
+phpMyAdmin
+----------
+ MySQL server user accounts and database configurations can be accessed
+ using phpMyAdmin.
+
+----------------
+WWW and SSL root
+----------------
+ To view your web site these menu items take you to the index page
+ contained in folders UniServer\www and UniServer\SSL
+
+#####################################
+Sub-menu - Advanced server features 1
+#####################################
+
+  ------------------------------------
+  Server Certificate and Key generator
+  ------------------------------------
+  The server default is SSL disabled. Click this link to generate a new
+  server certificate and key. Once created the server is enabled for SSL
+  operation. The server requires restarting for the new configuration
+  to be picked-up.
+
+  -----------------------------------
+  Move Servers multi-server operation
+  -----------------------------------
+  This menu option automatically reconfigures the servers to run on
+  different ports and service names allowing multi servers to be run
+  on the same PC. Extract a new version of Uniform Server and run
+  the script using this menu item.
+
+  -----------
+  PerlControl
+  -----------
+  Perl scripts contain a Shebang (first line) this informs a server where
+  to find the Perl program. Uniform Server is dynamic and tracks any path
+  changes automatically updating the Shebang. However if the server remains
+  static and you have added new scripts in the cgi-bin folder the Shebang
+  is never updated. Hence run this menu item after installing new scripts.
+  It updates the Shebang in all files to the current Perl location.
+
+
+
+#####################################
+Sub-menu - Advanced server features 2
+#####################################
+
+######################################
+Sub-menu - Server Information and logs
+######################################
+
+  Opens a set of sub-menu items allowing you to select and view
+  specific server information.
+
+  --------------------
+  Server Documentation
+  --------------------
+  Provides access to server documentation contained in folder UniServer\docs
+  Displayed in default browser 
+
+#####################
+Sub-menu - Help files
+#####################
+
+
+----
+Exit
+----
+ Closes menu.
+
+--------
+Minimise
+--------
+ Minimises tray menu
+
+               
+-----------------------------------------------------------
+Copyright 2002-2010 The Uniform Server Development Team
+All rights reserved.
+
+
+

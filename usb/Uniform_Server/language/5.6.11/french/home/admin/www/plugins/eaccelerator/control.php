@@ -26,9 +26,6 @@ $npp = 50;		// Number of records per page (script / key cache listings)
 /*** TODO for API / reporting / this script: 
      + want script ttl from API
      + would be cool to have init_time for scripts (time of caching) - could then get hit rates etc.
-     + count hits on user keys
-     + colon bug in eaccelerator_list_keys()
-     + might be better if usercache ttl was returned as absolute time even if expired
 */
 
 // Inline media
@@ -44,7 +41,6 @@ if (isset($_GET['img']) && $_GET['img']) {
 
     header("Expires: ".gmdate("D, d M Y H:i:s", time()+(86400*30))." GMT");
     header("Last-Modified: ".gmdate("D, d M Y H:i:s", time())." GMT");
-    header('Accept-Ranges: bytes');
     header('Content-Length: '.$imgs[$img][0]);
     header('Content-Type: image/gif');
     header('Content-Encoding: gzip');
@@ -289,9 +285,15 @@ switch ($sec) {
         if (isset($_POST['cachingoff'])) eaccelerator_caching(false);
         if (isset($_POST['cachingon'])) eaccelerator_caching(true);
 
-        if (isset($_POST['clear'])) @eaccelerator_clear();
-        if (isset($_POST['clean'])) @eaccelerator_clean();
-        if (isset($_POST['purge'])) @eaccelerator_purge();
+        if (isset($_POST['optoff']) && function_exists('eaccelerator_optimizer')) eaccelerator_optimizer(false);
+        if (isset($_POST['opton']) && function_exists('eaccelerator_optimizer')) eaccelerator_optimizer(true);
+
+        if (isset($_POST['mtimeoff'])) eaccelerator_check_mtime(false);
+        if (isset($_POST['mtimeon'])) eaccelerator_check_mtime(true);
+
+        if (isset($_POST['clear'])) eaccelerator_clear();
+        if (isset($_POST['clean'])) eaccelerator_clean();
+        if (isset($_POST['purge'])) eaccelerator_purge();
 
         $info = eaccelerator_info();
 
@@ -309,7 +311,15 @@ switch ($sec) {
     <td class="fl"><?php echo $info['cache'] ? '<span style="color:green"><strong>Oui</strong></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="cachingoff" value=" D&#233;sactiver "/>':'<span style="color:red"><strong>Non</strong></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="cachingon" value=" Activer "/>' ?></td>
 </tr>
 <tr>
-    <td class="er">Total de m&#233;moire</td>
+    <td class="er">Optimisation activée</td>
+    <td class="fl"><?php echo $info['optimizer'] ? '<span style="color:green"><b>yes</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="optoff" value=" Disable "/>':'<span style="color:red"><b>no</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="opton" value=" Enable "/>' ?></td>
+</tr>
+<tr>
+    <td class="er">Vérification mtime activée</td>
+    <td class="fl"><?php echo $info['check_mtime'] ? '<span style="color:green"><b>yes</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="mtimeoff" value=" Disable "/>':'<span style="color:red"><b>no</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="mtimeon" value=" Enable "/>' ?></td>
+</tr>
+<tr>
+    <td class="er">Mémoire Totale</td>
     <td class="fl"><?php echo format_size($info['memorySize']); ?></td>
 </tr>
 <tr>
@@ -407,9 +417,11 @@ switch ($sec) {
             default:
             case 0: $ordby = 'file'; $ordbystr = true; break;
             case 1: $ordby = 'mtime'; $ordbystr = false; break;
-            case 2: $ordby = 'size'; $ordbystr = false; break;
-            case 3: $ordby = 'reloads'; $ordbystr = false; break;
-            case 4: $ordby = 'hits'; $ordbystr = false; break;
+            case 2: $ordby = 'ts'; $ordbystr = false; break;
+            case 3: $ordby = 'ttl'; $ordbystr = false; break;
+            case 4: $ordby = 'size'; $ordbystr = false; break;
+            case 5: $ordby = 'reloads'; $ordbystr = false; break;
+            case 6: $ordby = 'hits'; $ordbystr = false; break;
         }
         usort($scripts, 'arrsort');
  

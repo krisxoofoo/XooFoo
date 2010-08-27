@@ -135,6 +135,7 @@
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.smarty.net/');" label="Smarty.net" image="chrome://xoofoobar/skin/internet.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jquery.com/');" label="JQuery.com" image="chrome://xoofoobar/skin/internet.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://mootools.net/');" label="MooTools.net" image="chrome://xoofoobar/skin/internet.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://dojotoolkit.org/');" label="Dojo Toolkit" image="chrome://xoofoobar/skin/internet.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.w3.org/');" label="W3C.org" image="chrome://xoofoobar/skin/internet.png" />
 				</menupopup>
 			</toolbarbutton>
@@ -152,15 +153,19 @@
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jsfiddle.net/');" label="JsFiddle.net" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://westciv.com/tools/');" label="WestCiv.com" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://favikon.com/');" label="Favikon.com" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.css3maker.com/');" label="Css3 Maker" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.css3generator.com/');" label="Css3 Generator" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://gradients.glrzad.com/');" label="Color Gradient Generator" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://css-tricks.com/examples/ButtonMaker/');" label="Css3 Button Maker" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://page24x7.com/reference/css-color-values-and-shades/');" label="Css Color Values and Shades" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://css3please.com/');" label="Css3 Please" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://css-infos.net/');" label="Css Infos" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.alvit.de/handbook/');" label="Web Developer Handbook" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://html5doctor.com/');" label="Html5 Doctor" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.onderhond.com/tools/ie6fixer/');" label="IE6 Fixer" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jquerylist.com/');" label="Ultimate Jquery List" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://jqueryfordesigners.com/');" label="Jquery for Designers" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://scriptsrc.net/');" label="ScriptSrc.net" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://spritegen.website-performance.org/');" label=" CSS Sprite Generator" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.floweringmind.com/sprite-creator/');" label="Sprite Creator 2.0" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.codebeautifier.com/');" label="Css Beautifier" image="chrome://xoofoobar/skin/bookmark.png" />
@@ -168,8 +173,10 @@
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyogg.com/');" label="Tiny Ogg" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://tinyurl.com/');" label="Tiny Url" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://scriptandstyle.com/');" label="Script and Style" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.xml-sitemaps.com/');" label="Xml SiteMap Generator" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://gtmetrix.com/');" label="GTmetrix Speed Performance" image="chrome://xoofoobar/skin/bookmark.png" />
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.realwebsiteworth.com/');" label="RealWebsiteWorth Calculations" image="chrome://xoofoobar/skin/bookmark.png" />
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://www.seomoz.org/tools/');" label="SEOmoz Tools" image="chrome://xoofoobar/skin/bookmark.png" />
 				</menupopup>
 			</toolbarbutton>
 			
@@ -223,7 +230,8 @@
 			<!-- Twitter -->
 			<toolbarbutton label="Twitter" id="xoofoobar-button-groups" type="menu" accesskey="t" image="chrome://xoofoobar/skin/twitter.png" tooltiptext="Twitt Us?">
 				<menupopup>
-					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/xoopssvn');" label="Xoops Project" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/xoopssvn');" label="Xoops Project SVN" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/XoopsFrSVN');" label="XoopsFr SVN" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/XoopsProject');" label="Xoops Development" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/afuxoops');" label="AfuX" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/esxoops');" label="EsXoops" image="chrome://xoofoobar/skin/twitter.png"/>
@@ -232,6 +240,7 @@
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/XoopsNL');" label="Xoops Nederland" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/XoopsNL');" label="Xoops Nederland" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/GUXBrasil');" label="GUX Brasil" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/LabsXooFoo');" label="Labs XooFoo" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/xoopspro');" label="Xoops Pro" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/babylonbyxoops');" label="Babylon by Xoops" image="chrome://xoofoobar/skin/twitter.png"/>
 				</menupopup>

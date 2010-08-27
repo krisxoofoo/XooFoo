@@ -6,7 +6,7 @@
     <Description about="urn:mozilla:install-manifest">
         <em:id>kris@xoofoo.org</em:id>
         <em:name>XooFoo Toolbar</em:name>
-        <em:version>0.4</em:version>
+        <em:version>0.5</em:version>
         <em:optionsURL>chrome://xoofoobar/content/options.xul</em:optionsURL>
 		  <em:iconURL>chrome://xoofoobar/skin/logo.png</em:iconURL>
         <em:targetApplication>
@@ -18,7 +18,7 @@
         </em:targetApplication>
 
         <em:creator>kris_fr</em:creator>
-        <em:description>Toobar for Xoops users.</em:description>
+        <em:description>Toobar for Xoops Users.</em:description>
         <em:homepageURL>http://www.xoofoo.org/</em:homepageURL>
     </Description>
 

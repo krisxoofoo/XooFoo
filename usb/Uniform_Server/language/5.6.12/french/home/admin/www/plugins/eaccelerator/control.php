@@ -312,11 +312,11 @@ switch ($sec) {
 </tr>
 <tr>
     <td class="er">Optimisation activée</td>
-    <td class="fl"><?php echo $info['optimizer'] ? '<span style="color:green"><b>yes</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="optoff" value=" Disable "/>':'<span style="color:red"><b>no</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="opton" value=" Enable "/>' ?></td>
+    <td class="fl"><?php echo $info['optimizer'] ? '<span style="color:green"><strong>Oui</strong></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="optoff" value=" D&#233;sactiver  "/>':'<span style="color:red"><b>no</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="opton" value=" Enable "/>' ?></td>
 </tr>
 <tr>
     <td class="er">Vérification mtime activée</td>
-    <td class="fl"><?php echo $info['check_mtime'] ? '<span style="color:green"><b>yes</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="mtimeoff" value=" Disable "/>':'<span style="color:red"><b>no</b></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="mtimeon" value=" Enable "/>' ?></td>
+    <td class="fl"><?php echo $info['check_mtime'] ? '<span style="color:green"><strong>Oui</strong></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="mtimeoff" value=" D&#233;sactiver  "/>':'<span style="color:red"><strong>Non</strong></span>&nbsp;&nbsp;&nbsp;<input type="submit" name="mtimeon" value=" Activer "/>' ?></td>
 </tr>
 <tr>
     <td class="er">Mémoire Totale</td>
@@ -455,7 +455,7 @@ switch ($sec) {
 
 <?php
         if (count($scripts) == 0) 
-            echo '<div class="center"><i>No scripts found</i></div>';
+            echo '<div class="center"><em>Aucun script de trouv&#233;</em></div>';
         else {
 ?>
 <table class="center">

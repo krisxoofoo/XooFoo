@@ -1,9 +1,9 @@
 [PHP]
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; About php.ini                     ;
-; Uniform Server Production php.ini ;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; About php.ini                       ;
+; Uniform Server Development php.ini  ;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; PHP's initialization file, generally called php.ini, is responsible for
 ; configuring many of the aspects of PHP's behavior.
 
@@ -18,15 +18,15 @@
 ; 6. The directory from the --with-config-file-path compile time option, or the
 ; Windows directory (C:\windows or C:\winnt)
 ; See the PHP docs for more specific information.
-; http://php.net/configuration.file
+; http://www.php.net/manual/en/configuration.file.php
 
 ; The syntax of the file is extremely simple.  Whitespace and Lines
 ; beginning with a semicolon are silently ignored (as you probably guessed).
 ; Section headers (e.g. [Foo]) are also silently ignored, even though
 ; they might mean something in the future. 
 
-; Directives following the section heading [PATH=/www/mysite] only
-; apply to PHP files in the /www/mysite directory.  Directives
+; Directives following the section heading [PATH=G:/UniServer/www/mysite] only
+; apply to PHP files in the G:/UniServer/www/mysite directory.  Directives
 ; following the section heading [HOST=www.example.com] only apply to
 ; PHP files served from www.example.com.  Directives set in these
 ; special sections cannot be overridden by user-defined INI files or
@@ -512,7 +512,7 @@ memory_limit = 32M
 ; Development Value: E_ALL | E_STRICT
 ; Production Value: E_ALL & ~E_DEPRECATED
 ; http://php.net/error-reporting
-error_reporting = E_ALL & ~E_DEPRECATED
+error_reporting = E_ALL | E_STRICT
 
 ; This directive controls whether or not and where PHP will output errors,
 ; notices and warnings too. Error output is very useful during development, but
@@ -529,7 +529,7 @@ error_reporting = E_ALL & ~E_DEPRECATED
 ; Development Value: On
 ; Production Value: Off
 ; http://php.net/display-errors
-display_errors = Off
+display_errors = On
 
 ; The display of errors which occur during PHP's startup sequence are handled
 ; separately from display_errors. PHP's default behavior is to suppress those
@@ -540,7 +540,7 @@ display_errors = Off
 ; Development Value: On
 ; Production Value: Off
 ; http://php.net/display-startup-errors
-display_startup_errors = Off
+display_startup_errors = On
 
 ; Besides displaying errors, PHP can also log errors to locations such as a
 ; server-specific log, STDERR, or a location specified by the error_log
@@ -584,7 +584,7 @@ report_memleaks = On
 ; Development Value: On
 ; Production Value: Off
 ; http://php.net/track-errors
-track_errors = Off
+track_errors = On
 
 ; Turn off normal error reporting and emit XML-RPC error XML
 ; http://php.net/xmlrpc-errors
@@ -602,7 +602,7 @@ track_errors = Off
 ; Development Value: On
 ; Production value: Off
 ; http://php.net/html-errors
-html_errors = Off
+html_errors = On
 
 ; If html_errors is set On PHP produces clickable error messages that direct
 ; to a page describing the error or function causing the error in detail.
@@ -669,7 +669,7 @@ error_log = logs/logs.log
 ; Development Value: "GPCS"
 ; Production Value: "GPCS";
 ; http://php.net/variables-order
-variables_order = "GPCS"
+variables_order = "EGPCS"
 
 ; This directive determines which super global data (G,P,C,E & S) should
 ; be registered into the super global array REQUEST. If so, it also determines
@@ -803,11 +803,11 @@ doc_root =
 
 ; The directory under which PHP opens the script using /~username used only
 ; if nonempty.
-; http://php.net/user-dir
+; http://www.php.net/manual/en/ini.core.php#ini.user-dir
 user_dir = "G:/UniServer/www"
 
 ; Directory in which the loadable extensions (modules) reside.
-; http://www.php.net/manual/en/ini.core.php#ini.extension-dir
+; http://php.net/extension-dir
 ; extension_dir = "./"
 extension_dir = "G:/UniServer/usr/local/php/extensions"
 ; Whether or not to enable the dl() function.  The dl() function does NOT work
@@ -1082,10 +1082,11 @@ define_syslog_variables  = Off
 
 ; For Win32 only.
 ; http://php.net/sendmail-from
-;sendmail_from = me@localhost.com
+;sendmail_from = me@example.com
 
 ; For Unix only.  You may supply arguments as well (default: "sendmail -t -i").
-;sendmail_path = "/usr/bin/sendmail.exe -t"
+; http://php.net/sendmail-path
+;sendmail_path =
 
 sendmail_path = "G:/UniServer/msmtp/msmtp.exe --file=G:/UniServer/msmtp/msmtprc.ini  -t"
 
@@ -1242,14 +1243,6 @@ mysql.trace_mode = Off
 ; http://php.net/mysqli.max-persistent
 mysqli.max_persistent = -1
 
-; Allow accessing, from PHP's perspective, local files with LOAD DATA statements
-; http://php.net/mysqli.allow_local_infile
-;mysqli.allow_local_infile = On
-
-; Allow or prevent persistent links.
-; http://php.net/mysqli.allow-persistent
-mysqli.allow_persistent = On
-
 ; Maximum number of links.  -1 means no limit.
 ; http://php.net/mysqli.max-links
 mysqli.max_links = -1
@@ -1298,7 +1291,7 @@ mysqlnd.collect_statistics = On
 ; Enable / Disable collection of memory usage statstics by mysqlnd which can be
 ; used to tune and monitor MySQL operations.
 ; http://php.net/mysqlnd.collect_memory_statistics
-mysqlnd.collect_memory_statistics = Off
+mysqlnd.collect_memory_statistics = On
 
 ; Size of a pre-allocated buffer used when sending commands to MySQL in bytes.
 ; http://php.net/mysqlnd.net_cmd_buffer_size
@@ -1469,7 +1462,7 @@ session.save_handler = files
 ;
 ; where MODE is the octal representation of the mode. Note that this
 ; does not overwrite the process's umask.
-; http://www.php.net/manual/en/session.configuration.php#ini.session.save-path
+; http://php.net/session.save-path
 session.save_path = "G:/UniServer/tmp"
 
 ; Whether to use cookies.
@@ -1567,7 +1560,7 @@ session.gc_maxlifetime = 1440
 ; Development Value: On
 ; Production Value: Off
 ; http://php.net/session.bug-compat-42
-session.bug_compat_42 = Off
+session.bug_compat_42 = On
 
 ; This setting controls whether or not you are warned by PHP when initializing a
 ; session value into the global space. session.bug_compat_42 must be enabled before
@@ -1576,7 +1569,7 @@ session.bug_compat_42 = Off
 ; Development Value: On
 ; Production Value: Off
 ; http://php.net/session.bug-compat-warn
-session.bug_compat_warn = Off
+session.bug_compat_warn = On
 
 ; Check HTTP Referer to invalidate externally stored URLs containing ids.
 ; HTTP_REFERER has to contain this substring for the session to be
@@ -1807,6 +1800,7 @@ mssql.secure_connection = Off
 ; Default: ""
 ;mbstring.script_encoding=
 
+
 [gd]
 ; Tell the jpeg decode to ignore warnings and try to create
 ; a gd image. The warning will then be displayed as notices
@@ -1855,7 +1849,7 @@ tidy.clean_output = Off
 soap.wsdl_cache_enabled=1
 
 ; Sets the directory name where SOAP extension will put cache files.
-; http://www.php.net/manual/en/soap.configuration.php#ini.soap.wsdl-cache-dir
+; http://php.net/soap.wsdl-cache-dir
 soap.wsdl_cache_dir="G:/UniServer/tmp"
 
 ; (time to live) Sets the number of second while cached file will be used 

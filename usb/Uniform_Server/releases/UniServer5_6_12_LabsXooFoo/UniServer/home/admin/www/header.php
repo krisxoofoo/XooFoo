@@ -10,7 +10,7 @@
 
 // Includes
 include_once "includes/config.inc.php";
-include_once US_APANEL_WWW."/includes/lang/".file_get_contents("$us_apanel/includes/.lang").".php"; 
+include_once US_APANEL_WWW."/includes/lang/".file_get_contents(US_APANEL_WWW."/includes/.lang").".php"; 
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

@@ -10,7 +10,8 @@
 
 // Includes
 include_once "includes/config.inc.php";
-include_once US_APANEL_WWW."/includes/lang/".file_get_contents("$us_apanel/includes/.lang").".php"; 
+
+include_once US_APANEL_WWW."/includes/lang/".file_get_contents(US_APANEL_WWW."/includes/.lang").".php"; 
 
 if(file_get_contents("$us_apanel/includes/.lang") == "")
 {

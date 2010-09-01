@@ -1807,6 +1807,7 @@ mssql.secure_connection = Off
 ; Default: ""
 ;mbstring.script_encoding=
 
+
 [gd]
 ; Tell the jpeg decode to ignore warnings and try to create
 ; a gd image. The warning will then be displayed as notices

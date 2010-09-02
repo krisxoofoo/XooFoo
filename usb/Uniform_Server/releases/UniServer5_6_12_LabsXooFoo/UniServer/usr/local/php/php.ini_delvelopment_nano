@@ -1892,4 +1892,33 @@ eaccelerator.allowed_admin_path=G:/UniServer/home/admin/www/plugins/eaccelerator
 eaccelerator.cache_dir=G:/UniServer/tmp/eaccelerator
 eaccelerator.debug = 0
 
+[xdebug]
+zend_extension=G:/UniServer/usr/local/php/extensions/php_xdebug.dll
+xdebug.remote_autostart=on
+; Accès distant au serveur xdebug
+xdebug.remote_enable=on
+xdebug.remote_host=localhost
+xdebug.remote_port=9000
+xdebug.remote_handler=dbgp
+xdebug.remote_mode=req
+xdebug.idekey=default
+; Trace de xdebug
+xdebug.auto_trace=0
+xdebug.trace_format=0
+xdebug.show_mem_delta=1
+xdebug.trace_output_dir=G:/UniServer/tmp/xdebug
+xdebug.trace_output_name="trace.%t"
+; Collecte de variables locales, paramètres et retours de fonctions
+xdebug.collect_vars=1
+xdebug.collect_params=4
+xdebug.collect_return=1
+xdebug.show_local_vars=1
+; Dump variables superglobales
+xdebug.dump_globals=1
+xdebug.dump=COOKIE,FILES,GET,POST,REQUEST,SERVER,SESSION
+xdebug.dump.SERVER=REMOTE_ADDR,REQUEST_METHOD
+; Profileur xdebug (stat et graph)
+; Decommenter pour activer le profiler de maniere permente
+;xdebug.profiler_enable=1          
+;xdebug.profiler_output_dir=G:/UniServer/tmp/xdebug/profiler
 

@@ -23,9 +23,10 @@ li {padding-bottom:1em;}
 .text1 {font-size: 1.4em;color: White;text-align : left;}
 li {list-style:none;}
 img {border:0;}
-#logo {margin-top:4em !important; text-align:center;}
-.logo { padding: 2em; opacity: .5;}
-.logo:hover { opacity: 1;}
+#logo { width:500px; height: 100px; margin:4em auto !important; text-align:center;}
+.logo1 { float:left; opacity: .5;}
+.logo2 { float:right; opacity: .5;}
+.logo1:hover, .logo2:hover { opacity: 1;}
 #directories {margin:3em auto; width:500px;}
 #directories1 {margin:3em auto; width:500px; text-align:center;}
 #tools {margin:2em auto; width:500px;}
@@ -54,37 +55,41 @@ img {border:0;}
 
 <body>
 <div id="logo">
-<a class="logo" href="index.php" title="Index Localhost"><img src="images/logo.jpg"></a><a class="logo" href="http://labs.xoofoo.org" target="_blank" title="Labs XooFoo"><img src="/images/labs_logo_black.png"></a>
+	<a class="logo1" href="http://www.uniformserver.com/" title="Uniform Server Website"><img src="images/logo.jpg" /></a>
+	<a class="logo2" href="http://labs.xoofoo.org" target="_blank" title="Labs XooFoo Website"><img src="/images/labs_logo_black.png" /></a>
 </div>
 
 <div id="directories">
 <h3>Root Directories - Dossiers à la racine WWW</h3>
-<?php
-$rep=opendir('.');
-$bAuMoinsUnRepertoire = false;
-while ($file = readdir($rep)){
-	if($file != '..' && $file !='.' && $file !=''){ 
-		if (is_dir($file)){
-			$bAuMoinsUnRepertoire = true;
-			print("<div class='directories'><a href='$file/' class='text1'>$file</a></div>");
+	<?php
+	$rep=opendir('.');
+	$bAuMoinsUnRepertoire = false;
+	while ($file = readdir($rep)){
+		if($file != '..' && $file !='.' && $file !=''){ 
+			if (is_dir($file)){
+				$bAuMoinsUnRepertoire = true;
+				print("<div class='directories'><a href='$file/' class='text1'>$file</a></div>");
+			}
 		}
 	}
-}
-if ($bAuMoinsUnRepertoire == false) {
-	print("<div id='directories1'>-&nbsp; No files &nbsp;-</div>");
-}
-closedir($rep);
-clearstatcache();
-?>
+	if ($bAuMoinsUnRepertoire == false) {
+		print("<div id='directories1'>-&nbsp; No files &nbsp;-</div>");
+	}
+	closedir($rep);
+	clearstatcache();
+	?>
 </div>
 
 <div id="tools">
-<h3>Tools - Outils</h3>
-<ul><li><a class='text1' href="http://localhost/apanel/phpMyAdmin/" title="phpMyAdmin" target="_blank">phpMyAdmin</a></li>
-<li><a class='text1' href="http://localhost/apanel/plugins/eaccelerator/control.php" title="Cpanel eAccelerator" target="_blank">Cpanel eAccelerator</a></li>
-<li><a class='text1' href="http://localhost/apanel/phpinfo.php/" title="phpinfo" target="_blank">PhpInfo</a></li>
-<li><a class='text1' href="http://localhost/apanel/" title="Cpanel Uniform Server" target="_blank">Cpanel Uniform server</a></li>
-</ul>
+	<h3>Tools - Outils</h3>
+	<ul>
+		<li><a class="text1" href="http://localhost/apanel/" title="Cpanel Uniform Server" target="_blank">Cpanel Uniform server</a></li>
+		<li><a class="text1" href="http://localhost/apanel/phpMyAdmin/" title="phpMyAdmin" target="_blank">phpMyAdmin</a></li>
+		<li><a class="text1" href="http://localhost/apanel/plugins/eaccelerator/control.php" title="Cpanel eAccelerator" target="_blank">Cpanel eAccelerator</a></li>
+		<!--<li><a class="text1" href="http://localhost/apanel/plugins/apc/apc.php" title="APC Cache Monitor" target="_blank">APC Monitor</a></li>-->
+		<!--<li><a class="text1" href="http://localhost/apanel/plugins/memcache/memcache.php" title="Memcache Monitor" target="_blank">Memcache Monitor</a></li>-->
+		<li><a class="text1" href="http://localhost/apanel/phpinfo.php/" title="phpinfo" target="_blank">PhpInfo</a></li>
+	</ul>
 </div>
 
 </body>

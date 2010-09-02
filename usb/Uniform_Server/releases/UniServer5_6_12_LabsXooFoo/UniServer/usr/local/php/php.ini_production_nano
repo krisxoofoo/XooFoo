@@ -1899,4 +1899,14 @@ eaccelerator.allowed_admin_path=G:/UniServer/home/admin/www/plugins/eaccelerator
 eaccelerator.cache_dir=G:/UniServer/tmp/eaccelerator
 eaccelerator.debug = 0
 
-
+[apc]
+extension=php_apc.dll
+apc.enabled=1
+apc.rfc1867 = on
+apc.shm_segments = 1
+apc.shm_size = 128M
+apc.ttl = 7200
+apc.user_ttl = 7200
+apc.num_files_hint = 1024
+apc.enable_cli = 1
+apc.max_file_size = 200M

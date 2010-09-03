@@ -84,10 +84,10 @@ img {border:0;}
 	<h3>Tools - Outils</h3>
 	<ul>
 		<li><a class="text1" href="http://localhost/apanel/" title="Cpanel Uniform Server" target="_blank">Cpanel Uniform server</a></li>
-		<li><a class="text1" href="http://localhost/apanel/phpMyAdmin/" title="phpMyAdmin" target="_blank">phpMyAdmin</a></li>
+		<li><a class="text1" href="http://localhost/apanel/phpMyAdmin/" title="phpMyAdmin" target="_blank">PhpMyAdmin</a></li>
 		<li><a class="text1" href="http://localhost/apanel/plugins/eaccelerator/control.php" title="Cpanel eAccelerator" target="_blank">Cpanel eAccelerator</a></li>
-		<!--<li><a class="text1" href="http://localhost/apanel/plugins/apc/apc.php" title="APC Cache Monitor" target="_blank">APC Monitor</a></li>-->
-		<!--<li><a class="text1" href="http://localhost/apanel/plugins/memcache/memcache.php" title="Memcache Monitor" target="_blank">Memcache Monitor</a></li>-->
+		<li><a class="text1" href="http://localhost/apanel/plugins/apc/apc.php" title="APC Cache Monitor" target="_blank">APC Monitor</a></li>
+		<li><a class="text1" href="http://localhost/apanel/plugins/memcache/memcache.php" title="Memcache Monitor" target="_blank">Memcache Monitor</a></li>
 		<li><a class="text1" href="http://localhost/apanel/phpinfo.php/" title="phpinfo" target="_blank">PhpInfo</a></li>
 	</ul>
 </div>

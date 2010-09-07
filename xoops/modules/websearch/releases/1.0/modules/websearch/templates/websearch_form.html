@@ -1,0 +1,22 @@
+<div id="page">
+    <h1><{$smarty.const._MD_WEBSEARCH_TITLE}></h1>
+    <form id="searchForm" method="post">
+		<fieldset>
+           	<input id="s" type="text" />
+            <input type="submit" value="<{$smarty.const._MD_WEBSEARCH_SEARCH}>" id="submitButton" />
+            <div id="searchInContainer">
+                <input type="radio" name="check" value="site" id="searchSite" checked />
+                <label for="searchSite" id="siteNameLabel" ><{$smarty.const._MD_WEBSEARCH_SEARCH}></label>
+                <input type="radio" name="check" value="web" id="searchWeb" />
+                <label for="searchWeb"><{$smarty.const._MD_WEBSEARCH_WEB}></label>
+			</div>           
+            <ul class="icons">
+                <li class="web" title="<{$smarty.const._MD_WEBSEARCH_WEBDSC}>" data-searchType="web"><{$smarty.const._MD_WEBSEARCH_WEB}></li>
+                <li class="images" title="<{$smarty.const._MD_WEBSEARCH_IMGDSC}>" data-searchType="images"><{$smarty.const._MD_WEBSEARCH_IMG}></li>
+                <li class="news" title="<{$smarty.const._MD_WEBSEARCH_NEWSDSC}>" data-searchType="news"><{$smarty.const._MD_WEBSEARCH_NEWS}></li>
+                <li class="videos" title="<{$smarty.const._MD_WEBSEARCH_VIDEODSC}>" data-searchType="video"><{$smarty.const._MD_WEBSEARCH_VIDEO}></li>
+            </ul>  
+        </fieldset>
+    </form>
+    <div id="resultsDiv"></div>
+</div>

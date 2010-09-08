@@ -19,6 +19,9 @@
 if ( !include("../../mainfile.php") ) {
     die("XOOPS root path not defined");
 }
+
+$xoopsOption["template_main"] = "websearch_form.html";
+
 include(XOOPS_ROOT_PATH."/header.php");
 
 global $xoTheme; 
@@ -26,8 +29,6 @@ global $xoTheme;
 	$xoTheme->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
 	//$xoTheme->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/jquery.js');
 	$xoTheme->addScript('modules/websearch/js/script.js');
-
-$xoopsOption["template_main"] = "websearch_form.html";
 
 include_once XOOPS_ROOT_PATH."/footer.php";
 ?>

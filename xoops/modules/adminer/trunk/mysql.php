@@ -11,10 +11,10 @@
  *
  * @copyright           The XOOPS Project http://sourceforge.net/projects/xoops/
  * @license             http://www.fsf.org/copyleft/gpl.html GNU public license
- * @package          Adminer Module
+ * @package          	Adminer Module
  * @since               2.3.0
  * @author              Kris <http://www.xoofoo.org>
- * @version             $Id$
+ * @version             $Id $
 **/
 // connect xoops database 
 if (file_exists("mainfile.php")) {
@@ -24,6 +24,7 @@ include("../mainfile.php");
 } else { 
 include("../../mainfile.php");
 }
+include(XOOPS_ROOT_PATH."/header.php");
 
 function adminer_object() {
 	class AdminerKfr extends Adminer {

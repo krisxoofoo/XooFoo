@@ -2,9 +2,9 @@
 // Module Info
 
 // The name of this module
-define("_MI_ADMINERNAME","MySQL Adminer");
+define("_MI_ADMINER_NAME","MySQL Adminer");
 
 // A brief description of this module
-define("_MI_ADMINERDESC","Database Management module for Xoops");
+define("_MI_ADMINER_DESC","Database Management module for Xoops");
 
 ?>

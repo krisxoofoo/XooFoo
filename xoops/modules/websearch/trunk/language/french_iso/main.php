@@ -10,7 +10,7 @@ define("_MD_WEBSEARCH_VIDEODSC","Recherche dans les vidéos");
 define("_MD_WEBSEARCH_NEWS","Actualités");
 define("_MD_WEBSEARCH_NEWSDSC","Recherche dans les actualités");
 define("_MD_WEBSEARCH_SUBMIT","Soumettre");
-define("_MD_WEBSEARCH_SUBMIT","Plus ...");
+define("_MD_WEBSEARCH_MORE","Plus ...");
 
 /**
  * @translation     Communauté Francophone des Utilisateurs de Xoops

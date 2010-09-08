@@ -10,5 +10,5 @@ define("_MD_WEBSEARCH_VIDEODSC","Videos Search");
 define("_MD_WEBSEARCH_NEWS","News");
 define("_MD_WEBSEARCH_NEWSDSC","News Search");
 define("_MD_WEBSEARCH_SUBMIT","Submit");
-define("_MD_WEBSEARCH_SUBMIT","More");
+define("_MD_WEBSEARCH_MORE","More");
 ?>

@@ -243,6 +243,8 @@
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/LabsXooFoo');" label="Labs XooFoo" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/xoopspro');" label="Xoops Pro" image="chrome://xoofoobar/skin/twitter.png"/>
 					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/babylonbyxoops');" label="Babylon by Xoops" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/ixthemes');" label="XThemes" image="chrome://xoofoobar/skin/twitter.png"/>
+					<menuitem class="menuitem-iconic" oncommand="xo_loadURL('http://twitter.com/mamba_xoops');" label="Mamba Xoops" image="chrome://xoofoobar/skin/twitter.png"/>
 				</menupopup>
 			</toolbarbutton>			
 		

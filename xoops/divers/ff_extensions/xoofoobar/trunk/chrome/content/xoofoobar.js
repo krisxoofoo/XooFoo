@@ -1,3 +1,4 @@
+/* $Id $ */
 /* forwards document to new URL */
 function xo_loadURL(url)
 {

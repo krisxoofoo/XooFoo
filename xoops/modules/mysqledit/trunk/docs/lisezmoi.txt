@@ -1,0 +1,5 @@
+si vous rencontrez un erreur pour data editor de ce type :
+Fatal error: session_start() [<a href='function.session-start'>function.session-start</a>]: Failed to initialize storage module: user (path: /tmp) in /home/blablabla/public_html/modules/adminer/include/editor.php
+
+remplacez le fichier editor.php du dossier "include" par celui du fichier include.zip
+et créez un dossier "sessions" la racine de votre site

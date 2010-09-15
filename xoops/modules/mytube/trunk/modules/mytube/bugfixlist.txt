@@ -1,0 +1,267 @@
+Changelog:
+
+=========================================================
+27.06.2009   1.05 Final  
+=========================================================
+- Fixed issue with vids displayed twice when using alternative categories
+- Fixed issue with 'Aknowledge' & 'Confirmed' for broken video administration
+- Modified template for random & recent block (horizontal)
+- Timestamp multilanguage compatible
+
+=========================================================
+05.04.2009   1.05 RC-1
+=========================================================
+- Updated JW FLV Player to version 4.3
+- Displaying Rating features can be turned off
+- Set (most) players dimensions to 16:9 format (480px x 295px)
+
+- Added: option to play videos automatically
+- Added: option to set number of category columns
+- Added: category column to Main Index listing
+- Added: video thumbnail visible in info block when editing video
+- Added: support for videoclips from Vimeo
+- Added: support for videoclips from Megavideo
+- Added: support for videoclips from Viddler
+
+- Fixed: random vertical block not working properly
+- Fixed: some typos in css [xoops-magazine/mcdonald]
+- Fixed: bug in banner statistics block
+- Fixed: category permissions will be deleted when category is deleted
+
+- Changed: references to class/xoopsmodule.php to kernel/module.php [vaughan]
+- Changed: templates/xoopstube_videoload.html and templates/xoopstube_singlevideo.php
+- Changed: About page
+- Changed: rearranged menu items
+
+
+=========================================================
+19.09.2008   1.04 Final
+=========================================================
+- Updated JW FLV Player to version 4.1
+- Removed file templates/xoopstube_videoloadsimple.html
+
+- Fixed bug: alternative categories were not deleted
+- Fixed bug: blank page with Cancel button ratingpage
+
+
+=========================================================
+18.08.2008   1.04 RC-3
+=========================================================
+- Added noindex,nofollow meta-tag to broken- and rating pages
+- Added option to Index Page to show Latest Videos [trabis & mcdonald]
+
+- Convert Dutch & English language files to UTF-8
+
+- Fixed modification feature, user+admin side
+- Fixed rating page, removed closing div-tag
+
+
+=========================================================
+25.07.2008   1.04 RC-2
+=========================================================
+- Folder name can be changed [stranger]
+- Replaced date() by formatTimestamp() [stranger]
+- Corrected date used for showing clips in blocks
+- Modify option visible for submitter only
+- Updated JW FLV Player to version 4, needs Adobe Flash 9 or higher
+
+- Added support for videoclips from ClipFish
+- Added support for videoclips from LiveLeak
+- Added support for videoclips from Maktoob
+- Added support for videoclips from Veoh
+- Added Tag Cloud & Top Tags blocks
+- Added Portugese language files (utf-8) [gibaphp]
+- Added Portuguese-Brazilian language files (utf-8) [gibaphp]
+- Added Spanish language files (utf-8) [juancj]
+
+- Fixed bug in block settings
+
+
+=========================================================
+27.05.2008   1.04 RC-1
+=========================================================
+- Changed module name into MyTube
+- Changed Warning system to recognise if folders are writeable y/n
+- Date format can be set for blocks
+
+- Added module icon for impressCMS
+- Added support for videoclips from Blip.tv
+- Added option to use flv-clips stored on own server (MyTube)
+- Added 'expired' icon to Status column in main index
+- Added TinyMCE to list of editors (works for XOOPS & ImpressCMS)
+- Added center bottom blocks to MyTube block settings
+- Added Sponsor (banner) feature to categories
+- Added block for Sponsor (banner) statistics
+
+- Fixed multilanguage issue in impressCMS
+
+- German language files updated [wuddel]
+
+
+=========================================================
+08.03.2008   1.03.1 Final
+=========================================================
+- Fixed XSS vulnerability [Vaughan/McDonald]
+- Fixed bug in sub-cat listing
+- Fixed bug in page nav of Recent Videos
+
+
+=========================================================
+26.02.2008   1.03 Final
+=========================================================
+- Fixed bug in sql-file
+- Fixed bug in WYSIWYG editors (FCKEditor)
+- Fixed option to move videos from category to category
+- Replaced Set Publish Date/Time in admin side
+- Added option to Preferences to set date format for admin section
+- Added French language files [Mr-reda04]
+- Updated German langfiles [wuddel]
+- Updated Spanish langfiles [debianus]
+- Updated English & Dutch langfiles
+
+
+=========================================================
+21.02.2008   1.02 Final
+=========================================================
+- Added Spanish language files [debianus]
+- Added German language files [wuddel]
+- Added Control Panel icons for ImpressCMS
+- Added TinyMCE and DHTML Extended to list of editors
+- Removed Spaw editor from list of editors
+- Fixed Latest Listings page
+- Replaced form for meta keywords
+- Minor improvements in subcat listing template
+
+=========================================================
+23.01.2008   1.01 Final
+=========================================================
+- Fixed case sensitivity of search function
+- Removed footer.php
+- Renamed rate6.png into rate5.png in folder images/icon/
+- Editor for user & admin can be different (Preferences)
+- Added support for videoclips from DailyMotion
+- Added Facebook to Social Bookmarks
+
+=========================================================
+07.01.2008   1.0.1 RC8
+=========================================================
+- Added support for Tag module (http://xoopsforge.com)
+- Added sort options above categories
+- Added 'Back' button above videoclip and top10
+- Added support for videoclips from iFilm/Spike
+- Added support for videoclips from Photobucket
+- Added support for videoclips from Google Video
+- Added support for videoclips from MySpace TV
+- Replaced icons by new ones, all graphs in PNG format
+- Removed width/height from category icons in templates
+
+=========================================================
+02.12.2007   1.0.1 RC7
+=========================================================
+- Fixed bug Publisher name replaced after approving by admin
+- Changed 'Other Videos Of' to 'No Other Videos Of' when only 1 video submitted
+
+=========================================================
+01.12.2007   1.0.1 RC7
+=========================================================
+- Fixed submit button brokenvideo for non-english languages
+- Solved problem title+date not displayed in horizontal blocks
+- Removed file xoopstube/visit.php
+- Removed file xoopstube/blocks/xoopstube_random.php
+- Removed file xoopstube/class/xtubemetagen.php
+- Added support for videoclips from MetaCafe
+- Added option in Prefs for meta tag description
+- Added option for Publisher in submit form
+- Added dutch language files
+- Started with css file for XoopsTube
+- Shrunk legend icons
+
+=========================================================
+23.11.2007   1.0.1 RC6
+=========================================================
+- Fixed bug in RSSFit plugin
+- Hit-counter not updating for admins (when logged in)
+
+=========================================================
+22.11.2007   1.0.1 RC6
+=========================================================
+- Fixed bug in notifications
+- Fixed bug in sorting alternative categories (admin)
+- Fixed bug in search function
+- Added title+date to horizontal blocks
+- Added generation of meta description 'on-the-fly' (experimental)
+
+=========================================================
+18.11.2007   1.0.1 RC5
+=========================================================
+- Added plugin for RSSFit module from Brandycoke Productions (http://www.brandycoke.com)
+
+=========================================================
+09.11.2007   1.0.1 RC5
+=========================================================
+- Minor fix for sorting categories option
+
+=========================================================
+07.11.2007   1.0.1 RC5
+=========================================================
+- Added option in Prefs to sort cats by title or weight
+- Removed Inbetween from WYSIWYG editors list
+- Rewrote permissions.php
+- Fixed bug in ratevideo.php
+- After voting visitor is redirected back to video
+- After submitting brokenlink visitor is redirected back to video
+- Added missing language constants for config options
+
+=========================================================
+29.10.2007   1.0.1 RC4
+=========================================================
+- Added option in Prefs to turn on/off Social Bookmarks
+- Added option in Prefs to turn on/off 'Other videos by'
+- Added option in Prefs to turn on/off screenshots
+- Amount of characters of description in category view can be set
+
+=========================================================
+22.10.2007   1.0.1 RC3
+=========================================================
+- Copyright notice shows name publisher instead of title
+- Added 'Latest' to main menu
+- Added horizontal random block
+- Amount of videos for random blocks can be set
+- Fixed security issue
+- Added plugin for GIJOE's Sitemap module (http://xoops.peak.ne.jp/)
+
+=========================================================
+05.10.2007   1.0.1 RC3
+=========================================================
+- Fixed bug causing blank page when selecting Permissions
+- Small modifications of alternative categories
+- Modified sql file for better compatibility
+
+=========================================================
+04.10.2007   1.0.1 RC3
+=========================================================
+- Fixed bug total videos of sub cats not showing
+- Added horizontal block
+- Added random block
+- Comment option not visible when disabled in Preferences
+
+=========================================================
+11.09.2007   1.0.1 RC2
+=========================================================
+- Added social bookmarks
+- Modified template Popular
+- Fixed bug editing broken video
+
+=========================================================
+07.09.2007   1.0.1 RC1
+=========================================================
+- Fixed bug in submit form
+- Simplified Preferences
+- Removed option for adding screenshot in submit form
+- Screenshot is linked to YouTube
+- Removed some files
+
+=========================================================
+01.09.2007   1.00 RC
+=========================================================
+Added plugin for GIJOE's Waiting module (http://xoops.peak.ne.jp/)

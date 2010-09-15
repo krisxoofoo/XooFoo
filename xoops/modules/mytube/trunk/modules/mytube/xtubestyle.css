@@ -1,0 +1,88 @@
+/**
+* $Id: xtubestyle.css
+* Module: MyTube
+*/
+
+.mytube_button {
+	padding-right: 0.5em; 
+	padding-left: 0.5em; 
+	padding-bottom: 3px; 
+	padding-top: 2px; 
+	background-image: url(images/icon/backgnd.png); 
+	background-position: center center; 
+	background-repeat: repeat-x; 
+	color: #444; 
+	font-size: smaller; 
+	font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	cursor: pointer; 
+	border: outset 1px #CCC;
+	white-space: nowrap;
+	}
+
+.mytube_letters {
+	margin-bottom: 8px; 
+	margin-top: 8px; 
+	padding-right: 0.5em; 
+	padding-left: 0.5em; 
+	padding-bottom: 1px; 
+	padding-top: 1px; 
+	background-image: url(images/icon/backgnd.png); 
+	background-position: center center; 
+	background-repeat: repeat-x; 
+	color: #444; 
+	font-size: smaller; 
+	font-weight: bold; 
+	line-height: 16pt;
+	cursor: pointer;
+	border: outset 1px #CCC;
+	}
+  
+.mytube_legend {
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: right;
+  font-size: smaller;
+  vertical-align: middle; }
+
+.mytube_itemTitle a {
+  font-size: 130%; 
+  font-weight: bold; 
+  font-variant: small-caps; 
+  color: #FFFFFF;
+  background-color: transparent;}
+
+.mytube_header {
+  text-align: center;
+  line-height: 120%;
+  padding-bottom: 12px;}
+
+.mytube_path {
+  text-align: left;
+  font-weight: bold; 
+  line-height: 120%; 
+  padding-top: 12px; 
+  padding-bottom: 12px; 
+  font-size: smaller; }
+
+.mytube_description {
+	padding: 4px;
+	margin: 4px;  
+	background-color:#E9E9E9;
+	border: 1px solid #999999; }
+	
+.mytube_infoblock {
+  padding: 4px;
+  margin-left: 10px; 
+  margin-right: 5px;
+  background-color:#E6E6E6;
+  border: 1px solid #CCC;
+  font-size: 75%; }
+  
+div.mytube_socbookmark a img {
+	opacity: .4;
+	filter: alpha(opacity=40);
+	}
+div.mytube_socbookmark a:hover img {
+	opacity: 1;
+	filter: alpha(opacity=100); }

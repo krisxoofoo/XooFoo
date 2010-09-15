@@ -1,0 +1,19 @@
+<div style="overflow: auto; margin-left: 5%; margin-right: 5%;">
+ <{foreach item=videorandomh from=$block.random}>
+   <div class="even" style="float: left; width: <{$videorandomh.width}>px; margin: 2px; padding: 2px; font-size: 70%; text-align: center;">
+
+	<span>
+		<a href="<{$xoops_url}>/modules/<{$videorandomh.dirname}>/singlevideo.php?cid=<{$videorandomh.cid}>&lid=<{$videorandomh.id}>">
+			<{$videorandomh.videothumb}>
+		</a>
+	</span>
+
+	<span>
+		<a href="<{$xoops_url}>/modules/<{$videorandomh.dirname}>/singlevideo.php?cid=<{$videorandomh.cid}>&lid=<{$videorandomh.id}>">
+			<{$videorandomh.title}>
+		</a>
+	</span>
+	
+   </div>
+ <{/foreach}> 
+</div>

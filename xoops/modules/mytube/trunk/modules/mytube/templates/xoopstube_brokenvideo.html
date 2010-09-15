@@ -1,0 +1,39 @@
+<{if $catarray.imageheader != ""}>
+ <div align="center"><{$catarray.imageheader}></div>
+<{/if}> 
+
+<{if $brokenreport == true}>
+ <div align="left">
+  <h4><{$smarty.const._MD_XTUBE_RESOURCEREPORTED}></h4>
+ <div align="center">
+  <h4><{$smarty.const._MD_XTUBE_RESOURCEREPORTED}></h4>
+   <div><{$smarty.const._MD_XTUBE_RESOURCEREPORTED}></div><br />
+   <div><strong><{$smarty.const._MD_XTUBE_FILETITLE}></strong><{$broken.title}></div>
+   <div><strong><{$smarty.const._MD_XTUBE_RESOURCEID}></strong><{$broken.id}></div>
+   <div><strong><{$smarty.const._MD_XTUBE_REPORTER}></strong> <{$broken.reporter}></div>
+   <div><strong><{$smarty.const._MD_XTUBE_DATEREPORTED}></strong> <{$broken.date}></div><br />
+   <div><strong><{$smarty.const._MD_XTUBE_WEBMASTERACKNOW}></strong> <{$broken.acknowledged}></div>
+   <div><strong><{$smarty.const._MD_XTUBE_WEBMASTERCONFIRM}></strong> <{$broken.confirmed}></div>
+ </div>
+ </div>
+
+<{else}>
+
+ <div align="left">
+  <h4><{$smarty.const._MD_XTUBE_BROKENREPORT}></h4>
+  <div><{$smarty.const._MD_XTUBE_THANKSFORHELP}></div>
+  <div><{$smarty.const._MD_XTUBE_FORSECURITY}></div><br />
+  <div><{$smarty.const._MD_XTUBE_BEFORESUBMIT}></div><br />
+  <div align="center">
+   <div><strong><{$smarty.const._MD_XTUBE_FILETITLE}></strong><{$video.title}></div>
+   <div><strong><{$smarty.const._MD_XTUBE_SUBMITTER}>:</strong> <{$video.publisher}></div>
+   <div><strong><{$lang_subdate}>:</strong> <{$video.updated}></div><br />
+   <form action="brokenvideo.php" method="POST">
+    <input type="hidden" name="lid" value="<{$video_id}>" />
+	<input type="hidden" name="title" value="<{$video.title}>" />
+	<input type="submit" name="op" value="<{$smarty.const._MD_XTUBE_SUBMITBROKEN}>" title="<{$smarty.const._MD_XTUBE_SUBMITBROKEN}>" alt="<{$smarty.const._MD_XTUBE_SUBMITBROKEN}>" />
+	&nbsp;<input type="button" value="<{$smarty.const._MD_XTUBE_CANCEL}>" title="<{$smarty.const._MD_XTUBE_CANCEL}>" alt="<{$smarty.const._MD_XTUBE_CANCEL}>" onclick="javascript:history.go(-1)" />
+   </form>
+  </div>
+ </div>
+<{/if}>

@@ -1,0 +1,27 @@
+<div style="overflow: auto; margin-left: 5%; margin-right: 5%;">
+  <{foreach item=videoload from=$block.videos}>
+    <div class="even" style="float: left; width: <{$videoload.width}>px; margin: 2px; padding: 2px; font-size: 70%; text-align: center;">
+
+		<span>
+			<a href="<{$xoops_url}>/modules/<{$videoload.dirname}>/singlevideo.php?cid=<{$videoload.cid}>&lid=<{$videoload.id}>">
+			<{$videoload.videothumb}>
+			</a>
+		</span>
+
+		<span>
+			<a href="<{$xoops_url}>/modules/<{$videoload.dirname}>/singlevideo.php?cid=<{$videoload.cid}>&lid=<{$videoload.id}>">
+			<{$videoload.title}>
+			</a>
+		</span>
+		
+        <br />
+		
+		<span>
+			<a href="<{$xoops_url}>/modules/<{$videoload.dirname}>/singlevideo.php?cid=<{$videoload.cid}>&lid=<{$videoload.id}>">
+			(<{$videoload.date}>)
+			</a>
+		</span>
+
+    </div>
+  <{/foreach}>
+</div>

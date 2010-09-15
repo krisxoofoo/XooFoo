@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^video/([a-z]+)([0-9]+)(-(.+))? modules/mytube/seo.php?seoOp=$1&seoArg=$2&seoOther=$4&%{QUERY_STRING} [L]
+RewriteRule ^video(/)? modules/mytube/?%{QUERY_STRING} [L]
+

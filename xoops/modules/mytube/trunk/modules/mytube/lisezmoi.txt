@@ -1,0 +1,26 @@
+/***** version modifiée du module mytube de McDonald *****/
+- ajout de Yahoo Video
+- Ajout de Screenr
+- Ajout de Myvidster
+- quelques corrections html dans les templates
+
+pour une version du module avec prise en charge des medias html5 pour les vidéos uploadés, contacter kris par mail (kris at xoofoo.org ou kris at frxoops.org)
+
+/**** ajout seo par nikita *****/
+- Le fichier .htaccess (dans le dossier "seo") est à placer à la racine du site ou son contenu à coller à la suite de son .htaccess si on en possède déjà un - certains hébergeurs ne permettent pas le rewrite ou nécessite d'autres paramètres dans le .htaccess
+
+- Vous pouvez désactiver le seo dans le fichier modules/mytube/header.php
+   en commentant la ligne 
+
+include 'seo_url.php';
+
+comme ceci
+
+//include 'seo_url.php';
+
+- Ce système de seo est encore à finaliser, notamment il ne réécrit pas les urls dans les blocs du module, si celui ci n'est pas défini comme "Module pour votre page d'accueil", si vous arrivez à améliorer ce seo ou si simplement vous avez des remarques 
+c'est par ici == >  http://www.frxoops.org/modules/newbb/viewforum.php?forum=45
+
+Merci
+
+Nikita

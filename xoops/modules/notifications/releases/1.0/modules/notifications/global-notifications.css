@@ -1,0 +1,39 @@
+#gn-container {
+margin: 0 20px;
+background: transparent;
+}
+.gn-title-page {
+padding-top: 10px;
+font-size: 16px;
+font-weight: 700;
+border-bottom: 1px solid #666;
+}
+.gn-description-page {
+padding: 10px;
+margin: 20px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border: 1px solid #ccc;
+background: #eee;
+}
+.gn-module-name {
+font-weight: bold;
+font-size: 14px;
+border: 1px solid #ccc;
+margin: 0 20px;
+}
+.gn-module-notifs {
+margin: 10px 40px 40px 40px;
+}
+.gn-module-notifs-line {
+line-height: 22px;
+font-size: 12px;
+}
+.gn-module-notifs-line input[type=checkbox] {
+margin-top: 5px;
+}
+.gn-notif-description {
+font-size: 11px;
+font-style: italic;
+margin-bottom: 10px;
+}

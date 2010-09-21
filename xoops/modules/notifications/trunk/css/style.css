@@ -1,0 +1,14 @@
+/* @version             $Id $*/
+
+#gn-container {margin: 0 1.4em;}
+.gn-description-page {
+margin: 			1.6em;
+background-color: 	#eee;
+padding: 			1em;
+line-height:		1.6em;
+border: 			1px solid #ccc;
+}
+.gn-module-notifs-line {font-size: 1em;}
+.gn-module-notifs-line td {padding: .5em;}
+.gn-module-notifs-line input[type=checkbox] {}
+.gn-notif-description {font-size: .85em; font-style: italic;}

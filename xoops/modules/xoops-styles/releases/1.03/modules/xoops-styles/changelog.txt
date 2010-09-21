@@ -1,0 +1,25 @@
+Xoops-Styles Module - Changelog
+
+============================
+Version 1.03 ( for xoops 2.4.x )
+============================
+- Add "u" tag (kris_fr)
+
+============================
+Version 1.02 ( for xoops 2.4.x )
+============================
+- Add class tag for extras.css - see "extras" folder for style sheet example (kris_fr)
+
+============================
+Version 1.01 ( for xoops 2.4.x )
+============================
+- Add form tag : fielset, legend, form (kris_fr)
+- Add content tag : p, abbr, dfn, acronym, cite, address (kris_fr)
+- Update table tag : thead,tfoot, tbody (kris_fr)
+- complete extras class : shadow (kris_fr)
+- Cleaning code php in header (kris_fr)
+
+============================
+Version 1.0 ( for xoops 2.4.x )
+============================
+- initial work (burning)

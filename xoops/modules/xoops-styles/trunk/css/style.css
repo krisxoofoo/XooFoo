@@ -1,2 +1,7 @@
 /* @version $Id $ */
 h2.shadow img {margin-bottom: -5px; padding-right: .5em;}
+
+#xo-lorem-content fieldset {}
+#xo-lorem-content select {}
+#xo-lorem-content input[type=submit] {}
+pre #copytext {}

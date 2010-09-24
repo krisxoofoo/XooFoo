@@ -10,4 +10,7 @@ $adminmenu[3]['link']  = 'smartytag.php';
 
 $adminmenu[4]['title'] = _MI_XOSTYLE_SMNAME4;
 $adminmenu[4]['link']  = 'example.php';
+
+$adminmenu[4]['title'] = _MI_XOSTYLE_SMNAME5;
+$adminmenu[4]['link']  = 'loremgenerator.php';
 ?>

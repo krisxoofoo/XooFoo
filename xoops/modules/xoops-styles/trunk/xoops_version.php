@@ -18,7 +18,7 @@
 **/
 
 $modversion['name'] = _MI_XOSTYLE_NAME;
-$modversion['version'] = 1.04;
+$modversion['version'] = 2.0;
 $modversion['description'] = _MI_XOSTYLE_DESC;
 $modversion['credits'] = "Xoops Design Team";
 $modversion['author'] = "Burning & Xoops Design Team";
@@ -43,6 +43,8 @@ $modversion['sub'][3]['name'] = _MI_XOSTYLE_SMNAME3;
 $modversion['sub'][3]['url'] = "smartytag.php";
 $modversion['sub'][4]['name'] = _MI_XOSTYLE_SMNAME4;
 $modversion['sub'][4]['url'] = "example.php";
+$modversion['sub'][5]['name'] = _MI_XOSTYLE_SMNAME5;
+$modversion['sub'][5]['url'] = "loremgenerator.php";
 // Templates
 $modversion['templates'][1]['file'] = 'xostyle_theme.html';
 $modversion['templates'][1]['description'] = '';
@@ -50,6 +52,8 @@ $modversion['templates'][2]['file'] = 'xostyle_xoopscss.html';
 $modversion['templates'][2]['description'] = '';
 $modversion['templates'][3]['file'] = 'xostyle_smartytag.html';
 $modversion['templates'][3]['description'] = '';
-$modversion['templates'][4]['file'] = 'xostyle_exemple.html';
+$modversion['templates'][4]['file'] = 'xostyle_example.html';
 $modversion['templates'][4]['description'] = '';
+$modversion['templates'][5]['file'] = 'xostyle_loremgenerator.html';
+$modversion['templates'][5]['description'] = '';
 ?>

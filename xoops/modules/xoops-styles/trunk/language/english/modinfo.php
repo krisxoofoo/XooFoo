@@ -14,4 +14,5 @@ define("_MI_XOSTYLE_SMNAME1","Xoops Theme Style");
 define("_MI_XOSTYLE_SMNAME2","Xoops Generic Class");
 define("_MI_XOSTYLE_SMNAME3","Xoops Smarty Tags");
 define("_MI_XOSTYLE_SMNAME4","Example Generic Class");
+define("_MI_XOSTYLE_SMNAME5","Lorem Ipsum Generator");
 ?>

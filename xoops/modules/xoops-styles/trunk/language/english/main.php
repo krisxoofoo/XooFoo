@@ -2,6 +2,8 @@
 /* @version             $Id $*/
 
 /* general */
+define("_MD_XOSTYLE_SUMMARY","Summary");
+define("_MD_XOSTYLE_TOPPAGE","Top Page");
 define("_MD_XOSTYLE_WITHTXT","with text");
 define("_MD_XOSTYLE_WITHIMG","with image");
 define("_MD_XOSTYLE_WITHLINK","with hypertext link");
@@ -19,7 +21,7 @@ define("_MD_XOSTYLE_OR","or");
 define("_MD_XOSTYLE_AND","and");
 define("_MD_XOSTYLE_LOREM","Lorem ipsum");
 define("_MD_XOSTYLE_LOREMLINK","Lorem ipsum with hypertext link");
-define("_MD_XOSTYLE_DEPREC","<span class='red smallsmall italic'>(Warning ! Deprecead !!)</span>");
+define("_MD_XOSTYLE_DEPREC","<span class='red smallsmall italic'>(Warning!! Outdated!!)</span>");
 define("_MD_XOSTYLE_TITTABLE","Table");
 
 /* xostyle_xoopscss.html */

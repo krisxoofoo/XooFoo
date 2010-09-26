@@ -55,6 +55,8 @@ define("_MD_XOSTYLE_FONTS_TXT","
 	<hr class='width50'/>
 	<p><span class='cursordefault'>Donec (.cursordefault)</span> purus <span class='cursormove'>ipsum (.cursormove)</span>, dignissim <span class='cursorpointer'>pulvinar (.cursorpointer)</span> malesuada in, congue <span class='cursorhelp'>vitae erat (.cursorhelp)</span>.</p>
 	");
+define("_MD_XOSTYLE_TITLINEHEIGHT","Line Height");
+define("_MD_XOSTYLE_LINEHEIGHT_TXT","<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin bibendum ante fermentum diam iaculis et pulvinar metus pharetra. Sed sed nisi eu metus viverra aliquam at eleifend sapien. Suspendisse nulla purus, dapibus scelerisque ornare vitae, vehicula sit amet diam. Aenean sit amet malesuada nibh. Praesent quam lorem, consectetur ac congue lacinia, viverra eget tellus. Duis sodales, sem quis vulputate lobortis, dui dui porttitor ipsum, in ornare nulla nisi eu nisl. In ultrices libero metus. In sed tellus magna.</p>");
 define("_MD_XOSTYLE_TITBORDER","Borders");
 define("_MD_XOSTYLE_TITBORDER1","Basic Border");
 define("_MD_XOSTYLE_TITBORDER2","Solid Border");

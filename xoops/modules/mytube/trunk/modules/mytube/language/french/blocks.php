@@ -21,7 +21,7 @@ define( "_MB_XTUBE_ALLCAT", "Toutes les catégories");
 define( "_MB_XTUBE_SELECTCAT", "Afficher les vidéos de :");
 
 /**
- * @translation     AFUX (Association Francophone des Utilisateurs de Xoops) <http://www.afux.org/>
+ * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8 sans Bom
  *

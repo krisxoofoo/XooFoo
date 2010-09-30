@@ -238,7 +238,7 @@ define( "_AM_XTUBE_VIDEO_CREATENEWFILE", "Créer une nouvelle Vidéo" );
 define( "_AM_XTUBE_VIDEO_TITLE", "Titre de la Vidéo: " );
 define( "_AM_XTUBE_VIDEO_DLVIDID", "Code Id de la Vidéo: " );
 define( "_AM_XTUBE_VIDEO_DLVIDID_NOTE", "
-<small><strong>YouTube:</strong> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
+<span style='font-size:x-small;'><strong>YouTube:</strong> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
 <strong>MetaCafe:</strong> http://www.metacafe.com/watch/<font color=#FF0000>191543/sperm_whale_encounters_underwater_robot</font>/<br />
 <strong>SPIKE/ifilm:</strong> http://www.ifilm.com/video/<font color=#FF0000>2718605</font><br />
 <strong>Photobucket:</strong> http://i39.photobucket.com/albums/<font color=#FF0000>e168/vailtom/th_BigSquid</font>.jpg<br />
@@ -256,7 +256,8 @@ define( "_AM_XTUBE_VIDEO_DLVIDID_NOTE", "
 <strong>Yahoo: </strong>flashVars=\"id=<font color=#FF0000>mycodetoput</font>\"(voir le code embed)</small><br />
 <strong>Screenr:</strong>value=\"i=<font color=#FF0000>mycodetoput</font>\" (see embed code)</small><br />
 <strong>Myvidster:</strong> http://www.myvidster.com/video/<font color=#FF0000>215954</font>/You_see_what_happens<br />
-<strong>MyTube: </strong><font color=#FF0000>Take over from above selection menu</font></small><br />");
+<strong>MyTube: </strong><font color=#FF0000>Take over from above selection menu</font></small><br /><br />
+<strong>Sreenjelly:</strong> http://www.screenjelly.com/watch/<font color=#FF0000>sfXtuatF5qM</font></span>");
 
 define( "_AM_XTUBE_VIDEO_PICURL", "Url de l'image: " );
 define( "_AM_XTUBE_VIDEO_PICURLNOTE", "<small>Url de l'image quand Google Video, MySpace TV, DailyMotion, Blip.tv, ClipFish, LiveLeak, Veoh, Vimeo, Megavideo, Viddler ou Maktoob sont la Source.</small>" );
@@ -509,9 +510,10 @@ define( '_AM_XTUBE_CATTITLE', 'Catégorie' );
 define( '_AM_XTUBE_YAHOO', 'Yahoo' );
 define( '_AM_XTUBE_SCREENR', 'Screenr' );
 define( '_AM_XTUBE_MYVIDSTER', 'myvidster' );
+define( '_AM_XTUBE_SCREENJELLY', 'Screenjelly' );
 
 /**
- * @translation     AFUX (Association Francophone des Utilisateurs de Xoops) <http://www.afux.org/>
+ * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8 sans Bom
  *

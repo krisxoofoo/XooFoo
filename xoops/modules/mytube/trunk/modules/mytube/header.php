@@ -43,7 +43,7 @@ include_once XOOPS_ROOT_PATH . '/modules/' . $mydirname . '/class/myts_extended.
 $xtubemyts = new xtubeTextSanitizer(); // MyTextSanitizer object
 
 //Ajout appel seo
-include 'seo_url.php';
+//include 'seo_url.php';
 
 global $xoopModuleConfig;
 ?>

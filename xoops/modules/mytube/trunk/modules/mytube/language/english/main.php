@@ -31,7 +31,7 @@ define( "_MD_XTUBE_DESCRIPTIONC", "Description: " );
 define( "_MD_XTUBE_CATEGORYC", "Category: " );
 define( "_MD_XTUBE_VERSION", "Version" );
 define( "_MD_XTUBE_SUBMITDATE", "Submitted" );
-define( "_MD_XTUBE_VIDEOHITS", "<b>Views:</b> %s" );
+define( "_MD_XTUBE_VIDEOHITS", "<strong>Views:</strong> %s" );
 define( "_MD_XTUBE_PUBLISHERC", "Publisher: " );
 define( "_MD_XTUBE_RATINGC", "Rating: " );
 define( "_MD_XTUBE_ONEVOTE", "1 Vote" );
@@ -44,32 +44,33 @@ define( "_MD_XTUBE_SUBMITBROKEN", "Submit" );
 define( "_MD_XTUBE_BEFORESUBMIT", "Before submitting a broken video request, please check that the actual source of the video you intend reporting broken, is no longer there." );
 define( "_MD_XTUBE_TELLAFRIEND", "Recommend" );
 define( "_MD_XTUBE_EDIT", "Edit" );
-define( "_MD_XTUBE_THEREARE", "There are <b>%s</b> <i>Categories</i> and <b>%s</b> <i>Videos</i> listed" );
-define( "_MD_XTUBE_THEREIS", "There is <b>%s</b> <i>Category</i> and <b>%s</b> <i>Videos</i> listed" );
+define( "_MD_XTUBE_THEREARE", "There are <strong>%s</strong> <i>Categories</i> and <strong>%s</strong> <i>Videos</i> listed" );
+define( "_MD_XTUBE_THEREIS", "There is <strong>%s</strong> <i>Category</i> and <strong>%s</strong> <i>Videos</i> listed" );
 define( "_MD_XTUBE_LATESTLIST", "Latest Listings" );
 define( "_MD_XTUBE_FILETITLE", "Video title: " );
 define( "_MD_XTUBE_DLVIDID", "Video id-code: " );
 define( "_MD_XTUBE_VIDEO_DLVIDID_NOTE", "
-<small><b>YouTube:</b> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
-<b>MetaCafe:</b> http://www.metacafe.com/watch/<font color=#FF0000>191543/sperm_whale_encounters_underwater_robot</font>/<br />
-<b>SPIKE/ifilm:</b> http://www.ifilm.com/video/<font color=#FF0000>2718605</font><br />
-<b>Photobucket:</b> http://i39.photobucket.com/albums/<font color=#FF0000>e168/vailtom/th_BigSquid</font>.jpg<br />
-<b>Google Video:</b> http://video.google.com/videoplay?docid=<font color=#FF0000>4761076111111865377</font>&q=rov&total=913&start=...<br />
-<b>MySpace TV:</b> http://vids.myspace.com/index.cfm?fuseaction=vids.individual&videoid=<font color=#FF0000>13171141</font><br />
-<b>DailyMotion:</b> http://www.dailymotion.com/video/<font color=#FF0000>x40bhg</font>_blondesecretary_fun<br />
-<b>Blip.tv </b>embed code<b>:</b> http://blip.tv/play/<font color=#FF0000>Abe6EwA</font> ...<br />
-<b>ClipFish:</b> http://www.clipfish.de/player.php?videoid=<font color=#FF0000>MTg1NTYyfDM1Ng</font>%3D%3D<br />
-<b>LiveLeak:</b> http://www.liveleak.com/view?i=<font color=#FF0000>a59_1205566630</font><br />
-<b>Maktoob:</b> file=http://<font color=#FF0000>m003.maktoob.com/files/23/42/95531c25b690e48a3d69966b6a33b8d2/video/131102</font>.flv (from embed-code)<br />
-<b>Veoh:</b> http://www.veoh.com/videos/<font color=#FF0000>v15069875yApCz7r3</font>?jsonParams=...<br />
-<b>Vimeo:</b> http://www.vimeo.com/<font color=#FF0000>2246499</font><br />
-<b>Megavideo:</b> http://www.megavideo.com/?v=<font color=#FF0000>J6YSRE0T</font><br />
-<strong>Yahoo: </strong>flashVars=\"id=<font color=#FF0000>mycodetoput</font>\"(voir le code embed)</small><br />
-<strong>Screenr:</strong>value=\"i=<font color=#FF0000>mycodetoput</font>\" (see embed code)</small><br />
+<span style='font-size:x-small;'><strong>YouTube:</strong> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
+<strong>MetaCafe:</strong> http://www.metacafe.com/watch/<font color=#FF0000>191543/sperm_whale_encounters_underwater_robot</font>/<br />
+<strong>SPIKE/ifilm:</strong> http://www.ifilm.com/video/<font color=#FF0000>2718605</font><br />
+<strong>Photobucket:</strong> http://i39.photobucket.com/albums/<font color=#FF0000>e168/vailtom/th_BigSquid</font>.jpg<br />
+<strong>Google Video:</strong> http://video.google.com/videoplay?docid=<font color=#FF0000>4761076111111865377</font>&q=rov&total=913&start=...<br />
+<strong>MySpace TV:</strong> http://vids.myspace.com/index.cfm?fuseaction=vids.individual&videoid=<font color=#FF0000>13171141</font><br />
+<strong>DailyMotion:</strong> http://www.dailymotion.com/video/<font color=#FF0000>x40bhg</font>_blondesecretary_fun<br />
+<strong>Blip.tv </strong>embed code<strong>:</strong> http://blip.tv/play/<font color=#FF0000>Abe6EwA</font> ...<br />
+<strong>ClipFish:</strong> http://www.clipfish.de/player.php?videoid=<font color=#FF0000>MTg1NTYyfDM1Ng</font>%3D%3D<br />
+<strong>LiveLeak:</strong> http://www.liveleak.com/view?i=<font color=#FF0000>a59_1205566630</font><br />
+<strong>Maktoob:</strong> file=http://<font color=#FF0000>m003.maktoob.com/files/23/42/95531c25b690e48a3d69966b6a33b8d2/video/131102</font>.flv (from embed-code)<br />
+<strong>Veoh:</strong> http://www.veoh.com/videos/<font color=#FF0000>v15069875yApCz7r3</font>?jsonParams=...<br />
+<strong>Vimeo:</strong> http://www.vimeo.com/<font color=#FF0000>2246499</font><br />
+<strong>Megavideo:</strong> http://www.megavideo.com/?v=<font color=#FF0000>J6YSRE0T</font><br />
+<strong>Yahoo: </strong>flashVars=\"id=<font color=#FF0000>mycodetoput</font>\"(voir le code embed)</span><br />
+<strong>Screenr:</strong>value=\"i=<font color=#FF0000>mycodetoput</font>\" (see embed code)</span><br />
 <strong>Myvidster:</strong> http://www.myvidster.com/video/<font color=#FF0000>215954</font>/You_see_what_happens<br />
-<b>Viddler:</b> http://www.viddler.com/player/<font color=#FF0000>d32d2b94</font>/ (see embed code)</small>" );
+<strong>Viddler:</strong> http://www.viddler.com/player/<font color=#FF0000>d32d2b94</font>/ (see embed code)</span><br />
+<strong>Sreenjelly:</strong> http://www.screenjelly.com/watch/<font color=#FF0000>sfXtuatF5qM</font></span>" );
 define( "_MD_XTUBE_VIDEO_PICURL", "Picture url: " );
-define( "_MD_XTUBE_VIDEO_PICURLNOTE", "<small>Picture url when source is Google Video, MySpace TV, DailyMotion, Blip.tv, ClipFish, LiveLeak, Veoh, Vimeo, Viddler or Maktoob</small>" );
+define( "_MD_XTUBE_VIDEO_PICURLNOTE", "<span style='font-size:x-small;'>Picture url when source is Google Video, MySpace TV, DailyMotion, Blip.tv, ClipFish, LiveLeak, Veoh, Vimeo, Viddler or Maktoob</span>" );
 define( "_MD_XTUBE_VIDSOURCE", "Video source:" );
 define( "_MD_XTUBE_YOUTUBE", "YouTube" );
 define( "_MD_XTUBE_METACAFE", "MetaCafe" );
@@ -134,7 +135,7 @@ define( "_MD_XTUBE_REPORTER", "Original Reporter: " );
 define( "_MD_XTUBE_DATEREPORTED", "Date Reported: " );
 define( "_MD_XTUBE_RESOURCEREPORTED", "Resource Reported Broken" );
 define( "_MD_XTUBE_RESOURCEREPORTED2", "This video has been already reported as broken, we are working on a fix" );
-define( "_MD_XTUBE_BROWSETOTOPIC", "<b>Browse videos by alphabetical listing</b>" );
+define( "_MD_XTUBE_BROWSETOTOPIC", "<strong>Browse videos by alphabetical listing</strong>" );
 define( "_MD_XTUBE_WEBMASTERACKNOW", "Broken Report Acknowledged: " );
 define( "_MD_XTUBE_WEBMASTERCONFIRM", "Broken Report Confirmed: " );
 define( "_MD_XTUBE_ERRORSENDEMAIL", "Broken Report Confirmed But Error sending notification email to webmaster." );
@@ -161,7 +162,7 @@ define( "_MD_XTUBE_NOOTHERBYUID", "No other videos by: " );
 define( "_MD_XTUBE_LINKTIMES", "video Times: " );
 define( "_MD_XTUBE_MAINTOTAL", "Total Videos: " );
 define( "_MD_XTUBE_VIDEONOW", "View video" );
-define( "_MD_XTUBE_PAGES", "<b>Pages</b>" );
+define( "_MD_XTUBE_PAGES", "<strong>Pages</strong>" );
 define( "_MD_XTUBE_RATEDRESOURCE", "Rated Resource" );
 define( "_MD_XTUBE_SUBMITTER", "Submitter" );
 define( "_MD_XTUBE_ERROR", "Error Updating Database: Information not saved" );
@@ -186,7 +187,7 @@ define( "_MD_XTUBE_MODERATOR_OPTIONS", "Moderator Options" );
 
 // added by McDonald
 define( "_MD_XTUBE_TIME", "Time:" );
-define( "_MD_XTUBE_TIMEB", "<b>Time:</b>" );
+define( "_MD_XTUBE_TIMEB", "<strong>Time:</strong>" );
 define( "_MD_XTUBE_KEYWORDS", "Keywords:" );
 define( "_MD_XTUBE_KEYWORDS_NOTE", "Keywords should be seperated with a comma (keyword1, keyword2, keyword3)" );
 define( "_MD_XTUBE_NOVIDEOLOAD", "Thanks for your post!" );
@@ -219,6 +220,7 @@ define( '_MD_XTUBE_NEW', 'New!' );
 define( '_MD_XTUBE_YAHOO', 'Yahoo' );
 define( '_MD_XTUBE_SCREENR', 'Screenr' );
 define( '_MD_XTUBE_MYVIDSTER', 'myvidster' );
+define( '_MD_XTUBE_SCREENJELLY', 'Screenjelly' );
 
 function mytube_alfabet() {
 	$mytube_alfabet = array ( '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' );

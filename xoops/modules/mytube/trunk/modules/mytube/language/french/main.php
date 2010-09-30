@@ -44,7 +44,7 @@ define( "_MD_XTUBE_LATESTLIST", "Nouveautés" );
 define( "_MD_XTUBE_FILETITLE", "Titre de la vidéo: " );
 define( "_MD_XTUBE_DLVIDID", "Code Id de la vidéo: " );
 define( "_MD_XTUBE_VIDEO_DLVIDID_NOTE", "
-<small><strong>YouTube:</strong> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
+<span style='font-size:x-small;'><strong>YouTube:</strong> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
 <strong>MetaCafe:</strong> http://www.metacafe.com/watch/<font color=#FF0000>191543/sperm_whale_encounters_underwater_robot</font>/<br />
 <strong>SPIKE/ifilm:</strong> http://www.ifilm.com/video/<font color=#FF0000>2718605</font><br />
 <strong>Photobucket:</strong> http://i39.photobucket.com/albums/<font color=#FF0000>e168/vailtom/th_BigSquid</font>.jpg<br />
@@ -62,7 +62,8 @@ define( "_MD_XTUBE_VIDEO_DLVIDID_NOTE", "
 <strong>Yahoo: </strong>flashVars=\"id=<font color=#FF0000>mycodetoput</font>\"(voir le code embed)</small><br />
 <strong>Screenr:</strong>value=\"i=<font color=#FF0000>mycodetoput</font>\" (see embed code)</small><br />
 <strong>Myvidster:</strong> http://www.myvidster.com/video/<font color=#FF0000>215954</font>/You_see_what_happens<br />
-<strong>MyTube: </strong><font color=#FF0000>Take over from above selection menu</font></small><br />" );
+<strong>MyTube: </strong><font color=#FF0000>Take over from above selection menu</font></small><br /><br />
+<strong>Sreenjelly:</strong> http://www.screenjelly.com/watch/<font color=#FF0000>sfXtuatF5qM</font></span>" );
 define( "_MD_XTUBE_VIDEO_PICURL", "Url de l'image: " );
 define( "_MD_XTUBE_VIDEO_PICURLNOTE", "<small>Url de l'image quand Google Video, MySpace TV, DailyMotion, Blip.tv, ClipFish, LiveLeak, Veoh, Vimeo, Viddler ou Maktoob sont la Source.</small>" );
 define( "_MD_XTUBE_VIDSOURCE", "Source de la vidéo:" );
@@ -180,13 +181,13 @@ define( "_MD_XTUBE_APPROVE", "Approuver" );
 define( "_MD_XTUBE_MODERATOR_OPTIONS", "Options de modération" );
 
 // ajouté par McDonald
-define( "_MD_XTUBE_TIME", "Durée de la vidéo:" );
-define( "_MD_XTUBE_TIMEB", "<strong>Durée:</strong>" );
-define( "_MD_XTUBE_KEYWORDS", "Mots clés:" );
+define( "_MD_XTUBE_TIME", "Durée de la vidéo :" );
+define( "_MD_XTUBE_TIMEB", "<strong>Durée :</strong>" );
+define( "_MD_XTUBE_KEYWORDS", "Mots clés :" );
 define( "_MD_XTUBE_KEYWORDS_NOTE", "Les mots clés devraient être séparés par des virgules (mot clé1, mot clé2, mot clé3)" );
-define( "_MD_XTUBE_NOVIDEOLOAD", "Merci de votre proposition!" );
+define( "_MD_XTUBE_NOVIDEOLOAD", "Merci de votre proposition !" );
 define( "_MD_XTUBE_LINKID", "ID de la vidéo" );
-define( "_MD_XTUBE_ADDTO", "Ajoutée à : " );
+define( "_MD_XTUBE_ADDTO", "Ajoutée le : " );
 define( "_MD_XTUBE_NEWVIDEOS", "Dernières vidéos" );
 define( "_MD_XTUBE_TAKINGUBACK", "Retour en arrière." );
 define( "_MD_XTUBE_ADMINSECTION", ":: Administration ::" );
@@ -215,6 +216,7 @@ define( '_MD_XTUBE_BACK', 'Retour en arrière' );
 define( '_MD_XTUBE_YAHOO', 'Yahoo' );
 define( '_MD_XTUBE_SCREENR', 'Screenr' );
 define( '_MD_XTUBE_MYVIDSTER', 'myvidster' );
+define( '_MD_XTUBE_SCREENJELLY', 'Screenjelly' );
 
 function mytube_alfabet() {
         $mytube_alfabet = array ( '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z' );
@@ -222,7 +224,7 @@ function mytube_alfabet() {
 }
 
 /**
- * @translation     AFUX (Association Francophone des Utilisateurs de Xoops) <http://www.afux.org/>
+ * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8 sans Bom
  *

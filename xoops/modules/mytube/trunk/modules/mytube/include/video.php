@@ -74,6 +74,9 @@ function xtube_returnsource( $returnsource ) {
 	case 112:
 		  $returnsource = _AM_XTUBE_MYVIDSTER;
 		  break;
+	case 113:
+		  $returnsource = _AM_XTUBE_SCREENJELLY;
+		  break;
     case 200:
           $returnsource = _AM_XTUBE_MYTUBE;
           break;
@@ -94,31 +97,35 @@ function xtube_videothumb( $vidid, $title, $source, $picurl, $screenshot, $width
 	switch( $source ) { 
 // YouTube
 		case 0:
-			$thumb = '<img src="http://img.youtube.com/vi/' . $vidid . '/default.jpg"  title="' . $title . '" alt="' . $title . '" width="' . $width . '" height="' . $height . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="http://img.youtube.com/vi/' . $vidid . '/default.jpg"  title="' . $title . '" alt="' . $title . '" width="' . $width . '" height="' . $height . '" style="padding: 0; border-style: none;" />';
 			break;
   
 // MetaCafe
 		case 1:
 			list($metaclip) = split('[/]', $vidid);
 			$videothumb['metathumb'] = $metaclip;
-			$thumb = '<img src="http://www.metacafe.com/thumb/' . $videothumb['metathumb'] . '.jpg" title="' . $title . '" alt="' . $title . '" width="' . $width . '" height="' . $height . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="http://www.metacafe.com/thumb/' . $videothumb['metathumb'] . '.jpg" title="' . $title . '" alt="' . $title . '" width="' . $width . '" height="' . $height . '" style="padding: 0; border-style: none;" />';
 			break;
   
 // iFilm/Spike
 		case 2:
-			$thumb = '<img src="http://img3.ifilmpro.com/resize/image/stills/films/resize/istd/' . $vidid . '.jpg?width=' . $width . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="http://img3.ifilmpro.com/resize/image/stills/films/resize/istd/' . $vidid . '.jpg?width=' . $width . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0; border-style: none;" />';
 			break;
   
 // Photobucket
 		case 3:
-			$thumb = '<img src="http://i153.photobucket.com/albums/' . $vidid . '.jpg" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="http://i153.photobucket.com/albums/' . $vidid . '.jpg" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0; border-style: none;" />';
 			break;
   
 // Photobucket
 		case 4:
-			$thumb = '<img src="http://cdn-thumbs.viddler.com/thumbnail_2_' . $vidid . '.jpg" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="http://cdn-thumbs.viddler.com/thumbnail_2_' . $vidid . '.jpg" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0; border-style: none;" />';
 			break;
   
+// Screenjelly
+		case 113:
+			$thumb = '<img src="http://video.screenjelly.com/' . $vidid . '/thumbnail.jpg" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0; border-style: none;" />';
+			break;
 // Google Video, MySpace TV, DailyMotion, BrightCove, Blip.tv, ClipFish, LiveLeak, Maktoob, Veoh
 		case 100:
 		case 101:
@@ -133,12 +140,12 @@ function xtube_videothumb( $vidid, $title, $source, $picurl, $screenshot, $width
 		case 110:
 		case 111:
 		case 112:
-			$thumb = '<img src="' . $picurl . '" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="' . $picurl . '" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0; border-style: none;" />';
 			break;
   
 // Determine if video source is MyTube for thumbnail
 		case 200:
-			$thumb = '<img src="' . XOOPS_URL . '/' . $screenshot . '" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0px; border-style: none;" />';
+			$thumb = '<img src="' . XOOPS_URL . '/' . $screenshot . '" width="' . $width . '" height="' . $height . '"  title="' . $title . '" alt="' . $title . '" style="padding: 0; border-style: none;" />';
 			break;
 	}
 	return $thumb;
@@ -152,17 +159,17 @@ function xtube_videopublisher( $vidid, $publisher, $source = 0 ) {
 switch( $source ) {
 		// Determine if video source YouTube for publisher
 		case 0:
-			$publisher = '<a href="http://www.youtube.com/profile?user=' . $publisher . '" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.youtube.com/profile?user=' . $publisher . '" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source MetaCafe for publisher
 		case 1:
-			$publisher = '<a href="http://www.metacafe.com/channels/' . $publisher . '" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.metacafe.com/channels/' . $publisher . '" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source iFilm/Spike for publisher
 		case 2:
-			$publisher = '<a href="http://www.ifilm.com/profile/' . $publisher . '" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.ifilm.com/profile/' . $publisher . '" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source Photobucket for publisher
@@ -170,12 +177,12 @@ switch( $source ) {
 			$string = 'th_';
 			list($photobucket) = split($string, $vidid);
 			$ppublisher['ppublisher'] = $photobucket;
-			$publisher = '<a href="http://s39.photobucket.com/albums/' . $ppublisher['ppublisher'] . '" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://s39.photobucket.com/albums/' . $ppublisher['ppublisher'] . '" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source is Viddler for publisher
 		case 4:
-			$publisher = '<a href="http://www.viddler.com/explore/' . $publisher .'/" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.viddler.com/explore/' . $publisher .'/" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source is Google Video for publisher
@@ -186,37 +193,38 @@ switch( $source ) {
 		case 108:
 		case 109:
 		case 110:
+		case 113:
 			$publisher = $publisher;
 			break;
   
 		// Determine if video source is DailyMotion for publisher
 		case 102:
-			$publisher = '<a href="http://www.dailymotion.com/' . $publisher .'" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.dailymotion.com/' . $publisher .'" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source is ClipFish for publisher
 		case 104:
-			$publisher = '<a href="http://www.clipfish.de/user/' . $publisher .'" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.clipfish.de/user/' . $publisher .'" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source is LiveLeak for publisher
 		case 105:
-			$publisher = '<a href="http://www.liveleak.com/user/' . $publisher .'" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.liveleak.com/user/' . $publisher .'" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
   
 		// Determine if video source is Veoh for publisher
 		case 107:
-			$publisher = '<a href="http://www.veoh.com/users/' . $publisher .'" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.veoh.com/users/' . $publisher .'" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
 			
 		// Determine if video source is Screenr for publisher
 		case 111:
-			$publisher = '<a href="http://screenr.com/user/' . $publisher .'" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://screenr.com/user/' . $publisher .'" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
 			
 		// Determine if video source is Myvidster for publisher
 		case 112:
-			$publisher = '<a href="http://www.myvidster.com/' . $publisher .'" rel="external">' . $publisher . '</a>';
+			$publisher = '<a href="http://www.myvidster.com/' . $publisher .'" rel="external" title="' . $publisher . '">' . $publisher . '</a>';
 			break;
 		
 		// Determine if video source is MyTube for publisher
@@ -342,6 +350,10 @@ function xtube_showvideo( $vidid, $source, $screenshot, $picurl ) {
 // myvidster	
 		case 112:
 			$showvideo = '<embed src="http://www.myvidster.com/player.swf?config=http://www.myvidster.com/v/' . $vidid . '" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="385"></embed>';
+			break;
+// screenjelly	
+		case 113:
+			$showvideo = '<object width="577" height="403" data="http://embed.screenjelly.com/swf/SJPlayer.swf" type="application/x-shockwave-flash"><param name="movie" value="http://embed.screenjelly.com/swf/SJPlayer.swf"/><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true" /><param name="flashvars" value="video=' . $vidid . '"/></object>';
 			break;
 		
 // MyTube

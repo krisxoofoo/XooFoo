@@ -6,9 +6,9 @@
  * Format: UTF-8
  */
 
-define( "_AM_XTUBE_WARNINSTALL1", "<b>WARNING:</b> <u>Directory</u> %s exists on your server.<br />Please remove this directory for security reasons." );
-define( "_AM_XTUBE_WARNINSTALL2", "<b>WARNING:</b> <u>File</u> %s exists on your server.<br />Please remove this directory for security reasons." );
-define( "_AM_XTUBE_WARNINSTALL3", "<b>WARNING:</b> <u>Folder</u> %s does not exists on your server.<br />This folder is required by MyTube." );
+define( "_AM_XTUBE_WARNINSTALL1", "<strong>WARNING:</strong> <u>Directory</u> %s exists on your server.<br />Please remove this directory for security reasons." );
+define( "_AM_XTUBE_WARNINSTALL2", "<strong>WARNING:</strong> <u>File</u> %s exists on your server.<br />Please remove this directory for security reasons." );
+define( "_AM_XTUBE_WARNINSTALL3", "<strong>WARNING:</strong> <u>Folder</u> %s does not exists on your server.<br />This folder is required by MyTube." );
 
 define( "_AM_XTUBE_MODULE_NAME", "MyTube" );
 
@@ -103,7 +103,7 @@ define( "_AM_XTUBE_IPAGE_CRIGHT", "Align Right" );
  * Permissions defines
  */
 define( "_AM_XTUBE_PERM_MANAGEMENT", "Permissions Management" );
-define( "_AM_XTUBE_PERM_PERMSNOTE", "<div><b>NOTE:</b> Please be aware that even if you've set correct viewing permissions here, a group might not see the articles or blocks if you don't also grant that group permissions to access the module. To do that, go to <b>System admin > Groups</b>, choose the appropriate group and click the checkboxes to grant its members the access.</div>" );
+define( "_AM_XTUBE_PERM_PERMSNOTE", "<div><strong>NOTE:</strong> Please be aware that even if you've set correct viewing permissions here, a group might not see the articles or blocks if you don't also grant that group permissions to access the module. To do that, go to <strong>System admin > Groups</strong>, choose the appropriate group and click the checkboxes to grant its members the access.</div>" );
 define( "_AM_XTUBE_PERM_CPERMISSIONS", "Category Permissions" );
 define( "_AM_XTUBE_PERM_CSELECTPERMISSIONS", "Select categories that each group is allowed to view" );
 define( "_AM_XTUBE_PERM_CNOCATEGORY", "Cannot set permission's: No Categories's have been created yet!" );
@@ -121,7 +121,7 @@ define( "_AM_XTUBE_VIDEO_FILEERRORDELETE", "Error deleting Video: Video not foun
 define( "_AM_XTUBE_VIDEO_NOFILEERROR", "Error deleting Image: No Image Selected For Deleting." );
 define( "_AM_XTUBE_VIDEO_DELETEFILE", "WARNING: Are you sure you want to delete this Image link?" );
 define( "_AM_XTUBE_VIDEO_IMAGEINFO", "Server Status" );
-define( "_AM_XTUBE_VIDEO_SPHPINI", "<b>Information taken from PHP ini Link:</b>" );
+define( "_AM_XTUBE_VIDEO_SPHPINI", "<strong>Information taken from PHP ini Link:</strong>" );
 define( "_AM_XTUBE_VIDEO_SAFEMODESTATUS", "Safe Mode Status: " );
 define( "_AM_XTUBE_VIDEO_REGISTERGLOBALS", "Register Globals: " );
 define( "_AM_XTUBE_VIDEO_SERVERUPLOADSTATUS", "Server Uploads Status: " );
@@ -130,10 +130,10 @@ define( "_AM_XTUBE_VIDEO_MAXPOSTSIZE", "Max Post Size Permitted: " );
 define( "_AM_XTUBE_VIDEO_SAFEMODEPROBLEMS", " (This May Cause Problems)" );
 define( "_AM_XTUBE_VIDEO_GDLIBSTATUS", "GD Library Support: " );
 define( "_AM_XTUBE_VIDEO_GDLIBVERSION", "GD Library Version: " );
-define( "_AM_XTUBE_VIDEO_GDON", "<b>Enabled</b> (Thumbs Nails Available)" );
-define( "_AM_XTUBE_VIDEO_GDOFF", "<b>Disabled</b> (No Thumb Nails Available)" );
-define( "_AM_XTUBE_VIDEO_OFF", "<b>OFF</b>" );
-define( "_AM_XTUBE_VIDEO_ON", "<b>ON</b>" );
+define( "_AM_XTUBE_VIDEO_GDON", "<strong>Enabled</strong> (Thumbs Nails Available)" );
+define( "_AM_XTUBE_VIDEO_GDOFF", "<strong>Disabled</strong> (No Thumb Nails Available)" );
+define( "_AM_XTUBE_VIDEO_OFF", "<strong>OFF</strong>" );
+define( "_AM_XTUBE_VIDEO_ON", "<strong>ON</strong>" );
 define( "_AM_XTUBE_VIDEO_CATIMAGE", "Category Images" );
 define( "_AM_XTUBE_VIDEO_SCREENSHOTS", "Screenshot Images" );
 define( "_AM_XTUBE_VIDEO_MAINIMAGEDIR", "Main images" );
@@ -167,16 +167,16 @@ define( "_AM_XTUBE_MINDEX_SUBMITTED", "Date Submitted" );
 
 define( "_AM_XTUBE_MINDEX_ACTION", "Action" );
 define( "_AM_XTUBE_MINDEX_NOVIDEOSFOUND", "NOTICE: There are no videos that match this criteria" );
-define( "_AM_XTUBE_MINDEX_PAGE", "<b>Page:<b> " );
+define( "_AM_XTUBE_MINDEX_PAGE", "<strong>Page:<strong> " );
 define( '_AM_XTUBE_MINDEX_PAGEINFOTXT', '<ul><li>MyTubes main page details.</li><li>You can easily change the image logo, heading, main index header and footer text to suit your own look</li></ul><br />Note: The Logo image choosen will be used throughout MyTube.' );
 define( "_AM_XTUBE_MINDEX_RESPONSE", "Response Time" );
 // Submitted Links
 define( "_AM_XTUBE_SUB_SUBMITTEDFILES", "Submitted Videos" );
 define( "_AM_XTUBE_SUB_FILESWAITINGINFO", "Waiting Videos Information" );
 define( "_AM_XTUBE_SUB_FILESWAITINGVALIDATION", "Videos Waiting Validation: " );
-define( "_AM_XTUBE_SUB_APPROVEWAITINGFILE", "<b>Approve</b> new video information without validation." );
-define( "_AM_XTUBE_SUB_EDITWAITINGFILE", "<b>Edit</b> new video information and then approve." );
-define( "_AM_XTUBE_SUB_DELETEWAITINGFILE", "<b>Delete</b> the new video information." );
+define( "_AM_XTUBE_SUB_APPROVEWAITINGFILE", "<strong>Approve</strong> new video information without validation." );
+define( "_AM_XTUBE_SUB_EDITWAITINGFILE", "<strong>Edit</strong> new video information and then approve." );
+define( "_AM_XTUBE_SUB_DELETEWAITINGFILE", "<strong>Delete</strong> the new video information." );
 define( "_AM_XTUBE_SUB_NOFILESWAITING", "There are no videos that match this critera" );
 define( "_AM_XTUBE_SUB_NEWFILECREATED", "New Video Data Created and Database Updated Successfully" );
 // Vote Information
@@ -196,7 +196,7 @@ define( "_AM_XTUBE_VOTE_FILETITLE", "Video Title" );
 define( "_AM_XTUBE_VOTE_DISPLAYVOTES", "Voting Data Information" );
 define( "_AM_XTUBE_VOTE_NOVOTES", "No User Votes to display" );
 define( "_AM_XTUBE_VOTE_DELETE", "No User Votes to display" );
-define( "_AM_XTUBE_VOTE_DELETEDSC", "<b>Deletes</b> the chosen vote information from the database." );
+define( "_AM_XTUBE_VOTE_DELETEDSC", "<strong>Deletes</strong> the chosen vote information from the database." );
 define( "_AM_XTUBE_VOTEDELETED", "Selected Vote removed database updated" );
 
 define( "_AM_XTUBE_VOTE_USERAVG", "Average User Rating" );
@@ -234,28 +234,29 @@ define( '_AM_XTUBE_MOD_VIEW', 'View' );
 // Video management
 define( "_AM_XTUBE_VIDEO_ID", "Video ID: " );
 define( "_AM_XTUBE_VIDEO_IP", "Uploaders IP: " );
-define( "_AM_XTUBE_VIDEO_ALLOWEDAMIME", "<div style='padding-top: 4px; padding-bottom: 4px;'><b>Allowed Admin Video Extensions</b>:</div>" );
+define( "_AM_XTUBE_VIDEO_ALLOWEDAMIME", "<div style='padding-top: 4px; padding-bottom: 4px;'><strong>Allowed Admin Video Extensions</strong>:</div>" );
 define( "_AM_XTUBE_VIDEO_MODIFYFILE", "Modify Video Information" );
 define( "_AM_XTUBE_VIDEO_CREATENEWFILE", "Create New Video" );
 define( "_AM_XTUBE_VIDEO_TITLE", "Video Title: " );
 define( "_AM_XTUBE_VIDEO_DLVIDID", "Video id-code: " );
 define( "_AM_XTUBE_VIDEO_DLVIDID_NOTE", "
-<small><b>YouTube:</b> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
-<b>MetaCafe:</b> http://www.metacafe.com/watch/<font color=#FF0000>191543/sperm_whale_encounters_underwater_robot</font>/<br />
-<b>SPIKE/ifilm:</b> http://www.ifilm.com/video/<font color=#FF0000>2718605</font><br />
-<b>Photobucket:</b> http://i39.photobucket.com/albums/<font color=#FF0000>e168/vailtom/th_BigSquid</font>.jpg<br />
-<b>Google Video:</b> http://video.google.com/videoplay?docid=<font color=#FF0000>4761076111111865377</font>&q=rov&total=913&start=...<br />
-<b>MySpace TV:</b> http://vids.myspace.com/index.cfm?fuseaction=vids.individual&videoid=<font color=#FF0000>13171141</font><br />
-<b>DailyMotion:</b> http://www.dailymotion.com/video/<font color=#FF0000>x40bhg</font>_blondesecretary_fun<br />
-<b>Blip.tv </b>embed code<b>:</b> http://blip.tv/play/<font color=#FF0000>Abe6EwA</font> ...<br />
-<b>ClipFish:</b> http://www.clipfish.de/player.php?videoid=<font color=#FF0000>MTg1NTYyfDM1Ng</font>%3D%3D<br />
-<b>LiveLeak:</b> http://www.liveleak.com/view?i=<font color=#FF0000>a59_1205566630</font><br />
-<b>Maktoob:</b> file=http://<font color=#FF0000>m003.maktoob.com/files/23/42/95531c25b690e48a3d69966b6a33b8d2/video/131102</font>.flv (from embed-code)<br />
-<b>Veoh:</b> http://www.veoh.com/videos/<font color=#FF0000>v15069875yApCz7r3</font>?jsonParams=...<br />
-<b>Vimeo:</b> http://www.vimeo.com/<font color=#FF0000>2246499</font><br />
-<b>Megavideo:</b> http://www.megavideo.com/?v=<font color=#FF0000>J6YSRE0T</font><br />
-<b>Viddler:</b> http://www.viddler.com/player/<font color=#FF0000>d32d2b94</font>/ (see embed code)<br />
-<b>MyTube: </b><font color=#FF0000>Take over from above selection menu</font></small>" );
+<span style='font-size:x-small;'><strong>YouTube:</strong> http://www.youtube.com/watch?v=<font color=#FF0000>IsOtq-qCqZ4</font><br />
+<strong>MetaCafe:</strong> http://www.metacafe.com/watch/<font color=#FF0000>191543/sperm_whale_encounters_underwater_robot</font>/<br />
+<strong>SPIKE/ifilm:</strong> http://www.ifilm.com/video/<font color=#FF0000>2718605</font><br />
+<strong>Photobucket:</strong> http://i39.photobucket.com/albums/<font color=#FF0000>e168/vailtom/th_BigSquid</font>.jpg<br />
+<strong>Google Video:</strong> http://video.google.com/videoplay?docid=<font color=#FF0000>4761076111111865377</font>&q=rov&total=913&start=...<br />
+<strong>MySpace TV:</strong> http://vids.myspace.com/index.cfm?fuseaction=vids.individual&videoid=<font color=#FF0000>13171141</font><br />
+<strong>DailyMotion:</strong> http://www.dailymotion.com/video/<font color=#FF0000>x40bhg</font>_blondesecretary_fun<br />
+<strong>Blip.tv </strong>embed code<strong>:</strong> http://blip.tv/play/<font color=#FF0000>Abe6EwA</font> ...<br />
+<strong>ClipFish:</strong> http://www.clipfish.de/player.php?videoid=<font color=#FF0000>MTg1NTYyfDM1Ng</font>%3D%3D<br />
+<strong>LiveLeak:</strong> http://www.liveleak.com/view?i=<font color=#FF0000>a59_1205566630</font><br />
+<strong>Maktoob:</strong> file=http://<font color=#FF0000>m003.maktoob.com/files/23/42/95531c25b690e48a3d69966b6a33b8d2/video/131102</font>.flv (from embed-code)<br />
+<strong>Veoh:</strong> http://www.veoh.com/videos/<font color=#FF0000>v15069875yApCz7r3</font>?jsonParams=...<br />
+<strong>Vimeo:</strong> http://www.vimeo.com/<font color=#FF0000>2246499</font><br />
+<strong>Megavideo:</strong> http://www.megavideo.com/?v=<font color=#FF0000>J6YSRE0T</font><br />
+<strong>Viddler:</strong> http://www.viddler.com/player/<font color=#FF0000>d32d2b94</font>/ (see embed code)<br />
+<strong>MyTube: </strong><font color=#FF0000>Take over from above selection menu</font></span><br />
+<strong>Sreenjelly:</strong> http://www.screenjelly.com/watch/<font color=#FF0000>sfXtuatF5qM</font></span>" );
 define( "_AM_XTUBE_VIDEO_PICURL", "Picture url: " );
 define( "_AM_XTUBE_VIDEO_PICURLNOTE", "Picture url when source is: Google Video, MySpace TV, DailyMotion, Blip.tv, ClipFish, LiveLeak, Veoh, Vimeo, Megavideo or Maktoob" );
 define( "_AM_XTUBE_VIDEO_DESCRIPTION", "Video Description: " );
@@ -271,12 +272,12 @@ define( "_AM_XTUBE_VIDEO_CLEAREXPIREDATE", "<br /><br />Remove Expire date:" );
 define( "_AM_XTUBE_VIDEO_PUBLISHDATESET", " Publish date set: " );
 define( "_AM_XTUBE_VIDEO_SETDATETIMEPUBLISH", " Set the date/time of publish" );
 define( "_AM_XTUBE_VIDEO_SETDATETIMEEXPIRE", " Set the date/time of expire" );
-define( "_AM_XTUBE_VIDEO_SETPUBLISHDATE", "<b>Set Publish Date: </b>" );
-define( "_AM_XTUBE_VIDEO_SETNEWPUBLISHDATE", "<b>Set New Publish Date: </b><br />Published:" );
-define( "_AM_XTUBE_VIDEO_SETPUBDATESETS", "<b>Publish Date Set: </b><br />Publishes On Date:" );
+define( "_AM_XTUBE_VIDEO_SETPUBLISHDATE", "<strong>Set Publish Date: </strong>" );
+define( "_AM_XTUBE_VIDEO_SETNEWPUBLISHDATE", "<strong>Set New Publish Date: </strong><br />Published:" );
+define( "_AM_XTUBE_VIDEO_SETPUBDATESETS", "<strong>Publish Date Set: </strong><br />Publishes On Date:" );
 define( "_AM_XTUBE_VIDEO_EXPIREDATESET", " Expire date set: " );
-define( "_AM_XTUBE_VIDEO_SETEXPIREDATE", "<b>Set Expire Date: </b>" );
-define( "_AM_XTUBE_VIDEO_DELEDITMESS", "Delete Broken Report?<br /><br /><span style='font-weight: normal;'>When you choose <b>YES</b> the Broken Report will automatically deleted and you confirm that the video now works again.</span>" );
+define( "_AM_XTUBE_VIDEO_SETEXPIREDATE", "<strong>Set Expire Date: </strong>" );
+define( "_AM_XTUBE_VIDEO_DELEDITMESS", "Delete Broken Report?<br /><br /><span style='font-weight: normal;'>When you choose <strong>YES</strong> the Broken Report will automatically deleted and you confirm that the video now works again.</span>" );
 define( "_AM_XTUBE_VIDEO_MUSTBEVALID", "Screenshot image must be a valid image under %s directory (ex. shot.gif). This screenshot is used for MyTube internal flv player only." );
 define( "_AM_XTUBE_VIDEO_EDITAPPROVE", "Approve video:" );
 define( "_AM_XTUBE_VIDEO_NEWFILEUPLOAD", "New Video Created and Database Updated Successfully" );
@@ -284,7 +285,7 @@ define( "_AM_XTUBE_VIDEO_FILEMODIFIEDUPDATE", "Selected Video Modified and Datab
 define( "_AM_XTUBE_VIDEO_REALLYDELETEDTHIS", "Really delete the selected video?" );
 define( "_AM_XTUBE_VIDEO_FILEWASDELETED", "Video %s successfully removed from the database!" );
 define( "_AM_XTUBE_VIDEO_FILEAPPROVED", "Video Approved and Database Updated Successfully" );
-define( "_AM_XTUBE_VIDEO_CREATENEWSSTORY", "<b>Create News Story From link</b>" );
+define( "_AM_XTUBE_VIDEO_CREATENEWSSTORY", "<strong>Create News Story From link</strong>" );
 define( "_AM_XTUBE_VIDEO_SUBMITNEWS", "Submit New video as News item?" );
 define( "_AM_XTUBE_VIDEO_NEWSCATEGORY", "Select News Category to submit News:" );
 define( "_AM_XTUBE_VIDEO_NEWSTITLE", "News Title:<div style='padding-top: 4px; padding-bottom: 4px;'><span style='font-weight: normal;'>Leave Blank to use Video Title</span></div>" );
@@ -300,11 +301,11 @@ define( "_AM_XTUBE_BROKEN_NOWACK", "Acknowledged status changed and database upd
 define( "_AM_XTUBE_BROKEN_NOWCON", "Confirmed status changed and database updated!" );
 define( "_AM_XTUBE_BROKEN_REPORTINFO", "Broken Report Information" );
 define( "_AM_XTUBE_BROKEN_REPORTSNO", "Broken Reports Waiting:" );
-define( "_AM_XTUBE_BROKEN_IGNOREDESC", "<b>Ignores</b> the report and only deletes the broken video report." );
-define( "_AM_XTUBE_BROKEN_DELETEDESC", "<b>Deletes</b> the reported link data and broken video reports for the link." );
-define( "_AM_XTUBE_BROKEN_EDITDESC", "<b>Edit</b> the video to fix the problem." );
-define( "_AM_XTUBE_BROKEN_ACKDESC", "<b>Acknowledged</b> Set Acknowledged state of broken file report." );
-define( "_AM_XTUBE_BROKEN_CONFIRMDESC", "<b>Confirmed</b> Set confirmed state of broken video report." );
+define( "_AM_XTUBE_BROKEN_IGNOREDESC", "<strong>Ignores</strong> the report and only deletes the broken video report." );
+define( "_AM_XTUBE_BROKEN_DELETEDESC", "<strong>Deletes</strong> the reported link data and broken video reports for the link." );
+define( "_AM_XTUBE_BROKEN_EDITDESC", "<strong>Edit</strong> the video to fix the problem." );
+define( "_AM_XTUBE_BROKEN_ACKDESC", "<strong>Acknowledged</strong> Set Acknowledged state of broken file report." );
+define( "_AM_XTUBE_BROKEN_CONFIRMDESC", "<strong>Confirmed</strong> Set confirmed state of broken video report." );
 define( "_AM_XTUBE_BROKEN_ACKNOWLEDGED", "Acknowledged" );
 define( "_AM_XTUBE_BROKEN_DCONFIRMED", "Confirmed" );
 
@@ -447,7 +448,7 @@ define( "_AM_XTUBE_NOIMAGE", "Show No Image" );
 define( "_AM_XTUBE_NOSELECT", "No Selection" );
 define( "_AM_XTUBE_NOFILESELECT", "No Selected File" );
 define( "_AM_XTUBE_MYTUBEVIDEO", "MyTube Video File:" );
-define( "_AM_XTUBE_WARNINSTALL4", "<b>WARNING:</b> <u>Folder</u> %s is not writeable. <br />This folder needs to be writeable (CHMOD 777) for MyTube." );
+define( "_AM_XTUBE_WARNINSTALL4", "<strong>WARNING:</strong> <u>Folder</u> %s is not writeable. <br />This folder needs to be writeable (CHMOD 777) for MyTube." );
 define( "_AM_XTUBE_CATSPONSOR", "Select Category Sponsor:" );
 define( "_AM_XTUBE_CATSPONSORDSC", "If you select a Client the banner id from the form below will not be saved!" );
 define( "_AM_XTUBE_BANNER", "Banner" );
@@ -507,5 +508,6 @@ define( '_AM_XTUBE_CATTITLE', 'Category' );
 define( '_AM_XTUBE_YAHOO', 'Yahoo' );
 define( '_AM_XTUBE_SCREENR', 'Screenr' );
 define( '_AM_XTUBE_MYVIDSTER', 'myvidster' );
+define( '_AM_XTUBE_SCREENJELLY', 'Screenjelly' );
 
 ?>

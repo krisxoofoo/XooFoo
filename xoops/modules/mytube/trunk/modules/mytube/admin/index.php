@@ -67,23 +67,23 @@ function edit( $lid = 0 ) {
 			<table width="100%" style="font-size: 90%;">
 			 <tr>
 			  <td style="width: 25%; border-right: #E8E8E8 1px solid; vertical-align: top; padding-left: 10px;">
-			   <div><b>' . _AM_XTUBE_VIDEO_ID . ' </b>' . $lid . '</div>
-			   <div><b>' . _AM_XTUBE_MINDEX_SUBMITTED . ': </b>' . mytube_time( formatTimestamp( $video_array['date'], $xoopsModuleConfig['dateformat'] ) ) . '</div>
-			   <div><b>' . _AM_XTUBE_MOD_MODIFYSUBMITTER . ' </b>' . mytube_getLinkedUnameFromId( $video_array['submitter'] ) . '</div>
-			   <div><b>' . _AM_XTUBE_VIDEO_IP . ' </b>' . $ipaddress . '</div>
-			   <div><b>' . _AM_XTUBE_VIDEO_VIEWS . ' </b>' . $video_array['hits'] . '</div>
+			   <div><strong>' . _AM_XTUBE_VIDEO_ID . ' </strong>' . $lid . '</div>
+			   <div><strong>' . _AM_XTUBE_MINDEX_SUBMITTED . ': </strong>' . mytube_time( formatTimestamp( $video_array['date'], $xoopsModuleConfig['dateformat'] ) ) . '</div>
+			   <div><strong>' . _AM_XTUBE_MOD_MODIFYSUBMITTER . ' </strong>' . mytube_getLinkedUnameFromId( $video_array['submitter'] ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VIDEO_IP . ' </strong>' . $ipaddress . '</div>
+			   <div><strong>' . _AM_XTUBE_VIDEO_VIEWS . ' </strong>' . $video_array['hits'] . '</div>
 			  </td>
 			  <td style="width: 25%; border-right: #E8E8E8 1px solid; vertical-align: top; padding-left: 10px;">
-			   <div><b>' . _AM_XTUBE_VOTE_TOTALRATE . ': </b>' . intval( $_vote_data['rate'] ) . '</div>
-			   <div><b>' . _AM_XTUBE_VOTE_USERAVG . ': </b>' . intval( round( $_vote_data['avg_rate'], 2 ) ) . '</div>
-			   <div><b>' . _AM_XTUBE_VOTE_MAXRATE . ': </b>' . intval( $_vote_data['min_rate'] ) . '</div>
-			   <div><b>' . _AM_XTUBE_VOTE_MINRATE . ': </b>' . intval( $_vote_data['max_rate'] ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_TOTALRATE . ': </strong>' . intval( $_vote_data['rate'] ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_USERAVG . ': </strong>' . intval( round( $_vote_data['avg_rate'], 2 ) ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_MAXRATE . ': </strong>' . intval( $_vote_data['min_rate'] ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_MINRATE . ': </strong>' . intval( $_vote_data['max_rate'] ) . '</div>
 			  </td>
 			  <td style="width: 25%; border-right: #E8E8E8 1px solid; vertical-align: top; padding-left: 10px;">
-			   <div><b>' . _AM_XTUBE_VOTE_MOSTVOTEDTITLE . ': </b>' . intval( $_vote_data['max_title'] ) . '</div>
-		       <div><b>' . _AM_XTUBE_VOTE_LEASTVOTEDTITLE . ': </b>' . intval( $_vote_data['min_title'] ) . '</div>
-			   <div><b>' . _AM_XTUBE_VOTE_REGISTERED . ': </b>' . ( intval( $_vote_data['rate'] - $_vote_data['null_ratinguser'] ) ) . '</div>
-			   <div><b>' . _AM_XTUBE_VOTE_NONREGISTERED . ': </b>' . intval( $_vote_data['null_ratinguser'] ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_MOSTVOTEDTITLE . ': </strong>' . intval( $_vote_data['max_title'] ) . '</div>
+		       <div><strong>' . _AM_XTUBE_VOTE_LEASTVOTEDTITLE . ': </strong>' . intval( $_vote_data['min_title'] ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_REGISTERED . ': </strong>' . ( intval( $_vote_data['rate'] - $_vote_data['null_ratinguser'] ) ) . '</div>
+			   <div><strong>' . _AM_XTUBE_VOTE_NONREGISTERED . ': </strong>' . intval( $_vote_data['null_ratinguser'] ) . '</div>
 			  </td>
 			  <td style="width: 25%; vertical-align: top; padding-left: 10px;">
 			    <div>' . xtube_videothumb( $video_array['vidid'], $video_array['title'], $video_array['vidsource'], $video_array['picurl'], $video_array['screenshot'] ) . '</div>
@@ -125,7 +125,8 @@ function edit( $lid = 0 ) {
 			109 => _AM_XTUBE_MEGAVIDEO,
 			110 => _AM_XTUBE_YAHOO,
 			111 => _AM_XTUBE_SCREENR,
-			112 => _AM_XTUBE_MYVIDSTER
+			112 => _AM_XTUBE_MYVIDSTER,
+			113 => _AM_XTUBE_SCREENJELLY
 	);  // #200 is reserved for MyTube's internal FLV player
     $vidsource_select = new XoopsFormSelect( _AM_XTUBE_VIDSOURCE, 'vidsource', $vidsource );
     $vidsource_select -> addOptionArray( $vidsource_array );
@@ -148,7 +149,7 @@ function edit( $lid = 0 ) {
     
 // Time form
     $timeform = new XoopsFormText( _AM_XTUBE_TIME, 'time', 7, 7, $time );
-    $timeform -> setDescription( '<small>(h:mm:ss)</small>' );
+    $timeform -> setDescription( '<span style="font-size:x-small;">(h:mm:ss)</span>' );
     $sform -> addElement( $timeform, false );
 
 // Category menu
@@ -463,14 +464,12 @@ switch ( strtolower( $op ) ) {
         echo '
 			<fieldset style="border: #E8E8E8 1px solid;">
 			<legend style="display: inline; font-weight: bold; color: #0A3760;">' ._AM_XTUBE_MINDEX_VIDEOSUMMARY . '</legend>
-			<div style="padding: 8px;">
-			<small>
-			<a href="category.php">' . _AM_XTUBE_SCATEGORY . '</a><b>' . $totalcats . '</b> |
-			<a href="index.php">' . _AM_XTUBE_SFILES . '</a><b>' . $totalvideos . '</b> |
-			<a href="newvideos.php">' . _AM_XTUBE_SNEWFILESVAL . '</a><b>' . $totalnewvideos . '</b> |
-			<a href="modifications.php">' . _AM_XTUBE_SMODREQUEST . '</a><b>' . $totalmodrequests . '</b> |
-			<a href="brokenvideo.php">' . _AM_XTUBE_SBROKENSUBMIT . '</a><b>' . $totalbrokenvideos . '</b>
-			</small>
+			<div style="padding: 8px; font-size:small;">
+			<a href="category.php" title="' . _AM_XTUBE_SCATEGORY . '">' . _AM_XTUBE_SCATEGORY . '</a><strong>' . $totalcats . '</strong> |
+			<a href="index.php" title="' . _AM_XTUBE_SFILES . '">' . _AM_XTUBE_SFILES . '</a><strong>' . $totalvideos . '</strong> |
+			<a href="newvideos.php" title="' . _AM_XTUBE_SNEWFILESVAL . '">' . _AM_XTUBE_SNEWFILESVAL . '</a><strong>' . $totalnewvideos . '</strong> |
+			<a href="modifications.php" title="' . _AM_XTUBE_SMODREQUEST . '">' . _AM_XTUBE_SMODREQUEST . '</a><strong>' . $totalmodrequests . '</strong> |
+			<a href="brokenvideo.php" title="' . _AM_XTUBE_SBROKENSUBMIT . '">' . _AM_XTUBE_SBROKENSUBMIT . '</a><strong>' . $totalbrokenvideos . '</strong>
 			</div>
 			</fieldset>';
 

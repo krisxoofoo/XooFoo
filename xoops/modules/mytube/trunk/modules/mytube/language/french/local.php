@@ -41,7 +41,7 @@ define("_MYTUBE_NOV", "Nov");
 define("_MYTUBE_DEC", "Dec");
 
 /**
- * @translation     AFUX (Association Francophone des Utilisateurs de Xoops) <http://www.afux.org/>
+ * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8 sans Bom
  *

@@ -1,0 +1,27 @@
+AM HTError History
+
+Key:
+ + Added feature.
+ - Removed.
+ ! Bug fix.
+ o General comment.
+
+ 
+version 0.06 (Released: 2007/05/04)
+===================================
+
+ o Added new module icon.
+ + Added admin menu (for icon pop-up menu).
+ ! Fixed typo in 404 error message.
+ + Added option to enable/disable auto line breaks (<br />) on messages, enabling
+   HTML to be used without causing problems.
+ + Fixed error report on/off switch.
+   
+ 
+version 0.05 (Released: 2007/05/04)
+===================================
+
+ o First public release.
+ o Changelog started.
+   
+   

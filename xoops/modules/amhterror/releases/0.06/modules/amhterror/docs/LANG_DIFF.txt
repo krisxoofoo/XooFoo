@@ -1,0 +1,14 @@
+Module Name      : AM HTError
+Module developer : Andrew Mills ajmills@sirium.net
+
+
+version 0.06
+============
+
+ + _MI_AMHTERROR_MENU1
+ + _MI_AMHTERROR_MENU2
+ + _MI_AMHTERROR_MENU3
+ + _MI_AMHTERR_LINEBRKS
+ + _MI_AMHTERR_LINEBRKSDSC
+ 
+ 

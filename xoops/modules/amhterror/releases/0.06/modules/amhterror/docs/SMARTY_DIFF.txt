@@ -1,0 +1,3 @@
+Module Name      : AM HTError
+Module developer : Andrew Mills ajmills@sirium.net
+

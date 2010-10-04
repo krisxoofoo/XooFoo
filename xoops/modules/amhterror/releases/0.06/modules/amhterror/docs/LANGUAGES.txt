@@ -1,0 +1,24 @@
+LANGUAGES.txt
+
+I have allowed for this module to be localised - or to be translated to
+your local language. This basically means that all captions, text and titles
+can easily be translated and displayed in your language.
+
+The default language for the this module is English as that is my primary
+language and the default for XOOPS itself. And unfortunately, while I know a
+little French, I am generally useless at learning foreign languages...
+
+If you wish to translate this module to your language, please first of all:
+
+ 1) Check to see if it's already been done (and maybe just needs updating?).
+ 2) Make sure you have the latest version.
+ 3) Consider obtaining the latest development version...
+ 4) Bear in mind that the files may change constantly during its development.
+
+To translate this module to your language, go to the "languages" folder, copy 
+the  folder called "english" (along with any files it contains) and rename it to 
+the name of your language. Make sure that you use the English version of its 
+name and, don't use capital letters and don't use any spaces.
+ 
+Edit the files contained within your new language files  - it should (in theory)
+be fairly obvious as to what you need to change.

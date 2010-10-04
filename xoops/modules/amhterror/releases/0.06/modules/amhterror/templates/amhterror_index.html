@@ -1,0 +1,28 @@
+
+
+
+
+<h1 style="text-align: center;"><{$title}></h1>
+
+<{$text}>
+
+<!-- search -->
+  <br /><br /><br />
+  <div align="center">
+  <form method="get" action="/search.php">
+  <table style="width: 50%;">
+    <tr>
+      <td colspan="2"><{$smarty.const._MD_AMHT_SRCHCAP}></td>
+    </tr>
+    <tr>
+      <td>
+      <input type="text" name="query" size="30" />
+      <input type="hidden" name="action" value="results" />
+      </td>
+      <td>
+      <input type="submit" value="Search" />
+      </td>
+    </tr>
+  </table>
+  </form>
+  </div>

@@ -29,26 +29,24 @@ $modversion['dirname'] = "oups";
 // Menu Admin
 $modversion['hasAdmin'] = 1;
 // Templates
-$modversion['templates'][1]['file'] = '301.html';
+$modversion['templates'][1]['file'] = '302.html';
 $modversion['templates'][1]['description'] = '';
-$modversion['templates'][2]['file'] = '302.html';
+$modversion['templates'][2]['file'] = '400.html';
 $modversion['templates'][2]['description'] = '';
-$modversion['templates'][3]['file'] = '400.html';
+$modversion['templates'][3]['file'] = '401.html';
 $modversion['templates'][3]['description'] = '';
-$modversion['templates'][4]['file'] = '401.html';
+$modversion['templates'][4]['file'] = '403.html';
 $modversion['templates'][4]['description'] = '';
-$modversion['templates'][5]['file'] = '403.html';
+$modversion['templates'][5]['file'] = '404.html';
 $modversion['templates'][5]['description'] = '';
-$modversion['templates'][6]['file'] = '404.html';
+$modversion['templates'][6]['file'] = '405.html';
 $modversion['templates'][6]['description'] = '';
-$modversion['templates'][7]['file'] = '405.html';
+$modversion['templates'][7]['file'] = '408.html';
 $modversion['templates'][7]['description'] = '';
-$modversion['templates'][8]['file'] = '408.html';
+$modversion['templates'][8]['file'] = '409.html';
 $modversion['templates'][8]['description'] = '';
-$modversion['templates'][9]['file'] = '409.html';
+$modversion['templates'][9]['file'] = '500.html';
 $modversion['templates'][9]['description'] = '';
-$modversion['templates'][10]['file'] = '500.html';
+$modversion['templates'][10]['file'] = '503.html';
 $modversion['templates'][10]['description'] = '';
-$modversion['templates'][11]['file'] = '503.html';
-$modversion['templates'][11]['description'] = '';
 ?>

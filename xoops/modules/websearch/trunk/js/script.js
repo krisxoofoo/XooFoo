@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	var config = {
-		siteURL		: 'tv.xoofoo.org',	// Change this to your site
+		siteURL		: window.location.hostname,	// Change this to your site
 		searchSite	: true,
 		type		: 'web',
 		append		: false,

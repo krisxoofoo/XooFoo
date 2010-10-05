@@ -18,7 +18,7 @@
 **/
 
 $modversion['name'] =  _MI_WEBSEARCH_NAME;
-$modversion['version'] = 1.0;
+$modversion['version'] = 1.1;
 $modversion['description'] = _MI_WEBSEARCH_DESC;
 $modversion['credits'] = "Tzine (http://tutorialzine.com) and Google";
 $modversion['author'] = "kris - http://www.xoofoo.org";

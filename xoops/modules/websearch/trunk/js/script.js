@@ -139,16 +139,16 @@ $(document).ready(function(){
 			case 'GwebSearch':
 				arr = [
 					'<div class="webResult">',
-					'<h2><a href="',r.url,'" rel="external">',r.title,'</a></h2>',
+					'<h2><a href="',r.unescapedUrl,'" rel="external">',r.title,'</a></h2>',
 					'<p>',r.content,'</p>',
-					'<a href="',r.url,'" rel="external">',r.visibleUrl,'</a>',
+					'<a href="',r.unescapedUrl,'" rel="external">',r.visibleUrl,'</a>',
 					'</div>'
 				];
 			break;
 			case 'GimageSearch':
 				arr = [
 					'<div class="imageResult">',
-					'<a rel="external" href="',r.url,'" title="',r.titleNoFormatting,'" class="pic" style="width:',r.tbWidth,'px;height:',r.tbHeight,'px;">',
+					'<a rel="external" href="',r.unescapedUrl,'" title="',r.titleNoFormatting,'" class="pic" style="width:',r.tbWidth,'px;height:',r.tbHeight,'px;">',
 					'<img src="',r.tbUrl,'" width="',r.tbWidth,'" height="',r.tbHeight,'" /></a>',
 					'<div class="clear"></div>','<a href="',r.originalContextUrl,'" rel="external">',r.visibleUrl,'</a>',
 					'</div>'

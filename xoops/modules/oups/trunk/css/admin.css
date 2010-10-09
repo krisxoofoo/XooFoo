@@ -1,0 +1,29 @@
+#buttontop { float:left; width:100%; font-size:93%; line-height:normal; margin: 0; }
+#buttonbar { float:left; width:100%; font-size:93%; line-height:normal; margin-bottom: 30px; }
+
+#buttonbar li { display:inline; }
+#buttonbar ul { margin: 15px 0 0 15px; list-style:none;}
+#buttonbar a { float:left; display:block; background-color: #f0f0f0; border: 1px solid #aaa; border-radius: 5px; padding:5px 15px 5px 15px; font-weight:bold; color:#765;margin-left: 15px; 
+	box-shadow: 			0 20px 10px -10px #ddd inset;
+		-moz-box-shadow: 	0 20px 10px -10px #ddd inset;
+		-webkit-box-shadow: 0 20px 10px -10px #ddd inset;
+}
+#buttonbar a:hover  {
+	background-color:#fff;
+	color: #000; 
+	box-shadow: 			0 20px 10px -10px #ddd inset;
+		-moz-box-shadow: 	0 20px 10px -10px #ddd inset;
+		-webkit-box-shadow: 0 20px 10px -10px #ddd inset;
+}
+#buttonbar #current a {
+	background-color:#fff;
+	color: #000; 
+	box-shadow: 0 0 20px #787878;
+		-webkit-box-shadow:0 0 20px #787878;
+		-moz-box-shadow:0 0 20px #787878;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbbbbb', Direction=135, Strength=5); 
+		zoom: 1; 
+}
+#oups-version {text-align: right; font-size: .8em; font-style:italic;}
+.center {text-align: center;}
+.normal {font-weight: normal; font-style: normal;}

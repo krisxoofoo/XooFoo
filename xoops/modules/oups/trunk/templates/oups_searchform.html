@@ -1,0 +1,22 @@
+<div id="xo-oupssearch">
+    <h1><{$smarty.const._MD_OUPS_SEARCHTITLE}></h1>
+    <form id="searchForm" method="post">
+		<fieldset>
+           	<input id="s" type="text" />
+            <input type="submit" value="<{$smarty.const._MD_OUPS_SEARCH}>" id="submitButton" />
+            <div id="searchInContainer">
+                <input type="radio" name="check" value="site" id="searchSite" checked />
+                <label for="searchSite" id="siteNameLabel" ><{$smarty.const._MD_OUPS_SEARCH}></label>
+                <input type="radio" name="check" value="web" id="searchWeb" />
+                <label for="searchWeb"><{$smarty.const._MD_OUPS_WEB}></label>
+			</div>           
+            <ul class="icons">
+                <li class="web" title="<{$smarty.const._MD_OUPS_WEBDSC}>" data-searchType="web"><{$smarty.const._MD_OUPS_WEB}></li>
+                <li class="images" title="<{$smarty.const._MD_OUPS_IMGDSC}>" data-searchType="images"><{$smarty.const._MD_OUPS_IMG}></li>
+                <li class="news" title="<{$smarty.const._MD_OUPS_NEWSDSC}>" data-searchType="news"><{$smarty.const._MD_OUPS_NEWS}></li>
+                <li class="videos" title="<{$smarty.const._MD_OUPS_VIDEODSC}>" data-searchType="video"><{$smarty.const._MD_OUPS_VIDEO}></li>
+            </ul>  
+        </fieldset>
+    </form>
+    <div id="resultsDiv"></div>
+</div>

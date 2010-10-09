@@ -1,0 +1,176 @@
+#xo-oupspage {
+	/* The main container div */
+	max-width:		620px;
+	margin:			1em auto;
+}
+#xo-oupspage h1 { font-size: 1.4em; text-shadow : 1px 1px 2px #798e9c; text-align: center !important;}
+#xo-oupssearch { margin-top: 2em;}
+#searchForm {
+	background-color:	#C25400;
+	padding:			50px 50px 30px;
+	margin: 			25px auto;
+	position:			relative;
+	border-radius:		16px;
+		-moz-border-radius:16px;
+		-webkit-border-radius:16px;
+	box-shadow: 		0 0 20px #787878;
+		-webkit-box-shadow:0 0 20px #787878;
+		-moz-box-shadow:0 0 20px #787878;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbb', Direction=135, Strength=5); 
+		zoom: 1; 
+}
+fieldset {	border:none;}
+#searchInputContainer{
+	/* This div contains the transparent search box */
+	width:				320px;
+	height:				36px;
+	background:			url(../images/searchBox.png) no-repeat;
+	float:				left;
+	margin-right:		12px;
+}
+#searchForm input[type=radio] { border: 0; margin-bottom: .5em;}
+#s {	
+	border:				none;
+	color:				#888;
+	background:			url(../images/searchBox.png) no-repeat;
+	float:				left;
+	font-size:			1.3em;
+	height:				36px;
+	line-height:		36px;
+	margin-right:		1.2em;
+	outline:			medium none;
+	padding:			0 0 0 35px;
+	text-shadow:		1px 1px 0 #fff;
+	width:				345px;
+}
+/* The UL that contains the search type icons */
+.icons {
+	list-style:			none;
+	margin:				10px 0 0 335px;
+	height:				19px;
+	position:			relative;
+}
+.icons li {
+	background:			url(../images/icons.png) no-repeat;
+	float:				right;
+	height:				19px;
+	text-indent:		-9999px;
+	cursor:				pointer;
+	margin-right:		5px;
+}
+/* Styling each icon */
+li.web { width:15px;}
+li.web.active, li.web:hover { background-position:left bottom;}
+li.images { width:22px; background-position:-18px 0;}
+li.images.active, li.images:hover { background-position:-18px bottom;}
+li.news { width:14px; background-position:-44px 0;}
+li.news.active, li.news:hover { background-position:-44px bottom;}
+li.videos { width:17px; background-position:right 0;}
+li.videos.active, li.videos:hover { background-position:right bottom;}
+
+span.arrow {
+	/* The little arrow that moves below the icons */
+	width:			11px;
+	height:			6px;
+	margin:			21px 0 0 5px;
+	position:		absolute;
+	background:		url(../images/arrow.png) no-repeat;
+	left:			0;
+}
+/* The submit button */
+#submitButton {
+	background:		url(../images/buttons.png) no-repeat;
+	width:			83px;
+	height:			36px;
+	text-indent:	-9999px;
+	overflow:		hidden;
+	text-transform:	uppercase;
+	border:			none;
+	cursor:			pointer;
+}
+#submitButton:hover{ background-position:left bottom;}
+/* The Search Site Name / Search the Web radio buttons */
+#searchInContainer {
+	float:			left;
+	margin-top:		12px;
+	width:			330px;
+}
+label {
+	color:			#DDD;
+	cursor:			pointer;
+	font-size:		.9em;
+	font-weight:	normal !important;
+	font-style:		italic;
+	position:		relative;
+	right:			-2px;
+	/*top:			-2px;*/
+	margin-right:	10px;
+	white-space:	nowrap;
+	float:left;
+}
+input[type=radio] { cursor:pointer;	float:left;}
+/* Styling the search results */
+.pageContainer {
+	/* Holds each page with search results. Has an inset bottom border. */
+	border-bottom:	1px solid #5e7481;
+	margin-bottom:	50px;
+	/* Adding a dark bottom border with box shadow */
+	box-shadow:		0 1px 0 #798e9c;
+		-moz-box-shadow:0 1px 0 #798e9c;
+		-webkit-box-shadow:0 1px 0 #798e9c;
+}
+p.notFound {	text-align:center; padding:0 0 40px;}
+/* Web & news results */
+.webResult { /*text-shadow:1px 1px 0 #c0c0c0;*/ margin-bottom:3em;}
+.webResult h2 { 
+	background-color:	#121212;
+	font-size:			1.1em;
+	font-weight:		normal;
+	padding:			7px 20px;
+	/* Applying CSS3 rounded corners */
+	border-radius:		5px;
+		-moz-border-radius:15px;
+		-webkit-border-radius:15px;
+	box-shadow: 		0 0 20px #787878;
+		-webkit-box-shadow:0 0 20px #787878;
+		-moz-box-shadow:0 0 20px #787878;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbb', Direction=135, Strength=5); 
+		zoom: 1; 
+}
+.webResult h2 b { color:#C25400; }
+.webResult h2 a { color:#f4e7bd; border:none;}
+.webResult p { line-height:1.5em; padding:15px 20px;}
+.webResult p b { color:#C25400;}
+/*.webResult > a{ margin-left:20px;}*/
+
+/* Image & video search results */
+.imageResult {
+	float:			left;
+	height:			180px;
+	margin:			0 0 20px 40px;
+	text-align:		center;
+	width:			152px;
+	overflow:		hidden;
+}
+.imageResult img { display:block; border:none;}
+.imageResult a.pic {
+	border:			1px solid #fff;
+	outline:		1px solid #999;
+	display:		block;
+	margin:			0 auto 15px;
+	box-shadow: 	0 0 20px #787878;
+		-webkit-box-shadow:0 0 20px #787878;
+		-moz-box-shadow:0 0 20px #787878;
+		filter:progid:DXImageTransform.Microsoft.Shadow(color='#bbb', Direction=135, Strength=5); 
+		zoom: 1; 
+}
+/* The show more button */
+#more {
+	width:			83px;
+	height:			24px;
+	background:		url(../images/more.png) no-repeat;
+	cursor:			pointer;
+	margin:			40px auto;
+}
+
+#more:hover{ background-position:left bottom;}

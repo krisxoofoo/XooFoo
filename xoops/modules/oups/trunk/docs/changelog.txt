@@ -1,0 +1,23 @@
+Oups Module History
+
+Key:
+ + Added feature
+ - Removed
+ ! Bug fix
+ o General comment
+
+ 
+version 1.0
+===========
+
+	Work based on AM HTError (Andrew Mills)
+ o	Redesign Admin
+ o	Cleaning code
+ o	Redesign error messages.
+ +	Added google websearch
+ +	Added style.css and admin.css
+ !	Fixed editor errors
+ !	Fixed blank page with Xoops 2.4.x / 2.5.x
+
+   
+   

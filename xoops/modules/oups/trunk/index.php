@@ -51,12 +51,12 @@ if (isset($_REQUEST['err'])) { // AND $_REQUEST['err'] == "404") {
 			$text	= $myts->displayTarea($myrow['text'], 1, 1, 1, 1, $xoopsModuleConfig['linebreaks']);
 		} // end while
 	} // end if
-	// add custom title to page title - "<{$xoops_pagetitle}>" - titleaspagetitle
+	// add custom title to page title
 	if ($xoopsModuleConfig['titleaspagetitle'] == 1) {
-		$xoopsTpl->assign('xoops_pagetitle', $xoopsModule->getVar('name').' - '.$title); // module name - article title
+		$xoopsTpl->assign('xoops_pagetitle', $xoopsModule->getVar('name').' - '.$title);
 	}
 	if ($xoopsModuleConfig['titleaspagetitle'] == 2) {
-		$xoopsTpl->assign('xoops_pagetitle', $title.' - '.$xoopsModule->getVar('name')); // article title -  module name
+		$xoopsTpl->assign('xoops_pagetitle', $title.' - '.$xoopsModule->getVar('name'));
 	}
 	$xoopsTpl->assign('title', $title);
 	$xoopsTpl->assign('text', $text);

@@ -37,17 +37,20 @@ if(file_exists(XOOPS_ROOT_PATH . "/.htaccess")) {
 	echo "<br /><p style='line-height: 30px;' class=\"red\">";
 	echo _AM_OUPS_ADDCODE;
 	echo "</p>";
-	echo "<p style='line-height: 30px;'>";
+	echo "<p class='xoopsQuote' style='line-height: 20px; padding-left: 10px;'>";
 	if ($xoopsDB->getRowsNum($result) > 0) {
 		while($myrow = $xoopsDB->fetchArray($result)) {
 			$id			= $myrow['id'];
 			$errornum	= $myrow['errornum'];
 			echo "ErrorDocument " . $errornum . " /modules/" . $xoopsModule->getVar('dirname') . "/index.php?err=" . $errornum . "<br />\n";
+			//echo "ErrorDocument " . $errornum . "&#32;" .XOOPS_URL."/modules/" . $xoopsModule->getVar('dirname') . "/index.php?err=" . $errornum . "<br />\n";
 		}
 	} else {
 		echo _AM_OUPS_NOCODE;
 	}
-	echo "</p></div>";
+	echo "ErrorDocument 500 /modules/" . $xoopsModule->getVar('dirname') . "/templates/oups_500.html<br />\n";
+	echo "ErrorDocument 503 /modules/" . $xoopsModule->getVar('dirname') . "/templates/oups_503.html<br />\n";
+	echo "</p><p><br />"._AM_OUPS_HTACCESSWARNING."</p></div>";
 oups_adminfooter();
 xoops_cp_footer();
 ?>

@@ -101,7 +101,7 @@ function oups_getwysiwygform( $caption, $name, $value = "", $width = "100%", $he
 	$editor_options['width']	= $width; // default value = 100%
 	$editor_options['height']	= $height; // default value = 400px	
 
-	$whichconfig = "elrte";
+	$whichconfig = "tinymce";
 	switch($whichconfig){
 	case "spaw":
 		if(!$x24) {

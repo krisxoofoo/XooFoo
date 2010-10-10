@@ -69,8 +69,9 @@ define("_AM_OUPS_INFO",		"<p><strong>Please note:</strong> This module requires 
 define("_AM_OUPS_FILECHK",		"Checking for the .htaccess file:<br />");
 define("_AM_OUPS_FILEEXISTS",	"<span style=\"color: green; font-weight: bold;\">OK</span>");
 define("_AM_OUPS_FILENOEXIST",	"<span style=\"color: red; font-weight: bold;\">the .htaccess does not exist - please add this file with the lines added below (please note the full stop at the start - this is part of the filename).</span>");
-define("_AM_OUPS_ADDCODE",		"You will need to manually add the following lines to the <b>.htaccess</b> file in your XOOPS root directory for the error codes to work.");
+define("_AM_OUPS_ADDCODE",	"You will need to manually add the following lines to the <strong>.htaccess</strong> file in your XOOPS root directory for the error codes to work.");
 define("_AM_OUPS_NOCODE",		"<span style=\"color: red; font-weight: bold;\">There are currently no error codes defined.</span>");
+define("_AM_OUPS_HTACCESSWARNING", "On some server configurations, you may need to put \"<em>http://mywebsite</em>\" to redirect to the error page in your <em>.htaccess</em>");
 
 /**
 * reports.php

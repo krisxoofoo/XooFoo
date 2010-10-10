@@ -37,6 +37,9 @@ $modversion['adminmenu']	= "admin/menu.php";
 // Menu
 $modversion['hasMain'] = 1;
 
+// Search option
+$modversion['hasSearch'] = 0;
+
 // Templates
 $modversion['templates'][1]['file'] 		= "oups_index.html"; // main index - default view
 $modversion['templates'][1]['description'] 	= "";

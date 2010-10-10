@@ -4,6 +4,8 @@
 	margin:			1em auto;
 }
 #xo-oupspage h1 { font-size: 1.4em; text-shadow : 1px 1px 2px #798e9c; text-align: center !important;}
+
+/* search box */
 #xo-oupssearch { margin-top: 2em;}
 #searchForm {
 	background-color:	#C25400;

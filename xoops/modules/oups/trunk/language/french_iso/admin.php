@@ -85,6 +85,7 @@ define("_AM_AMHTERR_FILEEXISTS",	"<span style=\"color: green; font-weight: bold;
 define("_AM_AMHTERR_FILENOEXIST",	"<span style=\"color: red; font-weight: bold;\">le fichier <em>.htaccess</em> n'est pas présent - S'il vous plait, veuillez créer le fichier et y insérer les lignes ci-dessous.</span>");
 define("_AM_AMHTERR_ADDCODE",		"Dans le fichier <em>.htaccess</em> se trouvant à la racine de votre XOOPS, vous devrez manuellement y insérer les lignes ci-dessous, afin que le module soit opérationnel.");
 define("_AM_AMHTERR_NOCODE",		"<span style=\"color: red; font-weight: bold;\">Il n'y a actuellement aucun code d'erreur de définis.</span>");
+define("_AM_OUPS_HTACCESSWARNING", "Sur certaines configurations de serveur, vous pouvez être amené à mettre \"<em>http://monadresseurl</em>\" pour rediriger la page d'erreur dans votre fichier <em>.htaccess</em>");
 
 /**
 * reports.php

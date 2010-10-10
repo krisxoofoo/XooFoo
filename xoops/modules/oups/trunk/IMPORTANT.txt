@@ -1,0 +1,3 @@
+Lisez le fichier readme.txt dans le dossier "docs"
+
+Read the readme.txt file in the folder "docs"

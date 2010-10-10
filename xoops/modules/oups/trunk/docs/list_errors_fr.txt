@@ -1,0 +1,38 @@
+100 : OK pour continuer 
+101 : le serveur a changé de protocoles 
+200 : requête effectuée avec succès 
+201 : document créé (raison : nouvelle URI) 
+202 : requête achevée de manière asynchrone (TBS) 
+203 : requête achevée de manière incomplète 
+204 : aucune information à renvoyer 
+205 : requête terminée mais formulaire vide 
+206 : requête GET incomplète 
+300 : le serveur ne peut pas déterminer le code de retour 
+301 : document déplacé de façon permanente 
+302 : document déplacé de façon temporaire 
+303 : redirection avec nouvelle méthode d'accès 
+304 : le champ 'if-modified-since' n'était pas modifié 
+305 : redirection vers un proxy spécifié par l'entête 
+307 : HTTP/1.1 
+400 : erreur de syntaxe dans l'adresse du document 
+401 : pas d'autorisation d'accès au document 
+402 : accès au document soumis au paiement 
+403 : pas d'autorisation d'accès au serveur 
+404 : la page demandée n'existe pas 
+405 : méthode de requête du formulaire non autorisée 
+406 : requête non acceptée par le serveur 
+407 : autorisation du proxy nécessaire 
+408 : temps d'accès à la page demandée expiré 
+409 : l'utilisateur doit soumettre à nouveau avec plus d'infos 
+410 : cette ressource n'est plus disponible 
+411 : le server a refusé la requête car elle n'a pas de longueur 
+412 : la précondition donnée dans la requête a échoué 
+413 : l'entité de la requête était trop grande 
+414 : l'URI de la requête était trop longue 
+415 : type de média non géré 
+500 : erreur interne du serveur 
+501 : requête faite au serveur non supprimée 
+502 : mauvaise passerelle d'accès 
+503 : service non disponible 
+504 : temps d'accès à la passerelle expiré 
+505 : version HTTP non gérée 

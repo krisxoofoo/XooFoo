@@ -49,17 +49,5 @@ define("_MD_NULLOS_409TITLE","Grrr!!");
 define("_MD_NULLOS_409ERROR","The request conflicts with another application or server configuration!!");
 define("_MD_NULLOS_409DESC","If this page was submitted after the click on a link or any other factor leading to an existing page,<br />Please let us know by clicking <a href=\"javascript:openWithSelfMain('".XOOPS_URL."/pmlite.php?send2=1&amp;to_userid=1','pmlite',520,520);\">here</a>, we'll prompt action.<br /><br />Thank you for your understanding.</p><p>Click <a href='".XOOPS_URL."' title=''>here</a> to return to the home page.");
 define("_MD_NULLOS_409DESC1","You just had an error page, and are sorry!<br />You can contact us to let us know the details of this dysfunction.<br />Thank you for your understanding.</p><p>Click <a href='".XOOPS_URL."' title=''>here</a> to return to the home page.");
-/* 500.html */
-define("_MD_NULLOS_500","500");
-define("_MD_NULLOS_500TITLE","Grrr!!");
-define("_MD_NULLOS_500ERROR","The server encountered an unexpected condition<br />which prevented him to respond to the request!!");
-define("_MD_NULLOS_500DESC","If this page was submitted after the click on a link or any other factor leading to an existing page,<br />Please let us know by clicking <a href=\"javascript:openWithSelfMain('".XOOPS_URL."/pmlite.php?send2=1&amp;to_userid=1','pmlite',520,520);\">here</a>, we'll prompt action.<br /><br />Thank you for your understanding.</p><p>Click <a href='".XOOPS_URL."' title=''>here</a> to return to the home page.");
-define("_MD_NULLOS_500DESC1","You just had an error page, and are sorry!<br />You can contact us to let us know the details of this dysfunction.<br />Thank you for your understanding.</p><p>Click <a href='".XOOPS_URL."' title=''>here</a> to return to the home page.");
-/* 503.html */
-define("_MD_NULLOS_503","503");
-define("_MD_NULLOS_503TITLE","Grrr!!");
-define("_MD_NULLOS_503ERROR","The server is unable to handle the request<br />due to an overload or a temporary update !!");
-define("_MD_NULLOS_503DESC","If this page was submitted after the click on a link or any other factor leading to an existing page,<br />Please let us know by clicking <a href=\"javascript:openWithSelfMain('".XOOPS_URL."/pmlite.php?send2=1&amp;to_userid=1','pmlite',520,520);\">here</a>, we'll prompt action.<br /><br />Thank you for your understanding.</p><p>Click <a href='".XOOPS_URL."' title=''>here</a> to return to the home page.");
-define("_MD_NULLOS_503DESC1","You just had an error page, and are sorry!<br />You can contact us to let us know the details of this dysfunction.<br />Thank you for your understanding.</p><p>Click <a href='".XOOPS_URL."' title=''>here</a> to return to the home page.");
 
 ?>

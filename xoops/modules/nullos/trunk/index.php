@@ -30,12 +30,6 @@ elseif ($_GET['num_error'] == "408") {
 elseif ($_GET['num_error'] == "409") {
 	$xoopsOption["template_main"] = "nullos_409.html";
 }
-elseif ($_GET['num_error'] == "500") {
-	$xoopsOption["template_main"] = "nullos_500.html";
-}
-elseif ($_GET['num_error'] == "503") {
-	$xoopsOption["template_main"] = "nullos_503.html";
-}
 include(XOOPS_ROOT_PATH."/header.php");
 global $xoTheme; 
 	//$xoTheme->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/jquery.js');

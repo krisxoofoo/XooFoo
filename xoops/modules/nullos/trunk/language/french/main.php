@@ -49,17 +49,5 @@ define("_MD_NULLOS_409TITLE","Grrr!!");
 define("_MD_NULLOS_409ERROR","La requête entre en conflit avec une autre requête<br /> ou avec la configuration du serveur !!");
 define("_MD_NULLOS_409DESC","Si cette page s'est présentée suite au clic sur un lien ou un tout autre élément devant conduire à une page existante,<br />n'hésitez pas à nous en faire part en cliquant  <a href=\"javascript:openWithSelfMain('".XOOPS_URL."/pmlite.php?send2=1&amp;to_userid=1','pmlite',520,520);\">ici</a>, nous ferons rapidement le nécessaire. <br /><br />Nous vous remercions pour votre compréhension.</p><p>Cliquez <a href='".XOOPS_URL."' title=''>ici</a> pour retourner à la page d'accueil.");
 define("_MD_NULLOS_409DESC1","Vous venez d'avoir une page d'erreur, et en sommes désolé !<br />Vous pouvez nous contacter pour nous informer des détails de ce dysfonctionnement.<br />Nous vous remercions pour votre compréhension.</p><p>Cliquez <a href='".XOOPS_URL."/' title=''>ici</a> pour retourner à la page d'accueil.");
-/* 500.html */
-define("_MD_NULLOS_500","500");
-define("_MD_NULLOS_500TITLE","Grrr!!");
-define("_MD_NULLOS_500ERROR","Le serveur a rencontré une condition inattendue<br />qui l'a empéché de donner suite à la requête !!");
-define("_MD_NULLOS_500DESC","Si cette page s'est présentée suite au clic sur un lien ou un tout autre élément devant conduire à une page existante,<br />n'hésitez pas à nous en faire part en cliquant  <a href=\"javascript:openWithSelfMain('".XOOPS_URL."/pmlite.php?send2=1&amp;to_userid=1','pmlite',520,520);\">ici</a>, nous ferons rapidement le nécessaire. <br /><br />Nous vous remercions pour votre compréhension.</p><p>Cliquez <a href='".XOOPS_URL."' title=''>ici</a> pour retourner à la page d'accueil.");
-define("_MD_NULLOS_500DESC1","Vous venez d'avoir une page d'erreur, et en sommes désolé !<br />Vous pouvez nous contacter pour nous informer des détails de ce dysfonctionnement.<br />Nous vous remercions pour votre compréhension.</p><p>Cliquez <a href='".XOOPS_URL."/' title=''>ici</a> pour retourner à la page d'accueil.");
-/* 503.html */
-define("_MD_NULLOS_503","503");
-define("_MD_NULLOS_503TITLE","Grrr!!");
-define("_MD_NULLOS_503ERROR","Le serveur est incapable de gérer la requête<br />en raison d'une surcharge ou d'une mise à jour temporaires !!");
-define("_MD_NULLOS_503DESC","Si cette page s'est présentée suite au clic sur un lien ou un tout autre élément devant conduire à une page existante,<br />n'hésitez pas à nous en faire part en cliquant  <a href=\"javascript:openWithSelfMain('".XOOPS_URL."/pmlite.php?send2=1&amp;to_userid=1','pmlite',520,520);\">ici</a>, nous ferons rapidement le nécessaire. <br /><br />Nous vous remercions pour votre compréhension.</p><p>Cliquez <a href='".XOOPS_URL."' title=''>ici</a> pour retourner à la page d'accueil.");
-define("_MD_NULLOS_503DESC1","Vous venez d'avoir une page d'erreur, et en sommes désolé !<br />Vous pouvez nous contacter pour nous informer des détails de ce dysfonctionnement.<br />Nous vous remercions pour votre compréhension.</p><p>Cliquez <a href='".XOOPS_URL."/' title=''>ici</a> pour retourner à la page d'accueil.");
 
 ?>

@@ -28,6 +28,8 @@ $modversion['image'] = "images/nullos_slogo.png";
 $modversion['dirname'] = "nullos";
 // Menu Admin
 $modversion['hasAdmin'] = 1;
+// Search option
+$modversion['hasSearch'] = 0;
 // Templates
 $modversion['templates'][1]['file'] = 'nullos_302.html';
 $modversion['templates'][1]['description'] = '';

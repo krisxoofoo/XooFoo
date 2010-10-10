@@ -1,7 +1,16 @@
-<{$xoTheme->addStylesheet('modules/nullos/css/500.css')}>
-<div id="xo-500">
-<h1><{$smarty.const._MD_NULLOS_500TITLE}></h1>
-<p class="xo-numerrors"><{$smarty.const._MD_NULLOS_500}></p>
-<p class="xo-numerrors-desc"><{$smarty.const._MD_NULLOS_500ERROR}></p>
-<p class="xo-500-desc"><{if !$xoops_isuser}><{$smarty.const._MD_NULLOS_500DESC1}><{else}><{$smarty.const._MD_NULLOS_500DESC}><{/if}></p>
-</div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8;charset=utf-8" />
+<title>Oups !! 500: Internal server error</title>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/50x.css" charset="utf-8"/>
+</head>
+<body>
+	<div id="errorbox">
+		<h1>A problem has occurred on our server!</h1>
+		<h2>Page is currently unavailable</h2>
+		<p class="messagebox">We are treating the incident<br /><a href="/">Please, coming soon ...</a></p>
+		<p class="errordesc">Error 500: Internal server error</p>
+	</div>
+</body>
+</html>

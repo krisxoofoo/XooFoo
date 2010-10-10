@@ -6,5 +6,5 @@ ErrorDocument 404 http://sitename/modules/nullos/index.php?num_error=404
 ErrorDocument 405 http://sitename/modules/nullos/index.php?num_error=405
 ErrorDocument 408 http://sitename/modules/nullos/index.php?num_error=408
 ErrorDocument 409 http://sitename/modules/nullos/index.php?num_error=409
-ErrorDocument 500 http://sitename/modules/nullos/index.php?num_error=500
-ErrorDocument 503 http://sitename/modules/nullos/index.php?num_error=503
+ErrorDocument 500 http://sitename/modules/nullos/templates/nullos_500.html
+ErrorDocument 503 http://sitename/modules/nullos/templates/nullos_503.html

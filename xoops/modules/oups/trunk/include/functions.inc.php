@@ -71,11 +71,11 @@ global $xoopsModule, $xoopsConfig, $xoTheme;
 	} else {
 		include_once XOOPS_ROOT_PATH . '/modules/oups/language/english/modinfo.php';
 	}
-	echo "<div id='buttontop'>";
+	echo "<div id='buttontop1'>";
 	echo "<div style=\" float:left; width: 40%; padding: 0 6px; line-height: 18px;\"><a class=\"nobutton\" href=\"../../system/admin.php?fct=preferences&amp;op=showmod&amp;mod=".$xoopsModule->getVar('mid')."\" title=\"" . _AM_OUPS_GENERALSET . "\">" . _AM_OUPS_GENERALSET . "</a> <!--| <a href=\"#\" title=\"" . _AM_OUPS_HELP . "\">" . _AM_OUPS_HELP . "</a>--> | <a href=\"about.php\" title=\"". _AM_OUPS_ABOUT ."\">". _AM_OUPS_ABOUT ."</a> | <a href=\"../\" title=\"". _AM_OUPS_GOTOMOD ."\">". _AM_OUPS_GOTOMOD."</a> </div>";
 	echo "<div style=\" float: right; width: 40%; text-align: right; padding: 0 6px; line-height: 18px;\"><strong>" . $xoopsModule->name() . "  " . _AM_OUPS_MODULEADMIN . "</strong> " . $breadcrumb . "</div>";
 	echo "</div>";
-	echo "<div id='buttonbar'><ul>";
+	echo "<div id='buttonbar1'><ul>";
 	echo "<li id='" . $tblColors[0] . "'><a class='boxreliefd' href=\"index.php\"\" title=\"" . _AM_OUPS_INDEX . "\">" . _AM_OUPS_INDEX . "</a></li>\n";
 	echo "<li id='" . $tblColors[1] . "'><a class='boxreliefd' href=\"errors.php\" title=\"" . _AM_OUPS_ERROR . "\">" . _AM_OUPS_ERROR . "</a></li>\n";
 	echo "<li id='" . $tblColors[2] . "'><a class='boxreliefd' href=\"reports.php\" title=\"" . _AM_OUPS_REPORTS . "\">" . _AM_OUPS_REPORTS . "</a></li>\n";

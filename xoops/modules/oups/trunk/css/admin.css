@@ -1,21 +1,23 @@
-#buttontop { float:left; width:100%; font-size:93%; line-height:normal; margin: 0; }
-#buttonbar { float:left; width:100%; font-size:93%; line-height:normal; margin-bottom: 30px; }
+#buttontop1 { float:left; width:100%; font-size:93%; line-height:normal; margin: 0; }
+#buttonbar1 { float:left; width:100%; font-size:93%; line-height:normal; margin-bottom: 30px; }
 
-#buttonbar li { display:inline; }
-#buttonbar ul { margin: 15px 0 0 15px; list-style:none;}
-#buttonbar a { float:left; display:block; background-color: #f0f0f0; border: 1px solid #aaa; border-radius: 5px; padding:5px 15px 5px 15px; font-weight:bold; color:#765;margin-left: 15px; 
+#buttonbar1 li { display:inline; }
+#buttonbar1 ul { margin: 15px 0 0 15px; list-style:none;}
+#buttonbar1 a { float:left; display:block; background-color: #f0f0f0; border: 1px solid #aaa; border-radius: 5px; padding:5px 15px 5px 15px; font-weight:bold; color:#765;margin-left: 15px; 
+	text-decoration: none;
 	box-shadow: 			0 20px 10px -10px #ddd inset;
 		-moz-box-shadow: 	0 20px 10px -10px #ddd inset;
 		-webkit-box-shadow: 0 20px 10px -10px #ddd inset;
 }
-#buttonbar a:hover  {
+#buttonbar1 a:hover  {
 	background-color:#fff;
 	color: #000; 
+	text-decoration: none;
 	box-shadow: 			0 20px 10px -10px #ddd inset;
 		-moz-box-shadow: 	0 20px 10px -10px #ddd inset;
 		-webkit-box-shadow: 0 20px 10px -10px #ddd inset;
 }
-#buttonbar #current a {
+#buttonbar1 #current a {
 	background-color:#fff;
 	color: #000; 
 	box-shadow: 0 0 20px #787878;

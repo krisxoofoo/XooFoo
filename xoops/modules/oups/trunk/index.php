@@ -63,8 +63,8 @@ if (isset($_REQUEST['err'])) { // AND $_REQUEST['err'] == "404") {
 } // end if
 global $xoTheme; 
 	$xoTheme->addStyleSheet('modules/oups/css/style.css');
-	$xoTheme->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
-	//$xoTheme->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/jquery.js');
+	//$xoTheme->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
+	$xoTheme->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/jquery.js');
 	$xoTheme->addScript('modules/oups/js/script.js');
 include XOOPS_ROOT_PATH.'/footer.php';
 ?>

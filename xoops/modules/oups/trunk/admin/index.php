@@ -24,7 +24,7 @@ include_once ("header.inc.php");
 //
 xoops_cp_header();
 oups_adminmenu(0, _AM_OUPS_INDEX);
-echo "<div style='max-width:800px; margin: 0 auto;'><h1 class='center'>" . _AM_OUPS_INTRO . "</h1>";
+echo "<div style='max-width:800px; margin: 0 auto;'><h1 class='center shadow'>" . _AM_OUPS_INTRO . "</h1>";
 echo "<p style='line-height: 30px;'>"._AM_OUPS_INFO."</p>";
 echo "<p style='line-height: 30px;'>"._AM_OUPS_FILECHK."</p>";
 if(file_exists(XOOPS_ROOT_PATH . "/.htaccess")) {

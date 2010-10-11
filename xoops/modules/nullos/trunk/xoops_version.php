@@ -17,38 +17,42 @@
  * @version             $Id: xoops_version.php 47 2009-08-15 13:26:01Z DuGris $
 **/
 
-$modversion['name'] = _MI_NULLOS_NAME;
-$modversion['version'] = 1.0;
-$modversion['description'] = _MI_NULLOS_DESC;
-$modversion['author'] = "kris - http://www.xoofoo.org";
-$modversion['help'] = "";
-$modversion['license'] = "GPL see LICENSE";
-$modversion['official'] = 1;
-$modversion['image'] = "images/nullos_slogo.png";
-$modversion['dirname'] = "nullos";
+$module_dirname = basename( dirname( __FILE__ ) ) ;
+
+$modversion["name"] = _MI_NULLOS_NAME;
+$modversion["version"] = 1.0;
+$modversion["description"] = _MI_NULLOS_DESC;
+$modversion["author"] = "kris - http://www.xoofoo.org";
+$modversion["help"] = "";
+$modversion["license"] = "GPL see LICENSE";
+$modversion["official"] = 1;
+$modversion["image"] = "/images/" . $module_dirname . "_slogo.png";
+$modversion["dirname"] = $module_dirname;
 // Menu Admin
-$modversion['hasAdmin'] = 1;
+$modversion["hasAdmin"] = 1;
+// Menu Main
+$modversion["hasMain"] = 0;
 // Search option
-$modversion['hasSearch'] = 0;
+$modversion["hasSearch"] = 0;
 // Templates
-$modversion['templates'][1]['file'] = 'nullos_302.html';
-$modversion['templates'][1]['description'] = '';
-$modversion['templates'][2]['file'] = 'nullos_400.html';
-$modversion['templates'][2]['description'] = '';
-$modversion['templates'][3]['file'] = 'nullos_401.html';
-$modversion['templates'][3]['description'] = '';
-$modversion['templates'][4]['file'] = 'nullos_403.html';
-$modversion['templates'][4]['description'] = '';
-$modversion['templates'][5]['file'] = 'nullos_404.html';
-$modversion['templates'][5]['description'] = '';
-$modversion['templates'][6]['file'] = 'nullos_405.html';
-$modversion['templates'][6]['description'] = '';
-$modversion['templates'][7]['file'] = 'nullos_408.html';
-$modversion['templates'][7]['description'] = '';
-$modversion['templates'][8]['file'] = 'nullos_409.html';
-$modversion['templates'][8]['description'] = '';
-$modversion['templates'][9]['file'] = 'nullos_500.html';
-$modversion['templates'][9]['description'] = '';
-$modversion['templates'][10]['file'] = 'nullos_503.html';
-$modversion['templates'][10]['description'] = '';
+$modversion["templates"][1]["file"] = $module_dirname . "_302.html";
+$modversion["templates"][1]["description"] =_MI_NULLOS_TPL1;
+$modversion["templates"][2]["file"] = $module_dirname . "_400.html";
+$modversion["templates"][2]["description"] =_MI_NULLOS_TPL2;
+$modversion["templates"][3]["file"] = $module_dirname . "_401.html";
+$modversion["templates"][3]["description"] =_MI_NULLOS_TPL3;
+$modversion["templates"][4]["file"] = $module_dirname . "_403.html";
+$modversion["templates"][4]["description"] =_MI_NULLOS_TPL4;
+$modversion["templates"][5]["file"] = $module_dirname . "_404.html";
+$modversion["templates"][5]["description"] =_MI_NULLOS_TPL5;
+$modversion["templates"][6]["file"] = $module_dirname . "_405.html";
+$modversion["templates"][6]["description"] =_MI_NULLOS_TPL6;
+$modversion["templates"][7]["file"] = $module_dirname . "_408.html";
+$modversion["templates"][7]["description"] =_MI_NULLOS_TPL7;
+$modversion["templates"][8]["file"] = $module_dirname . "_409.html";
+$modversion["templates"][8]["description"] =_MI_NULLOS_TPL8;
+$modversion["templates"][9]["file"] = $module_dirname . "_500.html";
+$modversion["templates"][9]["description"] =_MI_NULLOS_TPL9;
+$modversion["templates"][10]["file"] = $module_dirname . "_503.html";
+$modversion["templates"][10]["description"] =_MI_NULLOS_TPL10;
 ?>

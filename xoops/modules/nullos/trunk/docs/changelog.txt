@@ -1,0 +1,16 @@
+WebSearch Module History
+
+Key:
+ + Added feature
+ - Removed
+ ! Bug fix
+ o General comment
+
+ 
+version 1.1
+===========
+ !	url path in script.js
+ !	input checked in websearch_form.html
+ + Added $module_dirname in php files (easy for rename module)
+ o Add doc folder with GPL license
+ - Removed readme.txt file

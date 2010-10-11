@@ -27,9 +27,11 @@ define("_MI_GHOST_DESC" , "Ghost / Blank module for XOOPS");
 
 // Main menu links
 define("_MI_GHOST_SMNAME1" , "My link 1");
+define("_MI_GHOST_SMNAME2" , "My link 2");
 
 // A brief description of these templates
 define("_MI_GHOST_DSCTPL1" , "my fist template for ghost module");
+define("_MI_GHOST_DSCTPL2" , "my second template for ghost module");
 
 // Admin menu links
 define("_MI_GHOST_ADMINDEX1" , "Admin link 1");

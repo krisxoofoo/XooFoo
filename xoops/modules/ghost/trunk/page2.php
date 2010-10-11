@@ -14,7 +14,7 @@
  * @package	Ghost
  * @since		2.3.0
  * @author 	kris <http://www.xoofoo.org>
- * @version	$Id$
+ * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
 **/
 
 if ( !include("../../mainfile.php") ) {
@@ -22,7 +22,7 @@ if ( !include("../../mainfile.php") ) {
 }
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 
-$xoopsOption["template_main"] =  $module_dirname ."_index.html";
+$xoopsOption["template_main"] =  $module_dirname ."_page2.html";
 
 include(XOOPS_ROOT_PATH."/header.php");
 

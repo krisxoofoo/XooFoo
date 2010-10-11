@@ -26,7 +26,7 @@ $modversion["author"] = "kris - http://www.xoofoo.org";
 $modversion["help"] = "";
 $modversion["license"] = "GPL see LICENSE";
 $modversion["official"] = 1;
-$modversion["image"] = "/images/" . $module_dirname . "_slogo.png";
+$modversion["image"] = "images/" . $module_dirname . "_slogo.png";
 $modversion["dirname"] = $module_dirname;
 // Menu Admin
 $modversion["hasAdmin"] = 1;

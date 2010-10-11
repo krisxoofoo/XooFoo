@@ -18,5 +18,6 @@
 **/
 
 define("_MD_GHOST_TXT1" , "Mon premier texte avec le module <em>\"Ghost\"</em> pour Xoops.");
+define("_MD_GHOST_TXT2" , "Très bien ! et toi sur le sommet du Kilimandjaro ?");
 
 ?>

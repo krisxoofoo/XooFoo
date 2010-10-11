@@ -23,13 +23,13 @@
 define("_MI_GHOST_NAME" , "Ghost");
 
 // A brief description of this module
-define("_MI_GHOST_DESC" , "Module FantÃ´me pour insÃ©rer facilement des pages personnelles dans XOOPS");
+define("_MI_GHOST_DESC" , "Module Fantôme pour insérer facilement des pages personnelles dans XOOPS");
 
 // Main menu links
 define("_MI_GHOST_SMNAME1" , "Ma page 1");
 
 // A brief description of these templates
-define("_MI_GHOST_DSCTPL1" , "Mon premier template avec le module FantÃ´me");
+define("_MI_GHOST_DSCTPL1" , "Mon premier template avec le module Fantôme");
 
 // Admin menu links
 define("_MI_GHOST_ADMINDEX1" , "Lien Administration 1");

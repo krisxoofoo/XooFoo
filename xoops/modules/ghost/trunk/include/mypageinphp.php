@@ -1,4 +1,4 @@
-@charset "UTF-8";
+<?php
 /**
  * Ghost module
  *
@@ -14,5 +14,9 @@
  * @package	Ghost
  * @since		2.3.0
  * @author 	kris <http://www.xoofoo.org>
- * @version	$Id $
+ * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
 **/
+
+echo "<h3>include</h3><div><p>How are you?</p></div>";
+echo _MD_GHOST_TXT2;
+?>

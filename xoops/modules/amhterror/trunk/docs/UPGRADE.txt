@@ -1,0 +1,15 @@
+AM HTError
+Andrew Mills ajmills@sirium.net
+
+
+Upgrade Instructions
+1. Backup your database, customized templates and module files before 
+   upgrading.
+
+2. Upload all files in this package to XOOPS_ROOT_URL/modules/[module dirname]/, 
+   overwriting the existing files.
+
+3. Log in to your site as administrator.
+
+4. Update the module using the XOOPS module administration panel at 
+   'System Admin -> Modules'.

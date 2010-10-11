@@ -1,6 +1,6 @@
 <?php
 /**
- * WebSearch module
+ * Ghost module
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -16,26 +16,29 @@
  * @author              Kris <http://www.xoofoo.org>
  * @version             $Id$
 **/
+$module_dirname = basename( dirname( __FILE__ ) ) ;
 
-$modversion['name'] =  _MI_WEBSEARCH_NAME;
-$modversion['version'] = 1.1;
-$modversion['description'] = _MI_WEBSEARCH_DESC;
-$modversion['credits'] = "Tzine (http://tutorialzine.com) and Google";
-$modversion['author'] = "kris - http://www.xoofoo.org";
-$modversion['help'] = "";
-$modversion['license'] = "GPL see LICENSE";
-$modversion['official'] = 1;
-$modversion['image'] = "img/websearch_slogo.png";
-$modversion['dirname'] = "websearch";
-
-// Menu
-$modversion['hasAdmin'] = 0;
+$modversion["name"] =  _MI_WEBSEARCH_NAME;
+$modversion["version"] = 1.1;
+$modversion["description"] = _MI_WEBSEARCH_DESC;
+$modversion["credits"] = "Tzine (http://tutorialzine.com) and Google";
+$modversion["author"] = "kris - http://www.xoofoo.org";
+$modversion["help"] = "";
+$modversion["license"] = "GPL see LICENSE";
+$modversion["official"] = 1;
+$modversion["image"] = "img/" . $module_dirname . "_slogo.png";
+$modversion["dirname"] = $module_dirname;
 
 // Menu
-$modversion['hasMain'] = 1;
+$modversion["hasAdmin"] = 0;
 
+// Menu
+$modversion["hasMain"] = 1;
+
+// Search option
+$modversion["hasSearch"] = 0;
 // Templates
-$modversion['templates'][1]['file'] = 'websearch_form.html';
-$modversion['templates'][1]['description'] = '';
+$modversion["templates"][1]["file"] = $module_dirname . "_form.html";
+$modversion["templates"][1]["description"] = "";
 
 ?>

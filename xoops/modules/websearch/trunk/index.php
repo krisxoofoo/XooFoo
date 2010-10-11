@@ -19,16 +19,17 @@
 if ( !include("../../mainfile.php") ) {
     die("XOOPS root path not defined");
 }
+$module_dirname = basename( dirname( __FILE__ ) ) ;
 
-$xoopsOption["template_main"] = "websearch_form.html";
+$xoopsOption["template_main"] =  $module_dirname ."_form.html";
 
 include(XOOPS_ROOT_PATH."/header.php");
 
 global $xoTheme; 
-	$xoTheme->addStyleSheet('modules/websearch/css/style.css');
-	$xoTheme->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
-	//$xoTheme->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/jquery.js');
-	$xoTheme->addScript('modules/websearch/js/script.js');
+	$xoTheme->addStyleSheet('modules/' . $module_dirname . '/css/style.css');
+	//$xoTheme->addScript('http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js');
+	$xoTheme->addScript(XOOPS_URL . '/browse.php?Frameworks/jquery/jquery.js');
+	$xoTheme->addScript('modules/' . $module_dirname . '/js/script.js');
 
 include_once XOOPS_ROOT_PATH."/footer.php";
 ?>

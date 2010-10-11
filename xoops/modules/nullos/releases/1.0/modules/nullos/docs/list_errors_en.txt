@@ -1,0 +1,36 @@
+200 : request completed 
+201 : object created, reason = new URI 
+202 : async completion (TBS) 
+203 : partial completion 
+204 : no info to return 
+205 : request completed, but clear form 
+206 : partial GET furfilled 
+300 : server couldn't decide what to return 
+301 : object permanently moved 
+302 : object temporarily moved 
+303 : redirection w/ new access method 
+304 : if-modified-since was not modified 
+305 : redirection to proxy, location header specifies proxy to use 
+307 : HTTP/1.1: keep same verb 
+400 : invalid syntax 
+401 : access denied 
+402 : payment required 
+403 : request forbidden 
+404 : object not found 
+405 : method is not allowed 
+406 : no response acceptable to client found 
+407 : proxy authentication required 
+408 : server timed out waiting for request 
+409 : user should resubmit with more info 
+410 : the resource is no longer available 
+411 : the server refused to accept request w/o a length 
+412 : precondition given in request failed 
+413 : request entity was too large 
+414 : request URI too long 
+415 : unsupported media type 
+500 : internal server error 
+501 : required not supported 
+502 : error response received from gateway 
+503 : temporarily overloaded 
+504 : timed out waiting for gateway 
+505 : HTTP version not supported 

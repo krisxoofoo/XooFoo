@@ -1,0 +1,10 @@
+ErrorDocument 302 http://sitename/modules/nullos/index.php?num_error=302
+ErrorDocument 400 http://sitename/modules/nullos/index.php?num_error=400
+ErrorDocument 401 http://sitename/modules/nullos/index.php?num_error=401
+ErrorDocument 403 http://sitename/modules/nullos/index.php?num_error=403
+ErrorDocument 404 http://sitename/modules/nullos/index.php?num_error=404
+ErrorDocument 405 http://sitename/modules/nullos/index.php?num_error=405
+ErrorDocument 408 http://sitename/modules/nullos/index.php?num_error=408
+ErrorDocument 409 http://sitename/modules/nullos/index.php?num_error=409
+ErrorDocument 500 http://sitename/modules/nullos/templates/nullos_500.html
+ErrorDocument 503 http://sitename/modules/nullos/templates/nullos_503.html

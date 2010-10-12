@@ -31,7 +31,7 @@ define("_MI_GHOST_SMNAME2" , "Ma page 2");
 
 // A brief description of these templates
 define("_MI_GHOST_DSCTPL1" , "Mon premier template avec le module Fantôme");
-define("_MI_GHOST_DSCTPL1" , "Mon second template avec le module Fantôme");
+define("_MI_GHOST_DSCTPL2" , "Mon second template avec le module Fantôme");
 
 // Admin menu links
 define("_MI_GHOST_ADMINDEX1" , "Lien Administration 1");

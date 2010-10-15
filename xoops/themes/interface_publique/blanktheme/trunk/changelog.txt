@@ -4,6 +4,17 @@ Documentation on line --> http://dev.xoofoo.org/BlankTheme/
 Videos on line --> http://tv.xoofoo.org
 
 ============================
+Version 1.5 ( for xoops 2.5.x )
+============================
+- rename xo-info.php in config.php (kris_fr)
+- complete info in config.php (kris_fr)
+- rename img folder in images (kris_fr)
+- add class in body for ie hacks
+- add meta X-UA-Compatible
+- add meta viewport for mobile
+- add apple-touch-icon
+
+============================
 Version 1.4 ( for xoops 2.4.x )
 ============================
 - fix blocks position for xo-lcrpageblocks (kris_fr)

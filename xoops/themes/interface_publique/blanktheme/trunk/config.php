@@ -24,10 +24,6 @@
  * Folder and file skeleton:
  * REQUIRED:
  *  theme.html - complete layout template: header, footer, body, blocks, navigation
- *  simple.html - simplified layout: header, footer, body
- *  empty.html - empty layout with body only
- *  admin.html - backoffice layout
- *  paginator.html - Paginator template
  * OPTIONAL:
  *  navigation.html - generic navigation template, referenced by layout.html
  *  

@@ -1,0 +1,19 @@
+textarea		==> order 1
+dhtmltextarea	==>	order 2
+ckeditor		==>	order 3
+fckeditor		==>	order 4
+tinymce			==> order 5
+spaw			==> order 6
+wymeditor		==> order 7
+xynha			==> order 8
+nicedit			==> order 9
+koivi			==> order 10
+codemirror		==> order 11
+editarea		==> order 12
+elrte			==> order 13
+markitup		==> order
+openwysiwyg		==> order
+whizzywig		==> order
+jwysiwyg		==> order
+YUI editor		==> order
+

@@ -141,46 +141,45 @@ class XoopsFormElrte extends XoopsEditor
         {
             $GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/elrte/elrte/js/ui-themes/smoothness/jquery-ui-1.8.5.custom.css' );
             $GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/elrte/elrte/css/elrte.full.css' );
-            $GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/js/ui-themes/base/ui.all.css' );
-            $GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/css/elfinder.css' );
+            //$GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/js/ui-themes/base/ui.all.css' );
+            //$GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/css/elfinder.css' );
 
             $GLOBALS['xoTheme']->addScript('browse.php?Frameworks/jquery/jquery.js');
             $GLOBALS['xoTheme']->addScript('browse.php?Frameworks/jquery/plugins/jquery.ui.js');
             $GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/elrte/elrte/js/elrte.min.js' );
             // load language file
             $GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/elrte/elrte/js/i18n/elrte.'.$this->getLanguage().'.js' );
-            $GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/js/elfinder.min.js' );
-            $GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/js/i18n/elfinder.'.$this->getLanguage().'.js' );
-
+            //$GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/js/elfinder.min.js' );
+            //$GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/elrte/elfinder/js/i18n/elfinder.'.$this->getLanguage().'.js' );
             $isJsLoaded = true;
         }
         $ret.= "<script type='text/javascript' charset='utf-8'>\n";
         $ret.= "jQuery().ready(function() {\n";
-        $ret.= "	jQuery('selector').elrte({\n";
-        $ret.= "		// ... elrte options\n";
-        $ret.= "		fmOpen : function(callback) {\n";
-        $ret.= "		jQuery('<div id=\"myelfinder\" />').elfinder({\n";
-        $ret.= "		url : '".XOOPS_URL."/class/xoopseditor/elrte/elfinder/connectors/php/connector.php',\n";
-        $ret.= "       	lang : '".$this->getLanguage()."',\n"; // set your language
-        $ret.= "		dialog : { width : 900, modal : true, title : 'Files' },\n";  // open in dialog window
-        $ret.= "		closeOnEditorCallback : true,\n"; // close after file select
-        $ret.= "		editorCallback : callback \n";  // pass callback to file manager
-        $ret.= "		})\n";
-        $ret.= "	}\n";
-        $ret.= "})\n";
-        $ret.= "        var opts = {\n";
+        //$ret.= "	jQuery('selector').elrte({\n";
+        //$ret.= "		// ... elrte options\n";
+        //$ret.= "		fmOpen : function(callback) {\n";
+        //$ret.= "		jQuery('<div id=\"myelfinder\" />').elfinder({\n";
+        //$ret.= "		url : '".XOOPS_URL."/class/xoopseditor/elrte/elfinder/connectors/php/connector.php',\n";
+        //$ret.= "       	lang : '".$this->getLanguage()."',\n"; // set your language
+        //$ret.= "		dialog : { width : 900, modal : true, title : 'Files' },\n";  // open in dialog window
+        //$ret.= "		closeOnEditorCallback : true,\n"; // close after file select
+        //$ret.= "		editorCallback : callback \n";  // pass callback to file manager
+        //$ret.= "		})\n";
+        //$ret.= "	}\n";
+        //$ret.= "})\n";
+        $ret.= "       var opts = {\n";
         $ret.= "       lang : '".$this->getLanguage()."',\n"; // set your language
         $ret.= "       styleWidthCss : false,\n";
-        $ret.= "       height : 400,\n";
+        $ret.= "       height : 450,\n";
         $ret.= "        toolbar : 'maxi'\n";
         $ret.= "        };\n";
 	// create editor
-        $ret.= "                jQuery('#".$this->getName()."').elrte(opts);\n";
-	// or this way
-        // var editor = new elRTE(document.getElementById('our-element'), opts);
+        $ret.= "        jQuery('#".$this->getName()."').elrte(opts);\n";
         $ret.= "        });\n";
         $ret.= "</script>\n";
-	$ret.= "<div class='".$this->getName()."' name='".$this->getName()."' id='".$this->getName()."'  ".$this->getExtra()." style='width:".$this->getWidth().";height:".$this->getHeight().";'>" . $this->getValue() . "</div>";
+	
+		
+	$ret.= "<div class='".$this->getName()."' name='".$this->getName()."' id='".$this->getName()."' ".$this->getExtra()."style='width:".$this->getWidth().";height:".$this->getHeight().";'>" . $this->getValue() . "</div>";
         return $ret ;		
     }
 }

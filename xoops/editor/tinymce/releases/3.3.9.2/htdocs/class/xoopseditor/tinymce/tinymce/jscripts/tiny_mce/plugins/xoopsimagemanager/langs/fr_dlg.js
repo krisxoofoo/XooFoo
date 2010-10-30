@@ -1,3 +1,7 @@
+
+
+
+
 tinyMCE.addI18n('fr.xoopsimagemanager_dlg',{
     tab_general:"G\u00E9n\u00E9ral",
     tab_appearance:"Apparence",
@@ -46,9 +50,17 @@ tinyMCE.addI18n('fr.xoopsimagemanager_dlg',{
     tab_createcategory:"Ajouter une cat\u00E9gorie",
     select_image: "cliquez sur une image pour la s\u00E9lectionner."
 });
+tinyMCE.addI18n('fr.xoopsimagebrowser_dlg',{
+    dialog_title:"Explorateur d\u0027images Xoops",
+    tab_listimages:"Images",
+    tab_loadimage:"Ajouter une image",
+    tab_listcategories:"Cat\u00E9gories",
+    tab_createcategory:"Ajouter une cat\u00E9gorie",
+    select_image: "cliquez sur l\u0027image pour la s\u00E9lectionner"
+});
 
 /**
- * @translation     AFUX (Association Francophone des Utilisateurs de Xoops) <http://www.afux.org/>
+ * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8 sans BOM
  *

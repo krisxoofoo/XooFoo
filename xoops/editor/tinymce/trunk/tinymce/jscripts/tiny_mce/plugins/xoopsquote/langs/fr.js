@@ -1,9 +1,9 @@
-tinyMCE.addI18n('fr.xoopsquotecode',{
+tinyMCE.addI18n('fr.xoopsquote',{
     quote_desc:"Ins\u00e9rer une citation",
 });
 
 /**
- * @translation     AFUX (Association Francophone des Utilisateurs de Xoops) <http://www.afux.org/>
+ * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
  * @specification   _CHARSET: UTF-8 sans BOM
  *

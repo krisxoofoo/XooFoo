@@ -20,23 +20,24 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
-	font-weight: 		inherit;
+	font-weight: 	inherit;
 	font-style: 		inherit;
-	font-size: 			100%;
-	font-family: 		inherit;
+	font-size: 		100%;
+	font-family: 	inherit;
 	vertical-align: 	baseline;
-    background:			transparent;
+	background:	transparent;
 }
 article,aside,canvas,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,summary { display:block;}
 /* remember to define focus styles! */
 :focus {	outline: 0;}
-body { line-height: 1; color: #000; background: #fff;}
+body { height: 100%; background: #fff; color: #000; line-height: 1;}
 ol, ul { list-style: none;	}
 /* tables still need 'cellspacing="0"' in the markup */
-table { border-collapse: separate; border-spacing: 0; width: 100%;}
+table { border-collapse: collapse; border-spacing: 0; width: 100%;}
 img, fieldset, abbr, acronym { border: 0 }
-caption, th, td { font-weight: normal;}
+img { font-size: 0;}
+caption, th, td { font-weight: normal; vertical-align: top; text-align: left;}
 blockquote:before, blockquote:after, q:before, q:after { content: "";}
 blockquote, q { quotes: "" "";}
 ins { background-color:#ff9; color:#000; text-decoration:none;}
@@ -46,3 +47,10 @@ input, select { vertical-align:middle;}
 textarea { height: auto; overflow: auto; }
 nav ul { list-style:none;}
 option { padding-left: 0.6em }
+
+strong, b, dfn { font-weight: bold;}
+u {text-decoration: underline;}
+i, em { font-style: italic;}
+sup {vertical-align:text-top;}
+sub {vertical-align:text-bottom;}
+acronym, abbr, dfn {cursor: help;}

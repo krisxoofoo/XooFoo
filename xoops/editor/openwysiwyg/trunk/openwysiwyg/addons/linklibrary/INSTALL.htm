@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>OpenLinkLibrary Install  - version 1.0</title>
+<style type="text/css">
+body{margin:40px 0px;padding:0px;text-align:center;background-color:#e6e6e6;font-size:14px;font-family:arial;}
+h1{margin:0px;padding:0px;}
+ol.lipad li{padding-top:10px;}
+code{background-color:#e1e2eb;border:1px solid #c6c6c6;}
+code.remove{background-color:#eae2e0;}
+#container{margin:0px auto;padding:20px;width:800px;text-align:left;background-color:#ffffff;border:1px solid #cccccc;}
+#header{text-align:center;}
+#footer{margin-top:40px;font-size:11px;text-align:center;}
+</style>
+</head>
+<body>
+<div id="container">
+
+<div id="header"><h1>OpenLinkLibrary Install</h1><strong>(version 1.0)</strong></div>
+
+<p>First and formost, thank you for downloading our addon script for openWYSIWYG. If you enjoy this script please consider browsing through our other scripts and applications we have built by visiting our website at <a href="http://www.gallagherwebsitedesign.com/scripts/" target="_blank">www.GallagherWebsiteDesign.com</a>.</p>
+
+<ol class="lipad">
+ <li>To use this addon first you'll need to download and setup openWYSIWYG. Follow this link to download the <a href="http://www.openwebware.com/download.shtml" rel="nofollow">latest version of openWYSIWYG</a>. You must have at least version 1.4.7 to use this addon.</li>
+ <li>Next download the <a href="openLinkLibrary.zip">openLinkLibrary</a> zip file from us and upzip it. Now on your web server place the <em>linklibrary</em> folder into your <em>addon</em> folder that came with the openWYSIWYG editor.</li>
+ <li>Open up the wysiwyg.js file in a text editor so you can edit it - this is the file that came with your openWYSIWYG editor (should be in the scripts folder). Add the following to the very bottom of that file (you will not need to insert the first line of the below code if you have already added/setup the openImageLibary addon for your editor):
+  <p><code>var mysettings = new WYSIWYG.Settings();
+  <br />// define the location of the openLinkLibrary addon
+  <br />mysettings.LinkPopupFile = "addons/linklibrary/insert_hyperlink.php";
+  <br />// define the width of the insert link popup
+  <br />mysettings.LinkPopupWidth = 600;
+  <br />// define the height of the insert link popup
+  <br />mysettings.LinkPopupHeight = 245;</code></p></li>
+ <li>Now make sure the line in the above code <em>mysettings.LinkPopupFile</em> is actually equal to the location of the openLinkLibrary addon. And you can change the popup window's dimentions from the above inserted code too.</li>
+ <li>Next in the wysiwyg.js file replace the following lines of code (somewhere around line number 519). All this does is make the link that's inserted not have any extra tags unless they are actually needed - so replacing this is actually optional.
+  <p>Replace this:</p>
+  <p><code class="remove">		// set the attributes
+  <br />		WYSIWYG_Core.setAttribute(lin, "href", href);
+  <br />		WYSIWYG_Core.setAttribute(lin, "class", styleClass);
+  <br />		WYSIWYG_Core.setAttribute(lin, "className", styleClass);
+  <br />		WYSIWYG_Core.setAttribute(lin, "target", target);
+  <br />		WYSIWYG_Core.setAttribute(lin, "name", name);
+  <br />		WYSIWYG_Core.setAttribute(lin, "style", style);</code></p>
+  <p>With the following code:</p>
+  <p><code>		// set the attributes
+  <br />		WYSIWYG_Core.setAttribute(lin, "href", href);
+  <br />		if(styleClass) { WYSIWYG_Core.setAttribute(lin, "class", styleClass); }
+  <br />		//WYSIWYG_Core.setAttribute(lin, "className", styleClass);
+  <br />		if(target) { WYSIWYG_Core.setAttribute(lin, "target", target); }
+  <br />		if(name) { WYSIWYG_Core.setAttribute(lin, "name", name); }
+  <br />		if(style) { WYSIWYG_Core.setAttribute(lin, "style", style); }</code></p></li>
+ <li>Now in the wysiwyg.js file add the following lines of code at line number 1105 (should be after the code for the insert image popup implementation):
+  <p><code>		// Check the insert link popup implementation
+  <br />		var linkPopupFile = this.config[n].PopupsDir + 'insert_hyperlink.html';
+  <br />		var linkPopupWidth = 350;
+  <br />		var linkPopupHeight = 160;
+  <br />		if(typeof this.config[n].LinkPopupFile != "undefined" && this.config[n].LinkPopupFile != "") {
+  <br />			linkPopupFile = this.config[n].LinkPopupFile;
+  <br />		}
+  <br />		if(typeof this.config[n].LinkPopupWidth && this.config[n].LinkPopupWidth > 0) {
+  <br />			linkPopupWidth = this.config[n].LinkPopupWidth;
+  <br />		}
+  <br />		if(typeof this.config[n].LinkPopupHeight && this.config[n].LinkPopupHeight > 0) {
+  <br />			linkPopupHeight = this.config[n].LinkPopupHeight;
+  <br />		}</code></p></li>
+ <li>Next in the wysiwyg.js file replace the following code around line 1159:
+  <p><code class="remove">			// Create Link
+  <br />			case "CreateLink": 
+  <br />				window.open(this.config[n].PopupsDir + 'insert_hyperlink.html?wysiwyg=' + n, 'popup', 'location=0,status=0,scrollbars=0,resizable=0,width=350,height=160,top=' + popupPosition.top + ',left=' + popupPosition.left).focus();
+  <br />			break;</code></p>
+  <p>With the following:</p>
+  <p><code>			// Create Link
+  <br />			case "CreateLink": 
+  <br />				window.open(linkPopupFile + '?wysiwyg=' + n, 'popup', 'location=0,status=0,scrollbars=0,resizable=0,width=' + linkPopupWidth + ',height=' + linkPopupHeight + ',top=' + popupPosition.top + ',left=' + popupPosition.left).focus();
+  <br />			break;</code></p></li>
+ <li>Now on your web page that you're inserting the wysiwyg editor remove the following line in the javascript for that page:
+  <p><code class="remove">WYSIWYG.attach('textarea_id');</code></p>
+  <p>And replace it for with the following:</p>
+  <p><code>WYSIWYG.attach('textarea_id', mysettings);</code></p>
+  <p>Make sure you also replace <em>textarea_id</em> in the above code you just inserted with your actual textarea id</p></li>
+ <li>Finally in the <em>config.inc.php</em> file, which is located in the <em>linklibrary</em> folder (the addon you downloaded from us) edit the following lines to reflect the location of your upload folder for the files.
+  <p><code>$linkbasedir = '../../uploads';</code></p>
+  <p>and</p>
+  <p><code>$linkbaseurl = 'wysiwyg/uploads';</code></p></li>
+</ol>
+
+</div>
+<div id="footer">For more scripts please visit <a href="http://www.gallagherwebsitedesign.com/scripts/" target="_blank">www.GallagherWebsiteDesign.com</a>
+<p>&copy; 2009. All Rights Reserved. <a href="http://www.gallagherwebsitedesign.com/scripts/">Gallagher Website Design</a>.</p></div>
+</body>
+</html>

@@ -100,20 +100,16 @@ foreach ($_REQUEST as $key => $val)
 ?>
 <style type="text/css">
 <!--
-
-body
-{ background-color:#FFFFF0;
-}
-
-h1 
+#xo-dump h1 
 { font-size:20px;
   line-height:24px;
   font-family:Arial,Helvetica,sans-serif;
   margin-top:5px;
   margin-bottom:5px;
+  border:0;
 }
 
-p,td,th
+#xo-dump p, #xo-dump td, #xo-dump th
 { font-size:14px;
   line-height:18px;
   font-family:Arial,Helvetica,sans-serif;
@@ -123,35 +119,35 @@ p,td,th
   vertical-align:top;
 }
 
-p.centr
+#xo-dump p.centr
 { 
   text-align:center;
 }
 
-p.smlcentr
+#xo-dump p.smlcentr
 { font-size:10px;
   line-height:14px;
   text-align:center;
 }
 
-p.error
+#xo-dump p.error
 { color:#FF0000;
   font-weight:bold;
 }
 
-p.success
+#xo-dump p.success
 { color:#00DD00;
   font-weight:bold;
 }
 
-p.successcentr
+#xo-dump p.successcentr
 { color:#00DD00;
   background-color:#DDDDFF;
   font-weight:bold;
   text-align:center;
 }
 
-td
+#xo-dump td
 { background-color:#F8F8F8;
   text-align:left;
 }
@@ -160,49 +156,49 @@ td.transparent
 { background-color:#FFFFF0;
 }
 
-th
+#xo-dump th
 { font-weight:bold;
   color:#FFFFFF;
   background-color:#AAAAEE;
   text-align:left;
 }
 
-td.right
+#xo-dump td.right
 { text-align:right;
 }
 
-form
+#xo-dump form
 { margin-top:5px;
   margin-bottom:5px;
 }
 
-div.skin1
+#xo-dump div.skin1
 {
-  border-color:#3333EE;
+  /*border-color:#3333EE;
   border-width:5px;
   border-style:solid;
-  background-color:#AAAAEE;
+  background-color:#AAAAEE;*/
   text-align:center;
   vertical-align:middle;
   padding:3px;
   margin:1px;
 }
 
-td.bg3
+#xo-dump td.bg3
 { background-color:#EEEE99;
   text-align:left;
   vertical-align:top;
   width:20%;
 }
 
-th.bg4
+#xo-dump th.bg4
 { background-color:#EEAA55;
   text-align:left;
   vertical-align:top;
   width:20%;
 }
 
-td.bgpctbar
+#xo-dump td.bgpctbar
 { background-color:#EEEEAA;
   text-align:left;
   vertical-align:middle;
@@ -211,7 +207,7 @@ td.bgpctbar
 
 -->
 </style>
-<div style="width:80%; margin: 1em auto;">
+<div id="xo-dump" class="width80 floatcenter1">
 
 <table width="780" cellspacing="0" cellpadding="0">
 <tr><td class="transparent">
@@ -338,19 +334,19 @@ if (!$error && !isset($_REQUEST["fn"]) && $filename=="")
     { if ($dirfile != "." && $dirfile != ".." && $dirfile!=basename($_SERVER["SCRIPT_FILENAME"]))
       { if (!$dirhead)
         { echo ("<table width=\"100%\" cellspacing=\"2\" cellpadding=\"2\">\n");
-          echo ("<tr><th>Filename</th><th>Size</th><th>Date&amp;Time</th><th>Type</th><th>&nbsp;</th><th>&nbsp;</th>\n");
+          echo ("<tr><th class='center'>Filename</th><th class='center'>Size</th><th class='center'>Date&amp;Time</th><th class='center'>Type</th><th>&nbsp;</th><th class='center'>&nbsp;</th>\n");
           $dirhead=true;
         }
-        echo ("<tr><td>$dirfile</td><td class=\"right\">".filesize($dirfile)."</td><td>".date ("Y-m-d H:i:s", filemtime($dirfile))."</td>");
+        echo ("<tr><td>$dirfile</td><td class=\"right\">".filesize($dirfile)."</td><td class='center'>".date ("Y-m-d H:i:s", filemtime($dirfile))."</td>");
 
         if (preg_match("/\.sql$/i",$dirfile))
-          echo ("<td>SQL</td>");
+          echo ("<td class='center'>SQL</td>");
         elseif (preg_match("/\.gz$/i",$dirfile))
-          echo ("<td>GZip</td>");
+          echo ("<td class='center'>GZip</td>");
         elseif (preg_match("/\.csv$/i",$dirfile))
-          echo ("<td>CSV</td>");
+          echo ("<td class='center'>CSV</td>");
         else
-          echo ("<td>Misc</td>");
+          echo ("<td class='center'>Misc</td>");
 
         if ((preg_match("/\.gz$/i",$dirfile) && function_exists("gzopen")) || preg_match("/\.sql$/i",$dirfile) || preg_match("/\.csv$/i",$dirfile))
           echo ("<td><a href=\"".$_SERVER["PHP_SELF"]."?start=1&amp;fn=".urlencode($dirfile)."&amp;foffset=0&amp;totalqueries=0\">Start Import</a> into $db_name at $db_server</td>\n <td><a href=\"".$_SERVER["PHP_SELF"]."?delete=".urlencode($dirfile)."\">Delete file</a></td></tr>\n");

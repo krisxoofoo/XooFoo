@@ -1,0 +1,5 @@
+Thanks to :
+- ghost module for Xoops by cheweb, philou, christian, dugris and kris (communauté francophone Xoops)
+- Bigdump by Alexey Ozerov (http://www.ozerov.de/bigdump.php)
+- adminer by Adminer.org (http://www.adminer.org)
+- editor by Adminer.org (http://www.adminer.org)

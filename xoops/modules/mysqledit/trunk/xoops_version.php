@@ -1,6 +1,6 @@
 <?php
 /**
- * Adminer Module based on Ghost Module
+ * MySQLedit Module based on Ghost Module
  *
  * You may not change or alter any portion of this comment or credits
  * of supporting developers from this source code or any supporting source code
@@ -11,22 +11,23 @@
  *
  * @copyright           The XOOPS Project http://sourceforge.net/projects/xoops/
  * @license             http://www.fsf.org/copyleft/gpl.html GNU public license
- * @package          Adminer Module
+ * @package          MySQLedit Module
  * @since               2.3.0
  * @author              Kris <http://www.xoofoo.org>
  * @version             $Id $
 **/
 
+$module_dirname = basename( dirname( __FILE__ ) ) ;
 $modversion['name'] = _MI_MYSQLEDIT_NAME;
-$modversion['version'] = 1.0;
+$modversion['version'] = 1.1;
 $modversion['description'] = _MI_MYSQLEDIT_DESC;
 $modversion['credits'] = "Adminer.org";
 $modversion['author'] = "Kris - http://www.xoofoo.org";
 $modversion['help'] = "";
 $modversion['license'] = "GPL see LICENSE";
 $modversion['official'] = 1;
-$modversion['image'] = "images/mysqledit_slogo.png";
-$modversion['dirname'] = "mysqledit";
+$modversion["image"] = "images/" . $module_dirname . "_slogo.png";
+$modversion["dirname"] = $module_dirname;
 
 // Menu
 $modversion['hasAdmin'] = 1;

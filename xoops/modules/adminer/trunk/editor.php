@@ -18,12 +18,8 @@
 **/
 
 // connect xoops database 
-if (file_exists("mainfile.php")) {
-include("mainfile.php");
-} elseif (file_exists("../mainfile.php")) {
-include("../mainfile.php");
-} else { 
-include("../../mainfile.php");
+if ( !include("../../mainfile.php") ) {
+    die("XOOPS root path not defined");
 }
 include(XOOPS_ROOT_PATH."/header.php");
 /*function adminer_object() {
@@ -46,10 +42,11 @@ include(XOOPS_ROOT_PATH."/header.php");
     }
     return new AdminerSoftware;
 }*/
+if ( !is_object($xoopsUser) || !is_object($xoopsModule) || !$xoopsUser->isAdmin($xoopsModule->mid()) ) exit( _NOPERM );
 function adminer_object() {
 	class AdminerKfr extends Adminer {
 		function name() {
-			return 'Kfr';
+			return 'XOOPS Admin';
 		}
 		function credentials() {
 			return array(XOOPS_DB_HOST,XOOPS_DB_USER,XOOPS_DB_PASS);

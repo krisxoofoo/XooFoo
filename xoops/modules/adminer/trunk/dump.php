@@ -18,13 +18,10 @@
 **/
 
 // connect xoops database 
-if (file_exists("mainfile.php")) {
-include("mainfile.php");
-} elseif (file_exists("../mainfile.php")) {
-include("../mainfile.php");
-} else { 
-include("../../mainfile.php");
+if ( !include("../../mainfile.php") ) {
+    die("XOOPS root path not defined");
 }
+if ( !is_object($xoopsUser) || !is_object($xoopsModule) || !$xoopsUser->isAdmin($xoopsModule->mid()) ) exit( _NOPERM );
 include(XOOPS_ROOT_PATH."/header.php");
 include "./include/bigdump.php";
 ?>

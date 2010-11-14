@@ -17,14 +17,10 @@
  * @version             $Id $
 **/
 
-if (file_exists("mainfile.php")) {
-include("mainfile.php");
-} elseif (file_exists("../mainfile.php")) {
-include("../mainfile.php");
-} else { 
-include("../../mainfile.php");
+if ( !include("../../mainfile.php") ) {
+    die("XOOPS root path not defined");
 }
-
+if ( !is_object($xoopsUser) || !is_object($xoopsModule) || !$xoopsUser->isAdmin($xoopsModule->mid()) ) exit( _NOPERM );
 $xoopsOption["template_main"] = "adminer_index.html";
 
 include(XOOPS_ROOT_PATH."/header.php");

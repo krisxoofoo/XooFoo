@@ -20,8 +20,9 @@
 if ( !include("../../mainfile.php") ) {
     die("XOOPS root path not defined");
 }
+$module_dirname = basename( dirname( __FILE__ ) ) ;
 if ( !is_object($xoopsUser) || !is_object($xoopsModule) || !$xoopsUser->isAdmin($xoopsModule->mid()) ) exit( _NOPERM );
-$xoopsOption["template_main"] = "adminer_index.html";
+$xoopsOption["template_main"] = $module_dirname . "_index.html";
 
 include(XOOPS_ROOT_PATH."/header.php");
 

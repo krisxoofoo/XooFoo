@@ -1,0 +1,3 @@
+Thanks to :
+- ghost module for Xoops by cheweb, philou, christian, dugris and kris (communauté francophone Xoops)
+- editor by Adminer.org (http://www.adminer.org)

@@ -2,10 +2,10 @@
 // Module Info
 
 // The name of this module
-define("_MI_MYSQLEDIT_NAME","MySQL Adminer");
+define("_MI_MYSQLEDIT_NAME","MySQL Editor");
 
 // A brief description of this module
-define("_MI_MYSQLEDIT_DESC","Outils de gestion de bases de données pour Xoops");
+define("_MI_MYSQLEDIT_DESC","Editeur de base de données pour Xoops");
 
 /**
  * @translation     Communauté Francophone des Utilisateurs de Xoops

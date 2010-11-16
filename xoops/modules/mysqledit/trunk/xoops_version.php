@@ -19,7 +19,7 @@
 
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 $modversion['name'] = _MI_MYSQLEDIT_NAME;
-$modversion['version'] = 1.1;
+$modversion['version'] = 1.2;
 $modversion['description'] = _MI_MYSQLEDIT_DESC;
 $modversion['credits'] = "Adminer.org";
 $modversion['author'] = "Kris - http://www.xoofoo.org";

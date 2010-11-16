@@ -18,7 +18,7 @@
 **/
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 $modversion['name'] = _MI_ADMINER_NAME;
-$modversion['version'] = 1.2;
+$modversion['version'] = 1.3;
 $modversion['description'] = _MI_ADMINER_DESC;
 $modversion['credits'] = "Adminer.org and Alexey Ozerov ";
 $modversion['author'] = "Kris - http://www.xoofoo.org";

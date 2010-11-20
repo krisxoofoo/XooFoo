@@ -16,11 +16,6 @@
 body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /*============= Canvas rules ============*/
-/* fix for IE except IE 8+ */
-* html #xo-canvas-leftcolumn {display: inline-block; float: left;}
-* html #xo-page {display: inline-block; float: left:}
-* html #xo-canvas-rightcolumn {display: inline-block; float: right;}
-/* end for IE */
 
 #xo-canvas-content { display:table; width:100%; border-collapse:collapse;}
 #xo-canvas-columns {	width: 100%; display:table-row;}

@@ -17,9 +17,9 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /*============= Canvas rules ============*/
 /* fix for IE except IE 8+ */
-* html #xo-canvas-leftcolumn {display: inline-block; float: left;}
-* html #xo-page {display: inline-block; float: left:}
-* html #xo-canvas-rightcolumn {display: inline-block; float: right;}
+* html #xo-canvas-leftcolumn {display: inline-block; float: left; position:relative;}
+* html #xo-page {display: inline-block; float: left:  position:relative;}
+* html #xo-canvas-rightcolumn {display: inline-block; float: right;  position:relative;}
 /* end for IE */
 
 #xo-canvas-content { display:table; width:100%; border-collapse:collapse;}

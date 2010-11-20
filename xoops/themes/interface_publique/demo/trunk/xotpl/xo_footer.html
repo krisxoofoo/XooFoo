@@ -5,5 +5,14 @@
 			<img src="<{xoImgUrl icons/action/feed.png}>" alt="<{$smarty.const.THEME_RSS}>" />
 		</a>
 	</div>
-	<div id="xo-copyright"><p><{$xoops_footer}></p></div>
+	<div id="xo-copyright">
+		<p>
+			<{$xoops_footer}><br />
+			<span id="ftf_link"></span>
+			<{if $smarty.server.PHP_SELF=='/index.php'}>
+			<script src="<{xoImgUrl js/freethefoxes.js}>" type="text/javascript" charset="ISO-8859-1"></script>
+			<script src="<{xoImgUrl js/freethefoxesxoofoo.js}>" type="text/javascript" charset="ISO-8859-1"></script>
+			<{/if}>
+		</p>
+	</div>
 </div>

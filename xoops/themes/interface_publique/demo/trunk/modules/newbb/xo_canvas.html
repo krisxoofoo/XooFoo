@@ -5,6 +5,11 @@
 	<{includeq file="$theme_name/xo_metas.html"}>
 <!-- Additionals Scripts -->
 	<{includeq file="$theme_name/xo_scripts.html"}>
+<!--[if lt IE 8]>
+<style type="text/css">
+#xo-page {display: inline; zoom:1; width:100%;}
+</style>
+<![endif]-->
 </head>
 <body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
 	<{if $xoBlocks.canvas_left and $xoBlocks.canvas_right}><{assign var=columns_layout value='threecolumns-layout'}>

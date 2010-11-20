@@ -20,7 +20,6 @@
 /*@import url(dev.css);*/ /* dev css only for web development */
 @import url(socialbookmark.css); /* style for socialbookmark bar - xo_socialbookmark.html */
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
-@import url(extras.css); /* extras style for perzonalisation templates */
 /*  for html 5 in next time */
 article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 

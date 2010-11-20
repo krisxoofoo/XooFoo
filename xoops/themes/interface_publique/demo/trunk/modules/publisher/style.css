@@ -18,7 +18,7 @@
 /* kris_fr change width canvas, banner and logo position, bakcground-color for horizontal menu in header and titles in left and right columns */
 	 
 #xo-canvas {	width: 95%;}
-#xo-headerlogo {	float: 	right;}
+#xo-headerlogo {	float: right;}
 #xo-headerbanner {float:left;}
 
 #xo-globalnav {	background-color: 	#94B301;}
@@ -32,9 +32,9 @@
 /* ===== right column ===== */
 #xo-canvas-rightcolumn .xo-blocktitle {	background-color: 	#E06813;}
 #xo-page .xo-blockszone .xo-blocktitle {	background-color: 	#0180B3;}
-
+* #xo-page { min-width: 60%;}
 /* ===== footer ===== */
-#xo-footer {	width: 	100%;}
+#xo-footer {	width: 100%;}
 
 /* rss button in footer */
 #xo-rss {	margin:	8px 0 0 90%;}

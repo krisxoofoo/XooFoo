@@ -1,5 +1,10 @@
 XOOPS Demo Theme - Changelog
 
+============================
+Version 1.1 ( for xoops 2.4.x )
+============================
+- fix layout for IE7 (kris_fr)
+- remove extras.css, now incorpored in xoops 2.5.0 (kris_fr)
 
 ============================
 Version 1.0 ( for xoops 2.4.x )

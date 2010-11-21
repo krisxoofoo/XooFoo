@@ -9,31 +9,28 @@
 	<meta name="author" content="<{$xoops_meta_author}>" />
 	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
 	<meta name="generator" content="XOOPS" />
-
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"> <!-- mobile version ? -->
 	<{if $url}>
 		<meta http-equiv="Refresh" content="<{$time}>; url=<{$url}>" />
 	<{/if}>
-
 <!-- Force MSIE without  javascript actived to take the default theme. not conforms to the standards but functional -->
 	<{if $isMsie}>
 		<noscript>
 			<meta http-equiv="refresh" content="0; url=<{xoAppUrl . xoops_theme_select=default}>" />
 		</noscript>
 	<{/if}>
-
 <!-- Rss -->
 	<link rel="alternate" type="application/rss+xml" title="rss feed" href="<{xoAppUrl backend.php}>" />
-
 <!-- Favicon -->
 	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
 	<link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
-	
+	<link rel="apple-touch-icon" type="image/png" href="<{xoImgUrl icons/apple-touch-icon.png}>">
 <!-- Xoops style sheet -->
 	<link rel="stylesheet" type="text/css" media="screen" href="<{xoAppUrl xoops.css}>" />
 <!-- Theme style sheets -->
 	<link rel="stylesheet" type="text/css" media="screen,projection,print" href="<{xoImgUrl css/layout-soup.css}>" /><!-- canvas theme style sheet -->
 	<link rel="stylesheet" type="text/css" media="screen" title="Color" href="<{xoImgUrl css/style.css}>" /><!-- content theme style sheet -->
 	<link rel="stylesheet" type="text/css" media="print" href="<{xoImgUrl css/print.css}>" />  <!-- print style sheet experimental -->
-
 <!-- scripts xoops.js and instructions header.php files-->
 	<{$xoops_module_header}>

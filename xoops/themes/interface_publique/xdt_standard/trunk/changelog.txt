@@ -12,6 +12,10 @@ Version 1.2 ( for xoops 2.5.x )
 - change xoops.css call (kris_fr)
 - update xo_footerstatic.html for xoops 2.5.x (kris_fr)
 - cleaning code for xoops 2.5.x (kris_fr)
+- add new class in body tag for IE fix (kris_fr)
+- add in meta : apple-touch-icon (kris_fr)
+- add new meta X-UA-Compatible with edge/chrome (kris_fr)
+- add new meta "viewport" for mobile (kris_fr)
 
 ============================
 Version 1.1 Beta ( for xoops 2.4.x )

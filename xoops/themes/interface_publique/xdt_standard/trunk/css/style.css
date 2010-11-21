@@ -24,9 +24,6 @@
 @import url(footer.css); /* style for footer (and blockfooter.html) */
 @import url(baradmin.css); /* administration access in footer */
 @import url(tplsystem.css); /* style for templates system : siteclosed, redirection, debug mode, core messages, ... */
-@import url(extras.css); /* extras style for perzonalisation templates */
-/*  for html 5 in next time */
-article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block;}
 
 /* beginning of the applicable styles */
 html, body {

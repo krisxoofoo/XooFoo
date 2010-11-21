@@ -17,23 +17,13 @@ body {direction:ltr;} /* ltr ((left to right) - rtl (right to left) */
 
 /*============= Canvas rules ============*/
 #xo-canvas-columns { width: 100%; border-collapse: separate; border-spacing: .25em 0; }
-#xo-canvas-leftcolumn {
-	width: 					180px;
-	/*max-width:				300px;
-	resize:					horizontal;
-	overflow:				auto;*/
-}
+#xo-canvas-leftcolumn {	width: 180px;}
 
 /* Page [center column] rules */
 #xo-page { min-height: 400px; padding: 10px 5px 5px 5px;}
 * html #xo-page {	height: 400px;}
 
-#xo-canvas-rightcolumn {
-	width: 					180px;
-	/*max-width:				300px;
-	resize:					horizontal;
-	overflow:				auto;*/
-}
+#xo-canvas-rightcolumn { width: 180px;}
 #xo-canvas-leftcolumn, #xo-page, #xo-canvas-rightcolumn { vertical-align: top;}
 
 /*========== Canvas rules (when columns are visible) ===========*/

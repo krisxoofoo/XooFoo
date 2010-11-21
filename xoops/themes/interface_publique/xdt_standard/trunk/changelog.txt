@@ -4,6 +4,16 @@ Documentation on line --> http://dev.xoofoo.org/Xdt_Standard/
 Videos on line --> http://tv.xoofoo.org
 
 ============================
+Version 1.2 ( for xoops 2.5.x )
+============================
+- remove extras.css - now in xoops.css (kris_fr)
+- remove system blocks override - now in system module (kris_fr)
+- change jQuery call (kris_fr)
+- change xoops.css call (kris_fr)
+- update xo_footerstatic.html for xoops 2.5.x (kris_fr)
+- cleaning code for xoops 2.5.x (kris_fr)
+
+============================
 Version 1.1 Beta ( for xoops 2.4.x )
 ============================
 - rename blockfooter.css in footer.css - with css footer (kris_fr)

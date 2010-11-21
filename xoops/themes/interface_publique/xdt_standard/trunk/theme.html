@@ -39,6 +39,12 @@
 	GLOBAL $xoopsModule; 
 	$modulename = (isset($xoopsModule) ? $xoopsModule->getVar('name') :'system');
 	$GLOBALS['xoopsTpl']->assign('modulename', $modulename); 
+	
+/** add JQuery and JQuery UI - simple example for jquery include */
+	global $xoTheme; 
+		$xoTheme->addScript("browse.php?Frameworks/jquery/jquery.js");
+		$xoTheme->addScript("browse.php?Frameworks/jquery/plugins/jquery.ui.js");
+		$this->assign('xoops_module_header', $xoTheme->renderMetas(null, true)); 
 <{/php}>
 	
 <{includeq file="$canvas_template"}>

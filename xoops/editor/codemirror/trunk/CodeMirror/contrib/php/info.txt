@@ -1,0 +1,12 @@
+This is a complex demonstration of the PHP+HTML+JavaScript+CSS mixed-mode syntax highlight capabilities of CodeMirror. <?php ... ?> tags use the PHP parser, <script> tags use the JavaScript parser, and <style> tags use the CSS parser. The rest of the content is parsed using the XML parser in HTML mode.
+
+Features of the PHP parser:
+
+    * special "deprecated" style for PHP4 keywords like 'var'
+    * support for PHP 5.3 keywords: 'namespace', 'use'
+    * 911 predefined constants, 1301 predefined functions, 105 predeclared classes from a typical PHP installation in a LAMP environment
+    * new feature: syntax error flagging, thus enabling strict parsing of:
+         1. function definitions with explicitly or implicitly typed arguments and default values
+         2. modifiers (public, static etc.) applied to method and member definitions
+         3. foreach(array_expression as $key [=> $value]) loops 
+    * differentiation between single-quoted strings and double-quoted interpolating strings 

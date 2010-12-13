@@ -29,11 +29,35 @@ define("_MI_GHOST_DESC" , "Ghost / Blank module for XOOPS");
 define("_MI_GHOST_SMNAME1" , "My link 1");
 define("_MI_GHOST_SMNAME2" , "My link 2");
 
-// A brief description of these templates
-define("_MI_GHOST_DSCTPL1" , "my fist template for ghost module");
-define("_MI_GHOST_DSCTPL2" , "my second template for ghost module");
-
 // Admin menu links
-define("_MI_GHOST_ADMINDEX1" , "Admin link 1");
+define("_MI_GHOST_MANAGER_INDEX" , "Index");
+define("_MI_GHOST_MANAGER_INDEX_DESC" , "Module Administration index page");
+define("_MI_GHOST_MANAGER_ABOUT" , "About");
+define("_MI_GHOST_MANAGER_ABOUT_DESC" , "About this module");
+define("_MI_GHOST_MANAGER_HELP" , "Help");
+define("_MI_GHOST_MANAGER_HELP_DESC" , "Help pour module usage");
+define("_MI_GHOST_MANAGER_EXAMPLE" , "Example");
+define("_MI_GHOST_MANAGER_EXAMPLE_DESC" , "Administration example page");
+
+// A brief description of these templates
+define("_MI_GHOST_DSCTPL1" , "My fist template for ghost module");
+define("_MI_GHOST_DSCTPL2" , "My second template for ghost module");
+define("_MI_GHOST_DSCTPL3" , "Page d'index de l'administration du module");
+define("_MI_GHOST_DSCTPL4" , "Au Sujet de ce module");
+define("_MI_GHOST_DSCTPL5" , "Exemple de page d'administration");
+
+// Blocks
+define("_MI_GHOST_BLOCK_NAME1" , "Block title 1");
+define("_MI_GHOST_BLOCK_NAME1_DESC" , "My first block with ghost module");
+define("_MI_GHOST_BLOCK_NAME2" , "Block title 2");
+define("_MI_GHOST_BLOCK_NAME2_DESC" , "My second block with ghost module");
+
+// Config Settings
+/*define("_MI_GHOST_CONF1" , "");
+define("_MI_GHOST_CONF1_DESC" , "");
+define("_MI_GHOST_CONF1_DEFAULT" , "");
+define("_MI_GHOST_CONF2" , "");
+define("_MI_GHOST_CONF2_DESC" , "");
+define("_MI_GHOST_CONF3_DEFAULT" , "");*/
 
 ?>

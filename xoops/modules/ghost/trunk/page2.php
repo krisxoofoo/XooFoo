@@ -14,7 +14,7 @@
  * @package	Ghost
  * @since		2.3.0
  * @author 	kris <http://www.xoofoo.org>
- * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
+ * @version	$Id$
 **/
 
 if ( !include("../../mainfile.php") ) {

@@ -17,6 +17,11 @@
  * @version	$Id$
 **/
 
-echo "<h3>include</h3><div><p>How are you?</p></div>";
-echo _MD_GHOST_TXT2;
+function b_ghost_myfunction1_show()
+{
+    $block = array();
+    $block["text"] = "Viva XOOPS";
+    return $block;
+}
+
 ?>

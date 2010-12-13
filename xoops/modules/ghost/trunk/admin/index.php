@@ -17,5 +17,24 @@
  * @version	$Id$
 **/
 
+include "header.php";
+		
+include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/class/menu.php";
 
+$menu = new ghostMenu();
+$menu->addItem("example",  _AM_GHOST_MANAGER_EXAMPLE,  "example.php" );
+$menu->addItem("about",       _AM_GHOST_MANAGER_ABOUT,       "about.php");
+$menu->addItem("help",       _AM_GHOST_MANAGER_HELP,       "help.php");
+$xoopsTpl->assign("ghost_menu", $menu->_items );
+
+$admin = new ghostMenu();
+$admin->addItem("update",      _AM_GHOST_MANAGER_UPDATE,      "../../system/admin.php?fct=modulesadmin&op=update&module=ghost" );
+$admin->addItem("preferences", _AM_GHOST_MANAGER_PREFERENCES, "../../system/admin.php?fct=preferences&amp;op=showmod&amp;&confcat_id=1&amp;mod=".$xoopsModule->getVar("mid") );
+$xoopsTpl->assign($xoopsModule->getVar("dirname") . "_admin", $admin->_items );
+
+$xoopsTpl->assign("module_dirname",         $xoopsModule->getVar("dirname") );
+
+$xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_index.html");
+
+include "footer.php";
 ?>

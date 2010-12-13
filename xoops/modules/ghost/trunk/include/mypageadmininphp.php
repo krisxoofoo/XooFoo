@@ -18,5 +18,5 @@
 **/
 
 echo "<h3>include</h3><div><p>How are you?</p></div>";
-echo _MD_GHOST_TXT2;
+echo _AM_GHOST_TXT2;
 ?>

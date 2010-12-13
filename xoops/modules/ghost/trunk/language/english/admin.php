@@ -17,5 +17,38 @@
  * @version	$Id$
 **/
 
+define("_AM_GHOST_MANAGER_INDEX",                  "Index");
+define("_AM_GHOST_MANAGER_ABOUT",                  "About");
+define("_AM_GHOST_MANAGER_HELP",                  "Help");
+define("_AM_GHOST_MANAGER_EXAMPLE",                 "Example");
+define("_AM_GHOST_MANAGER_PREFERENCES",            "Settings");
+define("_AM_GHOST_MANAGER_UPDATE",                 "Update");
+
+define("_AM_GHOST_MANAGER_FOOTER",                 "<div class='right smallsmall italic pad10'>Ghost is maintened by <a class='tooltip' rel='external' href='http://labs.XooFoo.org' title='VisitXooFoo Laboratory>Labs.XooFoo.org</a></div>");
+
+// Index.php
+define("_AM_GHOST_MANAGER_INDEX_TXT1" , "
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Cras faucibus, justo vel accumsan aliquam, tellus dui fringilla quam, in condimentum augue lorem non tellus. Pellentesque id arcu non sem placerat iaculis. Curabitur posuere, pede vitae lacinia accumsan, enim nibh elementum orci, ut volutpat eros sapien nec sapien.</p>
+");
+
+// About.php
+define("_AM_GHOST_ABOUT_RELEASEDATE",        "Update date");
+define("_AM_GHOST_ABOUT_AUTHOR",                   "Author");
+define("_AM_GHOST_ABOUT_CREDITS",                  "Credits");
+define("_AM_GHOST_ABOUT_README",                   "General Infos");
+define("_AM_GHOST_ABOUT_MANUAL",               "Help");
+define("_AM_GHOST_ABOUT_LICENSE",                  "License");
+define("_AM_GHOST_ABOUT_MODULE_STATUS",            "Status");
+define("_AM_GHOST_ABOUT_WEBSITE",                  "Website");
+define("_AM_GHOST_ABOUT_AUTHOR_NAME",              "Author name");
+define("_AM_GHOST_ABOUT_AUTHOR_WORD",              "Author words");
+define("_AM_GHOST_ABOUT_CHANGELOG",                "Change Log");
+define("_AM_GHOST_ABOUT_MODULE_INFO",              "Module Infos");
+define("_AM_GHOST_ABOUT_AUTHOR_INFO",              "Author Infos");
+define("_AM_GHOST_ABOUT_DISCLAIMER",               "Disclaimer");
+define("_AM_GHOST_ABOUT_DISCLAIMER_TEXT",          "GPL License");
+
+define("_AM_GHOST_TXT1" , "Hello World - Viva XOOPS");
+define("_AM_GHOST_TXT2" , "Hello World - Viva XOOPS - include file");
 
 ?>

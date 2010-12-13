@@ -18,7 +18,28 @@
 **/
 
 // admin menu title and link
-$adminmenu[1]["title"] = _MI_GHOST_ADMINDEX1;
-$adminmenu[1]["link"]  = "index.php";
+
+$adminmenu = array();
+
+$i = 1;
+$adminmenu[$i]["title"] = _MI_GHOST_MANAGER_INDEX;
+$adminmenu[$i]["link"]  = "admin/index.php";
+$adminmenu[$i]["desc"] = _MI_GHOST_MANAGER_INDEX_DESC;
+$adminmenu[$i]["icon"] = "images/admin/index.png";
+$i++;
+$adminmenu[$i]["title"] = _MI_GHOST_MANAGER_EXAMPLE;
+$adminmenu[$i]["link"]  = "admin/example.php";
+$adminmenu[$i]["desc"] = _MI_GHOST_MANAGER_EXAMPLE_DESC;
+$adminmenu[$i]["icon"] = "images/admin/example.png";
+$i++;
+$adminmenu[$i]["title"] = _MI_GHOST_MANAGER_ABOUT;
+$adminmenu[$i]["link"]  = "admin/about.php";
+$adminmenu[$i]["desc"] = _MI_GHOST_MANAGER_ABOUT_DESC;
+$adminmenu[$i]["icon"] = "images/admin/about.png";
+$i++;
+$adminmenu[$i]["title"] = _MI_GHOST_MANAGER_HELP;
+$adminmenu[$i]["link"]  = "admin/help.php";
+$adminmenu[$i]["desc"] = _MI_GHOST_MANAGER_HELP_DESC;
+$adminmenu[$i]["icon"] = "images/admin/help.png";
 
 ?>

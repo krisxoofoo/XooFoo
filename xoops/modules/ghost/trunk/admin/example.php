@@ -17,6 +17,9 @@
  * @version	$Id$
 **/
 
-echo "<h3>include</h3><div><p>How are you?</p></div>";
-echo _MD_GHOST_TXT2;
+include "header.php";
+
+$xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_example.html");
+
+include "footer.php";
 ?>

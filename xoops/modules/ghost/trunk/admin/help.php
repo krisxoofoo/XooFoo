@@ -13,10 +13,15 @@
  * @license             http://www.fsf.org/copyleft/gpl.html GNU public license
  * @package	Ghost
  * @since		2.3.0
- * @author 	kris <http://www.xoofoo.org>
+ * @author 	Dugris <http://www.dugris.info>
  * @version	$Id$
 **/
 
-echo "<h3>include</h3><div><p>How are you?</p></div>";
-echo _MD_GHOST_TXT2;
+include "header.php";
+
+xoops_loadLanguage("help", $xoopsModule->getVar("dirname", "e"));
+
+$xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_help.html");
+
+include "footer.php";
 ?>

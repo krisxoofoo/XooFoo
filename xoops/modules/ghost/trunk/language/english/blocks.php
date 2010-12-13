@@ -17,6 +17,6 @@
  * @version	$Id$
 **/
 
-echo "<h3>include</h3><div><p>How are you?</p></div>";
-echo _MD_GHOST_TXT2;
+define("_MB_GHOST_TXT1" , "Text in my first block !);
+
 ?>

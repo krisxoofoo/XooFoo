@@ -133,6 +133,7 @@ class XoopsFormJwysiwyg extends XoopsEditor
 		$GLOBALS['xoTheme']->addStylesheet( XOOPS_URL . '/class/xoopseditor/jwysiwyg/lib/jquery.simplemodal.css' );
 		/* js files in header */
 		$GLOBALS['xoTheme']->addScript('browse.php?Frameworks/jquery/jquery.js');
+		//$GLOBALS['xoTheme']->addScript('browse.php?Frameworks/jquery/plugins/jquery.ui.js');
 		$GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/jwysiwyg/jwysiwyg/jquery.wysiwyg.js' );
 		$GLOBALS['xoTheme']->addScript( XOOPS_URL . '/class/xoopseditor/jwysiwyg/lib/jquery.simplemodal.js' );
         }

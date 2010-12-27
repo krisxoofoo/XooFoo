@@ -1,5 +1,5 @@
 ========================
-jWYSIWYG 0.93 User Manual
+jWYSIWYG 0.94 User Manual
 ========================
 
 
@@ -53,6 +53,16 @@ Custom controls can also be specified with the ``controls`` option::
         }
     })
 
+Another way::
+
+    $('#wysiwyg').wysiwyg("addControl",
+		"controlName",
+		{
+			icon: "/path/to/icon.png",
+			exec:  function() { alert('Hello World'); }
+		}
+	);
+
 
 Styling the Content Inside the Editor
 -------------------------------------
@@ -105,20 +115,65 @@ Additional configuration options are specified by passing a javascript object to
 ``html``
     A string containing the source HTML code used inside the editor's iframe. This is a template where ``STYLE_SHEET`` and ``INITIAL_CONTENT`` are later replaced by the appropriate code for the editor instance, so those two strings must be present in this option.
 
+``debug``
+    A boolean, enabling or disabling debugging.
+
 ``css``
     A string containing the path to a CSS file which will be included in the editor's iframe.
 
-``debug``
-    A boolean, enabling or disabling debugging.
+``autoGrow``
+    A boolean.
 
 ``autoSave``
     A boolean. If ``true``, the editor will copy its contents back to the original textarea anytime it is updated. If ``false``, this must be done manually.
 
-``rmUnwantedBr``
-    A boolean. If ``true``, the editor will not add extraneous ``<br>`` tags.
-
 ``brIE``
-    A boolean. If ``true``, a ``<br />`` will be inserted for a newline in IE.
+    A boolean. If ``true``, a ``<br/>`` will be inserted for a newline in IE.
+
+``formHeight``
+    An integer. Height of dialog form.
+
+``formWidth``
+    An integer. Width of dialog form.
+
+``i18n``
+    A bool or string. If ``false`` then no internationalization, otherwise set to language (ex. ``ru``)
+
+``initialContent``
+    A string. Default ``<p>Initial Content</p>``
+
+``maxHeight``
+    An integer. autoGrow max height
+
+``messages``
+    A javascript object with key, value pairs setting custom messages for certain conditions. Available keys are:
+    
+    * ``nonSelection`` : Message to display when the Create Link button is pressed with no text selected.
+
+``resizeOptions``
+    A boolean. Depends on **jquery.ui.resizable**. If ``false`` the editor will not be resizeable.
+
+``rmUnusedControls``
+    A boolean. If ``true``, the editor will remove all controls which are not mentioned in ``controls`` option.
+
+``rmUnwantedBr``
+    A boolean. If ``true``, the editor will not add extraneous ``<br/>`` tags.
+
+``tableFiller``
+    A string. Default ``Lorem ipsum``
+
+``events``
+    A javascript object specifying events. Events are specified as ``key: value`` pairs in the javascript object,
+    where the key is the name of the event and the value is javascript function::
+
+		{
+			click: function(event) {
+				if ($("#click-inform:checked").length > 0) {
+					event.preventDefault();
+					alert("You have clicked jWysiwyg content!");
+				}
+			}
+		}
 
 ``controls``
     A javascript object specifying control buttons and separators to include in the toolbar. This can consist of built-in controls and custom controls. Controls are specified as key, value pairs in the javascript object, where the key is the name of the control and the value is another javascript object with a specific signature.
@@ -202,12 +257,6 @@ Additional configuration options are specified by passing a javascript object to
     * ``insertTable``: Insert a table, by prompting the user for the table settings.
 
 
-``messages``
-    A javascript object with key, value pairs setting custom messages for certain conditions. Available keys are:
-    
-    * ``nonSelection`` : Message to display when the Create Link button is pressed with no text selected.
-
-
 ============================
 Available Built-In Functions
 ============================
@@ -230,7 +279,7 @@ When jWYSIWYG is called on a textarea, it does the following things:
 2. Hides the existing textarea.
 3. Creates an iframe inside the container div, populated with editor window and toolbar.
 4. When ``saveContent()`` is called, copy its content to existing textarea.
-5. Listen for ``submit`` event of closest form to apply ``saveContent()`` before form submittion.
+5. Listen for ``submit`` event of closest form to apply ``saveContent()`` before form submition.
 
 ====================
 Additional Resources

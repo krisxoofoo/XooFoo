@@ -39,12 +39,12 @@ elRTE.prototype.options   = {
 	/* if set all other tag will be removed */
 	allowTags : [],
 	/* if set this tags will be removed */
-	denyTags : ['applet', 'base', 'basefont', 'bgsound', 'blink', 'body', 'col', 'colgroup', 'iframe', 'isindex', 'frameset', 'html', 'head', 'meta', 'marquee', 'noframes', 'noembed', 'o:p', 'title', 'xml'],
+	denyTags : ['applet', 'base', 'basefont', 'bgsound', 'blink', 'body', 'col', 'colgroup', 'isindex', 'frameset', 'html', 'head', 'meta', 'marquee', 'noframes', 'noembed', 'o:p', 'title', 'xml'],
 	denyAttr : [],
 	/* on paste event this attributes will removed from pasted html */
 	pasteDenyAttr : ['id', 'name', 'class', 'style', 'language', 'onclick', 'ondblclick', 'onhover', 'onkeup', 'onkeydown', 'onkeypress'],
 	/* If false - all text nodes will be wrapped by paragraph tag */
-	allowTextNodes : false,
+	allowTextNodes : true,
 	/* allow browser specific styles like -moz|-webkit|-o */
 	allowBrowsersSpecStyles : false,
 	/* allow paste content into editor */

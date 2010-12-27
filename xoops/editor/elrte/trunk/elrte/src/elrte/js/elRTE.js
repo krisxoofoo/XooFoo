@@ -20,35 +20,36 @@ elRTE = function(target, opts) {
 	if (!target || !target.nodeName) {
 		return alert('elRTE: argument "target" is not DOM Element');
 	}
-	var self     = this, html;
-	this.version = '1.1';
-	this.build   = '2010-09-20';
-	this.options = $.extend(true, {}, this.options, opts);
-	this.browser = $.browser;
-	this.target  = $(target);
+	var self       = this, html;
+	this.version   = '1.2';
+	this.build     = '2010-12-12';
+	this.options   = $.extend(true, {}, this.options, opts);
+	this.browser   = $.browser;
+	this.target    = $(target);
 	
-	this.lang      = (''+this.options.lang).toLowerCase();
+	this.lang      = (''+this.options.lang);
 	this._i18n     = new eli18n({textdomain : 'rte', messages : { rte : this.i18Messages[this.lang] || {}} });
-	this.rtl = !!(/^(ar|fa|he)$/.test(this.lang) && this.i18Messages[this.lang]);
+	this.rtl       = !!(/^(ar|fa|he)$/.test(this.lang) && this.i18Messages[this.lang]);
 	
 	if (this.rtl) {
 		this.options.cssClass += ' el-rte-rtl';
 	}
 	this.toolbar   = $('<div class="toolbar"/>');
 	this.iframe    = document.createElement('iframe');
+
 	// this.source    = $('<textarea />').hide();
 	this.workzone  = $('<div class="workzone"/>').append(this.iframe).append(this.source);
 	this.statusbar = $('<div class="statusbar"/>');
 	this.tabsbar   = $('<div class="tabsbar"/>');
 	this.editor    = $('<div class="'+this.options.cssClass+'" />').append(this.toolbar).append(this.workzone).append(this.statusbar).append(this.tabsbar);
 	
-	this.doc     = null;
-	this.$doc    = null;
-	this.window  = null;
+	this.doc       = null;
+	this.$doc      = null;
+	this.window    = null;
 	
-	this.utils  = new this.utils(this);
-	this.dom    = new this.dom(this);
-	this.filter = new this.filter(this)
+	this.utils     = new this.utils(this);
+	this.dom       = new this.dom(this);
+	this.filter    = new this.filter(this)
 	
 	/**
 	 * Sync iframes/textareas height with workzone height 
@@ -149,8 +150,11 @@ elRTE = function(target, opts) {
 	
 	if (this.options.height>0) {
 		this.workzone.height(this.options.height);
-		
 	}
+	if (this.options.width>0) {
+		this.editor.width(this.options.width);
+	}
+	
 	this.updateHeight();
 	this.resizable(true);
 	this.window.focus();
@@ -187,17 +191,32 @@ elRTE = function(target, opts) {
 		}
 	});
 	
+	
+	$(this.doc.body).bind('dragend', function(e) {
+		setTimeout(function() {
+			try {
+				self.window.focus();
+				var bm = self.selection.getBookmark();
+				self.selection.moveToBookmark(bm);
+				self.ui.update();
+			} catch(e) { }
+			
+			
+		}, 200);
+		
+	});
+	
+	this.typing = false;
+	this.lastKey = null;
+	
 	/* update buttons on click and keyup */
 	this.$doc.bind('mouseup', function() {
+		self.typing = false;
+		self.lastKey = null;
 		self.ui.update();
-	})
-	.bind('dragstart', function(e) {
-		e.preventDefault();
-		e.stopPropagation();
 	})
 	.bind('keyup', function(e) {
 		if ((e.keyCode >= 8 && e.keyCode <= 13) || (e.keyCode>=32 && e.keyCode<= 40) || e.keyCode == 46 || (e.keyCode >=96 && e.keyCode <= 111)) {
-			// self.log('keyup '+e.keyCode)
 			self.ui.update();
 		}
 	})
@@ -215,12 +234,7 @@ elRTE = function(target, opts) {
 				return false;
 			}
 		}
-	})
-	
-	this.typing = false;
-	this.lastKey = null;
-	
-	this.$doc.bind('keydown', function(e) {
+		
 		if ((e.keyCode>=48 && e.keyCode <=57) || e.keyCode==61 || e.keyCode == 109 || (e.keyCode>=65 && e.keyCode<=90) || e.keyCode==188 ||e.keyCode==190 || e.keyCode==191 || (e.keyCode>=219 && e.keyCode<=222)) {
 			if (!self.typing) {
 				self.history.add(true);
@@ -234,11 +248,6 @@ elRTE = function(target, opts) {
 			self.lastKey = e.keyCode;
 			self.typing = false;
 		}
-
-	})
-	.bind('mouseup', function() {
-		self.typing = false;
-		self.lastKey = null;
 	})
 	.bind('paste', function(e) {
 		if (!self.options.allowPaste) {

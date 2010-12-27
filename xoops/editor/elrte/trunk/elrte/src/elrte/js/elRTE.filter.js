@@ -17,7 +17,8 @@
 		// boolean attributes
 		this.boolAttrs = rte.utils.makeObject('checked,compact,declare,defer,disabled,ismap,multiple,nohref,noresize,noshade,nowrap,readonly,selected'.split(','));
 		// tag regexp
-		this.tagRegExp = /<(\/?)([\w:]+)((?:\s+\w+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*\/?>/g;
+		this.tagRegExp = /<(\/?)([\w:]+)((?:\s+[a-z\-]+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*\/?>/g;
+		// this.tagRegExp = /<(\/?)([\w:]+)((?:\s+\w+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*\/?>/g;		
 		// opened tag regexp
 		this.openTagRegExp = /<([\w:]+)((?:\s+\w+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*\/?>/g;
 		// attributes regexp
@@ -36,7 +37,9 @@
 		this.embRegExp = /<(embed)((?:\s+\w+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*>/gi;
 		// param tag regexp
 		this.paramRegExp = /<(param)((?:\s+\w+(?:\s*=\s*(?:(?:"[^"]*")|(?:'[^']*')|[^>\s]+))?)*)\s*>/gi;
-		this.vimeoRegExp = /<(iframe)\s+([^>]*src\s*=\s*"http:\/\/[^"]+vimeo\.com\/\w+[^>]*)>([\s\S]*?)<\/iframe>/gi;
+		// iframe tag regexp
+		this.iframeRegExp = /<iframe([^>]*)>([\s\S]*?)<\/iframe>/gi;
+
 		// yandex maps regexp
 		this.yMapsRegExp = /<div\s+([^>]*id\s*=\s*('|")?YMapsID[^>]*)>/gi;
 		// google maps regexp
@@ -91,7 +94,8 @@
 			$.each(this._chains[chain]||[], function() {
 				html = this.call(self, html);
 			});
-			return html.replace(/\t/g, '  ').replace(/\r/g, '').replace(/\s*\n\s*\n+/g, "\n")+'  ';
+			html = html.replace(/\t/g, '  ').replace(/\r/g, '').replace(/\s*\n\s*\n+/g, "\n")+'  ';
+			return $.trim(html) ? html : '&nbsp;';
 		}
 		
 		/**
@@ -410,6 +414,7 @@
 		 **/
 		allowedTags : function(html) {
 			var a = this.allowTags;
+			
 			return a ? html.replace(this.tagRegExp, function(t, c, n) { return a[n.toLowerCase()] ? t : ''; }) : html;
 		},
 		/**
@@ -420,6 +425,7 @@
 		 **/
 		deniedTags : function(html) {
 			var d = this.denyTags; 
+
 			return d ? html.replace(this.tagRegExp, function(t, c, n) { return d[n.toLowerCase()] ? '' : t }) : html;
 		},
 		
@@ -436,10 +442,14 @@
 				da   = this.denyAttr,
 				n;
 			
-			return html.replace(/<!DOCTYPE([\s\S]*)>/gi, '')
+			
+			html = html.replace(/<!DOCTYPE([\s\S]*)>/gi, '')
 				.replace(/<p [^>]*class="?MsoHeading"?[^>]*>(.*?)<\/p>/gi, "<p><strong>$1</strong></p>")
 				.replace(/<span\s+style\s*=\s*"\s*mso-spacerun\s*:\s*yes\s*;?\s*"\s*>([\s&nbsp;]*)<\/span>/gi, "$1")
 				.replace(/(<p[^>]*>\s*<\/p>|<p[^>]*\/>)/gi, '<br>')
+				.replace(/(<\/p>)(?:\s*<br\s*\/?>\s*|\s*&nbsp;\s*)+\s*(<p[^>]*>)/gi, function(t, b, e) {
+					return b+"\n"+e;
+				})
 				.replace(this.tagRegExp, function(t, c, n, a) {
 					n = n.toLowerCase();
 					
@@ -463,6 +473,39 @@
 					a = self.serializeAttrs(a);
 					return '<'+n+(a?' ':'')+a+'>';
 				});
+				
+			
+			n = $('<div>'+html+'</div>');
+			
+			// remove empty spans and merge nested spans
+			n.find('span:not([id]):not([class])').each(function() {
+				var t = $(this);
+				
+				if (!t.attr('style')) {
+					$.trim(t.html()).length ? self.rte.dom.unwrap(this) : t.remove();
+					// t.children().length ? self.rte.dom.unwrap(this) : t.remove();
+				}
+			}).end().find('span span:only-child').each(function() {
+				var t   = $(this), 
+					p   = t.parent().eq(0), 
+					tid = t.attr('id'), 
+					pid = p.attr('id'), id, s, c;
+
+				if (self.rte.dom.is(this, 'onlyChild') && (!tid || !pid)) {
+					c = $.trim(p.attr('class')+' '+t.attr('class'))
+					c && p.attr('class', c);
+					s = self.rte.utils.serializeStyle($.extend(self.rte.utils.parseStyle($(this).attr('style')||''), self.rte.utils.parseStyle($(p).attr('style')||'')));
+					s && p.attr('style', s);
+					id = tid||pid;
+					id && p.attr('id', id);
+					this.firstChild ? $(this.firstChild).unwrap() : t.remove();
+				}
+			})
+			.end().find('a[name]').each(function() {
+				$(this).addClass('elrte-protected elrte-anchor');
+			});
+			
+			return n.html()	
 		},
 		
 		/**
@@ -617,6 +660,15 @@
 					a.height == '1' && delete a.height;
 					return i ? img({ embed : a }, i.type) : t;
 				})
+				.replace(this.iframeRegExp, function(t, a) {
+					var a = self.parseAttrs(a);
+					var w = a.style.width || (parseInt(a.width) > 1 ? parseInt(a.width)+'px' : '100px');
+					var h = a.style.height || (parseInt(a.height) > 1 ? parseInt(a.height)+'px' : '100px');
+					var id = 'iframe'+Math.random().toString().substring(2);
+					self.scripts[id] = t;
+					var img = '<img id="'+id+'" src="'+self.url+'pixel.gif" class="elrte-protected elrte-iframe" style="width:'+w+'; height:'+h+'">';
+					return img;
+				})
 				.replace(this.vimeoRegExp, function(t, n, a) {
 					a = self.parseAttrs(a);
 					delete a.frameborder;
@@ -632,31 +684,35 @@
 
 
 			n = $('<div>'+html+'</div>');
-			// remove empty spans and merge nested spans
-			n.find('span:not([id]):not([class])').each(function() {
-				var t = $(this);
-				
-				if (!t.attr('style')) {
-					t.children().length ? self.rte.dom.unwrap(this) : t.remove();
-				}
-			}).end().find('span span:only-child').each(function() {
-				var t   = $(this), 
-					p   = t.parent().eq(0), 
-					tid = t.attr('id'), 
-					pid = p.attr('id'), id, s, c;
-
-				if (self.rte.dom.is(this, 'onlyChild') && (!tid || !pid)) {
-					c = $.trim(p.attr('class')+' '+t.attr('class'))
-					c && p.attr('class', c);
-					s = self.rte.utils.serializeStyle($.extend(self.rte.utils.parseStyle($(this).attr('style')||''), self.rte.utils.parseStyle($(p).attr('style')||'')));
-					s && p.attr('style', s);
-					id = tid||pid;
-					id && p.attr('id', id);
-					this.firstChild ? $(this.firstChild).unwrap() : t.remove();
-				}
-			});
-
 			
+			// remove empty spans and merge nested spans
+			// n.find('span:not([id]):not([class])').each(function() {
+			// 	var t = $(this);
+			// 	
+			// 	if (!t.attr('style')) {
+			// 		$.trim(t.html()).length ? self.rte.dom.unwrap(this) : t.remove();
+			// 		// t.children().length ? self.rte.dom.unwrap(this) : t.remove();
+			// 	}
+			// }).end().find('span span:only-child').each(function() {
+			// 	var t   = $(this), 
+			// 		p   = t.parent().eq(0), 
+			// 		tid = t.attr('id'), 
+			// 		pid = p.attr('id'), id, s, c;
+			// 
+			// 	if (self.rte.dom.is(this, 'onlyChild') && (!tid || !pid)) {
+			// 		c = $.trim(p.attr('class')+' '+t.attr('class'))
+			// 		c && p.attr('class', c);
+			// 		s = self.rte.utils.serializeStyle($.extend(self.rte.utils.parseStyle($(this).attr('style')||''), self.rte.utils.parseStyle($(p).attr('style')||'')));
+			// 		s && p.attr('style', s);
+			// 		id = tid||pid;
+			// 		id && p.attr('id', id);
+			// 		this.firstChild ? $(this.firstChild).unwrap() : t.remove();
+			// 	}
+			// })
+			// .end().find('a[name]').each(function() {
+			// 	$(this).addClass('elrte-anchor');
+			// });
+
 
 			if (!this.rte.options.allowTextNodes) {
 				// wrap inline nodes with p
@@ -701,7 +757,7 @@
 		 * @return String
 		 **/
 		restore : function(html) {
-			var self =this, r = this.rte.options.restore|[];
+			var self =this, r = this.rte.options.restore||[];
 
 			// custom restore if set
 			if (r.length) {
@@ -723,33 +779,39 @@
 				})
 				.replace(/\<\!-- ELRTE_COMMENT([\s\S]*?) --\>/gi, "$1")
 				.replace(this.serviceClassRegExp, function(t, n, a, e) {
+
 					var a = self.parseAttrs(a), j, o = '';
 					// alert(t)
-					if (a['class']['elrte-media']) {
-						// alert(a.rel)
-						// return ''
-						// j = a.rel ? JSON.parse(self.rte.utils.decode(a.rel)) : {};
-						j = self.scripts[a.rel]||{};
-						// alert(j)
-						// j = a.rel ? $.parseJSON(self.rte.utils.decode(a.rel)) : {};
-						j.params && $.each(j.params, function(i, p) {
-							o += '<param '+self.serializeAttrs(p)+">\n";
-						});
-						j.embed && (o+='<embed '+self.serializeAttrs(j.embed)+">");
-						j.obj && (o = '<object '+self.serializeAttrs(j.obj)+">\n"+o+"\n</object>\n");
-						return o||t;
-					} else if (a['class']['elrte-google-maps']) {
+					if (a['class']['elrte-google-maps']) {
 						var t = '';
 						if (self.scripts[a.id]) {
 							t = self.scripts[a.id];
 							delete self.scripts[a.id]
 						}
 						return t;
+					} else if (a['class']['elrte-iframe']) {
+						return self.scripts[a.id] || '';
+					} else if (a['class']['elrtebm']) {
+						return '';
+					} else if (a['class']['elrte-media']) {
+						// alert(a.rel)
+						// return ''
+						// j = a.rel ? JSON.parse(self.rte.utils.decode(a.rel)) : {};
+						j = self.scripts[a.rel]||{};
+						j.params && $.each(j.params, function(i, p) {
+							o += '<param '+self.serializeAttrs(p)+">\n";
+						});
+						j.embed && (o+='<embed '+self.serializeAttrs(j.embed)+">");
+						j.obj && (o = '<object '+self.serializeAttrs(j.obj)+">\n"+o+"\n</object>\n");
+						return o||t;
 					} else if (a['class']['elrte-pagebreak']) {
 						return '<!-- pagebreak -->';
 					}
 					$.each(a['class'], function(n) {
-						/^elrte-\w+/i.test(n) && delete(a['class'][n]); 
+						if (/^elrte-\w+/i.test(n)) {
+							delete(a['class'][n]);
+						}
+						// /^elrte\w+/i.test(n) && delete(a['class'][n]); 
 					});
 					return '<'+n+' '+self.serializeAttrs(a)+'>'+(e||'');
 

@@ -27,7 +27,7 @@ define("_XOOPS_EDITOR_TINYMCE_FONTS", "Arial=arial,helvetica,sans-serif;Courier 
 /**
  * @translation     Communauté Francophone des Utilisateurs de Xoops
  * @specification   _LANGCODE: fr
- * @specification   _CHARSET: UTF-8 sans BOM
+ * @specification   _CHARSET: UTF-8 sans bom
  *
  * @version         $Id$
 **/

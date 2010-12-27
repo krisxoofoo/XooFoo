@@ -33,7 +33,7 @@ class TinyMCE
     function __construct($config)
      {
         $this->setConfig($config);
-        $this->rootpath = $this->config["rootpath"] . "/tinymce/jscripts/tiny_mce";
+        $this->rootpath = $this->config["rootpath"] . "/tiny_mce";
         $this->xoopsPlugins = $this->get_xoopsPlugins();
     }
 

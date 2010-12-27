@@ -10,8 +10,8 @@ nicedit			==> order 9		version: 0.9r23			http://nicedit.com/
 koivi			==> order 10	version:				????
 codemirror		==> order 11	version: 0.91			http://codemirror.net/
 editarea		==> order 12	version: 0.8.2			http://www.cdolivet.com/index.php?page=editArea
-elrte			==> order 13	version: 1.1			http://elrte.org/
-XHeditor		==> order 14	version: 1.1.1			http://code.google.com/p/xheditor/
+elrte			==> order 13	version: 1.2			http://elrte.org/
+XHeditor		==> order 14	version: 1.1.2			http://code.google.com/p/xheditor/
 Whizzywig		==> order 15	version: 61				http://unverse.net/whizzywig-cross-browser-html-editor.html
 Wmd				==> order 16	version: 1.0.1			http://wmd-editor.com/
 markItUp		==> order 17	version: 1.1.9			http://markitup.jaysalvat.com/

@@ -1,6 +1,6 @@
 html{height:100%;}
 body,td,th{font-family:Arial,Verdana,sans-serif;font-size: 12px;}
-body{background-color: #FFFFFF;word-break:break-word;word-wrap:break-word;white-space:-moz-pre-wrap;white-space:-hp-pre-wrap;white-space:-o-pre-wrap;white-space:-pre-wrap;white-space:pre;white-space:pre-wrap;white-space:pre-line;}
+body{background-color: #FFFFFF;word-break:break-word;word-wrap:break-word;}
 
 .editMode{margin:5px;padding:0px;overflow-y:auto;}
 .editMode img:-moz-broken {-moz-force-broken-image-icon:1;height:24px;width:24px;}

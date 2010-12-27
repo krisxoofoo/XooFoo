@@ -126,7 +126,7 @@
 .xhe_Fullfix body{width:100%;height:100%;}
 .xhe_Fullscreen{
 	top:0px;left:0px;position:fixed;z-index:100000;width:100%;height:100%;background:#fff;
-	*position:absolute;_top:expression((document.compatMode?documentElement.scrollTop:document.body.scrollTop)+'px');*width:expression((document.compatMode?documentElement.offsetWidth:document.body.offsetWidth) + 'px');*height:expression((document.compatMode?documentElement.offsetHeight:document.body.offsetHeight) + 'px');
+	*position:absolute;*top:expression((document.compatMode?documentElement.scrollTop:document.body.scrollTop)+'px');*width:expression((document.compatMode?documentElement.offsetWidth:document.body.offsetWidth) + 'px');*height:expression((document.compatMode?documentElement.offsetHeight:document.body.offsetHeight) + 'px');
 }
 
 .xheHideArea{position:absolute;top:-1000px;left:-1000px;visibility:hidden;}

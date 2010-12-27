@@ -1,8 +1,8 @@
 textarea		==> order 1		version: 1.0			http://sourceforge.net/projects/xoops/
 dhtmltextarea	==>	order 2		version: 1.0			http://sourceforge.net/projects/xoops/
-ckeditor		==>	order 3		version: 3.4.2			http://ckeditor.com/
+ckeditor		==>	order 3		version: 3.5			http://ckeditor.com/
 fckeditor		==>	order 4		version: 2.6.6			http://sourceforge.net/projects/fckeditor/
-tinymce			==> order 5		version: 3.3.9.2		http://tinymce.moxiecode.com/
+tinymce			==> order 5		version: 3.3.9.3		http://tinymce.moxiecode.com/
 spaw			==> order 6		version: 2.0.8.1		http://www.spaweditor.com/en/disp.php/en_products/en_spaw
 wymeditor		==> order 7		version: 0.5 rc2		http://www.wymeditor.org/
 xynha			==> order 8		version:				http://xinha.webfactional.com/

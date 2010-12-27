@@ -1,0 +1,7 @@
+To customize the configuration settings of Tinyeditor
+(http://wiki.moxiecode.com/index.php/TinyMCE:Configuration#General)
+
+
+1 - Copy in this folder the file /class/xoopseditor/tinymce/settings.php
+2 - Rename the file settings.php (current directory) in tinymce.php
+3 - Edit the file tinymce.php and customize the configuration settings of Tinyeditor (http://wiki.moxiecode.com/index.php/TinyMCE:Configuration#General)

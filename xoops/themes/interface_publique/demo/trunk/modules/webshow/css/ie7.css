@@ -1,0 +1,6 @@
+#xo-canvas-leftcolumn {display: inline; zoom:1; width:180px;} 
+#xo-content {display: inline; zoom:1; width:780px;}
+#xo-page {display: inline; zoom:1; width:810px;}
+/*#xo-canvas.threecolumns-layout #xo-page { width:462px;}*/
+#xo-canvas.leftcolumn-layout #xo-page, #xo-canvas.rightcolumn-layout #xo-page {width:810px;}
+#xo-canvas-rightcolumn {display: inline; zoom:1; width:180px;}

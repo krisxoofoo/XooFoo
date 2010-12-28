@@ -61,8 +61,8 @@ class XoopsFormCkeditor extends XoopsEditor
 			if ( $ckeditor_added==false ) {
 				$GLOBALS['xoTheme']->addScript( XOOPS_URL . $this->rootPath . '/ckeditor/ckeditor.js' );
 				
-				if ( file_exists( XOOPS_URL . $this->rootPath . '/ckeditor/modules/config.'.$dirname.'.js' ) ) 
-					$GLOBALS['xoTheme']->addScript( XOOPS_URL . $this->rootPath . '/ckeditor/modules/config.'.$dirname.'.js' );			
+				if ( file_exists( XOOPS_ROOT_PATH . $this->rootPath . '/module/config.'.$dirname.'.js' ) ) 
+					$GLOBALS['xoTheme']->addScript( XOOPS_URL . $this->rootPath . '/module/config.'.$dirname.'.js' );			
 				else
 					$GLOBALS['xoTheme']->addScript( XOOPS_URL . $this->rootPath . '/ckeditor/config.js' );
 				$ckeditor_added = true;
@@ -78,8 +78,8 @@ class XoopsFormCkeditor extends XoopsEditor
 			if ( $ckeditor_added==false ) {		
 				$ret .= '<script src="' . XOOPS_URL . $this->rootPath . '/ckeditor/ckeditor.js' . '" type="text/javascript"></script>';
 
-				if ( file_exists( XOOPS_URL . $this->rootPath . '/ckeditor/modules/config.'.$dirname.'.js' ) ) 
-					$ret .= '<script src="' . XOOPS_URL . $this->rootPath . '/ckeditor/modules/config.'.$dirname.'.js' . '" type="text/javascript"></script>';
+				if ( file_exists( XOOPS_ROOT_PATH . $this->rootPath . '/module/config.'.$dirname.'.js' ) ) 
+					$ret .= '<script src="' . XOOPS_URL . $this->rootPath . '/module/config.'.$dirname.'.js' . '" type="text/javascript"></script>';
 				else				
 					$ret .= '<script src="' . XOOPS_URL . $this->rootPath . '/ckeditor/config.js' . '" type="text/javascript"></script>';
 				$ckeditor_added=true;

@@ -1,0 +1,9 @@
+/*** Additional features ***/
+- Add PHP Extension : Xdebug 2.1.0
+- Add PHP Extension : APC Cache 3.1.4
+- Add PHP Extension : memcache 2.2.5
+- Add memcached 1.2.6
+- Add MySqlDumper 1.25 Dev
+- Add MySQL Info
+- Add Memcached Monitor
+- Add APC Cache Monitor

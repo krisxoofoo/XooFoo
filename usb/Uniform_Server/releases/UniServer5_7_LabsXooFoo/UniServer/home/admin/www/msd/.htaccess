@@ -1,0 +1,4 @@
+AuthName "MySQLDumper"
+AuthType Basic
+AuthUserFile "G:/UniServer/home/admin/www/msd/.htpasswd"
+require valid-user

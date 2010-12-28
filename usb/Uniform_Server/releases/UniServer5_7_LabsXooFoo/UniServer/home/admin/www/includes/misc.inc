@@ -1,0 +1,2 @@
+<h3><a href="javascript:unhide('05');"><?php echo  $US['nav-misc']?></a></h3>
+<div id="05" class="hidden"><a target="_forum" onclick="h(this);" href="http://forum.uniformserver.com"><?php echo  $US['nav-sup']?></a></div>

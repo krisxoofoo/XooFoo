@@ -1,14 +1,4 @@
-/*** Additional features ***/
-- Add PHP Extension : Xdebug 2.1.0
-- Add PHP Extension : APC Cache 3.1.4
-- Add PHP Extension : memcache 2.2.5
-- Add memcached 1.2.6
-- Add MySqlDumper 1.25 Dev
-- Add MySQL Info
-- Add Memcached Monitor
-- Add APC Cache Monitor
-
-# Apache Security module
+/*** Additional features for security ***/
 - Add Dosevasive 1.10.1 (http://www.zdziarski.com/blog/?page_id=442)
 - Add Antiloris 0.4 (http://www.monshouwer.eu/ - http://www.apachehaus.com/)
 - Add Security 2.5.13 (http://www.modsecurity.org/ - http://www.apachehaus.com/)

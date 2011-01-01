@@ -20,7 +20,7 @@
 function b_ghost_myfunction1_show()
 {
     $block = array();
-    $block["text"] = "Viva XOOPS";
+    $block["text"] = "<span class='bold'>Hello World!</span><br /> Viva XOOPS";
     return $block;
 }
 

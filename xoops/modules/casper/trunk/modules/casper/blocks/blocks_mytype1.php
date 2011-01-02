@@ -18,9 +18,7 @@
 **/
 
 if( ! defined( "XOOPS_TRUST_PATH" ) ) die( "set XOOPS_TRUST_PATH into mainfile.php" ) ;
-
-//require_once XOOPS_TRUST_PATH . "/modules/" . $xoopsModule->getVar("dirname") . "/blocks/blocks_mytype1.php";
-
-require_once XOOPS_TRUST_PATH . "/modules/casper/blocks/blocks_mytype1.php";
+$module_dirname = basename( dirname( dirname( __FILE__ ) ) ) ;
+require_once XOOPS_TRUST_PATH . "/modules/$module_dirname/blocks/blocks_mytype1.php";
 
 ?>

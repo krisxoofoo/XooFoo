@@ -18,7 +18,7 @@
 **/
 
 require "header.php";
-require XOOPS_TRUST_PATH . "/modules/" . $xoopsModule->getVar("dirname") . "/admin/example.php";
+require XOOPS_TRUST_PATH . "/modules/$module_dirname/admin/example.php";
 require "footer.php";
 
 ?>

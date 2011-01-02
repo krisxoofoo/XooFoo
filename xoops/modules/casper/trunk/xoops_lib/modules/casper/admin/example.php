@@ -17,9 +17,6 @@
  * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
 **/
 
-//include "header.php";
-
 $xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_example.html");
 
-//include "footer.php";
 ?>

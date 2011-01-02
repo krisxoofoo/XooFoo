@@ -17,8 +17,6 @@
  * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
 **/
 
-//include "header.php";
-
 $module_info =& $module_handler->get( $xoopsModule->getVar("mid") );
 
 $xoopsTpl->assign("module_name",            $xoopsModule->getVar("name") );
@@ -42,5 +40,4 @@ if ( is_readable( $changelog = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->get
 
 $xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_about.html");
 
-//include "footer.php";
 ?>

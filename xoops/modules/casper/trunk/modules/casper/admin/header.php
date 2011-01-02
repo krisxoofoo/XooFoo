@@ -36,11 +36,13 @@ require_once XOOPS_ROOT_PATH . "/class/template.php";
 if (!isset($xoopsTpl)) {$xoopsTpl = new XoopsTpl();}
 $xoopsTpl->xoops_setCaching(0);
 
+$module_dirname = basename( dirname( dirname( __FILE__ ) ) ) ;
+
 xoops_cp_header();
 
 // Define Stylesheet and JScript
-$xoTheme->addStylesheet( XOOPS_URL . "/modules/" . $xoopsModule->getVar("dirname") . "/css/admin.css" );
+$xoTheme->addStylesheet( XOOPS_URL . "/modules/" . $module_dirname . "/css/admin.css" );
 //$xoTheme->addScript("browse.php?Frameworks/jquery/jquery.js");
-//$xoTheme->addScript("browse.php?modules/" . $xoopsModule->getVar("dirname") . "/js/admin.js");
+//$xoTheme->addScript("browse.php?modules/" . $module_dirname . "/js/admin.js");
 
 ?>

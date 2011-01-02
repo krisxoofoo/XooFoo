@@ -17,11 +17,8 @@
  * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
 **/
 
-//include "header.php";
-
 xoops_loadLanguage("help", $xoopsModule->getVar("dirname", "e"));
 
 $xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_help.html");
 
-//include "footer.php";
 ?>

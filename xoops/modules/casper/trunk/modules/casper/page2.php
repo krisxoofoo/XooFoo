@@ -21,12 +21,7 @@ if( !defined( "XOOPS_ROOT_PATH" ) ) {
     include_once "../../mainfile.php";
 }
 if( ! defined( "XOOPS_TRUST_PATH" ) ) die( "set XOOPS_TRUST_PATH into mainfile.php" ) ;
-
-//$module_handler =& xoops_gethandler("module" ); // a voir
-//$CasperMods =& $module_handler->getByDirname( $modsDirname ); // a voir
-
-//$module_dirname = basename( dirname( __FILE__ ) ) ;
-
-require XOOPS_TRUST_PATH ."/modules/" . $xoopsModule->getVar("dirname") . "/page2.php";
+$module_dirname = basename( dirname( __FILE__ ) ) ;
+require XOOPS_TRUST_PATH ."/modules/$module_dirname/page2.php";
 
 ?>

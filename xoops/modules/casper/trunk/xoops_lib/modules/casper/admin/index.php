@@ -16,9 +16,7 @@
  * @author 	kris <http://www.xoofoo.org>
  * @version	$Id: xoops_version.php 273 2010-05-14 14:40:51Z kris_fr $
 **/
-
-//include "header.php";
-		
+	
 include_once XOOPS_TRUST_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/class/menu.php";
 
 $menu = new casperMenu();
@@ -32,9 +30,8 @@ $admin->addItem("update",      _AM_CASPER_MANAGER_UPDATE,      "../../system/adm
 $admin->addItem("preferences", _AM_CASPER_MANAGER_PREFERENCES, "../../system/admin.php?fct=preferences&amp;op=showmod&amp;&confcat_id=1&amp;mod=".$xoopsModule->getVar("mid") );
 $xoopsTpl->assign($xoopsModule->getVar("dirname") . "_admin", $admin->_items );
 
-$xoopsTpl->assign("module_dirname",         $xoopsModule->getVar("dirname") );
+$xoopsTpl->assign("module_dirname", $xoopsModule->getVar("dirname") );
 
 $xoopsTpl->display("db:admin/" . $xoopsModule->getVar("dirname") . "_admin_index.html");
 
-//include "footer.php";
 ?>

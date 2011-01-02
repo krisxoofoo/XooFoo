@@ -22,15 +22,18 @@ define("_AM_CASPER_HELP2" , "
 <h4>Clonage du module</h4>
 <p>Le module Casper a été conçu pour rendre son clonage aisé.<br />Pour la procédure ci-dessous, nous considérons que vous travaillez dans un environnement local.</p>
 <ol>
-	<li>Copiez le fichier <span class='bold italic'>\"clone.php\"</span> se trouvant dans le dossier <span class='bold italic'>\"extras\"</span> à la racine de votre site</li>
+	<li>Copiez le dossier <span class='bold italic'>\"casper\"</span> se trouvant dans le <span class='bold italic'>\"xoops_lib/modules/\"</span> à la répertoire <span class='bold italic'>\"racinedevotresite/modules/casper/\"</span></li>
+	<li>Copiez le fichier <span class='bold italic'>\"clone.php\"</span> se trouvant dans le dossier <span class='bold italic'>\"extras\"</span>du module, à la racine de votre site</li>
 	<li>Editez ce fichier, aux lignes 18 à 20, remplacez le terme <span class='bold italic'>\"newname\"</span> par le nom que vous désirez - <u>Pensez à respecter la casse !</u></li>
 	<li>Enregistrez le fichier modifié</li>
 	<li>Dans la barre d'adresse de votre navigateur internet, lancez : <span class='italic'>http:\\adressedusite\clone.php</span></li>
-	<li>Votre module cloné vient d'être créé !</li>
-	<li><u>Supprimez le fichier clone.php</u></li>
+	<li>La première étape de la création de votre module cloné vient d'être réalisée !</li>
+	<li><u>Supprimez le fichier clone.php et le dossier <span class='bold italic'>\"casper\"</span> que vous aviez copié un peu plus tôt</u></li>
+	<li>Déplacez le dossier \"racinedevotresite/modules/newname/<span class='bold italic'>newname</span>/\" dans <span class='bold italic'>\"xoops_lib/modules/\"</span></li>
 	<li>Si vous le désirez, vous pouvez changer l'image <span class='italic'>\"images/nomdumodule_slogo.png\"</span>. Vous avez le fichier au format \"psd\" dans le dossier \"docs\" de Casper</li>
 	<li>Installez le module via l'administration de XOOPS, ou commencez à le modifier.</li>
 </ol>
+<p>Vous pouvez visualisez un tutoriel vidéo de cette opération à partir de ce <a class='tooltip' rel='external' href='http://tv.xoofoo.org/modules/mytube/viewcat.php?cid=40' title='TV XooFoo Website'>lien</a></p>
 ");
 define("_AM_CASPER_HELP3" , "
 <h4>Documentation du dossier \"docs\" de ce module :</h4>

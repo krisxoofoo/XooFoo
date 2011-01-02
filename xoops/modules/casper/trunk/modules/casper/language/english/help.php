@@ -22,13 +22,15 @@ define("_AM_CASPER_HELP2" , "
 <h4>Cloning Module</h4>
 <p>Casper module was designed to make it easy cloning<br />In the proceedings below, we believe that you work in a local environment.</p>
 <ol>
+	<li>Copy the <span class='bold italic'>\"casper\"</span> folder found in the <span class='bold italic'>\"xoops_lib/modules/\"</span> folder into <span class='bold italic'>\"rootsite/modules/casper/\"</span></li>
 	<li>Copy the file <span class='bold italic'>\"clone.php\"</span> found in the <span class='bold italic'>\"extras\"</span> folder at the root of your site</li>
 	<li>Edit this file, lines 18-20, replace the word <span class='bold italic'>\"newname\"</span> with the name you want - <u>Think case sensitive!</u></li>
 	<li>Save the edited file</li>
 	<li>In the address bar of your browser, run: <span class='italic'>http:\\websiteurl\clone.php</span></li>
-	<li>Your module has been created cloned!</li>
-	<li><u>Delete the file clone.php</u></li>
-	<li>If you wish, you can change the image <span class='italic'>\"images/nomdumodule_slogo.png\"</span>. You can file as \"psd\" in the \"docs\" folder of Casper</li>
+	<li>First process has been realized !</li>
+	<li><u>Delete the file clone.php and the <span class='bold italic'>\"casper\"</span> folder</u> pasted earlier</li>
+	<li>Move the \"rootsite/modules/newname/<span class='bold italic'>newname</span>/\" folder into <span class='bold italic'>\"xoops_lib/modules/\"</span></li>
+	<li>If you wish, you can change the image <span class='italic'>\"images/modulename_slogo.png\"</span>. You can file as \"psd\" in the \"docs\" folder of Casper</li>
 	<li>Install the module in XOOPS administration, or start to change.</li>
 </ol>
 ");

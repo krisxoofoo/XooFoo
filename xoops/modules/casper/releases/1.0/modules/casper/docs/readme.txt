@@ -1,0 +1,1 @@
+more infos in help admin section of this module

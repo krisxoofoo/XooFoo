@@ -20,7 +20,7 @@
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 
 $modversion["name"] 	=  _MI_GHOST_NAME;
-$modversion["version"] 	= 1.2.1;
+$modversion["version"] 	= 1.21;
 $modversion["description"] 	= _MI_GHOST_DESC;
 $modversion["author"] 	= "Kris - http://www.xoofoo.org";
 $modversion["credits"]	= "Xoops Community";

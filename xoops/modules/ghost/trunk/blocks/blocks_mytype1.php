@@ -17,11 +17,15 @@
  * @version	$Id$
 **/
 
-function b_ghost_myfunction1_show()
+//include_once XOOPS_ROOT_PATH."/modules/" . $xoopsModule->getVar("dirname") . "/include/functions.php";
+
+function b_ghost_myfunction1_show($options)
 {
     $block = array();
     $block["text"] = "<span class='bold'>Hello World!</span><br /> Viva XOOPS";
     return $block;
 }
 
+//function b_ghost_myfunction1_edit($options) {
+//}
 ?>

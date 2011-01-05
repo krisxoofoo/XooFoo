@@ -25,21 +25,21 @@ $i = 1;
 $adminmenu[$i]["title"] = _MI_CASPER_MANAGER_INDEX;
 $adminmenu[$i]["link"]  = "admin/index.php";
 $adminmenu[$i]["desc"] = _MI_CASPER_MANAGER_INDEX_DESC;
-$adminmenu[$i]["icon"] = "images/admin/index.png";
+$adminmenu[$i]["icon"] = "images/icons/index.png";
 $i++;
 $adminmenu[$i]["title"] = _MI_CASPER_MANAGER_EXAMPLE;
 $adminmenu[$i]["link"]  = "admin/example.php";
 $adminmenu[$i]["desc"] = _MI_CASPER_MANAGER_EXAMPLE_DESC;
-$adminmenu[$i]["icon"] = "images/admin/example.png";
+$adminmenu[$i]["icon"] = "images/icons/example.png";
 $i++;
 $adminmenu[$i]["title"] = _MI_CASPER_MANAGER_ABOUT;
 $adminmenu[$i]["link"]  = "admin/about.php";
 $adminmenu[$i]["desc"] = _MI_CASPER_MANAGER_ABOUT_DESC;
-$adminmenu[$i]["icon"] = "images/admin/about.png";
+$adminmenu[$i]["icon"] = "images/icons/about.png";
 $i++;
 $adminmenu[$i]["title"] = _MI_CASPER_MANAGER_HELP;
 $adminmenu[$i]["link"]  = "admin/help.php";
 $adminmenu[$i]["desc"] = _MI_CASPER_MANAGER_HELP_DESC;
-$adminmenu[$i]["icon"] = "images/admin/help.png";
+$adminmenu[$i]["icon"] = "images/icons/help.png";
 
 ?>

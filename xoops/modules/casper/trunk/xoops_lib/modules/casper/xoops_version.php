@@ -20,7 +20,7 @@
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 
 $modversion["name"] 	=  _MI_CASPER_NAME;
-$modversion["version"] 	= 1.0;
+$modversion["version"] 	= 1.01;
 $modversion["description"] 	= _MI_CASPER_DESC;
 $modversion["author"] 	= "Kris - http://www.xoofoo.org";
 $modversion["credits"]	= "Xoops Community";

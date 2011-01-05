@@ -34,6 +34,9 @@ $xoopsTpl->assign("module_website_name",    $module_info->getInfo("module_websit
 $xoopsTpl->assign("author_website_url",     $module_info->getInfo("author_website_url") );
 $xoopsTpl->assign("author_website_name",    $module_info->getInfo("author_website_name") );
 
+global $xoopsModule;
+$xoopsTpl->assign("module_update_date", formatTimestamp($xoopsModule->getVar("last_update"),"m") );
+
 if ( is_readable( $changelog = XOOPS_ROOT_PATH . "/modules/" . $xoopsModule->getVar("dirname") . "/docs/changelog.txt" ) ){
     $xoopsTpl->assign("changelog",          implode("<br />", file( $changelog ) ) );
 }

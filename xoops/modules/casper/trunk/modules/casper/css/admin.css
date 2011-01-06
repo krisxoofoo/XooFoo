@@ -17,16 +17,41 @@
  * @version	$Id $
 **/
 #Casper_Title {
-    font-size:             16px;
-    color:                 #606060;
-    height:                50px;
-    border-bottom:         1px solid #393e41;
-    margin-bottom:         5px;
-    line-height:           50px;
-    background-position:   left top;
-    background-repeat:     no-repeat;
+	font-size:             20px;
+	color:                 #393e41;
+	height:                50px;
+	border-bottom:         1px solid #393e41;
+	margin-bottom:         5px;
+	line-height:           50px;
+	background-position:   left top;
+	background-repeat:     no-repeat;
+	text-shadow: 0 1px 0 #eee, 
+			   0 2px 0 #e9e9e9,
+			   0 3px 0 #ddd,
+			   0 4px 0 #d9d9d9,
+			   0 5px 0 #ccc,
+			   0 6px 1px rgba(0,0,0,.1),
+			   0 0 5px rgba(0,0,0,.1),
+			   0 1px 3px rgba(0,0,0,.3),
+			   0 3px 5px rgba(0,0,0,.2),
+			   0 5px 10px rgba(0,0,0,.35),
+			   0 10px 10px rgba(0,0,0,.2);
 }
-.Casper_MediumTitle {  font-size:             14px;}
+.Casper_MediumTitle { 
+	font-size:             14px;
+	color:                 #393e41;
+	text-shadow: 0 1px 0 #eee, 
+			   0 2px 0 #e9e9e9,
+			   0 3px 0 #ddd,
+			   0 4px 0 #d9d9d9,
+			   0 5px 0 #ccc,
+			   0 6px 1px rgba(0,0,0,.1),
+			   0 0 5px rgba(0,0,0,.1),
+			   0 1px 3px rgba(0,0,0,.3),
+			   0 3px 5px rgba(0,0,0,.2),
+			   0 5px 10px rgba(0,0,0,.35),
+			   0 10px 10px rgba(0,0,0,.2);
+}
 div.rmmenuicon {
     margin:                3px;
     font-family:           Tahoma, Arial, Helvetica;
@@ -118,12 +143,12 @@ div.rmmenuicon a:hover span.uno {
 }
 #about legend {
     margin:                0 5px;
-    padding:               0 5px;
+    padding:               0 5px 8px 5px;
 }
 #about label, #about text {
     display:               block;
     float:                 left;
-    margin-bottom:         2px;
+    margin-bottom:         12px;
 }
 #about label {
     text-align:            right;

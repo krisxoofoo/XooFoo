@@ -1,0 +1,4 @@
+Thanks to :
+- Uniform Server Development Team <http://www.uniformserver.com> for initial work
+- Harun Yayli <http://livebookmark.net/journal/> for memcache.php
+- http://code.jellycan.com/memcached/ for Memcached 1.2.6 W32 binary compilation

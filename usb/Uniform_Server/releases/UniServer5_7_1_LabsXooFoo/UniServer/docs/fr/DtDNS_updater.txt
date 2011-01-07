@@ -1,0 +1,185 @@
+﻿###############################################################################
+# Nom du fichier: DtDNS.txt
+# Created By: The Uniform Server Development Team
+###############################################################################
+
+  Majorité des connexions Internet domestiques via une adresse IP dynamique, un
+  qui change à chaque fois que vous connectez à Internet. Cela signifie que vous ne pouvez pas exécuter
+  un serveur Web, sauf si vous achetez un, l'adresse IP statique de votre FAI
+  (Fournisseur de services Internet). Même avec une adresse IP statique vous avez besoin et une inscription dans un
+  Serveur DNS qui convertit votre nom de domaine dans cette adresse IP permettant à d'autres
+  utilisateurs d'accéder à votre serveur.
+
+  Une alternative consiste à utiliser un service gratuit comme DtDNS ils fournir des comptes
+  qui vous permettent d'obtenir un nom de domaine et logiciel de traçabilité pour automatiquement
+  mettre à jour votre adresse IP comme elle change. Un gros avantage de leur service gratuit
+  Ils permettent automatiquement les cartes Wild par défaut.
+
+  Uniform Server supporte le service de DtDNS en intégrant un simple scrip PHP
+  de mettre à jour automatiquement l'adresse IP au nom d'hôte DtDNS. Script est configurable
+  vous permettant de mettre à jour tous les cinq noms de serveurs libres. Le script peut éventuellement être
+  géré par cron faire toute la tâche transparente.
+
+  --------------------
+  Créer un compte DtDNS
+  --------------------
+
+   Création d'un compte auprès de DtDNS.
+    * Allez sur la page d'accueil DtDNS http://www.dtdns.com/
+    * Pour le droit de vous connecter cliquez sur Créer un compte
+
+    Il ya deux pages à remplir, entrer les renseignements suivants:
+    Page 1:
+     1) Nom d'utilisateur désiré  - Ce nom est utilisé pour se connecter à votre compte
+     2) Votre Nom                 - Votre vrai nom (usage interne)
+     3) mot de passe désiré       - Un mot de passe pour se connecter à votre compte
+     4) Confirmer le mot de passe - Comme ci-dessus
+     5) E-mail Address            - Un vrai active e-mail est requis,
+                                    code d'activation envoyé à cette adresse e-mail
+     6) Confirmez votre e-mail    - Comme ci-dessus
+     7) En option                 - Passer Section facultative de renseignements ou remplissez ce po
+     8) Deux mots CAPCHA          - Entrez les deux mots capcha (si elles sont difficiles
+                                    à lire cliquez sur le bouton nouveau défi)
+    Page 2:
+     9) Nom d'utilisateur        - Saisissez votre nom d'utilisateur comme entrée en 1).
+    10) Entrez le code           - Entrez le code envoyé à votre adresse email. (Note: L'e-mail
+                                   contient un lien vers la page 2 où vous pouvez fermer la
+                                   page et d'attendre le courrier électronique.)
+  ---------------
+  Créer Hostname
+  ---------------
+
+  Pour créer un nouveau nom d'hôte à DtDNS
+   Connexion
+    * Aller à la page de connexion https: / / www.dtdns.com/index.cfm?fuseaction=account.login
+    * Entrez Nom d'utilisateur: Comme indiqué dans l'étape 1)
+    * Entrez Mot de passe: Comme indiqué dans l'étape 3)
+    * Page Mes services affichés
+    * Cliquez sur les noms de serveur ouvre le Gestionnaire Hostname
+
+   Créer un nom d'hôte
+    * Entrez un nom d'hôte souhaité
+    * À partir du menu déroulant, sélectionnez un domaine
+    * Cliquez sur Ajouter un nom d'hôte
+    * Entrez les deux mots CAPCHA (si elles sont difficiles à lire cliquez sur le
+      défi nouveau bouton)
+    * Cliquez sur le bouton Ajouter Hostname
+    * Ceci est ajouté à votre liste de noms d'hôtes
+
+   Notes 1:
+    * Compte DtDNS A est limité à cinq noms de serveurs libres.
+    * Un nom d'hôte est concaténé avec un nom de domaine.
+
+    * Votre URL complète est créé à partir de deux parties comme suit par exemple
+      o Si vous avez choisi "livres" comme nom d'hôte
+      O et sélectionnez dans le menu déroulant le menu "effers.com"
+
+     URL complète pour ressembler à ceci:
+
+     http://books.effers.com
+
+   Note 2:
+    Après avoir créé un nom d'hôte cartes sauvages sont activées par défaut.
+    Cela vous permet d'utiliser une URL telle que
+
+    http://www.books.effers.com - Note www. est la partie joker cela peut être
+                                  ce que vous voulez par exemple:
+
+    * Http://www.books.effers.com
+    * Http://www-internation.books.effers.com
+    * Http://local.books.effers.com
+    * Http://www.home.books.effers.com
+
+  ---------------------------------
+  Auto-updater script de configuration
+  ---------------------------------
+
+   Editez le fichier suivant:
+
+     UniServer\plugins\dtdns_updater\dtdns.ini
+
+   Pour chaque compte que vous souhaitez mettre à jour ajouter un bock avec le format suivant.
+
+   [account_1]  - Un nom uniquete entre crochets.
+                  Peut être n'importe quel nom que vous souhaitez ne comprennent pas les espaces.
+   hostname =   - Nom d'hôte complet tel que configuré lors DtDNS
+   password =   - Votre DtDNS compte Mot de passe
+
+   Le fichier de configuration contient des exemples celui illustré ci-dessous:
+
+   ; [account_1]
+   ; hostname = books.effers.com
+   ; password = fred123
+
+   Décommenter (enlever;) afin de permettre
+   books.effers.com suppléant auprès de votre hôte réel et les noms de domaine,
+   remplacer le mot de passe fred123 avec celui que vous définissez dans l'étape 1)
+
+   Décommentez blocs selon les besoins et remplacer vos coordonnées.
+   Si vous avez besoin d'appoint bocks copier un existant en vous assurant de changement
+   le nom du bloc à quelque chose d'unique.
+
+  ---------------------------
+  Running Auto-updater Script
+  ---------------------------
+
+  A) Mise à jour manuelle
+
+  Vous pouvez exécuter le fichier batch suivant pour forcer manuellement une mise à jour,
+  N'oubliez pas de laisser une dizaine de menuets avant d'effectuer une mise à jour manuelle.
+
+  Fichier batch: UniServer\plugins\dtdns_updater\Run_dtdns_updater.bat 
+
+  Note: Il faut environ dix minutes pour les DNS de se propager, mises à jour supplémentaires
+        dans ce délai sont considérés comme un abus de mai et vous trouverez votre adresse IP interdite.
+
+  B) Cron - Mise à jour automatique
+
+  Cron permet par défaut d'un périodique cocher Uniform Server est de dix minutes.
+  DtDNS mise à jour automatique a été pré-configuré mais il est désactivé par défaut.
+
+  Pour activer DtDNS éditer le fichier UniServer\unicon\main\cron.ini
+
+  Localisez le bloc de dtdns:
+
+   ;[dtdns]
+   ;start  = 2009-09-21 2:56:52
+   ;period = 600 ; 10 Mins tel que requis par DtDNS
+   ;path   = ..\..\plugins\dtdns_updater\dtdns_updater.php
+   ;ref =
+
+  Décommenter pour permettre indiqué ci-dessous:
+
+   [dtdns]
+   start  = 2009-09-21 2:56:52
+   period = 600 ; 10 Mins tel que requis par DtDNS
+   path   = ..\..\plugins\dtdns_updater\dtdns_updater.php
+   ref =
+
+  Éventuellement modifier le temps de démarrage. Si vous ne changez pas cette fois le courant
+  seront utilisées. Lorsque Cron est d'abord exécuter DtDNS sera immédiatement créé par la suite
+  passe toutes les dix minutes. Note: Une mise à jour n'est effectuée que si votre
+  Adresse IP a changé.
+
+  Note: Vous devez commencer Cron soit manuellement ou automatiquement
+         se référer à Cron.txt page pour plus de détails.
+
+  -------
+  Exploitation forestière
+  -------
+
+   L'enregistrement est activé par défaut. Log file: UniServer\plugins\dtdns_updater\dtdns.log
+
+   Désactiver activer la journalisation modifier le fichier: UniServer\plugins\dtdns_updater\dtdns_updater.php
+   Modifiez la ligne suivante au besoin:
+
+   $logging = true; // true = Activer la journalisation false = désactiver la journalisation
+
+
+-------------------------------------------------- -----------------------------
+Copyright 2002-2009 The Uniform Server Development Team
+Tous droits réservés.
+
+Les auteurs tentaient de faire le meilleur produit pour qu'ils
+ne peut être tenue responsable pour tout type de dommage ou de
+problèmes causés par l'utilisation de ce ou un autre logiciel.

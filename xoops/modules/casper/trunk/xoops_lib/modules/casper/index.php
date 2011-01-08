@@ -22,9 +22,22 @@ if ( !include("../../mainfile.php") ) {
 }
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 
+global $xoopsModuleConfig;
+	$casper_sitename1 = $xoopsModuleConfig["casperconf1"];
+	$casper_pagetitle1 = $xoopsModuleConfig["casperconf2"];
+	$casper_metakeywords1 = $xoopsModuleConfig["casperconf3"];
+	$casper_metadescription1 = $xoopsModuleConfig["casperconf4"];
+	
 $xoopsOption["template_main"] =  $module_dirname ."_index.html";
 
 include(XOOPS_ROOT_PATH."/header.php");
+
+if(isset($xoTheme) && is_object($xoTheme)) {
+	$xoopsTpl->assign("xoops_sitename",$casper_sitename1);
+	$xoopsTpl->assign("xoops_pagetitle", $casper_pagetitle1);
+	$xoTheme->addMeta( "meta", "keywords", $casper_metakeywords1);
+	$xoTheme->addMeta( "meta", "description", $casper_metadescription1);
+}
 
 if(isset($xoTheme) && is_object($xoTheme)) {
    $xoopsTpl->assign("xoops_sitename","Put here the page title, visible at the top of the browser");

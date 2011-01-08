@@ -53,11 +53,26 @@ define("_MI_CASPER_BLOCK_NAME2" , "Block title 2");
 define("_MI_CASPER_BLOCK_NAME2_DESC" , "My second block with casper module");
 
 // Config Settings
-/*define("_MI_CASPER_CONF1" , "");
-define("_MI_CASPER_CONF1_DESC" , "");
-define("_MI_CASPER_CONF1_DEFAULT" , "");
-define("_MI_CASPER_CONF2" , "");
-define("_MI_CASPER_CONF2_DESC" , "");
-define("_MI_CASPER_CONF3_DEFAULT" , "");*/
+define("_MI_CASPER_CONF1" , "Site Name");
+define("_MI_CASPER_CONF1_DESC" , "Put here the page title, visible at the top of the browser");
+define("_MI_CASPER_CONF1_DEFAULT" , "CasperWebsite");
+define("_MI_CASPER_CONF2" , "Title page 1");
+define("_MI_CASPER_CONF2_DESC" , "Put here your page title");
+define("_MI_CASPER_CONF2_DEFAULT" , "My's first page");
+define("_MI_CASPER_CONF3" , "Meta keywords - Page 1");
+define("_MI_CASPER_CONF3_DESC" , "Put here keyword, keyword1, keyword2, keyword3, etc.");
+define("_MI_CASPER_CONF3_DEFAULT" , "");
+define("_MI_CASPER_CONF4" , "Meta description - Page 1");
+define("_MI_CASPER_CONF4_DESC" , "Put here the page description line that often appears in search results.");
+define("_MI_CASPER_CONF4_DEFAULT" , "");
+define("_MI_CASPER_CONF5" , "Title page 2");
+define("_MI_CASPER_CONF5_DESC" , "Put here your page title");
+define("_MI_CASPER_CONF5_DEFAULT" , "My's second page");
+define("_MI_CASPER_CONF6" , "Meta keywords - Page 2");
+define("_MI_CASPER_CONF6_DESC" , "Put here keyword, keyword1, keyword2, keyword3, etc.");
+define("_MI_CASPER_CONF6_DEFAULT" , "");
+define("_MI_CASPER_CONF7" , "Meta description - Page 2");
+define("_MI_CASPER_CONF7_DESC" , "Put here the page description line that often appears in search results.");
+define("_MI_CASPER_CONF7_DEFAULT" , "");
 
 ?>

@@ -52,12 +52,27 @@ define("_MI_CASPER_BLOCK_NAME1_DESC" , "Mon premier bloc avec le module Fantôme
 define("_MI_CASPER_BLOCK_NAME2" , "Mon titre de bloc 2");
 define("_MI_CASPER_BLOCK_NAME2_DESC" , "Mon second bloc avec le module Fantôme");
 
-// Config Settings
-/*define("_MI_CASPER_CONF1" , "");
-define("_MI_CASPER_CONF1_DESC" , "");
-define("_MI_CASPER_CONF1_DEFAULT" , "");
-define("_MI_CASPER_CONF2" , "");
-define("_MI_CASPER_CONF2_DESC" , "");
-define("_MI_CASPER_CONF3_DEFAULT" , "");*/
+// Config Settings - parameters
+define("_MI_CASPER_CONF1" , "Nom du site");
+define("_MI_CASPER_CONF1_DESC" , "Insérer le nom du site, visible sur l'onglet de la fenêtre des navigateurs");
+define("_MI_CASPER_CONF1_DEFAULT" , "Casper Website");
+define("_MI_CASPER_CONF2" , "Titre de la page 1");
+define("_MI_CASPER_CONF2_DESC" , "Insérez le titre de votre page");
+define("_MI_CASPER_CONF2_DEFAULT" , "Ma première page");
+define("_MI_CASPER_CONF3" , "Meta keywords - Page 1");
+define("_MI_CASPER_CONF3_DESC" , "Insérez les mots-clés relatifs au contenu de votre page : keyword1, keyword2, keyword3, etc ...");
+define("_MI_CASPER_CONF3_DEFAULT" , "");
+define("_MI_CASPER_CONF4" , "Meta description - Page 1");
+define("_MI_CASPER_CONF4_DESC" , "Insérez une brève description de votre site ou du contenu de votre page, qui apparaîtra aux moteurs de recherche.");
+define("_MI_CASPER_CONF4_DEFAULT" , "");
+define("_MI_CASPER_CONF5" , "Titre page 2");
+define("_MI_CASPER_CONF5_DESC" , "Insérez le titre de votre page");
+define("_MI_CASPER_CONF5_DEFAULT" , "Ma seconde page");
+define("_MI_CASPER_CONF6" , "Meta keywords - Page 2");
+define("_MI_CASPER_CONF6_DESC" , "Insérez les mots-clés relatifs au contenu de votre page : keyword1, keyword2, keyword3, etc ...");
+define("_MI_CASPER_CONF6_DEFAULT" , "");
+define("_MI_CASPER_CONF7" , "Meta description - Page 2");
+define("_MI_CASPER_CONF7_DESC" , "Insérez une brève description de votre site ou du contenu de votre page, qui apparaîtra aux moteurs de recherche.");
+define("_MI_CASPER_CONF7_DEFAULT" , "");
 
 ?>

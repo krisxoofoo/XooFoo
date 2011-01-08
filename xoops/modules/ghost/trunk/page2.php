@@ -22,15 +22,21 @@ if ( !include("../../mainfile.php") ) {
 }
 $module_dirname = basename( dirname( __FILE__ ) ) ;
 
+global $xoopsModuleConfig;
+	$ghost_sitename1 = $xoopsModuleConfig["ghostconf1"];
+	$ghost_pagetitle1 = $xoopsModuleConfig["ghostconf2"];
+	$ghost_metakeywords1 = $xoopsModuleConfig["ghostconf3"];
+	$ghost_metadescription1 = $xoopsModuleConfig["ghostconf4"];
+
 $xoopsOption["template_main"] =  $module_dirname ."_page2.html";
 
 include(XOOPS_ROOT_PATH."/header.php");
 
 if(isset($xoTheme) && is_object($xoTheme)) {
-   $xoopsTpl->assign("xoops_sitename","Put here the page title, visible at the top of the browser");
-   $xoopsTpl->assign("xoops_pagetitle", "Put here your page title");
-   $xoTheme->addMeta( "meta", "keywords", "Put here keyword, keyword1, keyword2, keyword3, etc.");
-   $xoTheme->addMeta( "meta", "description", "Put here the page description line that often appears in search results.");
+	$xoopsTpl->assign("xoops_sitename",$ghost_sitename1);
+	$xoopsTpl->assign("xoops_pagetitle", $ghost_pagetitle2);
+	$xoTheme->addMeta( "meta", "keywords", $ghost_metakeywords2);
+	$xoTheme->addMeta( "meta", "description", $ghost_metadescription2);
 }
 global $xoTheme; 
 	$xoTheme->addStyleSheet("modules/" . $module_dirname . "/css/style.css");

@@ -35,18 +35,17 @@ define("_AM_CASPER_MANAGER_INDEX_TXT1" , "
 define("_AM_CASPER_ABOUT_RELEASEDATE",        "Date de mise à jour");
 define("_AM_CASPER_ABOUT_AUTHOR",                   "Auteur");
 define("_AM_CASPER_ABOUT_CREDITS",                  "Credits");
-define("_AM_CASPER_ABOUT_README",                   "Informations générales");
-define("_AM_CASPER_ABOUT_MANUAL",               "Aide");
+//define("_AM_CASPER_ABOUT_README",                   "Informations générales");
+//define("_AM_CASPER_ABOUT_MANUAL",               "Aide");
 define("_AM_CASPER_ABOUT_LICENSE",                  "Licence");
 define("_AM_CASPER_ABOUT_MODULE_STATUS",            "Status");
 define("_AM_CASPER_ABOUT_WEBSITE",                  "Site internet");
 define("_AM_CASPER_ABOUT_AUTHOR_NAME",              "Nom de l'auteur");
-define("_AM_CASPER_ABOUT_AUTHOR_WORD",              "Mot de l'auteur");
+//define("_AM_CASPER_ABOUT_AUTHOR_WORD",              "Mot de l'auteur");
 define("_AM_CASPER_ABOUT_CHANGELOG",                "Change Log");
 define("_AM_CASPER_ABOUT_MODULE_INFO",              "Information sur le module");
 define("_AM_CASPER_ABOUT_AUTHOR_INFO",              "Informations sur l'auteur");
-define("_AM_CASPER_ABOUT_DISCLAIMER",               "Disclaimer");
-define("_AM_CASPER_ABOUT_DISCLAIMER_TEXT",          "GPL License");
+//define("_AM_CASPER_ABOUT_DISCLAIMER",               "Disclaimer");
 
 define("_AM_CASPER_TXT1" , "Hello World - Viva XOOPS");
 define("_AM_CASPER_TXT2" , "Hello World - Viva XOOPS - include file");

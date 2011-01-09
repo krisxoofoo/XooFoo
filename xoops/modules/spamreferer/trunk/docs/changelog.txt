@@ -1,0 +1,6 @@
+2011/01/10: Version 1.0 beta
+=================================
+- original work based on Stop Spam Referer 1.01
+	* http://www.stop-spam-referer.info
+	* Credits : Cyril Levert
+- portability to Xoops by kris with Ghost module 1.1

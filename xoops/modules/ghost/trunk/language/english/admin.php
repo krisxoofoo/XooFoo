@@ -35,18 +35,17 @@ define("_AM_GHOST_MANAGER_INDEX_TXT1" , "
 define("_AM_GHOST_ABOUT_RELEASEDATE",        "Update date");
 define("_AM_GHOST_ABOUT_AUTHOR",                   "Author");
 define("_AM_GHOST_ABOUT_CREDITS",                  "Credits");
-define("_AM_GHOST_ABOUT_README",                   "General Infos");
-define("_AM_GHOST_ABOUT_MANUAL",               "Help");
+//define("_AM_GHOST_ABOUT_README",                   "General Infos");
+//define("_AM_GHOST_ABOUT_MANUAL",               "Help");
 define("_AM_GHOST_ABOUT_LICENSE",                  "License");
 define("_AM_GHOST_ABOUT_MODULE_STATUS",            "Status");
 define("_AM_GHOST_ABOUT_WEBSITE",                  "Website");
 define("_AM_GHOST_ABOUT_AUTHOR_NAME",              "Author name");
-define("_AM_GHOST_ABOUT_AUTHOR_WORD",              "Author words");
+//define("_AM_GHOST_ABOUT_AUTHOR_WORD",              "Author words");
 define("_AM_GHOST_ABOUT_CHANGELOG",                "Change Log");
 define("_AM_GHOST_ABOUT_MODULE_INFO",              "Module Infos");
 define("_AM_GHOST_ABOUT_AUTHOR_INFO",              "Author Infos");
-define("_AM_GHOST_ABOUT_DISCLAIMER",               "Disclaimer");
-define("_AM_GHOST_ABOUT_DISCLAIMER_TEXT",          "GPL License");
+//define("_AM_GHOST_ABOUT_DISCLAIMER",               "Disclaimer");
 
 define("_AM_GHOST_TXT1" , "Hello World - Viva XOOPS");
 define("_AM_GHOST_TXT2" , "Hello World - Viva XOOPS - include file");
